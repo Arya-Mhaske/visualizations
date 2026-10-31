@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A seconds pendulum ticks once every second, so one full swing takes 2 s. Tune the length until it passes the bottom exactly on the green lines.{% endblock %}
+{% block why_text %}Setting T = 2π√(L/g) equal to 2 s gives L = g/π², which is about 0.99 m on Earth. The pendulum passes the bottom twice per swing, so a 2 s period gives one tick every second. On the Moon, where g is smaller, the same pendulum would need to be much shorter.{% endblock %}
+{% block try_items %}
+<li>Slide the length until the readout turns green. Does the curve now cross zero on the dashed lines?</li>
+<li>Choose Equator, then Pole. How far does the right length move? Is it enough to notice?</li>
+<li>Choose Moon. What length gives a 2 s period there?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Real g varies</span>g is a little smaller at the equator than at the poles, so the exact length of a seconds pendulum changes slightly with place. This page uses a small 5° swing.</div>{% endblock %}

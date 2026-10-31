@@ -113,6 +113,11 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - Odd power-law forces (x², x³, √x) differ from a cosine by only 3–7% of A, too little to see. Show the period change instead
   (a full swing against a half swing drawn double). Check how big a "visible" difference really is before promising it in the copy.
 - Absolute base-excitation phase tends to π/2, not π, at high frequency. Don't assume a lag runs to half a turn.
+- `_pendulum-math.js` has `swing()` (RK4 pendulum, with optional damping and mass), `exactPeriod` (AGM elliptic K), `stopwatch`, and
+  series ratios. For an exact nonlinear or damped motion, precompute `swing()` once per control change and let `createClock` only
+  move the playhead; `at(samples, dt, t)` reads it. Tests compare it with an independent Python RK4 and the period integral.
+- Don't guess numbers for test expectations: the 170° period ratio is 2.44, not 2.2. Size plot windows from computed values.
+- At 360 px a tall stage is narrow: size bob strings by `min(stage.h·k, stage.w·k)`, or they swing off the edge.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -221,7 +226,7 @@ it reaches the front of the queue.
 | 92 | `trigonometry/vectors` | 12 | 1 | |
 | 93 | `oscillations-waves/force-law-energy` | 5 | 1 | ✓ |
 | 94 | `trigonometry/polar-complex` | 11 | 1 | |
-| 95 | `oscillations-waves/the-simple-pendulum` | 6 | 1 | |
+| 95 | `oscillations-waves/the-simple-pendulum` | 6 | 1 | ✓ |
 | 96 | `exponentials-logs/exponential-growth` | 6 | 1 | |
 | 97 | `oscillations-waves/what-is-a-wave` | 4 | 1 | |
 | 98 | `exponentials-logs/the-number-e` | 4 | 1 | |

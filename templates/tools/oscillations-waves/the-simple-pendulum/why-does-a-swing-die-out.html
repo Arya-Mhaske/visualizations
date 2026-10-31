@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Give a swing one push and leave it. Friction takes a little energy every swing, so each swing is smaller than the last.{% endblock %}
+{% block why_text %}Friction opposes the motion, so it always takes energy away and never gives any back. With friction proportional to speed, the size of the swing falls by the same fraction in equal times. That is an exponential decay, e^(−bt/2), and the energy falls twice as fast, as e^(−bt).{% endblock %}
+{% block try_items %}
+<li>Set friction to 0. What happens to the swing and to the energy?</li>
+<li>Increase friction. How does the time to halve change when b doubles?</li>
+<li>Look at the energy graph. Does it fall in a straight line, or by a smaller amount as the swing gets smaller? Why?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Model, not measurement</span>Air drag on a real swing is not exactly proportional to speed. This is the simplest model, and it shows the shape of the decay well.</div>{% endblock %}

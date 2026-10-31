@@ -1884,37 +1884,37 @@
 "archetype": "sim",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/why-doesn-t-the-bob-s-mass-matter": {
 "archetype": "sim",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/measure-g-with-string-and-a-stopwatch": {
 "archetype": "sim",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/pendulum-lab-with-large-angle-correction": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/the-seconds-pendulum": {
 "archetype": "sim",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/why-does-a-swing-die-out": {
 "archetype": "sim",
 "priority": 98,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/what-is-a-wave/why-does-a-wave-carry-energy-but-not-matter": {
 "archetype": "sim",

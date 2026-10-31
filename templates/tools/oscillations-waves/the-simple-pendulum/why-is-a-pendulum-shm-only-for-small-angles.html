@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Release a pendulum next to a ghost that obeys the SHM rule. A small swing keeps pace with the ghost. A big one falls behind.{% endblock %}
+{% block why_text %}The pull-back along the arc is mg sin θ, not mg θ. SHM needs a force proportional to θ, and sin θ follows θ only while θ is small. Higher up, sin θ is smaller than θ, so the pull is weaker than SHM would give and the swing takes longer.{% endblock %}
+{% block try_items %}
+<li>Release from 5°. How closely does the pendulum follow its ghost? What about the two lines on the graph?</li>
+<li>Raise the angle to 90°. Which force arrow is longer at the ends of the swing? Which way does the pendulum drift from the ghost?</li>
+<li>Find the largest angle where the SHM force is less than 1% too big (read the readout).</li>
+{% endblock %}

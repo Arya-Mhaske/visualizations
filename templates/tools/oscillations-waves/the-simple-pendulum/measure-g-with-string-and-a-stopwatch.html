@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Time some swings, divide by the number of swings to get the period, then use T = 2π√(L/g) to find g. Your thumbs are slow, so why time 20 swings and not 1?{% endblock %}
+{% block why_text %}Starting and stopping a stopwatch always adds a small error, about the same size however long you time. Timing N swings spreads that one error over N periods, so the error in T is N times smaller. That is why the book says to time 20 swings.{% endblock %}
+{% block try_items %}
+<li>Set the swings to 1 with a 0.2 s error. How far off is g? Now try 20 swings.</li>
+<li>Set your error to 0. What is left in the error? Raise the swing angle and watch it grow.</li>
+<li>Does g from your numbers change when you change the string length? Should it?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">A simulated lab</span>The stopwatch error here is the same on every run, so you can see its effect clearly. A real error varies from run to run. This pendulum is in a world where g is 9.8 m/s².</div>{% endblock %}
