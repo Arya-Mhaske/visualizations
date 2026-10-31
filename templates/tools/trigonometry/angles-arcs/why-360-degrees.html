@@ -1,0 +1,136 @@
+{% extends "tools/base_tool.html" %}
+{% load static %}
+
+{% block katex %}{% include "tools/_katex.html" %}{% endblock %}
+
+{% block lead %}A full turn could have been any number. Why did people pick 360? Try a few alternatives and see what goes wrong.{% endblock %}
+
+{% block steps %}
+<div class="viz-steps" role="tablist" aria-label="Views">
+  <button type="button" role="tab" aria-selected="true"><span class="viz-steps__num">1</span>Divisibility</button>
+  <button type="button" role="tab" aria-selected="false"><span class="viz-steps__num">2</span>The hexagon</button>
+  <button type="button" role="tab" aria-selected="false"><span class="viz-steps__num">3</span>The sky</button>
+  <button type="button" role="tab" aria-selected="false"><span class="viz-steps__num">4</span>It's a convention</button>
+</div>
+{% endblock %}
+
+{% block stage %}
+<span class="viz-stage__hint" data-view="4" hidden>Drag the dot, or use the arrow keys</span>
+{% endblock %}
+
+{% block panel %}
+<section class="nb-stack" data-view="1">
+  <h2 class="viz-panel__title">1 · Divisibility</h2>
+  <p class="nb-mb-0">Split a full turn into n equal slices.</p>
+  <div class="nb-field">
+    <label class="nb-label" for="n-range">Slices, n <output id="n-out" for="n-range">8</output></label>
+    <input class="nb-range" id="n-range" type="range" min="1" max="36" step="1" value="8">
+  </div>
+  <div class="nb-field">
+    <span class="nb-label" id="total-label">Full turn =</span>
+    <div class="nb-segmented" role="radiogroup" aria-labelledby="total-label">
+      <input type="radio" name="total" id="total-360" value="360" checked><label for="total-360">360°</label>
+      <input type="radio" name="total" id="total-365" value="365"><label for="total-365">365 (days in a year)</label>
+      <input type="radio" name="total" id="total-100" value="100"><label for="total-100">100 (a round number)</label>
+      <input type="radio" name="total" id="total-400" value="400"><label for="total-400">400 (gradians)</label>
+    </div>
+  </div>
+  <div class="nb-field">
+    <span class="nb-label">Which n split evenly? (green = yes)</span>
+    <div class="nb-chips" id="chips"></div>
+  </div>
+  <dl class="viz-readout">
+    <dt>Slice size</dt><dd id="r1-slice"></dd>
+    <dt>Whole number?</dt><dd><span id="r1-whole"></span></dd>
+    <dt>Clean splits, n = 1–36</dt><dd id="r1-clean"></dd>
+    <dt>Total divisors</dt><dd id="r1-divisors"></dd>
+  </dl>
+</section>
+
+<section class="nb-stack" data-view="2" hidden>
+  <h2 class="viz-panel__title">2 · The hexagon</h2>
+  <p class="nb-mb-0">Why six is built into every circle.</p>
+  <div class="nb-field">
+    <label class="nb-label" for="radius-range">Radius <output id="radius-out" for="radius-range">80%</output></label>
+    <input class="nb-range" id="radius-range" type="range" min="30" max="100" step="1" value="80">
+  </div>
+  <div class="nb-row">
+    <button class="nb-btn" type="button" id="step-btn">Step the compass</button>
+    <button class="nb-btn nb-btn--ghost" type="button" id="reset-btn">Reset</button>
+  </div>
+  <dl class="viz-readout">
+    <dt>Steps</dt><dd id="r2-steps"></dd>
+    <dt>Angle per triangle</dt><dd id="r2-angle"></dd>
+    <dt>Running total</dt><dd id="r2-total"></dd>
+    <dt>Gap after 6 steps</dt><dd id="r2-gap"></dd>
+  </dl>
+</section>
+
+<section class="nb-stack" data-view="3" hidden>
+  <h2 class="viz-panel__title">3 · The sky</h2>
+  <p class="nb-mb-0">The Sun's yearly trip around the sky.</p>
+  <div class="nb-field">
+    <label class="nb-label" for="day-range">Day <output id="day-out" for="day-range">0</output></label>
+    <input class="nb-range" id="day-range" type="range" min="0" max="365" step="1" value="0">
+  </div>
+  <div class="nb-row">
+    <button class="nb-btn" type="button" id="play-btn">Play</button>
+    <label class="nb-switch"><input type="checkbox" id="year360"> Use a 360-day year</label>
+  </div>
+  <dl class="viz-readout">
+    <dt>Day</dt><dd id="r3-day"></dd>
+    <dt>Degrees travelled</dt><dd id="r3-deg"></dd>
+    <dt>Degrees per day</dt><dd id="r3-perday"></dd>
+  </dl>
+</section>
+
+<section class="nb-stack" data-view="4" hidden>
+  <h2 class="viz-panel__title">4 · It's a convention</h2>
+  <p class="nb-mb-0">Same angle, four names.</p>
+  <div class="nb-field">
+    <label class="nb-label" for="theta-range">Angle, θ <output id="theta-out" for="theta-range">45°</output></label>
+    <input class="nb-range" id="theta-range" type="range" min="0" max="360" step="1" value="45">
+  </div>
+  <dl class="viz-readout">
+    <dt>Degrees</dt><dd id="r4-deg"></dd>
+    <dt>Gradians</dt><dd id="r4-grad"></dd>
+    <dt>Turns</dt><dd id="r4-turn"></dd>
+    <dt>Radians</dt><dd id="r4-rad"></dd>
+  </dl>
+</section>
+{% endblock %}
+
+{% block formula %}
+<div class="viz-formula" id="formula" aria-live="polite"></div>
+
+<div class="nb-callout nb-callout--note nb-mt-4" data-view="2" hidden>
+  <span class="nb-callout__label">History, not proof</span>
+  Babylonian astronomers counted in base 60, so six parts × 60 = 360 is the most widely accepted historical explanation. Historians still debate it.
+</div>
+<div class="nb-callout nb-callout--note nb-mt-4" data-view="3" hidden>
+  <span class="nb-callout__label">Plausible, not proven</span>
+  Some ancient calendars used 360 days plus extra festival days. The link to 360° is plausible but not proven.
+</div>
+<p class="nb-mt-4" data-view="4" hidden>Next: <a href="/trigonometry/angles-arcs/why-radians-are-the-natural-unit/">Why radians are the natural unit</a>, the angle unit that comes from the circle itself (coming soon).</p>
+{% endblock %}
+
+{% block why %}
+<div class="nb-callout nb-callout--why">
+  <span class="nb-callout__label">So why?</span>
+  Nothing in nature forces 360. It was chosen because it splits evenly so many ways (24 different group sizes, against 4 for 365), and it fits base-60 counting and the roughly 365-day year. Later, mathematicians found a unit that does come from the circle itself: the radian.
+</div>
+{% endblock %}
+
+{% block try %}
+<h2>Try this</h2>
+<ol>
+  <li>Find an n that works for 360 but fails for 100.</li>
+  <li>Switch to 365. How many sizes of group divide it evenly?</li>
+  <li>Shrink the circle in view 2. Does the hexagon still close?</li>
+  <li>In view 4, set a right angle and read all four units.</li>
+</ol>
+{% endblock %}
+
+{% block source %}Textbook: Barnett et al., Analytic Trigonometry, §1.1 Angles, Degrees, and Arcs.{% endblock %}
+
+{% block scripts %}<script type="module" src="{% static 'viz/tools/trigonometry/why-360-degrees.js' %}"></script>{% endblock %}
