@@ -118,6 +118,9 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   move the playhead; `at(samples, dt, t)` reads it. Tests compare it with an independent Python RK4 and the period integral.
 - Don't guess numbers for test expectations: the 170° period ratio is 2.44, not 2.2. Size plot windows from computed values.
 - At 360 px a tall stage is narrow: size bob strings by `min(stage.h·k, stage.w·k)`, or they swing off the edge.
+- `_wave-basics-math.js` has the Gaussian `pulse`/`pulseVel`/`energyCentre`, slinky `shift`/`densityRatio` (needs A·k < 1 so coils never
+  cross; the tool clamps A to 0.9/k), `airLayout`/`relay` (a seeded nested molecule list and a breadth-first "hand-off" chain, used to show
+  sound failing when air is removed), and `standing`. The sheet script does not load KaTeX, so formulas show as raw TeX there: that is normal.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -228,7 +231,7 @@ it reaches the front of the queue.
 | 94 | `trigonometry/polar-complex` | 11 | 1 | |
 | 95 | `oscillations-waves/the-simple-pendulum` | 6 | 1 | ✓ |
 | 96 | `exponentials-logs/exponential-growth` | 6 | 1 | |
-| 97 | `oscillations-waves/what-is-a-wave` | 4 | 1 | |
+| 97 | `oscillations-waves/what-is-a-wave` | 4 | 1 | ✓ |
 | 98 | `exponentials-logs/the-number-e` | 4 | 1 | |
 | 99 | `oscillations-waves/travelling-waves` | 6 | 1 | |
 | 100 | `exponentials-logs/logarithms` | 9 | 1 | |

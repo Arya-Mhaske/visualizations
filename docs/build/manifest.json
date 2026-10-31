@@ -1920,25 +1920,25 @@
 "archetype": "sim",
 "priority": 100,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/what-is-a-wave/transverse-versus-longitudinal": {
 "archetype": "sim",
 "priority": 100,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/what-is-a-wave/why-can-t-sound-cross-a-vacuum-when-light-can": {
 "archetype": "sim",
 "priority": 100,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/what-is-a-wave/the-stadium-wave": {
 "archetype": "sim",
 "priority": 100,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/why-does-y-a-sin-kx-t-move-right": {
 "archetype": "sim",
