@@ -2,7 +2,7 @@
 
 Paste everything below the line into a new Claude Code session. Change only the `TARGET:` line. It can be one box
 (`measurement-motion/units-measurement`), several boxes separated by commas, a whole subject (`optics`), or `next`
-(the next unticked boxes in the queue).
+(the next unticked boxes in the queue). To run many unattended, see `docs/build/run_targets.py` and `targets.txt`.
 
 ---
 
@@ -21,9 +21,10 @@ Build the MuskMelon tools for TARGET.
    - run `python manage.py smoke_tools --box <subject>/<box>`
    - run `python docs/build/sheet.py <subject>/<box>`, open `screenshots/sheet.png`, look at every stage, and fix what's wrong
    - do the same at 360 px: `python docs/build/sheet.py <subject>/<box> 360`
-   - run `python manage.py check`, then the whole of `python manage.py test`, then `collectstatic --no-input` with `DEBUG=False`
+   - run `python manage.py check`, then the whole of `python manage.py test`, then `DEBUG=False SECRET_KEY=x python manage.py collectstatic --no-input` in the Bash tool
    Do not commit if any of these fails.
 6. Tick the box in `PLAN.md`, add anything a later session should know to "Learned so far", and make one commit: `tools(<subject>/<box>): N tools live`. Never push.
+   Run one command per tool call, with no `cd` and no `&&`: unattended sessions may only run allowlisted commands.
 7. If context runs short, finish the current tool, leave the box uncommitted only if it is unfinished, and say exactly where to resume.
 
 End with a short report: boxes finished, tools live, anything skipped, library changes, and anything you are unsure teaches well.

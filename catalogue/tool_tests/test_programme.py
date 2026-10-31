@@ -23,6 +23,12 @@ def catalogue():
 
 
 class ProgrammeTests(SimpleTestCase):
+    def test_targets_are_real_and_listed_once(self):
+        lines = (BUILD / 'targets.txt').read_text(encoding='utf-8').splitlines()
+        targets = [line.split('#')[0].split()[0] for line in lines if line.split('#')[0].strip()]
+        self.assertEqual(len(targets), len(set(targets)))
+        self.assertLessEqual(set(targets), catalogue()[1])
+
     def test_manifest_covers_every_tool(self):
         manifest = json.loads((BUILD / 'manifest.json').read_text(encoding='utf-8'))
         self.assertEqual(set(manifest), catalogue()[0])

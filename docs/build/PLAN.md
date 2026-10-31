@@ -3,6 +3,7 @@
 Turns all 1,538 catalogue tools into live tools, following the CLAUDE.md §5 contract. Teaching starts August 2027.
 All work goes on branch `build/tools`. Nothing is ever pushed by Claude; Arya merges and pushes.
 The prompt for starting a session is in `docs/build/SESSION_PROMPT.md`; change only its `TARGET:` line.
+To run sessions unattended: `python docs/build/run_targets.py --count N`, working down `docs/build/targets.txt`.
 
 ## How to continue (for a fresh session)
 1. Read `CLAUDE.md` and this file. Run `python manage.py catalogue_status --todo`.
