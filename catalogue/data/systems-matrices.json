@@ -1,0 +1,553 @@
+{
+  "slug": "systems-matrices",
+  "title": "Systems & Matrices",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e",
+  "children": [
+    {
+      "slug": "linear-systems",
+      "title": "Linear Systems",
+      "sections": "S 12.1 · A 9.1–9.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-one-none-or-infinitely-many",
+          "title": "Why one, none or infinitely many?",
+          "tag": "WHY",
+          "summary": "Moves two lines: crossing, parallel or identical (spec below)",
+          "sections": "S 12.1 · A 9.1",
+          "extension": false,
+          "order": 1,
+          "spec": "Two lines: drag the slopes and intercepts; the solution counter shows 1, 0 or ∞. Algebra mirror: elimination run live; parallel lines produce 0 = 5, identical lines produce 0 = 0. Three planes: a 3D view of the same three cases plus 'pairwise crossings with no common point'. Determinant hint: det = 0 exactly when the lines are parallel or identical (see the determinants box).",
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-can-an-equation-have-no-solution-or-every-solution"
+          ]
+        },
+        {
+          "slug": "why-does-elimination-work",
+          "title": "Why does elimination work?",
+          "tag": "WHY",
+          "summary": "Adds equations; the new line still passes through the same intersection",
+          "sections": "S 12.1 · A 9.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "three-equations-three-planes",
+          "title": "Three equations = three planes",
+          "tag": "WHY",
+          "summary": "Rotates three planes in 3D: a point, a line, or no common point",
+          "sections": "S 12.1 · A 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "substitution-versus-elimination",
+          "title": "Substitution versus elimination",
+          "tag": "HOW",
+          "summary": "Solves one system both ways",
+          "sections": "S 12.1 · A 9.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "systems-matrices/linear-systems/why-does-elimination-work"
+          ]
+        },
+        {
+          "slug": "ticket-and-mixture-problems",
+          "title": "Ticket and mixture problems",
+          "tag": "APP",
+          "summary": "Turns the story into two equations",
+          "sections": "S 12.1 · A 9.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "systems-matrices/linear-systems/three-equations-three-planes"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "matrices-row-reduction",
+      "title": "Matrices & Row Reduction",
+      "sections": "S 12.2 · A 10.1",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-a-matrix-just-the-equations",
+          "title": "Why is a matrix just the equations?",
+          "tag": "WHY",
+          "summary": "Strips out the letters and keeps the numbers in place",
+          "sections": "S 12.2 · A 10.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-don-t-row-operations-change-the-answer",
+          "title": "Why don't row operations change the answer?",
+          "tag": "WHY",
+          "summary": "Sees each operation as a legal move on the equations, with the solution point fixed",
+          "sections": "S 12.2 · A 10.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "row-reduction-stepper",
+          "title": "Row-reduction stepper",
+          "tag": "HOW",
+          "summary": "Reaches echelon form one operation at a time",
+          "sections": "S 12.2 · A 10.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/matrices-row-reduction/why-don-t-row-operations-change-the-answer"
+          ]
+        },
+        {
+          "slug": "spot-inconsistent-and-dependent-systems",
+          "title": "Spot inconsistent and dependent systems",
+          "tag": "HOW",
+          "summary": "Reads a 0 = 1 row or a free variable",
+          "sections": "S 12.2 · A 10.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "systems-matrices/matrices-row-reduction/why-don-t-row-operations-change-the-answer"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "matrix-algebra",
+      "title": "Matrix Algebra",
+      "sections": "S 12.4 · A 10.2–10.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-row-times-column",
+          "title": "Why 'row times column'?",
+          "tag": "WHY",
+          "summary": "Substitutes one linear system into another; the product appears (Cayley's original reason)",
+          "sections": "S 12.4 hist · A 10.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-ab-not-ba",
+          "title": "Why is AB not BA?",
+          "tag": "WHY",
+          "summary": "Applies 'rotate then shear' versus 'shear then rotate' to a square",
+          "sections": "—",
+          "extension": true,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-some-matrices-have-no-inverse",
+          "title": "Why do some matrices have no inverse?",
+          "tag": "WHY",
+          "summary": "Watches a matrix squash the plane onto a line, which can't be undone",
+          "sections": "S 12.4 · A 10.3",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-ab-prime-b-primea-prime-reverse-the-order",
+          "title": "Why does (AB)′ = B′A′ reverse the order?",
+          "tag": "WHY",
+          "summary": "Transposes a product entry by entry and sees row i of A meet column j of B swap roles",
+          "sections": "MXII 3.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/combining-inverting/why-undo-in-reverse-order"
+          ]
+        },
+        {
+          "slug": "why-does-every-square-matrix-split-into-symmetric-skew-symme",
+          "title": "Why does every square matrix split into symmetric + skew-symmetric parts?",
+          "tag": "WHY",
+          "summary": "Averages A with its mirror A′ to get the symmetric part ½(A + A′); the leftover ½(A − A′) flips sign when mirrored, so its diagonal is 0",
+          "sections": "MXII 3.5",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "multiply-matrices-step-by-step",
+          "title": "Multiply matrices step by step",
+          "tag": "HOW",
+          "summary": "Highlights each row–column pair",
+          "sections": "S 12.4 · A 10.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-row-times-column"
+          ]
+        },
+        {
+          "slug": "inverse-by-a-i",
+          "title": "Inverse by [A | I]",
+          "tag": "HOW",
+          "summary": "Row-reduces to get A⁻¹, then solves AX = B",
+          "sections": "S 12.4 · A 10.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-do-some-matrices-have-no-inverse",
+            "functions-graphs/combining-inverting/find-an-inverse-algebraically"
+          ]
+        },
+        {
+          "slug": "matrix-types-spotter",
+          "title": "Matrix types spotter",
+          "tag": "HOW",
+          "summary": "Sorts matrices into row, column, square, diagonal, scalar, identity and zero",
+          "sections": "MXII 3.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-does-every-square-matrix-split-into-symmetric-skew-symme"
+          ]
+        },
+        {
+          "slug": "matrix-secret-codes",
+          "title": "Matrix secret codes",
+          "tag": "APP",
+          "summary": "Encodes a message with a matrix and decodes it with the inverse",
+          "sections": "A 10.3",
+          "extension": true,
+          "order": 9,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-do-some-matrices-have-no-inverse"
+          ]
+        },
+        {
+          "slug": "a-shop-s-bill-as-a-matrix-product",
+          "title": "A shop's bill as a matrix product",
+          "tag": "APP",
+          "summary": "Multiplies a quantities matrix by a price matrix to total several customers' bills at once",
+          "sections": "MXII 3.4",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-row-times-column",
+            "systems-matrices/matrix-algebra/why-does-every-square-matrix-split-into-symmetric-skew-symme"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "determinants-cramer",
+      "title": "Determinants & Cramer",
+      "sections": "S 12.3 · A 10.4–10.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-the-determinant-an-area",
+          "title": "Why is the determinant an area?",
+          "tag": "WHY",
+          "summary": "Sees the columns span a parallelogram whose area is |det|",
+          "sections": "—",
+          "extension": true,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-det-0-mean-trouble",
+          "title": "Why does det = 0 mean trouble?",
+          "tag": "WHY",
+          "summary": "Sees zero area means flattened, so no unique solution",
+          "sections": "S 12.3 · A 10.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-cramer-s-rule-work",
+          "title": "Why does Cramer's rule work?",
+          "tag": "WHY",
+          "summary": "Swaps a column and compares areas",
+          "sections": "S 12.3 · A 10.5",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-adj-a-a-i",
+          "title": "Why is A (adj A) = |A| I?",
+          "tag": "WHY",
+          "summary": "Multiplies a row by its own cofactors (gives |A|) and by another row's cofactors (gives 0: the determinant of a matrix with two equal rows)",
+          "sections": "MXII 4.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-ab-a-b",
+          "title": "Why is |AB| = |A| |B|?",
+          "tag": "WHY",
+          "summary": "Applies two area-scalings one after another: the factors multiply",
+          "sections": "MXII 4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-the-determinant-an-area"
+          ]
+        },
+        {
+          "slug": "2-2-and-3-3-determinants",
+          "title": "2 × 2 and 3 × 3 determinants",
+          "tag": "HOW",
+          "summary": "Expands by minors with the signs shown",
+          "sections": "S 12.3 · A 10.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-the-determinant-an-area"
+          ]
+        },
+        {
+          "slug": "cramer-s-rule-solver",
+          "title": "Cramer's rule solver",
+          "tag": "HOW",
+          "summary": "Solves 2- and 3-variable systems",
+          "sections": "S 12.3 · A 10.5",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-does-cramer-s-rule-work",
+            "exponentials-logs/exp-log-equations/step-by-step-solver"
+          ]
+        },
+        {
+          "slug": "minors-cofactors-and-the-adjoint",
+          "title": "Minors, cofactors and the adjoint",
+          "tag": "HOW",
+          "summary": "Builds adj A and then A⁻¹ = adj A / |A| for a 3 × 3 matrix",
+          "sections": "MXII 4.4–4.5",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-a-adj-a-a-i"
+          ]
+        },
+        {
+          "slug": "solve-ax-b-by-x-a1b",
+          "title": "Solve AX = B by X = A⁻¹B",
+          "tag": "HOW",
+          "summary": "Decides consistent or inconsistent from |A| and (adj A)B, then solves",
+          "sections": "MXII 4.6",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-does-det-0-mean-trouble",
+            "systems-matrices/determinants-cramer/why-is-a-adj-a-a-i"
+          ]
+        },
+        {
+          "slug": "collinear-points-zero-area",
+          "title": "Collinear points: zero area",
+          "tag": "HOW",
+          "summary": "Shows three points are collinear when the area determinant is 0",
+          "sections": "MXII 4.3",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-the-determinant-an-area"
+          ]
+        },
+        {
+          "slug": "triangle-area-from-coordinates",
+          "title": "Triangle area from coordinates",
+          "tag": "APP",
+          "summary": "Uses ½|det| with three dragged vertices",
+          "sections": "S 12.3 · A 10.4",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-the-determinant-an-area"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nonlinear-systems",
+      "title": "Nonlinear Systems",
+      "sections": "S 12.6 · A 9.3",
+      "order": 5,
+      "children": [
+        {
+          "slug": "how-many-times-can-two-curves-meet",
+          "title": "How many times can two curves meet?",
+          "tag": "WHY",
+          "summary": "Moves a line across a circle (0, 1, 2 meetings) and two conics (up to 4, as Bézout predicted)",
+          "sections": "S 12.6 hist · A 9.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "solve-nonlinear-systems",
+          "title": "Solve nonlinear systems",
+          "tag": "HOW",
+          "summary": "Uses substitution or elimination with a graph check",
+          "sections": "S 12.6 · A 9.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "systems-matrices/nonlinear-systems/how-many-times-can-two-curves-meet",
+            "systems-matrices/linear-systems/substitution-versus-elimination"
+          ]
+        },
+        {
+          "slug": "rectangle-from-its-area-and-perimeter",
+          "title": "Rectangle from its area and perimeter",
+          "tag": "APP",
+          "summary": "Intersects xy = A with 2x + 2y = P",
+          "sections": "S 12.6 · A 9.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/nonlinear-systems/how-many-times-can-two-curves-meet"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "partial-fractions",
+      "title": "Partial Fractions",
+      "sections": "S 12.5 · A 9.4",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-break-a-fraction-apart",
+          "title": "Why break a fraction apart?",
+          "tag": "WHY",
+          "summary": "Reverses fraction addition: the graph equals the sum of simple pieces",
+          "sections": "S 12.5 · A 9.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-repeated-factors-need-extra-terms",
+          "title": "Why do repeated factors need extra terms?",
+          "tag": "WHY",
+          "summary": "Tries without them and fails to match",
+          "sections": "S 12.5 · A 9.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "decomposition-stepper",
+          "title": "Decomposition stepper",
+          "tag": "HOW",
+          "summary": "Covers the four cases: linear, repeated, quadratic and repeated quadratic factors",
+          "sections": "S 12.5 · A 9.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/partial-fractions/why-do-repeated-factors-need-extra-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "inequalities-linear-programming",
+      "title": "Inequalities & Linear Programming",
+      "sections": "S 12.7–12.8 · A 9.5–9.6",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-a-linear-inequality-shade-a-half-plane",
+          "title": "Why does a linear inequality shade a half-plane?",
+          "tag": "WHY",
+          "summary": "Tests a point; one side of the line is all-true",
+          "sections": "S 12.7 · A 9.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-best-answer-at-a-corner",
+          "title": "Why is the best answer at a corner?",
+          "tag": "WHY",
+          "summary": "Slides the profit line across the feasible region; it leaves at a vertex",
+          "sections": "S 12.8 · A 9.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-can-an-unbounded-region-still-have-a-minimum",
+          "title": "Why can an unbounded region still have a minimum?",
+          "tag": "WHY",
+          "summary": "Slides the objective line Z = k outward and checks whether the half-plane Z < k meets the region",
+          "sections": "MXII 12.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner"
+          ]
+        },
+        {
+          "slug": "graph-a-system-of-inequalities",
+          "title": "Graph a system of inequalities",
+          "tag": "HOW",
+          "summary": "Overlaps shaded regions to get the feasible region",
+          "sections": "S 12.7 · A 9.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner"
+          ]
+        },
+        {
+          "slug": "corner-point-method-stepper",
+          "title": "Corner-point method stepper",
+          "tag": "HOW",
+          "summary": "Finds the vertices, evaluates Z at each and checks the unbounded case",
+          "sections": "MXII 12.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner"
+          ]
+        },
+        {
+          "slug": "factory-production-plan",
+          "title": "Factory production plan",
+          "tag": "APP",
+          "summary": "Maximises profit under machine-hour limits",
+          "sections": "S 12.8 · A 9.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner"
+          ]
+        },
+        {
+          "slug": "the-diet-problem",
+          "title": "The diet problem",
+          "tag": "APP",
+          "summary": "Minimises cost while meeting vitamin needs from two foods",
+          "sections": "MXII 12.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner",
+            "numbers-algebra/quadratic-equations/a-babylonian-problem-solved-with-geometry"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 7
+}

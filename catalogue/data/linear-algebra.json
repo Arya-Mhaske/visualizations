@@ -1,0 +1,818 @@
+{
+  "slug": "linear-algebra",
+  "title": "Linear Algebra",
+  "source": "Strang, Introduction to Linear Algebra 5e",
+  "order": 18,
+  "children": [
+    {
+      "slug": "vectors-combinations",
+      "title": "Vectors & Combinations",
+      "sections": "Sg 1.1–1.3",
+      "order": 1,
+      "children": [
+        {
+          "slug": "what-can-you-reach-with-cu-dv",
+          "title": "What can you reach with cu + dv?",
+          "tag": "WHY",
+          "summary": "Drags the sliders c and d: two independent vectors fill the plane, two parallel ones only a line (spec below)",
+          "sections": "Sg 1.1",
+          "extension": false,
+          "order": 1,
+          "spec": "Combine: drag c and d; the tip of cu + dv paints the set of reachable points. Independent versus dependent: rotate v onto u's line and the painted plane collapses to a line. Three vectors in 3D: add w; it either fills space or stays in the plane of u and v. Link: the same picture is the column space of the matrix [u v w].",
+          "aids": []
+        },
+        {
+          "slug": "why-is-v-w-v-w-cos-theta",
+          "title": "Why is v · w = |v||w| cos θ?",
+          "tag": "WHY",
+          "summary": "Rotates w around v; the dot product tracks the shadow length (see Trigonometry → Vectors)",
+          "sections": "Sg 1.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/vectors",
+            "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b"
+          ]
+        },
+        {
+          "slug": "why-can-t-v-w-exceed-v-w",
+          "title": "Why can't |v · w| exceed |v||w|?",
+          "tag": "WHY",
+          "summary": "Sees the shadow can never be longer than the vector (Schwarz inequality)",
+          "sections": "Sg 1.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-ax-a-combination-of-a-s-columns",
+          "title": "Why is Ax a combination of A's columns?",
+          "tag": "WHY",
+          "summary": "Multiplies by columns: x₁ × column 1 + x₂ × column 2",
+          "sections": "Sg 1.3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "unit-vectors-and-normalising",
+          "title": "Unit vectors and normalising",
+          "tag": "HOW",
+          "summary": "Divides by the length and sees the arrow land on the unit circle",
+          "sections": "Sg 1.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/vectors-combinations/why-is-v-w-v-w-cos-theta",
+            "trigonometry/vectors/unit-vectors-and-direction",
+            "trigonometry/unit-circle/why-sin2theta-cos2theta-1"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "elimination-lu",
+      "title": "Elimination & LU",
+      "sections": "Sg 2.1–2.3, 2.6–2.7, 11.1",
+      "order": 2,
+      "children": [
+        {
+          "slug": "row-picture-versus-column-picture",
+          "title": "Row picture versus column picture",
+          "tag": "WHY",
+          "summary": "Sees the same 2 × 2 system as two crossing lines, or as a combination of columns reaching b",
+          "sections": "Sg 2.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "linear-algebra/vectors-combinations/why-is-ax-a-combination-of-a-s-columns"
+          ]
+        },
+        {
+          "slug": "why-does-elimination-fail-and-when-does-a-row-swap-rescue-it",
+          "title": "Why does elimination fail, and when does a row swap rescue it?",
+          "tag": "WHY",
+          "summary": "Hits a zero pivot; a swap fixes it unless the matrix is singular",
+          "sections": "Sg 2.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-elimination-the-same-as-a-lu",
+          "title": "Why is elimination the same as A = LU?",
+          "tag": "WHY",
+          "summary": "Records each multiplier and finds they fill L exactly",
+          "sections": "Sg 2.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/linear-systems/substitution-versus-elimination",
+            "systems-matrices/linear-systems/why-does-elimination-work"
+          ]
+        },
+        {
+          "slug": "elimination-matrices",
+          "title": "Elimination matrices",
+          "tag": "HOW",
+          "summary": "Multiplies by E₂₁, E₃₁, E₃₂ and watches A become U",
+          "sections": "Sg 2.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/elimination-lu/why-is-elimination-the-same-as-a-lu",
+            "systems-matrices/linear-systems/substitution-versus-elimination",
+            "systems-matrices/linear-systems/why-does-elimination-work"
+          ]
+        },
+        {
+          "slug": "transposes-and-permutations",
+          "title": "Transposes and permutations",
+          "tag": "HOW",
+          "summary": "Flips across the diagonal and reorders rows with P",
+          "sections": "Sg 2.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/elimination-lu/why-is-elimination-the-same-as-a-lu"
+          ]
+        },
+        {
+          "slug": "why-do-computers-pick-the-largest-pivot",
+          "title": "Why do computers pick the largest pivot?",
+          "tag": "APP",
+          "summary": "Solves a system with a tiny pivot and watches rounding error explode (partial pivoting)",
+          "sections": "Sg 11.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "linear-algebra/elimination-lu/why-does-elimination-fail-and-when-does-a-row-swap-rescue-it"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "matrix-multiplication-inverses",
+      "title": "Matrix Multiplication & Inverses",
+      "sections": "Sg 2.4–2.5",
+      "order": 3,
+      "children": [
+        {
+          "slug": "four-ways-to-multiply-ab",
+          "title": "Four ways to multiply AB",
+          "tag": "WHY",
+          "summary": "Sees AB as row·column, A × columns, rows × B, and a sum of column × row pieces, all giving the same answer",
+          "sections": "Sg 2.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "systems-matrices/matrix-algebra/multiply-matrices-step-by-step",
+            "systems-matrices/determinants-cramer/why-is-ab-a-b"
+          ]
+        },
+        {
+          "slug": "why-is-ab-1-b1a1",
+          "title": "Why is (AB)⁻¹ = B⁻¹A⁻¹?",
+          "tag": "WHY",
+          "summary": "Undoes the last operation first: socks and shoes",
+          "sections": "Sg 2.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/combining-inverting/why-is-fg-not-gf"
+          ]
+        },
+        {
+          "slug": "why-does-a-zero-combination-of-columns-kill-the-inverse",
+          "title": "Why does a zero combination of columns kill the inverse?",
+          "tag": "WHY",
+          "summary": "Finds Ax = 0 with x ≠ 0, so no inverse can bring back x",
+          "sections": "Sg 2.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/vectors-combinations/why-is-ax-a-combination-of-a-s-columns"
+          ]
+        },
+        {
+          "slug": "gaussjordan-for-a1",
+          "title": "Gauss–Jordan for A⁻¹",
+          "tag": "HOW",
+          "summary": "Row-reduces [A I] to [I A⁻¹] (see Systems & Matrices → Matrix Algebra)",
+          "sections": "Sg 2.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "systems-matrices/matrix-algebra",
+            "linear-algebra/matrix-multiplication-inverses/four-ways-to-multiply-ab"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-four-subspaces",
+      "title": "The Four Subspaces",
+      "sections": "Sg 3.1–3.5, 4.1",
+      "order": 4,
+      "children": [
+        {
+          "slug": "what-is-a-subspace",
+          "title": "What is a subspace?",
+          "tag": "WHY",
+          "summary": "Tests lines and planes through the origin versus ones that miss it; closure under + and × decides",
+          "sections": "Sg 3.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-every-solution-of-ax-b-particular-nullspace",
+          "title": "Why is every solution of Ax = b = particular + nullspace?",
+          "tag": "WHY",
+          "summary": "Slides the nullspace line through one particular solution",
+          "sections": "Sg 3.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "differential-equations/what-is-a-differential-equation/general-or-particular-solution",
+            "differential-equations/second-order-equations/undetermined-coefficients-and-variation-of-parameters"
+          ]
+        },
+        {
+          "slug": "why-do-independent-columns-mean-a-unique-solution",
+          "title": "Why do independent columns mean a unique solution?",
+          "tag": "WHY",
+          "summary": "Adds a dependent column and sees a whole line of solutions appear",
+          "sections": "Sg 3.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-does-det-0-mean-trouble"
+          ]
+        },
+        {
+          "slug": "why-is-the-dimension-the-number-of-pivots",
+          "title": "Why is the dimension the number of pivots?",
+          "tag": "WHY",
+          "summary": "Reduces to R and counts the pivot and free columns: r + (n − r) = n",
+          "sections": "Sg 3.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-row-space-the-nullspace",
+          "title": "Why is the row space ⟂ the nullspace?",
+          "tag": "WHY",
+          "summary": "Sees Ax = 0 means x is orthogonal to every row: the big picture of the four subspaces",
+          "sections": "Sg 4.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/elimination-lu/row-picture-versus-column-picture"
+          ]
+        },
+        {
+          "slug": "find-all-four-subspaces",
+          "title": "Find all four subspaces",
+          "tag": "HOW",
+          "summary": "Takes a 3 × 4 matrix to its bases for C(A), N(A), C(Aᵀ) and N(Aᵀ)",
+          "sections": "Sg 3.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "linear-algebra/the-four-subspaces/why-is-the-row-space-the-nullspace"
+          ]
+        },
+        {
+          "slug": "basis-and-dimension",
+          "title": "Basis and dimension",
+          "tag": "HOW",
+          "summary": "Picks bases for a plane in many ways; the count stays 2",
+          "sections": "Sg 3.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "linear-algebra/the-four-subspaces/why-is-the-dimension-the-number-of-pivots"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "orthogonality-projections",
+      "title": "Orthogonality & Projections",
+      "sections": "Sg 4.2, 4.4",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-projection-the-closest-point",
+          "title": "Why is projection the closest point?",
+          "tag": "WHY",
+          "summary": "Drops a perpendicular from b onto a line and onto a plane; the error is ⟂ the target",
+          "sections": "Sg 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-p2-p",
+          "title": "Why is P² = P?",
+          "tag": "WHY",
+          "summary": "Projects twice and nothing more moves",
+          "sections": "Sg 4.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-orthonormal-bases-make-everything-easy",
+          "title": "Why do orthonormal bases make everything easy?",
+          "tag": "WHY",
+          "summary": "Sees Qᵀ = Q⁻¹ and coordinates become dot products",
+          "sections": "Sg 4.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "gramschmidt",
+          "title": "Gram–Schmidt",
+          "tag": "HOW",
+          "summary": "Straightens a skewed basis one vector at a time",
+          "sections": "Sg 4.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/orthogonality-projections/why-is-projection-the-closest-point"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "least-squares",
+      "title": "Least Squares",
+      "sections": "Sg 4.3, 12.3",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-atax-atb-give-the-best-fit",
+          "title": "Why does AᵀAx̂ = Aᵀb give the best fit?",
+          "tag": "WHY",
+          "summary": "Sees no exact solution exists, so it projects b onto the column space (see Functions & Graphs → Modelling with Data)",
+          "sections": "Sg 4.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/modelling-with-data"
+          ]
+        },
+        {
+          "slug": "why-are-the-errors-the-columns",
+          "title": "Why are the errors ⟂ the columns?",
+          "tag": "WHY",
+          "summary": "Checks that the residual is orthogonal to the 1s column and the x column",
+          "sections": "Sg 4.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "linear-algebra/vectors-combinations/why-is-ax-a-combination-of-a-s-columns"
+          ]
+        },
+        {
+          "slug": "fit-lines-and-parabolas",
+          "title": "Fit lines and parabolas",
+          "tag": "HOW",
+          "summary": "Fits several models by least squares and compares the errors",
+          "sections": "Sg 4.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/least-squares/why-does-atax-atb-give-the-best-fit",
+            "functions-graphs/modelling-with-data/why-does-best-fit-mean-least-squares"
+          ]
+        },
+        {
+          "slug": "weighted-least-squares",
+          "title": "Weighted least squares",
+          "tag": "APP",
+          "summary": "Trusts some measurements more by weighting them",
+          "sections": "Sg 12.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/least-squares/why-does-atax-atb-give-the-best-fit",
+            "functions-graphs/modelling-with-data/why-does-best-fit-mean-least-squares"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "determinants",
+      "title": "Determinants",
+      "sections": "Sg 5.1–5.3",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-det-the-volume-scale-factor",
+          "title": "Why is det the volume scale factor?",
+          "tag": "WHY",
+          "summary": "Watches a unit square or cube transform into a parallelogram or box (see Systems & Matrices → Determinants)",
+          "sections": "Sg 5.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "systems-matrices/determinants-cramer",
+            "multivariable/triple-integrals-coordinates/why-does-the-jacobian-scale-areas"
+          ]
+        },
+        {
+          "slug": "why-do-the-three-basic-properties-decide-everything",
+          "title": "Why do the three basic properties decide everything?",
+          "tag": "WHY",
+          "summary": "Derives det from det I = 1, the sign flip on a row swap, and linearity in each row",
+          "sections": "Sg 5.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-det-ab-det-a-det-b",
+          "title": "Why is det(AB) = det A · det B?",
+          "tag": "WHY",
+          "summary": "Composes two area-scalings",
+          "sections": "Sg 5.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/determinants-cramer/why-is-ab-a-b"
+          ]
+        },
+        {
+          "slug": "permutations-and-cofactors",
+          "title": "Permutations and cofactors",
+          "tag": "HOW",
+          "summary": "Expands the big formula with signs",
+          "sections": "Sg 5.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/determinants/why-is-det-the-volume-scale-factor"
+          ]
+        },
+        {
+          "slug": "cramer-s-rule-and-a1-from-cofactors",
+          "title": "Cramer's rule and A⁻¹ from cofactors",
+          "tag": "HOW",
+          "summary": "Sees each formula as a ratio of determinants",
+          "sections": "Sg 5.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/determinants/why-is-det-the-volume-scale-factor",
+            "systems-matrices/determinants-cramer/why-does-cramer-s-rule-work",
+            "systems-matrices/determinants-cramer/cramer-s-rule-solver"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eigenvalues",
+      "title": "Eigenvalues",
+      "sections": "Sg 6.1–6.3",
+      "order": 8,
+      "children": [
+        {
+          "slug": "which-vectors-keep-their-direction",
+          "title": "Which vectors keep their direction?",
+          "tag": "WHY",
+          "summary": "Spins a vector around while A acts; eigenvectors only stretch (spec below)",
+          "sections": "Sg 6.1",
+          "extension": false,
+          "order": 1,
+          "spec": "Sweep: a vector x rotates around the unit circle while Ax is drawn; the two line up only at eigenvectors. Ellipse: the whole circle maps to an ellipse; for symmetric A its axes are the eigenvectors. Powers: apply A repeatedly and any vector turns toward the dominant eigenvector. Cases: shear (one eigenvector), rotation (no real ones) and projection (λ = 0 and 1).",
+          "aids": []
+        },
+        {
+          "slug": "why-is-det-a-i-0-the-eigenvalue-test",
+          "title": "Why is det(A − λI) = 0 the eigenvalue test?",
+          "tag": "WHY",
+          "summary": "Sees A − λI must squash some vector to 0",
+          "sections": "Sg 6.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-powers-ak-become-easy",
+          "title": "Why do powers Aᵏ become easy?",
+          "tag": "WHY",
+          "summary": "Diagonalises A = XΛX⁻¹, so Aᵏ = XΛᵏX⁻¹",
+          "sections": "Sg 6.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/orthogonality-projections/why-do-orthonormal-bases-make-everything-easy"
+          ]
+        },
+        {
+          "slug": "why-do-fibonacci-numbers-grow-like-1-618n",
+          "title": "Why do Fibonacci numbers grow like 1.618ⁿ?",
+          "tag": "WHY",
+          "summary": "Writes the recurrence as a 2 × 2 matrix; its larger eigenvalue is the golden ratio",
+          "sections": "Sg 6.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "find-eigenvalues-and-eigenvectors",
+          "title": "Find eigenvalues and eigenvectors",
+          "tag": "HOW",
+          "summary": "Uses trace and determinant shortcuts for 2 × 2",
+          "sections": "Sg 6.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/eigenvalues/which-vectors-keep-their-direction"
+          ]
+        },
+        {
+          "slug": "systems-of-differential-equations",
+          "title": "Systems of differential equations",
+          "tag": "APP",
+          "summary": "Solves du/dt = Au with e^(λt) modes (see Differential Equations)",
+          "sections": "Sg 6.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "linear-algebra/eigenvalues/why-is-det-a-i-0-the-eigenvalue-test"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "symmetric-positive-definite",
+      "title": "Symmetric & Positive Definite",
+      "sections": "Sg 6.4–6.5",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-do-symmetric-matrices-have-perpendicular-eigenvectors",
+          "title": "Why do symmetric matrices have perpendicular eigenvectors?",
+          "tag": "WHY",
+          "summary": "Sees a symmetric map stretch along orthogonal axes, so the circle becomes an aligned ellipse",
+          "sections": "Sg 6.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-positive-definite-a-bowl",
+          "title": "Why is 'positive definite' a bowl?",
+          "tag": "WHY",
+          "summary": "Plots xᵀAx as a surface: bowl, saddle or trough (see Multivariable Calculus → Max, Min & Lagrange)",
+          "sections": "Sg 6.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "multivariable/max-min-lagrange"
+          ]
+        },
+        {
+          "slug": "five-tests-for-positive-definite",
+          "title": "Five tests for positive definite",
+          "tag": "HOW",
+          "summary": "Checks eigenvalues, pivots, upper-left determinants, energy and AᵀA",
+          "sections": "Sg 6.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/symmetric-positive-definite/why-is-positive-definite-a-bowl"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "svd-pca",
+      "title": "SVD & PCA",
+      "sections": "Sg 7.1–7.4",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-is-every-matrix-rotate-stretch-rotate",
+          "title": "Why is every matrix rotate → stretch → rotate?",
+          "tag": "WHY",
+          "summary": "Watches the unit circle become an ellipse in three moves: A = UΣVᵀ",
+          "sections": "Sg 7.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-can-a-few-singular-values-rebuild-an-image",
+          "title": "Why can a few singular values rebuild an image?",
+          "tag": "WHY",
+          "summary": "Keeps rank k of a photo and watches it sharpen as k grows",
+          "sections": "Sg 7.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "bases-in-the-svd",
+          "title": "Bases in the SVD",
+          "tag": "HOW",
+          "summary": "Finds the v's and u's from AᵀA and AAᵀ",
+          "sections": "Sg 7.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/svd-pca/why-is-every-matrix-rotate-stretch-rotate",
+            "linear-algebra/orthogonality-projections/why-do-orthonormal-bases-make-everything-easy"
+          ]
+        },
+        {
+          "slug": "principal-component-analysis",
+          "title": "Principal component analysis",
+          "tag": "APP",
+          "summary": "Finds the direction of most spread in a cloud of data points",
+          "sections": "Sg 7.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/svd-pca/why-is-every-matrix-rotate-stretch-rotate"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "transformations-good-bases",
+      "title": "Transformations & Good Bases",
+      "sections": "Sg 8.1–8.3, 9.1–9.3",
+      "order": 11,
+      "children": [
+        {
+          "slug": "what-makes-a-transformation-linear",
+          "title": "What makes a transformation linear?",
+          "tag": "WHY",
+          "summary": "Tests T(cu + dv) = cT(u) + dT(v) on rotations, shears and translations; translation fails",
+          "sections": "Sg 8.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-every-linear-map-have-a-matrix",
+          "title": "Why does every linear map have a matrix?",
+          "tag": "WHY",
+          "summary": "Records where the basis vectors go; those images are the columns",
+          "sections": "Sg 8.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-good-basis-make-the-matrix-simple",
+          "title": "Why does a good basis make the matrix simple?",
+          "tag": "WHY",
+          "summary": "Changes to the eigenvector basis and the matrix turns diagonal",
+          "sections": "Sg 8.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "hermitian-and-unitary-matrices",
+          "title": "Hermitian and unitary matrices",
+          "tag": "HOW",
+          "summary": "Sees the complex versions of symmetric and orthogonal",
+          "sections": "Sg 9.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/transformations-good-bases/why-does-every-linear-map-have-a-matrix",
+            "linear-algebra/symmetric-positive-definite/why-do-symmetric-matrices-have-perpendicular-eigenvectors",
+            "linear-algebra/elimination-lu/elimination-matrices"
+          ]
+        },
+        {
+          "slug": "the-fast-fourier-transform",
+          "title": "The fast Fourier transform",
+          "tag": "APP",
+          "summary": "Sees why splitting in halves turns n² work into n log n",
+          "sections": "Sg 9.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "linear-algebra/transformations-good-bases/why-does-a-good-basis-make-the-matrix-simple"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "applications",
+      "title": "Applications",
+      "sections": "Sg 10.1–10.7, 11.2–11.3, 12.1–12.2",
+      "order": 12,
+      "children": [
+        {
+          "slug": "why-does-a-markov-chain-settle-down",
+          "title": "Why does a Markov chain settle down?",
+          "tag": "WHY",
+          "summary": "Repeats a transition matrix; λ = 1 gives the steady state and the other eigenvalues fade",
+          "sections": "Sg 10.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-ill-conditioned-systems-dangerous",
+          "title": "Why are ill-conditioned systems dangerous?",
+          "tag": "WHY",
+          "summary": "Nudges b slightly in a nearly singular system and watches x jump (condition number)",
+          "sections": "Sg 11.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "graphs-and-networks",
+          "title": "Graphs and networks",
+          "tag": "APP",
+          "summary": "Builds an incidence matrix and solves for currents on a small network",
+          "sections": "Sg 10.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down"
+          ]
+        },
+        {
+          "slug": "springs-and-trusses-k-atca",
+          "title": "Springs and trusses: K = AᵀCA",
+          "tag": "APP",
+          "summary": "Sees the stiffness matrix assembled from springs in a line",
+          "sections": "Sg 10.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down"
+          ]
+        },
+        {
+          "slug": "fourier-series-as-linear-algebra",
+          "title": "Fourier series as linear algebra",
+          "tag": "APP",
+          "summary": "Treats sines as orthogonal 'vectors' for functions (see Trigonometry → Waves & Oscillations)",
+          "sections": "Sg 10.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/waves-oscillations",
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down"
+          ]
+        },
+        {
+          "slug": "computer-graphics-with-4-x-4-matrices",
+          "title": "Computer graphics with 4 × 4 matrices",
+          "tag": "APP",
+          "summary": "Uses homogeneous coordinates so translation becomes a matrix",
+          "sections": "Sg 10.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down",
+            "linear-algebra/transformations-good-bases/hermitian-and-unitary-matrices"
+          ]
+        },
+        {
+          "slug": "matrix-cryptography",
+          "title": "Matrix cryptography",
+          "tag": "APP",
+          "summary": "Encodes and decodes with a matrix mod 26",
+          "sections": "Sg 10.7",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down",
+            "systems-matrices/matrix-algebra/matrix-secret-codes",
+            "systems-matrices/matrix-algebra/a-shop-s-bill-as-a-matrix-product"
+          ]
+        },
+        {
+          "slug": "covariance-matrices",
+          "title": "Covariance matrices",
+          "tag": "APP",
+          "summary": "Sees how two measurements vary together, drawn as an ellipse",
+          "sections": "Sg 12.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "linear-algebra/applications/why-does-a-markov-chain-settle-down",
+            "linear-algebra/transformations-good-bases/hermitian-and-unitary-matrices"
+          ]
+        }
+      ]
+    }
+  ]
+}

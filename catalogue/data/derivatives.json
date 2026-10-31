@@ -1,0 +1,674 @@
+{
+  "slug": "derivatives",
+  "title": "Derivatives",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "what-is-a-derivative",
+      "title": "What is a Derivative?",
+      "sections": "St 2.1–2.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-the-derivative-the-slope-you-see-when-you-zoom-in",
+          "title": "Why is the derivative the slope you see when you zoom in?",
+          "tag": "WHY",
+          "summary": "Zooms into a smooth curve until it looks straight; that straight line's slope is f′(a) (spec below)",
+          "sections": "St 2.1",
+          "extension": false,
+          "spec": "Zoom: a microscope on y = x² at a = 1; each ×10 zoom makes the curve straighter. Read: the zoomed line's slope is measured live and converges to 2. Corner: the same microscope on |x| at 0 never straightens. Link: the difference-quotient secant overlaid, with h tied to the zoom level.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-derivative-a-rate-of-change",
+          "title": "Why is a derivative a rate of change?",
+          "tag": "WHY",
+          "summary": "Compares the odometer (position) with the speedometer (its derivative), driven live",
+          "sections": "St 2.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/properties-library/average-rate-of-change",
+            "functions-graphs/lines-slope/why-does-a-constant-rate-of-change-make-a-straight-line"
+          ]
+        },
+        {
+          "slug": "why-has-x-no-derivative-at-0",
+          "title": "Why has |x| no derivative at 0?",
+          "tag": "WHY",
+          "summary": "Zooms in forever and the corner never straightens",
+          "sections": "St 2.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-differentiable-imply-continuous-but-not-conversely",
+          "title": "Why does differentiable imply continuous, but not conversely?",
+          "tag": "WHY",
+          "summary": "Sees a jump kill the derivative, while a corner is continuous but still not differentiable",
+          "sections": "St 2.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/vectors/why-does-a-scalar-stretch-but-not-turn-a-vector",
+            "exponentials-logs/the-number-e/continuous-compounding"
+          ]
+        },
+        {
+          "slug": "draw-f-prime-from-f",
+          "title": "Draw f′ from f",
+          "tag": "WHY",
+          "summary": "Slides a slope-meter along f and plots the readings to build f′",
+          "sections": "St 2.2",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "derivative-from-the-definition",
+          "title": "Derivative from the definition",
+          "tag": "HOW",
+          "summary": "Simplifies the difference quotient, then lets h → 0",
+          "sections": "St 2.1–2.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change",
+            "functions-graphs/what-is-a-function/why-the-difference-quotient"
+          ]
+        },
+        {
+          "slug": "how-tangents-were-found-before-calculus",
+          "title": "How tangents were found before calculus",
+          "tag": "APP",
+          "summary": "Tries Fermat's and Barrow's methods on a parabola",
+          "sections": "St 2 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-the-derivative-the-slope-you-see-when-you-zoom-in"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "differentiation-rules",
+      "title": "Differentiation Rules",
+      "sections": "St 2.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-d-dx-xn-nxn1",
+          "title": "Why is d/dx xⁿ = nxⁿ⁻¹?",
+          "tag": "WHY",
+          "summary": "Grows a square of side x by dx: the new area is about 2x·dx; a cube grows on 3 faces, giving 3x²·dx",
+          "sections": "St 2.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-the-product-rule",
+          "title": "Why the product rule?",
+          "tag": "WHY",
+          "summary": "Grows a u × v rectangle: two thin strips u·dv + v·du, plus a corner too small to count",
+          "sections": "St 2.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-the-quotient-rule",
+          "title": "Why the quotient rule?",
+          "tag": "WHY",
+          "summary": "Builds it from the product rule applied to u = (u/v)·v",
+          "sections": "St 2.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-the-difference-quotient",
+            "limits-continuity/limit-laws/limit-law-stepper"
+          ]
+        },
+        {
+          "slug": "why-is-ex-its-own-derivative",
+          "title": "Why is eˣ its own derivative?",
+          "tag": "WHY",
+          "summary": "Tries bases 2, 2.5, 3 and finds the one whose slope at 0 is exactly 1",
+          "sections": "St 2.3, 6.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/the-number-e/why-is-ex-natural"
+          ]
+        },
+        {
+          "slug": "rule-drill",
+          "title": "Rule drill",
+          "tag": "HOW",
+          "summary": "Picks the right rule for random functions",
+          "sections": "St 2.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-quotient-rule"
+          ]
+        },
+        {
+          "slug": "second-derivatives-and-the-equations-they-satisfy",
+          "title": "Second derivatives and the equations they satisfy",
+          "tag": "HOW",
+          "summary": "Differentiates y = A cos x + B sin x twice and checks y″ + y = 0",
+          "sections": "MXII 5.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-quotient-rule"
+          ]
+        },
+        {
+          "slug": "build-a-better-roller-coaster",
+          "title": "Build a better roller coaster",
+          "tag": "APP",
+          "summary": "Joins track pieces so the heights and slopes match and the ride is smooth",
+          "sections": "St 2.3 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-quotient-rule"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trig-derivatives",
+      "title": "Trig Derivatives",
+      "sections": "St 2.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-sin-theta-theta-1-and-only-in-radians",
+          "title": "Why does sin θ / θ → 1, and only in radians?",
+          "tag": "WHY",
+          "summary": "Squeezes the sector between two triangles; switching to degrees makes the limit π/180",
+          "sections": "St 2.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/angles-arcs/why-does-s-rtheta-only-work-in-radians"
+          ]
+        },
+        {
+          "slug": "why-is-sin-x-prime-cos-x",
+          "title": "Why is (sin x)′ = cos x?",
+          "tag": "WHY",
+          "summary": "Runs a point on the unit circle: its vertical speed is its horizontal position",
+          "sections": "St 2.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b",
+            "trigonometry/identities/why-sin-a-b-sin-a-cos-b-cos-a-sin-b"
+          ]
+        },
+        {
+          "slug": "why-is-cos-x-prime-sin-x",
+          "title": "Why is (cos x)′ = −sin x?",
+          "tag": "WHY",
+          "summary": "Uses the same circle: the horizontal speed is minus the height",
+          "sections": "St 2.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b",
+            "trigonometry/identities/why-sin-a-b-sin-a-cos-b-cos-a-sin-b"
+          ]
+        },
+        {
+          "slug": "derivatives-of-tan-sec-csc-cot",
+          "title": "Derivatives of tan, sec, csc, cot",
+          "tag": "HOW",
+          "summary": "Derives each from sin and cos with the quotient rule",
+          "sections": "St 2.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/trig-derivatives/why-is-sin-x-prime-cos-x",
+            "trigonometry/tan-cot-sec-csc/why-do-csc-and-sec-hug-sin-and-cos",
+            "trigonometry/tan-cot-sec-csc/graph-y-a-sec-bx-c-and-a-csc-bx-c"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "chain-rule",
+      "title": "Chain Rule",
+      "sections": "St 2.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-do-rates-multiply",
+          "title": "Why do rates multiply?",
+          "tag": "WHY",
+          "summary": "Turns three gears: if A turns 3 times as fast as B, and B twice as fast as C, then A turns 6 times as fast as C",
+          "sections": "St 2.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-you-need-the-inside-derivative",
+          "title": "Why do you need the inside derivative?",
+          "tag": "WHY",
+          "summary": "Squeezes sin(2x) and watches its slopes double",
+          "sections": "St 2.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "peel-the-onion",
+          "title": "Peel the onion",
+          "tag": "HOW",
+          "summary": "Differentiates nested functions layer by layer",
+          "sections": "St 2.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/chain-rule/why-do-you-need-the-inside-derivative"
+          ]
+        },
+        {
+          "slug": "where-should-a-pilot-start-descent",
+          "title": "Where should a pilot start descent?",
+          "tag": "APP",
+          "summary": "Fits a smooth cubic glide path that meets the runway level",
+          "sections": "St 2.5 project",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/chain-rule/why-do-you-need-the-inside-derivative"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "implicit-differentiation",
+      "title": "Implicit Differentiation",
+      "sections": "St 2.6",
+      "order": 5,
+      "children": [
+        {
+          "slug": "how-can-a-curve-that-isn-t-a-function-have-a-slope",
+          "title": "How can a curve that isn't a function have a slope?",
+          "tag": "WHY",
+          "summary": "Finds tangents all around the circle x² + y² = 25",
+          "sections": "St 2.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-dy-dx-x-y-on-a-circle",
+          "title": "Why is dy/dx = −x/y on a circle?",
+          "tag": "WHY",
+          "summary": "Sees the tangent is perpendicular to the radius",
+          "sections": "St 2.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "implicit-stepper",
+          "title": "Implicit stepper",
+          "tag": "HOW",
+          "summary": "Differentiates both sides, treating y as y(x)",
+          "sections": "St 2.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle"
+          ]
+        },
+        {
+          "slug": "families-of-implicit-curves",
+          "title": "Families of implicit curves",
+          "tag": "APP",
+          "summary": "Changes a parameter and watches the curve family morph",
+          "sections": "St 2.6 lab",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/implicit-differentiation/how-can-a-curve-that-isn-t-a-function-have-a-slope"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "exp-log-inverse-derivatives",
+      "title": "Exp, Log & Inverse Derivatives",
+      "sections": "St 6.1–6.4, 6.6–6.7",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-an-inverse-function-s-slope-the-reciprocal",
+          "title": "Why is an inverse function's slope the reciprocal?",
+          "tag": "WHY",
+          "summary": "Reflects a tangent line in y = x: rise and run swap",
+          "sections": "St 6.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/lines-slope/why-do-perpendicular-slopes-multiply-to-1"
+          ]
+        },
+        {
+          "slug": "why-is-ln-x-prime-1-x",
+          "title": "Why is (ln x)′ = 1/x?",
+          "tag": "WHY",
+          "summary": "Reads it as the reciprocal of eˣ's slope at the mirrored point",
+          "sections": "St 6.2–6.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2",
+            "exponentials-logs/e-ln-as-areas/why-is-ln-1-x-x-for-small-x"
+          ]
+        },
+        {
+          "slug": "why-is-ax-prime-ax-ln-a",
+          "title": "Why is (aˣ)′ = aˣ ln a?",
+          "tag": "WHY",
+          "summary": "Rewrites aˣ as e^(x ln a); ln a is the stretch",
+          "sections": "St 6.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2",
+            "exponentials-logs/e-ln-as-areas/why-is-ln-1-x-x-for-small-x"
+          ]
+        },
+        {
+          "slug": "why-does-logarithmic-differentiation-tame-xx",
+          "title": "Why does logarithmic differentiation tame xˣ?",
+          "tag": "WHY",
+          "summary": "Takes ln first so the exponent comes down",
+          "sections": "St 6.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-arctan-x-prime-1-1-x2",
+          "title": "Why is (arctan x)′ = 1/(1 + x²)?",
+          "tag": "WHY",
+          "summary": "Reads it off the triangle with tan θ = x",
+          "sections": "St 6.6",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "derivatives-of-sinh-and-cosh",
+          "title": "Derivatives of sinh and cosh",
+          "tag": "HOW",
+          "summary": "Sees them behave like sin and cos with one sign flipped (see Exponentials & Logarithms → Hyperbolic Functions)",
+          "sections": "St 6.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "exponentials-logs/hyperbolic-functions",
+            "derivatives/exp-log-inverse-derivatives/why-is-ln-x-prime-1-x",
+            "sequences-probability/geometric-sequences-series/annuities-and-sips"
+          ]
+        },
+        {
+          "slug": "derivative-table-quiz",
+          "title": "Derivative table quiz",
+          "tag": "HOW",
+          "summary": "Practises the exp, log, inverse-trig and hyperbolic derivatives",
+          "sections": "St 6.2–6.7",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "derivatives/exp-log-inverse-derivatives/why-is-an-inverse-function-s-slope-the-reciprocal",
+            "exponentials-logs/logarithms/why-is-log-the-inverse-of-an-exponential"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rates-in-science",
+      "title": "Rates in Science",
+      "sections": "St 2.7–2.8",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-velocity-the-derivative-of-position-and-acceleration",
+          "title": "Why is velocity the derivative of position, and acceleration of velocity?",
+          "tag": "WHY",
+          "summary": "Sees three linked graphs (s, v, a) updating together",
+          "sections": "St 2.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-sliding-ladder-s-top-speed-up-near-the-ground",
+          "title": "Why does a sliding ladder's top speed up near the ground?",
+          "tag": "WHY",
+          "summary": "Pulls the foot out at a steady speed; the top's speed blows up as it nears the ground",
+          "sections": "St 2.8",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-balloon-s-radius-grow-more-slowly-as-it-inflates",
+          "title": "Why does a balloon's radius grow more slowly as it inflates?",
+          "tag": "WHY",
+          "summary": "Pumps in air at a constant rate; the same volume spreads over a bigger surface",
+          "sections": "St 2.8",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "related-rates-stepper",
+          "title": "Related-rates stepper",
+          "tag": "HOW",
+          "summary": "Writes the relation, differentiates in t, then substitutes",
+          "sections": "St 2.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration"
+          ]
+        },
+        {
+          "slug": "rates-across-the-sciences",
+          "title": "Rates across the sciences",
+          "tag": "APP",
+          "summary": "Sees current = dQ/dt, reaction rates, marginal cost and population growth as one idea",
+          "sections": "St 2.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration",
+            "exponentials-logs/growth-decay-cooling/bacteria-and-population-growth",
+            "exponentials-logs/money-finance/continuous-versus-annual-growth-rates"
+          ]
+        },
+        {
+          "slug": "filling-a-cone-with-water",
+          "title": "Filling a cone with water",
+          "tag": "APP",
+          "summary": "Sees the water level rise fast first, then slow",
+          "sections": "St 2.8",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linear-approximation",
+      "title": "Linear Approximation",
+      "sections": "St 2.9",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-is-the-tangent-the-best-straight-line-guess",
+          "title": "Why is the tangent the best straight-line guess?",
+          "tag": "WHY",
+          "summary": "Compares lines through the point; only the tangent's error shrinks faster than the distance",
+          "sections": "St 2.9",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-root4-1-2-025",
+          "title": "Why is √4.1 ≈ 2.025?",
+          "tag": "WHY",
+          "summary": "Rides the tangent at x = 4 instead of the curve (true value 2.0248…)",
+          "sections": "St 2.9",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-sin-x-x-for-small-x",
+          "title": "Why is sin x ≈ x for small x?",
+          "tag": "WHY",
+          "summary": "Zooms in at 0 until the two graphs merge; this is why the pendulum formula works",
+          "sections": "St 2.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/identities/why-isn-t-sin-a-b-sin-a-sin-b"
+          ]
+        },
+        {
+          "slug": "dy-versus-y",
+          "title": "dy versus Δy",
+          "tag": "WHY",
+          "summary": "Sees the tangent's rise against the curve's rise",
+          "sections": "St 2.9",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "measurement-error",
+          "title": "Measurement error",
+          "tag": "APP",
+          "summary": "Measures a radius as 21 ± 0.05 cm and estimates the error in the volume",
+          "sections": "St 2.9",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess"
+          ]
+        },
+        {
+          "slug": "taylor-polynomials-a-first-look",
+          "title": "Taylor polynomials, a first look",
+          "tag": "APP",
+          "summary": "Adds a quadratic term to beat the tangent line",
+          "sections": "St 2 lab",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parametric-polar-slopes",
+      "title": "Parametric & Polar Slopes",
+      "sections": "D2 3-2, 3-7 · St 10.2–10.3",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-is-dy-dx-dy-dt-dx-dt",
+          "title": "Why is dy/dx = (dy/dt)/(dx/dt)?",
+          "tag": "WHY",
+          "summary": "Runs a point along the curve; over a tiny time step the rise and run are y′dt and x′dt, so the dt cancels (spec below)",
+          "sections": "D2 3-2 · St 10.2",
+          "extension": false,
+          "spec": "Motion: a point runs along x = t² − 3t, y = t³ − 3t with velocity arrows x′(t) and y′(t) drawn. Tiny step: zoom on one time step dt; the little run is x′dt, the rise y′dt, and the slope ratio cancels dt. Special tangents: scrub t to find where x′ = 0 (vertical) and y′ = 0 (horizontal); both cases are highlighted live. Second derivative: the common trap y″/x″ is shown failing against the correct d/dt(dy/dx) ÷ x′.",
+          "order": 1,
+          "aids": [
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle"
+          ]
+        },
+        {
+          "slug": "horizontal-and-vertical-tangents",
+          "title": "Horizontal and vertical tangents",
+          "tag": "WHY",
+          "summary": "Sees dy/dt = 0 flatten the tangent and dx/dt = 0 stand it up",
+          "sections": "D2 3-2 · St 10.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "how-can-one-point-have-two-tangents",
+          "title": "How can one point have two tangents?",
+          "tag": "WHY",
+          "summary": "Watches a self-crossing curve pass the same point twice with two different slopes",
+          "sections": "D2 3-2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/implicit-differentiation/how-can-a-curve-that-isn-t-a-function-have-a-slope"
+          ]
+        },
+        {
+          "slug": "why-isn-t-d2y-dx2-y-t-x-t",
+          "title": "Why isn't d²y/dx² = y″(t)/x″(t)?",
+          "tag": "WHY",
+          "summary": "Differentiates dy/dx with respect to t, then divides by dx/dt, and compares it with the wrong guess",
+          "sections": "D2 3-2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle"
+          ]
+        },
+        {
+          "slug": "slopes-of-polar-curves",
+          "title": "Slopes of polar curves",
+          "tag": "HOW",
+          "summary": "Writes x = r cos θ, y = r sin θ and applies the parametric rule",
+          "sections": "D2 3-7 · St 10.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivatives/parametric-polar-slopes/how-can-one-point-have-two-tangents"
+          ]
+        },
+        {
+          "slug": "why-does-a-cycloid-have-cusps",
+          "title": "Why does a cycloid have cusps?",
+          "tag": "APP",
+          "summary": "Sees the rolling point stop dead (x′ = y′ = 0) every time it touches the ground",
+          "sections": "D2 3-2 · St 10.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/parametric-polar-slopes/how-can-one-point-have-two-tangents",
+            "conics-curves/parametric-curves/why-does-a-rolling-wheel-trace-a-cycloid"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 9
+}

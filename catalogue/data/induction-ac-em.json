@@ -1,0 +1,434 @@
+{
+  "slug": "induction-ac-em",
+  "title": "Induction, AC & EM Waves",
+  "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
+  "order": 28,
+  "children": [
+    {
+      "slug": "faraday-lenz",
+      "title": "Faraday & Lenz",
+      "sections": "XII 6.1–6.5",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-does-only-changing-flux-make-a-current",
+          "title": "Why does only changing flux make a current?",
+          "tag": "WHY",
+          "summary": "Moves a magnet and a coil, holds them still, and switches a nearby circuit (Faraday's experiments)",
+          "sections": "XII 6.2–6.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "electrostatics/flux-gauss-s-law/what-is-flux-count-the-lines-through-a-net"
+          ]
+        },
+        {
+          "slug": "why-is-lenz-s-law-energy-conservation",
+          "title": "Why is Lenz's law energy conservation?",
+          "tag": "WHY",
+          "summary": "Flips the induced current's direction and gets a perpetual-motion machine (spec below)",
+          "sections": "XII 6.5",
+          "extension": false,
+          "order": 2,
+          "spec": "Drop: a magnet falls through a coil; the induced current repels it and the fall slows. Flip: reverse the current's sign and the magnet accelerates, its energy growing forever. Ledger: the slowing magnet's lost KE equals the heat in the coil. Rule: the induced current always opposes the change in flux.",
+          "aids": [
+            "heat-thermodynamics/second-law-engines/why-can-t-an-engine-turn-all-its-heat-into-work",
+            "heat-thermodynamics/first-law/why-is-u-q-w-just-energy-conservation",
+            "properties-of-matter/flow-bernoulli/why-is-bernoulli-just-energy-conservation"
+          ]
+        },
+        {
+          "slug": "why-is-motional-emf-blv",
+          "title": "Why is motional emf Blv?",
+          "tag": "WHY",
+          "summary": "Slides a rod on rails: the force on its charges, or the rate of area swept",
+          "sections": "XII 6.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "current-magnetism/magnetic-force-on-charges/why-does-a-magnetic-force-never-do-work"
+          ]
+        },
+        {
+          "slug": "flux-change-calculator",
+          "title": "Flux-change calculator",
+          "tag": "HOW",
+          "summary": "Uses ε = −dΦ/dt",
+          "sections": "XII 6.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change",
+            "induction-ac-em/faraday-lenz/why-does-only-changing-flux-make-a-current"
+          ]
+        },
+        {
+          "slug": "a-magnet-falling-through-a-copper-pipe",
+          "title": "A magnet falling through a copper pipe",
+          "tag": "APP",
+          "summary": "Watches eddy currents slow the fall",
+          "sections": "XII 6.5",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "induction-ac-em/faraday-lenz/why-does-only-changing-flux-make-a-current"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "inductance-generators",
+      "title": "Inductance & Generators",
+      "sections": "XII 6.6–6.8",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-self-inductance-electrical-inertia",
+          "title": "Why is self-inductance electrical inertia?",
+          "tag": "WHY",
+          "summary": "Switches a coil on and off and watches the current resist the change",
+          "sections": "XII 6.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "forces-energy/inertia-the-first-law/why-are-you-thrown-back-when-the-bus-starts"
+          ]
+        },
+        {
+          "slug": "why-does-a-coil-store-energy-12li2",
+          "title": "Why does a coil store energy ½LI²?",
+          "tag": "WHY",
+          "summary": "Integrates the work against the back-emf",
+          "sections": "XII 6.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-is-a-spring-s-pe-12kx2"
+          ]
+        },
+        {
+          "slug": "mutual-inductance",
+          "title": "Mutual inductance",
+          "tag": "WHY",
+          "summary": "Changes the current in one coil and sees the emf in the other",
+          "sections": "XII 6.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-generator-make-a-sine-wave",
+          "title": "Why does a generator make a sine wave?",
+          "tag": "WHY",
+          "summary": "Rotates a coil: Φ = BA cos ωt, so ε = NBAω sin ωt",
+          "sections": "XII 6.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/sine-cosine-graphs/why-is-the-sine-graph-a-wave"
+          ]
+        },
+        {
+          "slug": "generator-explorer",
+          "title": "Generator explorer",
+          "tag": "HOW",
+          "summary": "Changes N, B, A and ω",
+          "sections": "XII 6.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "induction-ac-em/inductance-generators/why-does-a-generator-make-a-sine-wave",
+            "abstract-algebra/cyclic-groups/why-does-one-generator-build-the-whole-group"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ac-basics",
+      "title": "AC Basics",
+      "sections": "XII 7.1–7.5",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-use-rms-values",
+          "title": "Why use rms values?",
+          "tag": "WHY",
+          "summary": "Matches the heating of AC with DC: I_rms = I₀/√2",
+          "sections": "XII 7.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/trig-integrals-substitution/why-does-sin2-x-average-to-12"
+          ]
+        },
+        {
+          "slug": "why-draw-ac-as-rotating-phasors",
+          "title": "Why draw AC as rotating phasors?",
+          "tag": "WHY",
+          "summary": "Spins an arrow and reads its shadow as the instantaneous value",
+          "sections": "XII 7.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "oscillations-waves/shm-circular-motion/why-is-shm-the-shadow-of-circular-motion"
+          ]
+        },
+        {
+          "slug": "why-does-current-lag-in-an-inductor-and-lead-in-a-capacitor",
+          "title": "Why does current lag in an inductor and lead in a capacitor?",
+          "tag": "WHY",
+          "summary": "Plots v and i together for L, C and R",
+          "sections": "XII 7.4–7.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/trig-derivatives/why-is-cos-x-prime-sin-x"
+          ]
+        },
+        {
+          "slug": "why-does-reactance-depend-on-frequency",
+          "title": "Why does reactance depend on frequency?",
+          "tag": "WHY",
+          "summary": "Sweeps ω: X_L = ωL grows, X_C = 1/ωC falls",
+          "sections": "XII 7.4–7.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "phasor-diagram-builder",
+          "title": "Phasor-diagram builder",
+          "tag": "HOW",
+          "summary": "Draws V and I for any combination",
+          "sections": "XII 7.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "induction-ac-em/ac-basics/why-use-rms-values",
+            "heat-thermodynamics/change-of-state/phase-diagram-why-does-dry-ice-sublime",
+            "forces-energy/potential-energy-conservation/read-an-energy-diagram"
+          ]
+        },
+        {
+          "slug": "why-does-230-v-mains-peak-at-325-v",
+          "title": "Why does 230 V mains peak at 325 V?",
+          "tag": "APP",
+          "summary": "Multiplies by √2",
+          "sections": "XII 7.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "induction-ac-em/ac-basics/why-use-rms-values"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lcr-resonance",
+      "title": "LCR & Resonance",
+      "sections": "XII 7.6",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-impedance-root-r2-x-l-x-c-2",
+          "title": "Why is impedance √(R² + (X_L − X_C)²)?",
+          "tag": "WHY",
+          "summary": "Adds the voltage phasors tip to tail",
+          "sections": "XII 7.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/why-tip-to-tail",
+            "trigonometry/right-triangle-ratios/why-is-a2-b2-c2",
+            "induction-ac-em/ac-basics/why-does-reactance-depend-on-frequency"
+          ]
+        },
+        {
+          "slug": "why-resonance-at-0-1-root-lc",
+          "title": "Why resonance at ω₀ = 1/√(LC)?",
+          "tag": "WHY",
+          "summary": "Sweeps ω until X_L = X_C and the current peaks",
+          "sections": "XII 7.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/waves-oscillations/why-does-resonance-build-up",
+            "induction-ac-em/ac-basics/why-does-reactance-depend-on-frequency"
+          ]
+        },
+        {
+          "slug": "why-do-sharp-peaks-need-small-r-q-factor",
+          "title": "Why do sharp peaks need small R? (Q factor)",
+          "tag": "WHY",
+          "summary": "Lowers R and watches the peak narrow",
+          "sections": "XII 7.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "resonance-curve-explorer",
+          "title": "Resonance-curve explorer",
+          "tag": "HOW",
+          "summary": "Changes L, C and R",
+          "sections": "XII 7.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "induction-ac-em/lcr-resonance/why-resonance-at-0-1-root-lc",
+            "oscillations-waves/standing-waves-music/resonance-column"
+          ]
+        },
+        {
+          "slug": "tuning-a-radio",
+          "title": "Tuning a radio",
+          "tag": "APP",
+          "summary": "Turns a variable capacitor to pick out one station",
+          "sections": "XII 7.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "induction-ac-em/lcr-resonance/why-resonance-at-0-1-root-lc",
+            "oscillations-waves/beats/tuning-instruments-by-ear"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power-transformers",
+      "title": "Power & Transformers",
+      "sections": "XII 7.7–7.8",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-can-current-flow-with-no-power-power-factor",
+          "title": "Why can current flow with no power? (power factor)",
+          "tag": "WHY",
+          "summary": "Shifts the phase to 90° and sees the average of vi become zero",
+          "sections": "XII 7.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/trig-integrals-substitution/why-does-sin2-x-average-to-12"
+          ]
+        },
+        {
+          "slug": "why-does-a-transformer-s-voltage-ratio-equal-its-turns-ratio",
+          "title": "Why does a transformer's voltage ratio equal its turns ratio?",
+          "tag": "WHY",
+          "summary": "Shares the same changing flux between both coils",
+          "sections": "XII 7.8",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "transformer-calculator",
+          "title": "Transformer calculator",
+          "tag": "HOW",
+          "summary": "Steps voltage and current up and down",
+          "sections": "XII 7.8",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "induction-ac-em/power-transformers/why-does-a-transformer-s-voltage-ratio-equal-its-turns-ratio"
+          ]
+        },
+        {
+          "slug": "from-power-station-to-home",
+          "title": "From power station to home",
+          "tag": "APP",
+          "summary": "Follows step-up, transmission and step-down, with the losses at each stage",
+          "sections": "XII 7.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "current-magnetism/cells-emf-power/why-is-power-sent-at-high-voltage",
+            "induction-ac-em/power-transformers/why-can-current-flow-with-no-power-power-factor",
+            "heat-thermodynamics/second-law-engines/car-engine-versus-power-station"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "electromagnetic-waves",
+      "title": "Electromagnetic Waves",
+      "sections": "XII 8.1–8.4",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-did-maxwell-add-displacement-current",
+          "title": "Why did Maxwell add displacement current?",
+          "tag": "WHY",
+          "summary": "Charges a capacitor: Ampère's law fails between the plates until a changing E counts as current",
+          "sections": "XII 8.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "current-magnetism/sources-of-magnetic-field/why-is-a-long-wire-s-field-0i-2pir-ampere"
+          ]
+        },
+        {
+          "slug": "why-are-e-and-b-perpendicular-to-each-other-and-to-the-motio",
+          "title": "Why are E and B perpendicular to each other and to the motion?",
+          "tag": "WHY",
+          "summary": "Watches a plane wave with both fields oscillating",
+          "sections": "XII 8.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "oscillations-waves/what-is-a-wave/transverse-versus-longitudinal"
+          ]
+        },
+        {
+          "slug": "why-does-c-1-root-0epsilon0",
+          "title": "Why does c = 1/√(μ₀ε₀)?",
+          "tag": "WHY",
+          "summary": "Plugs in the electric and magnetic constants and gets 3 × 10⁸ m/s, the speed of light",
+          "sections": "XII 8.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "oscillations-waves/travelling-waves/why-is-v-k"
+          ]
+        },
+        {
+          "slug": "why-does-light-push-radiation-pressure",
+          "title": "Why does light push? (radiation pressure)",
+          "tag": "WHY",
+          "summary": "Sees EM waves carrying momentum p = U/c",
+          "sections": "XII 8.3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "spectrum-explorer-radio-to-gamma",
+          "title": "Spectrum explorer: radio to gamma",
+          "tag": "HOW",
+          "summary": "Slides λ and sees the uses at each band",
+          "sections": "XII 8.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/waves-oscillations/light-and-em-waves-c-f",
+            "induction-ac-em/electromagnetic-waves/why-does-light-push-radiation-pressure",
+            "induction-ac-em/lcr-resonance/tuning-a-radio"
+          ]
+        },
+        {
+          "slug": "microwave-ovens-x-rays-and-uv",
+          "title": "Microwave ovens, X-rays and UV",
+          "tag": "APP",
+          "summary": "Matches each application to its band",
+          "sections": "XII 8.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "induction-ac-em/electromagnetic-waves/why-does-light-push-radiation-pressure"
+          ]
+        }
+      ]
+    }
+  ]
+}

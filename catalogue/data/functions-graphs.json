@@ -1,0 +1,1060 @@
+{
+  "slug": "functions-graphs",
+  "title": "Functions & Graphs",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e; additions from Axler and Stewart",
+  "children": [
+    {
+      "slug": "coordinate-plane",
+      "title": "Coordinate Plane",
+      "sections": "S 2.1–2.2, 2.4 · A 2.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-does-the-distance-formula-come-from-pythagoras",
+          "title": "Why does the distance formula come from Pythagoras?",
+          "tag": "WHY",
+          "summary": "Draws the right triangle between two points; the legs are Δx and Δy",
+          "sections": "S 2.1 · A 2.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-midpoint-an-average",
+          "title": "Why is the midpoint an average?",
+          "tag": "WHY",
+          "summary": "Sees halfway in x and halfway in y independently",
+          "sections": "S 2.1 · A 2.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-circle-x-h-2-y-k-2-r2",
+          "title": "Why is a circle (x − h)² + (y − k)² = r²?",
+          "tag": "WHY",
+          "summary": "Drags a point that stays at distance r from the centre; the distance formula becomes the equation",
+          "sections": "S 2.4 · A 2.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-symmetry-tests-work",
+          "title": "Why do the symmetry tests work?",
+          "tag": "WHY",
+          "summary": "Replaces x by −x (or y by −y) and sees the mirror point land on the graph",
+          "sections": "S 2.2 · A 2.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-perpendicular-the-shortest-way-to-a-line",
+          "title": "Why is the perpendicular the shortest way to a line?",
+          "tag": "WHY",
+          "summary": "Drags a point along the line; the distance is least where the segment meets it at 90°",
+          "sections": "Ax 4.1",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "intercepts-and-plotting-by-points",
+          "title": "Intercepts and plotting by points",
+          "tag": "HOW",
+          "summary": "Plots from a table and finds where the graph meets the axes",
+          "sections": "S 2.2 · A 2.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/coordinate-plane/why-is-the-perpendicular-the-shortest-way-to-a-line"
+          ]
+        },
+        {
+          "slug": "find-a-circle-s-centre-from-its-general-form",
+          "title": "Find a circle's centre from its general form",
+          "tag": "HOW",
+          "summary": "Completes the square twice to read off the centre and radius",
+          "sections": "S 2.4 · A 2.1",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/coordinate-plane/why-is-a-circle-x-h-2-y-k-2-r2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lines-slope",
+      "title": "Lines & Slope",
+      "sections": "S 2.3, 4.1 · A 2.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-slope-the-same-anywhere-on-a-line",
+          "title": "Why is slope the same anywhere on a line?",
+          "tag": "WHY",
+          "summary": "Slides a rise/run triangle along the line; similar triangles keep the ratio (see Trigonometry → Similar Triangles)",
+          "sections": "S 2.3 · A 2.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/similar-triangles"
+          ]
+        },
+        {
+          "slug": "why-do-perpendicular-slopes-multiply-to-1",
+          "title": "Why do perpendicular slopes multiply to −1?",
+          "tag": "WHY",
+          "summary": "Rotates a slope triangle by 90°: rise and run swap, and one changes sign",
+          "sections": "S 2.3 · A 2.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-vertical-line-have-no-slope",
+          "title": "Why does a vertical line have no slope?",
+          "tag": "WHY",
+          "summary": "Steepens a line until the run is 0 and the ratio breaks",
+          "sections": "S 2.3 · A 2.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-constant-rate-of-change-make-a-straight-line",
+          "title": "Why does a constant rate of change make a straight line?",
+          "tag": "WHY",
+          "summary": "Compares tables with equal steps in y and with growing steps",
+          "sections": "S 4.1 · A 2.3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-angle-between-lines-tan-theta-m2-m1-1-m1m2",
+          "title": "Why is the angle between lines tan θ = |(m₂ − m₁)/(1 + m₁m₂)|?",
+          "tag": "WHY",
+          "summary": "Subtracts the two inclinations using tan(A − B)",
+          "sections": "NM 9",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b"
+          ]
+        },
+        {
+          "slug": "convert-between-forms-of-a-line",
+          "title": "Convert between forms of a line",
+          "tag": "HOW",
+          "summary": "Edits point–slope, slope–intercept, two-point and general forms; all stay in sync",
+          "sections": "S 2.3 · A 2.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/lines-slope/why-does-a-vertical-line-have-no-slope"
+          ]
+        },
+        {
+          "slug": "graph-a-line-from-its-equation",
+          "title": "Graph a line from its equation",
+          "tag": "HOW",
+          "summary": "Plots the intercept and then steps by the slope",
+          "sections": "S 2.3 · A 2.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/lines-slope/why-does-a-vertical-line-have-no-slope"
+          ]
+        },
+        {
+          "slug": "distance-from-a-point-to-a-line",
+          "title": "Distance from a point to a line",
+          "tag": "HOW",
+          "summary": "Uses |Ax₀ + By₀ + C|/√(A² + B²) and checks it with the perpendicular",
+          "sections": "NM 9",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "functions-graphs/coordinate-plane/why-is-the-perpendicular-the-shortest-way-to-a-line",
+            "functions-graphs/lines-slope/why-does-a-vertical-line-have-no-slope",
+            "numbers-algebra/polynomials-factoring/why-does-a2-b2-a-b-a-b"
+          ]
+        },
+        {
+          "slug": "collinear-points-from-slopes",
+          "title": "Collinear points from slopes",
+          "tag": "HOW",
+          "summary": "Checks whether the slopes AB and BC are equal",
+          "sections": "NM 9",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "functions-graphs/lines-slope/why-do-perpendicular-slopes-multiply-to-1"
+          ]
+        },
+        {
+          "slug": "linear-models-fares-and-depreciation",
+          "title": "Linear models: fares and depreciation",
+          "tag": "APP",
+          "summary": "Builds C = mx + b from a story and reads the meaning of m and b",
+          "sections": "S 4.1 · A 2.3",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "functions-graphs/lines-slope/why-is-the-angle-between-lines-tan-theta-m2-m1-1-m1m2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "what-is-a-function",
+      "title": "What is a Function?",
+      "sections": "S 3.1–3.2 · A 2.2",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-must-a-function-give-exactly-one-output",
+          "title": "Why must a function give exactly one output?",
+          "tag": "WHY",
+          "summary": "Sees a vending machine that gives two items for one button is broken; the vertical line test is the same idea",
+          "sections": "S 3.1–3.2 · A 2.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-domains-get-restricted",
+          "title": "Why do domains get restricted?",
+          "tag": "WHY",
+          "summary": "Drags x across √, ÷ and log and watches where each one breaks",
+          "sections": "S 3.1 · A 2.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-the-difference-quotient",
+          "title": "Why the difference quotient?",
+          "tag": "WHY",
+          "summary": "Draws a secant between x and x + h; its slope is the difference quotient, and shrinking h previews calculus",
+          "sections": "S 3.1 · A 2.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-f-x-h-not-f-x-h",
+          "title": "Why is f(x + h) not f(x) + h?",
+          "tag": "WHY",
+          "summary": "Compares the two on a graph for f(x) = x²",
+          "sections": "S 3.1 · A 2.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "when-are-two-functions-really-equal",
+          "title": "When are two functions really equal?",
+          "tag": "WHY",
+          "summary": "Compares x and x²/x: same formula after cancelling, but different domains, so different functions",
+          "sections": "Ax 1.1",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-relation-a-subset-of-a-x-b",
+          "title": "Why is a relation a subset of A × B?",
+          "tag": "WHY",
+          "summary": "Draws the A × B grid and ticks the pairs; the grid has p·q cells",
+          "sections": "NM 2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/sets/test-a-relation"
+          ]
+        },
+        {
+          "slug": "function-machine-rule-table-graph",
+          "title": "Function machine: rule, table, graph",
+          "tag": "HOW",
+          "summary": "Sees one function shown three ways, kept in sync",
+          "sections": "S 3.1 · A 2.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output"
+          ]
+        },
+        {
+          "slug": "read-a-graph",
+          "title": "Read a graph",
+          "tag": "HOW",
+          "summary": "Reads off the domain, range, f(a) and where f(x) = c",
+          "sections": "S 3.2 · A 2.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-do-domains-get-restricted"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "properties-library",
+      "title": "Properties & Library",
+      "sections": "S 3.3–3.4 · A 2.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-are-even-functions-mirror-images",
+          "title": "Why are even functions mirror images?",
+          "tag": "WHY",
+          "summary": "Sees f(−x) = f(x) as a y-axis mirror, and odd functions as a half-turn about the origin",
+          "sections": "S 3.3 · A 2.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-turning-points-where-max-and-min-live",
+          "title": "Why are turning points where max and min live?",
+          "tag": "WHY",
+          "summary": "Traces increasing and decreasing stretches; peaks sit where the direction flips",
+          "sections": "S 3.3 · A 2.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "the-library-of-parent-functions",
+          "title": "The library of parent functions",
+          "tag": "WHY",
+          "summary": "Browses x, x², x³, √x, ∛x, 1/x, |x| and ⌊x⌋ with their key features",
+          "sections": "S 3.4 · A 2.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-greatest-integer-function-jump",
+          "title": "Why does the greatest-integer function jump?",
+          "tag": "WHY",
+          "summary": "Slides x across an integer and the output snaps",
+          "sections": "S 3.4 · A 2.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "piecewise-function-builder",
+          "title": "Piecewise-function builder",
+          "tag": "HOW",
+          "summary": "Defines pieces on intervals and sees open and closed dots at the joins",
+          "sections": "S 3.4 · A 2.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/properties-library/why-does-the-greatest-integer-function-jump"
+          ]
+        },
+        {
+          "slug": "average-rate-of-change",
+          "title": "Average rate of change",
+          "tag": "HOW",
+          "summary": "Picks two points and reads the secant slope as an average speed",
+          "sections": "S 3.3 · A 2.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/properties-library/why-does-the-greatest-integer-function-jump",
+            "functions-graphs/lines-slope/why-does-a-constant-rate-of-change-make-a-straight-line"
+          ]
+        },
+        {
+          "slug": "income-tax-slabs-as-a-piecewise-function",
+          "title": "Income-tax slabs as a piecewise function",
+          "tag": "APP",
+          "summary": "Enters an income and sees the tax curve made of linear pieces",
+          "sections": "—",
+          "extension": true,
+          "order": 7,
+          "aids": [
+            "functions-graphs/properties-library/why-does-the-greatest-integer-function-jump"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "transformations",
+      "title": "Transformations",
+      "sections": "S 3.5 · A 2.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-f-x-2-move-the-graph-right",
+          "title": "Why does f(x − 2) move the graph right?",
+          "tag": "WHY",
+          "summary": "Compares tables: the input must be 2 bigger to reach the same output (spec below)",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 1,
+          "spec": "Table view: two tables, f(x) and f(x − 2); highlight that the output 4 now appears 2 rows later. Input dial: drag x and see the 'effective input' x − 2 lag behind it. Graph view: a ghost of f follows, and the shift slider's sign is drawn as an arrow. Contrast: f(x) − 2 alongside, where changing the output moves the graph the way you'd expect.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-f-2x-squeeze-but-2f-x-stretch",
+          "title": "Why does f(2x) squeeze but 2f(x) stretch?",
+          "tag": "WHY",
+          "summary": "Changes the input versus the output and sees horizontal changes act 'backwards'",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-order-of-transformations-matter",
+          "title": "Why does the order of transformations matter?",
+          "tag": "WHY",
+          "summary": "Shifts then stretches, then reverses the order, and gets a different graph",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "f-x-versus-f-x",
+          "title": "−f(x) versus f(−x)",
+          "tag": "WHY",
+          "summary": "Flips over the x-axis versus the y-axis",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "transformation-sequence-builder",
+          "title": "Transformation sequence builder",
+          "tag": "HOW",
+          "summary": "Stacks shifts, stretches and reflections on any parent function (see Trigonometry → Sine & Cosine Graphs)",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/sine-cosine-graphs",
+            "functions-graphs/transformations/why-does-the-order-of-transformations-matter"
+          ]
+        },
+        {
+          "slug": "match-the-graph-to-the-equation",
+          "title": "Match the graph to the equation",
+          "tag": "HOW",
+          "summary": "Plays a timed matching game",
+          "sections": "S 3.5 · A 2.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/transformations/why-does-the-order-of-transformations-matter"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "combining-inverting",
+      "title": "Combining & Inverting",
+      "sections": "S 3.1, 6.1–6.2 · A 2.6, 4.1",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-fg-not-gf",
+          "title": "Why is f∘g not g∘f?",
+          "tag": "WHY",
+          "summary": "Puts on socks then shoes, then shoes then socks, with two function machines",
+          "sections": "S 6.1 · A 2.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-is-f-x-h-not-f-x-h"
+          ]
+        },
+        {
+          "slug": "why-does-the-domain-of-fg-shrink",
+          "title": "Why does the domain of f∘g shrink?",
+          "tag": "WHY",
+          "summary": "Sees g's outputs that f can't accept get removed",
+          "sections": "S 6.1 · A 2.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-must-a-function-be-one-to-one-to-invert",
+          "title": "Why must a function be one-to-one to invert?",
+          "tag": "WHY",
+          "summary": "Sweeps a horizontal line: two hits means 'undo' is ambiguous",
+          "sections": "S 6.2 · A 4.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output"
+          ]
+        },
+        {
+          "slug": "why-does-the-inverse-reflect-in-y-x",
+          "title": "Why does the inverse reflect in y = x?",
+          "tag": "WHY",
+          "summary": "Swaps every (a, b) to (b, a) and watches the graph fold (see Trigonometry → Inverses)",
+          "sections": "S 6.2 · A 4.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/inverses-equations"
+          ]
+        },
+        {
+          "slug": "why-undo-in-reverse-order",
+          "title": "Why undo in reverse order?",
+          "tag": "WHY",
+          "summary": "Sees (f∘g)⁻¹ = g⁻¹∘f⁻¹: take shoes off before socks",
+          "sections": "A 4.1",
+          "extension": true,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-is-every-increasing-function-one-to-one",
+          "title": "Why is every increasing function one-to-one?",
+          "tag": "WHY",
+          "summary": "Slides a horizontal line across a rising graph; it can only hit once",
+          "sections": "Ax 1.6",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "why-is-one-one-the-same-as-onto-for-a-finite-set-but-not-for",
+          "title": "Why is one-one the same as onto for a finite set, but not for ℕ?",
+          "tag": "WHY",
+          "summary": "Maps 5 balls to 5 boxes (no clash forces no empty box), then maps ℕ → ℕ by n ↦ 2n (one-one, misses the odds)",
+          "sections": "MXII 1.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/combining-inverting/why-must-a-function-be-one-to-one-to-invert"
+          ]
+        },
+        {
+          "slug": "why-is-f1-not-1-f-and-sin1-x-1-sin-x",
+          "title": "Why is f⁻¹ not 1/f? (and sin⁻¹ x ≠ 1/sin x)",
+          "tag": "WHY",
+          "summary": "Plots sin⁻¹ x and (sin x)⁻¹ = cosec x side by side: one undoes sine, the other is its reciprocal",
+          "sections": "MXII 2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "trigonometry/inverses-equations/why-can-t-sine-be-inverted-as-it-is"
+          ]
+        },
+        {
+          "slug": "find-an-inverse-algebraically",
+          "title": "Find an inverse algebraically",
+          "tag": "HOW",
+          "summary": "Swaps x and y, solves, then checks on the graph",
+          "sections": "S 6.2 · A 4.1",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "functions-graphs/combining-inverting/why-does-the-inverse-reflect-in-y-x"
+          ]
+        },
+        {
+          "slug": "add-subtract-multiply-functions",
+          "title": "Add, subtract, multiply functions",
+          "tag": "HOW",
+          "summary": "Combines two graphs point by point",
+          "sections": "S 3.1 · A 2.6",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "functions-graphs/combining-inverting/why-undo-in-reverse-order"
+          ]
+        },
+        {
+          "slug": "decompose-a-function",
+          "title": "Decompose a function",
+          "tag": "HOW",
+          "summary": "Writes √(x² + 1) as f∘g in several ways",
+          "sections": "Ax 1.4",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "functions-graphs/combining-inverting/why-is-every-increasing-function-one-to-one",
+            "functions-graphs/what-is-a-function/function-machine-rule-table-graph"
+          ]
+        },
+        {
+          "slug": "c-f-and-currency-there-and-back",
+          "title": "°C ↔ °F and currency there-and-back",
+          "tag": "APP",
+          "summary": "Converts and back again: an inverse pair in everyday life",
+          "sections": "S 6.2 · A 4.1",
+          "extension": false,
+          "order": 12,
+          "aids": [
+            "functions-graphs/combining-inverting/why-does-the-inverse-reflect-in-y-x"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "quadratic-functions",
+      "title": "Quadratic Functions",
+      "sections": "S 4.3–4.4 · A 2.4",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-the-vertex-at-x-b-2a",
+          "title": "Why is the vertex at x = −b/2a?",
+          "tag": "WHY",
+          "summary": "Sees the vertex sit midway between the roots, or wherever completing the square puts it",
+          "sections": "S 4.3 · A 2.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-control-direction-and-width",
+          "title": "Why does a control direction and width?",
+          "tag": "WHY",
+          "summary": "Slides a through negative, small and large values",
+          "sections": "S 4.3 · A 2.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-every-parabola-the-same-shape",
+          "title": "Why is every parabola the same shape?",
+          "tag": "WHY",
+          "summary": "Zooms y = ax² until it matches y = x²: all parabolas are similar",
+          "sections": "—",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "standard-vertex-factored-form",
+          "title": "Standard ↔ vertex ↔ factored form",
+          "tag": "HOW",
+          "summary": "Edits any one form and the others update",
+          "sections": "S 4.3 · A 2.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/quadratic-functions/why-is-the-vertex-at-x-b-2a"
+          ]
+        },
+        {
+          "slug": "find-a-quadratic-from-a-vertex-and-a-point",
+          "title": "Find a quadratic from a vertex and a point",
+          "tag": "HOW",
+          "summary": "Fixes the vertex, then drags a point to solve for a",
+          "sections": "S 4.3 · A 2.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/quadratic-functions/why-is-the-vertex-at-x-b-2a"
+          ]
+        },
+        {
+          "slug": "biggest-field-for-a-fixed-fence",
+          "title": "Biggest field for a fixed fence",
+          "tag": "APP",
+          "summary": "Changes the width; area is a parabola with its peak at the square",
+          "sections": "S 4.4 · A 2.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/quadratic-functions/why-does-a-control-direction-and-width"
+          ]
+        },
+        {
+          "slug": "price-that-maximises-revenue",
+          "title": "Price that maximises revenue",
+          "tag": "APP",
+          "summary": "Drags the price; revenue = price × demand peaks at the vertex",
+          "sections": "S 4.4 · A 2.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/quadratic-functions/why-is-the-vertex-at-x-b-2a"
+          ]
+        },
+        {
+          "slug": "projectiles-and-bridge-arches",
+          "title": "Projectiles and bridge arches",
+          "tag": "APP",
+          "summary": "Fits a parabola to an arch or a ball's path",
+          "sections": "S 4.4 · A 2.4",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "functions-graphs/quadratic-functions/why-is-every-parabola-the-same-shape"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "polynomial-functions",
+      "title": "Polynomial Functions",
+      "sections": "S 5.1, 5.5–5.6 · A 3.1–3.4",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-does-the-leading-term-decide-the-ends",
+          "title": "Why does the leading term decide the ends?",
+          "tag": "WHY",
+          "summary": "Zooms out until xⁿ swamps every other term",
+          "sections": "S 5.1 · A 3.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-some-roots-bounce-and-others-cross",
+          "title": "Why do some roots bounce and others cross?",
+          "tag": "WHY",
+          "summary": "Changes the multiplicity: (x − a)² can't change sign",
+          "sections": "S 5.1 · A 3.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-at-most-n-roots-and-n-1-turns",
+          "title": "Why at most n roots and n − 1 turns?",
+          "tag": "WHY",
+          "summary": "Builds a degree-n polynomial from its factors and counts",
+          "sections": "S 5.1 · A 3.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-remainder-theorem-work",
+          "title": "Why does the remainder theorem work?",
+          "tag": "WHY",
+          "summary": "Plugs c into P(x) = (x − c)Q(x) + R and the first term vanishes",
+          "sections": "S 5.5 · A 3.1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-list-of-rational-roots-so-short",
+          "title": "Why is the list of rational roots so short?",
+          "tag": "WHY",
+          "summary": "Sees that p must divide the constant and q the leading coefficient",
+          "sections": "S 5.5 · A 3.3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "descartes-rule-of-signs",
+          "title": "Descartes' rule of signs",
+          "tag": "WHY",
+          "summary": "Counts sign changes and compares them with the actual positive roots (the rule is shown, not proved)",
+          "sections": "S 5.5 · A 3.3",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "why-degree-n-means-n-complex-roots",
+          "title": "Why degree n means n complex roots",
+          "tag": "WHY",
+          "summary": "Peels off one factor at a time until nothing is left (Fundamental Theorem of Algebra)",
+          "sections": "S 5.6 · A 3.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/complex-numbers/why-do-complex-roots-come-in-conjugate-pairs"
+          ]
+        },
+        {
+          "slug": "why-is-there-no-formula-past-degree-4",
+          "title": "Why is there no formula past degree 4?",
+          "tag": "WHY",
+          "summary": "Follows the story from Tartaglia and Cardano to Abel: formulas exist up to degree 4 and provably not beyond",
+          "sections": "S 5.5 hist",
+          "extension": false,
+          "order": 8,
+          "aids": []
+        },
+        {
+          "slug": "find-every-zero",
+          "title": "Find every zero",
+          "tag": "HOW",
+          "summary": "Lists candidates, uses synthetic division, then finishes with the quadratic formula",
+          "sections": "S 5.5 · A 3.3",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "functions-graphs/polynomial-functions/why-is-there-no-formula-past-degree-4",
+            "numbers-algebra/polynomials-factoring/why-does-synthetic-division-work"
+          ]
+        },
+        {
+          "slug": "trap-a-root-intermediate-value-theorem",
+          "title": "Trap a root (intermediate value theorem)",
+          "tag": "HOW",
+          "summary": "Halves an interval where the sign changes until the root is pinned",
+          "sections": "S 5.5 · A 3.2",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "functions-graphs/polynomial-functions/why-does-the-remainder-theorem-work"
+          ]
+        },
+        {
+          "slug": "open-top-box-from-a-sheet",
+          "title": "Open-top box from a sheet",
+          "tag": "APP",
+          "summary": "Cuts corners of size x; the volume is a cubic with a best x",
+          "sections": "S 5.1 · A 3.2",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "functions-graphs/polynomial-functions/why-is-there-no-formula-past-degree-4"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rational-functions",
+      "title": "Rational Functions",
+      "sections": "S 5.2–5.3 · A 3.5",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-vertical-asymptotes-and-when-only-a-hole",
+          "title": "Why vertical asymptotes, and when only a hole?",
+          "tag": "WHY",
+          "summary": "Zeros the denominator: if the factor cancels you get a hole, otherwise a wall",
+          "sections": "S 5.2 · A 3.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-degrees-decide-the-horizontal-asymptote",
+          "title": "Why do degrees decide the horizontal asymptote?",
+          "tag": "WHY",
+          "summary": "Races the leading terms as x grows",
+          "sections": "S 5.2 · A 3.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-a-slant-asymptote",
+          "title": "Why a slant asymptote?",
+          "tag": "WHY",
+          "summary": "Long division leaves a line plus a remainder that fades",
+          "sections": "S 5.2 · A 3.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-can-a-graph-cross-a-horizontal-asymptote-but-never-a-ver",
+          "title": "Why can a graph cross a horizontal asymptote but never a vertical one?",
+          "tag": "WHY",
+          "summary": "Sees a horizontal asymptote is only about the far ends",
+          "sections": "S 5.3 · A 3.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "analyse-a-rational-function",
+          "title": "Analyse a rational function",
+          "tag": "HOW",
+          "summary": "Walks through domain → intercepts → asymptotes → sign chart → sketch",
+          "sections": "S 5.3 · A 3.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/rational-functions/why-vertical-asymptotes-and-when-only-a-hole",
+            "numbers-algebra/inequalities-absolute-value/why-do-sign-charts-work"
+          ]
+        },
+        {
+          "slug": "average-cost-falls-toward-a-limit",
+          "title": "Average cost falls toward a limit",
+          "tag": "APP",
+          "summary": "Watches cost per item = (fixed + variable·n)/n approach the variable cost",
+          "sections": "S 5.3 · A 3.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/rational-functions/why-vertical-asymptotes-and-when-only-a-hole"
+          ]
+        },
+        {
+          "slug": "least-metal-for-a-can",
+          "title": "Least metal for a can",
+          "tag": "APP",
+          "summary": "Fixes the volume and minimises surface area over the radius",
+          "sections": "S 5.3 · A 3.5",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "functions-graphs/rational-functions/why-vertical-asymptotes-and-when-only-a-hole"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "modelling-with-data",
+      "title": "Modelling with Data",
+      "sections": "S 4.2, 4.4, 5.1, 6.9 · A 2.7, 4.7",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-does-best-fit-mean-least-squares",
+          "title": "Why does 'best fit' mean least squares?",
+          "tag": "WHY",
+          "summary": "Drags a line while the squared errors are drawn as real squares; it chases the smallest total",
+          "sections": "S 4.2 · A 2.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "what-does-r-measure",
+          "title": "What does r measure?",
+          "tag": "WHY",
+          "summary": "Sees that the correlation coefficient tracks how straight the cloud is, not how steep",
+          "sections": "S 4.2 · A 2.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-take-logs-of-exponential-data",
+          "title": "Why take logs of exponential data?",
+          "tag": "WHY",
+          "summary": "Re-plots the data on a log axis and it straightens into a line",
+          "sections": "S 6.9 · A 4.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "linear-or-not",
+          "title": "Linear or not?",
+          "tag": "HOW",
+          "summary": "Sorts scatter plots into linear and nonlinear",
+          "sections": "S 4.2 · A 2.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/modelling-with-data/what-does-r-measure"
+          ]
+        },
+        {
+          "slug": "model-picker",
+          "title": "Model picker",
+          "tag": "HOW",
+          "summary": "Fits linear, quadratic, cubic, exponential, logarithmic and logistic models to the same points and compares",
+          "sections": "S 4.4, 5.1, 6.9 · A 2.7, 4.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/modelling-with-data/why-take-logs-of-exponential-data",
+            "functions-graphs/lines-slope/linear-models-fares-and-depreciation"
+          ]
+        },
+        {
+          "slug": "diamond-price-versus-carat",
+          "title": "Diamond price versus carat",
+          "tag": "APP",
+          "summary": "Fits an exponential model to the book's Hope-diamond style data",
+          "sections": "A 4.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "functions-graphs/modelling-with-data/why-take-logs-of-exponential-data",
+            "functions-graphs/quadratic-functions/price-that-maximises-revenue"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "area-by-stretching",
+      "title": "Area by Stretching",
+      "sections": "Ax 4.2",
+      "order": 11,
+      "children": [
+        {
+          "slug": "why-is-a-triangle-half-a-parallelogram",
+          "title": "Why is a triangle half a parallelogram?",
+          "tag": "WHY",
+          "summary": "Copies the triangle, rotates it 180° and joins them",
+          "sections": "Ax 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-stretching-by-c-multiply-area-by-c",
+          "title": "Why does stretching by c multiply area by c?",
+          "tag": "WHY",
+          "summary": "Stretches a region horizontally, then vertically, while a grid of squares counts the area",
+          "sections": "Ax 4.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-an-ellipse-s-area-piab",
+          "title": "Why is an ellipse's area πab?",
+          "tag": "WHY",
+          "summary": "Stretches a unit circle by a and b",
+          "sections": "Ax 4.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-circle-s-area-pir2",
+          "title": "Why is a circle's area πr²?",
+          "tag": "WHY",
+          "summary": "Unrolls rings into a triangle, or cuts the disc into wedges and lays them into a near-rectangle",
+          "sections": "Ax 4.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "area-of-any-polygon",
+          "title": "Area of any polygon",
+          "tag": "HOW",
+          "summary": "Splits it into triangles",
+          "sections": "Ax 4.2, 6.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/area-by-stretching/why-is-an-ellipse-s-area-piab"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 2
+}

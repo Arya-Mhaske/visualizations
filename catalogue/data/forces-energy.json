@@ -1,0 +1,899 @@
+{
+  "slug": "forces-energy",
+  "title": "Forces & Energy",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 21,
+  "children": [
+    {
+      "slug": "inertia-the-first-law",
+      "title": "Inertia & the First Law",
+      "sections": "N 4.1–4.4",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-did-aristotle-think-motion-needs-a-push",
+          "title": "Why did Aristotle think motion needs a push?",
+          "tag": "WHY",
+          "summary": "Pushes a toy car on carpet, wood and ice, and sees friction is the hidden force",
+          "sections": "N 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "galileo-s-double-incline-why-would-the-ball-roll-forever",
+          "title": "Galileo's double incline: why would the ball roll forever?",
+          "tag": "WHY",
+          "summary": "Flattens the second slope; the ball rolls farther to regain its height, and on a level slope it never stops (spec below)",
+          "sections": "N 4.3",
+          "extension": false,
+          "order": 2,
+          "spec": "Setup: a ball released on the left slope rises to the same height on the right (no friction). Flatten: lowering the right slope makes the ball travel further to reach that height. Limit: at 0° the height is never reached, so the motion never stops: inertia. Reality: a friction slider shows why real balls stop.",
+          "aids": []
+        },
+        {
+          "slug": "why-are-you-thrown-back-when-the-bus-starts",
+          "title": "Why are you thrown back when the bus starts?",
+          "tag": "WHY",
+          "summary": "Sees your feet go with the floor while your body stays put",
+          "sections": "N 4.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-w-r-so-the-book-is-at-rest-backwards",
+          "title": "Why is 'W = R, so the book is at rest' backwards?",
+          "tag": "WHY",
+          "summary": "Reasons from the observation: the book is at rest, so the forces must balance",
+          "sections": "N 4.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "vega-inertia-in-ancient-indian-thought",
+          "title": "Vega: inertia in ancient Indian thought",
+          "tag": "APP",
+          "summary": "Reads how the Vaiśeṣika idea of vega (persistent straight-line motion) anticipates inertia",
+          "sections": "N 4.4 box",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "forces-energy/inertia-the-first-law/why-did-aristotle-think-motion-needs-a-push"
+          ]
+        },
+        {
+          "slug": "an-astronaut-steps-off-an-accelerating-ship",
+          "title": "An astronaut steps off an accelerating ship",
+          "tag": "APP",
+          "summary": "Loses all acceleration the instant they leave",
+          "sections": "Ex 4.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/inertia-the-first-law/why-is-w-r-so-the-book-is-at-rest-backwards"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "second-law-momentum",
+      "title": "Second Law & Momentum",
+      "sections": "N 4.5",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-momentum-not-just-velocity",
+          "title": "Why momentum, not just velocity?",
+          "tag": "WHY",
+          "summary": "Stops a car and a truck at the same speed, then a slow and a fast bullet",
+          "sections": "N 4.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-cricketer-pull-the-hands-back",
+          "title": "Why does a cricketer pull the hands back?",
+          "tag": "WHY",
+          "summary": "Spreads the same Δp over a longer time and sees the force peak drop on the F–t graph",
+          "sections": "N 4.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "integral-applications/average-value/bat-meets-ball-impulse"
+          ]
+        },
+        {
+          "slug": "why-does-the-second-law-act-here-and-now",
+          "title": "Why does the second law act here and now?",
+          "tag": "WHY",
+          "summary": "Drops a stone from an accelerating train: no horizontal acceleration afterwards",
+          "sections": "N 4.5, PtP 3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-force-only-change-the-velocity-along-it",
+          "title": "Why does a force only change the velocity along it?",
+          "tag": "WHY",
+          "summary": "Pushes sideways on a moving puck and watches the original component stay the same",
+          "sections": "N 4.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "measurement-motion/vectors/why-do-components-make-adding-easy"
+          ]
+        },
+        {
+          "slug": "why-isn-t-ma-another-force",
+          "title": "Why isn't 'ma' another force?",
+          "tag": "WHY",
+          "summary": "Labels every force as 'force on A by B'; ma is the effect, not a cause",
+          "sections": "PtP 4",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "f-ma-and-impulse-solver",
+          "title": "F = ma and impulse solver",
+          "tag": "HOW",
+          "summary": "Solves force problems and computes impulse (a 12 m/s ball hit straight back = 3.6 N s)",
+          "sections": "N 4.5, Ex 4.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/second-law-momentum/why-isn-t-ma-another-force"
+          ]
+        },
+        {
+          "slug": "a-bullet-into-a-wooden-block",
+          "title": "A bullet into a wooden block",
+          "tag": "APP",
+          "summary": "Stops a bullet in 60 cm, needing an average force of 270 N",
+          "sections": "Ex 4.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/second-law-momentum/why-momentum-not-just-velocity"
+          ]
+        },
+        {
+          "slug": "weighing-scale-in-a-lift",
+          "title": "Weighing scale in a lift",
+          "tag": "APP",
+          "summary": "Rides up, down and in free fall and watches the reading change",
+          "sections": "Ex 4.13",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "forces-energy/second-law-momentum/why-does-a-force-only-change-the-velocity-along-it"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "third-law-momentum-conservation",
+      "title": "Third Law & Momentum Conservation",
+      "sections": "N 4.6–4.7",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-don-t-action-and-reaction-cancel",
+          "title": "Why don't action and reaction cancel?",
+          "tag": "WHY",
+          "summary": "Draws each force on its own body",
+          "sections": "N 4.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-falling-stone-pull-earth-up-just-as-hard",
+          "title": "Why does a falling stone pull Earth up just as hard?",
+          "tag": "WHY",
+          "summary": "Compares equal forces with very different accelerations",
+          "sections": "N 4.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-momentum-conserved",
+          "title": "Why is momentum conserved?",
+          "tag": "WHY",
+          "summary": "Pairs the third law with the second over a shared time interval",
+          "sections": "N 4.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "how-does-a-horse-pull-a-cart-at-all",
+          "title": "How does a horse pull a cart at all?",
+          "tag": "WHY",
+          "summary": "Draws the free-body diagrams; the ground's push decides",
+          "sections": "Ex 4.23",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "find-the-actionreaction-pairs",
+          "title": "Find the action–reaction pairs",
+          "tag": "HOW",
+          "summary": "Matches the force pairs in a scene",
+          "sections": "Ex 4.12",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-don-t-action-and-reaction-cancel"
+          ]
+        },
+        {
+          "slug": "gun-recoil",
+          "title": "Gun recoil",
+          "tag": "APP",
+          "summary": "Fires a 20 g shell at 80 m/s from a 100 kg gun: recoil 1.6 cm/s",
+          "sections": "Ex 4.19",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-is-momentum-conserved"
+          ]
+        },
+        {
+          "slug": "ball-off-a-wall-at-an-angle",
+          "title": "Ball off a wall at an angle",
+          "tag": "APP",
+          "summary": "Sees the force on the wall is always normal to it",
+          "sections": "Ex 4.5",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-don-t-action-and-reaction-cancel"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "equilibrium-free-body-diagrams",
+      "title": "Equilibrium & Free-Body Diagrams",
+      "sections": "N 4.8, 4.11",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-do-three-forces-in-equilibrium-close-a-triangle",
+          "title": "Why do three forces in equilibrium close a triangle?",
+          "tag": "WHY",
+          "summary": "Lays the force arrows tip to tail and they return to the start",
+          "sections": "N 4.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/why-tip-to-tail"
+          ]
+        },
+        {
+          "slug": "why-does-a-free-body-diagram-show-only-forces-on-the-body",
+          "title": "Why does a free-body diagram show only forces ON the body?",
+          "tag": "WHY",
+          "summary": "Chooses the system and filters out everything else",
+          "sections": "N 4.11",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "free-body-diagram-builder",
+          "title": "Free-body diagram builder",
+          "tag": "HOW",
+          "summary": "Drags forces onto the chosen body",
+          "sections": "N 4.11",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/equilibrium-free-body-diagrams/why-does-a-free-body-diagram-show-only-forces-on-the-body"
+          ]
+        },
+        {
+          "slug": "resolve-and-solve",
+          "title": "Resolve and solve",
+          "tag": "HOW",
+          "summary": "Pulls a rope sideways with 50 N under a 60 N load and solves the angle along two axes",
+          "sections": "Ex 4.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "measurement-motion/vectors/component-calculator",
+            "forces-energy/equilibrium-free-body-diagrams/why-does-a-free-body-diagram-show-only-forces-on-the-body"
+          ]
+        },
+        {
+          "slug": "block-pulley-and-trolley",
+          "title": "Block, pulley and trolley",
+          "tag": "APP",
+          "summary": "Finds a = 0.96 m/s² and T = 27.1 N",
+          "sections": "Ex 4.9",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-do-the-same-thing-to-both-sides",
+            "forces-energy/equilibrium-free-body-diagrams/why-does-a-free-body-diagram-show-only-forces-on-the-body"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "friction",
+      "title": "Friction",
+      "sections": "N 4.9",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-static-friction-self-adjusting",
+          "title": "Why is static friction self-adjusting?",
+          "tag": "WHY",
+          "summary": "Pushes harder and harder; friction matches the push until it reaches μₛN",
+          "sections": "N 4.9.1, PtP 6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-friction-depend-on-contact-area",
+          "title": "Why doesn't friction depend on contact area?",
+          "tag": "WHY",
+          "summary": "Turns a brick on its side; the force is the same (an empirical law, not a fundamental one)",
+          "sections": "N 4.9.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-friction-what-moves-cars-and-walkers-forward",
+          "title": "Why is friction what moves cars and walkers forward?",
+          "tag": "WHY",
+          "summary": "Puts a car on ice and watches the wheels spin with nowhere to push",
+          "sections": "N 4.4, PtP 10",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/inertia-the-first-law/why-did-aristotle-think-motion-needs-a-push"
+          ]
+        },
+        {
+          "slug": "why-does-the-slip-angle-give-s-tan-theta",
+          "title": "Why does the slip angle give μₛ = tan θ?",
+          "tag": "WHY",
+          "summary": "Tilts a plane until the block slides; mass cancels",
+          "sections": "Ex 4.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/tan-cot-sec-csc/tan-theta-is-a-slope"
+          ]
+        },
+        {
+          "slug": "why-is-rolling-friction-so-much-smaller",
+          "title": "Why is rolling friction so much smaller?",
+          "tag": "WHY",
+          "summary": "Compares sliding, rolling and ball bearings",
+          "sections": "N 4.9.1",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-are-contact-forces-electrical-at-heart",
+          "title": "Why are contact forces electrical at heart?",
+          "tag": "WHY",
+          "summary": "Zooms into a surface to see electron clouds pushing back",
+          "sections": "N 4.9",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "incline-calculator",
+          "title": "Incline calculator",
+          "tag": "HOW",
+          "summary": "Finds the forces and acceleration on a rough slope",
+          "sections": "N 4.9",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "measurement-motion/vectors/component-calculator",
+            "forces-energy/friction/why-are-contact-forces-electrical-at-heart",
+            "trigonometry/vectors/block-on-an-incline",
+            "forces-energy/inertia-the-first-law/galileo-s-double-incline-why-would-the-ball-roll-forever"
+          ]
+        },
+        {
+          "slug": "a-box-in-an-accelerating-train",
+          "title": "A box in an accelerating train",
+          "tag": "APP",
+          "summary": "Stays put up to a = μₛg = 1.5 m/s²",
+          "sections": "Ex 4.7",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "forces-energy/friction/why-is-static-friction-self-adjusting",
+            "forces-energy/second-law-momentum/why-does-the-second-law-act-here-and-now"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "circular-dynamics",
+      "title": "Circular Dynamics",
+      "sections": "N 4.10",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-isn-t-centripetal-force-a-new-force",
+          "title": "Why isn't centripetal force a new force?",
+          "tag": "WHY",
+          "summary": "Finds the real force in each case: tension, friction or gravity",
+          "sections": "PtP 5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "measurement-motion/circular-motion/why-is-a-v2-r",
+            "forces-energy/second-law-momentum/why-isn-t-ma-another-force"
+          ]
+        },
+        {
+          "slug": "why-do-you-feel-pushed-outward-on-a-merry-go-round",
+          "title": "Why do you feel pushed outward on a merry-go-round?",
+          "tag": "WHY",
+          "summary": "Separates the real inward force from the feeling of impending motion",
+          "sections": "PtP 11",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-level-turn-have-a-speed-limit",
+          "title": "Why does a level turn have a speed limit?",
+          "tag": "WHY",
+          "summary": "Raises the speed until friction can't supply mv²/R: v_max = √(μₛRg)",
+          "sections": "N 4.10",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-banking-help",
+          "title": "Why does banking help?",
+          "tag": "WHY",
+          "summary": "Tilts the road so the normal force leans inward: v₀ = √(Rg tan θ) needs no friction",
+          "sections": "N 4.10",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "measurement-motion/vectors/why-do-components-make-adding-easy"
+          ]
+        },
+        {
+          "slug": "why-does-a-stone-fly-off-along-the-tangent",
+          "title": "Why does a stone fly off along the tangent?",
+          "tag": "WHY",
+          "summary": "Cuts the string mid-swing",
+          "sections": "Ex 4.22",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "measurement-motion/projectiles/why-is-velocity-always-tangent-to-the-path"
+          ]
+        },
+        {
+          "slug": "will-the-cyclist-slip",
+          "title": "Will the cyclist slip?",
+          "tag": "APP",
+          "summary": "Takes a 3 m turn at 18 km/h with μ = 0.1: yes",
+          "sections": "Ex 4.10",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/circular-dynamics/why-does-a-level-turn-have-a-speed-limit"
+          ]
+        },
+        {
+          "slug": "a-banked-race-track",
+          "title": "A banked race track",
+          "tag": "APP",
+          "summary": "Uses a 300 m radius banked at 15°: optimum speed 28.1 m/s",
+          "sections": "Ex 4.11",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/circular-dynamics/why-does-a-level-turn-have-a-speed-limit"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "work-kinetic-energy",
+      "title": "Work & Kinetic Energy",
+      "sections": "N 5.1–5.6",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-only-the-force-along-the-motion-do-work",
+          "title": "Why does only the force along the motion do work?",
+          "tag": "WHY",
+          "summary": "Pulls a box at an angle; W = F·d = Fd cos θ",
+          "sections": "N 5.1.1, 5.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "linear-algebra/vectors-combinations/why-is-v-w-v-w-cos-theta",
+            "trigonometry/vectors/work-when-pulling-at-an-angle",
+            "measurement-motion/circular-motion/why-don-t-the-equations-of-motion-work-in-circles"
+          ]
+        },
+        {
+          "slug": "why-does-pushing-a-wall-do-no-work-but-tire-you",
+          "title": "Why does pushing a wall do no work but tire you?",
+          "tag": "WHY",
+          "summary": "Sees zero displacement means zero work, while muscles still use internal energy",
+          "sections": "N 5.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-workenergy-theorem-v2-u2-2as-in-disguise",
+          "title": "Why is the work–energy theorem v² = u² + 2as in disguise?",
+          "tag": "WHY",
+          "summary": "Multiplies the kinematic equation by m/2",
+          "sections": "N 5.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "measurement-motion/uniform-acceleration/why-do-the-three-equations-of-motion-come-from-one-picture"
+          ]
+        },
+        {
+          "slug": "why-is-variable-force-work-the-area-under-fx",
+          "title": "Why is variable-force work the area under F–x?",
+          "tag": "WHY",
+          "summary": "Slices the F–x curve into rectangles (spec below)",
+          "sections": "N 5.5",
+          "extension": false,
+          "order": 4,
+          "spec": "Curve: drag points to shape F(x). Slices: n rectangles F(xᵢ)Δx, summed live. Limit: as n grows the sum converges to the area, ∫F dx. Check: a spring F = kx gives the triangle ½kx².",
+          "aids": [
+            "integral-applications/work/why-is-work-an-integral-when-the-force-changes",
+            "integrals/area-distance/why-do-more-rectangles-give-the-exact-area"
+          ]
+        },
+        {
+          "slug": "why-don-t-third-law-pairs-do-equal-and-opposite-work",
+          "title": "Why don't third-law pairs do equal and opposite work?",
+          "tag": "WHY",
+          "summary": "Skids a cycle: the road does −2000 J on it, the cycle does 0 on the road",
+          "sections": "Ex 5.3, PtP 3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "dot-product-work-calculator",
+          "title": "Dot-product work calculator",
+          "tag": "HOW",
+          "summary": "Finds the angle and work from components",
+          "sections": "Ex 5.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-does-only-the-force-along-the-motion-do-work",
+            "trigonometry/vectors/why-does-the-dot-product-come-from-complex-numbers"
+          ]
+        },
+        {
+          "slug": "a-raindrop-s-energy-budget",
+          "title": "A raindrop's energy budget",
+          "tag": "APP",
+          "summary": "Sees gravity does 10 J while air takes away 8.75 J",
+          "sections": "Ex 5.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-is-the-workenergy-theorem-v2-u2-2as-in-disguise"
+          ]
+        },
+        {
+          "slug": "a-bullet-through-plywood",
+          "title": "A bullet through plywood",
+          "tag": "APP",
+          "summary": "Keeps 10% of its KE but 32% of its speed",
+          "sections": "Ex 5.4",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-is-a-1-2-roota",
+            "forces-energy/work-kinetic-energy/why-does-pushing-a-wall-do-no-work-but-tire-you",
+            "forces-energy/second-law-momentum/a-bullet-into-a-wooden-block"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "potential-energy-conservation",
+      "title": "Potential Energy & Conservation",
+      "sections": "N 5.7–5.9",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-do-only-some-forces-have-a-potential-energy",
+          "title": "Why do only some forces have a potential energy?",
+          "tag": "WHY",
+          "summary": "Walks gravity and friction around a closed loop: gravity's work is 0, friction's isn't (spec below)",
+          "sections": "N 5.7–5.8, PtP 8",
+          "extension": false,
+          "order": 1,
+          "spec": "Loop: move a block around a closed path on a hill, with and without friction. Ledger: gravity's work around the loop sums to 0, friction's is negative. Path test: two different routes between the same points do equal gravity work but different friction work. Definition: only path-independent forces get V(x) with F = −dV/dx.",
+          "aids": [
+            "vector-calculus/line-integrals/why-are-conservative-fields-path-independent"
+          ]
+        },
+        {
+          "slug": "why-is-f-dv-dx",
+          "title": "Why is F = −dV/dx?",
+          "tag": "WHY",
+          "summary": "Rolls a ball on an energy landscape: it is pushed downhill, and harder where the slope is steep",
+          "sections": "N 5.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-the-derivative-the-slope-you-see-when-you-zoom-in"
+          ]
+        },
+        {
+          "slug": "why-is-the-zero-of-potential-energy-arbitrary",
+          "title": "Why is the zero of potential energy arbitrary?",
+          "tag": "WHY",
+          "summary": "Moves the zero and sees every difference stay the same",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivative-applications/antiderivatives/why-does-every-antiderivative-carry-c"
+          ]
+        },
+        {
+          "slug": "why-is-a-spring-s-pe-12kx2",
+          "title": "Why is a spring's PE ½kx²?",
+          "tag": "WHY",
+          "summary": "Reads the triangle under F = kx",
+          "sections": "N 5.9",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integral-applications/work/why-is-work-an-integral-when-the-force-changes"
+          ]
+        },
+        {
+          "slug": "why-is-the-speed-at-the-bottom-of-any-smooth-slope-root-2gh",
+          "title": "Why is the speed at the bottom of any smooth slope √(2gh)?",
+          "tag": "WHY",
+          "summary": "Changes the slope's shape: the speed only cares about the drop",
+          "sections": "N 5.7",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "read-an-energy-diagram",
+          "title": "Read an energy diagram",
+          "tag": "WHY",
+          "summary": "Draws E across V(x) to find the turning points and forbidden regions",
+          "sections": "Ex 5.3–5.4",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "energy-bar-chart",
+          "title": "Energy bar chart",
+          "tag": "HOW",
+          "summary": "Tracks K, V and E as bars through a motion",
+          "sections": "N 5.8",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/potential-energy-conservation/read-an-energy-diagram"
+          ]
+        },
+        {
+          "slug": "loop-the-loop",
+          "title": "Loop-the-loop",
+          "tag": "APP",
+          "summary": "Needs v₀ = √(5gL) at the bottom to stay on the string at the top",
+          "sections": "Ex 5.7",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-is-the-speed-at-the-bottom-of-any-smooth-slope-root-2gh",
+            "measurement-motion/circular-motion/aircraft-loop-how-many-g"
+          ]
+        },
+        {
+          "slug": "crash-test-spring",
+          "title": "Crash-test spring",
+          "tag": "APP",
+          "summary": "Compresses 2.00 m without friction, 1.35 m with friction",
+          "sections": "Ex 5.8–5.9",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "numbers-algebra/quadratic-equations/choose-a-method-factor-complete-or-formula",
+            "forces-energy/potential-energy-conservation/why-is-a-spring-s-pe-12kx2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power",
+      "title": "Power",
+      "sections": "N 5.10",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-is-p-f-v",
+          "title": "Why is P = F · v?",
+          "tag": "WHY",
+          "summary": "Divides dW = F·dx by dt",
+          "sections": "N 5.10",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change",
+            "derivatives/parametric-polar-slopes/why-isn-t-d2y-dx2-y-t-x-t",
+            "derivatives/parametric-polar-slopes/why-is-dy-dx-dy-dt-dx-dt"
+          ]
+        },
+        {
+          "slug": "why-is-a-kwh-energy-not-power",
+          "title": "Why is a kWh energy, not power?",
+          "tag": "WHY",
+          "summary": "Runs a 100 W bulb for 10 h: 1 kWh = 3.6 MJ",
+          "sections": "N 5.10",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "lift-motor-power",
+          "title": "Lift motor power",
+          "tag": "APP",
+          "summary": "Lifts at 2 m/s against 22 kN: 44 kW, about 59 hp",
+          "sections": "Ex 5.10",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/power/why-is-a-kwh-energy-not-power"
+          ]
+        },
+        {
+          "slug": "wind-power-grows-as-v3",
+          "title": "Wind power grows as v³",
+          "tag": "APP",
+          "summary": "Doubles the wind speed and gets 8 × the power",
+          "sections": "Ex 5.21",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-do-exponents-add-when-you-multiply",
+            "forces-energy/power/why-is-a-kwh-energy-not-power"
+          ]
+        },
+        {
+          "slug": "rooftop-solar-for-a-home",
+          "title": "Rooftop solar for a home",
+          "tag": "APP",
+          "summary": "Sizes the panel area for 8 kW at 200 W/m² and 20% efficiency",
+          "sections": "Ex 5.23",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "forces-energy/power/why-is-p-f-v"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "collisions",
+      "title": "Collisions",
+      "sections": "N 5.11",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-is-momentum-always-conserved-but-ke-only-sometimes",
+          "title": "Why is momentum always conserved but KE only sometimes?",
+          "tag": "WHY",
+          "summary": "Compares elastic, inelastic and sticky collisions on one track",
+          "sections": "N 5.11.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-is-momentum-conserved"
+          ]
+        },
+        {
+          "slug": "why-do-equal-masses-swap-velocities-head-on",
+          "title": "Why do equal masses swap velocities head-on?",
+          "tag": "WHY",
+          "summary": "Plays Newton's cradle and solves the two conservation laws",
+          "sections": "N 5.11.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "systems-matrices/nonlinear-systems/how-many-times-can-two-curves-meet"
+          ]
+        },
+        {
+          "slug": "why-does-a-ball-bounce-off-a-truck-while-the-truck-barely-no",
+          "title": "Why does a ball bounce off a truck while the truck barely notices?",
+          "tag": "WHY",
+          "summary": "Lets m₂ ≫ m₁ in the formulas",
+          "sections": "N 5.11.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-do-equal-mass-glancing-collisions-split-at-90",
+          "title": "Why do equal-mass glancing collisions split at 90°?",
+          "tag": "WHY",
+          "summary": "Pots a ball at 37° on a billiard table and finds the cue goes off at 53°",
+          "sections": "Ex 5.12",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/vectors/why-does-perpendicular-mean-dot-0"
+          ]
+        },
+        {
+          "slug": "why-isn-t-ke-conserved-during-the-impact-itself",
+          "title": "Why isn't KE conserved during the impact itself?",
+          "tag": "WHY",
+          "summary": "Slows the collision down to show the spring-like squash",
+          "sections": "PtP 9",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "collision-lab",
+          "title": "Collision lab",
+          "tag": "HOW",
+          "summary": "Slides the coefficient of restitution from elastic to perfectly inelastic",
+          "sections": "N 5.11",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/collisions/why-is-momentum-always-conserved-but-ke-only-sometimes"
+          ]
+        },
+        {
+          "slug": "why-does-a-reactor-use-heavy-water-or-graphite",
+          "title": "Why does a reactor use heavy water or graphite?",
+          "tag": "APP",
+          "summary": "Slows neutrons: deuterium takes 8/9 of the KE per hit, carbon only 28%",
+          "sections": "Ex 5.11",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "forces-energy/collisions/why-isn-t-ke-conserved-during-the-impact-itself"
+          ]
+        }
+      ]
+    }
+  ]
+}

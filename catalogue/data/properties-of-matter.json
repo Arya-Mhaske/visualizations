@@ -1,0 +1,570 @@
+{
+  "slug": "properties-of-matter",
+  "title": "Properties of Matter",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 23,
+  "children": [
+    {
+      "slug": "stress-strain",
+      "title": "Stress & Strain",
+      "sections": "N 8.1–8.4",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-the-more-elastic-material-the-one-that-stretches-less",
+          "title": "Why is the 'more elastic' material the one that stretches less?",
+          "tag": "WHY",
+          "summary": "Loads steel and rubber equally and compares how far each returns",
+          "sections": "PtP 6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-stress-force-per-area",
+          "title": "Why is stress force per area?",
+          "tag": "WHY",
+          "summary": "Hangs the same load on thin and thick wires",
+          "sections": "N 8.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-hanging-wire-s-tension-f-not-2f",
+          "title": "Why is a hanging wire's tension F, not 2F?",
+          "tag": "WHY",
+          "summary": "Cuts the wire anywhere and draws the free-body diagram",
+          "sections": "PtP 1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/equilibrium-free-body-diagrams/why-does-a-free-body-diagram-show-only-forces-on-the-body",
+            "forces-energy/equilibrium-free-body-diagrams/free-body-diagram-builder"
+          ]
+        },
+        {
+          "slug": "read-the-stressstrain-curve",
+          "title": "Read the stress–strain curve",
+          "tag": "WHY",
+          "summary": "Walks through the proportional limit, yield point and fracture (spec below)",
+          "sections": "N 8.4",
+          "extension": false,
+          "order": 4,
+          "spec": "Pull: load a virtual wire while stress and strain plot live. Regions: proportional (Hooke), elastic limit, yield, plastic, fracture, with release behaviour shown in each. Materials: steel, copper, rubber and aorta tissue curves compared. Design: why engineers stay in the linear region.",
+          "aids": []
+        },
+        {
+          "slug": "why-do-rubber-and-the-aorta-return-without-obeying-hooke-s-l",
+          "title": "Why do rubber and the aorta return without obeying Hooke's law?",
+          "tag": "WHY",
+          "summary": "Compares an elastomer's curve with steel's",
+          "sections": "N 8.4",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-do-solids-obey-hooke-s-law-at-small-strains",
+          "title": "Why do solids obey Hooke's law at small strains?",
+          "tag": "WHY",
+          "summary": "Models atoms as balls joined by springs",
+          "sections": "N 8.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess"
+          ]
+        },
+        {
+          "slug": "stress-and-strain-calculator",
+          "title": "Stress and strain calculator",
+          "tag": "HOW",
+          "summary": "Computes tensile, shear and volume strain",
+          "sections": "N 8.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "properties-of-matter/stress-strain/read-the-stressstrain-curve"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "elastic-moduli",
+      "title": "Elastic Moduli",
+      "sections": "N 8.5–8.6",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-three-moduli-stretch-shear-squeeze",
+          "title": "Why three moduli? Stretch, shear, squeeze",
+          "tag": "WHY",
+          "summary": "Applies each kind of stress to a cube",
+          "sections": "N 8.5, Table 8.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-only-solids-have-young-s-and-shear-moduli",
+          "title": "Why do only solids have Young's and shear moduli?",
+          "tag": "WHY",
+          "summary": "Tries to shear water",
+          "sections": "PtP 3–4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-air-about-a-million-times-easier-to-squeeze-than-stee",
+          "title": "Why is air about a million times easier to squeeze than steel?",
+          "tag": "WHY",
+          "summary": "Compares bulk moduli: steel 160 GPa against air 10⁻⁴ GPa",
+          "sections": "Table 8.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "measurement-motion/units-measurement/orders-of-magnitude-atom-to-earth"
+          ]
+        },
+        {
+          "slug": "why-does-a-stretched-wire-get-thinner-poisson",
+          "title": "Why does a stretched wire get thinner? (Poisson)",
+          "tag": "WHY",
+          "summary": "Stretches a wire and measures the lateral strain",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "young-s-modulus-from-a-wire-experiment",
+          "title": "Young's modulus from a wire experiment",
+          "tag": "HOW",
+          "summary": "Compares steel and copper wires",
+          "sections": "Ex 8.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "properties-of-matter/elastic-moduli/why-does-a-stretched-wire-get-thinner-poisson"
+          ]
+        },
+        {
+          "slug": "why-are-beams-i-shaped-and-cables-so-thick",
+          "title": "Why are beams I-shaped and cables so thick?",
+          "tag": "APP",
+          "summary": "Bends beams and sizes a crane rope",
+          "sections": "N 8.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "properties-of-matter/elastic-moduli/why-three-moduli-stretch-shear-squeeze"
+          ]
+        },
+        {
+          "slug": "why-can-t-mountains-be-much-taller-than-about-10-km",
+          "title": "Why can't mountains be much taller than about 10 km?",
+          "tag": "APP",
+          "summary": "Sees rock at the base yield under the mountain's weight",
+          "sections": "N 8.6",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "properties-of-matter/elastic-moduli/why-is-air-about-a-million-times-easier-to-squeeze-than-stee"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pressure-pascal",
+      "title": "Pressure & Pascal",
+      "sections": "N 9.1–9.2",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-a-needle-pierce-skin-but-a-spoon-doesn-t",
+          "title": "Why does a needle pierce skin but a spoon doesn't?",
+          "tag": "WHY",
+          "summary": "Presses the same force on different areas",
+          "sections": "N 9.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-pressure-a-scalar-when-force-is-a-vector",
+          "title": "Why is pressure a scalar when force is a vector?",
+          "tag": "WHY",
+          "summary": "Turns a small surface inside a fluid; the push is the same every way",
+          "sections": "PtP 1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-the-vessel-s-shape-matter-hydrostatic-paradox",
+          "title": "Why doesn't the vessel's shape matter? (hydrostatic paradox)",
+          "tag": "WHY",
+          "summary": "Fills differently shaped vessels: the pressure depends only on depth, P = Pₐ + ρgh",
+          "sections": "N 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-blood-pressure-higher-at-the-feet",
+          "title": "Why is blood pressure higher at the feet?",
+          "tag": "WHY",
+          "summary": "Stands a body upright and adds ρgh",
+          "sections": "Ex 9.1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-air-pressure-halve-by-about-6-km",
+          "title": "Why does air pressure halve by about 6 km?",
+          "tag": "WHY",
+          "summary": "Compresses air under its own weight and watches the exponential fall-off",
+          "sections": "Ex 9.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-half-life-constant"
+          ]
+        },
+        {
+          "slug": "why-can-a-small-push-lift-a-car-pascal",
+          "title": "Why can a small push lift a car? (Pascal)",
+          "tag": "WHY",
+          "summary": "Pushes a small piston to raise a big one: same pressure, bigger area",
+          "sections": "N 9.2",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "gauge-versus-absolute-pressure",
+          "title": "Gauge versus absolute pressure",
+          "tag": "HOW",
+          "summary": "Converts between atm, bar, torr and Pa",
+          "sections": "N 9.2, PtP 4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "properties-of-matter/pressure-pascal/why-is-pressure-a-scalar-when-force-is-a-vector"
+          ]
+        },
+        {
+          "slug": "why-is-a-mercury-barometer-76-cm-tall",
+          "title": "Why is a mercury barometer 76 cm tall?",
+          "tag": "APP",
+          "summary": "Swaps mercury for water: about 10 m",
+          "sections": "N 9.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "properties-of-matter/pressure-pascal/why-does-air-pressure-halve-by-about-6-km"
+          ]
+        },
+        {
+          "slug": "hydraulic-lifts-and-brakes",
+          "title": "Hydraulic lifts and brakes",
+          "tag": "APP",
+          "summary": "Follows the force through a hydraulic system",
+          "sections": "N 9.2",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "properties-of-matter/pressure-pascal/why-is-pressure-a-scalar-when-force-is-a-vector"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "flow-bernoulli",
+      "title": "Flow & Bernoulli",
+      "sections": "N 9.3–9.4",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-water-speed-up-where-a-pipe-narrows",
+          "title": "Why does water speed up where a pipe narrows?",
+          "tag": "WHY",
+          "summary": "Squeezes the pipe: Av stays constant",
+          "sections": "N 9.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-streamlines-never-cross",
+          "title": "Why do streamlines never cross?",
+          "tag": "WHY",
+          "summary": "Sees a crossing would need two velocities at one point",
+          "sections": "PtP 5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output"
+          ]
+        },
+        {
+          "slug": "why-is-bernoulli-just-energy-conservation",
+          "title": "Why is Bernoulli just energy conservation?",
+          "tag": "WHY",
+          "summary": "Follows a chunk of fluid: P + ½ρv² + ρgh stays constant (spec below)",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 3,
+          "spec": "Chunk: follow a fluid parcel through a pipe that narrows and rises. Work done: pressure pushes it in and out, P₁A₁v₁dt − P₂A₂v₂dt. Energy: that work equals the change in ½mv² + mgh, giving P + ½ρv² + ρgh = constant. Limits: viscosity makes it leak, the PtP caveat.",
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-do-only-some-forces-have-a-potential-energy"
+          ]
+        },
+        {
+          "slug": "fast-air-means-low-pressure-but-when-is-that-misused",
+          "title": "Fast air means low pressure, but when is that misused?",
+          "tag": "WHY",
+          "summary": "Tests Bernoulli on a wing and finds where the popular 'equal transit time' story fails",
+          "sections": "N 9.4",
+          "extension": true,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "bernoulli-calculator",
+          "title": "Bernoulli calculator",
+          "tag": "HOW",
+          "summary": "Compares two points on a streamline",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/why-is-bernoulli-just-energy-conservation"
+          ]
+        },
+        {
+          "slug": "why-does-water-leave-a-hole-at-root-2gh-torricelli",
+          "title": "Why does water leave a hole at √(2gh)? (Torricelli)",
+          "tag": "APP",
+          "summary": "Pokes holes at different depths (see Differential Equations → Separable Equations)",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-is-the-speed-at-the-bottom-of-any-smooth-slope-root-2gh",
+            "differential-equations/separable-equations",
+            "properties-of-matter/flow-bernoulli/why-does-water-speed-up-where-a-pipe-narrows"
+          ]
+        },
+        {
+          "slug": "venturi-meters-and-atomisers",
+          "title": "Venturi meters and atomisers",
+          "tag": "APP",
+          "summary": "Measures flow from a pressure drop",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/fast-air-means-low-pressure-but-when-is-that-misused"
+          ]
+        },
+        {
+          "slug": "a-narrowed-artery",
+          "title": "A narrowed artery",
+          "tag": "APP",
+          "summary": "Sees how flow speeds up and pressure drops",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/fast-air-means-low-pressure-but-when-is-that-misused"
+          ]
+        },
+        {
+          "slug": "why-does-a-spinning-ball-swing-dynamic-lift",
+          "title": "Why does a spinning ball swing? (dynamic lift)",
+          "tag": "APP",
+          "summary": "Spins a ball in an air stream",
+          "sections": "N 9.4",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/fast-air-means-low-pressure-but-when-is-that-misused"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "viscosity",
+      "title": "Viscosity",
+      "sections": "N 9.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-honey-flow-slower-than-water",
+          "title": "Why does honey flow slower than water?",
+          "tag": "WHY",
+          "summary": "Slides layers past each other: η = shear stress ÷ strain rate",
+          "sections": "N 9.5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "properties-of-matter/stress-strain/stress-and-strain-calculator"
+          ]
+        },
+        {
+          "slug": "why-does-a-liquid-s-viscosity-fall-with-heat-but-a-gas-s-ris",
+          "title": "Why does a liquid's viscosity fall with heat but a gas's rise?",
+          "tag": "WHY",
+          "summary": "Compares molecular stickiness with molecular traffic",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-falling-drops-reach-terminal-velocity",
+          "title": "Why do falling drops reach terminal velocity?",
+          "tag": "WHY",
+          "summary": "Lets drag 6πηav grow until it balances weight",
+          "sections": "N 9.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-does-logistic-growth-level-off"
+          ]
+        },
+        {
+          "slug": "terminal-velocity-calculator",
+          "title": "Terminal-velocity calculator",
+          "tag": "HOW",
+          "summary": "Works for raindrops and oil drops",
+          "sections": "N 9.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "properties-of-matter/viscosity/why-do-falling-drops-reach-terminal-velocity"
+          ]
+        },
+        {
+          "slug": "why-do-clouds-float",
+          "title": "Why do clouds float?",
+          "tag": "APP",
+          "summary": "Sees micron-sized droplets fall at only mm/s",
+          "sections": "N 9.5",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "properties-of-matter/viscosity/why-does-a-liquid-s-viscosity-fall-with-heat-but-a-gas-s-ris",
+            "rotation-gravitation/satellites/why-do-astronauts-float"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "surface-tension",
+      "title": "Surface Tension",
+      "sections": "N 9.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-a-liquid-surface-act-like-a-stretched-skin",
+          "title": "Why does a liquid surface act like a stretched skin?",
+          "tag": "WHY",
+          "summary": "Sees surface molecules miss neighbours and carry extra energy",
+          "sections": "N 9.6, PtP 8",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-drops-and-bubbles-round",
+          "title": "Why are drops and bubbles round?",
+          "tag": "WHY",
+          "summary": "Minimises surface area for a fixed volume",
+          "sections": "N 9.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-water-wet-glass-but-mercury-bead-up",
+          "title": "Why does water wet glass but mercury bead up?",
+          "tag": "WHY",
+          "summary": "Compares the angles of contact",
+          "sections": "Ex 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "properties-of-matter/pressure-pascal/why-is-a-mercury-barometer-76-cm-tall"
+          ]
+        },
+        {
+          "slug": "why-is-there-extra-pressure-inside-a-drop-or-bubble",
+          "title": "Why is there extra pressure inside a drop or bubble?",
+          "tag": "WHY",
+          "summary": "Finds 2S/r for a drop and 4S/r for a soap bubble (two surfaces)",
+          "sections": "N 9.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/venturi-meters-and-atomisers"
+          ]
+        },
+        {
+          "slug": "why-does-water-climb-a-thin-tube",
+          "title": "Why does water climb a thin tube?",
+          "tag": "WHY",
+          "summary": "Narrows the tube and watches h = 2S cos θ/(ρgr) rise",
+          "sections": "N 9.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/why-does-water-speed-up-where-a-pipe-narrows"
+          ]
+        },
+        {
+          "slug": "capillary-and-excess-pressure-calculator",
+          "title": "Capillary and excess-pressure calculator",
+          "tag": "HOW",
+          "summary": "Computes capillary rise and excess pressure",
+          "sections": "N 9.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "properties-of-matter/surface-tension/why-is-there-extra-pressure-inside-a-drop-or-bubble",
+            "properties-of-matter/pressure-pascal/gauge-versus-absolute-pressure",
+            "properties-of-matter/flow-bernoulli/a-narrowed-artery"
+          ]
+        },
+        {
+          "slug": "how-do-detergents-clean",
+          "title": "How do detergents clean?",
+          "tag": "APP",
+          "summary": "Lowers the surface tension so water gets into greasy fabric",
+          "sections": "N 9.6",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "properties-of-matter/surface-tension/why-does-water-climb-a-thin-tube"
+          ]
+        },
+        {
+          "slug": "insects-that-walk-on-water",
+          "title": "Insects that walk on water",
+          "tag": "APP",
+          "summary": "Balances the weight against the surface force",
+          "sections": "N 9.6",
+          "extension": true,
+          "order": 8,
+          "aids": [
+            "properties-of-matter/surface-tension/why-does-water-climb-a-thin-tube"
+          ]
+        }
+      ]
+    }
+  ]
+}

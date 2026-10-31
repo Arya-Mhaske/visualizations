@@ -1,0 +1,998 @@
+{
+  "slug": "numbers-algebra",
+  "title": "Numbers & Algebra",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e; additions from Axler and Stewart",
+  "children": [
+    {
+      "slug": "number-systems",
+      "title": "Number Systems",
+      "sections": "S R.1–R.2 · A P.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-we-keep-inventing-new-kinds-of-number",
+          "title": "Why do we keep inventing new kinds of number?",
+          "tag": "WHY",
+          "summary": "Climbs a tower N → Z → Q → R → C; each level exists to solve an equation the one below can't (x + 5 = 2, 2x = 3, x² = 2, x² = −1)",
+          "sections": "S R.1 · A P.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-root2-not-a-fraction",
+          "title": "Why is √2 not a fraction?",
+          "tag": "WHY",
+          "summary": "Zooms a grid of fractions p/q toward √2 and never lands; then steps through the 'both even' contradiction proof",
+          "sections": "S R.1 · A P.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-repeating-decimals-always-come-from-fractions",
+          "title": "Why do repeating decimals always come from fractions?",
+          "tag": "WHY",
+          "summary": "Runs long division of p/q: only q possible remainders, so one must repeat; also watches the gap between 0.999… and 1 shrink to nothing",
+          "sections": "S R.1 · A P.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is",
+          "title": "Why is (−) × (−) = (+)?",
+          "tag": "WHY",
+          "summary": "Multiplies on a number line where × (−1) is a half-turn; two half-turns bring you home. Also extends the pattern 3 × (−2), 2 × (−2), …",
+          "sections": "S R.1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-can-t-we-divide-by-zero",
+          "title": "Why can't we divide by zero?",
+          "tag": "WHY",
+          "summary": "Slides x toward 0 from both sides in 6 ÷ x and watches the answer blow up in opposite directions; asks 'what times 0 gives 6?'",
+          "sections": "S R.1",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-order-of-operations-what-it-is",
+          "title": "Why is the order of operations what it is?",
+          "tag": "WHY",
+          "summary": "Evaluates one expression in two orders and gets two answers; the rule is a convention so everyone gets the same one",
+          "sections": "A P.1",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "why-does-1-1-1-follow-from-the-distributive-law",
+          "title": "Why does (−1)(−1) = 1 follow from the distributive law?",
+          "tag": "WHY",
+          "summary": "Expands (−1)(1 + (−1)) = 0 two ways; the rule is forced, not chosen",
+          "sections": "Ax 0.2",
+          "extension": false,
+          "order": 7,
+          "aids": []
+        },
+        {
+          "slug": "absolute-value-is-distance",
+          "title": "Absolute value is distance",
+          "tag": "HOW",
+          "summary": "Drags a and b on a number line; |a − b| is the gap between them",
+          "sections": "S R.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/number-systems/why-do-repeating-decimals-always-come-from-fractions"
+          ]
+        },
+        {
+          "slug": "sets-and-venn-diagrams",
+          "title": "Sets and Venn diagrams",
+          "tag": "HOW",
+          "summary": "Builds union, intersection and complement by dragging elements into circles",
+          "sections": "S R.1 · A P.1",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "numbers-algebra/number-systems/why-is-the-order-of-operations-what-it-is"
+          ]
+        },
+        {
+          "slug": "interval-notation-builder",
+          "title": "Interval notation builder",
+          "tag": "HOW",
+          "summary": "Drags endpoints and toggles open/closed; the notation and the inequality update together",
+          "sections": "S 1.5 · A 1.5",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "numbers-algebra/number-systems/why-is-the-order-of-operations-what-it-is"
+          ]
+        },
+        {
+          "slug": "how-archimedes-trapped-pi",
+          "title": "How Archimedes trapped π",
+          "tag": "APP",
+          "summary": "Doubles the sides of inscribed and circumscribed polygons and watches the bounds squeeze π",
+          "sections": "A P.1",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "numbers-algebra/number-systems/why-can-t-we-divide-by-zero"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sets",
+      "title": "Sets & Relations",
+      "sections": "NM 1, MXII 1",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-the-empty-set-a-subset-of-every-set",
+          "title": "Why is the empty set a subset of every set?",
+          "tag": "WHY",
+          "summary": "Tries to find an element of ∅ that isn't in A: there is none",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-set-of-n-elements-have-2n-subsets",
+          "title": "Why does a set of n elements have 2ⁿ subsets?",
+          "tag": "WHY",
+          "summary": "Decides in or out for each element (see Sequences, Counting & Probability → Counting)",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "sequences-probability/counting/number-of-subsets-2n",
+            "sequences-probability/counting"
+          ]
+        },
+        {
+          "slug": "why-is-n-a-b-n-a-n-b-n-a-b",
+          "title": "Why is n(A ∪ B) = n(A) + n(B) − n(A ∩ B)?",
+          "tag": "WHY",
+          "summary": "Counts a Venn diagram and sees the overlap counted twice",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/probability/why-subtract-the-overlap-in-p-a-or-b"
+          ]
+        },
+        {
+          "slug": "why-de-morgan-s-laws",
+          "title": "Why De Morgan's laws?",
+          "tag": "WHY",
+          "summary": "Shades (A ∪ B)′ and A′ ∩ B′ and finds them identical",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-three-separate-tests-reflexive-symmetric-transitive",
+          "title": "Why three separate tests: reflexive, symmetric, transitive?",
+          "tag": "WHY",
+          "summary": "Toggles arrows on a dot diagram and finds relations that pass any two tests but fail the third (≤ is not symmetric; 'is a sibling of' is not reflexive)",
+          "sections": "MXII 1.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-is-a-relation-a-subset-of-a-x-b"
+          ]
+        },
+        {
+          "slug": "roster-set-builder",
+          "title": "Roster ↔ set-builder",
+          "tag": "HOW",
+          "summary": "Converts between the two notations",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/number-systems/sets-and-venn-diagrams",
+            "numbers-algebra/sets/why-is-the-empty-set-a-subset-of-every-set"
+          ]
+        },
+        {
+          "slug": "intervals-as-subsets-of-r",
+          "title": "Intervals as subsets of ℝ",
+          "tag": "HOW",
+          "summary": "Turns intervals into sets and back",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/number-systems/interval-notation-builder",
+            "numbers-algebra/sets/why-does-a-set-of-n-elements-have-2n-subsets"
+          ]
+        },
+        {
+          "slug": "test-a-relation",
+          "title": "Test a relation",
+          "tag": "HOW",
+          "summary": "Checks a relation on {1, 2, 3} for each property, then adds the fewest pairs needed to make it an equivalence",
+          "sections": "MXII 1.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/sets/why-three-separate-tests-reflexive-symmetric-transitive"
+          ]
+        },
+        {
+          "slug": "count-equivalence-relations-on-1-2-3",
+          "title": "Count equivalence relations on {1, 2, 3}",
+          "tag": "HOW",
+          "summary": "Lists the 5 ways to split the set into classes; only 2 of them contain (1, 2)",
+          "sections": "MXII 1 Misc",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "abstract-algebra/proofs-sets-relations/why-does-an-equivalence-relation-chop-a-set-into-pieces",
+            "numbers-algebra/sets/why-is-the-empty-set-a-subset-of-every-set"
+          ]
+        },
+        {
+          "slug": "survey-problems-with-venn-diagrams",
+          "title": "Survey problems with Venn diagrams",
+          "tag": "APP",
+          "summary": "Finds how many like tea only, coffee only or both",
+          "sections": "NM 1",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "numbers-algebra/sets/why-is-n-a-b-n-a-n-b-n-a-b",
+            "numbers-algebra/number-systems/sets-and-venn-diagrams"
+          ]
+        },
+        {
+          "slug": "which-day-of-the-week-classes-mod-7",
+          "title": "Which day of the week? Classes mod 7",
+          "tag": "APP",
+          "summary": "Groups dates by remainder mod 7; 'a − b divisible by 7' is an equivalence relation",
+          "sections": "MXII 1.2",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "numbers-algebra/sets/why-three-separate-tests-reflexive-symmetric-transitive"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "exponents-roots",
+      "title": "Exponents & Roots",
+      "sections": "S R.2, R.8 · A P.2",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-a0-1",
+          "title": "Why is a⁰ = 1?",
+          "tag": "WHY",
+          "summary": "Walks down 2³, 2², 2¹ dividing by 2 each step; the pattern forces 2⁰ = 1",
+          "sections": "S R.2 · A P.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-an-1-an",
+          "title": "Why is a⁻ⁿ = 1/aⁿ?",
+          "tag": "WHY",
+          "summary": "Keeps halving past zero: 2⁻¹ = ½, 2⁻² = ¼",
+          "sections": "S R.2 · A P.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-exponents-add-when-you-multiply",
+          "title": "Why do exponents add when you multiply?",
+          "tag": "WHY",
+          "summary": "Joins a block of 3 factors to a block of 4 and counts 7",
+          "sections": "S R.2 · A P.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-1-2-roota",
+          "title": "Why is a^(1/2) = √a?",
+          "tag": "WHY",
+          "summary": "Sees that the exponent laws force (a^½)² = a, so a^½ must be √a; then extends to a^(m/n)",
+          "sections": "S R.8 · A P.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-root-a2-a-not-a",
+          "title": "Why is √(a²) = |a|, not a?",
+          "tag": "WHY",
+          "summary": "Plots y = √(x²) and y = x together; they disagree for every negative x",
+          "sections": "S R.8",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-rationalise-the-denominator",
+          "title": "Why rationalise the denominator?",
+          "tag": "WHY",
+          "summary": "Divides 1 by 1.41421 by hand versus 1.41421 by 2 and compares the effort; today it's mostly a convention for comparing answers",
+          "sections": "S R.8 · A P.2",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "simplify-radicals-with-a-factor-tree",
+          "title": "Simplify radicals with a factor tree",
+          "tag": "HOW",
+          "summary": "Splits the radicand into prime factors and pulls out pairs",
+          "sections": "S R.8 · A P.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-rationalise-the-denominator"
+          ]
+        },
+        {
+          "slug": "scientific-notation-zoom",
+          "title": "Scientific notation zoom",
+          "tag": "HOW",
+          "summary": "Slides a power-of-ten dial from nanoseconds to a googol; the mantissa stays between 1 and 10",
+          "sections": "S R.2 · A P.2",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-rationalise-the-denominator"
+          ]
+        },
+        {
+          "slug": "powers-of-ten-atom-to-universe",
+          "title": "Powers of ten: atom to universe",
+          "tag": "APP",
+          "summary": "Zooms through sizes, each step × 10, and places familiar objects on the scale",
+          "sections": "—",
+          "extension": true,
+          "order": 9,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-rationalise-the-denominator"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "polynomials-factoring",
+      "title": "Polynomials & Factoring",
+      "sections": "S R.4–R.6 · A P.3–P.4",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-a-b-2-not-a2-b2",
+          "title": "Why is (a + b)² not a² + b²?",
+          "tag": "WHY",
+          "summary": "Builds a square of side a + b and finds the two a × b rectangles everyone forgets",
+          "sections": "S R.4 · A P.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-is-root-a2-a-not-a"
+          ]
+        },
+        {
+          "slug": "why-does-a2-b2-a-b-a-b",
+          "title": "Why does a² − b² = (a + b)(a − b)?",
+          "tag": "WHY",
+          "summary": "Cuts the L-shape left after removing b² from a² and rearranges it into a rectangle",
+          "sections": "S R.5 · A P.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-a3-b3-factor",
+          "title": "Why do a³ ± b³ factor?",
+          "tag": "WHY",
+          "summary": "Splits a cube with a smaller cube removed into three slabs that share the factor (a − b)",
+          "sections": "S R.5 · A P.4",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-factoring-find-the-solutions",
+          "title": "Why does factoring find the solutions?",
+          "tag": "WHY",
+          "summary": "Shrinks one side of a rectangle to zero: a product is 0 only when a factor is 0",
+          "sections": "S 1.2 · A 1.3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-completing-the-square-work",
+          "title": "Why does completing the square work?",
+          "tag": "WHY",
+          "summary": "Arranges algebra tiles for x² + bx and sees the missing (b/2)² corner",
+          "sections": "S R.5 · A 1.3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-does-synthetic-division-work",
+          "title": "Why does synthetic division work?",
+          "tag": "WHY",
+          "summary": "Runs polynomial long division beside synthetic division and watches the x's and repeated numbers drop out",
+          "sections": "S R.6 · A 3.1",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "algebra-tiles-multiply-and-factor",
+          "title": "Algebra tiles: multiply and factor",
+          "tag": "HOW",
+          "summary": "Arranges tiles into a rectangle to factor x² + bx + c and ax² + bx + c",
+          "sections": "S R.5 · A P.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/polynomials-factoring/why-does-completing-the-square-work"
+          ]
+        },
+        {
+          "slug": "polynomial-long-division",
+          "title": "Polynomial long division",
+          "tag": "HOW",
+          "summary": "Divides step by step beside a matching numeric long division",
+          "sections": "S R.4 · A P.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/polynomials-factoring/why-does-synthetic-division-work"
+          ]
+        },
+        {
+          "slug": "factor-by-grouping",
+          "title": "Factor by grouping",
+          "tag": "HOW",
+          "summary": "Groups terms and pulls out the common binomial",
+          "sections": "S R.5 · A P.4",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "numbers-algebra/polynomials-factoring/why-is-a-b-2-not-a2-b2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rational-expressions",
+      "title": "Rational Expressions",
+      "sections": "S R.7 · A P.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-can-t-you-cancel-the-x-in-x-2-x",
+          "title": "Why can't you cancel the x in (x + 2)/x?",
+          "tag": "WHY",
+          "summary": "Plugs in numbers and sees that you can cancel factors, never terms",
+          "sections": "S R.7 · A P.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-we-need-a-common-denominator",
+          "title": "Why do we need a common denominator?",
+          "tag": "WHY",
+          "summary": "Adds fraction bars of different sizes; they only combine once cut into equal pieces, and the same holds for algebra",
+          "sections": "S R.7 · A P.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-simplified-expression-hide-a-hole",
+          "title": "Why does a 'simplified' expression hide a hole?",
+          "tag": "WHY",
+          "summary": "Graphs (x² − 1)/(x − 1) and x + 1; they match everywhere except x = 1",
+          "sections": "S R.7 · A P.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "lcm-method-for-rational-expressions",
+          "title": "LCM method for rational expressions",
+          "tag": "HOW",
+          "summary": "Factors denominators, builds the LCM, then adds",
+          "sections": "S R.7 · A P.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/rational-expressions/why-does-a-simplified-expression-hide-a-hole"
+          ]
+        },
+        {
+          "slug": "simplify-complex-fractions",
+          "title": "Simplify complex fractions",
+          "tag": "HOW",
+          "summary": "Multiplies top and bottom by the LCM and watches the layers collapse",
+          "sections": "S R.7 · A P.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/rational-expressions/why-does-a-simplified-expression-hide-a-hole"
+          ]
+        },
+        {
+          "slug": "two-pipes-fill-a-tank",
+          "title": "Two pipes fill a tank",
+          "tag": "APP",
+          "summary": "Combines rates 1/a + 1/b and finds the joint time",
+          "sections": "S 1.7 · A 1.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/rational-expressions/why-does-a-simplified-expression-hide-a-hole"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "complex-numbers",
+      "title": "Complex Numbers",
+      "sections": "S 1.3 · A P.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-invent-i-at-all",
+          "title": "Why invent i at all?",
+          "tag": "WHY",
+          "summary": "Follows Cardano's formula on x³ = 15x + 4: it needs √−121 on the way to the real root 4 (Bombelli's insight)",
+          "sections": "S 5.5 · A P.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-multiply-by-the-conjugate-to-divide",
+          "title": "Why multiply by the conjugate to divide?",
+          "tag": "WHY",
+          "summary": "Sees (a + bi)(a − bi) = a² + b², a real number, and the conjugate as a mirror image on the plane",
+          "sections": "S 1.3 · A P.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-complex-roots-come-in-conjugate-pairs",
+          "title": "Why do complex roots come in conjugate pairs?",
+          "tag": "WHY",
+          "summary": "Lifts a parabola above the axis; its roots appear as a ± bi mirror images",
+          "sections": "S 1.3, 5.6 · A 3.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-powers-of-i-cycle",
+          "title": "Why do the powers of i cycle?",
+          "tag": "WHY",
+          "summary": "Multiplies by i repeatedly: i, −1, −i, 1, a quarter-turn each time (see Trigonometry → Polar & Complex)",
+          "sections": "S 1.3 · A P.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/polar-complex"
+          ]
+        },
+        {
+          "slug": "why-can-t-we-say-one-complex-number-is-bigger-than-another",
+          "title": "Why can't we say one complex number is bigger than another?",
+          "tag": "WHY",
+          "summary": "Tries to order i and 0 and hits a contradiction either way",
+          "sections": "NM 4",
+          "extension": true,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "complex-arithmetic-on-the-plane",
+          "title": "Complex arithmetic on the plane",
+          "tag": "HOW",
+          "summary": "Adds and multiplies by dragging points; the sum is vector addition",
+          "sections": "S 1.3 · A P.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/complex-numbers/why-can-t-we-say-one-complex-number-is-bigger-than-another"
+          ]
+        },
+        {
+          "slug": "solve-quadratics-in-the-complex-numbers",
+          "title": "Solve quadratics in the complex numbers",
+          "tag": "HOW",
+          "summary": "Sees a negative discriminant give two conjugate roots",
+          "sections": "S 1.3 · A 1.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/complex-numbers/why-do-complex-roots-come-in-conjugate-pairs"
+          ]
+        },
+        {
+          "slug": "modulus-and-argument-on-the-argand-plane",
+          "title": "Modulus and argument on the Argand plane",
+          "tag": "HOW",
+          "summary": "Reads r and θ off the plane",
+          "sections": "NM 4",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "trigonometry/polar-complex/why-polar-coordinates",
+            "numbers-algebra/complex-numbers/why-multiply-by-the-conjugate-to-divide"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linear-equations-formulas",
+      "title": "Linear Equations & Formulas",
+      "sections": "S 1.1, 1.7 · A 1.1–1.2",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-do-the-same-thing-to-both-sides",
+          "title": "Why do the same thing to both sides?",
+          "tag": "WHY",
+          "summary": "Keeps a balance level while removing equal weights; al-jabr means 'restoration'",
+          "sections": "S 1.1, R hist · A 1.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-can-an-equation-have-no-solution-or-every-solution",
+          "title": "Why can an equation have no solution, or every solution?",
+          "tag": "WHY",
+          "summary": "Graphs both sides as lines: crossing, parallel or identical",
+          "sections": "S 1.1 · A 1.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-can-clearing-fractions-create-fake-solutions",
+          "title": "Why can clearing fractions create fake solutions?",
+          "tag": "WHY",
+          "summary": "Multiplies by an expression that can be 0 and checks which answers survive",
+          "sections": "S 1.1 · A 1.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "rearrange-any-formula",
+          "title": "Rearrange any formula",
+          "tag": "HOW",
+          "summary": "Picks a variable in a formula (v = u + at, A = P(1 + rt)) and isolates it step by step",
+          "sections": "A 1.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-do-the-same-thing-to-both-sides"
+          ]
+        },
+        {
+          "slug": "why-does-a-mixture-land-between-its-ingredients",
+          "title": "Why does a mixture land between its ingredients?",
+          "tag": "APP",
+          "summary": "Mixes two strengths on a lever; the result is the weighted average",
+          "sections": "S 1.7 · A 1.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-do-the-same-thing-to-both-sides"
+          ]
+        },
+        {
+          "slug": "uniform-motion-on-a-distancetime-graph",
+          "title": "Uniform motion on a distance–time graph",
+          "tag": "APP",
+          "summary": "Runs two trains; the crossing point solves the equation",
+          "sections": "S 1.7 · A 1.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-can-an-equation-have-no-solution-or-every-solution"
+          ]
+        },
+        {
+          "slug": "simple-interest-and-job-rate-problems",
+          "title": "Simple interest and job-rate problems",
+          "tag": "APP",
+          "summary": "Sets up and solves the classic word problems with a diagram first",
+          "sections": "S 1.7 · A 1.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-do-the-same-thing-to-both-sides"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "quadratic-equations",
+      "title": "Quadratic Equations",
+      "sections": "S 1.2, 1.4 · A 1.3–1.4",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-the-quadratic-formula",
+          "title": "Why the quadratic formula?",
+          "tag": "WHY",
+          "summary": "Completes the square on ax² + bx + c with algebra tiles, one tile move per algebra line (spec below)",
+          "sections": "S 1.2 · A 1.3",
+          "extension": false,
+          "order": 1,
+          "spec": "Tiles: ax² + bx + c laid out as tiles; divide by a, and each algebra line appears beside the tile move that makes it. Missing corner: the x² square plus two (b/2a)x strips leaves a gap of exactly (b/2a)², which you add to both sides. Square root: the completed square gives (x + b/2a)² = (b² − 4ac)/4a², and the ± appears because both sides of the square count. Check: sliders for a, b and c, with roots marked on a live parabola so the formula's answer visibly lands on the axis crossings.",
+          "aids": [
+            "numbers-algebra/polynomials-factoring/algebra-tiles-multiply-and-factor"
+          ]
+        },
+        {
+          "slug": "why-does-the-discriminant-count-the-roots",
+          "title": "Why does the discriminant count the roots?",
+          "tag": "WHY",
+          "summary": "Slides a parabola up and down: it crosses the axis 2, 1 or 0 times as b² − 4ac changes sign",
+          "sections": "S 1.2 · A 1.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-are-the-sum-and-product-of-roots-b-a-and-c-a",
+          "title": "Why are the sum and product of roots −b/a and c/a?",
+          "tag": "WHY",
+          "summary": "Expands a(x − r)(x − s) and matches coefficients live",
+          "sections": "—",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-do-radical-equations-give-extraneous-roots",
+          "title": "Why do radical equations give extraneous roots?",
+          "tag": "WHY",
+          "summary": "Squares both sides and sees the graphs of y = √x and y = −√x merge into one parabola",
+          "sections": "S 1.4 · A 1.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "choose-a-method-factor-complete-or-formula",
+          "title": "Choose a method: factor, complete, or formula",
+          "tag": "HOW",
+          "summary": "Gets a quadratic and sees which method is quickest and why",
+          "sections": "S 1.2 · A 1.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/quadratic-equations/why-the-quadratic-formula"
+          ]
+        },
+        {
+          "slug": "equations-quadratic-in-form",
+          "title": "Equations quadratic in form",
+          "tag": "HOW",
+          "summary": "Substitutes u = x² in x⁴ − 5x² + 4 = 0 and maps the u-roots back to x",
+          "sections": "S 1.4 · A 1.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/quadratic-equations/why-do-radical-equations-give-extraneous-roots"
+          ]
+        },
+        {
+          "slug": "when-does-the-ball-land",
+          "title": "When does the ball land?",
+          "tag": "APP",
+          "summary": "Throws a ball, reads h(t) = 0 and gets two roots, one of them rejected",
+          "sections": "S 1.2 · A 1.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/quadratic-equations/why-do-radical-equations-give-extraneous-roots"
+          ]
+        },
+        {
+          "slug": "a-babylonian-problem-solved-with-geometry",
+          "title": "A Babylonian problem solved with geometry",
+          "tag": "APP",
+          "summary": "Solves a 1800 BC word problem by cutting and moving squares",
+          "sections": "S 1.1, 1.2 hist · A 1.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/quadratic-equations/why-do-radical-equations-give-extraneous-roots"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "inequalities-absolute-value",
+      "title": "Inequalities & Absolute Value",
+      "sections": "S 1.5–1.6, 4.5, 5.4 · A 1.5",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-does-multiplying-by-a-negative-flip-the-sign",
+          "title": "Why does multiplying by a negative flip the sign?",
+          "tag": "WHY",
+          "summary": "Multiplies two points by −1 on a number line; their order reverses",
+          "sections": "S 1.5 · A 1.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-x-a-an-and-but-x-a-an-or",
+          "title": "Why is |x| < a an 'and' but |x| > a an 'or'?",
+          "tag": "WHY",
+          "summary": "Sees 'within a of 0' as one band and 'more than a away' as two rays",
+          "sections": "S 1.6 · A 1.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-sign-charts-work",
+          "title": "Why do sign charts work?",
+          "tag": "WHY",
+          "summary": "Sees a polynomial change sign only at its zeros (or a rational function at its asymptotes) and tests one point per region",
+          "sections": "S 5.4 · A 1.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "quadratic-inequality-above-or-below-the-axis",
+          "title": "Quadratic inequality = above or below the axis",
+          "tag": "WHY",
+          "summary": "Shades where the parabola is above or below y = 0",
+          "sections": "S 4.5 · A 1.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-b-a-b",
+          "title": "Why is |a + b| ≤ |a| + |b|?",
+          "tag": "WHY",
+          "summary": "Places a and b on a number line: equal when they point the same way, smaller when they cancel (triangle inequality)",
+          "sections": "Ax 0.3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "combined-inequalities",
+          "title": "Combined inequalities",
+          "tag": "HOW",
+          "summary": "Solves a < 2x + 1 ≤ b and reads the interval off",
+          "sections": "S 1.5 · A 1.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "numbers-algebra/inequalities-absolute-value/why-is-x-a-an-and-but-x-a-an-or"
+          ]
+        },
+        {
+          "slug": "absolute-value-equations-two-cases",
+          "title": "Absolute value equations: two cases",
+          "tag": "HOW",
+          "summary": "Splits |2x − 3| = 5 into its two mirror cases",
+          "sections": "S 1.6 · A 1.1",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/inequalities-absolute-value/why-is-x-a-an-and-but-x-a-an-or",
+            "numbers-algebra/number-systems/absolute-value-is-distance"
+          ]
+        },
+        {
+          "slug": "machining-tolerance",
+          "title": "Machining tolerance",
+          "tag": "APP",
+          "summary": "Writes '5.00 ± 0.02 cm' as |x − 5| ≤ 0.02 and checks parts",
+          "sections": "S 1.6 · A 1.5",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/inequalities-absolute-value/why-is-x-a-an-and-but-x-a-an-or"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "variation",
+      "title": "Variation",
+      "sections": "S 2.5 · A 1.6",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-does-direct-variation-pass-through-the-origin",
+          "title": "Why does direct variation pass through the origin?",
+          "tag": "WHY",
+          "summary": "Scales k and sees every line y = kx pivot about (0, 0)",
+          "sections": "S 2.5 · A 1.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-inverse-variation-never-touch-the-axes",
+          "title": "Why does inverse variation never touch the axes?",
+          "tag": "WHY",
+          "summary": "Holds xy = k fixed while sliding x; y can shrink but never reach 0",
+          "sections": "S 2.5 · A 1.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-light-inverse-square",
+          "title": "Why is light inverse-square?",
+          "tag": "WHY",
+          "summary": "Spreads the same light over spheres of area 4πr², so the intensity falls as 1/r²",
+          "sections": "—",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "find-k-then-predict",
+          "title": "Find k, then predict",
+          "tag": "HOW",
+          "summary": "Uses one data point to fix k, then predicts another",
+          "sections": "S 2.5 · A 1.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/variation/why-is-light-inverse-square"
+          ]
+        },
+        {
+          "slug": "joint-and-combined-variation",
+          "title": "Joint and combined variation",
+          "tag": "APP",
+          "summary": "Explores Hooke's law, Ohm's law and the gas law as variation",
+          "sections": "S 2.5 · A 1.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/variation/why-does-direct-variation-pass-through-the-origin"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 1
+}

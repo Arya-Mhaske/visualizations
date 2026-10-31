@@ -1,0 +1,634 @@
+{
+  "slug": "modern-physics",
+  "title": "Modern Physics",
+  "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
+  "order": 30,
+  "children": [
+    {
+      "slug": "photoelectric-effect",
+      "title": "Photoelectric Effect",
+      "sections": "XII 11.1–11.6",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-does-colour-matter-not-brightness",
+          "title": "Why does colour matter, not brightness?",
+          "tag": "WHY",
+          "summary": "Turns up red light's intensity and sees no electrons; weak UV ejects them at once (spec below)",
+          "sections": "XII 11.4–11.5",
+          "extension": false,
+          "order": 1,
+          "spec": "Wave prediction: brighter light should eventually free electrons; the simulation shows it doesn't below threshold. Photons: each photon gives hν to one electron, all or nothing. Graph: K_max against ν is a straight line with slope h and intercept −φ₀. Intensity: more photons means more electrons, but the same K_max.",
+          "aids": []
+        },
+        {
+          "slug": "why-is-there-a-threshold-frequency",
+          "title": "Why is there a threshold frequency?",
+          "tag": "WHY",
+          "summary": "Lowers ν until hν < φ₀",
+          "sections": "XII 11.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-k-max-h-0",
+          "title": "Why is K_max = hν − φ₀?",
+          "tag": "WHY",
+          "summary": "Spends one photon's energy on escape, keeping the rest as kinetic energy (Einstein)",
+          "sections": "XII 11.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-is-the-workenergy-theorem-v2-u2-2as-in-disguise"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-the-stopping-potential-depend-on-intensity",
+          "title": "Why doesn't the stopping potential depend on intensity?",
+          "tag": "WHY",
+          "summary": "Brightens the light: more electrons, same maximum energy",
+          "sections": "XII 11.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "photoelectric-lab",
+          "title": "Photoelectric lab",
+          "tag": "HOW",
+          "summary": "Plots K_max against ν and reads h from the slope",
+          "sections": "XII 11.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/lines-slope/linear-models-fares-and-depreciation",
+            "modern-physics/photoelectric-effect/why-is-k-max-h-0"
+          ]
+        },
+        {
+          "slug": "solar-cells-and-light-sensors",
+          "title": "Solar cells and light sensors",
+          "tag": "APP",
+          "summary": "Converts photons into current",
+          "sections": "XII 11.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "modern-physics/photoelectric-effect/why-doesn-t-the-stopping-potential-depend-on-intensity"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "matter-waves",
+      "title": "Matter Waves",
+      "sections": "XII 11.7–11.8",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-matter-have-a-wavelength-h-p",
+          "title": "Why does matter have a wavelength? λ = h/p",
+          "tag": "WHY",
+          "summary": "Gives an electron and a cricket ball their de Broglie wavelengths",
+          "sections": "XII 11.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "measurement-motion/units-measurement/orders-of-magnitude-atom-to-earth"
+          ]
+        },
+        {
+          "slug": "why-don-t-we-see-a-cricket-ball-diffract",
+          "title": "Why don't we see a cricket ball diffract?",
+          "tag": "WHY",
+          "summary": "Compares a ~10⁻³⁴ m wavelength with the size of a gap",
+          "sections": "XII 11.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "electron-wavelength-calculator",
+          "title": "Electron-wavelength calculator",
+          "tag": "HOW",
+          "summary": "Finds λ from the accelerating voltage",
+          "sections": "XII 11.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "modern-physics/matter-waves/why-does-matter-have-a-wavelength-h-p"
+          ]
+        },
+        {
+          "slug": "electron-microscopes",
+          "title": "Electron microscopes",
+          "tag": "APP",
+          "summary": "Sees why short wavelengths resolve tiny detail",
+          "sections": "XII 11.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/diffraction-polarisation/why-is-there-a-limit-to-how-sharp-an-image-can-be",
+            "modern-physics/matter-waves/why-does-matter-have-a-wavelength-h-p"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "atoms",
+      "title": "Atoms",
+      "sections": "XII 12.1–12.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-do-most-alpha-particles-pass-straight-through-gold",
+          "title": "Why do most alpha particles pass straight through gold?",
+          "tag": "WHY",
+          "summary": "Fires alphas at a model atom (Rutherford): the nucleus is tiny",
+          "sections": "XII 12.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-should-a-classical-atom-collapse",
+          "title": "Why should a classical atom collapse?",
+          "tag": "WHY",
+          "summary": "Lets an orbiting electron radiate and spiral in",
+          "sections": "XII 12.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-are-bohr-s-orbits-quantised",
+          "title": "Why are Bohr's orbits quantised?",
+          "tag": "WHY",
+          "summary": "Fits whole de Broglie waves round the orbit: mvr = nh/2π",
+          "sections": "XII 12.4, 12.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "oscillations-waves/standing-waves-music/why-do-only-certain-notes-fit-on-a-string",
+            "modern-physics/matter-waves/why-does-matter-have-a-wavelength-h-p"
+          ]
+        },
+        {
+          "slug": "why-are-hydrogen-s-levels-13-6-n2-ev",
+          "title": "Why are hydrogen's levels −13.6/n² eV?",
+          "tag": "WHY",
+          "summary": "Climbs the energy ladder and sees the levels bunch up",
+          "sections": "XII 12.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "line-spectrum-calculator",
+          "title": "Line-spectrum calculator",
+          "tag": "HOW",
+          "summary": "Finds the Balmer lines (Hα at 656 nm)",
+          "sections": "XII 12.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "modern-physics/atoms/why-should-a-classical-atom-collapse",
+            "induction-ac-em/electromagnetic-waves/spectrum-explorer-radio-to-gamma"
+          ]
+        },
+        {
+          "slug": "neon-signs-and-spectroscopy",
+          "title": "Neon signs and spectroscopy",
+          "tag": "APP",
+          "summary": "Identifies elements by their emission and absorption lines",
+          "sections": "XII 12.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "modern-physics/atoms/why-should-a-classical-atom-collapse"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-nucleus",
+      "title": "The Nucleus",
+      "sections": "XII 13.1–13.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-do-all-nuclei-have-the-same-density",
+          "title": "Why do all nuclei have the same density?",
+          "tag": "WHY",
+          "summary": "Sees R = R₀A^(1/3), so the volume ∝ A (about 2.3 × 10¹⁷ kg/m³)",
+          "sections": "XII 13.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-is-a-1-2-roota"
+          ]
+        },
+        {
+          "slug": "why-is-a-nucleus-lighter-than-its-parts",
+          "title": "Why is a nucleus lighter than its parts?",
+          "tag": "WHY",
+          "summary": "Weighs the protons and neutrons separately and compares: the mass defect is the binding energy",
+          "sections": "XII 13.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-binding-energy-per-nucleon-plateau-near-8-mev",
+          "title": "Why does binding energy per nucleon plateau near 8 MeV?",
+          "tag": "WHY",
+          "summary": "Plots B/A against A and sees it flat at about 8 MeV for A = 30–170, peaking near iron",
+          "sections": "XII 13.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-nuclear-force-short-range-and-strong",
+          "title": "Why is the nuclear force short-range and strong?",
+          "tag": "WHY",
+          "summary": "Compares it with the Coulomb repulsion inside the nucleus; it is the same for n–n, n–p and p–p",
+          "sections": "XII 13.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "binding-energy-calculator",
+          "title": "Binding-energy calculator",
+          "tag": "HOW",
+          "summary": "Uses ΔE = Δm c² with 1 u = 931.5 MeV/c²",
+          "sections": "XII 13.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "modern-physics/the-nucleus/why-does-binding-energy-per-nucleon-plateau-near-8-mev"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "radioactivity-nuclear-energy",
+      "title": "Radioactivity & Nuclear Energy",
+      "sections": "XII 13.6–13.7",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-decay-random-but-the-half-life-exact",
+          "title": "Why is decay random but the half-life exact?",
+          "tag": "WHY",
+          "summary": "Rolls dice for each nucleus and watches the totals follow e^(−λt) (the rationalised text names decay types only)",
+          "sections": "XII 13.6",
+          "extension": true,
+          "order": 1,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-half-life-constant"
+          ]
+        },
+        {
+          "slug": "why-do-fission-and-fusion-both-release-energy",
+          "title": "Why do fission and fusion both release energy?",
+          "tag": "WHY",
+          "summary": "Moves along the B/A curve toward iron from either side; 1 kg of uranium gives about 10¹⁴ J against 10⁷ J from coal",
+          "sections": "XII 13.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "modern-physics/the-nucleus/why-does-binding-energy-per-nucleon-plateau-near-8-mev"
+          ]
+        },
+        {
+          "slug": "why-does-fusion-power-the-sun",
+          "title": "Why does fusion power the Sun?",
+          "tag": "WHY",
+          "summary": "Fuses hydrogen to helium and accounts for the mass lost",
+          "sections": "XII 13.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "decay-law-simulator",
+          "title": "Decay-law simulator",
+          "tag": "HOW",
+          "summary": "Converts between λ, T½ and mean life",
+          "sections": "XII 13.6 table",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-half-life-constant",
+            "modern-physics/radioactivity-nuclear-energy/why-is-decay-random-but-the-half-life-exact"
+          ]
+        },
+        {
+          "slug": "nuclear-reactors",
+          "title": "Nuclear reactors",
+          "tag": "APP",
+          "summary": "Controls a chain reaction with moderators and rods (see Forces & Energy → Collisions)",
+          "sections": "XII 13.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "forces-energy/collisions/why-does-a-reactor-use-heavy-water-or-graphite",
+            "forces-energy/collisions",
+            "modern-physics/radioactivity-nuclear-energy/why-do-fission-and-fusion-both-release-energy",
+            "modern-physics/the-nucleus/why-is-the-nuclear-force-short-range-and-strong"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "energy-bands",
+      "title": "Energy Bands",
+      "sections": "XII 14.1–14.2",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-do-the-energy-levels-of-atoms-in-a-solid-smear-into-band",
+          "title": "Why do the energy levels of atoms in a solid smear into bands?",
+          "tag": "WHY",
+          "summary": "Brings N silicon atoms closer; each sharp level splits into N levels that merge into a band",
+          "sections": "XII 14.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "modern-physics/atoms/why-are-hydrogen-s-levels-13-6-n2-ev"
+          ]
+        },
+        {
+          "slug": "why-does-the-band-gap-decide-metal-semiconductor-or-insulato",
+          "title": "Why does the band gap decide metal, semiconductor or insulator?",
+          "tag": "WHY",
+          "summary": "Slides Eg: about 0 (metal), 0.2–3 eV (semiconductor), more than 3 eV (insulator), and watches how many electrons reach the conduction band",
+          "sections": "XII 14.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-carbon-an-insulator-but-si-and-ge-semiconductors",
+          "title": "Why is carbon an insulator but Si and Ge semiconductors?",
+          "tag": "WHY",
+          "summary": "Compares the bonding electrons in the 2nd, 3rd and 4th orbits: Eg = 5.4, 1.1 and 0.7 eV",
+          "sections": "XII 14.2, Ex 14.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "band-diagram-explorer",
+          "title": "Band-diagram explorer",
+          "tag": "HOW",
+          "summary": "Changes Eg and temperature and counts the electrons in the conduction band",
+          "sections": "XII 14.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "modern-physics/energy-bands/why-does-the-band-gap-decide-metal-semiconductor-or-insulato"
+          ]
+        },
+        {
+          "slug": "light-and-heat-sensors",
+          "title": "Light and heat sensors",
+          "tag": "APP",
+          "summary": "Uses heat or light to lift electrons across the gap, so the current rises",
+          "sections": "XII 14.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "current-magnetism/resistance-temperature/why-does-a-metal-s-resistance-rise-with-heat-but-a-semicondu",
+            "modern-physics/energy-bands/why-does-the-band-gap-decide-metal-semiconductor-or-insulato",
+            "modern-physics/photoelectric-effect/solar-cells-and-light-sensors"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "intrinsic-extrinsic-semiconductors",
+      "title": "Intrinsic & Extrinsic Semiconductors",
+      "sections": "XII 14.3–14.4",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-a-hole-move-like-a-positive-charge",
+          "title": "Why does a hole move like a positive charge?",
+          "tag": "WHY",
+          "summary": "Lets a neighbouring electron fill a vacancy, again and again: the hole drifts the opposite way to the electrons",
+          "sections": "XII 14.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "current-magnetism/current-drift/why-does-drift-give-ohm-s-law"
+          ]
+        },
+        {
+          "slug": "why-does-one-part-per-million-of-arsenic-change-everything",
+          "title": "Why does one part per million of arsenic change everything?",
+          "tag": "WHY",
+          "summary": "Dopes 5 × 10²⁸ Si atoms m⁻³ with 1 ppm As: 5 × 10²² donors swamp the 1.5 × 10¹⁶ thermal electrons",
+          "sections": "XII 14.4, Ex 14.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/units-measurement/orders-of-magnitude-atom-to-earth"
+          ]
+        },
+        {
+          "slug": "why-is-nenh-ni2-even-after-doping",
+          "title": "Why is nₑnₕ = nᵢ² even after doping?",
+          "tag": "WHY",
+          "summary": "Adds donors and watches extra electrons recombine with holes: nₕ falls to about 4.5 × 10⁹ m⁻³",
+          "sections": "XII 14.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-doped-semiconductor-still-neutral",
+          "title": "Why is a doped semiconductor still neutral?",
+          "tag": "WHY",
+          "summary": "Counts the ionised donor cores against the free electrons",
+          "sections": "XII 14.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "electrostatics/electric-charge/why-is-total-charge-conserved"
+          ]
+        },
+        {
+          "slug": "n-type-or-p-type",
+          "title": "n-type or p-type?",
+          "tag": "HOW",
+          "summary": "Picks a pentavalent dopant (As, Sb, P) or a trivalent one (B, Al, In) and names the majority carrier",
+          "sections": "XII 14.4, Ex 14.1–14.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "modern-physics/intrinsic-extrinsic-semiconductors/why-is-nenh-ni2-even-after-doping"
+          ]
+        },
+        {
+          "slug": "carrier-concentration-calculator",
+          "title": "Carrier-concentration calculator",
+          "tag": "HOW",
+          "summary": "Finds nₑ and nₕ from the doping level and nᵢ",
+          "sections": "XII 14.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "modern-physics/intrinsic-extrinsic-semiconductors/why-is-nenh-ni2-even-after-doping"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p-n-junction-diode",
+      "title": "p-n Junction & Diode",
+      "sections": "XII 14.5–14.6",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-does-a-depletion-layer-form-at-a-p-n-junction",
+          "title": "Why does a depletion layer form at a p-n junction?",
+          "tag": "WHY",
+          "summary": "Lets holes and electrons diffuse across until the field of the exposed ion cores pulls back as hard as diffusion pushes (spec below)",
+          "sections": "XII 14.5",
+          "extension": false,
+          "order": 1,
+          "spec": "Join: a p-region full of holes meets an n-region full of electrons; carriers start to diffuse across. Cores: each crossing leaves behind an immobile ion core (− on the p side, + on the n side), and the depletion layer grows. Balance: the cores' field drives a drift current back; the layer stops growing when drift equals diffusion, with a barrier of about 0.7 V for Si. Bias slider: forward bias narrows the layer and current flows; reverse bias widens it and the current is only μA.",
+          "aids": [
+            "electrostatics/electric-potential/why-does-a-potential-exist-at-all"
+          ]
+        },
+        {
+          "slug": "why-can-t-you-just-press-a-p-slab-against-an-n-slab",
+          "title": "Why can't you just press a p-slab against an n-slab?",
+          "tag": "WHY",
+          "summary": "Zooms in on two 'flat' slabs: their roughness is far larger than the 2–3 Å atomic spacing",
+          "sections": "XII 14.5, Ex 14.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-forward-bias-lower-the-barrier-and-reverse-bias-rai",
+          "title": "Why does forward bias lower the barrier and reverse bias raise it?",
+          "tag": "WHY",
+          "summary": "Adds the battery's voltage to the barrier, or takes it away, and watches the depletion layer narrow or widen",
+          "sections": "XII 14.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-silicon-diode-stay-off-until-about-0-7-v",
+          "title": "Why does a silicon diode stay off until about 0.7 V?",
+          "tag": "WHY",
+          "summary": "Raises V and sees the current stay tiny until the barrier is overcome, then shoot up",
+          "sections": "XII 14.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "current-magnetism/resistance-temperature/why-aren-t-all-devices-ohmic"
+          ]
+        },
+        {
+          "slug": "why-is-there-a-small-reverse-current-and-then-breakdown",
+          "title": "Why is there a small reverse current, and then breakdown?",
+          "tag": "WHY",
+          "summary": "Reverse-biases the diode: only minority carriers drift (μA) until V reaches V_br",
+          "sections": "XII 14.6",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "diode-iv-plotter",
+          "title": "Diode I–V plotter",
+          "tag": "HOW",
+          "summary": "Reads the forward resistance ΔV/ΔI = 10 Ω and the reverse resistance 10⁷ Ω",
+          "sections": "XII 14.6, Ex 14.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "modern-physics/p-n-junction-diode/why-is-there-a-small-reverse-current-and-then-breakdown"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rectifiers",
+      "title": "Rectifiers",
+      "sections": "XII 14.7",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-does-a-diode-turn-ac-into-one-way-current",
+          "title": "Why does a diode turn AC into one-way current?",
+          "tag": "WHY",
+          "summary": "Feeds a sine wave through a diode and sees only the positive halves pass (half-wave)",
+          "sections": "XII 14.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "induction-ac-em/inductance-generators/why-does-a-generator-make-a-sine-wave"
+          ]
+        },
+        {
+          "slug": "why-does-a-full-wave-rectifier-double-the-frequency",
+          "title": "Why does a full-wave rectifier double the frequency?",
+          "tag": "WHY",
+          "summary": "Uses a centre-tap transformer and two diodes: both halves come out positive, so 50 Hz in gives 100 Hz ripple",
+          "sections": "XII 14.7, Ex 14.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-capacitor-smooth-the-output",
+          "title": "Why does a capacitor smooth the output?",
+          "tag": "WHY",
+          "summary": "Adds C and watches it charge at each peak and discharge slowly through R_L; a large RC keeps the output near the peak",
+          "sections": "XII 14.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "electrostatics/capacitors/where-is-a-capacitor-s-energy-stored"
+          ]
+        },
+        {
+          "slug": "rectifier-builder",
+          "title": "Rectifier builder",
+          "tag": "HOW",
+          "summary": "Switches half-wave, full-wave and filter, and changes C and R_L",
+          "sections": "XII 14.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "modern-physics/rectifiers/why-does-a-full-wave-rectifier-double-the-frequency"
+          ]
+        },
+        {
+          "slug": "from-the-230-v-socket-to-a-5-v-charger",
+          "title": "From the 230 V socket to a 5 V charger",
+          "tag": "APP",
+          "summary": "Chains a step-down transformer, rectifier and filter (the regulator stage is beyond the text)",
+          "sections": "XII 14.7",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "induction-ac-em/ac-basics/why-does-230-v-mains-peak-at-325-v",
+            "induction-ac-em/power-transformers/transformer-calculator",
+            "modern-physics/rectifiers/why-does-a-full-wave-rectifier-double-the-frequency"
+          ]
+        }
+      ]
+    }
+  ]
+}

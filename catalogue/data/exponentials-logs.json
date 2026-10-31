@@ -1,0 +1,677 @@
+{
+  "slug": "exponentials-logs",
+  "title": "Exponentials & Logarithms",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e; additions from Axler and Stewart",
+  "children": [
+    {
+      "slug": "exponential-growth",
+      "title": "Exponential Growth",
+      "sections": "S 6.3 · A 4.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-does-doubling-beat-any-power",
+          "title": "Why does doubling beat any power?",
+          "tag": "WHY",
+          "summary": "Races 2ˣ against x¹⁰: x¹⁰ leads for a long time, but 2ˣ always wins",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-constant-percent-change-exponential",
+          "title": "Why is a constant percent change exponential?",
+          "tag": "WHY",
+          "summary": "Compares differences (linear) with ratios (exponential) in a table",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "what-does-2-root2-even-mean",
+          "title": "What does 2^√2 even mean?",
+          "tag": "WHY",
+          "summary": "Squeezes 2^1.4, 2^1.41, 2^1.414 … toward a single value",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-0-b-1-mean-decay",
+          "title": "Why does 0 < b < 1 mean decay?",
+          "tag": "WHY",
+          "summary": "Sees (½)ˣ is 2ˣ reflected in the y-axis",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "graph-y-abx-with-transformations",
+          "title": "Graph y = a·bˣ with transformations",
+          "tag": "HOW",
+          "summary": "Shifts, stretches and reflects exponential graphs",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/exponential-growth/why-is-a-constant-percent-change-exponential",
+            "functions-graphs/transformations/why-does-the-order-of-transformations-matter"
+          ]
+        },
+        {
+          "slug": "fold-paper-to-the-moon",
+          "title": "Fold paper to the Moon",
+          "tag": "APP",
+          "summary": "Folds a 0.1 mm sheet: 42 folds exceed the Earth–Moon distance",
+          "sections": "—",
+          "extension": true,
+          "order": 6,
+          "aids": [
+            "exponentials-logs/exponential-growth/why-is-a-constant-percent-change-exponential"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-number-e",
+      "title": "The Number e",
+      "sections": "S 6.3 · A 4.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "where-does-e-come-from",
+          "title": "Where does e come from?",
+          "tag": "WHY",
+          "summary": "Compounds ₹1 at 100% yearly, then half-yearly, monthly, daily …; (1 + 1/n)ⁿ creeps up to 2.71828 (spec below)",
+          "sections": "S 6.3 · A 4.2",
+          "extension": false,
+          "order": 1,
+          "spec": "Bank: ₹1 at 100% a year, compounded n times; a bar chart of the year-end amount for n = 1, 2, 4, 12, 365, …. Limit: a plot of (1 + 1/n)ⁿ against n (log axis), flattening at 2.71828. Why it stops growing: each extra split adds less and less, shown as the shrinking gain per step. Payoff: the same idea with rate r gives eʳ, hence A = Pe^(rt).",
+          "aids": [
+            "trigonometry/right-triangle-ratios/where-does-the-calculator-s-0-6018-come-from"
+          ]
+        },
+        {
+          "slug": "why-is-ex-natural",
+          "title": "Why is eˣ 'natural'?",
+          "tag": "WHY",
+          "summary": "Sees that its slope always equals its height",
+          "sections": "—",
+          "extension": true,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "continuous-compounding",
+          "title": "Continuous compounding",
+          "tag": "HOW",
+          "summary": "Moves from A = P(1 + r/n)^(nt) to A = Pe^(rt) as n grows",
+          "sections": "S 6.7 · A 4.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/the-number-e/why-is-ex-natural"
+          ]
+        },
+        {
+          "slug": "build-e-from-a-series",
+          "title": "Build e from a series",
+          "tag": "HOW",
+          "summary": "Adds 1 + 1 + 1/2! + 1/3! + … and watches it converge fast",
+          "sections": "—",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/the-number-e/why-is-ex-natural"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "logarithms",
+      "title": "Logarithms",
+      "sections": "S 6.4–6.5 · A 4.3–4.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "what-is-a-logarithm-really",
+          "title": "What is a logarithm, really?",
+          "tag": "WHY",
+          "summary": "Counts how many times you multiply: log₂ 32 = 5 doublings",
+          "sections": "S 6.4 · A 4.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/what-is-a-function/when-are-two-functions-really-equal"
+          ]
+        },
+        {
+          "slug": "why-is-log-the-inverse-of-an-exponential",
+          "title": "Why is log the inverse of an exponential?",
+          "tag": "WHY",
+          "summary": "Reflects y = bˣ in y = x",
+          "sections": "S 6.4 · A 4.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "exponentials-logs/exponential-growth/graph-y-abx-with-transformations"
+          ]
+        },
+        {
+          "slug": "why-do-logs-turn-into",
+          "title": "Why do logs turn × into +?",
+          "tag": "WHY",
+          "summary": "Slides two log scales on a slide rule to multiply",
+          "sections": "S 6.5 · A 4.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-there-no-rule-for-log-a-b",
+          "title": "Why is there no rule for log(a + b)?",
+          "tag": "WHY",
+          "summary": "Tests the tempting rule with numbers and it fails",
+          "sections": "S 6.5 · A 4.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-change-of-base-work",
+          "title": "Why does change of base work?",
+          "tag": "WHY",
+          "summary": "Sees every log graph as a vertical stretch of every other",
+          "sections": "S 6.5 · A 4.4",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-are-log-0-and-log-1-undefined",
+          "title": "Why are log 0 and log(−1) undefined?",
+          "tag": "WHY",
+          "summary": "Looks for an exponent that makes bʸ ≤ 0 and finds none",
+          "sections": "S 6.4 · A 4.3",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "why-napier-invented-logs",
+          "title": "Why Napier invented logs",
+          "tag": "WHY",
+          "summary": "Sees astronomers trade long multiplication for table look-ups and addition",
+          "sections": "S 6.4 hist · A 4.3",
+          "extension": false,
+          "order": 7,
+          "aids": []
+        },
+        {
+          "slug": "expand-and-condense-logs",
+          "title": "Expand and condense logs",
+          "tag": "HOW",
+          "summary": "Applies each property while a numeric check confirms it",
+          "sections": "S 6.5 · A 4.4",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "exponentials-logs/logarithms/why-napier-invented-logs"
+          ]
+        },
+        {
+          "slug": "how-many-digits-does-2100-have",
+          "title": "How many digits does 2¹⁰⁰ have?",
+          "tag": "HOW",
+          "summary": "Uses log₁₀ to count digits without computing (31)",
+          "sections": "—",
+          "extension": true,
+          "order": 9,
+          "aids": [
+            "exponentials-logs/logarithms/why-napier-invented-logs"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "log-scales",
+      "title": "Log Scales",
+      "sections": "A 4.4 · S 6.4–6.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-use-a-log-scale-at-all",
+          "title": "Why use a log scale at all?",
+          "tag": "WHY",
+          "summary": "Plots city populations on linear and log axes; only the log axis shows them all",
+          "sections": "A 4.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "richter-scale",
+          "title": "Richter scale",
+          "tag": "APP",
+          "summary": "Raises the magnitude by 1: amplitude ×10, energy about ×32",
+          "sections": "A 4.4 · S 6.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "exponentials-logs/log-scales/why-use-a-log-scale-at-all"
+          ]
+        },
+        {
+          "slug": "decibels",
+          "title": "Decibels",
+          "tag": "APP",
+          "summary": "Adds 10 dB: intensity ×10",
+          "sections": "A 4.4 · S 6.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/log-scales/why-use-a-log-scale-at-all"
+          ]
+        },
+        {
+          "slug": "ph",
+          "title": "pH",
+          "tag": "APP",
+          "summary": "Compares lemon juice (pH ≈ 2) with pure water (pH 7): 10⁵ times more H⁺",
+          "sections": "A 4.4 · S 6.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/log-scales/why-use-a-log-scale-at-all"
+          ]
+        },
+        {
+          "slug": "spot-power-laws-and-exponentials",
+          "title": "Spot power laws and exponentials",
+          "tag": "APP",
+          "summary": "Uses semi-log and log-log plots to see which data turn straight",
+          "sections": "—",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/log-scales/why-use-a-log-scale-at-all",
+            "exponentials-logs/logarithms/why-are-log-0-and-log-1-undefined"
+          ]
+        },
+        {
+          "slug": "star-brightness-apparent-magnitude",
+          "title": "Star brightness: apparent magnitude",
+          "tag": "APP",
+          "summary": "Sees 5 magnitudes = 100 × brightness, with brighter stars getting smaller numbers",
+          "sections": "Ax 3.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "exponentials-logs/log-scales/why-use-a-log-scale-at-all"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "exp-log-equations",
+      "title": "Exp & Log Equations",
+      "sections": "S 6.6 · A 4.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-take-logs-of-both-sides",
+          "title": "Why take logs of both sides?",
+          "tag": "WHY",
+          "summary": "Brings the unknown down from the exponent",
+          "sections": "S 6.6 · A 4.5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/modelling-with-data/why-take-logs-of-exponential-data"
+          ]
+        },
+        {
+          "slug": "why-are-some-log-answers-rejected",
+          "title": "Why are some log answers rejected?",
+          "tag": "WHY",
+          "summary": "Checks each answer against the domain of every log",
+          "sections": "S 6.6 · A 4.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "solve-by-intersection",
+          "title": "Solve by intersection",
+          "tag": "HOW",
+          "summary": "Graphs both sides and reads the crossing",
+          "sections": "S 6.6 · A 4.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/exp-log-equations/why-take-logs-of-both-sides"
+          ]
+        },
+        {
+          "slug": "step-by-step-solver",
+          "title": "Step-by-step solver",
+          "tag": "HOW",
+          "summary": "Isolates, takes logs, solves and checks",
+          "sections": "S 6.6 · A 4.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/exp-log-equations/why-take-logs-of-both-sides",
+            "functions-graphs/combining-inverting/find-an-inverse-algebraically"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "money-finance",
+      "title": "Money & Finance",
+      "sections": "S 6.7, 13.3 · A 4.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-compound-interest-beat-simple",
+          "title": "Why does compound interest beat simple?",
+          "tag": "WHY",
+          "summary": "Plots a line versus a curve: interest earns interest",
+          "sections": "S 6.7 · A 4.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-12-a-year-really-12-68",
+          "title": "Why is 12% a year really 12.68%?",
+          "tag": "WHY",
+          "summary": "Compounds monthly: (1.01)¹² − 1 = 12.68% effective",
+          "sections": "S 6.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "rule-of-72",
+          "title": "Rule of 72",
+          "tag": "WHY",
+          "summary": "Compares 72/r with the exact doubling time and sees why ln 2 ≈ 0.693 makes it work",
+          "sections": "S 6.7",
+          "extension": true,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "continuous-versus-annual-growth-rates",
+          "title": "Continuous versus annual growth rates",
+          "tag": "WHY",
+          "summary": "Compares 7% continuous with 7% annual growth: e^0.07 − 1 = 7.25%",
+          "sections": "Ax 4.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/the-number-e/continuous-compounding"
+          ]
+        },
+        {
+          "slug": "present-value",
+          "title": "Present value",
+          "tag": "HOW",
+          "summary": "Finds how much to invest today to have ₹X later",
+          "sections": "S 6.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/money-finance/why-is-12-a-year-really-12-68"
+          ]
+        },
+        {
+          "slug": "monthly-savings-annuity",
+          "title": "Monthly savings (annuity)",
+          "tag": "APP",
+          "summary": "Adds deposits that each grow: a geometric series (see Sequences → Geometric)",
+          "sections": "S 13.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "exponentials-logs/money-finance/why-is-12-a-year-really-12-68"
+          ]
+        },
+        {
+          "slug": "loan-emi",
+          "title": "Loan EMI",
+          "tag": "APP",
+          "summary": "Changes rate and tenure and sees the EMI and total interest",
+          "sections": "—",
+          "extension": true,
+          "order": 7,
+          "aids": [
+            "exponentials-logs/money-finance/why-does-compound-interest-beat-simple",
+            "numbers-algebra/linear-equations-formulas/simple-interest-and-job-rate-problems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "growth-decay-cooling",
+      "title": "Growth, Decay & Cooling",
+      "sections": "S 6.8 · A 4.6",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-half-life-constant",
+          "title": "Why is half-life constant?",
+          "tag": "WHY",
+          "summary": "Sees the same fraction disappear in each equal time step",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-cooling-exponential",
+          "title": "Why is cooling exponential?",
+          "tag": "WHY",
+          "summary": "Sees the rate of cooling depend on the gap to room temperature (Newton's law)",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-logistic-growth-level-off",
+          "title": "Why does logistic growth level off?",
+          "tag": "WHY",
+          "summary": "Watches growth slow as the population nears its carrying capacity",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "carbon-dating",
+          "title": "Carbon dating",
+          "tag": "APP",
+          "summary": "Measures remaining ¹⁴C and solves for age (half-life 5730 years)",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-half-life-constant"
+          ]
+        },
+        {
+          "slug": "bacteria-and-population-growth",
+          "title": "Bacteria and population growth",
+          "tag": "APP",
+          "summary": "Fits growth from two counts",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-does-logistic-growth-level-off",
+            "exponentials-logs/money-finance/continuous-versus-annual-growth-rates"
+          ]
+        },
+        {
+          "slug": "when-was-the-tea-made",
+          "title": "When was the tea made?",
+          "tag": "APP",
+          "summary": "Runs Newton's cooling backwards from two readings",
+          "sections": "S 6.8 · A 4.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-cooling-exponential"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "e-ln-as-areas",
+      "title": "e & ln as Areas",
+      "sections": "Ax 4.3–4.4",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-is-ln-c-an-area",
+          "title": "Why is ln c an area?",
+          "tag": "WHY",
+          "summary": "Shades the area under 1/x from 1 to c; Axler defines ln c this way (spec below)",
+          "sections": "Ax 4.3",
+          "extension": false,
+          "spec": "Shade: drag c along the x-axis; the area under 1/x from 1 to c is ln c (negative for c < 1). Rectangles: upper and lower sums trap the area and show it is computable. Product rule: ln 2 + ln 3 shown as two shaded regions; stretching the [1, 3] region by 2 lands exactly on [2, 6]. Payoff: e is the c where the area is 1, and exp is the inverse of this area function.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-e-where-that-area-equals-1",
+          "title": "Why is e where that area equals 1?",
+          "tag": "WHY",
+          "summary": "Drags c until the shaded area reads 1.000 and c reads 2.718",
+          "sections": "Ax 4.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-ln-ab-ln-a-ln-b-follow-from-area",
+          "title": "Why does ln(ab) = ln a + ln b follow from area?",
+          "tag": "WHY",
+          "summary": "Stretches the region under 1/x horizontally by a and vertically by 1/a; the area is unchanged",
+          "sections": "Ax 4.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/area-by-stretching/why-does-stretching-by-c-multiply-area-by-c"
+          ]
+        },
+        {
+          "slug": "why-is-ln-1-x-x-for-small-x",
+          "title": "Why is ln(1 + x) ≈ x for small x?",
+          "tag": "WHY",
+          "summary": "Sees the thin strip under 1/x is almost a 1 × x rectangle",
+          "sections": "Ax 4.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-are-ex-1-x-and-1-r-n-n-er",
+          "title": "Why are eˣ ≈ 1 + x and (1 + r/n)ⁿ ≈ eʳ?",
+          "tag": "WHY",
+          "summary": "Zooms in at 0, then compounds more often",
+          "sections": "Ax 4.4, 4.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/the-number-e/why-is-ex-natural"
+          ]
+        },
+        {
+          "slug": "why-is-1-12-13-14-ln-2",
+          "title": "Why is 1 − ½ + ⅓ − ¼ + … = ln 2?",
+          "tag": "WHY",
+          "summary": "Watches the partial sums close in on 0.6931",
+          "sections": "Ax 7.3",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "estimate-ln-c-with-rectangles",
+          "title": "Estimate ln c with rectangles",
+          "tag": "HOW",
+          "summary": "Uses upper and lower sums under 1/x",
+          "sections": "Ax 4.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyperbolic-functions",
+      "title": "Hyperbolic Functions",
+      "sections": "St 6.7",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-are-they-called-hyperbolic",
+          "title": "Why are they called 'hyperbolic'?",
+          "tag": "WHY",
+          "summary": "Sees (cosh t, sinh t) trace x² − y² = 1, just as (cos t, sin t) traces the unit circle",
+          "sections": "St 6.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-hanging-chain-a-cosh",
+          "title": "Why is a hanging chain a cosh?",
+          "tag": "WHY",
+          "summary": "Hangs a chain and overlays y = a cosh(x/a); it is not a parabola",
+          "sections": "St 6.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "hyperbolic-identities",
+          "title": "Hyperbolic identities",
+          "tag": "HOW",
+          "summary": "Compares cosh² − sinh² = 1 with its trig twin",
+          "sections": "St 6.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/hyperbolic-functions/why-are-they-called-hyperbolic",
+            "trigonometry/identities/why-three-pythagorean-identities"
+          ]
+        },
+        {
+          "slug": "catenary-arches-and-power-lines",
+          "title": "Catenary arches and power lines",
+          "tag": "APP",
+          "summary": "Fits a catenary to an arch or a sagging cable",
+          "sections": "St 6.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/hyperbolic-functions/why-is-a-hanging-chain-a-cosh",
+            "functions-graphs/quadratic-functions/projectiles-and-bridge-arches"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 4
+}

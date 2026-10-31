@@ -1,0 +1,477 @@
+{
+  "slug": "vectors-3d",
+  "title": "Vectors & 3D Space",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "3d-coordinates",
+      "title": "3D Coordinates",
+      "sections": "St 12.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-three-numbers-locate-a-point",
+          "title": "Why do three numbers locate a point?",
+          "tag": "WHY",
+          "summary": "Walks along the corner of a room: x, then y, then up z",
+          "sections": "St 12.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-distance-formula-gain-a-z2-term",
+          "title": "Why does the distance formula gain a z² term?",
+          "tag": "WHY",
+          "summary": "Applies Pythagoras twice",
+          "sections": "St 12.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/coordinate-plane/why-does-the-distance-formula-come-from-pythagoras"
+          ]
+        },
+        {
+          "slug": "why-do-three-planes-cut-space-into-8-octants",
+          "title": "Why do three planes cut space into 8 octants?",
+          "tag": "WHY",
+          "summary": "Adds the xy, yz and zx planes one at a time: 2 × 2 × 2 = 8 regions",
+          "sections": "NM 11",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "systems-matrices/linear-systems/three-equations-three-planes"
+          ]
+        },
+        {
+          "slug": "spheres-and-simple-surfaces",
+          "title": "Spheres and simple surfaces",
+          "tag": "HOW",
+          "summary": "Reads off the centre and radius",
+          "sections": "St 12.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "vectors-3d/3d-coordinates/why-does-the-distance-formula-gain-a-z2-term"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vectors-in-space",
+      "title": "Vectors in Space",
+      "sections": "St 12.2–12.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-do-the-direction-cosines-squared-add-to-1",
+          "title": "Why do the direction cosines squared add to 1?",
+          "tag": "WHY",
+          "summary": "Reads off the three angles a vector makes with the axes (see Trigonometry → Vectors)",
+          "sections": "St 12.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors"
+          ]
+        },
+        {
+          "slug": "projections-in-3d",
+          "title": "Projections in 3D",
+          "tag": "WHY",
+          "summary": "Casts one vector's shadow onto another",
+          "sections": "St 12.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/vectors/why-is-u-v-u-v-cos-theta"
+          ]
+        },
+        {
+          "slug": "why-does-the-section-formula-weight-the-far-end",
+          "title": "Why does the section formula weight the far end?",
+          "tag": "WHY",
+          "summary": "Slides R along PQ: dividing in m : n gives r = (n p + m q)/(m + n), so the nearer point gets the bigger weight",
+          "sections": "MXII 10.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "rotation-gravitation/centre-of-mass/why-is-the-centre-of-mass-a-mass-weighted-average"
+          ]
+        },
+        {
+          "slug": "component-operations",
+          "title": "Component operations",
+          "tag": "HOW",
+          "summary": "Adds, scales and normalises vectors in 3D",
+          "sections": "St 12.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "vectors-3d/vectors-in-space/projections-in-3d"
+          ]
+        },
+        {
+          "slug": "section-formula-internal-and-external",
+          "title": "Section formula: internal and external",
+          "tag": "HOW",
+          "summary": "Finds points dividing a segment internally and externally",
+          "sections": "MXII 10.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vectors-3d/vectors-in-space/why-does-the-section-formula-weight-the-far-end"
+          ]
+        },
+        {
+          "slug": "collinear-points-with-vectors",
+          "title": "Collinear points with vectors",
+          "tag": "APP",
+          "summary": "Shows AB = λ AC for three points",
+          "sections": "MXII 10.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "vectors-3d/vectors-in-space/why-do-the-direction-cosines-squared-add-to-1",
+            "functions-graphs/lines-slope/collinear-points-from-slopes",
+            "systems-matrices/determinants-cramer/collinear-points-zero-area"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cross-product",
+      "title": "Cross Product",
+      "sections": "St 12.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-a-x-b-perpendicular-to-both",
+          "title": "Why is a × b perpendicular to both?",
+          "tag": "WHY",
+          "summary": "Rotates the pair and the right-hand rule follows",
+          "sections": "St 12.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-x-b-the-parallelogram-s-area",
+          "title": "Why is |a × b| the parallelogram's area?",
+          "tag": "WHY",
+          "summary": "Sees |a||b| sin θ as base × height",
+          "sections": "St 12.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/solving-any-triangle/why-is-area-halfab-sin-c",
+            "systems-matrices/determinants-cramer/why-is-the-determinant-an-area"
+          ]
+        },
+        {
+          "slug": "why-is-a-x-b-b-x-a",
+          "title": "Why is a × b = −(b × a)?",
+          "tag": "WHY",
+          "summary": "Swaps the order and the hand flips",
+          "sections": "St 12.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-triple-product-a-volume",
+          "title": "Why is the triple product a volume?",
+          "tag": "WHY",
+          "summary": "Builds a box on three vectors",
+          "sections": "St 12.4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-longer-spanner-help-torque",
+          "title": "Why does a longer spanner help? (torque)",
+          "tag": "APP",
+          "summary": "Moves the hand along the handle",
+          "sections": "St 12.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vectors-3d/cross-product/why-is-a-x-b-b-x-a"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lines-planes",
+      "title": "Lines & Planes",
+      "sections": "St 12.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-one-normal-vector-define-a-plane",
+          "title": "Why does one normal vector define a plane?",
+          "tag": "WHY",
+          "summary": "Spins a vector and its perpendicular plane follows",
+          "sections": "St 12.5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/plane-in-a-crosswind"
+          ]
+        },
+        {
+          "slug": "why-can-lines-in-3d-be-skew",
+          "title": "Why can lines in 3D be skew?",
+          "tag": "WHY",
+          "summary": "Finds two lines that neither meet nor run parallel",
+          "sections": "St 12.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-shortest-distance-between-skew-lines-along-the-co",
+          "title": "Why is the shortest distance between skew lines along the common perpendicular?",
+          "tag": "WHY",
+          "summary": "Slides a segment between two skew lines; it is shortest when perpendicular to both, giving |(a₂ − a₁)·(b₁ × b₂)|/|b₁ × b₂|",
+          "sections": "MXII 11.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/lines-planes/why-can-lines-in-3d-be-skew",
+            "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both",
+            "functions-graphs/coordinate-plane/why-is-the-perpendicular-the-shortest-way-to-a-line"
+          ]
+        },
+        {
+          "slug": "distance-from-a-point-to-a-plane",
+          "title": "Distance from a point to a plane",
+          "tag": "HOW",
+          "summary": "Projects onto the normal",
+          "sections": "St 12.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "vectors-3d/lines-planes/why-does-one-normal-vector-define-a-plane"
+          ]
+        },
+        {
+          "slug": "equation-of-a-line-vector-and-cartesian-forms",
+          "title": "Equation of a line: vector and Cartesian forms",
+          "tag": "HOW",
+          "summary": "Writes r = a + λb and (x − x₁)/a = (y − y₁)/b = (z − z₁)/c from a point and direction ratios",
+          "sections": "MXII 11.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vectors-3d/vectors-in-space/why-do-the-direction-cosines-squared-add-to-1",
+            "vectors-3d/lines-planes/why-does-one-normal-vector-define-a-plane",
+            "functions-graphs/lines-slope/graph-a-line-from-its-equation"
+          ]
+        },
+        {
+          "slug": "angle-between-two-lines",
+          "title": "Angle between two lines",
+          "tag": "HOW",
+          "summary": "Uses cos θ = |a₁a₂ + b₁b₂ + c₁c₂| / (√(a₁² + b₁² + c₁²) √(a₂² + b₂² + c₂²))",
+          "sections": "MXII 11.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "vectors-3d/lines-planes/why-is-the-shortest-distance-between-skew-lines-along-the-co",
+            "functions-graphs/lines-slope/why-is-the-angle-between-lines-tan-theta-m2-m1-1-m1m2"
+          ]
+        },
+        {
+          "slug": "geometry-of-a-tetrahedron",
+          "title": "Geometry of a tetrahedron",
+          "tag": "APP",
+          "summary": "Sums the area vectors of the faces and gets zero",
+          "sections": "St 12.5 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "vectors-3d/lines-planes/why-is-the-shortest-distance-between-skew-lines-along-the-co"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "quadric-surfaces",
+      "title": "Quadric Surfaces",
+      "sections": "St 12.6",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-do-slices-reveal-a-surface",
+          "title": "Why do slices reveal a surface?",
+          "tag": "WHY",
+          "summary": "Moves a cutting plane and watches the traces change",
+          "sections": "St 12.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "quadric-gallery",
+          "title": "Quadric gallery",
+          "tag": "HOW",
+          "summary": "Explores the ellipsoid, paraboloids, hyperboloids, cone and saddle",
+          "sections": "St 12.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "vectors-3d/quadric-surfaces/why-do-slices-reveal-a-surface",
+            "conics-curves/ellipse/whispering-gallery",
+            "trigonometry/polar-complex/polar-curve-gallery"
+          ]
+        },
+        {
+          "slug": "why-can-cooling-towers-be-built-from-straight-beams",
+          "title": "Why can cooling towers be built from straight beams?",
+          "tag": "APP",
+          "summary": "Sees a hyperboloid of one sheet made of straight lines",
+          "sections": "St 12.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/quadric-surfaces/why-do-slices-reveal-a-surface"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "space-curves-motion",
+      "title": "Space Curves & Motion",
+      "sections": "St 13.1–13.4",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-velocity-tangent-and-acceleration-into-the-turn",
+          "title": "Why is velocity tangent and acceleration into the turn?",
+          "tag": "WHY",
+          "summary": "Drives a point along a curve with both arrows shown",
+          "sections": "St 13.2, 13.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration"
+          ]
+        },
+        {
+          "slug": "why-does-a-tight-turn-mean-large-curvature",
+          "title": "Why does a tight turn mean large curvature?",
+          "tag": "WHY",
+          "summary": "Fits the osculating circle as the turn tightens",
+          "sections": "St 13.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivative-applications/optimisation/why-does-optimisation-mean-solving-f-prime-0"
+          ]
+        },
+        {
+          "slug": "tangential-and-normal-acceleration",
+          "title": "Tangential and normal acceleration",
+          "tag": "WHY",
+          "summary": "Brakes on a bend and sees the two parts separate",
+          "sections": "St 13.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-t-n-and-b-a-rider-s-moving-axes",
+          "title": "Why T, N and B? A rider's moving axes",
+          "tag": "WHY",
+          "summary": "Rides a roller coaster with three arrows: forward (T), into the turn (N), and the axis the turn spins about (B = T × N)",
+          "sections": "D2 6-8 · D3 1-8",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "arc-length-of-a-helix",
+          "title": "Arc length of a helix",
+          "tag": "HOW",
+          "summary": "Unrolls it into a straight line",
+          "sections": "St 13.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vectors-3d/space-curves-motion/why-t-n-and-b-a-rider-s-moving-axes",
+            "integral-applications/arc-length-surface-area/arc-length-contest",
+            "integral-applications/arc-length-surface-area/why-is-arc-length-integralroot-1-dy-dx-2-dx"
+          ]
+        },
+        {
+          "slug": "kepler-s-laws-from-newton",
+          "title": "Kepler's laws from Newton",
+          "tag": "APP",
+          "summary": "Sees equal areas swept in equal times",
+          "sections": "St 13.4 project",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "vectors-3d/space-curves-motion/why-t-n-and-b-a-rider-s-moving-axes"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cylindrical-spherical-coordinates",
+      "title": "Cylindrical & Spherical Coordinates",
+      "sections": "D2 6-12–6-13 · D3 1-12–1-13 · St 15.7–15.8",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-give-cylinders-and-spheres-their-own-coordinates",
+          "title": "Why give cylinders and spheres their own coordinates?",
+          "tag": "WHY",
+          "summary": "Compares x² + y² = 9 with r = 3, and x² + y² + z² = 4 with ρ = 2",
+          "sections": "D3 1-12, 1-13",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-measured-down-from-the-z-axis",
+          "title": "Why is φ measured down from the z-axis?",
+          "tag": "WHY",
+          "summary": "Sweeps φ from the north pole to the south and compares it with latitude",
+          "sections": "D3 1-13",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "convert-between-the-three-systems",
+          "title": "Convert between the three systems",
+          "tag": "HOW",
+          "summary": "Drags a point and reads (x, y, z), (r, θ, z) and (ρ, θ, φ) together",
+          "sections": "D3 1-12, 1-13",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/cylindrical-spherical-coordinates/why-is-measured-down-from-the-z-axis",
+            "functions-graphs/lines-slope/convert-between-forms-of-a-line"
+          ]
+        },
+        {
+          "slug": "latitude-and-longitude-are-spherical-coordinates",
+          "title": "Latitude and longitude are spherical coordinates",
+          "tag": "APP",
+          "summary": "Places Pune on a globe and converts to (ρ, θ, φ)",
+          "sections": "—",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "vectors-3d/cylindrical-spherical-coordinates/why-is-measured-down-from-the-z-axis"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 14
+}

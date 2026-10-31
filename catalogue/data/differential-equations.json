@@ -1,0 +1,475 @@
+{
+  "slug": "differential-equations",
+  "title": "Differential Equations",
+  "source": "Stewart, Calculus 8e",
+  "children": [
+    {
+      "slug": "what-is-a-differential-equation",
+      "title": "What is a Differential Equation?",
+      "sections": "St 9.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-can-a-rule-about-rates-predict-the-future",
+          "title": "Why can a rule about rates predict the future?",
+          "tag": "WHY",
+          "summary": "Gives a rate law and steps forward in time from the present state",
+          "sections": "St 9.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/variation/find-k-then-predict"
+          ]
+        },
+        {
+          "slug": "why-does-a-de-have-a-family-of-solutions",
+          "title": "Why does a DE have a family of solutions?",
+          "tag": "WHY",
+          "summary": "Sees many curves obey the same rule; an initial condition picks one",
+          "sections": "St 9.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "what-do-order-and-degree-tell-you",
+          "title": "What do order and degree tell you?",
+          "tag": "WHY",
+          "summary": "Reads the highest derivative (order) and its power (degree); finds degree undefined for y‴ + sin(y′) = 0",
+          "sections": "MXII 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "general-or-particular-solution",
+          "title": "General or particular solution?",
+          "tag": "HOW",
+          "summary": "Fixes the arbitrary constants with initial conditions and watches one curve picked from the family",
+          "sections": "MXII 9.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "differential-equations/what-is-a-differential-equation/why-does-a-de-have-a-family-of-solutions"
+          ]
+        },
+        {
+          "slug": "three-models-from-one-idea",
+          "title": "Three models from one idea",
+          "tag": "APP",
+          "summary": "Compares population, cooling and a spring as rate = f(state)",
+          "sections": "St 9.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "differential-equations/what-is-a-differential-equation/why-can-a-rule-about-rates-predict-the-future",
+            "functions-graphs/lines-slope/linear-models-fares-and-depreciation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "direction-fields-euler",
+      "title": "Direction Fields & Euler",
+      "sections": "St 9.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-a-slope-field-show-every-solution-at-once",
+          "title": "Why does a slope field show every solution at once?",
+          "tag": "WHY",
+          "summary": "Drops seeds anywhere and watches them follow the arrows (spec below)",
+          "sections": "St 9.2",
+          "extension": false,
+          "spec": "Field: arrows for dy/dx = f(x, y); tap anywhere to drop a seed that flows with them. Families: many seeds give many solution curves, showing the family behind + C. Equilibria: horizontal rows of arrows where f = 0; seeds near them settle or flee. Euler overlay: step-size slider, so the student sees the exact curve versus straight-line steps.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-euler-s-method-drift",
+          "title": "Why does Euler's method drift?",
+          "tag": "WHY",
+          "summary": "Takes straight steps along a curving path; halving the step halves the error",
+          "sections": "St 9.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "euler-stepper",
+          "title": "Euler stepper",
+          "tag": "HOW",
+          "summary": "Runs the method by hand for a few steps, then automates it",
+          "sections": "St 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/direction-fields-euler/why-does-euler-s-method-drift"
+          ]
+        },
+        {
+          "slug": "current-in-an-rl-circuit",
+          "title": "Current in an RL circuit",
+          "tag": "APP",
+          "summary": "Uses a direction field for L dI/dt + RI = E",
+          "sections": "St 9.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "differential-equations/direction-fields-euler/why-does-a-slope-field-show-every-solution-at-once"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "separable-equations",
+      "title": "Separable Equations",
+      "sections": "St 9.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-separating-dy-and-dx-work",
+          "title": "Why does 'separating dy and dx' work?",
+          "tag": "WHY",
+          "summary": "Sees it is the chain rule in disguise",
+          "sections": "St 9.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle",
+            "integral-applications/arc-length-surface-area/why-is-arc-length-integralroot-1-dy-dx-2-dx"
+          ]
+        },
+        {
+          "slug": "why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o",
+          "title": "Why does y = vx turn a homogeneous equation into a separable one?",
+          "tag": "WHY",
+          "summary": "Zooms a homogeneous direction field and sees the slope depend only on y/x, so v = y/x separates",
+          "sections": "MXII 9.5.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "differential-equations/separable-equations/why-does-separating-dy-and-dx-work"
+          ]
+        },
+        {
+          "slug": "separable-stepper",
+          "title": "Separable stepper",
+          "tag": "HOW",
+          "summary": "Separates, integrates and applies the initial value",
+          "sections": "St 9.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o"
+          ]
+        },
+        {
+          "slug": "homogeneous-equation-stepper",
+          "title": "Homogeneous-equation stepper",
+          "tag": "HOW",
+          "summary": "Tests f(λx, λy) = f(x, y), substitutes y = vx and separates",
+          "sections": "MXII 9.5.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o"
+          ]
+        },
+        {
+          "slug": "how-fast-does-a-tank-drain",
+          "title": "How fast does a tank drain?",
+          "tag": "APP",
+          "summary": "Uses Torricelli's law to watch the level fall fast, then slowly",
+          "sections": "St 9.3 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o",
+            "integral-applications/work/pumping-out-a-tank"
+          ]
+        },
+        {
+          "slug": "salt-in-a-mixing-tank",
+          "title": "Salt in a mixing tank",
+          "tag": "APP",
+          "summary": "Tracks inflow and outflow concentration",
+          "sections": "St 9.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o",
+            "integral-applications/work/pumping-out-a-tank"
+          ]
+        },
+        {
+          "slug": "is-a-ball-faster-going-up-or-coming-down",
+          "title": "Is a ball faster going up or coming down?",
+          "tag": "APP",
+          "summary": "Adds air resistance and compares the two times",
+          "sections": "St 9.3 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o"
+          ]
+        },
+        {
+          "slug": "orthogonal-trajectories",
+          "title": "Orthogonal trajectories",
+          "tag": "APP",
+          "summary": "Draws field lines perpendicular to a family of curves",
+          "sections": "St 9.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "population-models",
+      "title": "Population Models",
+      "sections": "St 9.4",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-logistic-growth-slow-down",
+          "title": "Why does logistic growth slow down?",
+          "tag": "WHY",
+          "summary": "Sees the growth rate shrink as P nears K",
+          "sections": "St 9.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-does-logistic-growth-level-off",
+            "exponentials-logs/growth-decay-cooling/bacteria-and-population-growth"
+          ]
+        },
+        {
+          "slug": "why-is-p-k-stable-but-p-0-not",
+          "title": "Why is P = K stable but P = 0 not?",
+          "tag": "WHY",
+          "summary": "Nudges the population off each equilibrium",
+          "sections": "St 9.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-does-differentiable-imply-continuous-but-not-conversely",
+            "trigonometry/vectors/why-does-a-scalar-stretch-but-not-turn-a-vector"
+          ]
+        },
+        {
+          "slug": "sustainable-fishing",
+          "title": "Sustainable fishing",
+          "tag": "APP",
+          "summary": "Adds a harvest rate and finds the collapse threshold",
+          "sections": "St 9.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/population-models/why-does-logistic-growth-slow-down"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linear-first-order",
+      "title": "Linear First-Order",
+      "sections": "St 9.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-the-integrating-factor-work",
+          "title": "Why does the integrating factor work?",
+          "tag": "WHY",
+          "summary": "Turns the left side into an exact product-rule derivative",
+          "sections": "St 9.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "integrating-factor-stepper",
+          "title": "Integrating-factor stepper",
+          "tag": "HOW",
+          "summary": "Steps through finding and applying the factor",
+          "sections": "St 9.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "differential-equations/linear-first-order/why-does-the-integrating-factor-work",
+            "integrals/fundamental-theorem/why-do-integrating-and-differentiating-undo-each-other"
+          ]
+        },
+        {
+          "slug": "rc-and-rl-circuits",
+          "title": "RC and RL circuits",
+          "tag": "APP",
+          "summary": "Charges a capacitor and watches the exponential approach",
+          "sections": "St 9.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/linear-first-order/why-does-the-integrating-factor-work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "predatorprey",
+      "title": "Predator–Prey",
+      "sections": "St 9.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-do-the-populations-cycle",
+          "title": "Why do the populations cycle?",
+          "tag": "WHY",
+          "summary": "Watches closed loops in the phase plane",
+          "sections": "St 9.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-predators-peak-after-prey",
+          "title": "Why do predators peak after prey?",
+          "tag": "WHY",
+          "summary": "Sees the lag on the time plot (see Trigonometry → Waves & Oscillations)",
+          "sections": "St 9.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/waves-oscillations"
+          ]
+        },
+        {
+          "slug": "lotkavolterra-explorer",
+          "title": "Lotka–Volterra explorer",
+          "tag": "APP",
+          "summary": "Changes birth and death rates",
+          "sections": "St 9.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/predatorprey/why-do-the-populations-cycle",
+            "derivatives/rates-in-science/related-rates-stepper",
+            "derivatives/rates-in-science/rates-across-the-sciences"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "second-order-equations",
+      "title": "Second-Order Equations",
+      "sections": "St 17.1–17.3",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-guessing-e-rx-work",
+          "title": "Why does guessing e^(rx) work?",
+          "tag": "WHY",
+          "summary": "Substitutes it and gets the characteristic equation",
+          "sections": "St 17.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-complex-roots-mean-oscillation",
+          "title": "Why do complex roots mean oscillation?",
+          "tag": "WHY",
+          "summary": "Uses e^((a + bi)x) = e^(ax)(cos bx + i sin bx)",
+          "sections": "St 17.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/complex-numbers/why-do-complex-roots-come-in-conjugate-pairs",
+            "functions-graphs/polynomial-functions/why-degree-n-means-n-complex-roots"
+          ]
+        },
+        {
+          "slug": "under-critically-and-over-damped",
+          "title": "Under-, critically and over-damped",
+          "tag": "WHY",
+          "summary": "Tunes a car's shock absorber",
+          "sections": "St 17.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-resonance-blow-up",
+          "title": "Why does resonance blow up?",
+          "tag": "WHY",
+          "summary": "Drives at the natural frequency and watches the amplitude grow linearly",
+          "sections": "St 17.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/waves-oscillations/why-does-resonance-build-up",
+            "sequences-probability/geometric-sequences-series/why-does-it-blow-up-when-r-1"
+          ]
+        },
+        {
+          "slug": "undetermined-coefficients-and-variation-of-parameters",
+          "title": "Undetermined coefficients and variation of parameters",
+          "tag": "HOW",
+          "summary": "Finds a particular solution",
+          "sections": "St 17.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "differential-equations/second-order-equations/why-does-resonance-blow-up",
+            "limits-continuity/limits-at-infinity/why-is-infinity-infinity-undetermined"
+          ]
+        },
+        {
+          "slug": "springmass-and-lc-circuits",
+          "title": "Spring–mass and LC circuits",
+          "tag": "APP",
+          "summary": "Sees the two systems obey the same equation",
+          "sections": "St 17.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "differential-equations/second-order-equations/why-does-guessing-e-rx-work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "series-solutions",
+      "title": "Series Solutions",
+      "sections": "St 17.4",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-can-power-series-solve-what-formulas-can-t",
+          "title": "Why can power series solve what formulas can't?",
+          "tag": "WHY",
+          "summary": "Builds a solution term by term from a recurrence",
+          "sections": "St 17.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "series-solution-stepper",
+          "title": "Series-solution stepper",
+          "tag": "HOW",
+          "summary": "Finds the recurrence and the first terms",
+          "sections": "St 17.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "differential-equations/series-solutions/why-can-power-series-solve-what-formulas-can-t"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 13
+}

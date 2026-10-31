@@ -1,0 +1,817 @@
+{
+  "slug": "sequences-probability",
+  "title": "Sequences, Counting & Probability",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e; additions from Axler and Stewart",
+  "children": [
+    {
+      "slug": "sequences",
+      "title": "Sequences & Σ",
+      "sections": "S 13.1 · A 11.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-recursive-and-explicit-formulas-agree",
+          "title": "Why do recursive and explicit formulas agree?",
+          "tag": "WHY",
+          "summary": "Builds a sequence both ways side by side",
+          "sections": "S 13.1 · A 11.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-fibonacci-ratios-approach-1-618",
+          "title": "Why do Fibonacci ratios approach 1.618…?",
+          "tag": "WHY",
+          "summary": "Divides each term by the one before and watches the ratio settle",
+          "sections": "S 13.1 (project)",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "notation-expander",
+          "title": "Σ notation expander",
+          "tag": "HOW",
+          "summary": "Expands and collapses sums",
+          "sections": "S 13.1 · A 11.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/sequences/why-do-recursive-and-explicit-formulas-agree",
+            "numbers-algebra/number-systems/interval-notation-builder",
+            "numbers-algebra/exponents-roots/scientific-notation-zoom"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "arithmetic-sequences",
+      "title": "Arithmetic Sequences",
+      "sections": "S 13.2 · A 11.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-gauss-s-trick-work",
+          "title": "Why does Gauss's trick work?",
+          "tag": "WHY",
+          "summary": "Doubles the staircase 1 + 2 + … + n into a rectangle",
+          "sections": "S 13.2 · A 11.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-ap-terms-lie-on-a-straight-line",
+          "title": "Why do AP terms lie on a straight line?",
+          "tag": "WHY",
+          "summary": "Plots n against aₙ",
+          "sections": "S 13.2 · A 11.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "nth-term-and-sum",
+          "title": "nth term and sum",
+          "tag": "HOW",
+          "summary": "Calculates with the staircase shown",
+          "sections": "S 13.2 · A 11.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/arithmetic-sequences/why-does-gauss-s-trick-work"
+          ]
+        },
+        {
+          "slug": "theatre-seats-and-rising-savings",
+          "title": "Theatre seats and rising savings",
+          "tag": "APP",
+          "summary": "Adds rows that each grow by a fixed amount",
+          "sections": "S 13.2 · A 11.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "sequences-probability/arithmetic-sequences/why-does-gauss-s-trick-work",
+            "exponentials-logs/money-finance/monthly-savings-annuity"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "geometric-sequences-series",
+      "title": "Geometric Sequences & Series",
+      "sections": "S 13.3 · A 11.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-the-gp-sum-formula",
+          "title": "Why the GP sum formula?",
+          "tag": "WHY",
+          "summary": "Multiplies by r, shifts and subtracts; everything but two terms cancels",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-can-an-infinite-sum-be-finite",
+          "title": "Why can an infinite sum be finite?",
+          "tag": "WHY",
+          "summary": "Fills a square with ½ + ¼ + ⅛ + …",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-it-blow-up-when-r-1",
+          "title": "Why does it blow up when |r| ≥ 1?",
+          "tag": "WHY",
+          "summary": "Slides r past 1 and −1",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "0-999-1-via-a-geometric-series",
+          "title": "0.999… = 1, via a geometric series",
+          "tag": "WHY",
+          "summary": "Sums 9/10 + 9/100 + … (see Numbers & Algebra → Number Systems)",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/number-systems",
+            "exponentials-logs/money-finance/monthly-savings-annuity"
+          ]
+        },
+        {
+          "slug": "why-can-t-we-sum-every-infinite-list",
+          "title": "Why can't we sum every infinite list?",
+          "tag": "WHY",
+          "summary": "Contrasts 1 + ½ + ¼ + … (settles) with 1 − 1 + 1 − … (never settles) (see Infinite Series)",
+          "sections": "Ax 7.3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "why-is-am-gm",
+          "title": "Why is AM ≥ GM?",
+          "tag": "WHY",
+          "summary": "Draws a semicircle on a + b: the radius (AM) beats the half-chord √(ab) (GM)",
+          "sections": "NM 8",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "nth-term-and-sums",
+          "title": "nth term and sums",
+          "tag": "HOW",
+          "summary": "Finite and infinite sums",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/why-can-an-infinite-sum-be-finite",
+            "sequences-probability/arithmetic-sequences/nth-term-and-sum"
+          ]
+        },
+        {
+          "slug": "bouncing-ball",
+          "title": "Bouncing ball",
+          "tag": "APP",
+          "summary": "Adds up the total distance of infinitely many bounces",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/why-the-gp-sum-formula"
+          ]
+        },
+        {
+          "slug": "rice-on-a-chessboard",
+          "title": "Rice on a chessboard",
+          "tag": "APP",
+          "summary": "Doubles grains square by square: 2⁶⁴ − 1 in total",
+          "sections": "S 13.3 · A 11.3",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/why-can-an-infinite-sum-be-finite"
+          ]
+        },
+        {
+          "slug": "annuities-and-sips",
+          "title": "Annuities and SIPs",
+          "tag": "APP",
+          "summary": "Each deposit grows geometrically (see Exponentials & Logarithms → Money)",
+          "sections": "S 13.3",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "exponentials-logs/money-finance",
+            "sequences-probability/geometric-sequences-series/why-the-gp-sum-formula"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mathematical-induction",
+      "title": "Mathematical Induction",
+      "sections": "S 13.4 · A 11.4",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-induction-prove-infinitely-many-cases",
+          "title": "Why does induction prove infinitely many cases?",
+          "tag": "WHY",
+          "summary": "Knocks the first domino and checks that each one hits the next",
+          "sections": "S 13.4 · A 11.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-both-steps-needed",
+          "title": "Why are both steps needed?",
+          "tag": "WHY",
+          "summary": "Sees a missing base case, or a broken link, make a 'proof' of something false",
+          "sections": "S 13.4 · A 11.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "guided-proof-builder",
+          "title": "Guided proof builder",
+          "tag": "HOW",
+          "summary": "Proves sum formulas step by step",
+          "sections": "S 13.4 · A 11.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/mathematical-induction/why-are-both-steps-needed"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "binomial-theorem",
+      "title": "Binomial Theorem",
+      "sections": "S 13.5 · A 11.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-pascal-s-triangle-give-the-coefficients",
+          "title": "Why does Pascal's triangle give the coefficients?",
+          "tag": "WHY",
+          "summary": "Expands (a + b)ⁿ as choosing a or b from each bracket and counts the ways (spec below)",
+          "sections": "S 13.5 · A 11.5",
+          "extension": false,
+          "order": 1,
+          "spec": "Choices: (a + b)(a + b)(a + b) as three switches; list all 8 choice strings and group them by the number of b's. Paths: the triangle as a grid of left/right paths; the number of paths to each cell is its entry. Rule: each entry is the sum of the two above, because of what the last bracket contributes. Use: pick n and r, and the coefficient lights up in both the triangle and the expansion.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-each-entry-add-the-two-above-it",
+          "title": "Why does each entry add the two above it?",
+          "tag": "WHY",
+          "summary": "Splits the choices by what the last bracket gives",
+          "sections": "S 13.5 · A 11.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "a-b-3-as-a-cube",
+          "title": "(a + b)³ as a cube",
+          "tag": "WHY",
+          "summary": "Takes a cube apart into the 1 + 3 + 3 + 1 pieces",
+          "sections": "S 13.5",
+          "extension": true,
+          "order": 3,
+          "aids": [
+            "numbers-algebra/polynomials-factoring/why-do-a3-b3-factor"
+          ]
+        },
+        {
+          "slug": "find-a-specific-term",
+          "title": "Find a specific term",
+          "tag": "HOW",
+          "summary": "Uses the general term C(n, r) a^(n−r) b^r",
+          "sections": "S 13.5 · A 11.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "sequences-probability/binomial-theorem/why-does-pascal-s-triangle-give-the-coefficients"
+          ]
+        },
+        {
+          "slug": "meru-prastara-pascal-s-triangle-in-india",
+          "title": "Meru Prastara: Pascal's triangle in India",
+          "tag": "APP",
+          "summary": "Sees the triangle in Halayudha's 10th-century commentary on Pingala's metres",
+          "sections": "—",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "sequences-probability/binomial-theorem/why-does-pascal-s-triangle-give-the-coefficients"
+          ]
+        },
+        {
+          "slug": "compare-huge-powers-without-a-calculator",
+          "title": "Compare huge powers without a calculator",
+          "tag": "APP",
+          "summary": "Uses the first two binomial terms: (1.01)¹⁰⁰⁰⁰⁰⁰ > 1 + 10⁶ × 0.01 = 10001 > 10000",
+          "sections": "NM 7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "sequences-probability/binomial-theorem/why-does-pascal-s-triangle-give-the-coefficients"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "counting",
+      "title": "Counting",
+      "sections": "S 14.1–14.2 · A 11.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-do-we-multiply-choices",
+          "title": "Why do we multiply choices?",
+          "tag": "WHY",
+          "summary": "Grows a tree diagram branch by branch",
+          "sections": "S 14.1 · A 11.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-n-and-why-is-0-1",
+          "title": "Why n!, and why is 0! = 1?",
+          "tag": "WHY",
+          "summary": "Arranges n items, then extends the pattern n! = n × (n − 1)! down to 0",
+          "sections": "S 14.2 · A 11.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/number-systems/why-is"
+          ]
+        },
+        {
+          "slug": "why-do-combinations-divide-by-r",
+          "title": "Why do combinations divide by r!?",
+          "tag": "WHY",
+          "summary": "Collapses arrangements that differ only in order",
+          "sections": "S 14.2 · A 11.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-divide-for-repeated-letters",
+          "title": "Why divide for repeated letters?",
+          "tag": "WHY",
+          "summary": "Swaps identical letters in MISSISSIPPI and finds no new word",
+          "sections": "S 14.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-c-n-r-c-n-n-r",
+          "title": "Why is C(n, r) = C(n, n − r)?",
+          "tag": "WHY",
+          "summary": "Sees choosing r to take is the same as choosing n − r to leave",
+          "sections": "NM 6",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "permutation-or-combination",
+          "title": "Permutation or combination?",
+          "tag": "HOW",
+          "summary": "Answers 'does order matter?' to pick the tool",
+          "sections": "S 14.2 · A 11.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "sequences-probability/counting/why-do-combinations-divide-by-r"
+          ]
+        },
+        {
+          "slug": "number-of-subsets-2n",
+          "title": "Number of subsets = 2ⁿ",
+          "tag": "APP",
+          "summary": "Flips n light switches on and off",
+          "sections": "S 14.1",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "sequences-probability/counting/why-n-and-why-is-0-1",
+            "numbers-algebra/sets/why-does-a-set-of-n-elements-have-2n-subsets"
+          ]
+        },
+        {
+          "slug": "number-plates-and-pins",
+          "title": "Number plates and PINs",
+          "tag": "APP",
+          "summary": "Counts with and without repetition",
+          "sections": "S 14.1–14.2 · A 11.6",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "sequences-probability/counting/why-n-and-why-is-0-1"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "probability",
+      "title": "Probability",
+      "sections": "S 14.3 · A 11.7",
+      "order": 7,
+      "children": [
+        {
+          "slug": "when-is-probability-favourable-total",
+          "title": "When is probability favourable ÷ total?",
+          "tag": "WHY",
+          "summary": "Rolls a loaded die: the formula needs equally likely outcomes",
+          "sections": "S 14.3 · A 11.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-subtract-the-overlap-in-p-a-or-b",
+          "title": "Why subtract the overlap in P(A or B)?",
+          "tag": "WHY",
+          "summary": "Sees the overlap counted twice in a Venn diagram",
+          "sections": "S 14.3 · A 11.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/sets/why-is-n-a-b-n-a-n-b-n-a-b"
+          ]
+        },
+        {
+          "slug": "why-is-the-complement-often-easier",
+          "title": "Why is the complement often easier?",
+          "tag": "WHY",
+          "summary": "Finds 'at least one' by working out 'none'",
+          "sections": "S 14.3 · A 11.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-do-frequencies-settle-down",
+          "title": "Why do frequencies settle down?",
+          "tag": "WHY",
+          "summary": "Simulates thousands of coin flips; the relative frequency approaches ½ (law of large numbers)",
+          "sections": "—",
+          "extension": true,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-define-probability-by-axioms",
+          "title": "Why define probability by axioms?",
+          "tag": "WHY",
+          "summary": "Sees the classical formula fail for unequal outcomes; three axioms cover every case",
+          "sections": "NM 14",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "two-dice-sample-space",
+          "title": "Two-dice sample space",
+          "tag": "HOW",
+          "summary": "Builds the 6 × 6 grid and colours events",
+          "sections": "S 14.3 · A 11.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "sequences-probability/probability/why-subtract-the-overlap-in-p-a-or-b"
+          ]
+        },
+        {
+          "slug": "mutually-exclusive-and-exhaustive-events",
+          "title": "Mutually exclusive and exhaustive events",
+          "tag": "HOW",
+          "summary": "Partitions a sample space by colouring regions",
+          "sections": "NM 14",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "sequences-probability/probability/why-subtract-the-overlap-in-p-a-or-b"
+          ]
+        },
+        {
+          "slug": "birthday-paradox",
+          "title": "Birthday paradox",
+          "tag": "APP",
+          "summary": "Adds people until P(shared birthday) passes 50% (at 23)",
+          "sections": "S 14.3 · A 11.7",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "sequences-probability/probability/why-subtract-the-overlap-in-p-a-or-b"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "statistics-measuring-spread",
+      "title": "Statistics: Measuring Spread",
+      "sections": "NM 13",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-isn-t-the-range-enough",
+          "title": "Why isn't the range enough?",
+          "tag": "WHY",
+          "summary": "Sees two data sets with the same range but very different spread",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-use-x-x-in-mean-deviation",
+          "title": "Why use |x − x̄| in mean deviation?",
+          "tag": "WHY",
+          "summary": "Shows the plain deviations always sum to 0",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/number-systems/absolute-value-is-distance"
+          ]
+        },
+        {
+          "slug": "why-square-the-deviations-variance",
+          "title": "Why square the deviations? (variance)",
+          "tag": "WHY",
+          "summary": "Compares |d| with d²: squaring removes signs and is easier to do algebra with",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-sd-have-the-data-s-units",
+          "title": "Why does SD have the data's units?",
+          "tag": "WHY",
+          "summary": "Takes √variance to undo the squaring",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-adding-a-constant-leave-the-sd-alone-but-scaling-mu",
+          "title": "Why does adding a constant leave the SD alone but scaling multiply it?",
+          "tag": "WHY",
+          "summary": "Shifts and stretches a dot plot: σ(ax + b) = |a|σ",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/transformations/why-does-f-2x-squeeze-but-2f-x-stretch"
+          ]
+        },
+        {
+          "slug": "why-is-mean-deviation-smallest-about-the-median",
+          "title": "Why is mean deviation smallest about the median?",
+          "tag": "WHY",
+          "summary": "Drags the centre point and watches MD dip at the median",
+          "sections": "NM 13",
+          "extension": true,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "variance-shortcut-x2-n-x2",
+          "title": "Variance shortcut: Σx²/n − x̄²",
+          "tag": "HOW",
+          "summary": "Derives and uses it",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "sequences-probability/statistics-measuring-spread/why-square-the-deviations-variance"
+          ]
+        },
+        {
+          "slug": "grouped-data-with-step-deviation",
+          "title": "Grouped data with step deviation",
+          "tag": "HOW",
+          "summary": "Shifts and scales the class marks to simplify the sums",
+          "sections": "NM 13",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "sequences-probability/statistics-measuring-spread/why-use-x-x-in-mean-deviation"
+          ]
+        },
+        {
+          "slug": "fix-a-wrong-observation",
+          "title": "Fix a wrong observation",
+          "tag": "APP",
+          "summary": "Corrects the mean and SD after a recording error",
+          "sections": "NM 13 Misc",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "sequences-probability/statistics-measuring-spread/why-does-sd-have-the-data-s-units"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "conditional-probability-bayes",
+      "title": "Conditional Probability & Bayes",
+      "sections": "MXII 13.1–13.5",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-does-given-b-shrink-the-sample-space",
+          "title": "Why does 'given B' shrink the sample space?",
+          "tag": "WHY",
+          "summary": "Greys out every outcome outside B and recounts: P(A|B) = P(A ∩ B)/P(B)",
+          "sections": "MXII 13.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "sequences-probability/probability/two-dice-sample-space"
+          ]
+        },
+        {
+          "slug": "why-are-mutually-exclusive-events-not-independent",
+          "title": "Why are mutually exclusive events not independent?",
+          "tag": "WHY",
+          "summary": "Sees that if A happens, an exclusive B can't, so knowing A changes P(B) completely; independence means P(A ∩ B) = P(A)P(B)",
+          "sections": "MXII 13.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "sequences-probability/probability/mutually-exclusive-and-exhaustive-events"
+          ]
+        },
+        {
+          "slug": "why-does-total-probability-split-along-a-partition",
+          "title": "Why does total probability split along a partition?",
+          "tag": "WHY",
+          "summary": "Cuts the sample space into E₁, E₂, E₃ and adds the slice of A in each",
+          "sections": "MXII 13.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/probability/when-is-probability-favourable-total"
+          ]
+        },
+        {
+          "slug": "why-does-bayes-theorem-flip-a-conditional",
+          "title": "Why does Bayes' theorem flip a conditional?",
+          "tag": "WHY",
+          "summary": "Fills a 1000-person grid: P(test + | ill) is not P(ill | test +) (spec below)",
+          "sections": "MXII 13.5",
+          "extension": false,
+          "order": 4,
+          "spec": "Grid: 1000 dots for people; 0.1% ill (1 dot), shown as a highlighted dot. Sliders: prevalence, detection rate, false-positive rate. Test: positives light up — the ill dot (99% chance) plus about 5 healthy dots (0.5% of 999). Flip: among the lit dots, ill ones are about 1 in 6: P(ill | +) = 22/133 ≈ 17%, though P(+ | ill) = 99%. Formula: P(E₁|A) = P(E₁)P(A|E₁) / Σ P(Eᵢ)P(A|Eᵢ), with the numbers updating live.",
+          "aids": [
+            "sequences-probability/conditional-probability-bayes/why-does-total-probability-split-along-a-partition"
+          ]
+        },
+        {
+          "slug": "tree-diagram-builder",
+          "title": "Tree-diagram builder",
+          "tag": "HOW",
+          "summary": "Multiplies along branches and adds across them",
+          "sections": "MXII 13.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "sequences-probability/conditional-probability-bayes/why-does-total-probability-split-along-a-partition",
+            "sequences-probability/counting/why-do-we-multiply-choices"
+          ]
+        },
+        {
+          "slug": "drawing-without-replacement",
+          "title": "Drawing without replacement",
+          "tag": "HOW",
+          "summary": "Uses P(A ∩ B) = P(A) P(B|A) for cards and balls",
+          "sections": "MXII 13.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "sequences-probability/conditional-probability-bayes/why-does-total-probability-split-along-a-partition"
+          ]
+        },
+        {
+          "slug": "is-a-positive-test-bad-news",
+          "title": "Is a positive test bad news?",
+          "tag": "APP",
+          "summary": "0.1% ill, 99% detected, 0.5% false positives: P(ill | positive) = 22/133 ≈ 17%",
+          "sections": "MXII 13.5 Ex",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "sequences-probability/conditional-probability-bayes/why-does-bayes-theorem-flip-a-conditional"
+          ]
+        },
+        {
+          "slug": "which-machine-made-the-faulty-bolt",
+          "title": "Which machine made the faulty bolt?",
+          "tag": "APP",
+          "summary": "Machines make 25%, 35% and 40% with 5%, 4% and 2% defective: P(B | defective) = 28/69",
+          "sections": "MXII 13.5 Ex",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "sequences-probability/conditional-probability-bayes/why-does-total-probability-split-along-a-partition"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "random-variables-expectation",
+      "title": "Random Variables & Expectation",
+      "sections": "MXII 13.6",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-is-a-random-variable-a-function-not-a-variable",
+          "title": "Why is a random variable a function, not a variable?",
+          "tag": "WHY",
+          "summary": "Maps each outcome of two dice to a number (their sum) and sees one outcome per value fail",
+          "sections": "MXII 13.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output"
+          ]
+        },
+        {
+          "slug": "why-is-the-mean-xi-pi-a-balance-point",
+          "title": "Why is the mean Σ xᵢ pᵢ a balance point?",
+          "tag": "WHY",
+          "summary": "Hangs probability weights on a beam; the pivot that balances is E(X) = 7 for the sum of two dice",
+          "sections": "MXII 13.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "rotation-gravitation/centre-of-mass/why-is-the-centre-of-mass-a-mass-weighted-average"
+          ]
+        },
+        {
+          "slug": "why-is-var-x-e-x2-e-x-2",
+          "title": "Why is Var(X) = E(X²) − [E(X)]²?",
+          "tag": "WHY",
+          "summary": "Expands E[(X − μ)²] term by term; for two dice it is 35/6",
+          "sections": "MXII 13.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/statistics-measuring-spread/variance-shortcut-x2-n-x2"
+          ]
+        },
+        {
+          "slug": "build-a-probability-distribution",
+          "title": "Build a probability distribution",
+          "tag": "HOW",
+          "summary": "Tabulates P(X = x) and checks Σ pᵢ = 1",
+          "sections": "MXII 13.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "sequences-probability/random-variables-expectation/why-is-the-mean-xi-pi-a-balance-point",
+            "exponentials-logs/the-number-e/build-e-from-a-series"
+          ]
+        },
+        {
+          "slug": "is-this-game-fair",
+          "title": "Is this game fair?",
+          "tag": "APP",
+          "summary": "Computes the expected winnings of a dice game; fair means E = 0",
+          "sections": "MXII 13.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "sequences-probability/random-variables-expectation/why-is-var-x-e-x2-e-x-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 5
+}

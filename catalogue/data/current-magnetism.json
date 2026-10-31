@@ -1,0 +1,591 @@
+{
+  "slug": "current-magnetism",
+  "title": "Current & Magnetism",
+  "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
+  "order": 27,
+  "children": [
+    {
+      "slug": "current-drift",
+      "title": "Current & Drift",
+      "sections": "XII 3.1–3.6",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-bulbs-light-instantly-when-electrons-drift-at-mm-s",
+          "title": "Why do bulbs light instantly when electrons drift at mm/s?",
+          "tag": "WHY",
+          "summary": "Pushes a pipe already full of marbles: the push travels, not the marble (spec below)",
+          "sections": "XII 3.5–3.6",
+          "extension": false,
+          "order": 1,
+          "spec": "Pipe of marbles: push one end and the far marble moves at once. Wire: zoom on electrons with a random thermal jitter (~10⁵ m/s) plus a tiny drift; the drift speed reads ~1 mm/s. Signal: the field travels at nearly light speed and switches every electron on together. Compare: walking pace against the field's speed on a log scale.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-drift-give-ohm-s-law",
+          "title": "Why does drift give Ohm's law?",
+          "tag": "WHY",
+          "summary": "Runs electrons that accelerate, collide and restart: v_d = eEτ/m, so j ∝ E",
+          "sections": "XII 3.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-current-a-scalar-despite-its-arrow",
+          "title": "Why is current a scalar despite its arrow?",
+          "tag": "WHY",
+          "summary": "Joins wires at a junction; currents add as numbers, not vectors",
+          "sections": "PtP 1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/vectors/why-does-a-vector-need-two-numbers"
+          ]
+        },
+        {
+          "slug": "is-v-ir-ohm-s-law-not-quite",
+          "title": "Is V = IR Ohm's law? Not quite",
+          "tag": "WHY",
+          "summary": "Plots V–I for a resistor and a diode: R = V/I always defines R, Ohm's law means the graph is straight",
+          "sections": "PtP 2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/lines-slope/why-does-a-constant-rate-of-change-make-a-straight-line"
+          ]
+        },
+        {
+          "slug": "drift-speed-calculator",
+          "title": "Drift-speed calculator",
+          "tag": "HOW",
+          "summary": "Uses I = neAv_d",
+          "sections": "XII 3.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "current-magnetism/current-drift/why-does-drift-give-ohm-s-law"
+          ]
+        },
+        {
+          "slug": "why-do-wires-get-warm",
+          "title": "Why do wires get warm?",
+          "tag": "APP",
+          "summary": "Turns the energy lost in collisions into heat",
+          "sections": "XII 3.10",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "current-magnetism/current-drift/why-is-current-a-scalar-despite-its-arrow"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "resistance-temperature",
+      "title": "Resistance & Temperature",
+      "sections": "XII 3.7–3.9",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-r-l-a",
+          "title": "Why is R ∝ l/A?",
+          "tag": "WHY",
+          "summary": "Joins resistors in series (longer) and parallel (thicker)",
+          "sections": "XII 3.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-metal-s-resistance-rise-with-heat-but-a-semicondu",
+          "title": "Why does a metal's resistance rise with heat but a semiconductor's fall?",
+          "tag": "WHY",
+          "summary": "Compares more collisions with more carriers",
+          "sections": "XII 3.8–3.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "properties-of-matter/viscosity/why-does-a-liquid-s-viscosity-fall-with-heat-but-a-gas-s-ris"
+          ]
+        },
+        {
+          "slug": "why-aren-t-all-devices-ohmic",
+          "title": "Why aren't all devices ohmic?",
+          "tag": "WHY",
+          "summary": "Sweeps V across a diode and sees a curved, one-way graph",
+          "sections": "XII 3.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "resistance-at-a-new-temperature",
+          "title": "Resistance at a new temperature",
+          "tag": "HOW",
+          "summary": "Uses R = R₀(1 + αΔT) and finds α from two readings",
+          "sections": "XII 3.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/lines-slope/convert-between-forms-of-a-line",
+            "current-magnetism/resistance-temperature/why-does-a-metal-s-resistance-rise-with-heat-but-a-semicondu"
+          ]
+        },
+        {
+          "slug": "heating-elements",
+          "title": "Heating elements",
+          "tag": "APP",
+          "summary": "Chooses a high-resistivity alloy for a heater coil",
+          "sections": "XII 3.8",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "current-magnetism/resistance-temperature/why-is-r-l-a",
+            "heat-thermodynamics/change-of-state/heating-curve-builder"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cells-emf-power",
+      "title": "Cells, EMF & Power",
+      "sections": "XII 3.10–3.12",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-isn-t-the-terminal-voltage-the-emf",
+          "title": "Why isn't the terminal voltage the emf?",
+          "tag": "WHY",
+          "summary": "Draws more current and watches the voltage sag across the internal resistance",
+          "sections": "XII 3.11",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "i2r-or-v2-r",
+          "title": "I²R or V²/R?",
+          "tag": "WHY",
+          "summary": "Fixes I (series) or V (parallel) and sees which formula fits",
+          "sections": "XII 3.10",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/dimensions/where-does-c-go-in-m-m0-root-1-v2"
+          ]
+        },
+        {
+          "slug": "why-is-power-sent-at-high-voltage",
+          "title": "Why is power sent at high voltage?",
+          "tag": "WHY",
+          "summary": "Halves the current and quarters the I²R line loss",
+          "sections": "XII 3.10",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/power/why-is-p-f-v"
+          ]
+        },
+        {
+          "slug": "cells-in-series-and-parallel",
+          "title": "Cells in series and parallel",
+          "tag": "HOW",
+          "summary": "Combines emfs and internal resistances",
+          "sections": "XII 3.12",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "current-magnetism/cells-emf-power/i2r-or-v2-r",
+            "current-magnetism/resistance-temperature/why-is-r-l-a",
+            "heat-thermodynamics/heat-transfer/conduction-through-layered-walls"
+          ]
+        },
+        {
+          "slug": "a-car-battery-s-maximum-current",
+          "title": "A car battery's maximum current",
+          "tag": "APP",
+          "summary": "12 V with 0.4 Ω internal resistance gives at most 30 A",
+          "sections": "XII ex",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "current-magnetism/cells-emf-power/why-isn-t-the-terminal-voltage-the-emf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kirchhoff-wheatstone",
+      "title": "Kirchhoff & Wheatstone",
+      "sections": "XII 3.13–3.14",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-the-junction-rule-charge-conservation",
+          "title": "Why is the junction rule charge conservation?",
+          "tag": "WHY",
+          "summary": "Counts electrons in and out of a node",
+          "sections": "XII 3.13, PtP 6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "electrostatics/electric-charge/why-is-total-charge-conserved"
+          ]
+        },
+        {
+          "slug": "why-is-the-loop-rule-energy-conservation",
+          "title": "Why is the loop rule energy conservation?",
+          "tag": "WHY",
+          "summary": "Walks a loop on a potential 'height map' and returns to the same height",
+          "sections": "XII 3.13",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "vector-calculus/line-integrals/why-is-a-closed-loop-worth-zero-in-a-conservative-field",
+            "heat-thermodynamics/first-law/why-is-u-q-w-just-energy-conservation",
+            "properties-of-matter/flow-bernoulli/why-is-bernoulli-just-energy-conservation"
+          ]
+        },
+        {
+          "slug": "why-does-a-balanced-wheatstone-bridge-show-no-current",
+          "title": "Why does a balanced Wheatstone bridge show no current?",
+          "tag": "WHY",
+          "summary": "Tunes R until both midpoints are at equal potential: R₁/R₂ = R₃/R₄",
+          "sections": "XII 3.14",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "circuit-solver-with-kirchhoff-s-rules",
+          "title": "Circuit solver with Kirchhoff's rules",
+          "tag": "HOW",
+          "summary": "Writes loop equations and solves them as a linear system",
+          "sections": "XII 3.13",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "systems-matrices/linear-systems/why-one-none-or-infinitely-many",
+            "systems-matrices/matrices-row-reduction/row-reduction-stepper",
+            "current-magnetism/kirchhoff-wheatstone/why-is-the-loop-rule-energy-conservation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "magnetic-force-on-charges",
+      "title": "Magnetic Force on Charges",
+      "sections": "XII 4.1–4.3",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-a-magnetic-force-never-do-work",
+          "title": "Why does a magnetic force never do work?",
+          "tag": "WHY",
+          "summary": "Sees F = qv × B always perpendicular to v, so the speed never changes",
+          "sections": "XII 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/why-does-perpendicular-mean-dot-0",
+            "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both",
+            "forces-energy/work-kinetic-energy/why-is-variable-force-work-the-area-under-fx"
+          ]
+        },
+        {
+          "slug": "why-does-a-charge-circle-in-a-uniform-b",
+          "title": "Why does a charge circle in a uniform B?",
+          "tag": "WHY",
+          "summary": "Fires charges at different speeds: r = mv/qB, but the period doesn't depend on speed",
+          "sections": "XII 4.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/circular-motion/why-is-there-acceleration-at-constant-speed"
+          ]
+        },
+        {
+          "slug": "why-helices",
+          "title": "Why helices?",
+          "tag": "WHY",
+          "summary": "Adds a velocity component along B",
+          "sections": "XII 4.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/second-law-momentum/why-does-a-force-only-change-the-velocity-along-it",
+            "measurement-motion/vectors/component-calculator"
+          ]
+        },
+        {
+          "slug": "right-hand-rule-trainer",
+          "title": "Right-hand-rule trainer",
+          "tag": "HOW",
+          "summary": "Predicts the force direction for F = qv × B",
+          "sections": "XII 4.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "current-magnetism/magnetic-force-on-charges/why-does-a-magnetic-force-never-do-work",
+            "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both"
+          ]
+        },
+        {
+          "slug": "auroras",
+          "title": "Auroras",
+          "tag": "APP",
+          "summary": "Watches charged particles spiral along Earth's field lines",
+          "sections": "XII 4.3",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "current-magnetism/magnetic-force-on-charges/why-helices",
+            "electrostatics/electric-potential/why-are-equipotentials-perpendicular-to-field-lines"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sources-of-magnetic-field",
+      "title": "Sources of Magnetic Field",
+      "sections": "XII 4.4–4.8",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-biotsavart-each-piece-of-wire-adds-its-bit",
+          "title": "Why Biot–Savart? Each piece of wire adds its bit",
+          "tag": "WHY",
+          "summary": "Sums the dB ∝ I dl × r̂/r² contributions around a loop (spec below)",
+          "sections": "XII 4.4",
+          "extension": false,
+          "order": 1,
+          "spec": "Element: drag a small segment I dl and see its dB arrow at a test point. Rules: dB ∝ 1/r², and is perpendicular to both dl and r̂ (right hand). Sum: add all the segments of a loop; the sideways parts cancel. Results: wire, loop and solenoid fields fall out of the same sum.",
+          "aids": [
+            "integrals/area-distance/why-do-more-rectangles-give-the-exact-area"
+          ]
+        },
+        {
+          "slug": "why-is-the-field-on-a-loop-s-axis-0ir2-2-x2-r2-3-2",
+          "title": "Why is the field on a loop's axis μ₀IR²/2(x² + R²)^(3/2)?",
+          "tag": "WHY",
+          "summary": "Sees the sideways parts cancel and only the axial parts add",
+          "sections": "XII 4.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "electrostatics/electric-potential/why-is-potential-1-r-when-the-field-is-1-r2"
+          ]
+        },
+        {
+          "slug": "why-is-a-long-wire-s-field-0i-2pir-ampere",
+          "title": "Why is a long wire's field μ₀I/2πr? (Ampère)",
+          "tag": "WHY",
+          "summary": "Walks a circle around the wire: B × 2πr = μ₀I",
+          "sections": "XII 4.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vector-calculus/line-integrals/why-is-work-integralf-dr",
+            "properties-of-matter/elastic-moduli/why-does-a-stretched-wire-get-thinner-poisson"
+          ]
+        },
+        {
+          "slug": "why-is-a-solenoid-s-field-uniform-inside",
+          "title": "Why is a solenoid's field uniform inside?",
+          "tag": "WHY",
+          "summary": "Stacks loops until the inside fields line up and the outside cancels: B = μ₀nI",
+          "sections": "XII 4.7",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-do-parallel-currents-attract",
+          "title": "Why do parallel currents attract?",
+          "tag": "WHY",
+          "summary": "Puts each wire in the other's field; this defines the ampere",
+          "sections": "XII 4.8",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "field-calculator",
+          "title": "Field calculator",
+          "tag": "HOW",
+          "summary": "Computes B for a wire, a loop and a solenoid",
+          "sections": "XII 4.4–4.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "current-magnetism/sources-of-magnetic-field/why-is-a-long-wire-s-field-0i-2pir-ampere"
+          ]
+        },
+        {
+          "slug": "electromagnets",
+          "title": "Electromagnets",
+          "tag": "APP",
+          "summary": "Varies the current and the number of turns",
+          "sections": "XII 4.7",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "current-magnetism/sources-of-magnetic-field/why-is-the-field-on-a-loop-s-axis-0ir2-2-x2-r2-3-2",
+            "derivative-applications/l-hopital-s-rule/why-isn-t-0-0-a-number"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "loops-meters",
+      "title": "Loops & Meters",
+      "sections": "XII 4.9–4.10",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-a-current-loop-a-magnetic-dipole",
+          "title": "Why is a current loop a magnetic dipole?",
+          "tag": "WHY",
+          "summary": "Compares a loop's far field with a bar magnet's: m = NIA",
+          "sections": "XII 4.9",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "electrostatics/electric-field-field-lines/why-does-a-dipole-s-field-fall-as-1-r3"
+          ]
+        },
+        {
+          "slug": "why-is-m-x-b-and-the-net-force-zero",
+          "title": "Why is τ = m × B and the net force zero?",
+          "tag": "WHY",
+          "summary": "Adds the forces on the four sides of a rectangular loop",
+          "sections": "XII 4.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "rotation-gravitation/torque-equilibrium/why-does-a-couple-turn-without-moving-anything",
+            "electrostatics/coulomb-s-law/net-force-on-a-charge",
+            "electrostatics/electric-field-field-lines/a-dipole-in-a-uniform-field"
+          ]
+        },
+        {
+          "slug": "why-does-a-shunt-make-an-ammeter-and-a-series-r-a-voltmeter",
+          "title": "Why does a shunt make an ammeter and a series R a voltmeter?",
+          "tag": "WHY",
+          "summary": "Diverts most current around the coil, or limits it",
+          "sections": "XII 4.10",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "convert-a-galvanometer",
+          "title": "Convert a galvanometer",
+          "tag": "HOW",
+          "summary": "Calculates the shunt or series resistance",
+          "sections": "XII 4.10",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "current-magnetism/loops-meters/why-does-a-shunt-make-an-ammeter-and-a-series-r-a-voltmeter"
+          ]
+        },
+        {
+          "slug": "inside-an-analogue-meter",
+          "title": "Inside an analogue meter",
+          "tag": "APP",
+          "summary": "Balances the coil's torque against a spring: kφ = NIAB",
+          "sections": "XII 4.10",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "current-magnetism/loops-meters/why-does-a-shunt-make-an-ammeter-and-a-series-r-a-voltmeter"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "magnetism-matter",
+      "title": "Magnetism & Matter",
+      "sections": "XII 5.1–5.5",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-does-a-bar-magnet-act-like-a-solenoid",
+          "title": "Why does a bar magnet act like a solenoid?",
+          "tag": "WHY",
+          "summary": "Overlays their field lines",
+          "sections": "XII 5.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "current-magnetism/sources-of-magnetic-field/why-is-a-solenoid-s-field-uniform-inside",
+            "current-magnetism/loops-meters/why-is-a-current-loop-a-magnetic-dipole"
+          ]
+        },
+        {
+          "slug": "why-can-t-you-get-a-lone-north-pole",
+          "title": "Why can't you get a lone north pole?",
+          "tag": "WHY",
+          "summary": "Cuts a magnet again and again: every piece has two poles",
+          "sections": "XII 5.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-net-magnetic-flux-through-any-closed-surface-zero",
+          "title": "Why is the net magnetic flux through any closed surface zero?",
+          "tag": "WHY",
+          "summary": "Counts field lines in and out of a box around a magnet (Gauss's law for magnetism)",
+          "sections": "XII 5.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "electrostatics/flux-gauss-s-law/what-is-flux-count-the-lines-through-a-net",
+            "electrostatics/flux-gauss-s-law/why-does-gauss-s-law-work-for-any-closed-surface",
+            "vector-calculus/stokes-divergence-theorems/gauss-s-law-for-electric-flux"
+          ]
+        },
+        {
+          "slug": "dia-para-or-ferro",
+          "title": "Dia, para or ferro?",
+          "tag": "WHY",
+          "summary": "Puts materials in a field: repelled, weakly pulled or strongly pulled, explained by domains",
+          "sections": "XII 5.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "a-magnetic-dipole-in-a-uniform-field",
+          "title": "A magnetic dipole in a uniform field",
+          "tag": "HOW",
+          "summary": "Finds the torque and energy, and oscillates it",
+          "sections": "XII 5.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "electrostatics/electric-field-field-lines/a-dipole-in-a-uniform-field",
+            "current-magnetism/magnetism-matter/why-is-the-net-magnetic-flux-through-any-closed-surface-zero",
+            "current-magnetism/loops-meters/why-is-a-current-loop-a-magnetic-dipole"
+          ]
+        },
+        {
+          "slug": "levitation-and-the-meissner-effect",
+          "title": "Levitation and the Meissner effect",
+          "tag": "APP",
+          "summary": "Floats a magnet over a superconductor (a perfect diamagnet)",
+          "sections": "XII 5.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "current-magnetism/magnetism-matter/why-does-a-bar-magnet-act-like-a-solenoid",
+            "heat-thermodynamics/heat-transfer/the-greenhouse-effect"
+          ]
+        }
+      ]
+    }
+  ]
+}

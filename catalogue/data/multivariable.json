@@ -1,0 +1,555 @@
+{
+  "slug": "multivariable",
+  "title": "Multivariable Calculus",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "functions-of-two-variables",
+      "title": "Functions of Two Variables",
+      "sections": "St 14.1–14.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-a-contour-map-a-stack-of-slices",
+          "title": "Why is a contour map a stack of slices?",
+          "tag": "WHY",
+          "summary": "Floods a 3D hill level by level",
+          "sections": "St 14.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-2d-limits-harder",
+          "title": "Why are 2D limits harder?",
+          "tag": "WHY",
+          "summary": "Approaches the origin along different paths and gets different answers",
+          "sections": "St 14.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "level-curve-explorer",
+          "title": "Level-curve explorer",
+          "tag": "HOW",
+          "summary": "Matches surfaces with their contour maps",
+          "sections": "St 14.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "multivariable/functions-of-two-variables/why-is-a-contour-map-a-stack-of-slices"
+          ]
+        },
+        {
+          "slug": "wind-chill-and-heat-index",
+          "title": "Wind chill and heat index",
+          "tag": "APP",
+          "summary": "Reads f(T, v) from a table and a surface",
+          "sections": "St 14.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/functions-of-two-variables/why-is-a-contour-map-a-stack-of-slices",
+            "integral-applications/area-between-curves/gini-index-of-inequality"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "partial-derivatives",
+      "title": "Partial Derivatives",
+      "sections": "St 14.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-a-partial-derivative-a-slope-in-one-direction",
+          "title": "Why is a partial derivative a slope in one direction?",
+          "tag": "WHY",
+          "summary": "Slices the surface and finds the tangent to the slice",
+          "sections": "St 14.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-the-derivative-the-slope-you-see-when-you-zoom-in"
+          ]
+        },
+        {
+          "slug": "why-are-mixed-partials-equal",
+          "title": "Why are mixed partials equal?",
+          "tag": "WHY",
+          "summary": "Checks fₓᵧ against fᵧₓ numerically (Clairaut)",
+          "sections": "St 14.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "partial-derivative-drill",
+          "title": "Partial-derivative drill",
+          "tag": "HOW",
+          "summary": "Holds the other variables fixed",
+          "sections": "St 14.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "multivariable/partial-derivatives/why-is-a-partial-derivative-a-slope-in-one-direction"
+          ]
+        },
+        {
+          "slug": "cobbdouglas-production",
+          "title": "Cobb–Douglas production",
+          "tag": "APP",
+          "summary": "Sees how output responds to labour and to capital",
+          "sections": "St 14.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/partial-derivatives/why-is-a-partial-derivative-a-slope-in-one-direction",
+            "systems-matrices/inequalities-linear-programming/factory-production-plan",
+            "integral-applications/economics-biology/measuring-cardiac-output"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tangent-planes-chain-rule",
+      "title": "Tangent Planes & Chain Rule",
+      "sections": "St 14.4–14.5",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-a-smooth-surface-look-flat-up-close",
+          "title": "Why does a smooth surface look flat up close?",
+          "tag": "WHY",
+          "summary": "Zooms in until the surface matches its tangent plane",
+          "sections": "St 14.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivative-applications/maxima-minima/why-are-peaks-where-the-tangent-is-flat"
+          ]
+        },
+        {
+          "slug": "why-does-the-multivariable-chain-rule-follow-a-tree",
+          "title": "Why does the multivariable chain rule follow a tree?",
+          "tag": "WHY",
+          "summary": "Traces every path from the output to the input",
+          "sections": "St 14.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-dy-dx-fx-f-for-f-x-y-0",
+          "title": "Why is dy/dx = −Fₓ/Fᵧ for F(x, y) = 0?",
+          "tag": "WHY",
+          "summary": "Differentiates F(x, y(x)) = 0 with the chain-rule tree",
+          "sections": "D3 2-6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/separable-equations/why-does-separating-dy-and-dx-work",
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle"
+          ]
+        },
+        {
+          "slug": "linear-approximation-in-2d",
+          "title": "Linear approximation in 2D",
+          "tag": "HOW",
+          "summary": "Estimates f near a point",
+          "sections": "St 14.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/tangent-planes-chain-rule/why-is-dy-dx-fx-f-for-f-x-y-0"
+          ]
+        },
+        {
+          "slug": "the-speedo-lzr-racer",
+          "title": "The Speedo LZR Racer",
+          "tag": "APP",
+          "summary": "Uses a linearised drag model",
+          "sections": "St 14.4 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "multivariable/tangent-planes-chain-rule/why-is-dy-dx-fx-f-for-f-x-y-0",
+            "functions-graphs/modelling-with-data/model-picker"
+          ]
+        },
+        {
+          "slug": "error-in-a-box-s-volume-from-three-measurements",
+          "title": "Error in a box's volume from three measurements",
+          "tag": "APP",
+          "summary": "Uses the total differential dV = yz dx + xz dy + xy dz",
+          "sections": "D3 2-5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "multivariable/tangent-planes-chain-rule/why-is-dy-dx-fx-f-for-f-x-y-0"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gradient",
+      "title": "Gradient",
+      "sections": "St 14.6",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-the-gradient-point-steepest-uphill",
+          "title": "Why does the gradient point steepest uphill?",
+          "tag": "WHY",
+          "summary": "Rotates a direction and watches the slope peak along ∇f (spec below)",
+          "sections": "St 14.6",
+          "extension": false,
+          "spec": "Terrain: a 3D hill with a walker; a direction dial sets u. Slope meter: D_u f plotted against the dial angle, a cosine curve peaking along ∇f. Contours: the same view from above, with ∇f perpendicular to the level curve under the walker. Formula: D_u f = |∇f| cos θ, tying the peak to θ = 0.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-gradient-perpendicular-to-contours",
+          "title": "Why is the gradient perpendicular to contours?",
+          "tag": "WHY",
+          "summary": "Sees there is no change along a contour",
+          "sections": "St 14.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-f-normal-to-a-level-surface",
+          "title": "Why is ∇F normal to a level surface?",
+          "tag": "WHY",
+          "summary": "Moves along the surface, where F doesn't change, so ∇F has no component along it",
+          "sections": "D3 3-2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "directional-derivative-explorer",
+          "title": "Directional-derivative explorer",
+          "tag": "HOW",
+          "summary": "Computes D_u f = ∇f · u",
+          "sections": "St 14.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/gradient/why-is-the-gradient-perpendicular-to-contours",
+            "derivatives/chain-rule/why-do-you-need-the-inside-derivative",
+            "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change"
+          ]
+        },
+        {
+          "slug": "which-way-does-water-run",
+          "title": "Which way does water run?",
+          "tag": "APP",
+          "summary": "Drops a ball on a terrain map",
+          "sections": "St 14.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "multivariable/gradient/why-is-the-gradient-perpendicular-to-contours"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "max-min-lagrange",
+      "title": "Max, Min & Lagrange",
+      "sections": "St 14.7–14.8",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-isn-t-f-0-enough-saddles",
+          "title": "Why isn't ∇f = 0 enough? (saddles)",
+          "tag": "WHY",
+          "summary": "Examines a saddle: a minimum one way, a maximum the other",
+          "sections": "St 14.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-optimum-touch-the-constraint",
+          "title": "Why does the optimum touch the constraint?",
+          "tag": "WHY",
+          "summary": "Slides contours until one just kisses the constraint curve, so the gradients are parallel (Lagrange)",
+          "sections": "St 14.8",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "second-derivative-test",
+          "title": "Second-derivative test",
+          "tag": "HOW",
+          "summary": "Uses D = fₓₓfᵧᵧ − fₓᵧ²",
+          "sections": "St 14.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "multivariable/max-min-lagrange/why-isn-t-f-0-enough-saddles",
+            "derivative-applications/shape-of-a-graph/why-does-the-second-derivative-test-work",
+            "derivative-applications/maxima-minima/first-derivative-test-watch-f-prime-change-sign"
+          ]
+        },
+        {
+          "slug": "absolute-max-min-on-a-closed-region",
+          "title": "Absolute max/min on a closed region",
+          "tag": "HOW",
+          "summary": "Checks interior critical points, then the boundary curve",
+          "sections": "D3 3-4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/max-min-lagrange/why-does-the-optimum-touch-the-constraint",
+            "derivative-applications/maxima-minima/why-does-a-closed-interval-guarantee-a-max-and-min",
+            "functions-graphs/properties-library/why-are-turning-points-where-max-and-min-live"
+          ]
+        },
+        {
+          "slug": "lagrange-with-two-constraints",
+          "title": "Lagrange with two constraints",
+          "tag": "HOW",
+          "summary": "Sets ∇f = λ∇g + μ∇h on the curve where two surfaces meet",
+          "sections": "D3 3-5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "multivariable/max-min-lagrange/why-does-the-optimum-touch-the-constraint"
+          ]
+        },
+        {
+          "slug": "designing-a-dumpster",
+          "title": "Designing a dumpster",
+          "tag": "APP",
+          "summary": "Minimises the cost for a fixed volume",
+          "sections": "St 14.7 project",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "multivariable/max-min-lagrange/why-isn-t-f-0-enough-saddles",
+            "systems-matrices/inequalities-linear-programming/the-diet-problem"
+          ]
+        },
+        {
+          "slug": "rocket-stages-and-hydro-turbines",
+          "title": "Rocket stages and hydro-turbines",
+          "tag": "APP",
+          "summary": "Optimises with constraints",
+          "sections": "St 14.8 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "multivariable/max-min-lagrange/why-isn-t-f-0-enough-saddles"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "double-integrals",
+      "title": "Double Integrals",
+      "sections": "St 15.1–15.3",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-volume-a-sum-of-columns",
+          "title": "Why is volume a sum of columns?",
+          "tag": "WHY",
+          "summary": "Fills the space under a surface with square columns",
+          "sections": "St 15.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-can-the-order-of-integration-swap",
+          "title": "Why can the order of integration swap?",
+          "tag": "WHY",
+          "summary": "Slices the same solid both ways (Fubini)",
+          "sections": "St 15.1–15.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "integrals/partial-fractions-strategy/integration-strategy"
+          ]
+        },
+        {
+          "slug": "why-does-the-polar-area-element-carry-an-r",
+          "title": "Why does the polar area element carry an r?",
+          "tag": "WHY",
+          "summary": "Sees polar rectangles get wider further out",
+          "sections": "St 15.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integral-applications/arc-length-surface-area/why-is-polar-area-12integralr2-dtheta"
+          ]
+        },
+        {
+          "slug": "why-is-integrale-x2-dx-rootpi",
+          "title": "Why is ∫e^(−x²) dx = √π?",
+          "tag": "WHY",
+          "summary": "Squares the integral and switches to polar coordinates",
+          "sections": "St 15.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/polar-complex/why-polar-coordinates"
+          ]
+        },
+        {
+          "slug": "set-up-iterated-integrals",
+          "title": "Set up iterated integrals",
+          "tag": "HOW",
+          "summary": "Sketches the region and reads off the bounds",
+          "sections": "St 15.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "multivariable/double-integrals/why-is-volume-a-sum-of-columns"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mass-moments-surface-area",
+      "title": "Mass, Moments & Surface Area",
+      "sections": "St 15.4–15.5",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-a-skater-spin-faster-with-arms-in",
+          "title": "Why does a skater spin faster with arms in?",
+          "tag": "WHY",
+          "summary": "Sees the moment of inertia ∫r² dm shrink",
+          "sections": "St 15.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "surface-area-from-a-double-integral",
+          "title": "Surface area from a double integral",
+          "tag": "HOW",
+          "summary": "Tilts small patches against the base",
+          "sections": "St 15.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "multivariable/mass-moments-surface-area/why-does-a-skater-spin-faster-with-arms-in",
+            "integral-applications/arc-length-surface-area/why-does-surface-area-use-the-slant-height"
+          ]
+        },
+        {
+          "slug": "centre-of-mass-of-a-plate",
+          "title": "Centre of mass of a plate",
+          "tag": "APP",
+          "summary": "Balances plates of non-uniform density",
+          "sections": "St 15.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "multivariable/mass-moments-surface-area/why-does-a-skater-spin-faster-with-arms-in",
+            "integral-applications/physics-engineering/why-is-the-centre-of-mass-a-weighted-average"
+          ]
+        },
+        {
+          "slug": "joint-probability",
+          "title": "Joint probability",
+          "tag": "APP",
+          "summary": "Treats P((X, Y) ∈ D) as a volume",
+          "sections": "St 15.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/mass-moments-surface-area/why-does-a-skater-spin-faster-with-arms-in",
+            "sequences-probability/random-variables-expectation/build-a-probability-distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "triple-integrals-coordinates",
+      "title": "Triple Integrals & Coordinates",
+      "sections": "St 15.6–15.9",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-are-the-volume-elements-r-dr-dtheta-dz-and-2-sin-d-dthet",
+          "title": "Why are the volume elements r dr dθ dz and ρ² sin φ dρ dθ dφ?",
+          "tag": "WHY",
+          "summary": "Draws curved boxes in cylindrical and spherical coordinates",
+          "sections": "St 15.7–15.8",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-jacobian-scale-areas",
+          "title": "Why does the Jacobian scale areas?",
+          "tag": "WHY",
+          "summary": "Sees a change of variables stretch little squares (see Systems & Matrices → Determinants)",
+          "sections": "St 15.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "systems-matrices/determinants-cramer"
+          ]
+        },
+        {
+          "slug": "area-is-da-volume-is-dv",
+          "title": "Area is ∬dA, volume is ∭dV",
+          "tag": "WHY",
+          "summary": "Integrates the function 1 and sees area and volume drop out as special cases",
+          "sections": "D3 4-10",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "set-up-triple-integrals",
+          "title": "Set up triple integrals",
+          "tag": "HOW",
+          "summary": "Projects the solid onto a plane, then stacks",
+          "sections": "St 15.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "multivariable/triple-integrals-coordinates/why-does-the-jacobian-scale-areas",
+            "multivariable/double-integrals/set-up-iterated-integrals"
+          ]
+        },
+        {
+          "slug": "volumes-of-hyperspheres",
+          "title": "Volumes of hyperspheres",
+          "tag": "APP",
+          "summary": "Sees why high-dimensional balls are almost all 'skin'",
+          "sections": "St 15.7 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "multivariable/triple-integrals-coordinates/why-does-the-jacobian-scale-areas"
+          ]
+        },
+        {
+          "slug": "roller-derby-which-shape-rolls-fastest",
+          "title": "Roller derby: which shape rolls fastest?",
+          "tag": "APP",
+          "summary": "Compares the moments of inertia of a ball, a hoop and a cylinder",
+          "sections": "St 15.9 project",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "multivariable/triple-integrals-coordinates/why-does-the-jacobian-scale-areas"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 16
+}

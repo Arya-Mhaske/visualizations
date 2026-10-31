@@ -1,0 +1,817 @@
+{
+  "slug": "abstract-algebra",
+  "title": "Abstract Algebra",
+  "source": "Judson, Abstract Algebra: Theory and Applications",
+  "order": 19,
+  "children": [
+    {
+      "slug": "proofs-sets-relations",
+      "title": "Proofs, Sets & Relations",
+      "sections": "Ju 1.1–1.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-mathematicians-demand-proofs",
+          "title": "Why do mathematicians demand proofs?",
+          "tag": "WHY",
+          "summary": "Sees a pattern hold for the first 40 cases and then fail (n² + n + 41 at n = 40)",
+          "sections": "Ju 1.1",
+          "extension": true,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-an-equivalence-relation-chop-a-set-into-pieces",
+          "title": "Why does an equivalence relation chop a set into pieces?",
+          "tag": "WHY",
+          "summary": "Groups the integers by remainder mod 3 and sees the three classes",
+          "sections": "Ju 1.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/sets/which-day-of-the-week-classes-mod-7",
+            "numbers-algebra/sets/count-equivalence-relations-on-1-2-3"
+          ]
+        },
+        {
+          "slug": "functions-one-to-one-onto-bijection",
+          "title": "Functions: one-to-one, onto, bijection",
+          "tag": "HOW",
+          "summary": "Draws arrows between two sets and classifies the map",
+          "sections": "Ju 1.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "abstract-algebra/proofs-sets-relations/why-does-an-equivalence-relation-chop-a-set-into-pieces"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-integers",
+      "title": "The Integers",
+      "sections": "Ju 2.1–2.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-the-division-algorithm-always-work",
+          "title": "Why does the division algorithm always work?",
+          "tag": "WHY",
+          "summary": "Steps down from a by multiples of b until the remainder is between 0 and b − 1",
+          "sections": "Ju 2.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-euclidean-algorithm-find-the-gcd",
+          "title": "Why does the Euclidean algorithm find the gcd?",
+          "tag": "WHY",
+          "summary": "Tiles a rectangle with the largest possible squares; the last square size is the gcd",
+          "sections": "Ju 2.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-are-primes-the-atoms-of-multiplication",
+          "title": "Why are primes the atoms of multiplication?",
+          "tag": "WHY",
+          "summary": "Factorises numbers into unique prime factor trees",
+          "sections": "Ju 2.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-induction-works-well-ordering",
+          "title": "Why induction works (well-ordering)",
+          "tag": "WHY",
+          "summary": "Sees that a smallest counterexample can't exist (see Sequences → Mathematical Induction)",
+          "sections": "Ju 2.1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "gcd-as-a-combination-2-414-318",
+          "title": "gcd as a combination: 2 = 4·14 − 3·18",
+          "tag": "HOW",
+          "summary": "Back-substitutes through the Euclidean steps",
+          "sections": "Ju 2.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/the-integers/why-does-the-euclidean-algorithm-find-the-gcd"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "what-is-a-group",
+      "title": "What is a Group?",
+      "sections": "Ju 3.1–3.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-clock-arithmetic-behave-like-ordinary-arithmetic",
+          "title": "Why does clock arithmetic behave like ordinary arithmetic?",
+          "tag": "WHY",
+          "summary": "Adds on a 12-hour clock and checks the familiar rules",
+          "sections": "Ju 3.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-symmetries-of-a-triangle-form-a-group",
+          "title": "Why do the symmetries of a triangle form a group?",
+          "tag": "WHY",
+          "summary": "Rotates and flips a triangle; every combination is another symmetry (spec below)",
+          "sections": "Ju 3.1",
+          "extension": false,
+          "order": 2,
+          "spec": "Moves: label the corners; the student taps rotate (120°, 240°) or flip (three axes). Table: each combination is looked up and fills a 6 × 6 Cayley table. Axioms: highlights show the identity, every move's inverse, and closure. Non-commutative: two moves done in both orders give different results; D₃ ≅ S₃.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-order-matter-in-some-groups",
+          "title": "Why does order matter in some groups?",
+          "tag": "WHY",
+          "summary": "Flips then rotates, versus rotates then flips, and gets two different results",
+          "sections": "Ju 3.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/cross-product/why-is-a-x-b-b-x-a"
+          ]
+        },
+        {
+          "slug": "the-four-group-axioms",
+          "title": "The four group axioms",
+          "tag": "WHY",
+          "summary": "Tests closure, associativity, identity and inverses on sets that pass and sets that fail",
+          "sections": "Ju 3.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "cayley-table-builder",
+          "title": "Cayley table builder",
+          "tag": "HOW",
+          "summary": "Fills a group's multiplication table; each element appears once per row (Latin square)",
+          "sections": "Ju 3.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/what-is-a-group/the-four-group-axioms"
+          ]
+        },
+        {
+          "slug": "is-it-a-subgroup",
+          "title": "Is it a subgroup?",
+          "tag": "HOW",
+          "summary": "Tests subsets with the subgroup criterion",
+          "sections": "Ju 3.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "abstract-algebra/what-is-a-group/the-four-group-axioms"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cyclic-groups",
+      "title": "Cyclic Groups",
+      "sections": "Ju 4.1–4.3",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-one-generator-build-the-whole-group",
+          "title": "Why does one generator build the whole group?",
+          "tag": "WHY",
+          "summary": "Keeps adding 1 on a clock until it returns home",
+          "sections": "Ju 4.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-nth-roots-of-unity-form-a-cyclic-group",
+          "title": "Why do the nth roots of unity form a cyclic group?",
+          "tag": "WHY",
+          "summary": "Rotates by 360°/n on the complex unit circle (see Trigonometry → Polar & Complex)",
+          "sections": "Ju 4.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/polar-complex"
+          ]
+        },
+        {
+          "slug": "why-does-repeated-squaring-make-huge-powers-fast",
+          "title": "Why does repeated squaring make huge powers fast?",
+          "tag": "WHY",
+          "summary": "Computes 7^1000 mod 13 in about 10 squarings instead of 1000 multiplications",
+          "sections": "Ju 4.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/binomial-theorem/compare-huge-powers-without-a-calculator"
+          ]
+        },
+        {
+          "slug": "find-the-generators-of-zn",
+          "title": "Find the generators of ℤₙ",
+          "tag": "HOW",
+          "summary": "Tests which k have gcd(k, n) = 1",
+          "sections": "Ju 4.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/cyclic-groups/why-does-repeated-squaring-make-huge-powers-fast",
+            "abstract-algebra/the-integers/why-does-the-euclidean-algorithm-find-the-gcd"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "permutations-dihedral-groups",
+      "title": "Permutations & Dihedral Groups",
+      "sections": "Ju 5.1–5.2",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-every-permutation-split-into-cycles",
+          "title": "Why does every permutation split into cycles?",
+          "tag": "WHY",
+          "summary": "Follows arrows from each element until they return",
+          "sections": "Ju 5.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-permutation-even-or-odd-never-both",
+          "title": "Why is a permutation even or odd, never both?",
+          "tag": "WHY",
+          "summary": "Builds one permutation from swaps in different ways; the parity never changes",
+          "sections": "Ju 5.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/unit-circle/why-is-cos-even-and-sin-odd",
+            "sequences-probability/counting/permutation-or-combination"
+          ]
+        },
+        {
+          "slug": "why-does-a-regular-n-gon-have-exactly-2n-symmetries",
+          "title": "Why does a regular n-gon have exactly 2n symmetries?",
+          "tag": "WHY",
+          "summary": "Rotates and flips a square, then a pentagon (Dₙ)",
+          "sections": "Ju 5.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/polar-complex/why-are-n-roots-evenly-spaced"
+          ]
+        },
+        {
+          "slug": "cycle-notation",
+          "title": "Cycle notation",
+          "tag": "HOW",
+          "summary": "Composes and inverts permutations in cycle form",
+          "sections": "Ju 5.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/permutations-dihedral-groups/why-is-a-permutation-even-or-odd-never-both",
+            "sequences-probability/sequences/notation-expander"
+          ]
+        },
+        {
+          "slug": "shuffling-cards",
+          "title": "Shuffling cards",
+          "tag": "APP",
+          "summary": "Sees how many perfect riffle shuffles return a deck to its start",
+          "sections": "—",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/permutations-dihedral-groups/why-does-every-permutation-split-into-cycles",
+            "sequences-probability/conditional-probability-bayes/drawing-without-replacement"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cosets-lagrange",
+      "title": "Cosets & Lagrange",
+      "sections": "Ju 6.1–6.3",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-do-cosets-tile-the-group",
+          "title": "Why do cosets tile the group?",
+          "tag": "WHY",
+          "summary": "Shifts a subgroup around until the copies cover everything with no overlaps",
+          "sections": "Ju 6.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-must-a-subgroup-s-order-divide-the-group-s-lagrange",
+          "title": "Why must a subgroup's order divide the group's? (Lagrange)",
+          "tag": "WHY",
+          "summary": "Counts equal-size cosets",
+          "sections": "Ju 6.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-lagrange-work-backwards",
+          "title": "Why doesn't Lagrange work backwards?",
+          "tag": "WHY",
+          "summary": "Finds that A₄ (order 12) has no subgroup of order 6",
+          "sections": "Ju 6.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-ap1-1-mod-p-fermat-and-euler",
+          "title": "Why is aᵖ⁻¹ ≡ 1 (mod p)? Fermat and Euler",
+          "tag": "WHY",
+          "summary": "Multiplies all the units mod p by a; it just reshuffles them",
+          "sections": "Ju 6.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "differential-equations/direction-fields-euler/euler-stepper"
+          ]
+        },
+        {
+          "slug": "compute-n-and-modular-powers",
+          "title": "Compute φ(n) and modular powers",
+          "tag": "HOW",
+          "summary": "Uses Euler's theorem to shrink exponents",
+          "sections": "Ju 6.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/cosets-lagrange/why-is-ap1-1-mod-p-fermat-and-euler",
+            "linear-algebra/eigenvalues/why-do-powers-ak-become-easy"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "codes-cryptography",
+      "title": "Codes & Cryptography",
+      "sections": "Ju 7.1–7.2, 8.1–8.4, 15.5",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-rsa-safe-to-publish",
+          "title": "Why is RSA safe to publish?",
+          "tag": "WHY",
+          "summary": "Encrypts with the public (n, e); decrypting needs φ(n), which needs the factors of n",
+          "sections": "Ju 7.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "how-can-a-code-fix-an-error-by-itself",
+          "title": "How can a code fix an error by itself?",
+          "tag": "WHY",
+          "summary": "Flips a bit in a Hamming codeword and watches the parity checks point at it",
+          "sections": "Ju 8.1–8.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-minimum-distance-decide-error-power",
+          "title": "Why does minimum distance decide error power?",
+          "tag": "WHY",
+          "summary": "Draws balls around codewords; distance 3 lets each ball fix one error",
+          "sections": "Ju 8.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "shift-and-affine-ciphers",
+          "title": "Shift and affine ciphers",
+          "tag": "HOW",
+          "summary": "Encrypts and breaks a Caesar cipher by frequency",
+          "sections": "Ju 7.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/codes-cryptography/why-is-rsa-safe-to-publish",
+            "trigonometry/sine-cosine-graphs/what-does-c-do-why-the-shift-is-c-b"
+          ]
+        },
+        {
+          "slug": "chinese-remainder-theorem",
+          "title": "Chinese remainder theorem",
+          "tag": "HOW",
+          "summary": "Solves x ≡ a (mod m), x ≡ b (mod n)",
+          "sections": "Ju 15.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/codes-cryptography/why-is-rsa-safe-to-publish",
+            "functions-graphs/polynomial-functions/why-does-the-remainder-theorem-work"
+          ]
+        },
+        {
+          "slug": "toy-rsa",
+          "title": "Toy RSA",
+          "tag": "APP",
+          "summary": "Picks small primes, makes keys and sends a message",
+          "sections": "Ju 7.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "abstract-algebra/codes-cryptography/why-is-rsa-safe-to-publish"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "isomorphism-homomorphism",
+      "title": "Isomorphism & Homomorphism",
+      "sections": "Ju 9.1–9.2, 10.1–10.3",
+      "order": 8,
+      "children": [
+        {
+          "slug": "when-are-two-groups-really-the-same",
+          "title": "When are two groups really the same?",
+          "tag": "WHY",
+          "summary": "Relabels ℤ₄ and the rotations of a square; their tables match (isomorphism)",
+          "sections": "Ju 9.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-z2-x-z3-z6-but-z2-x-z2-is-not-z4",
+          "title": "Why is ℤ₂ × ℤ₃ ≅ ℤ₆ but ℤ₂ × ℤ₂ is not ℤ₄?",
+          "tag": "WHY",
+          "summary": "Looks for an element of full order in each",
+          "sections": "Ju 9.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-some-subgroups-give-quotient-groups",
+          "title": "Why do some subgroups give quotient groups?",
+          "tag": "WHY",
+          "summary": "Collapses cosets into single points; it only works when the subgroup is normal",
+          "sections": "Ju 10.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-quotient-rule",
+            "abstract-algebra/what-is-a-group/why-does-order-matter-in-some-groups"
+          ]
+        },
+        {
+          "slug": "why-is-the-kernel-the-key-to-a-homomorphism",
+          "title": "Why is the kernel the key to a homomorphism?",
+          "tag": "WHY",
+          "summary": "Sees everything that maps to e collapse together (first isomorphism theorem)",
+          "sections": "Ju 10.2–10.3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "classify-small-groups",
+          "title": "Classify small groups",
+          "tag": "HOW",
+          "summary": "Sorts every group up to order 8",
+          "sections": "Ju 9.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/isomorphism-homomorphism/when-are-two-groups-really-the-same",
+            "abstract-algebra/what-is-a-group/why-does-order-matter-in-some-groups"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "symmetry-actions-counting",
+      "title": "Symmetry, Actions & Counting",
+      "sections": "Ju 11.1–11.2, 12, 13.1–13.3, 14",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-are-there-only-17-wallpaper-patterns",
+          "title": "Why are there only 17 wallpaper patterns?",
+          "tag": "WHY",
+          "summary": "Explores the rotations allowed by a lattice (2, 3, 4 and 6-fold, never 5) and the 17 groups that result",
+          "sections": "Ju 11.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-cube-have-24-rotations",
+          "title": "Why does a cube have 24 rotations?",
+          "tag": "WHY",
+          "summary": "Picks which face is up (6 ways) and how it's turned (4 ways)",
+          "sections": "Ju 5.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "sequences-probability/binomial-theorem/a-b-3-as-a-cube"
+          ]
+        },
+        {
+          "slug": "how-many-truly-different-colourings-burnside",
+          "title": "How many truly different colourings? (Burnside)",
+          "tag": "WHY",
+          "summary": "Colours a square's corners black or white: 16 raw colourings collapse to 6 under symmetry",
+          "sections": "Ju 13.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "matrix-groups-rotations-and-reflections",
+          "title": "Matrix groups: rotations and reflections",
+          "tag": "HOW",
+          "summary": "Sees O(2) and SO(2) acting on the plane",
+          "sections": "Ju 11.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/symmetry-actions-counting/why-does-a-cube-have-24-rotations",
+            "abstract-algebra/isomorphism-homomorphism/when-are-two-groups-really-the-same"
+          ]
+        },
+        {
+          "slug": "orbits-and-stabilisers",
+          "title": "Orbits and stabilisers",
+          "tag": "HOW",
+          "summary": "Watches a group move points around",
+          "sections": "Ju 13.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/symmetry-actions-counting/why-does-a-cube-have-24-rotations",
+            "trigonometry/polar-complex/orbits-of-planets",
+            "conics-curves/polar-conics/kepler-orbits"
+          ]
+        },
+        {
+          "slug": "counting-switching-circuits",
+          "title": "Counting switching circuits",
+          "tag": "APP",
+          "summary": "Applies Burnside to count switching functions up to relabelling",
+          "sections": "Ju 13.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "abstract-algebra/symmetry-actions-counting/how-many-truly-different-colourings-burnside"
+          ]
+        },
+        {
+          "slug": "crystal-symmetries",
+          "title": "Crystal symmetries",
+          "tag": "APP",
+          "summary": "Sees why crystals obey the same rotation limits as wallpaper",
+          "sections": "Ju 11.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "abstract-algebra/symmetry-actions-counting/why-are-there-only-17-wallpaper-patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rings-polynomials",
+      "title": "Rings & Polynomials",
+      "sections": "Ju 15–17",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-do-we-need-rings-as-well-as-groups",
+          "title": "Why do we need rings as well as groups?",
+          "tag": "WHY",
+          "summary": "Sees ℤ, polynomials and matrices all have + and ×",
+          "sections": "Ju 15.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-can-ab-0-with-a-b-0-zero-divisors",
+          "title": "Why can ab = 0 with a, b ≠ 0? (zero divisors)",
+          "tag": "WHY",
+          "summary": "Finds 2 × 3 = 0 in ℤ₆ and singular matrices",
+          "sections": "Ju 15.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-zp-a-field-only-when-p-is-prime",
+          "title": "Why is ℤₚ a field only when p is prime?",
+          "tag": "WHY",
+          "summary": "Looks for inverses mod 6 and mod 7",
+          "sections": "Ju 15.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "abstract-algebra/codes-cryptography/chinese-remainder-theorem"
+          ]
+        },
+        {
+          "slug": "why-do-polynomials-divide-like-integers",
+          "title": "Why do polynomials divide like integers?",
+          "tag": "WHY",
+          "summary": "Runs polynomial long division beside integer division (see Numbers & Algebra → Polynomials)",
+          "sections": "Ju 16.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/polynomials-factoring"
+          ]
+        },
+        {
+          "slug": "irreducible-polynomials",
+          "title": "Irreducible polynomials",
+          "tag": "HOW",
+          "summary": "Tests x² + 1 over ℝ, ℂ and ℤ₂",
+          "sections": "Ju 16.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/rings-polynomials/why-do-polynomials-divide-like-integers"
+          ]
+        },
+        {
+          "slug": "fields-of-fractions",
+          "title": "Fields of fractions",
+          "tag": "HOW",
+          "summary": "Builds ℚ from ℤ by taking pairs",
+          "sections": "Ju 17.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "abstract-algebra/rings-polynomials/why-is-zp-a-field-only-when-p-is-prime"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "boolean-algebra-circuits",
+      "title": "Boolean Algebra & Circuits",
+      "sections": "Ju 18.1–18.3",
+      "order": 11,
+      "children": [
+        {
+          "slug": "why-do-switches-obey-algebra",
+          "title": "Why do switches obey algebra?",
+          "tag": "WHY",
+          "summary": "Sees series wiring as AND and parallel wiring as OR",
+          "sections": "Ju 18.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-logic-laws-mirror-set-laws",
+          "title": "Why do the logic laws mirror set laws?",
+          "tag": "WHY",
+          "summary": "Compares Venn diagrams with truth tables",
+          "sections": "Ju 18.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/sets/survey-problems-with-venn-diagrams",
+            "numbers-algebra/number-systems/sets-and-venn-diagrams"
+          ]
+        },
+        {
+          "slug": "simplify-a-circuit",
+          "title": "Simplify a circuit",
+          "tag": "HOW",
+          "summary": "Applies Boolean laws to remove switches",
+          "sections": "Ju 18.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "abstract-algebra/boolean-algebra-circuits/why-do-the-logic-laws-mirror-set-laws"
+          ]
+        },
+        {
+          "slug": "lattices-and-divisibility",
+          "title": "Lattices and divisibility",
+          "tag": "HOW",
+          "summary": "Draws the divisors of 30 as a lattice",
+          "sections": "Ju 18.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/boolean-algebra-circuits/why-do-the-logic-laws-mirror-set-laws",
+            "abstract-algebra/rings-polynomials/why-can-ab-0-with-a-b-0-zero-divisors"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fields-galois-theory",
+      "title": "Fields & Galois Theory",
+      "sections": "Ju 19–22",
+      "order": 12,
+      "children": [
+        {
+          "slug": "why-can-t-you-trisect-an-angle-with-ruler-and-compass",
+          "title": "Why can't you trisect an angle with ruler and compass?",
+          "tag": "WHY",
+          "summary": "Sees constructible lengths come from degree-2 steps, while trisecting needs a degree-3 equation",
+          "sections": "Ju 20.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-there-no-formula-for-the-quintic",
+          "title": "Why is there no formula for the quintic?",
+          "tag": "WHY",
+          "summary": "Sees a polynomial is solvable by radicals only when its Galois group is solvable, which some quintics' groups are not (see Functions & Graphs → Polynomial Functions)",
+          "sections": "Ju 22.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/polynomial-functions",
+            "integrals/partial-fractions-strategy/why-do-some-integrals-have-no-formula"
+          ]
+        },
+        {
+          "slug": "why-does-a-finite-field-have-pn-elements",
+          "title": "Why does a finite field have pⁿ elements?",
+          "tag": "WHY",
+          "summary": "Builds GF(4) from ℤ₂ and x² + x + 1",
+          "sections": "Ju 21.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "vector-spaces-over-any-field",
+          "title": "Vector spaces over any field",
+          "tag": "HOW",
+          "summary": "Sees linear independence over ℚ, ℝ and ℤ₂ (see Linear Algebra)",
+          "sections": "Ju 19",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "abstract-algebra/fields-galois-theory/why-does-a-finite-field-have-pn-elements",
+            "abstract-algebra/rings-polynomials/irreducible-polynomials"
+          ]
+        },
+        {
+          "slug": "splitting-fields",
+          "title": "Splitting fields",
+          "tag": "HOW",
+          "summary": "Adjoins roots until a polynomial factors completely",
+          "sections": "Ju 20.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "abstract-algebra/fields-galois-theory/why-is-there-no-formula-for-the-quintic",
+            "abstract-algebra/rings-polynomials/fields-of-fractions"
+          ]
+        },
+        {
+          "slug": "polynomial-codes-crc",
+          "title": "Polynomial codes (CRC)",
+          "tag": "APP",
+          "summary": "Checks a message by polynomial division over ℤ₂",
+          "sections": "Ju 21.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "abstract-algebra/fields-galois-theory/why-is-there-no-formula-for-the-quintic",
+            "numbers-algebra/polynomials-factoring/polynomial-long-division",
+            "systems-matrices/matrix-algebra/matrix-secret-codes"
+          ]
+        }
+      ]
+    }
+  ]
+}

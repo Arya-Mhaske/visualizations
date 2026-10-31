@@ -26,7 +26,7 @@ Under each box the third level is a tool grid of 7–12 tiles, each tagged WHY, 
 
 ## Box-by-box catalogue
 
-The 12 boxes hold 124 tools in total. In each table the WHY tools come first, then HOW, then APP. Tools marked *(ext.)* go slightly beyond the book, but they're worth adding because they answer a WHY the book skips.
+The 12 boxes hold 135 tools in total. In each table the WHY tools come first, then HOW, then APP. Tools marked *(ext.)* go slightly beyond the book, but they're worth adding because they answer a WHY the book skips.
 
 ### 1. Angles & Arcs · §1.1, §2.1, §2.2
 

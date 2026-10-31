@@ -1,0 +1,491 @@
+{
+  "slug": "derivative-applications",
+  "title": "Applications of Derivatives",
+  "source": "Stewart, Calculus 8e",
+  "children": [
+    {
+      "slug": "maxima-minima",
+      "title": "Maxima & Minima",
+      "sections": "St 3.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-are-peaks-where-the-tangent-is-flat",
+          "title": "Why are peaks where the tangent is flat?",
+          "tag": "WHY",
+          "summary": "Moves along a smooth hilltop: the slope changes sign at the top (Fermat)",
+          "sections": "St 3.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-f-prime-0-guarantee-a-peak",
+          "title": "Why doesn't f′ = 0 guarantee a peak?",
+          "tag": "WHY",
+          "summary": "Examines x³ at 0: flat, but no turn",
+          "sections": "St 3.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-closed-interval-guarantee-a-max-and-min",
+          "title": "Why does a closed interval guarantee a max and min?",
+          "tag": "WHY",
+          "summary": "Removes an endpoint, or adds a jump, and the guarantee breaks (Extreme Value Theorem)",
+          "sections": "St 3.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/properties-library/why-are-turning-points-where-max-and-min-live"
+          ]
+        },
+        {
+          "slug": "closed-interval-method",
+          "title": "Closed-interval method",
+          "tag": "HOW",
+          "summary": "Checks the critical points and the endpoints",
+          "sections": "St 3.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/maxima-minima/why-does-a-closed-interval-guarantee-a-max-and-min",
+            "numbers-algebra/number-systems/interval-notation-builder"
+          ]
+        },
+        {
+          "slug": "first-derivative-test-watch-f-prime-change-sign",
+          "title": "First-derivative test: watch f′ change sign",
+          "tag": "HOW",
+          "summary": "Slides a point through a critical value and reads + → − (max), − → + (min) or no change (neither)",
+          "sections": "MXII 6.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivative-applications/maxima-minima/why-doesn-t-f-prime-0-guarantee-a-peak",
+            "derivative-applications/maxima-minima/why-does-a-closed-interval-guarantee-a-max-and-min"
+          ]
+        },
+        {
+          "slug": "why-is-a-rainbow-at-42",
+          "title": "Why is a rainbow at 42°?",
+          "tag": "APP",
+          "summary": "Sends rays through a raindrop; the deviation has a minimum at 138°, and light piles up there",
+          "sections": "St 3.1 project",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivative-applications/maxima-minima/why-doesn-t-f-prime-0-guarantee-a-peak"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mean-value-theorem",
+      "title": "Mean Value Theorem",
+      "sections": "St 3.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "rolle-why-a-thrown-ball-stops-at-the-top",
+          "title": "Rolle: why a thrown ball stops at the top",
+          "tag": "WHY",
+          "summary": "Sees equal heights at start and end force zero velocity somewhere",
+          "sections": "St 3.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-must-you-hit-your-average-speed-at-some-instant",
+          "title": "Why must you hit your average speed at some instant?",
+          "tag": "WHY",
+          "summary": "Tilts Rolle's picture; the secant's slope is matched by a tangent",
+          "sections": "St 3.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/properties-library/average-rate-of-change"
+          ]
+        },
+        {
+          "slug": "why-does-f-prime-0-everywhere-mean-f-is-constant",
+          "title": "Why does f′ = 0 everywhere mean f is constant?",
+          "tag": "WHY",
+          "summary": "Applies the MVT between any two points",
+          "sections": "St 3.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "section-speed-cameras",
+          "title": "Section speed cameras",
+          "tag": "APP",
+          "summary": "Uses the MVT to argue speeding from two timestamps alone",
+          "sections": "—",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "derivative-applications/mean-value-theorem/why-does-f-prime-0-everywhere-mean-f-is-constant"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shape-of-a-graph",
+      "title": "Shape of a Graph",
+      "sections": "St 3.3, 3.5–3.6",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-f-prime-0-mean-rising",
+          "title": "Why does f′ > 0 mean rising?",
+          "tag": "WHY",
+          "summary": "Watches the slope-meter and the graph together",
+          "sections": "St 3.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "sequences-probability/arithmetic-sequences/theatre-seats-and-rising-savings"
+          ]
+        },
+        {
+          "slug": "why-is-f-the-bend",
+          "title": "Why is f″ the bend?",
+          "tag": "WHY",
+          "summary": "Sees concave up or down as the slope increasing or decreasing; inflection is where that flips",
+          "sections": "St 3.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-the-second-derivative-test-work",
+          "title": "Why does the second-derivative test work?",
+          "tag": "WHY",
+          "summary": "A critical point in a cup is a minimum, in a cap a maximum",
+          "sections": "St 3.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivative-applications/maxima-minima/first-derivative-test-watch-f-prime-change-sign"
+          ]
+        },
+        {
+          "slug": "curve-sketching-checklist",
+          "title": "Curve-sketching checklist",
+          "tag": "HOW",
+          "summary": "Stacks the graphs of f, f′ and f″",
+          "sections": "St 3.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/shape-of-a-graph/why-is-f-the-bend"
+          ]
+        },
+        {
+          "slug": "families-of-graphs",
+          "title": "Families of graphs",
+          "tag": "HOW",
+          "summary": "Changes a parameter and tracks how the extrema move",
+          "sections": "St 3.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivative-applications/shape-of-a-graph/why-is-f-the-bend",
+            "derivatives/implicit-differentiation/families-of-implicit-curves"
+          ]
+        },
+        {
+          "slug": "find-where-f-is-increasing-or-decreasing",
+          "title": "Find where f is increasing or decreasing",
+          "tag": "HOW",
+          "summary": "Splits the line at the zeros of f′ and tests a point in each interval",
+          "sections": "MXII 6.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivative-applications/shape-of-a-graph/why-does-f-prime-0-mean-rising",
+            "derivative-applications/shape-of-a-graph/why-is-f-the-bend"
+          ]
+        },
+        {
+          "slug": "when-does-an-epidemic-peak-in-new-cases",
+          "title": "When does an epidemic peak in new cases?",
+          "tag": "APP",
+          "summary": "Finds the inflection point of a logistic curve",
+          "sections": "—",
+          "extension": true,
+          "order": 7,
+          "aids": [
+            "derivative-applications/shape-of-a-graph/why-is-f-the-bend"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "optimisation",
+      "title": "Optimisation",
+      "sections": "St 3.7, 6.6",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-optimisation-mean-solving-f-prime-0",
+          "title": "Why does optimisation mean solving f′ = 0?",
+          "tag": "WHY",
+          "summary": "Builds the function to maximise, then finds where it's flat",
+          "sections": "St 3.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "exponentials-logs/exponential-growth/why-does-0-b-1-mean-decay"
+          ]
+        },
+        {
+          "slug": "why-does-light-bend-fermat-s-least-time",
+          "title": "Why does light bend? Fermat's least time",
+          "tag": "WHY",
+          "summary": "Moves the crossing point on a boundary and minimises the travel time; Snell's law falls out (see Trigonometry → Right-Triangle Ratios)",
+          "sections": "St 3.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/right-triangle-ratios"
+          ]
+        },
+        {
+          "slug": "why-aren-t-real-cans-the-optimal-shape",
+          "title": "Why aren't real cans the 'optimal' shape?",
+          "tag": "APP",
+          "summary": "Finds h = 2r for least metal, then adds the cost of seams and lids",
+          "sections": "St 3.7 project",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivative-applications/optimisation/why-does-light-bend-fermat-s-least-time",
+            "functions-graphs/rational-functions/least-metal-for-a-can"
+          ]
+        },
+        {
+          "slug": "planes-and-birds-least-energy",
+          "title": "Planes and birds: least energy",
+          "tag": "APP",
+          "summary": "Finds the speed that minimises energy per km",
+          "sections": "St 3.7 project",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/optimisation/why-does-light-bend-fermat-s-least-time"
+          ]
+        },
+        {
+          "slug": "fence-box-and-window-problems",
+          "title": "Fence, box and window problems",
+          "tag": "APP",
+          "summary": "Practises the classic set",
+          "sections": "St 3.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivative-applications/optimisation/why-does-optimisation-mean-solving-f-prime-0",
+            "numbers-algebra/linear-equations-formulas/simple-interest-and-job-rate-problems"
+          ]
+        },
+        {
+          "slug": "where-to-sit-at-the-movies",
+          "title": "Where to sit at the movies",
+          "tag": "APP",
+          "summary": "Maximises the viewing angle with arctan",
+          "sections": "St 6.6 project",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivative-applications/optimisation/why-does-optimisation-mean-solving-f-prime-0"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l-hopital-s-rule",
+      "title": "L'Hôpital's Rule",
+      "sections": "St 6.8",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-l-hopital-work",
+          "title": "Why does l'Hôpital work?",
+          "tag": "WHY",
+          "summary": "Zooms in near a until both functions look like lines; the ratio of heights becomes the ratio of slopes",
+          "sections": "St 6.8",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-isn-t-0-0-a-number",
+          "title": "Why isn't 0/0 a number?",
+          "tag": "WHY",
+          "summary": "Sees three 0/0 limits give 0, 5 and ∞",
+          "sections": "St 6.8",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "sequences-probability/counting/number-plates-and-pins",
+            "limits-continuity/the-limit-idea/why-is-infinity-not-a-number"
+          ]
+        },
+        {
+          "slug": "why-does-1-1-n-n-e",
+          "title": "Why does (1 + 1/n)ⁿ → e?",
+          "tag": "WHY",
+          "summary": "Takes ln, applies l'Hôpital, then exponentiates (see Exponentials & Logarithms → The Number e)",
+          "sections": "St 6.8",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "exponentials-logs/the-number-e",
+            "sequences-probability/geometric-sequences-series/annuities-and-sips"
+          ]
+        },
+        {
+          "slug": "indeterminate-form-converter",
+          "title": "Indeterminate-form converter",
+          "tag": "HOW",
+          "summary": "Rewrites 0·∞, ∞ − ∞, 1^∞, 0⁰ and ∞⁰ as 0/0",
+          "sections": "St 6.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/l-hopital-s-rule/why-isn-t-0-0-a-number",
+            "functions-graphs/quadratic-functions/standard-vertex-factored-form",
+            "numbers-algebra/quadratic-equations/equations-quadratic-in-form"
+          ]
+        },
+        {
+          "slug": "who-really-found-l-hopital-s-rule",
+          "title": "Who really found l'Hôpital's rule?",
+          "tag": "APP",
+          "summary": "Reads the Bernoulli–l'Hôpital deal",
+          "sections": "St 6.8 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "derivative-applications/l-hopital-s-rule/why-does-l-hopital-work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "newton-s-method",
+      "title": "Newton's Method",
+      "sections": "St 3.8",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-sliding-down-tangents-find-roots-so-fast",
+          "title": "Why does sliding down tangents find roots so fast?",
+          "tag": "WHY",
+          "summary": "Watches the correct digits roughly double each step",
+          "sections": "St 3.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/polynomial-functions/why-is-the-list-of-rational-roots-so-short"
+          ]
+        },
+        {
+          "slug": "why-can-newton-s-method-fail",
+          "title": "Why can Newton's method fail?",
+          "tag": "WHY",
+          "summary": "Tries a bad start, a flat tangent and a 2-cycle",
+          "sections": "St 3.8",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "iteration-stepper",
+          "title": "Iteration stepper",
+          "tag": "HOW",
+          "summary": "Computes √2 and solves cos x = x",
+          "sections": "St 3.8",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivative-applications/newton-s-method/why-does-sliding-down-tangents-find-roots-so-fast",
+            "sequences-probability/random-variables-expectation/is-this-game-fair"
+          ]
+        },
+        {
+          "slug": "how-calculators-find-square-roots",
+          "title": "How calculators find square roots",
+          "tag": "APP",
+          "summary": "Sees the Babylonian averaging method is Newton's method for x² = a",
+          "sections": "St 3.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/newton-s-method/why-does-sliding-down-tangents-find-roots-so-fast"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "antiderivatives",
+      "title": "Antiderivatives",
+      "sections": "St 3.9",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-every-antiderivative-carry-c",
+          "title": "Why does every antiderivative carry + C?",
+          "tag": "WHY",
+          "summary": "Slides a family of parallel curves that share one slope field",
+          "sections": "St 3.9",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-velocity-and-a-start-point-fix-position",
+          "title": "Why do velocity and a start point fix position?",
+          "tag": "WHY",
+          "summary": "Picks one curve from the family with the initial value",
+          "sections": "St 3.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration"
+          ]
+        },
+        {
+          "slug": "antiderivative-drill",
+          "title": "Antiderivative drill",
+          "tag": "HOW",
+          "summary": "Reverses the derivative table",
+          "sections": "St 3.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivative-applications/antiderivatives/why-does-every-antiderivative-carry-c"
+          ]
+        },
+        {
+          "slug": "from-a-g-to-the-height-formula",
+          "title": "From a = −g to the height formula",
+          "tag": "APP",
+          "summary": "Integrates twice and recovers h = h₀ + v₀t − ½gt²",
+          "sections": "St 3.9",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/antiderivatives/why-does-every-antiderivative-carry-c"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 10
+}

@@ -1,0 +1,530 @@
+{
+  "slug": "optics",
+  "title": "Optics",
+  "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
+  "order": 29,
+  "children": [
+    {
+      "slug": "mirrors",
+      "title": "Mirrors",
+      "sections": "XII 9.1–9.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-f-r-2-for-a-mirror",
+          "title": "Why is f = R/2 for a mirror?",
+          "tag": "WHY",
+          "summary": "Sends parallel rays at a curved mirror; near the axis they meet at R/2",
+          "sections": "XII 9.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "conics-curves/parabola/why-do-dishes-collect-signals-at-the-focus"
+          ]
+        },
+        {
+          "slug": "why-1-v-1-u-1-f",
+          "title": "Why 1/v + 1/u = 1/f?",
+          "tag": "WHY",
+          "summary": "Derives it from similar triangles in a ray diagram",
+          "sections": "XII 9.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/similar-triangles/why-does-the-ratio-depend-only-on-the-angle"
+          ]
+        },
+        {
+          "slug": "why-a-sign-convention",
+          "title": "Why a sign convention?",
+          "tag": "WHY",
+          "summary": "Measures everything from the pole with the Cartesian signs",
+          "sections": "XII 9.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "heat-thermodynamics/first-law/sign-convention-trainer"
+          ]
+        },
+        {
+          "slug": "ray-diagram-builder",
+          "title": "Ray-diagram builder",
+          "tag": "HOW",
+          "summary": "Moves the object and sees the image type and size",
+          "sections": "XII 9.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/mirrors/why-1-v-1-u-1-f"
+          ]
+        },
+        {
+          "slug": "shaving-mirrors-and-rear-view-mirrors",
+          "title": "Shaving mirrors and rear-view mirrors",
+          "tag": "APP",
+          "summary": "Compares a concave magnifier with a convex wide view",
+          "sections": "XII 9.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "optics/mirrors/why-is-f-r-2-for-a-mirror"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "refraction-total-internal-reflection",
+      "title": "Refraction & Total Internal Reflection",
+      "sections": "XII 9.3–9.4",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-light-bend-at-a-boundary",
+          "title": "Why does light bend at a boundary?",
+          "tag": "WHY",
+          "summary": "Slows a wavefront as it enters glass (see Huygens below)",
+          "sections": "XII 9.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivative-applications/optimisation/why-does-light-bend-fermat-s-least-time",
+            "trigonometry/right-triangle-ratios/why-does-light-bend-refraction"
+          ]
+        },
+        {
+          "slug": "why-does-a-pool-look-shallower-than-it-is",
+          "title": "Why does a pool look shallower than it is?",
+          "tag": "WHY",
+          "summary": "Traces rays from the bottom: apparent depth = real depth ÷ n",
+          "sections": "XII 9.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-light-get-trapped-total-internal-reflection",
+          "title": "Why does light get trapped? (total internal reflection)",
+          "tag": "WHY",
+          "summary": "Raises the angle past the critical angle, sin C = 1/n",
+          "sections": "XII 9.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/inverses-equations/why-can-t-sine-be-inverted-as-it-is"
+          ]
+        },
+        {
+          "slug": "optical-fibres",
+          "title": "Optical fibres",
+          "tag": "APP",
+          "summary": "Bounces light down a bent fibre",
+          "sections": "XII 9.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/refraction-total-internal-reflection/why-does-light-bend-at-a-boundary"
+          ]
+        },
+        {
+          "slug": "why-do-diamonds-sparkle",
+          "title": "Why do diamonds sparkle?",
+          "tag": "APP",
+          "summary": "Sees a small critical angle (about 24°) trap light inside",
+          "sections": "XII 9.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "optics/refraction-total-internal-reflection/why-does-light-get-trapped-total-internal-reflection"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lenses",
+      "title": "Lenses",
+      "sections": "XII 9.5",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-a-curved-surface-focus-light",
+          "title": "Why does a curved surface focus light?",
+          "tag": "WHY",
+          "summary": "Refracts at one spherical surface: n₂/v − n₁/u = (n₂ − n₁)/R",
+          "sections": "XII 9.5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "optics/refraction-total-internal-reflection/why-does-light-bend-at-a-boundary"
+          ]
+        },
+        {
+          "slug": "why-the-lens-maker-s-formula",
+          "title": "Why the lens maker's formula?",
+          "tag": "WHY",
+          "summary": "Combines two surfaces into 1/f = (n − 1)(1/R₁ − 1/R₂)",
+          "sections": "XII 9.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-lens-powers-add",
+          "title": "Why do lens powers add?",
+          "tag": "WHY",
+          "summary": "Puts two thin lenses together: P = 1/f₁ + 1/f₂ (dioptres)",
+          "sections": "XII 9.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "thin-lens-ray-tracer",
+          "title": "Thin-lens ray tracer",
+          "tag": "HOW",
+          "summary": "Uses converging and diverging lenses",
+          "sections": "XII 9.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/mirrors/ray-diagram-builder",
+            "optics/lenses/why-do-lens-powers-add"
+          ]
+        },
+        {
+          "slug": "spectacles",
+          "title": "Spectacles",
+          "tag": "APP",
+          "summary": "Corrects short and long sight",
+          "sections": "XII 9.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "optics/lenses/why-the-lens-maker-s-formula"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "prism-dispersion",
+      "title": "Prism & Dispersion",
+      "sections": "XII 9.6",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-a-prism-have-a-minimum-deviation",
+          "title": "Why does a prism have a minimum deviation?",
+          "tag": "WHY",
+          "summary": "Rotates the prism and watches the deviation dip to a minimum",
+          "sections": "XII 9.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivative-applications/maxima-minima/why-are-peaks-where-the-tangent-is-flat"
+          ]
+        },
+        {
+          "slug": "why-does-a-prism-split-white-light",
+          "title": "Why does a prism split white light?",
+          "tag": "WHY",
+          "summary": "Gives n a slight dependence on λ, so violet bends most",
+          "sections": "XII 9.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "find-n-from-minimum-deviation",
+          "title": "Find n from minimum deviation",
+          "tag": "HOW",
+          "summary": "Uses n = sin((A + D)/2) / sin(A/2)",
+          "sections": "XII 9.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "optics/prism-dispersion/why-does-a-prism-have-a-minimum-deviation"
+          ]
+        },
+        {
+          "slug": "why-is-a-rainbow-at-42",
+          "title": "Why is a rainbow at 42°?",
+          "tag": "APP",
+          "summary": "Combines dispersion in a raindrop with minimum deviation (see Applications of Derivatives → Maxima & Minima)",
+          "sections": "XII 9.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivative-applications/maxima-minima/why-is-a-rainbow-at-42",
+            "derivative-applications/maxima-minima",
+            "optics/prism-dispersion/why-does-a-prism-have-a-minimum-deviation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "optical-instruments",
+      "title": "Optical Instruments",
+      "sections": "XII 9.7",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-a-magnifier-help-angular-size",
+          "title": "Why does a magnifier help? Angular size",
+          "tag": "WHY",
+          "summary": "Brings an object close until the near point limits you (25 cm)",
+          "sections": "XII 9.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/angles-arcs/how-big-are-the-sun-and-the-moon"
+          ]
+        },
+        {
+          "slug": "why-does-a-compound-microscope-multiply-magnifications",
+          "title": "Why does a compound microscope multiply magnifications?",
+          "tag": "WHY",
+          "summary": "Has the eyepiece magnify the objective's image",
+          "sections": "XII 9.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-telescope-magnify-angles-not-size",
+          "title": "Why does a telescope magnify angles, not size?",
+          "tag": "WHY",
+          "summary": "Compares the angles subtended at the eye: m = f₀/fₑ",
+          "sections": "XII 9.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "build-a-microscope-or-telescope",
+          "title": "Build a microscope or telescope",
+          "tag": "HOW",
+          "summary": "Places two lenses and checks the magnification",
+          "sections": "XII 9.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/lenses/thin-lens-ray-tracer",
+            "optics/optical-instruments/why-does-a-telescope-magnify-angles-not-size"
+          ]
+        },
+        {
+          "slug": "why-are-big-telescopes-reflectors",
+          "title": "Why are big telescopes reflectors?",
+          "tag": "APP",
+          "summary": "Avoids chromatic aberration and heavy glass",
+          "sections": "XII 9.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "optics/optical-instruments/why-does-a-telescope-magnify-angles-not-size"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "huygens-wavefronts",
+      "title": "Huygens & Wavefronts",
+      "sections": "XII 10.1–10.3",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-every-point-on-a-wavefront-act-as-a-new-source",
+          "title": "Why does every point on a wavefront act as a new source?",
+          "tag": "WHY",
+          "summary": "Builds the next wavefront from wavelets (Huygens)",
+          "sections": "XII 10.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-snell-s-law-follow-from-wavefronts",
+          "title": "Why does Snell's law follow from wavefronts?",
+          "tag": "WHY",
+          "summary": "Slows the wavelets in glass and finds sin i/sin r = v₁/v₂",
+          "sections": "XII 10.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "optics/refraction-total-internal-reflection/why-does-light-bend-at-a-boundary"
+          ]
+        },
+        {
+          "slug": "reflection-from-wavefronts",
+          "title": "Reflection from wavefronts",
+          "tag": "HOW",
+          "summary": "Shows the angle of incidence equals the angle of reflection",
+          "sections": "XII 10.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "optics/huygens-wavefronts/why-does-snell-s-law-follow-from-wavefronts",
+            "optics/refraction-total-internal-reflection/why-does-light-get-trapped-total-internal-reflection"
+          ]
+        },
+        {
+          "slug": "doppler-shift-of-light",
+          "title": "Doppler shift of light",
+          "tag": "APP",
+          "summary": "Sees red-shifted galaxies moving away",
+          "sections": "XII 10.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/huygens-wavefronts/why-does-snell-s-law-follow-from-wavefronts"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "interference",
+      "title": "Interference",
+      "sections": "XII 10.4–10.5",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-do-we-need-coherent-sources",
+          "title": "Why do we need coherent sources?",
+          "tag": "WHY",
+          "summary": "Uses two bulbs and sees no fringes; then two slits fed by one source",
+          "sections": "XII 10.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-young-s-fringes-spaced-d-d",
+          "title": "Why are Young's fringes spaced λD/d?",
+          "tag": "WHY",
+          "summary": "Moves the screen and the slits and finds bright fringes where the path difference is nλ (spec below)",
+          "sections": "XII 10.5",
+          "extension": false,
+          "order": 2,
+          "spec": "Slits: two coherent sources a distance d apart, and a screen at D. Path difference: Δ = d sin θ ≈ d y/D, shown live at any point. Bright when Δ = nλ, so the fringe spacing is β = λD/d. Sliders: λ, d and D, with fringes moving accordingly.",
+          "aids": [
+            "oscillations-waves/superposition-reflection/constructive-versus-destructive"
+          ]
+        },
+        {
+          "slug": "bright-or-dark-path-difference",
+          "title": "Bright or dark? Path difference",
+          "tag": "WHY",
+          "summary": "Places a point and computes Δ",
+          "sections": "XII 10.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "young-s-double-slit-explorer",
+          "title": "Young's double-slit explorer",
+          "tag": "HOW",
+          "summary": "Changes λ, d and D",
+          "sections": "XII 10.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "optics/interference/why-are-young-s-fringes-spaced-d-d"
+          ]
+        },
+        {
+          "slug": "why-do-soap-films-show-colours",
+          "title": "Why do soap films show colours?",
+          "tag": "APP",
+          "summary": "Sees thin-film interference",
+          "sections": "XII 10.5",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "optics/interference/why-do-we-need-coherent-sources"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diffraction-polarisation",
+      "title": "Diffraction & Polarisation",
+      "sections": "XII 10.6–10.7",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-is-the-single-slit-central-maximum-twice-as-wide",
+          "title": "Why is the single-slit central maximum twice as wide?",
+          "tag": "WHY",
+          "summary": "Pairs up rays from the two halves of the slit",
+          "sections": "XII 10.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "optics/interference/bright-or-dark-path-difference"
+          ]
+        },
+        {
+          "slug": "why-is-there-a-limit-to-how-sharp-an-image-can-be",
+          "title": "Why is there a limit to how sharp an image can be?",
+          "tag": "WHY",
+          "summary": "Overlaps two diffraction blobs (resolving power)",
+          "sections": "XII 10.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "induction-ac-em/lcr-resonance/why-do-sharp-peaks-need-small-r-q-factor"
+          ]
+        },
+        {
+          "slug": "why-does-polarisation-prove-light-is-transverse",
+          "title": "Why does polarisation prove light is transverse?",
+          "tag": "WHY",
+          "summary": "Rotates two polaroids and sees the light cut out at 90°",
+          "sections": "XII 10.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "oscillations-waves/what-is-a-wave/transverse-versus-longitudinal",
+            "electrostatics/conductors-dielectrics/polarisation-visualiser"
+          ]
+        },
+        {
+          "slug": "why-i-i0-cos2-theta-malus",
+          "title": "Why I = I₀ cos² θ? (Malus)",
+          "tag": "WHY",
+          "summary": "Projects the E-vector onto the axis, then squares it",
+          "sections": "XII 10.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/vectors/why-does-a-vector-need-two-numbers"
+          ]
+        },
+        {
+          "slug": "why-brewster-s-angle-tan-theta-n",
+          "title": "Why Brewster's angle tan θ = n?",
+          "tag": "WHY",
+          "summary": "Finds the angle where the reflected light is fully polarised",
+          "sections": "XII 10.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "forces-energy/friction/why-does-the-slip-angle-give-s-tan-theta"
+          ]
+        },
+        {
+          "slug": "polaroid-sunglasses",
+          "title": "Polaroid sunglasses",
+          "tag": "APP",
+          "summary": "Cuts glare from water and roads",
+          "sections": "XII 10.7",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "optics/diffraction-polarisation/why-is-there-a-limit-to-how-sharp-an-image-can-be"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "slug": "conics-curves",
+  "title": "Conics & Curves",
+  "source": "Sullivan 10e; Aufmann, Barker & Nation 7e; additions from Axler and Stewart",
+  "children": [
+    {
+      "slug": "what-are-conics",
+      "title": "What Are Conics?",
+      "sections": "S 11.1, 11.5 · A 8.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-are-they-called-conic-sections",
+          "title": "Why are they called conic sections?",
+          "tag": "WHY",
+          "summary": "Tilts a plane through a double cone: circle → ellipse → parabola → hyperbola (spec below)",
+          "sections": "S 11.1 · A 8.1",
+          "extension": false,
+          "order": 1,
+          "spec": "3D: a double cone and a cutting plane; a tilt slider sweeps circle → ellipse → parabola → hyperbola. Angle rule: compare the plane's tilt with the cone's side: less steep gives an ellipse, equal a parabola, steeper a hyperbola. Flatten: the cut curve drawn in 2D beside its equation. History note: Apollonius named them around 200 BC.",
+          "aids": [
+            "exponentials-logs/hyperbolic-functions/why-are-they-called-hyperbolic"
+          ]
+        },
+        {
+          "slug": "degenerate-conics",
+          "title": "Degenerate conics",
+          "tag": "WHY",
+          "summary": "Passes the plane through the apex: a point, a line, or two lines",
+          "sections": "S 11.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "identify-a-conic-from-its-equation",
+          "title": "Identify a conic from its equation",
+          "tag": "HOW",
+          "summary": "Reads the type from A, B and C",
+          "sections": "S 11.5 · A 8.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "conics-curves/what-are-conics/why-are-they-called-conic-sections"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parabola",
+      "title": "Parabola",
+      "sections": "S 11.2 · A 8.1",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-focus-directrix-distance-make-a-parabola",
+          "title": "Why does focus = directrix distance make a parabola?",
+          "tag": "WHY",
+          "summary": "Drags a point that keeps equal distances and traces the curve",
+          "sections": "S 11.2 · A 8.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-dishes-collect-signals-at-the-focus",
+          "title": "Why do dishes collect signals at the focus?",
+          "tag": "WHY",
+          "summary": "Sends parallel rays in and sees every reflection pass through the focus",
+          "sections": "S 11.2 · A 8.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "focus-and-directrix-from-an-equation",
+          "title": "Focus and directrix from an equation",
+          "tag": "HOW",
+          "summary": "Reads them off for vertex (0, 0) and (h, k)",
+          "sections": "S 11.2 · A 8.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "conics-curves/parabola/why-does-focus-directrix-distance-make-a-parabola"
+          ]
+        },
+        {
+          "slug": "latus-rectum-of-a-parabola",
+          "title": "Latus rectum of a parabola",
+          "tag": "HOW",
+          "summary": "Finds its length, 4a, by setting x = a",
+          "sections": "NM 10",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "conics-curves/parabola/why-does-focus-directrix-distance-make-a-parabola"
+          ]
+        },
+        {
+          "slug": "where-to-put-the-receiver",
+          "title": "Where to put the receiver",
+          "tag": "APP",
+          "summary": "Chooses the receiver point for a satellite dish or headlight",
+          "sections": "S 11.2 · A 8.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "conics-curves/parabola/why-does-focus-directrix-distance-make-a-parabola"
+          ]
+        },
+        {
+          "slug": "suspension-bridge-cable",
+          "title": "Suspension-bridge cable",
+          "tag": "APP",
+          "summary": "Fits a parabola to the towers and sag",
+          "sections": "S 11.2 · A 8.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "conics-curves/parabola/why-does-focus-directrix-distance-make-a-parabola",
+            "functions-graphs/quadratic-functions/projectiles-and-bridge-arches"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ellipse",
+      "title": "Ellipse",
+      "sections": "S 11.3 · A 8.2",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-do-pins-and-string-draw-an-ellipse",
+          "title": "Why do pins and string draw an ellipse?",
+          "tag": "WHY",
+          "summary": "Keeps the sum of distances to the two foci constant",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-c2-a2-b2",
+          "title": "Why is c² = a² − b²?",
+          "tag": "WHY",
+          "summary": "Moves the pen to the end of the minor axis and finds a right triangle",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/right-triangle-ratios/why-is-a2-b2-c2",
+            "numbers-algebra/polynomials-factoring/why-does-a2-b2-a-b-a-b"
+          ]
+        },
+        {
+          "slug": "whispering-gallery",
+          "title": "Whispering gallery",
+          "tag": "WHY",
+          "summary": "Sees sound from one focus reflect to the other",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/polar-complex/polar-curve-gallery"
+          ]
+        },
+        {
+          "slug": "centre-vertices-and-foci",
+          "title": "Centre, vertices and foci",
+          "tag": "HOW",
+          "summary": "Reads them from the equation and sketches",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "conics-curves/ellipse/why-do-pins-and-string-draw-an-ellipse"
+          ]
+        },
+        {
+          "slug": "latus-rectum-of-an-ellipse",
+          "title": "Latus rectum of an ellipse",
+          "tag": "HOW",
+          "summary": "Finds its length, 2b²/a",
+          "sections": "NM 10",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "conics-curves/ellipse/why-do-pins-and-string-draw-an-ellipse",
+            "conics-curves/parabola/latus-rectum-of-a-parabola"
+          ]
+        },
+        {
+          "slug": "planet-orbits",
+          "title": "Planet orbits",
+          "tag": "APP",
+          "summary": "Changes eccentricity from Earth's to a comet's (see Trigonometry → Polar & Complex)",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "trigonometry/polar-complex",
+            "conics-curves/ellipse/why-is-c2-a2-b2",
+            "numbers-algebra/complex-numbers/why-do-the-powers-of-i-cycle"
+          ]
+        },
+        {
+          "slug": "elliptical-arch-bridge",
+          "title": "Elliptical arch bridge",
+          "tag": "APP",
+          "summary": "Finds the clearance at a given distance from the centre",
+          "sections": "S 11.3 · A 8.2",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "conics-curves/ellipse/why-is-c2-a2-b2",
+            "functions-graphs/quadratic-functions/projectiles-and-bridge-arches"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyperbola",
+      "title": "Hyperbola",
+      "sections": "S 11.4 · A 8.3",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-a-constant-difference-make-a-hyperbola",
+          "title": "Why does a constant difference make a hyperbola?",
+          "tag": "WHY",
+          "summary": "Keeps |d₁ − d₂| fixed while dragging the point",
+          "sections": "S 11.4 · A 8.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-the-asymptotes-y-b-a-x",
+          "title": "Why the asymptotes y = ±(b/a)x?",
+          "tag": "WHY",
+          "summary": "Zooms far out where the '1' stops mattering",
+          "sections": "S 11.4 · A 8.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-c2-a2-b2-this-time",
+          "title": "Why c² = a² + b² this time?",
+          "tag": "WHY",
+          "summary": "Builds the asymptote box and finds the triangle",
+          "sections": "S 11.4 · A 8.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "conics-curves/ellipse/why-is-c2-a2-b2",
+            "trigonometry/right-triangle-ratios/why-is-a2-b2-c2"
+          ]
+        },
+        {
+          "slug": "graph-a-hyperbola-from-its-equation",
+          "title": "Graph a hyperbola from its equation",
+          "tag": "HOW",
+          "summary": "Draws the box, the asymptotes, then the branches",
+          "sections": "S 11.4 · A 8.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "conics-curves/hyperbola/why-does-a-constant-difference-make-a-hyperbola"
+          ]
+        },
+        {
+          "slug": "locate-a-ship-from-time-differences",
+          "title": "Locate a ship from time differences",
+          "tag": "APP",
+          "summary": "Places two stations; a time gap fixes a hyperbola (LORAN)",
+          "sections": "S 11.4 · A 8.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "conics-curves/hyperbola/why-does-a-constant-difference-make-a-hyperbola"
+          ]
+        },
+        {
+          "slug": "comets-on-hyperbolic-paths",
+          "title": "Comets on hyperbolic paths",
+          "tag": "APP",
+          "summary": "Sees a comet with e > 1 pass once and never return",
+          "sections": "A 8.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "conics-curves/hyperbola/why-the-asymptotes-y-b-a-x",
+            "exponentials-logs/hyperbolic-functions/hyperbolic-identities"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rotation-of-axes",
+      "title": "Rotation of Axes",
+      "sections": "S 11.5 · A 8.4",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-an-xy-term-tilt-the-conic",
+          "title": "Why does an xy term tilt the conic?",
+          "tag": "WHY",
+          "summary": "Rotates an ellipse and watches the B term appear",
+          "sections": "S 11.5 · A 8.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-cot-2theta-a-c-b-remove-it",
+          "title": "Why does cot 2θ = (A − C)/B remove it?",
+          "tag": "WHY",
+          "summary": "Turns the axes until B = 0",
+          "sections": "S 11.5 · A 8.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-b2-4ac-change-when-you-rotate",
+          "title": "Why doesn't B² − 4AC change when you rotate?",
+          "tag": "WHY",
+          "summary": "Rotates freely while the discriminant stays fixed",
+          "sections": "S 11.5 · A 8.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "numbers-algebra/quadratic-equations/why-does-the-discriminant-count-the-roots"
+          ]
+        },
+        {
+          "slug": "rotate-to-standard-form",
+          "title": "Rotate to standard form",
+          "tag": "HOW",
+          "summary": "Works through the rotation substitution step by step",
+          "sections": "S 11.5 · A 8.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "conics-curves/rotation-of-axes/why-doesn-t-b2-4ac-change-when-you-rotate",
+            "functions-graphs/quadratic-functions/standard-vertex-factored-form"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "polar-conics",
+      "title": "Polar Conics",
+      "sections": "S 11.6 · A 8.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-one-equation-give-every-conic",
+          "title": "Why does one equation give every conic?",
+          "tag": "WHY",
+          "summary": "Slides e in r = ep/(1 − e cos θ) through 0, <1, 1 and >1",
+          "sections": "S 11.6 · A 8.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "conics-curves/what-are-conics/identify-a-conic-from-its-equation"
+          ]
+        },
+        {
+          "slug": "polar-rectangular-conic",
+          "title": "Polar ↔ rectangular conic",
+          "tag": "HOW",
+          "summary": "Converts both ways",
+          "sections": "S 11.6 · A 8.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "conics-curves/polar-conics/why-does-one-equation-give-every-conic",
+            "trigonometry/polar-complex/polar-rectangular-converter",
+            "trigonometry/polar-complex/complex-arithmetic-rectangular-vs-polar"
+          ]
+        },
+        {
+          "slug": "kepler-orbits",
+          "title": "Kepler orbits",
+          "tag": "APP",
+          "summary": "Uses the Sun at a focus to show fast at perihelion and slow at aphelion",
+          "sections": "S 11.6 · A 8.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "conics-curves/polar-conics/why-does-one-equation-give-every-conic"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parametric-curves",
+      "title": "Parametric Curves",
+      "sections": "S 11.7 · A 8.7",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-parametric-equations",
+          "title": "Why parametric equations?",
+          "tag": "WHY",
+          "summary": "Runs the same path at different speeds: time is extra information",
+          "sections": "S 11.7 · A 8.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-eliminating-t-lose-information",
+          "title": "Why does eliminating t lose information?",
+          "tag": "WHY",
+          "summary": "Sees two different motions give the same curve",
+          "sections": "S 11.7 · A 8.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-rolling-wheel-trace-a-cycloid",
+          "title": "Why does a rolling wheel trace a cycloid?",
+          "tag": "WHY",
+          "summary": "Rolls a wheel and traces a point on its rim",
+          "sections": "S 11.7 · A 8.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "parametric-rectangular",
+          "title": "Parametric ↔ rectangular",
+          "tag": "HOW",
+          "summary": "Eliminates t, or parametrises a curve",
+          "sections": "S 11.7 · A 8.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "conics-curves/parametric-curves/why-parametric-equations"
+          ]
+        },
+        {
+          "slug": "projectile-as-x-t-y-t",
+          "title": "Projectile as x(t), y(t)",
+          "tag": "APP",
+          "summary": "Changes launch speed and angle and sees the parabola",
+          "sections": "S 11.7 · A 8.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "conics-curves/parametric-curves/why-parametric-equations"
+          ]
+        },
+        {
+          "slug": "lissajous-figures",
+          "title": "Lissajous figures",
+          "tag": "APP",
+          "summary": "Changes the frequency ratio of x and y",
+          "sections": "—",
+          "extension": true,
+          "order": 6,
+          "aids": [
+            "conics-curves/parametric-curves/why-parametric-equations"
+          ]
+        },
+        {
+          "slug": "bezier-curves-how-fonts-are-drawn",
+          "title": "Bézier curves: how fonts are drawn",
+          "tag": "APP",
+          "summary": "Drags control points and watches the curve follow",
+          "sections": "St 10.1 lab",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "conics-curves/parametric-curves/why-does-eliminating-t-lose-information"
+          ]
+        },
+        {
+          "slug": "circles-rolling-around-circles",
+          "title": "Circles rolling around circles",
+          "tag": "APP",
+          "summary": "Draws epicycloids and hypocycloids by rolling one circle on another",
+          "sections": "St 10.1 lab",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "conics-curves/parametric-curves/why-does-a-rolling-wheel-trace-a-cycloid"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 6
+}

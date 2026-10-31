@@ -1,0 +1,617 @@
+{
+  "slug": "oscillations-waves",
+  "title": "Oscillations & Waves",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 25,
+  "children": [
+    {
+      "slug": "periodic-motion",
+      "title": "Periodic Motion",
+      "sections": "N 13.1–13.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-isn-t-every-periodic-motion-shm",
+          "title": "Why isn't every periodic motion SHM?",
+          "tag": "WHY",
+          "summary": "Compares a bouncing ball, an orbit and a spring",
+          "sections": "PtP 2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-f-1-t",
+          "title": "Why is f = 1/T?",
+          "tag": "WHY",
+          "summary": "Counts cycles per second",
+          "sections": "N 13.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/waves-oscillations/why-120pi-in-ac-current"
+          ]
+        },
+        {
+          "slug": "when-is-a-sum-of-two-shms-periodic",
+          "title": "When is a sum of two SHMs periodic?",
+          "tag": "WHY",
+          "summary": "Adds two frequencies; it repeats only when their ratio is rational",
+          "sections": "PtP 6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/waves-oscillations/why-is-any-shape-a-sum-of-sines"
+          ]
+        },
+        {
+          "slug": "period-frequency-and-converter",
+          "title": "Period, frequency and ω converter",
+          "tag": "HOW",
+          "summary": "Converts between T, f and ω",
+          "sections": "N 13.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "oscillations-waves/periodic-motion/why-isn-t-every-periodic-motion-shm",
+            "rotation-gravitation/satellites/orbital-period-calculator",
+            "heat-thermodynamics/temperature/temperature-scale-converter"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shm-circular-motion",
+      "title": "SHM & Circular Motion",
+      "sections": "N 13.3–13.5",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-shm-the-shadow-of-circular-motion",
+          "title": "Why is SHM the shadow of circular motion?",
+          "tag": "WHY",
+          "summary": "Shines a light on a spinning peg; its shadow does SHM (spec below)",
+          "sections": "N 13.4",
+          "extension": false,
+          "order": 1,
+          "spec": "Peg: a point moves on a circle at constant ω, with a lamp casting its shadow on a screen. Graph: the shadow's position traced against time gives x = A cos(ωt + φ). Velocity and acceleration: the shadow's v and a are the projections of the circular v and the centripetal a. Force: a = −ω²x, so F = −kx with k = mω².",
+          "aids": [
+            "trigonometry/waves-oscillations/why-does-a-spring-trace-a-sine",
+            "trigonometry/sine-cosine-graphs/why-is-the-sine-graph-a-wave",
+            "measurement-motion/circular-motion/v-t-and-converter",
+            "oscillations-waves/periodic-motion/why-isn-t-every-periodic-motion-shm"
+          ]
+        },
+        {
+          "slug": "what-does-the-phase-do",
+          "title": "What does the phase φ do?",
+          "tag": "WHY",
+          "summary": "Slides φ in x = A cos(ωt + φ)",
+          "sections": "N 13.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/sine-cosine-graphs/what-does-c-do-why-the-shift-is-c-b",
+            "heat-thermodynamics/change-of-state/phase-diagram-why-does-dry-ice-sublime"
+          ]
+        },
+        {
+          "slug": "why-does-velocity-lead-displacement-by-90",
+          "title": "Why does velocity lead displacement by 90°?",
+          "tag": "WHY",
+          "summary": "Differentiates A cos ωt and sees a is always opposite to x",
+          "sections": "N 13.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/trig-derivatives/why-is-sin-x-prime-cos-x"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-the-period-depend-on-amplitude",
+          "title": "Why doesn't the period depend on amplitude?",
+          "tag": "WHY",
+          "summary": "Swings small and big and times both",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "rotation-gravitation/satellites/orbital-period-calculator"
+          ]
+        },
+        {
+          "slug": "fit-a-and-from-the-initial-conditions",
+          "title": "Fit A and φ from the initial conditions",
+          "tag": "HOW",
+          "summary": "Sets x₀ and v₀ and gets A and φ",
+          "sections": "PtP 4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/identities/why-is-m-sin-bt-n-cos-bt-a-single-sine",
+            "oscillations-waves/shm-circular-motion/why-is-shm-the-shadow-of-circular-motion"
+          ]
+        },
+        {
+          "slug": "stacked-x-v-a-graphs",
+          "title": "Stacked x, v, a graphs",
+          "tag": "HOW",
+          "summary": "Watches the three phase-shifted graphs together",
+          "sections": "N 13.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "measurement-motion/motion-in-a-straight-line/linked-xt-vt-at-graphs",
+            "oscillations-waves/shm-circular-motion/what-does-the-phase-do"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "force-law-energy",
+      "title": "Force Law & Energy",
+      "sections": "N 13.6–13.7",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-f-kx-always-give-shm",
+          "title": "Why does F = −kx always give SHM?",
+          "tag": "WHY",
+          "summary": "Tries other force laws and sees only linear ones give sinusoids",
+          "sections": "N 13.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "differential-equations/second-order-equations/why-does-guessing-e-rx-work"
+          ]
+        },
+        {
+          "slug": "why-does-energy-slosh-but-stay-constant",
+          "title": "Why does energy slosh but stay constant?",
+          "tag": "WHY",
+          "summary": "Watches the K and U bars swap",
+          "sections": "N 13.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-is-a-spring-s-pe-12kx2"
+          ]
+        },
+        {
+          "slug": "why-is-root-k-m",
+          "title": "Why is ω = √(k/m)?",
+          "tag": "WHY",
+          "summary": "Stiffens the spring and adds mass",
+          "sections": "N 13.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "measurement-motion/dimensions/why-doesn-t-a-pendulum-s-period-depend-on-its-mass",
+            "differential-equations/second-order-equations/springmass-and-lc-circuits"
+          ]
+        },
+        {
+          "slug": "springmass-simulator",
+          "title": "Spring–mass simulator",
+          "tag": "HOW",
+          "summary": "Changes k, m and the amplitude",
+          "sections": "N 13.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "oscillations-waves/force-law-energy/why-is-root-k-m",
+            "differential-equations/second-order-equations/springmass-and-lc-circuits"
+          ]
+        },
+        {
+          "slug": "why-do-buildings-and-bridges-have-a-natural-frequency",
+          "title": "Why do buildings and bridges have a natural frequency?",
+          "tag": "APP",
+          "summary": "Shakes a model at different frequencies",
+          "sections": "N 13.6",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "trigonometry/waves-oscillations/why-does-resonance-build-up",
+            "oscillations-waves/force-law-energy/why-is-root-k-m"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-simple-pendulum",
+      "title": "The Simple Pendulum",
+      "sections": "N 13.8",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-a-pendulum-shm-only-for-small-angles",
+          "title": "Why is a pendulum SHM only for small angles?",
+          "tag": "WHY",
+          "summary": "Overlays sin θ and θ as the swing grows",
+          "sections": "N 13.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/linear-approximation/why-is-sin-x-x-for-small-x"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-the-bob-s-mass-matter",
+          "title": "Why doesn't the bob's mass matter?",
+          "tag": "WHY",
+          "summary": "Swaps a heavy bob for a light one",
+          "sections": "N 13.8",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/dimensions/why-doesn-t-a-pendulum-s-period-depend-on-its-mass"
+          ]
+        },
+        {
+          "slug": "measure-g-with-string-and-a-stopwatch",
+          "title": "Measure g with string and a stopwatch",
+          "tag": "WHY",
+          "summary": "Times 20 swings and computes g",
+          "sections": "N 13.8",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "pendulum-lab-with-large-angle-correction",
+          "title": "Pendulum lab with large-angle correction",
+          "tag": "HOW",
+          "summary": "Compares the exact and approximate periods",
+          "sections": "N 13.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "infinite-series/taylor-series/why-the-pendulum-formula-needs-sin-theta-theta",
+            "oscillations-waves/the-simple-pendulum/why-is-a-pendulum-shm-only-for-small-angles"
+          ]
+        },
+        {
+          "slug": "the-seconds-pendulum",
+          "title": "The seconds pendulum",
+          "tag": "APP",
+          "summary": "Finds the length for a 2 s period: about 0.99 m",
+          "sections": "N 13.8",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "oscillations-waves/the-simple-pendulum/why-is-a-pendulum-shm-only-for-small-angles",
+            "measurement-motion/dimensions/why-doesn-t-a-pendulum-s-period-depend-on-its-mass"
+          ]
+        },
+        {
+          "slug": "why-does-a-swing-die-out",
+          "title": "Why does a swing die out?",
+          "tag": "APP",
+          "summary": "Adds damping and watches the amplitude decay",
+          "sections": "PtP 9",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "trigonometry/waves-oscillations/why-does-damping-make-an-envelope",
+            "oscillations-waves/the-simple-pendulum/why-is-a-pendulum-shm-only-for-small-angles"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "what-is-a-wave",
+      "title": "What is a Wave?",
+      "sections": "N 14.1–14.2",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-a-wave-carry-energy-but-not-matter",
+          "title": "Why does a wave carry energy but not matter?",
+          "tag": "WHY",
+          "summary": "Floats a cork on ripples; it bobs but doesn't travel",
+          "sections": "N 14.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "differential-equations/population-models/why-is-p-k-stable-but-p-0-not",
+            "rotation-gravitation/rotation-kinematics/why-do-all-points-share-but-not-v"
+          ]
+        },
+        {
+          "slug": "transverse-versus-longitudinal",
+          "title": "Transverse versus longitudinal",
+          "tag": "WHY",
+          "summary": "Shakes a slinky sideways, then pushes it",
+          "sections": "N 14.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-can-t-sound-cross-a-vacuum-when-light-can",
+          "title": "Why can't sound cross a vacuum when light can?",
+          "tag": "WHY",
+          "summary": "Pumps air out of a bell jar",
+          "sections": "N 14.1–14.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "the-stadium-wave",
+          "title": "The stadium wave",
+          "tag": "APP",
+          "summary": "Sees people stand and sit in turn while the wave travels round",
+          "sections": "—",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "oscillations-waves/what-is-a-wave/why-does-a-wave-carry-energy-but-not-matter"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "travelling-waves",
+      "title": "Travelling Waves",
+      "sections": "N 14.3–14.4",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-y-a-sin-kx-t-move-right",
+          "title": "Why does y = a sin(kx − ωt) move right?",
+          "tag": "WHY",
+          "summary": "Rides a crest: a constant phase means x grows with t",
+          "sections": "N 14.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/transformations/why-does-f-x-2-move-the-graph-right"
+          ]
+        },
+        {
+          "slug": "why-is-v-k",
+          "title": "Why is v = λν = ω/k?",
+          "tag": "WHY",
+          "summary": "Sees one wavelength pass per period",
+          "sections": "N 14.3–14.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-speed-on-a-string-root-t",
+          "title": "Why is the speed on a string √(T/μ)?",
+          "tag": "WHY",
+          "summary": "Tightens the string or makes it heavier",
+          "sections": "N 14.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "measurement-motion/dimensions/why-doesn-t-a-pendulum-s-period-depend-on-its-mass",
+            "oscillations-waves/the-simple-pendulum/measure-g-with-string-and-a-stopwatch"
+          ]
+        },
+        {
+          "slug": "why-was-newton-s-speed-of-sound-15-too-low",
+          "title": "Why was Newton's speed of sound 15% too low?",
+          "tag": "WHY",
+          "summary": "Swaps isothermal for adiabatic compression (Laplace's correction, γ)",
+          "sections": "N 14.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "heat-thermodynamics/thermodynamic-processes/why-is-an-adiabatic-curve-steeper-than-an-isotherm"
+          ]
+        },
+        {
+          "slug": "wave-equation-explorer",
+          "title": "Wave-equation explorer",
+          "tag": "HOW",
+          "summary": "Changes a, k, ω and φ",
+          "sections": "N 14.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "oscillations-waves/travelling-waves/why-was-newton-s-speed-of-sound-15-too-low",
+            "oscillations-waves/what-is-a-wave/the-stadium-wave",
+            "measurement-motion/uniform-acceleration/which-equation-do-i-use"
+          ]
+        },
+        {
+          "slug": "why-does-sound-travel-faster-in-steel-than-in-air",
+          "title": "Why does sound travel faster in steel than in air?",
+          "tag": "APP",
+          "summary": "Compares √(Y/ρ) with √(γP/ρ)",
+          "sections": "N 14.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "oscillations-waves/travelling-waves/why-was-newton-s-speed-of-sound-15-too-low",
+            "properties-of-matter/elastic-moduli/why-is-air-about-a-million-times-easier-to-squeeze-than-stee"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "superposition-reflection",
+      "title": "Superposition & Reflection",
+      "sections": "N 14.5–14.6",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-do-waves-pass-through-each-other-unchanged",
+          "title": "Why do waves pass through each other unchanged?",
+          "tag": "WHY",
+          "summary": "Sends two pulses at each other",
+          "sections": "N 14.5",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/waves-oscillations/why-do-waves-add-point-by-point"
+          ]
+        },
+        {
+          "slug": "constructive-versus-destructive",
+          "title": "Constructive versus destructive",
+          "tag": "WHY",
+          "summary": "Slides the phase difference between two waves",
+          "sections": "N 14.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/identities/why-can-products-become-sums",
+            "oscillations-waves/shm-circular-motion/what-does-the-phase-do"
+          ]
+        },
+        {
+          "slug": "why-does-a-fixed-end-flip-the-pulse-but-a-free-end-doesn-t",
+          "title": "Why does a fixed end flip the pulse but a free end doesn't?",
+          "tag": "WHY",
+          "summary": "Reflects a pulse off a wall, then off a ring on a rod",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "two-pulse-sandbox",
+          "title": "Two-pulse sandbox",
+          "tag": "HOW",
+          "summary": "Builds any superposition",
+          "sections": "N 14.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "oscillations-waves/superposition-reflection/why-does-a-fixed-end-flip-the-pulse-but-a-free-end-doesn-t"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "standing-waves-music",
+      "title": "Standing Waves & Music",
+      "sections": "N 14.6",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-do-only-certain-notes-fit-on-a-string",
+          "title": "Why do only certain notes fit on a string?",
+          "tag": "WHY",
+          "summary": "Pins both ends; only whole half-wavelengths fit, so νₙ = nv/2L (spec below)",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 1,
+          "spec": "Pin: a string fixed at both ends, with waves sent from each side. Fit: only lengths L = nλ/2 give a steady pattern; other frequencies wash out. Ladder: νₙ = nv/2L shown with an audible tone per mode. Music: tighten (v ↑) or fret (L ↓) and hear the pitch rise.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-closed-pipe-give-only-odd-harmonics",
+          "title": "Why does a closed pipe give only odd harmonics?",
+          "tag": "WHY",
+          "summary": "Puts a node at the closed end and an antinode at the open end",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-are-nodes-2-apart",
+          "title": "Why are nodes λ/2 apart?",
+          "tag": "WHY",
+          "summary": "Adds two opposite waves and reads 2a sin kx cos ωt",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/identities/why-can-products-become-sums",
+            "oscillations-waves/travelling-waves/why-does-y-a-sin-kx-t-move-right",
+            "oscillations-waves/shm-circular-motion/what-does-the-phase-do"
+          ]
+        },
+        {
+          "slug": "harmonic-explorer-for-strings-and-pipes",
+          "title": "Harmonic explorer for strings and pipes",
+          "tag": "HOW",
+          "summary": "Picks a mode and sees its pattern",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "oscillations-waves/standing-waves-music/why-does-a-closed-pipe-give-only-odd-harmonics"
+          ]
+        },
+        {
+          "slug": "why-does-a-sitar-string-rise-in-pitch-when-tightened-or-fret",
+          "title": "Why does a sitar string rise in pitch when tightened or fretted?",
+          "tag": "APP",
+          "summary": "Changes T and L",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "oscillations-waves/standing-waves-music/why-do-only-certain-notes-fit-on-a-string",
+            "oscillations-waves/travelling-waves/why-is-the-speed-on-a-string-root-t"
+          ]
+        },
+        {
+          "slug": "resonance-column",
+          "title": "Resonance column",
+          "tag": "APP",
+          "summary": "Finds the speed of sound with a tuning fork",
+          "sections": "N 14.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "oscillations-waves/standing-waves-music/why-does-a-closed-pipe-give-only-odd-harmonics"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "beats",
+      "title": "Beats",
+      "sections": "N 14.7",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-do-two-close-notes-throb-at-1-2",
+          "title": "Why do two close notes throb at ν₁ − ν₂?",
+          "tag": "WHY",
+          "summary": "Plays 440 Hz and 444 Hz together and hears 4 beats per second",
+          "sections": "N 14.7",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/waves-oscillations/why-do-beats-happen"
+          ]
+        },
+        {
+          "slug": "beat-frequency-game",
+          "title": "Beat-frequency game",
+          "tag": "HOW",
+          "summary": "Tunes a string until the beats vanish",
+          "sections": "N 14.7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "oscillations-waves/beats/why-do-two-close-notes-throb-at-1-2"
+          ]
+        },
+        {
+          "slug": "tuning-instruments-by-ear",
+          "title": "Tuning instruments by ear",
+          "tag": "APP",
+          "summary": "Uses beats to match a reference note",
+          "sections": "N 14.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "oscillations-waves/beats/why-do-two-close-notes-throb-at-1-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

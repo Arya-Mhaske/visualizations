@@ -1,0 +1,850 @@
+{
+  "slug": "heat-thermodynamics",
+  "title": "Heat & Thermodynamics",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 24,
+  "children": [
+    {
+      "slug": "temperature",
+      "title": "Temperature",
+      "sections": "N 10.1–10.4, 11.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-touch-a-bad-thermometer",
+          "title": "Why is touch a bad thermometer?",
+          "tag": "WHY",
+          "summary": "Touches metal and wood at the same temperature",
+          "sections": "N 10.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-thermometers-work-at-all-zeroth-law",
+          "title": "Why do thermometers work at all? (zeroth law)",
+          "tag": "WHY",
+          "summary": "Chains thermal equilibrium A ~ C, B ~ C, so A ~ B",
+          "sections": "N 11.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-c-and-f-agree-at-40",
+          "title": "Why do °C and °F agree at −40?",
+          "tag": "WHY",
+          "summary": "Plots the linear map between the scales and finds the crossing",
+          "sections": "N 10.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/lines-slope/convert-between-forms-of-a-line"
+          ]
+        },
+        {
+          "slug": "why-is-there-an-absolute-zero",
+          "title": "Why is there an absolute zero?",
+          "tag": "WHY",
+          "summary": "Extrapolates gas pressure against temperature to −273.15 °C",
+          "sections": "N 10.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "properties-of-matter/pressure-pascal/gauge-versus-absolute-pressure"
+          ]
+        },
+        {
+          "slug": "temperature-scale-converter",
+          "title": "Temperature-scale converter",
+          "tag": "HOW",
+          "summary": "Converts between °C, °F and K",
+          "sections": "N 10.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/combining-inverting/c-f-and-currency-there-and-back",
+            "heat-thermodynamics/temperature/why-is-there-an-absolute-zero"
+          ]
+        },
+        {
+          "slug": "ideal-gas-explorer-pv-rt",
+          "title": "Ideal-gas explorer: PV = μRT",
+          "tag": "APP",
+          "summary": "Changes P, V and T",
+          "sections": "N 10.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/temperature/why-is-there-an-absolute-zero"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "thermal-expansion",
+      "title": "Thermal Expansion",
+      "sections": "N 10.5",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-do-things-expand-when-heated",
+          "title": "Why do things expand when heated?",
+          "tag": "WHY",
+          "summary": "Sees atoms vibrating in a lopsided potential, so their average spacing grows",
+          "sections": "N 10.5",
+          "extension": true,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-v-3-l",
+          "title": "Why is α_V = 3α_l?",
+          "tag": "WHY",
+          "summary": "Expands a cube and drops the tiny squared terms",
+          "sections": "N 10.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "numbers-algebra/polynomials-factoring/why-is-a-b-2-not-a2-b2",
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess"
+          ]
+        },
+        {
+          "slug": "why-is-water-densest-at-4-c-and-why-do-lakes-freeze-from-the",
+          "title": "Why is water densest at 4 °C, and why do lakes freeze from the top?",
+          "tag": "WHY",
+          "summary": "Cools a lake layer by layer",
+          "sections": "N 10.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/chain-rule/peel-the-onion"
+          ]
+        },
+        {
+          "slug": "expansion-calculator",
+          "title": "Expansion calculator",
+          "tag": "HOW",
+          "summary": "Computes linear, area and volume expansion",
+          "sections": "N 10.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "heat-thermodynamics/thermal-expansion/why-is-water-densest-at-4-c-and-why-do-lakes-freeze-from-the"
+          ]
+        },
+        {
+          "slug": "the-blacksmith-s-hot-iron-rim",
+          "title": "The blacksmith's hot iron rim",
+          "tag": "APP",
+          "summary": "Fits a heated rim onto a wooden wheel",
+          "sections": "N 10.1, 10.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "heat-thermodynamics/thermal-expansion/why-do-things-expand-when-heated"
+          ]
+        },
+        {
+          "slug": "railway-gaps-and-bimetallic-strips",
+          "title": "Railway gaps and bimetallic strips",
+          "tag": "APP",
+          "summary": "Sees how designs allow for expansion",
+          "sections": "N 10.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/thermal-expansion/why-is-water-densest-at-4-c-and-why-do-lakes-freeze-from-the"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heat-capacity-calorimetry",
+      "title": "Heat Capacity & Calorimetry",
+      "sections": "N 10.6–10.7",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-does-water-heat-so-slowly-and-why-are-there-sea-breezes",
+          "title": "Why does water heat so slowly, and why are there sea breezes?",
+          "tag": "WHY",
+          "summary": "Heats land and sea with the same sunshine",
+          "sections": "N 10.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-heat-lost-equal-to-heat-gained",
+          "title": "Why is heat lost equal to heat gained?",
+          "tag": "WHY",
+          "summary": "Mixes hot and cold in an isolated box",
+          "sections": "N 10.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-gases-have-two-specific-heats",
+          "title": "Why do gases have two specific heats?",
+          "tag": "WHY",
+          "summary": "Heats at constant volume, then at constant pressure, where the gas also does work",
+          "sections": "N 10.6, Table 10.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "mixing-calculator",
+          "title": "Mixing calculator",
+          "tag": "HOW",
+          "summary": "Finds the final temperature",
+          "sections": "N 10.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "heat-thermodynamics/heat-capacity-calorimetry/why-is-heat-lost-equal-to-heat-gained",
+            "differential-equations/separable-equations/salt-in-a-mixing-tank"
+          ]
+        },
+        {
+          "slug": "find-aluminium-s-specific-heat",
+          "title": "Find aluminium's specific heat",
+          "tag": "APP",
+          "summary": "Drops a 100 °C sphere into a calorimeter",
+          "sections": "Ex 10.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "heat-thermodynamics/heat-capacity-calorimetry/why-is-heat-lost-equal-to-heat-gained",
+            "sequences-probability/binomial-theorem/find-a-specific-term"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "change-of-state",
+      "title": "Change of State",
+      "sections": "N 10.8",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-the-temperature-stay-flat-while-ice-melts",
+          "title": "Why does the temperature stay flat while ice melts?",
+          "tag": "WHY",
+          "summary": "Heats ice steadily and watches the graph plateau: latent heat (spec below)",
+          "sections": "N 10.8",
+          "extension": false,
+          "order": 1,
+          "spec": "Heat steadily: −20 °C ice → water → 100 °C steam at constant power. Plateaus: the temperature halts while bonds break, with a molecular view inset. Energy bars: sensible heat (mcΔT) versus latent heat (mL) per stage. Pressure: change the pressure and watch the boiling plateau move.",
+          "aids": []
+        },
+        {
+          "slug": "why-does-water-boil-cooler-on-mountains",
+          "title": "Why does water boil cooler on mountains?",
+          "tag": "WHY",
+          "summary": "Lowers the pressure and the boiling point drops",
+          "sections": "N 10.8",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "properties-of-matter/surface-tension/how-do-detergents-clean"
+          ]
+        },
+        {
+          "slug": "phase-diagram-why-does-dry-ice-sublime",
+          "title": "Phase diagram: why does dry ice sublime?",
+          "tag": "WHY",
+          "summary": "Moves across the P–T diagram past the triple point",
+          "sections": "N 10.8",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "heating-curve-builder",
+          "title": "Heating-curve builder",
+          "tag": "HOW",
+          "summary": "Plots ice → water → steam with the energy for each stage",
+          "sections": "N 10.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "functions-graphs/properties-library/piecewise-function-builder",
+            "heat-thermodynamics/change-of-state/phase-diagram-why-does-dry-ice-sublime"
+          ]
+        },
+        {
+          "slug": "why-does-a-pressure-cooker-cook-faster",
+          "title": "Why does a pressure cooker cook faster?",
+          "tag": "APP",
+          "summary": "Raises the pressure so water boils near 120 °C",
+          "sections": "N 10.8",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "heat-thermodynamics/change-of-state/why-does-water-boil-cooler-on-mountains",
+            "properties-of-matter/surface-tension/capillary-and-excess-pressure-calculator",
+            "properties-of-matter/surface-tension/how-do-detergents-clean"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heat-transfer",
+      "title": "Heat Transfer",
+      "sections": "N 10.9–10.10",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-metal-feel-colder-than-wood-at-the-same-temperature",
+          "title": "Why does metal feel colder than wood at the same temperature?",
+          "tag": "WHY",
+          "summary": "Compares conductivities as heat leaves the hand",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "heat-thermodynamics/temperature/why-is-touch-a-bad-thermometer"
+          ]
+        },
+        {
+          "slug": "why-is-h-kat-l",
+          "title": "Why is H = KAΔT/L?",
+          "tag": "WHY",
+          "summary": "Sees heat flow through a rod like water through a pipe",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-sea-breeze-by-day-and-land-breeze-by-night",
+          "title": "Why sea breeze by day and land breeze by night?",
+          "tag": "WHY",
+          "summary": "Runs the convection loop and reverses it after sunset",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "heat-thermodynamics/heat-capacity-calorimetry/why-does-water-heat-so-slowly-and-why-are-there-sea-breezes"
+          ]
+        },
+        {
+          "slug": "why-do-dark-things-absorb-and-radiate-best",
+          "title": "Why do dark things absorb and radiate best?",
+          "tag": "WHY",
+          "summary": "Compares a black and a silvered can; this is why vacuum flasks are silvered",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-cooling-slow-down-newton-s-law",
+          "title": "Why does cooling slow down? (Newton's law)",
+          "tag": "WHY",
+          "summary": "Cools tea: the rate ∝ (T − T_room) gives an exponential",
+          "sections": "N 10.10",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/growth-decay-cooling/why-is-cooling-exponential"
+          ]
+        },
+        {
+          "slug": "conduction-through-layered-walls",
+          "title": "Conduction through layered walls",
+          "tag": "HOW",
+          "summary": "Combines thermal resistances in series",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/heat-transfer/why-is-h-kat-l"
+          ]
+        },
+        {
+          "slug": "the-greenhouse-effect",
+          "title": "The greenhouse effect",
+          "tag": "APP",
+          "summary": "Traps outgoing infrared under a glass layer",
+          "sections": "N 10.9",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "heat-thermodynamics/heat-transfer/why-sea-breeze-by-day-and-land-breeze-by-night"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "first-law",
+      "title": "First Law",
+      "sections": "N 11.1–11.5",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-are-heat-and-work-both-energy-in-transit",
+          "title": "Why are heat and work both energy in transit?",
+          "tag": "WHY",
+          "summary": "Warms gas by heating it, then by stirring it, and gets the same final state",
+          "sections": "N 11.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-is-the-workenergy-theorem-v2-u2-2as-in-disguise"
+          ]
+        },
+        {
+          "slug": "why-is-u-q-w-just-energy-conservation",
+          "title": "Why is ΔU = Q − W just energy conservation?",
+          "tag": "WHY",
+          "summary": "Runs an energy ledger for a gas in a cylinder",
+          "sections": "N 11.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "properties-of-matter/flow-bernoulli/why-is-bernoulli-just-energy-conservation"
+          ]
+        },
+        {
+          "slug": "why-is-u-a-state-variable-but-q-and-w-aren-t",
+          "title": "Why is U a state variable but Q and W aren't?",
+          "tag": "WHY",
+          "summary": "Takes two paths between the same states on a PV diagram",
+          "sections": "N 11.4, 11.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vector-calculus/line-integrals/why-are-conservative-fields-path-independent"
+          ]
+        },
+        {
+          "slug": "why-is-work-the-area-under-a-pv-curve",
+          "title": "Why is work the area under a PV curve?",
+          "tag": "WHY",
+          "summary": "Slices the expansion into thin strips P dV",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-is-variable-force-work-the-area-under-fx"
+          ]
+        },
+        {
+          "slug": "sign-convention-trainer",
+          "title": "Sign-convention trainer",
+          "tag": "HOW",
+          "summary": "Labels Q and W as + or − in scenarios",
+          "sections": "N 11.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "heat-thermodynamics/first-law/why-is-work-the-area-under-a-pv-curve"
+          ]
+        },
+        {
+          "slug": "why-does-a-bicycle-pump-get-hot",
+          "title": "Why does a bicycle pump get hot?",
+          "tag": "APP",
+          "summary": "Compresses air fast (nearly adiabatic)",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/first-law/why-is-work-the-area-under-a-pv-curve"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "thermodynamic-processes",
+      "title": "Thermodynamic Processes",
+      "sections": "N 11.6–11.8",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-an-adiabatic-curve-steeper-than-an-isotherm",
+          "title": "Why is an adiabatic curve steeper than an isotherm?",
+          "tag": "WHY",
+          "summary": "Compares PV = const with PV^γ = const",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-do-exponents-add-when-you-multiply",
+            "heat-thermodynamics/temperature/ideal-gas-explorer-pv-rt",
+            "heat-thermodynamics/first-law/why-is-work-the-area-under-a-pv-curve"
+          ]
+        },
+        {
+          "slug": "why-is-cp-cv-r",
+          "title": "Why is Cₚ − Cᵥ = R?",
+          "tag": "WHY",
+          "summary": "Pays the extra work PΔV at constant pressure",
+          "sections": "N 11.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "heat-thermodynamics/heat-capacity-calorimetry/why-do-gases-have-two-specific-heats"
+          ]
+        },
+        {
+          "slug": "why-does-quasi-static-matter",
+          "title": "Why does 'quasi-static' matter?",
+          "tag": "WHY",
+          "summary": "Pushes a piston fast and slow and compares the states in between",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/friction/why-is-static-friction-self-adjusting"
+          ]
+        },
+        {
+          "slug": "pv-process-builder",
+          "title": "PV process builder",
+          "tag": "HOW",
+          "summary": "Draws isobaric, isochoric, isothermal, adiabatic and cyclic processes",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "heat-thermodynamics/thermodynamic-processes/why-is-an-adiabatic-curve-steeper-than-an-isotherm",
+            "heat-thermodynamics/temperature/ideal-gas-explorer-pv-rt"
+          ]
+        },
+        {
+          "slug": "work-in-each-process",
+          "title": "Work in each process",
+          "tag": "HOW",
+          "summary": "Computes the area for each path",
+          "sections": "N 11.8",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "exponentials-logs/e-ln-as-areas/why-is-ln-c-an-area",
+            "heat-thermodynamics/thermodynamic-processes/why-is-cp-cv-r"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "second-law-engines",
+      "title": "Second Law & Engines",
+      "sections": "N 11.9–11.11",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-can-t-an-engine-turn-all-its-heat-into-work",
+          "title": "Why can't an engine turn all its heat into work?",
+          "tag": "WHY",
+          "summary": "Tries to build a one-reservoir engine (Kelvin–Planck)",
+          "sections": "N 11.9",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "heat-thermodynamics/first-law/why-are-heat-and-work-both-energy-in-transit"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-heat-flow-from-cold-to-hot-on-its-own",
+          "title": "Why doesn't heat flow from cold to hot on its own?",
+          "tag": "WHY",
+          "summary": "Sees why a fridge needs work (Clausius)",
+          "sections": "N 11.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "heat-thermodynamics/heat-transfer/why-is-h-kat-l",
+            "heat-thermodynamics/heat-capacity-calorimetry/why-is-heat-lost-equal-to-heat-gained"
+          ]
+        },
+        {
+          "slug": "why-are-reversible-engines-the-best",
+          "title": "Why are reversible engines the best?",
+          "tag": "WHY",
+          "summary": "Couples an engine with a reversed Carnot engine and gets a contradiction",
+          "sections": "N 11.11",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "rotation-gravitation/moment-of-inertia/why-do-engines-carry-flywheels"
+          ]
+        },
+        {
+          "slug": "why-is-carnot-efficiency-1-t2-t1-whatever-the-gas",
+          "title": "Why is Carnot efficiency 1 − T₂/T₁, whatever the gas?",
+          "tag": "WHY",
+          "summary": "Runs the Carnot cycle on the PV diagram and changes the working substance (spec below)",
+          "sections": "N 11.11",
+          "extension": false,
+          "order": 4,
+          "spec": "Cycle: two isotherms and two adiabats drawn on a PV diagram, with the enclosed area as the work. Ledger: Q₁ in at T₁, Q₂ out at T₂, and Q₂/Q₁ = T₂/T₁ shown numerically. Swap gas: monatomic or diatomic, and the efficiency is unchanged. Limit: raise T₁ or lower T₂; efficiency reaches 1 only at T₂ = 0 K.",
+          "aids": [
+            "heat-thermodynamics/temperature/ideal-gas-explorer-pv-rt"
+          ]
+        },
+        {
+          "slug": "why-are-real-processes-irreversible",
+          "title": "Why are real processes irreversible?",
+          "tag": "WHY",
+          "summary": "Adds friction and finite temperature gaps and watches the efficiency drop",
+          "sections": "N 11.10",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "carnot-cycle-animator",
+          "title": "Carnot-cycle animator",
+          "tag": "HOW",
+          "summary": "Steps through two isotherms and two adiabats",
+          "sections": "N 11.11",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/thermodynamic-processes/pv-process-builder",
+            "heat-thermodynamics/second-law-engines/why-is-carnot-efficiency-1-t2-t1-whatever-the-gas"
+          ]
+        },
+        {
+          "slug": "car-engine-versus-power-station",
+          "title": "Car engine versus power station",
+          "tag": "APP",
+          "summary": "Compares real efficiencies with the Carnot limit",
+          "sections": "N 11.11",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "heat-thermodynamics/second-law-engines/why-are-reversible-engines-the-best"
+          ]
+        },
+        {
+          "slug": "how-good-is-a-refrigerator",
+          "title": "How good is a refrigerator?",
+          "tag": "APP",
+          "summary": "Computes the coefficient of performance",
+          "sections": "N 11.9",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "heat-thermodynamics/second-law-engines/why-is-carnot-efficiency-1-t2-t1-whatever-the-gas"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kinetic-theory-of-gases",
+      "title": "Kinetic Theory of Gases",
+      "sections": "N 12.1–12.4",
+      "order": 9,
+      "children": [
+        {
+          "slug": "the-atomic-hypothesis-from-kanada-to-feynman",
+          "title": "The atomic hypothesis, from Kaṇāda to Feynman",
+          "tag": "WHY",
+          "summary": "Reads why 'all things are made of atoms' is the one sentence worth saving",
+          "sections": "N 12.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-molecular-collisions-make-pressure",
+          "title": "Why do molecular collisions make pressure?",
+          "tag": "WHY",
+          "summary": "Bounces molecules off a wall and builds P = ⅓nm⟨v²⟩ (spec below)",
+          "sections": "N 12.4",
+          "extension": false,
+          "order": 2,
+          "spec": "One molecule: bounces between walls; momentum 2mvₓ per hit, every 2L/vₓ seconds. Many: N molecules with random velocities, with the average of vₓ² shown as ⅓⟨v²⟩. Result: P = ⅓nm⟨v²⟩, compared live with the simulated wall force. Temperature: heat the box, ⟨v²⟩ grows and P grows, linking to PV = NkT.",
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-is-momentum-conserved"
+          ]
+        },
+        {
+          "slug": "why-is-temperature-average-kinetic-energy",
+          "title": "Why is temperature average kinetic energy?",
+          "tag": "WHY",
+          "summary": "Matches ½m⟨v²⟩ with (3/2)kT",
+          "sections": "N 12.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "infinite-series/taylor-series/e-mc2-plus-kinetic-energy"
+          ]
+        },
+        {
+          "slug": "why-do-heavier-molecules-move-slower-at-the-same-temperature",
+          "title": "Why do heavier molecules move slower at the same temperature?",
+          "tag": "WHY",
+          "summary": "Mixes H₂ and O₂ and compares speeds",
+          "sections": "N 12.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "rotation-gravitation/satellites/why-do-higher-satellites-move-slower"
+          ]
+        },
+        {
+          "slug": "why-do-real-gases-deviate-at-high-pressure-and-low-temperatu",
+          "title": "Why do real gases deviate at high pressure and low temperature?",
+          "tag": "WHY",
+          "summary": "Squeezes molecules until their size and attraction matter",
+          "sections": "N 12.3",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "gas-in-a-box-simulator",
+          "title": "Gas-in-a-box simulator",
+          "tag": "HOW",
+          "summary": "Changes N, T and V to check Boyle's and Charles's laws",
+          "sections": "N 12.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "heat-thermodynamics/kinetic-theory-of-gases/why-is-temperature-average-kinetic-energy",
+            "heat-thermodynamics/temperature/ideal-gas-explorer-pv-rt"
+          ]
+        },
+        {
+          "slug": "how-fast-do-air-molecules-move",
+          "title": "How fast do air molecules move?",
+          "tag": "APP",
+          "summary": "Computes rms speeds of about 500 m/s",
+          "sections": "N 12.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "heat-thermodynamics/kinetic-theory-of-gases/why-do-heavier-molecules-move-slower-at-the-same-temperature"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "equipartition-specific-heats",
+      "title": "Equipartition & Specific Heats",
+      "sections": "N 12.5–12.6",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-does-each-degree-of-freedom-get-12kt",
+          "title": "Why does each degree of freedom get ½kT?",
+          "tag": "WHY",
+          "summary": "Shares energy among translation, rotation and vibration",
+          "sections": "N 12.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-cv-3-2-r-for-helium-but-5-2-r-for-nitrogen",
+          "title": "Why is Cᵥ = (3/2)R for helium but (5/2)R for nitrogen?",
+          "tag": "WHY",
+          "summary": "Counts the degrees of freedom and checks against Table 10.4 values",
+          "sections": "N 12.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "heat-thermodynamics/heat-capacity-calorimetry/why-do-gases-have-two-specific-heats"
+          ]
+        },
+        {
+          "slug": "why-do-solids-have-c-3r",
+          "title": "Why do solids have C ≈ 3R?",
+          "tag": "WHY",
+          "summary": "Counts each atom as a 3D oscillator (Dulong–Petit)",
+          "sections": "N 12.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "properties-of-matter/elastic-moduli/why-do-only-solids-have-young-s-and-shear-moduli"
+          ]
+        },
+        {
+          "slug": "why-don-t-vibrations-count-at-room-temperature",
+          "title": "Why don't vibrations count at room temperature?",
+          "tag": "WHY",
+          "summary": "Sees measured specific heats fall short of equipartition",
+          "sections": "N 12.6",
+          "extension": true,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "degrees-of-freedom",
+          "title": "Degrees of freedom → γ",
+          "tag": "HOW",
+          "summary": "Computes γ = Cₚ/Cᵥ",
+          "sections": "N 12.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "heat-thermodynamics/equipartition-specific-heats/why-is-cv-3-2-r-for-helium-but-5-2-r-for-nitrogen",
+            "heat-thermodynamics/thermodynamic-processes/why-is-cp-cv-r"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mean-free-path",
+      "title": "Mean Free Path",
+      "sections": "N 12.7",
+      "order": 11,
+      "children": [
+        {
+          "slug": "why-does-a-smell-take-time-to-cross-a-room",
+          "title": "Why does a smell take time to cross a room?",
+          "tag": "WHY",
+          "summary": "Follows one molecule zig-zagging through constant collisions",
+          "sections": "N 12.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-mean-free-path-1-nd2",
+          "title": "Why is the mean free path ∝ 1/(nd²)?",
+          "tag": "WHY",
+          "summary": "Sweeps a collision cylinder through the gas",
+          "sections": "N 12.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "mean-free-path-in-air",
+          "title": "Mean free path in air",
+          "tag": "APP",
+          "summary": "Finds about 0.3 µm, roughly 1500 molecular diameters",
+          "sections": "N 12.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "heat-thermodynamics/mean-free-path/why-is-the-mean-free-path-1-nd2"
+          ]
+        },
+        {
+          "slug": "brownian-random-walk",
+          "title": "Brownian random walk",
+          "tag": "APP",
+          "summary": "Watches a dust grain jitter",
+          "sections": "N 12.2",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "heat-thermodynamics/mean-free-path/why-is-the-mean-free-path-1-nd2",
+            "derivatives/differentiation-rules/rule-drill",
+            "properties-of-matter/surface-tension/insects-that-walk-on-water"
+          ]
+        }
+      ]
+    }
+  ]
+}

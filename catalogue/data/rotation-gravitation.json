@@ -1,0 +1,838 @@
+{
+  "slug": "rotation-gravitation",
+  "title": "Rotation & Gravitation",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 22,
+  "children": [
+    {
+      "slug": "centre-of-mass",
+      "title": "Centre of Mass",
+      "sections": "N 6.1–6.4",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-the-centre-of-mass-a-mass-weighted-average",
+          "title": "Why is the centre of mass a mass-weighted average?",
+          "tag": "WHY",
+          "summary": "Balances unequal masses on a seesaw",
+          "sections": "N 6.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/linear-equations-formulas/why-does-a-mixture-land-between-its-ingredients",
+            "integral-applications/physics-engineering/why-is-the-centre-of-mass-a-weighted-average"
+          ]
+        },
+        {
+          "slug": "why-does-an-exploding-shell-s-centre-of-mass-keep-its-parabo",
+          "title": "Why does an exploding shell's centre of mass keep its parabola?",
+          "tag": "WHY",
+          "summary": "Blows a projectile apart mid-flight; the fragments' CM carries on unaffected",
+          "sections": "N 6.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/projectiles/why-is-a-projectile-s-path-a-parabola"
+          ]
+        },
+        {
+          "slug": "why-can-t-internal-forces-move-the-centre-of-mass",
+          "title": "Why can't internal forces move the centre of mass?",
+          "tag": "WHY",
+          "summary": "Runs a child about on a trolley; the CM speed stays V",
+          "sections": "N 6.3, Ex 6.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/third-law-momentum-conservation/why-don-t-action-and-reaction-cancel"
+          ]
+        },
+        {
+          "slug": "why-can-a-ring-s-centre-of-mass-be-in-empty-space",
+          "title": "Why can a ring's centre of mass be in empty space?",
+          "tag": "WHY",
+          "summary": "Uses symmetry to place the CM of rods, rings and discs",
+          "sections": "N 6.2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "centre-of-mass-calculator",
+          "title": "Centre of mass calculator",
+          "tag": "HOW",
+          "summary": "Finds the CM of particles, an L-shape and a triangle (medians meet at the centroid)",
+          "sections": "Ex 6.1–6.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/centre-of-mass/why-can-t-internal-forces-move-the-centre-of-mass",
+            "multivariable/mass-moments-surface-area/centre-of-mass-of-a-plate"
+          ]
+        },
+        {
+          "slug": "binary-stars",
+          "title": "Binary stars",
+          "tag": "APP",
+          "summary": "Sees tangled paths become simple circles in the CM frame",
+          "sections": "N 6.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "rotation-gravitation/centre-of-mass/why-can-t-internal-forces-move-the-centre-of-mass"
+          ]
+        },
+        {
+          "slug": "radioactive-decay-back-to-back",
+          "title": "Radioactive decay: back to back",
+          "tag": "APP",
+          "summary": "Sees the products fly apart with the CM at rest",
+          "sections": "N 6.4",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "rotation-gravitation/centre-of-mass/why-does-an-exploding-shell-s-centre-of-mass-keep-its-parabo"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rotation-kinematics",
+      "title": "Rotation Kinematics",
+      "sections": "N 6.1, 6.6, 6.10",
+      "order": 2,
+      "children": [
+        {
+          "slug": "in-rolling-why-does-every-point-have-a-different-velocity",
+          "title": "In rolling, why does every point have a different velocity?",
+          "tag": "WHY",
+          "summary": "Rolls a wheel: the top moves at 2v and the contact point is momentarily at rest",
+          "sections": "N 6.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "conics-curves/parametric-curves/why-does-a-rolling-wheel-trace-a-cycloid"
+          ]
+        },
+        {
+          "slug": "why-do-all-points-share-but-not-v",
+          "title": "Why do all points share ω but not v?",
+          "tag": "WHY",
+          "summary": "Spins a disc and compares v = ω × r at different radii",
+          "sections": "N 6.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "measurement-motion/circular-motion/why-is-v-r",
+            "differential-equations/population-models/why-is-p-k-stable-but-p-0-not"
+          ]
+        },
+        {
+          "slug": "why-is-angular-velocity-a-vector-along-the-axis",
+          "title": "Why is angular velocity a vector along the axis?",
+          "tag": "WHY",
+          "summary": "Curls the right hand with the rotation",
+          "sections": "N 6.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both"
+          ]
+        },
+        {
+          "slug": "why-do-rotation-equations-mirror-the-equations-of-motion",
+          "title": "Why do rotation equations mirror the equations of motion?",
+          "tag": "WHY",
+          "summary": "Swaps x, v, a for θ, ω, α side by side",
+          "sections": "N 6.10",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "measurement-motion/uniform-acceleration/why-do-the-three-equations-of-motion-come-from-one-picture",
+            "measurement-motion/circular-motion/why-don-t-the-equations-of-motion-work-in-circles"
+          ]
+        },
+        {
+          "slug": "rotational-kinematics-solver",
+          "title": "Rotational kinematics solver",
+          "tag": "HOW",
+          "summary": "Spins a motor from 1200 to 3120 rpm in 16 s: α = 4π rad/s², 576 revolutions",
+          "sections": "Ex 6.11",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/rotation-kinematics/why-do-all-points-share-but-not-v"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "torque-equilibrium",
+      "title": "Torque & Equilibrium",
+      "sections": "N 6.5, 6.7.1, 6.8",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-the-door-handle-far-from-the-hinge",
+          "title": "Why is the door handle far from the hinge?",
+          "tag": "WHY",
+          "summary": "Pushes at different distances and angles: τ = rF sin θ",
+          "sections": "N 6.7.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "vectors-3d/cross-product/why-does-a-longer-spanner-help-torque"
+          ]
+        },
+        {
+          "slug": "why-is-a-x-b-perpendicular-and-why-does-it-flip-with-order",
+          "title": "Why is a × b perpendicular, and why does it flip with order?",
+          "tag": "WHY",
+          "summary": "Applies the right-hand rule both ways (see Vectors & 3D Space → Cross Product)",
+          "sections": "N 6.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "vectors-3d/cross-product/why-is-a-x-b-b-x-a",
+            "vectors-3d/cross-product"
+          ]
+        },
+        {
+          "slug": "why-does-a-couple-turn-without-moving-anything",
+          "title": "Why does a couple turn without moving anything?",
+          "tag": "WHY",
+          "summary": "Applies equal and opposite forces off-line; the torque is the same about any origin",
+          "sections": "N 6.8, Ex 6.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-lever-trade-distance-for-force",
+          "title": "Why does a lever trade distance for force?",
+          "tag": "WHY",
+          "summary": "Balances a seesaw using load × load arm = effort × effort arm",
+          "sections": "N 6.8.1",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-cg-cm-only-in-uniform-gravity",
+          "title": "Why is CG = CM only in uniform gravity?",
+          "tag": "WHY",
+          "summary": "Hangs a card from three points and plumbs the lines to the CG",
+          "sections": "N 6.8.2",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "beam-on-two-knife-edges",
+          "title": "Beam on two knife edges",
+          "tag": "HOW",
+          "summary": "Finds the reactions (55 N and 43 N) from force and torque balance",
+          "sections": "Ex 6.8",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "systems-matrices/linear-systems/substitution-versus-elimination",
+            "rotation-gravitation/torque-equilibrium/why-does-a-couple-turn-without-moving-anything"
+          ]
+        },
+        {
+          "slug": "ladder-against-a-smooth-wall",
+          "title": "Ladder against a smooth wall",
+          "tag": "APP",
+          "summary": "Solves for all the reactions on a 3 m, 20 kg ladder",
+          "sections": "Ex 6.9",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "rotation-gravitation/torque-equilibrium/why-is-the-door-handle-far-from-the-hinge"
+          ]
+        },
+        {
+          "slug": "metre-stick-and-coins",
+          "title": "Metre stick and coins",
+          "tag": "APP",
+          "summary": "Finds the stick's mass from its new balance point",
+          "sections": "Ex 6.16",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "rotation-gravitation/torque-equilibrium/why-is-the-door-handle-far-from-the-hinge"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "moment-of-inertia",
+      "title": "Moment of Inertia",
+      "sections": "N 6.9",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-rotational-ke-need-mr2",
+          "title": "Why does rotational KE need Σmr²?",
+          "tag": "WHY",
+          "summary": "Moves a mass outward and watches I grow as r²",
+          "sections": "N 6.9",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-do-exponents-add-when-you-multiply"
+          ]
+        },
+        {
+          "slug": "why-is-a-ring-harder-to-spin-than-a-disc-of-equal-mass",
+          "title": "Why is a ring harder to spin than a disc of equal mass?",
+          "tag": "WHY",
+          "summary": "Spins both with the same torque",
+          "sections": "N 6.9, Table 6.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "forces-energy/collisions/why-do-equal-mass-glancing-collisions-split-at-90"
+          ]
+        },
+        {
+          "slug": "radius-of-gyration",
+          "title": "Radius of gyration",
+          "tag": "WHY",
+          "summary": "Finds the single ring with the same I",
+          "sections": "N 6.9",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "moment-of-inertia-table-explorer",
+          "title": "Moment-of-inertia table explorer",
+          "tag": "HOW",
+          "summary": "Picks a body and axis (Table 6.1)",
+          "sections": "Table 6.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "rotation-gravitation/moment-of-inertia/why-is-a-ring-harder-to-spin-than-a-disc-of-equal-mass",
+            "forces-energy/inertia-the-first-law/vega-inertia-in-ancient-indian-thought"
+          ]
+        },
+        {
+          "slug": "why-do-engines-carry-flywheels",
+          "title": "Why do engines carry flywheels?",
+          "tag": "APP",
+          "summary": "Smooths out jerky torque with a large I",
+          "sections": "N 6.9",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/moment-of-inertia/why-is-a-ring-harder-to-spin-than-a-disc-of-equal-mass"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rotational-dynamics",
+      "title": "Rotational Dynamics",
+      "sections": "N 6.11",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-i-newton-s-second-law-for-spinning",
+          "title": "Why is τ = Iα Newton's second law for spinning?",
+          "tag": "WHY",
+          "summary": "Equates work done τ dθ with the gain in ½Iω²",
+          "sections": "N 6.11",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "forces-energy/work-kinetic-energy/why-is-the-workenergy-theorem-v2-u2-2as-in-disguise",
+            "forces-energy/second-law-momentum/why-does-the-second-law-act-here-and-now"
+          ]
+        },
+        {
+          "slug": "why-are-work-dtheta-and-power",
+          "title": "Why are work = τ dθ and power = τω?",
+          "tag": "WHY",
+          "summary": "Follows one particle on a rotating body",
+          "sections": "N 6.11",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "forces-energy/power/why-is-p-f-v"
+          ]
+        },
+        {
+          "slug": "linear-rotational-analogy",
+          "title": "Linear ↔ rotational analogy",
+          "tag": "HOW",
+          "summary": "Matches the pairs in Table 6.2",
+          "sections": "Table 6.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "rotation-gravitation/rotational-dynamics/why-is-i-newton-s-second-law-for-spinning",
+            "rotation-gravitation/moment-of-inertia/why-does-rotational-ke-need-mr2",
+            "rotation-gravitation/rotation-kinematics/rotational-kinematics-solver"
+          ]
+        },
+        {
+          "slug": "flywheel-and-cord",
+          "title": "Flywheel and cord",
+          "tag": "APP",
+          "summary": "Unwinds 2 m with 25 N: 50 J of work becomes 50 J of KE",
+          "sections": "Ex 6.12",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "rotation-gravitation/rotational-dynamics/why-are-work-dtheta-and-power"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "angular-momentum",
+      "title": "Angular Momentum",
+      "sections": "N 6.7.2, 6.12",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-a-skater-spin-faster-with-arms-pulled-in",
+          "title": "Why does a skater spin faster with arms pulled in?",
+          "tag": "WHY",
+          "summary": "Shrinks I and watches ω rise to keep Iω constant (spec below)",
+          "sections": "N 6.12.1",
+          "extension": false,
+          "order": 1,
+          "spec": "Spinner: a body with movable arm masses rotating freely. Pull in: I = Σmr² drops, and ω rises to keep L = Iω fixed. Energy: ½Iω² increases, and the internal work done by the arms is shown. Apps: diver tuck, pirouette, collapsing star.",
+          "aids": [
+            "multivariable/mass-moments-surface-area/why-does-a-skater-spin-faster-with-arms-in"
+          ]
+        },
+        {
+          "slug": "why-does-a-particle-moving-straight-have-constant-l",
+          "title": "Why does a particle moving straight have constant L?",
+          "tag": "WHY",
+          "summary": "Sees the perpendicular distance to the line stay fixed",
+          "sections": "Ex 6.6",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-a-spinning-bicycle-wheel-precess",
+          "title": "Why does a spinning bicycle wheel precess?",
+          "tag": "WHY",
+          "summary": "Hangs it from one string and sees the torque turn L sideways",
+          "sections": "N 6.7.2 box",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both"
+          ]
+        },
+        {
+          "slug": "where-does-the-skater-s-extra-ke-come-from",
+          "title": "Where does the skater's extra KE come from?",
+          "tag": "WHY",
+          "summary": "Sees the internal work done pulling the arms in",
+          "sections": "Ex 6.12",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "divers-acrobats-and-pirouettes",
+          "title": "Divers, acrobats and pirouettes",
+          "tag": "APP",
+          "summary": "Tucks and spreads mid-air",
+          "sections": "N 6.12.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/angular-momentum/why-does-a-spinning-bicycle-wheel-precess"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kepler-s-laws",
+      "title": "Kepler's Laws",
+      "sections": "N 7.1–7.2",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-are-orbits-ellipses",
+          "title": "Why are orbits ellipses?",
+          "tag": "WHY",
+          "summary": "Draws an orbit with pins and string, Sun at one focus",
+          "sections": "N 7.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "conics-curves/ellipse/why-do-pins-and-string-draw-an-ellipse",
+            "conics-curves/polar-conics/kepler-orbits"
+          ]
+        },
+        {
+          "slug": "why-equal-areas-in-equal-times",
+          "title": "Why equal areas in equal times?",
+          "tag": "WHY",
+          "summary": "Sweeps areas and sees that it is angular-momentum conservation for any central force",
+          "sections": "N 7.2, PtP 2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "rotation-gravitation/angular-momentum/why-does-a-skater-spin-faster-with-arms-pulled-in",
+            "vectors-3d/space-curves-motion/kepler-s-laws-from-newton"
+          ]
+        },
+        {
+          "slug": "why-is-t2-r3",
+          "title": "Why is T² ∝ R³?",
+          "tag": "WHY",
+          "summary": "Equates v²/R with GM/R² for circular orbits",
+          "sections": "N 7.2, 7.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-do-exponents-add-when-you-multiply"
+          ]
+        },
+        {
+          "slug": "kepler-s-third-law-calculator",
+          "title": "Kepler's third-law calculator",
+          "tag": "HOW",
+          "summary": "Gets a Martian year of 684 days from 1.52 AU",
+          "sections": "Ex 7.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "numbers-algebra/exponents-roots/why-is-a-1-2-roota",
+            "rotation-gravitation/kepler-s-laws/why-is-t2-r3",
+            "forces-energy/work-kinetic-energy/why-don-t-third-law-pairs-do-equal-and-opposite-work"
+          ]
+        },
+        {
+          "slug": "from-ptolemy-to-kepler",
+          "title": "From Ptolemy to Kepler",
+          "tag": "APP",
+          "summary": "Follows the timeline: epicycles, Copernicus, Tycho's data, Kepler's laws",
+          "sections": "N 7.1",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/kepler-s-laws/why-is-t2-r3",
+            "vectors-3d/space-curves-motion/kepler-s-laws-from-newton"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "universal-gravitation",
+      "title": "Universal Gravitation",
+      "sections": "N 7.3–7.4",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-does-the-moon-fall-but-never-land",
+          "title": "Why does the Moon fall but never land?",
+          "tag": "WHY",
+          "summary": "Compares the apple's fall with the Moon's: a_moon = g(R_E/R_moon)² (spec below)",
+          "sections": "N 7.3",
+          "extension": false,
+          "order": 1,
+          "spec": "Cannon: Newton's mountain cannon fired faster until the ball falls around the Earth. Compare: the apple's fall in 1 s (4.9 m) against the Moon's fall toward Earth in 1 s (about 1.4 mm). Ratio: 4.9 m ÷ 1.4 mm ≈ 60², since the Moon is about 60 Earth radii away, giving the inverse-square law. Same law: gravity as the centripetal force for the Moon.",
+          "aids": [
+            "numbers-algebra/variation/why-is-light-inverse-square"
+          ]
+        },
+        {
+          "slug": "why-does-a-shell-pull-as-if-all-its-mass-were-at-the-centre",
+          "title": "Why does a shell pull as if all its mass were at the centre, but not at all inside?",
+          "tag": "WHY",
+          "summary": "Sums the pulls of the shell's rings",
+          "sections": "N 7.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "rotation-gravitation/rotation-kinematics/why-do-all-points-share-but-not-v"
+          ]
+        },
+        {
+          "slug": "why-can-t-gravity-be-shielded",
+          "title": "Why can't gravity be shielded?",
+          "tag": "WHY",
+          "summary": "Puts a mass inside a shell; outside masses still pull on it",
+          "sections": "PtP 9, Ex 7.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "superposition-of-gravitational-forces",
+          "title": "Superposition of gravitational forces",
+          "tag": "WHY",
+          "summary": "Places three equal masses: the pull at the centroid is zero by symmetry",
+          "sections": "N 7.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/vectors/why-tip-to-tail"
+          ]
+        },
+        {
+          "slug": "cavendish-s-torsion-balance",
+          "title": "Cavendish's torsion balance",
+          "tag": "HOW",
+          "summary": "Twists a wire to measure G",
+          "sections": "N 7.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/universal-gravitation/why-does-the-moon-fall-but-never-land"
+          ]
+        },
+        {
+          "slug": "weighing-the-earth",
+          "title": "Weighing the Earth",
+          "tag": "APP",
+          "summary": "Gets M = gR²/G ≈ 6 × 10²⁴ kg, and again from the Moon's orbit",
+          "sections": "Ex 7.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "rotation-gravitation/universal-gravitation/why-does-the-moon-fall-but-never-land"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "g-above-below-the-surface",
+      "title": "g Above & Below the Surface",
+      "sections": "N 7.5–7.6",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-does-g-fall-linearly-inside-the-earth-but-as-1-r2-outsid",
+          "title": "Why does g fall linearly inside the Earth but as 1/r² outside?",
+          "tag": "WHY",
+          "summary": "Drags a test mass from the centre to space",
+          "sections": "N 7.5–7.6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "rotation-gravitation/universal-gravitation/why-does-a-shell-pull-as-if-all-its-mass-were-at-the-centre"
+          ]
+        },
+        {
+          "slug": "why-is-g-h-g-1-2h-r-for-small-h",
+          "title": "Why is g(h) ≈ g(1 − 2h/R) for small h?",
+          "tag": "WHY",
+          "summary": "Uses the binomial approximation and checks it numerically",
+          "sections": "N 7.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess",
+            "sequences-probability/binomial-theorem/find-a-specific-term"
+          ]
+        },
+        {
+          "slug": "why-is-g-zero-at-the-centre",
+          "title": "Why is g zero at the centre?",
+          "tag": "WHY",
+          "summary": "Sees the pulls cancel from every side",
+          "sections": "N 7.6",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "weight-halfway-down",
+          "title": "Weight halfway down",
+          "tag": "APP",
+          "summary": "250 N at the surface becomes 125 N halfway to the centre",
+          "sections": "Ex 7.16",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "rotation-gravitation/g-above-below-the-surface/why-is-g-zero-at-the-centre",
+            "functions-graphs/coordinate-plane/why-is-the-midpoint-an-average"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gravitational-energy-escape",
+      "title": "Gravitational Energy & Escape",
+      "sections": "N 7.7–7.8",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-is-gravitational-pe-negative",
+          "title": "Why is gravitational PE negative?",
+          "tag": "WHY",
+          "summary": "Puts the zero at infinity and pulls a mass in",
+          "sections": "N 7.7, PtP 5–6",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "forces-energy/potential-energy-conservation/why-is-the-zero-of-potential-energy-arbitrary",
+            "forces-energy/potential-energy-conservation/why-is-a-spring-s-pe-12kx2"
+          ]
+        },
+        {
+          "slug": "why-is-mgh-only-an-approximation",
+          "title": "Why is mgh only an approximation?",
+          "tag": "WHY",
+          "summary": "Zooms −GMm/r near the surface until it looks like a straight line",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess",
+            "rotation-gravitation/g-above-below-the-surface/why-is-g-h-g-1-2h-r-for-small-h"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-escape-speed-depend-on-direction-or-mass",
+          "title": "Why doesn't escape speed depend on direction or mass?",
+          "tag": "WHY",
+          "summary": "Launches at several angles: √(2gR) ≈ 11.2 km/s every time",
+          "sections": "N 7.8",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integrals/improper-integrals/why-does-integral1-x2-converge-but-integral1-x-not"
+          ]
+        },
+        {
+          "slug": "why-has-the-moon-no-atmosphere",
+          "title": "Why has the Moon no atmosphere?",
+          "tag": "WHY",
+          "summary": "Compares 2.3 km/s escape speed with gas molecule speeds",
+          "sections": "N 7.8",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "potential-energy-of-a-group-of-masses",
+          "title": "Potential energy of a group of masses",
+          "tag": "HOW",
+          "summary": "Adds pair energies: a square of four masses gives −5.41 Gm²/l",
+          "sections": "Ex 7.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/gravitational-energy-escape/why-is-mgh-only-an-approximation",
+            "forces-energy/potential-energy-conservation/why-is-the-zero-of-potential-energy-arbitrary",
+            "forces-energy/potential-energy-conservation/why-do-only-some-forces-have-a-potential-energy"
+          ]
+        },
+        {
+          "slug": "neutral-point-between-two-spheres",
+          "title": "Neutral point between two spheres",
+          "tag": "APP",
+          "summary": "Finds the minimum launch speed to reach the bigger sphere",
+          "sections": "Ex 7.4",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "rotation-gravitation/gravitational-energy-escape/why-doesn-t-escape-speed-depend-on-direction-or-mass"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "satellites",
+      "title": "Satellites",
+      "sections": "N 7.9–7.10",
+      "order": 11,
+      "children": [
+        {
+          "slug": "why-do-higher-satellites-move-slower",
+          "title": "Why do higher satellites move slower?",
+          "tag": "WHY",
+          "summary": "Raises the orbit: v = √(GM/r)",
+          "sections": "N 7.9",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-an-orbiting-satellite-s-energy-negative",
+          "title": "Why is an orbiting satellite's energy negative?",
+          "tag": "WHY",
+          "summary": "Plots K, U and E against radius: K = −½U",
+          "sections": "N 7.10",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-astronauts-float",
+          "title": "Why do astronauts float?",
+          "tag": "WHY",
+          "summary": "Sees ship and astronaut free-falling together",
+          "sections": "PtP 4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "forces-energy/inertia-the-first-law/an-astronaut-steps-off-an-accelerating-ship"
+          ]
+        },
+        {
+          "slug": "why-does-air-drag-speed-a-satellite-up",
+          "title": "Why does air drag speed a satellite up?",
+          "tag": "WHY",
+          "summary": "Loses energy, drops lower and moves faster",
+          "sections": "Ex 5.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "orbital-period-calculator",
+          "title": "Orbital period calculator",
+          "tag": "HOW",
+          "summary": "Finds a near-Earth orbit takes about 85 minutes",
+          "sections": "N 7.9",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "rotation-gravitation/satellites/why-do-higher-satellites-move-slower"
+          ]
+        },
+        {
+          "slug": "geostationary-orbit",
+          "title": "Geostationary orbit",
+          "tag": "APP",
+          "summary": "Finds the height where T = 24 h (about 36,000 km)",
+          "sections": "—",
+          "extension": true,
+          "order": 6,
+          "aids": [
+            "rotation-gravitation/satellites/why-do-higher-satellites-move-slower"
+          ]
+        },
+        {
+          "slug": "the-moon-s-period-from-kepler-s-constant",
+          "title": "The Moon's period from Kepler's constant",
+          "tag": "APP",
+          "summary": "Gets 27.3 days",
+          "sections": "Ex 7.7",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "rotation-gravitation/satellites/why-is-an-orbiting-satellite-s-energy-negative",
+            "rotation-gravitation/kepler-s-laws/from-ptolemy-to-kepler"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "slug": "infinite-series",
+  "title": "Infinite Series",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "sequences-limits",
+      "title": "Sequences & Limits",
+      "sections": "St 11.1 · Ax 7.1, 7.3",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-must-a-bounded-increasing-sequence-converge",
+          "title": "Why must a bounded, increasing sequence converge?",
+          "tag": "WHY",
+          "summary": "Pushes a sequence up against a ceiling it can't pass",
+          "sections": "St 11.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "limit-of-a-sequence",
+          "title": "Limit of a sequence",
+          "tag": "HOW",
+          "summary": "Works with the definition and the squeeze theorem on sequences",
+          "sections": "St 11.1 · Ax 7.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "infinite-series/sequences-limits/why-must-a-bounded-increasing-sequence-converge",
+            "limits-continuity/limit-laws/why-does-the-squeeze-theorem-work"
+          ]
+        },
+        {
+          "slug": "logistic-sequences-from-order-to-chaos",
+          "title": "Logistic sequences: from order to chaos",
+          "tag": "APP",
+          "summary": "Raises r in xₙ₊₁ = r xₙ(1 − xₙ) and watches the period double into chaos",
+          "sections": "St 11.1 lab",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "infinite-series/sequences-limits/why-must-a-bounded-increasing-sequence-converge"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "series-convergence",
+      "title": "Series & Convergence",
+      "sections": "St 11.2 · Ax 7.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-the-harmonic-series-diverge",
+          "title": "Why does the harmonic series diverge?",
+          "tag": "WHY",
+          "summary": "Groups the terms into blocks each worth more than ½ (Oresme)",
+          "sections": "St 11.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-isn-t-terms-0-enough",
+          "title": "Why isn't 'terms → 0' enough?",
+          "tag": "WHY",
+          "summary": "Sees the harmonic series has terms → 0 and still diverges",
+          "sections": "St 11.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "differential-equations/series-solutions/series-solution-stepper"
+          ]
+        },
+        {
+          "slug": "why-do-telescoping-series-collapse",
+          "title": "Why do telescoping series collapse?",
+          "tag": "WHY",
+          "summary": "Cancels neighbouring terms",
+          "sections": "St 11.2",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "differential-equations/series-solutions/series-solution-stepper",
+            "differential-equations/population-models/sustainable-fishing"
+          ]
+        },
+        {
+          "slug": "decimals-are-infinite-series",
+          "title": "Decimals are infinite series",
+          "tag": "WHY",
+          "summary": "Writes 0.333… as 3/10 + 3/100 + …",
+          "sections": "Ax 7.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/why-can-t-we-sum-every-infinite-list"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "convergence-tests",
+      "title": "Convergence Tests",
+      "sections": "St 11.3–11.7 · Ax 7.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "integral-test-why-the-staircase-matches-the-curve",
+          "title": "Integral test: why the staircase matches the curve",
+          "tag": "WHY",
+          "summary": "Fits rectangles under and over 1/x²",
+          "sections": "St 11.3",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/net-change/indefinite-integral-table"
+          ]
+        },
+        {
+          "slug": "why-does-1-n2-pi2-6",
+          "title": "Why does Σ1/n² = π²/6?",
+          "tag": "WHY",
+          "summary": "Watches the partial sums approach 1.6449…; Euler's result, shown but not proved",
+          "sections": "St 11.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "comparison-tests",
+          "title": "Comparison tests",
+          "tag": "WHY",
+          "summary": "Traps a series under a convergent one or over a divergent one",
+          "sections": "St 11.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integrals/improper-integrals/comparison-for-integrals"
+          ]
+        },
+        {
+          "slug": "why-do-alternating-series-converge",
+          "title": "Why do alternating series converge?",
+          "tag": "WHY",
+          "summary": "Watches the partial sums zigzag inward; 1 − ½ + ⅓ − … = ln 2",
+          "sections": "St 11.5 · Ax 7.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/the-number-e/build-e-from-a-series",
+            "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2"
+          ]
+        },
+        {
+          "slug": "why-is-the-ratio-test-a-geometric-comparison",
+          "title": "Why is the ratio test a geometric comparison?",
+          "tag": "WHY",
+          "summary": "Sees the ratio r behave like a geometric series with ratio r",
+          "sections": "St 11.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/0-999-1-via-a-geometric-series",
+            "exponentials-logs/money-finance/monthly-savings-annuity"
+          ]
+        },
+        {
+          "slug": "why-does-rearranging-change-the-sum",
+          "title": "Why does rearranging change the sum?",
+          "tag": "WHY",
+          "summary": "Reorders 1 − ½ + ⅓ − … to hit any target (Riemann)",
+          "sections": "St 11.6",
+          "extension": true,
+          "order": 6,
+          "aids": [
+            "integrals/area-distance/riemann-sum-explorer"
+          ]
+        },
+        {
+          "slug": "how-close-is-a-partial-sum-error-bounds",
+          "title": "How close is a partial sum? Error bounds",
+          "tag": "WHY",
+          "summary": "Brackets the true sum: the next term bounds an alternating error, and integrals bound a positive tail",
+          "sections": "D2 4-13",
+          "extension": false,
+          "order": 7,
+          "aids": []
+        },
+        {
+          "slug": "test-strategy-picker",
+          "title": "Test-strategy picker",
+          "tag": "HOW",
+          "summary": "Chooses a test by the shape of the terms",
+          "sections": "St 11.7",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "infinite-series/convergence-tests/integral-test-why-the-staircase-matches-the-curve",
+            "integrals/partial-fractions-strategy/integration-strategy"
+          ]
+        },
+        {
+          "slug": "root-test",
+          "title": "Root test",
+          "tag": "HOW",
+          "summary": "Takes ⁿ√|aₙ|; it suits terms raised to the n-th power",
+          "sections": "D2 4-11",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "infinite-series/convergence-tests/integral-test-why-the-staircase-matches-the-curve"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power-series",
+      "title": "Power Series",
+      "sections": "St 11.8–11.9",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-does-a-power-series-converge-on-an-interval",
+          "title": "Why does a power series converge on an interval?",
+          "tag": "WHY",
+          "summary": "Slides x and watches convergence stop at the radius",
+          "sections": "St 11.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "exponentials-logs/the-number-e/build-e-from-a-series",
+            "infinite-series/convergence-tests/why-do-alternating-series-converge"
+          ]
+        },
+        {
+          "slug": "why-is-1-1-x-1-x-x2-only-for-x-1",
+          "title": "Why is 1/(1 − x) = 1 + x + x² + … only for |x| < 1?",
+          "tag": "WHY",
+          "summary": "Watches the partial sums fail outside the interval",
+          "sections": "St 11.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2"
+          ]
+        },
+        {
+          "slug": "differentiate-and-integrate-term-by-term",
+          "title": "Differentiate and integrate term by term",
+          "tag": "HOW",
+          "summary": "Gets ln(1 + x) and arctan x series",
+          "sections": "St 11.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "infinite-series/power-series/why-does-a-power-series-converge-on-an-interval",
+            "sequences-probability/random-variables-expectation/why-is-var-x-e-x2-e-x-2",
+            "differential-equations/series-solutions/why-can-power-series-solve-what-formulas-can-t"
+          ]
+        },
+        {
+          "slug": "pi-from-madhava-s-series",
+          "title": "π from Madhava's series",
+          "tag": "APP",
+          "summary": "Uses π/4 = 1 − ⅓ + ⅕ − … (Madhava of Sangamagrama, c. 1400) and a faster variant",
+          "sections": "St 11.9",
+          "extension": true,
+          "order": 4,
+          "aids": [
+            "infinite-series/power-series/why-does-a-power-series-converge-on-an-interval",
+            "differential-equations/series-solutions/series-solution-stepper",
+            "exponentials-logs/the-number-e/build-e-from-a-series"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "taylor-series",
+      "title": "Taylor Series",
+      "sections": "St 11.10–11.11 · Ax 7.3",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-matching-derivatives-rebuild-a-function",
+          "title": "Why does matching derivatives rebuild a function?",
+          "tag": "WHY",
+          "summary": "Adds Taylor terms one at a time and watches the curve hug further out (spec below)",
+          "sections": "St 11.10",
+          "extension": false,
+          "spec": "Stack: add T₀, T₁, T₂ … for eˣ, sin x and ln(1 + x); each new term matches one more derivative at the centre. Reach: a shaded band where the error is below 0.01 grows with degree. Limits: ln(1 + x) beyond x = 1 diverges whatever the degree; the radius of convergence is shown. Payoff: e^(iθ) built from the same series, rotating the result on the complex plane.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-e-itheta-cos-theta-i-sin-theta",
+          "title": "Why e^(iθ) = cos θ + i sin θ",
+          "tag": "WHY",
+          "summary": "Puts iθ into the eˣ series and splits the real and imaginary parts",
+          "sections": "St 11.10",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/trig-derivatives/why-is-cos-x-prime-sin-x",
+            "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b"
+          ]
+        },
+        {
+          "slug": "why-do-taylor-polynomials-fail-far-away",
+          "title": "Why do Taylor polynomials fail far away?",
+          "tag": "WHY",
+          "summary": "Watches ln(1 + x) break past x = 1",
+          "sections": "St 11.10",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/linear-approximation/taylor-polynomials-a-first-look"
+          ]
+        },
+        {
+          "slug": "1-1-1-1-2-e",
+          "title": "1 + 1/1! + 1/2! + … = e",
+          "tag": "WHY",
+          "summary": "Sums the series and finds e (see Exponentials & Logarithms → The Number e)",
+          "sections": "St 11.10 · Ax 7.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "exponentials-logs/the-number-e",
+            "derivative-applications/l-hopital-s-rule/why-does-1-1-n-n-e",
+            "sequences-probability/geometric-sequences-series/annuities-and-sips"
+          ]
+        },
+        {
+          "slug": "why-does-1-x-k-need-infinitely-many-terms-unless-k-is-whole",
+          "title": "Why does (1 + x)ᵏ need infinitely many terms unless k is whole?",
+          "tag": "WHY",
+          "summary": "Sees C(k, n) never hit 0 for fractional k, so the binomial series goes on forever",
+          "sections": "D2 4-18",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "taylor-builder-with-error-band",
+          "title": "Taylor builder with error band",
+          "tag": "HOW",
+          "summary": "Chooses the degree and centre and sees the error bound",
+          "sections": "St 11.11",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "infinite-series/taylor-series/why-do-taylor-polynomials-fail-far-away"
+          ]
+        },
+        {
+          "slug": "why-the-pendulum-formula-needs-sin-theta-theta",
+          "title": "Why the pendulum formula needs sin θ ≈ θ",
+          "tag": "APP",
+          "summary": "Compares the true and approximate periods as the amplitude grows",
+          "sections": "St 11.11",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "infinite-series/taylor-series/why-e-itheta-cos-theta-i-sin-theta",
+            "derivatives/linear-approximation/why-is-sin-x-x-for-small-x"
+          ]
+        },
+        {
+          "slug": "e-mc2-plus-kinetic-energy",
+          "title": "E = mc² plus kinetic energy",
+          "tag": "APP",
+          "summary": "Expands the relativistic energy for small v",
+          "sections": "St 11.11",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "infinite-series/taylor-series/why-e-itheta-cos-theta-i-sin-theta"
+          ]
+        },
+        {
+          "slug": "radiation-from-the-stars",
+          "title": "Radiation from the stars",
+          "tag": "APP",
+          "summary": "Sees Planck's law reduce to the classical law at long wavelengths",
+          "sections": "St 11.11 project",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "infinite-series/taylor-series/why-e-itheta-cos-theta-i-sin-theta"
+          ]
+        },
+        {
+          "slug": "how-newton-found-the-binomial-series",
+          "title": "How Newton found the binomial series",
+          "tag": "APP",
+          "summary": "Extends (1 + x)ⁿ to fractional n",
+          "sections": "St 11.10 project",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "infinite-series/taylor-series/why-does-1-x-k-need-infinitely-many-terms-unless-k-is-whole"
+          ]
+        },
+        {
+          "slug": "integrate-e-x2-with-a-series",
+          "title": "Integrate e^(−x²) with a series",
+          "tag": "APP",
+          "summary": "Integrates the series term by term to get a number no formula gives",
+          "sections": "D2 4-17",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "infinite-series/taylor-series/1-1-1-1-2-e",
+            "infinite-series/power-series/differentiate-and-integrate-term-by-term",
+            "sequences-probability/random-variables-expectation/why-is-var-x-e-x2-e-x-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 15
+}

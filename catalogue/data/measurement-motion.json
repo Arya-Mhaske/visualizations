@@ -1,0 +1,743 @@
+{
+  "slug": "measurement-motion",
+  "title": "Measurement & Motion",
+  "source": "NCERT Physics Class XI (2026-27 reprint)",
+  "order": 20,
+  "children": [
+    {
+      "slug": "units-measurement",
+      "title": "Units & Measurement",
+      "sections": "N 1.1–1.3",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-we-need-agreed-units-at-all",
+          "title": "Why do we need agreed units at all?",
+          "tag": "WHY",
+          "summary": "Measures a table in spans, cubits and feet and gets three different numbers. 'Large' or 'small' means nothing without a standard",
+          "sections": "N 1.1, Ex 1.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-si-units-now-defined-by-constants-of-nature",
+          "title": "Why are SI units now defined by constants of nature?",
+          "tag": "WHY",
+          "summary": "Watches an artefact kilogram drift while c, h and the caesium frequency stay fixed. The metre is defined through c",
+          "sections": "N 1.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-only-seven-base-units",
+          "title": "Why only seven base units?",
+          "tag": "WHY",
+          "summary": "Builds newtons, joules and watts from kg, m and s in a derived-unit builder",
+          "sections": "N 1.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-radian-dimensionless-and-what-is-a-steradian",
+          "title": "Why is a radian dimensionless, and what is a steradian?",
+          "tag": "WHY",
+          "summary": "Sees arc ÷ radius and area ÷ r² cancel their units",
+          "sections": "N 1.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/angles-arcs/why-radians-are-the-natural-unit"
+          ]
+        },
+        {
+          "slug": "why-do-we-bother-with-significant-figures",
+          "title": "Why do we bother with significant figures?",
+          "tag": "WHY",
+          "summary": "Writes 2.308 cm as 0.02308 m and 23.08 mm: the number of reliable digits stays at four whatever the unit",
+          "sections": "N 1.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "numbers-algebra/exponents-roots/scientific-notation-zoom"
+          ]
+        },
+        {
+          "slug": "why-do-products-keep-the-fewest-sig-figs-but-sums-the-fewest",
+          "title": "Why do products keep the fewest sig figs but sums the fewest decimals?",
+          "tag": "WHY",
+          "summary": "Multiplies and adds measurements with error bars and sees which rule protects the precision",
+          "sections": "N 1.3.1",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "why-does-2-745-round-to-2-74-but-2-735-to-2-74",
+          "title": "Why does 2.745 round to 2.74 but 2.735 to 2.74?",
+          "tag": "WHY",
+          "summary": "Rounds many numbers both ways and sees that 'round half to even' cancels the upward bias",
+          "sections": "N 1.3.2",
+          "extension": false,
+          "order": 7,
+          "aids": []
+        },
+        {
+          "slug": "why-do-relative-errors-add-when-you-multiply",
+          "title": "Why do relative errors add when you multiply?",
+          "tag": "WHY",
+          "summary": "Multiplies 16.2 ± 0.1 cm by 10.1 ± 0.1 cm and gets ± 1.6% as the area's error strips",
+          "sections": "N 1.3.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "derivatives/linear-approximation/measurement-error",
+            "multivariable/tangent-planes-chain-rule/error-in-a-box-s-volume-from-three-measurements"
+          ]
+        },
+        {
+          "slug": "significant-figure-drill",
+          "title": "Significant-figure drill",
+          "tag": "HOW",
+          "summary": "Counts sig figs and rounds correctly",
+          "sections": "N 1.3",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "measurement-motion/units-measurement/why-do-products-keep-the-fewest-sig-figs-but-sums-the-fewest"
+          ]
+        },
+        {
+          "slug": "orders-of-magnitude-atom-to-earth",
+          "title": "Orders of magnitude: atom to Earth",
+          "tag": "HOW",
+          "summary": "Places the hydrogen atom (10⁻¹⁰ m) and Earth (10⁷ m) 17 orders apart on a powers-of-ten ladder",
+          "sections": "N 1.3",
+          "extension": false,
+          "order": 10,
+          "aids": [
+            "numbers-algebra/exponents-roots/powers-of-ten-atom-to-universe",
+            "measurement-motion/units-measurement/why-do-relative-errors-add-when-you-multiply"
+          ]
+        },
+        {
+          "slug": "measure-a-hair-or-a-thread-with-simple-tools",
+          "title": "Measure a hair or a thread with simple tools",
+          "tag": "APP",
+          "summary": "Winds a thread round a pencil, or uses a microscope, to beat a ruler's least count",
+          "sections": "Ex 1.7–1.8",
+          "extension": false,
+          "order": 11,
+          "aids": [
+            "measurement-motion/units-measurement/why-does-2-745-round-to-2-74-but-2-735-to-2-74"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dimensions",
+      "title": "Dimensions",
+      "sections": "N 1.4–1.6",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-can-t-you-add-a-velocity-to-a-force",
+          "title": "Why can't you add a velocity to a force?",
+          "tag": "WHY",
+          "summary": "Treats units as algebra and sees only like dimensions survive a '+'",
+          "sections": "N 1.6.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-dimensionally-correct-mean-correct",
+          "title": "Why doesn't 'dimensionally correct' mean 'correct'?",
+          "tag": "WHY",
+          "summary": "Sees ½mv² and (3/16)mv² both pass the dimension check, though only one is true",
+          "sections": "N 1.6.1, Ex 1.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-must-sin-log-and-ex-take-pure-numbers",
+          "title": "Why must sin, log and eˣ take pure numbers?",
+          "tag": "WHY",
+          "summary": "Tries sin(5 m) and finds it meaningless, then sees that angles are ratios",
+          "sections": "N 1.6.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "measurement-motion/units-measurement/why-is-a-radian-dimensionless-and-what-is-a-steradian"
+          ]
+        },
+        {
+          "slug": "why-doesn-t-a-pendulum-s-period-depend-on-its-mass",
+          "title": "Why doesn't a pendulum's period depend on its mass?",
+          "tag": "WHY",
+          "summary": "Solves T = k lˣ gʸ mᶻ by matching dimensions; the mass exponent is forced to 0 (spec below)",
+          "sections": "N 1.6.2",
+          "extension": false,
+          "order": 4,
+          "spec": "Guess: T = k lˣ gʸ mᶻ, with sliders for x, y and z. Dimensions: the [L], [T] and [M] exponents are shown live, and only x = ½, y = −½, z = 0 balance. Check: a virtual pendulum with changeable mass and length confirms it, and k is measured as about 2π. Limit: dimensional analysis can't give k. A label says so.",
+          "aids": [
+            "numbers-algebra/exponents-roots/why-is-an-1-an"
+          ]
+        },
+        {
+          "slug": "dimensional-formula-builder",
+          "title": "Dimensional-formula builder",
+          "tag": "HOW",
+          "summary": "Assembles [M L T] exponents for any quantity",
+          "sections": "N 1.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "measurement-motion/dimensions/why-must-sin-log-and-ex-take-pure-numbers"
+          ]
+        },
+        {
+          "slug": "convert-units-between-systems",
+          "title": "Convert units between systems",
+          "tag": "HOW",
+          "summary": "Rewrites a calorie or G in new mass, length and time units",
+          "sections": "N 1.5, Ex 1.2–1.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "measurement-motion/dimensions/why-can-t-you-add-a-velocity-to-a-force",
+            "vectors-3d/cylindrical-spherical-coordinates/convert-between-the-three-systems"
+          ]
+        },
+        {
+          "slug": "where-does-c-go-in-m-m0-root-1-v2",
+          "title": "Where does c go in m = m₀/√(1 − v²)?",
+          "tag": "APP",
+          "summary": "Fixes a half-remembered formula by making the bracket dimensionless",
+          "sections": "Ex 1.13",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "measurement-motion/dimensions/why-must-sin-log-and-ex-take-pure-numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "motion-in-a-straight-line",
+      "title": "Motion in a Straight Line",
+      "sections": "N 2.1–2.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-velocity-at-an-instant-a-limit",
+          "title": "Why is 'velocity at an instant' a limit?",
+          "tag": "WHY",
+          "summary": "Shrinks Δt from 2 s to 0.01 s for x = 0.08t³; Δx/Δt settles at 3.84 m/s at t = 4 s",
+          "sections": "N 2.2",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "limits-continuity/why-calculus/why-is-speed-right-now-a-limit",
+            "limits-continuity/why-calculus/why-is-a-tangent-the-limit-of-secants"
+          ]
+        },
+        {
+          "slug": "why-is-velocity-a-slope-and-displacement-an-area",
+          "title": "Why is velocity a slope and displacement an area?",
+          "tag": "WHY",
+          "summary": "Reads the slope of x–t and the area under v–t, and checks the axes' units to see why an area can be a distance",
+          "sections": "N 2.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "integrals/area-distance/why-is-distance-the-area-under-a-velocity-graph"
+          ]
+        },
+        {
+          "slug": "how-can-something-be-at-rest-yet-accelerating",
+          "title": "How can something be at rest yet accelerating?",
+          "tag": "WHY",
+          "summary": "Throws a ball up: at the top v = 0 but a = −g",
+          "sections": "N 2.3, PtP 4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-doesn-t-the-sign-of-a-say-speeding-up-or-slowing-down",
+          "title": "Why doesn't the sign of a say speeding up or slowing down?",
+          "tag": "WHY",
+          "summary": "Flips the axis direction and compares a with v instead",
+          "sections": "PtP 2–3",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-average-speed-average-velocity",
+          "title": "Why is average speed ≥ |average velocity|?",
+          "tag": "WHY",
+          "summary": "Walks to a closed market and back: the average velocity is 0, but the walker is tired",
+          "sections": "N 2.2, Ex 2.9–2.10",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "trigonometry/vectors/why-does-a-vector-need-two-numbers"
+          ]
+        },
+        {
+          "slug": "why-must-real-motion-graphs-be-smooth",
+          "title": "Why must real motion graphs be smooth?",
+          "tag": "WHY",
+          "summary": "Zooms into a kink and sees an infinite acceleration nature can't supply",
+          "sections": "N 2.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-has-x-no-derivative-at-0"
+          ]
+        },
+        {
+          "slug": "linked-xt-vt-at-graphs",
+          "title": "Linked x–t, v–t, a–t graphs",
+          "tag": "HOW",
+          "summary": "Drags one graph and the other two follow",
+          "sections": "N 2.2–2.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration",
+            "measurement-motion/motion-in-a-straight-line/why-must-real-motion-graphs-be-smooth"
+          ]
+        },
+        {
+          "slug": "which-graph-can-t-be-real-motion",
+          "title": "Which graph can't be real motion?",
+          "tag": "HOW",
+          "summary": "Rejects impossible graphs such as two positions at once or negative time",
+          "sections": "Ex 2.12, 2.15",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output",
+            "measurement-motion/motion-in-a-straight-line/why-must-real-motion-graphs-be-smooth"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "uniform-acceleration",
+      "title": "Uniform Acceleration",
+      "sections": "N 2.4–2.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-do-the-three-equations-of-motion-come-from-one-picture",
+          "title": "Why do the three equations of motion come from one picture?",
+          "tag": "WHY",
+          "summary": "Reads the area of the trapezium under a straight v–t line to get x = v₀t + ½at², then v² = v₀² + 2ax (spec below)",
+          "sections": "N 2.4",
+          "extension": false,
+          "order": 1,
+          "spec": "Graph: a straight v–t line from v₀ with slope a. Area: rectangle v₀t plus triangle ½at² equals the displacement x. Eliminate t: substituting t = (v − v₀)/a turns the area into v² = v₀² + 2ax. Check: a live cart on a track matches all three equations.",
+          "aids": [
+            "integrals/area-distance/why-is-distance-the-area-under-a-velocity-graph"
+          ]
+        },
+        {
+          "slug": "why-do-the-equations-fail-when-a-changes",
+          "title": "Why do the equations fail when a changes?",
+          "tag": "WHY",
+          "summary": "Lets a vary with time and watches the formula drift from the true motion; the calculus version still works",
+          "sections": "N 2.4, Ex 2.2, PtP 6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivative-applications/antiderivatives/from-a-g-to-the-height-formula"
+          ]
+        },
+        {
+          "slug": "galileo-s-odd-numbers-why-falls-go-1-3-5-7",
+          "title": "Galileo's odd numbers: why falls go 1 : 3 : 5 : 7",
+          "tag": "WHY",
+          "summary": "Drops a ball and marks equal time intervals",
+          "sections": "Ex 2.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/arithmetic-sequences/why-does-gauss-s-trick-work"
+          ]
+        },
+        {
+          "slug": "why-does-doubling-speed-quadruple-stopping-distance",
+          "title": "Why does doubling speed quadruple stopping distance?",
+          "tag": "WHY",
+          "summary": "Brakes at 11, 15, 20 and 25 m/s and finds the distance goes as v₀²",
+          "sections": "Ex 2.6",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "which-equation-do-i-use",
+          "title": "Which equation do I use?",
+          "tag": "HOW",
+          "summary": "Ticks the known quantities and gets the right equation",
+          "sections": "N 2.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "measurement-motion/uniform-acceleration/why-does-doubling-speed-quadruple-stopping-distance"
+          ]
+        },
+        {
+          "slug": "relative-velocity-on-a-line",
+          "title": "Relative velocity on a line",
+          "tag": "HOW",
+          "summary": "Rides with one train and watches the other",
+          "sections": "N 2.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "measurement-motion/uniform-acceleration/why-do-the-three-equations-of-motion-come-from-one-picture"
+          ]
+        },
+        {
+          "slug": "measure-your-reaction-time-with-a-ruler",
+          "title": "Measure your reaction time with a ruler",
+          "tag": "APP",
+          "summary": "Catches a dropped ruler: 21 cm means about 0.21 s",
+          "sections": "Ex 2.7",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "numbers-algebra/number-systems/why-is-root2-not-a-fraction",
+            "measurement-motion/uniform-acceleration/why-do-the-equations-fail-when-a-changes",
+            "measurement-motion/units-measurement/measure-a-hair-or-a-thread-with-simple-tools"
+          ]
+        },
+        {
+          "slug": "one-equation-for-the-whole-flight",
+          "title": "One equation for the whole flight",
+          "tag": "APP",
+          "summary": "Throws a ball up from a 25 m roof; a single quadratic gives the 5 s landing",
+          "sections": "Ex 2.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "numbers-algebra/quadratic-equations/when-does-the-ball-land",
+            "measurement-motion/uniform-acceleration/why-does-doubling-speed-quadruple-stopping-distance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vectors",
+      "title": "Vectors",
+      "sections": "N 3.2–3.6",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-do-vectors-need-the-triangle-law",
+          "title": "Why do vectors need the triangle law?",
+          "tag": "WHY",
+          "summary": "Adds a 3 m walk and a 4 m walk at different angles: the result ranges from 1 m to 7 m",
+          "sections": "N 3.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/why-tip-to-tail"
+          ]
+        },
+        {
+          "slug": "why-is-displacement-path-length",
+          "title": "Why is displacement ≤ path length?",
+          "tag": "WHY",
+          "summary": "Takes many routes between the same two points",
+          "sections": "N 3.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-components-make-adding-easy",
+          "title": "Why do components make adding easy?",
+          "tag": "WHY",
+          "summary": "Splits vectors into x and y parts and adds each column separately",
+          "sections": "N 3.5–3.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/vectors/why-does-a-vector-need-two-numbers"
+          ]
+        },
+        {
+          "slug": "why-is-the-resultant-formula-the-law-of-cosines",
+          "title": "Why is the resultant formula the law of cosines?",
+          "tag": "WHY",
+          "summary": "Sees R² = A² + B² + 2AB cos θ: the angle between the vectors is the supplement of the triangle's angle",
+          "sections": "Ex 3.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/solving-any-triangle/why-is-the-law-of-cosines-pythagoras-with-a-correction",
+            "trigonometry/solving-any-triangle/why-does-heron-s-formula-follow-from-the-law-of-cosines"
+          ]
+        },
+        {
+          "slug": "component-calculator",
+          "title": "Component calculator",
+          "tag": "HOW",
+          "summary": "Uses Aₓ = A cos θ and A_y = A sin θ, and back",
+          "sections": "N 3.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "measurement-motion/vectors/why-is-the-resultant-formula-the-law-of-cosines",
+            "linear-algebra/svd-pca/principal-component-analysis"
+          ]
+        },
+        {
+          "slug": "where-to-hold-the-umbrella",
+          "title": "Where to hold the umbrella",
+          "tag": "APP",
+          "summary": "Adds rain at 35 m/s and wind at 12 m/s and tilts the umbrella 19° from vertical",
+          "sections": "Ex 3.1",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "measurement-motion/vectors/why-is-the-resultant-formula-the-law-of-cosines"
+          ]
+        },
+        {
+          "slug": "boat-in-a-current",
+          "title": "Boat in a current",
+          "tag": "APP",
+          "summary": "Combines a 25 km/h boat with a 10 km/h current",
+          "sections": "Ex 3.3",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "trigonometry/vectors/plane-in-a-crosswind",
+            "measurement-motion/vectors/why-is-the-resultant-formula-the-law-of-cosines"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "projectiles",
+      "title": "Projectiles",
+      "sections": "N 3.7–3.9",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-can-horizontal-and-vertical-motion-be-treated-separately",
+          "title": "Why can horizontal and vertical motion be treated separately?",
+          "tag": "WHY",
+          "summary": "Drops one ball and throws another sideways at the same instant; they land together (spec below)",
+          "sections": "N 3.8–3.9",
+          "extension": false,
+          "order": 1,
+          "spec": "Twin drop: one ball dropped, one thrown sideways at the same moment, with strobe images every 0.1 s. Rows line up: the heights match at every flash, and the horizontal gaps stay equal. Shadows: the x-shadow moves uniformly and the y-shadow falls like free fall. Combine: x = v cos θ t and y = v sin θ t − ½gt² give the parabola.",
+          "aids": [
+            "conics-curves/parametric-curves/projectile-as-x-t-y-t"
+          ]
+        },
+        {
+          "slug": "why-is-a-projectile-s-path-a-parabola",
+          "title": "Why is a projectile's path a parabola?",
+          "tag": "WHY",
+          "summary": "Eliminates t and finds y = (tan θ)x − kx²",
+          "sections": "N 3.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "conics-curves/parametric-curves/why-parametric-equations",
+            "functions-graphs/quadratic-functions/projectiles-and-bridge-arches",
+            "conics-curves/parametric-curves/projectile-as-x-t-y-t"
+          ]
+        },
+        {
+          "slug": "why-does-45-give-the-longest-range",
+          "title": "Why does 45° give the longest range?",
+          "tag": "WHY",
+          "summary": "Sweeps θ and sees R ∝ sin 2θ peak at 2θ = 90°",
+          "sections": "N 3.9",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/sine-cosine-graphs/what-does-b-do-why-period-2pi-b"
+          ]
+        },
+        {
+          "slug": "why-do-45-give-equal-ranges-galileo",
+          "title": "Why do 45° ± α give equal ranges? (Galileo)",
+          "tag": "WHY",
+          "summary": "Overlays the two paths and sees sin(90° ± 2α) is the same",
+          "sections": "Ex 3.6",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "trigonometry/right-triangle-ratios/why-is-it-called-co-sine"
+          ]
+        },
+        {
+          "slug": "why-is-velocity-always-tangent-to-the-path",
+          "title": "Why is velocity always tangent to the path?",
+          "tag": "WHY",
+          "summary": "Shrinks the chord Δr until it lies along the tangent",
+          "sections": "N 3.7",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "limits-continuity/why-calculus/why-is-a-tangent-the-limit-of-secants",
+            "vectors-3d/space-curves-motion/why-is-velocity-tangent-and-acceleration-into-the-turn"
+          ]
+        },
+        {
+          "slug": "same-gravity-straight-line-or-parabola",
+          "title": "Same gravity, straight line or parabola?",
+          "tag": "WHY",
+          "summary": "Changes only the launch velocity: initial conditions shape the path",
+          "sections": "PtP 7",
+          "extension": false,
+          "order": 6,
+          "aids": []
+        },
+        {
+          "slug": "projectile-calculator",
+          "title": "Projectile calculator",
+          "tag": "HOW",
+          "summary": "Gives the time of flight, maximum height and range",
+          "sections": "N 3.9",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "measurement-motion/projectiles/why-is-a-projectile-s-path-a-parabola",
+            "conics-curves/parametric-curves/projectile-as-x-t-y-t"
+          ]
+        },
+        {
+          "slug": "a-cricket-throw-at-28-m-s-30",
+          "title": "A cricket throw at 28 m/s, 30°",
+          "tag": "APP",
+          "summary": "Reaches 10 m high and lands 69 m away",
+          "sections": "Ex 3.8",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "measurement-motion/projectiles/why-is-velocity-always-tangent-to-the-path"
+          ]
+        },
+        {
+          "slug": "a-stone-thrown-off-a-490-m-cliff",
+          "title": "A stone thrown off a 490 m cliff",
+          "tag": "APP",
+          "summary": "Lands after 10 s at about 99 m/s",
+          "sections": "Ex 3.7",
+          "extension": false,
+          "order": 9,
+          "aids": [
+            "measurement-motion/projectiles/why-is-velocity-always-tangent-to-the-path"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "circular-motion",
+      "title": "Circular Motion",
+      "sections": "N 3.10",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-there-acceleration-at-constant-speed",
+          "title": "Why is there acceleration at constant speed?",
+          "tag": "WHY",
+          "summary": "Draws the Δv triangle around the circle; it always points to the centre",
+          "sections": "N 3.10",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "trigonometry/vectors/why-does-a-vector-need-two-numbers"
+          ]
+        },
+        {
+          "slug": "why-is-a-v2-r",
+          "title": "Why is a = v²/R?",
+          "tag": "WHY",
+          "summary": "Sees the position triangle and the velocity triangle are similar",
+          "sections": "N 3.10",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/similar-triangles/why-does-the-ratio-depend-only-on-the-angle"
+          ]
+        },
+        {
+          "slug": "why-is-v-r",
+          "title": "Why is v = ωR?",
+          "tag": "WHY",
+          "summary": "Turns the same angle on a bigger circle and covers more arc",
+          "sections": "N 3.10",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/angles-arcs/why-does-the-outer-horse-go-faster-v-romega"
+          ]
+        },
+        {
+          "slug": "why-don-t-the-equations-of-motion-work-in-circles",
+          "title": "Why don't the equations of motion work in circles?",
+          "tag": "WHY",
+          "summary": "Sees |a| stay constant while its direction keeps turning",
+          "sections": "PtP 4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "measurement-motion/uniform-acceleration/why-do-the-three-equations-of-motion-come-from-one-picture"
+          ]
+        },
+        {
+          "slug": "v-t-and-converter",
+          "title": "ω, v, T and ν converter",
+          "tag": "HOW",
+          "summary": "Converts between the four circular-motion quantities",
+          "sections": "N 3.10",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "measurement-motion/circular-motion/why-don-t-the-equations-of-motion-work-in-circles"
+          ]
+        },
+        {
+          "slug": "aircraft-loop-how-many-g",
+          "title": "Aircraft loop: how many g?",
+          "tag": "APP",
+          "summary": "Flies a 1 km loop at 900 km/h: a ≈ 6.4 g",
+          "sections": "Ex 3.15",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "measurement-motion/circular-motion/why-is-v-r"
+          ]
+        },
+        {
+          "slug": "insect-in-a-groove",
+          "title": "Insect in a groove",
+          "tag": "APP",
+          "summary": "Makes 7 revolutions in 100 s: ω ≈ 0.44 rad/s",
+          "sections": "Ex 3.9",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "measurement-motion/circular-motion/why-is-v-r"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "slug": "integrals",
+  "title": "Integrals",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "area-distance",
+      "title": "Area & Distance",
+      "sections": "St 4.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-distance-the-area-under-a-velocity-graph",
+          "title": "Why is distance the area under a velocity graph?",
+          "tag": "WHY",
+          "summary": "Sees constant speed × time as a rectangle, then varying speed as many thin rectangles",
+          "sections": "St 4.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-more-rectangles-give-the-exact-area",
+          "title": "Why do more rectangles give the exact area?",
+          "tag": "WHY",
+          "summary": "Increases n and watches left, right and midpoint sums squeeze together",
+          "sections": "St 4.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-area-under-x2-from-0-to-1-exactly-13",
+          "title": "Why is the area under x² from 0 to 1 exactly ⅓?",
+          "tag": "WHY",
+          "summary": "Sums the rectangles, uses Σk² = n(n + 1)(2n + 1)/6, and lets n → ∞",
+          "sections": "St 4.1",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "riemann-sum-explorer",
+          "title": "Riemann-sum explorer",
+          "tag": "HOW",
+          "summary": "Chooses the sample points and n",
+          "sections": "St 4.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/area-distance/why-is-the-area-under-x2-from-0-to-1-exactly-13"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-definite-integral",
+      "title": "The Definite Integral",
+      "sections": "St 4.2",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-does-area-below-the-axis-count-as-negative",
+          "title": "Why does area below the axis count as negative?",
+          "tag": "WHY",
+          "summary": "Uses velocity: going backwards subtracts distance",
+          "sections": "St 4.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-the-long-s",
+          "title": "Why the long S?",
+          "tag": "WHY",
+          "summary": "Sees Leibniz's ∫ as a stretched 'S' for summa",
+          "sections": "St 4.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "limits-continuity/why-calculus/newton-leibniz-and-the-invention-of-calculus"
+          ]
+        },
+        {
+          "slug": "properties-as-pictures",
+          "title": "Properties as pictures",
+          "tag": "WHY",
+          "summary": "Splits intervals, flips limits, compares heights",
+          "sections": "St 4.2",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-integral0a-f-x-dx-integral0a-f-a-x-dx",
+          "title": "Why is ∫₀ᵃ f(x) dx = ∫₀ᵃ f(a − x) dx?",
+          "tag": "WHY",
+          "summary": "Reflects the region in x = a/2: the same area, read from the other end",
+          "sections": "MXII 7.10",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/the-definite-integral/properties-as-pictures",
+            "derivatives/differentiation-rules/why-is-d-dx-xn-nxn1"
+          ]
+        },
+        {
+          "slug": "midpoint-rule-estimates",
+          "title": "Midpoint-rule estimates",
+          "tag": "HOW",
+          "summary": "Estimates with n slices and compares with the exact value",
+          "sections": "St 4.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integrals/the-definite-integral/why-the-long-s",
+            "trigonometry/unit-circle/exact-value-drill"
+          ]
+        },
+        {
+          "slug": "the-a-x-trick",
+          "title": "The a − x trick",
+          "tag": "HOW",
+          "summary": "Adds the integral to its reflection: ∫₀^(π/2) sin x/(sin x + cos x) dx = π/4",
+          "sections": "MXII 7.10",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "integrals/the-definite-integral/why-is-integral0a-f-x-dx-integral0a-f-a-x-dx",
+            "trigonometry/identities/why-sin-a-b-sin-a-cos-b-cos-a-sin-b",
+            "trigonometry/identities/why-isn-t-sin-a-b-sin-a-sin-b"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fundamental-theorem",
+      "title": "Fundamental Theorem",
+      "sections": "St 4.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-the-derivative-of-the-area-function-the-height",
+          "title": "Why is the derivative of the area function the height?",
+          "tag": "WHY",
+          "summary": "Adds a thin strip of width h; the area grows by about f(x)·h (spec below)",
+          "sections": "St 4.3",
+          "extension": false,
+          "spec": "Area function: drag x and shade A(x) = ∫ₐˣ f; plot A beside f. Strip: add width h; the new sliver is about a rectangle of height f(x), so ΔA ≈ f(x)·h. Limit: (A(x + h) − A(x))/h shown converging to f(x) as h shrinks. Consequence: ∫ₐᵇ f = F(b) − F(a) for any antiderivative F (FTC 2), with an odometer analogy.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-total-change-the-integral-of-the-rate",
+          "title": "Why does total change = the integral of the rate?",
+          "tag": "WHY",
+          "summary": "Reads the odometer reading as accumulated speedometer readings",
+          "sections": "St 4.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change",
+            "exponentials-logs/money-finance/loan-emi"
+          ]
+        },
+        {
+          "slug": "why-do-integrating-and-differentiating-undo-each-other",
+          "title": "Why do integrating and differentiating undo each other?",
+          "tag": "WHY",
+          "summary": "Goes around the loop f → area function → its derivative → f",
+          "sections": "St 4.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "area-functions",
+          "title": "Area functions",
+          "tag": "APP",
+          "summary": "Explores how g(x) = ∫ₐˣ f grows, flattens and falls",
+          "sections": "St 4.3 project",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/fundamental-theorem/why-is-the-derivative-of-the-area-function-the-height"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "net-change",
+      "title": "Net Change",
+      "sections": "St 4.4",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-net-change-an-integral",
+          "title": "Why is net change an integral?",
+          "tag": "WHY",
+          "summary": "Integrates the inflow rate of a tank to get the water gained",
+          "sections": "St 4.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/fundamental-theorem/why-does-total-change-the-integral-of-the-rate"
+          ]
+        },
+        {
+          "slug": "displacement-versus-distance-travelled",
+          "title": "Displacement versus distance travelled",
+          "tag": "WHY",
+          "summary": "Integrates v versus |v| for a walk that turns back",
+          "sections": "St 4.4",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "indefinite-integral-table",
+          "title": "Indefinite-integral table",
+          "tag": "HOW",
+          "summary": "Matches functions to antiderivatives",
+          "sections": "St 4.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integrals/net-change/why-is-net-change-an-integral"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "substitution",
+      "title": "Substitution",
+      "sections": "St 4.5",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-substitution-the-chain-rule-backwards",
+          "title": "Why is substitution the chain rule backwards?",
+          "tag": "WHY",
+          "summary": "Spots f(g(x))·g′(x) as a derivative in disguise",
+          "sections": "St 4.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-the-limits-change-with-u",
+          "title": "Why do the limits change with u?",
+          "tag": "WHY",
+          "summary": "Maps the x-interval to the u-interval",
+          "sections": "St 4.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-do-odd-functions-integrate-to-0-on-a-a",
+          "title": "Why do odd functions integrate to 0 on [−a, a]?",
+          "tag": "WHY",
+          "summary": "Sees the area on each side cancel",
+          "sections": "St 4.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/properties-library/why-are-even-functions-mirror-images"
+          ]
+        },
+        {
+          "slug": "u-substitution-stepper",
+          "title": "u-substitution stepper",
+          "tag": "HOW",
+          "summary": "Picks u, finds du and rewrites the integral",
+          "sections": "St 4.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/substitution/why-is-substitution-the-chain-rule-backwards",
+            "systems-matrices/linear-systems/substitution-versus-elimination"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "integration-by-parts",
+      "title": "Integration by Parts",
+      "sections": "St 7.1",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-integration-by-parts-the-product-rule-backwards",
+          "title": "Why is integration by parts the product rule backwards?",
+          "tag": "WHY",
+          "summary": "Splits the uv rectangle into ∫u dv and ∫v du",
+          "sections": "St 7.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-product-rule"
+          ]
+        },
+        {
+          "slug": "why-do-some-choices-of-u-make-it-worse",
+          "title": "Why do some choices of u make it worse?",
+          "tag": "WHY",
+          "summary": "Tries both choices on x eˣ",
+          "sections": "St 7.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-integralex-f-x-f-prime-x-dx-ex-f-x-c",
+          "title": "Why is ∫eˣ[f(x) + f′(x)] dx = eˣ f(x) + C?",
+          "tag": "WHY",
+          "summary": "Differentiates eˣ f(x) with the product rule and reads the integrand straight off",
+          "sections": "MXII 7.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "derivatives/differentiation-rules/why-the-product-rule",
+            "exponentials-logs/e-ln-as-areas/why-are-ex-1-x-and-1-r-n-n-er",
+            "exponentials-logs/the-number-e/why-is-ex-natural"
+          ]
+        },
+        {
+          "slug": "tabular-method",
+          "title": "Tabular method",
+          "tag": "HOW",
+          "summary": "Repeats parts in a table",
+          "sections": "St 7.1",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/integration-by-parts/why-is-integration-by-parts-the-product-rule-backwards"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trig-integrals-substitution",
+      "title": "Trig Integrals & Substitution",
+      "sections": "St 7.2–7.3",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-sin2-x-average-to-12",
+          "title": "Why does sin² x average to ½?",
+          "tag": "WHY",
+          "summary": "Stacks sin² and cos², which are shifts of each other and sum to 1",
+          "sections": "St 7.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-x-a-sin-theta-remove-root-a2-x2",
+          "title": "Why does x = a sin θ remove √(a² − x²)?",
+          "tag": "WHY",
+          "summary": "Reads the triangle: the root becomes a cos θ",
+          "sections": "St 7.3",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/inverses-equations/why-is-sin-cos1-x-root-1-x2"
+          ]
+        },
+        {
+          "slug": "why-is-a-circle-s-area-pir2",
+          "title": "Why is a circle's area πr²?",
+          "tag": "WHY",
+          "summary": "Integrates √(r² − x²) by trig substitution",
+          "sections": "St 7.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/area-by-stretching/why-is-a-circle-s-area-pir2"
+          ]
+        },
+        {
+          "slug": "powers-of-sin-and-cos",
+          "title": "Powers of sin and cos",
+          "tag": "HOW",
+          "summary": "Uses the odd/even power strategy",
+          "sections": "St 7.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/trig-integrals-substitution/why-does-x-a-sin-theta-remove-root-a2-x2",
+            "trigonometry/unit-circle/why-is-cos-even-and-sin-odd",
+            "derivatives/trig-derivatives/why-is-sin-x-prime-cos-x"
+          ]
+        },
+        {
+          "slug": "trig-substitution-stepper",
+          "title": "Trig-substitution stepper",
+          "tag": "HOW",
+          "summary": "Chooses sin, tan or sec by the form of the root",
+          "sections": "St 7.3",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integrals/trig-integrals-substitution/why-is-a-circle-s-area-pir2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "partial-fractions-strategy",
+      "title": "Partial Fractions & Strategy",
+      "sections": "St 7.4–7.6",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-do-partial-fractions-make-rational-functions-integrable",
+          "title": "Why do partial fractions make rational functions integrable?",
+          "tag": "WHY",
+          "summary": "Splits the function into logs and arctans (see Systems & Matrices → Partial Fractions)",
+          "sections": "St 7.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "systems-matrices/partial-fractions"
+          ]
+        },
+        {
+          "slug": "why-do-some-integrals-have-no-formula",
+          "title": "Why do some integrals have no formula?",
+          "tag": "WHY",
+          "summary": "Meets ∫e^(−x²) dx: the integral exists, but no elementary antiderivative does",
+          "sections": "St 7.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "systems-matrices/matrix-algebra/why-do-some-matrices-have-no-inverse"
+          ]
+        },
+        {
+          "slug": "why-substitute-for-a-whole-root",
+          "title": "Why substitute for a whole root?",
+          "tag": "WHY",
+          "summary": "Sets u = ∛(x + 2) so the root disappears and a rational integral remains",
+          "sections": "D2 1-5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "integration-strategy",
+          "title": "Integration strategy",
+          "tag": "HOW",
+          "summary": "Follows a decision flowchart",
+          "sections": "St 7.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/partial-fractions-strategy/why-substitute-for-a-whole-root"
+          ]
+        },
+        {
+          "slug": "patterns-in-integrals",
+          "title": "Patterns in integrals",
+          "tag": "HOW",
+          "summary": "Spots a family pattern with a CAS-style table",
+          "sections": "St 7.6 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integrals/partial-fractions-strategy/why-do-some-integrals-have-no-formula"
+          ]
+        },
+        {
+          "slug": "complete-the-square-inside-an-integral",
+          "title": "Complete the square inside an integral",
+          "tag": "HOW",
+          "summary": "Turns x² + 4x + 13 into (x + 2)² + 9 to reach an arctan or trig substitution",
+          "sections": "D2 1-6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "integrals/partial-fractions-strategy/why-substitute-for-a-whole-root",
+            "integrals/trig-integrals-substitution/trig-substitution-stepper"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "numerical-integration",
+      "title": "Numerical Integration",
+      "sections": "St 7.7",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-do-trapezoid-and-midpoint-err-in-opposite-directions",
+          "title": "Why do trapezoid and midpoint err in opposite directions?",
+          "tag": "WHY",
+          "summary": "Sees concave curves above or below the chords and tangents",
+          "sections": "St 7.7",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-simpson-s-rule-so-much-better",
+          "title": "Why is Simpson's rule so much better?",
+          "tag": "WHY",
+          "summary": "Fits parabolas instead of lines; doubling n cuts the error about 16 times",
+          "sections": "St 7.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "compare-the-rules",
+          "title": "Compare the rules",
+          "tag": "HOW",
+          "summary": "Runs left, mid, trapezoid and Simpson on one integral",
+          "sections": "St 7.7",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integrals/numerical-integration/why-is-simpson-s-rule-so-much-better"
+          ]
+        },
+        {
+          "slug": "area-from-sampled-data",
+          "title": "Area from sampled data",
+          "tag": "APP",
+          "summary": "Estimates an area or distance from a table of readings",
+          "sections": "St 7.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/numerical-integration/why-do-trapezoid-and-midpoint-err-in-opposite-directions"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "improper-integrals",
+      "title": "Improper Integrals",
+      "sections": "St 7.8",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-does-integral1-x2-converge-but-integral1-x-not",
+          "title": "Why does ∫1/x² converge but ∫1/x not?",
+          "tag": "WHY",
+          "summary": "Extends the right end and watches one area stall and the other keep growing",
+          "sections": "St 7.8",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/what-is-a-function/why-is-f-x-h-not-f-x-h",
+            "derivatives/what-is-a-derivative/why-does-differentiable-imply-continuous-but-not-conversely"
+          ]
+        },
+        {
+          "slug": "gabriel-s-horn-finite-volume-infinite-surface",
+          "title": "Gabriel's horn: finite volume, infinite surface",
+          "tag": "WHY",
+          "summary": "Rotates 1/x: it can be filled with paint but not painted",
+          "sections": "St 7.8, 8.2",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "sequences-probability/geometric-sequences-series/why-can-an-infinite-sum-be-finite",
+            "functions-graphs/combining-inverting/why-is-one-one-the-same-as-onto-for-a-finite-set-but-not-for"
+          ]
+        },
+        {
+          "slug": "comparison-for-integrals",
+          "title": "Comparison for integrals",
+          "tag": "WHY",
+          "summary": "Traps the integrand between known ones",
+          "sections": "St 7.8",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "evaluate-improper-integrals-as-limits",
+          "title": "Evaluate improper integrals as limits",
+          "tag": "HOW",
+          "summary": "Sends a bound to ∞ or to a vertical asymptote",
+          "sections": "St 7.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integrals/improper-integrals/comparison-for-integrals"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 11
+}

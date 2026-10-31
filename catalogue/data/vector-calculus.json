@@ -1,0 +1,354 @@
+{
+  "slug": "vector-calculus",
+  "title": "Vector Calculus",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "vector-fields",
+      "title": "Vector Fields",
+      "sections": "St 16.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-is-a-field-an-arrow-at-every-point",
+          "title": "Why is a field an arrow at every point?",
+          "tag": "WHY",
+          "summary": "Reads a wind map",
+          "sections": "St 16.1",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-gradient-fields-cross-contours-at-right-angles",
+          "title": "Why do gradient fields cross contours at right angles?",
+          "tag": "WHY",
+          "summary": "Overlays ∇f on a contour map",
+          "sections": "St 16.1",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "multivariable/gradient/why-is-the-gradient-perpendicular-to-contours"
+          ]
+        },
+        {
+          "slug": "gravity-and-electric-fields",
+          "title": "Gravity and electric fields",
+          "tag": "APP",
+          "summary": "Sees inverse-square arrows around a mass or charge",
+          "sections": "St 16.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vector-calculus/vector-fields/why-do-gradient-fields-cross-contours-at-right-angles"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "line-integrals",
+      "title": "Line Integrals",
+      "sections": "St 16.2–16.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-is-work-integralf-dr",
+          "title": "Why is work ∫F · dr?",
+          "tag": "WHY",
+          "summary": "Shows that only the part of the force along the path counts",
+          "sections": "St 16.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-are-conservative-fields-path-independent",
+          "title": "Why are conservative fields path-independent?",
+          "tag": "WHY",
+          "summary": "Sees work as a change in 'height', the potential",
+          "sections": "St 16.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-closed-loop-worth-zero-in-a-conservative-field",
+          "title": "Why is a closed loop worth zero in a conservative field?",
+          "tag": "WHY",
+          "summary": "Goes around a loop and returns to the same height",
+          "sections": "St 16.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-integralf-ds-the-area-of-a-curtain",
+          "title": "Why is ∫f ds the area of a curtain?",
+          "tag": "WHY",
+          "summary": "Raises a curtain of height f along the curve",
+          "sections": "D3 5-2",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-does-integralf-dr-care-about-direction-but-integralf-ds",
+          "title": "Why does ∫F · dr care about direction but ∫f ds doesn't?",
+          "tag": "WHY",
+          "summary": "Reverses the path: work changes sign, curtain area doesn't",
+          "sections": "D3 5-3, 5-4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "limits-continuity/the-limit-idea/why-doesn-t-a-limit-care-about-the-point-itself"
+          ]
+        },
+        {
+          "slug": "spot-a-conservative-field-equal-cross-partials",
+          "title": "Spot a conservative field: equal cross-partials",
+          "tag": "WHY",
+          "summary": "Checks ∂P/∂y = ∂Q/∂x, valid on a region without holes",
+          "sections": "D3 5-6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "multivariable/partial-derivatives/why-are-mixed-partials-equal"
+          ]
+        },
+        {
+          "slug": "find-a-potential-function",
+          "title": "Find a potential function",
+          "tag": "HOW",
+          "summary": "Integrates P in x, matches with Q, then fixes the leftover function",
+          "sections": "D3 5-6",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "vector-calculus/line-integrals/why-are-conservative-fields-path-independent",
+            "functions-graphs/combining-inverting/decompose-a-function"
+          ]
+        },
+        {
+          "slug": "gravity-on-any-roller-coaster-track",
+          "title": "Gravity on any roller-coaster track",
+          "tag": "APP",
+          "summary": "Shows that only the drop matters",
+          "sections": "St 16.3",
+          "extension": false,
+          "order": 8,
+          "aids": [
+            "vector-calculus/line-integrals/why-is-work-integralf-dr",
+            "derivatives/differentiation-rules/build-a-better-roller-coaster"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "green-s-theorem",
+      "title": "Green's Theorem",
+      "sections": "St 16.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-do-the-inside-circulations-cancel",
+          "title": "Why do the inside circulations cancel?",
+          "tag": "WHY",
+          "summary": "Tiles the region with small loops; the shared edges cancel, leaving the boundary",
+          "sections": "St 16.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "numbers-algebra/rational-expressions/why-can-t-you-cancel-the-x-in-x-2-x"
+          ]
+        },
+        {
+          "slug": "why-does-orientation-matter-keep-the-region-on-your-left",
+          "title": "Why does orientation matter? Keep the region on your left",
+          "tag": "WHY",
+          "summary": "Walks the boundary both ways; reversing flips the sign",
+          "sections": "D3 5-7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "planimeter-area-by-tracing-the-edge",
+          "title": "Planimeter: area by tracing the edge",
+          "tag": "APP",
+          "summary": "Traces a boundary and reads off the area",
+          "sections": "St 16.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "vector-calculus/green-s-theorem/why-does-orientation-matter-keep-the-region-on-your-left"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "curl-divergence",
+      "title": "Curl & Divergence",
+      "sections": "St 16.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "curl-as-a-paddle-wheel",
+          "title": "Curl as a paddle wheel",
+          "tag": "WHY",
+          "summary": "Drops a paddle wheel into the flow and watches it spin",
+          "sections": "St 16.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "divergence-as-sources-and-sinks",
+          "title": "Divergence as sources and sinks",
+          "tag": "WHY",
+          "summary": "Places a small box and sees whether more flows out or in",
+          "sections": "St 16.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-are-curl-grad-f-and-div-curl-f-zero",
+          "title": "Why are curl(grad f) and div(curl F) zero?",
+          "tag": "WHY",
+          "summary": "Sees no spin in a slope, and no source in a swirl",
+          "sections": "St 16.5",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        }
+      ]
+    },
+    {
+      "slug": "surfaces-flux",
+      "title": "Surfaces & Flux",
+      "sections": "St 16.6–16.7",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-are-parametric-surfaces-a-grid-wrapped-onto-a-shape",
+          "title": "Why are parametric surfaces a grid wrapped onto a shape?",
+          "tag": "WHY",
+          "summary": "Bends a (u, v) grid onto a sphere or torus",
+          "sections": "St 16.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-flux-depend-on-tilt",
+          "title": "Why does flux depend on tilt?",
+          "tag": "WHY",
+          "summary": "Tilts a net in a stream",
+          "sections": "St 16.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "surface-integral-mass-of-a-curved-sheet",
+          "title": "Surface integral = mass of a curved sheet",
+          "tag": "WHY",
+          "summary": "Gives a curved sheet a varying density and adds up the mass",
+          "sections": "D3 6-3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-can-t-you-measure-flux-through-a-mobius-strip",
+          "title": "Why can't you measure flux through a Möbius strip?",
+          "tag": "WHY",
+          "summary": "Walks the normal arrow around once and it comes back flipped: the strip has only one side",
+          "sections": "D3 6-4",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "surface-area-of-a-parametric-surface",
+          "title": "Surface area of a parametric surface",
+          "tag": "HOW",
+          "summary": "Uses |rᵤ × rᵥ|",
+          "sections": "St 16.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vector-calculus/surfaces-flux/why-are-parametric-surfaces-a-grid-wrapped-onto-a-shape",
+            "multivariable/mass-moments-surface-area/surface-area-from-a-double-integral",
+            "integral-applications/arc-length-surface-area/why-does-surface-area-use-the-slant-height"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stokes-divergence-theorems",
+      "title": "Stokes & Divergence Theorems",
+      "sections": "St 16.8–16.10",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-any-surface-with-the-same-rim-give-the-same-circula",
+          "title": "Why does any surface with the same rim give the same circulation?",
+          "tag": "WHY",
+          "summary": "Deforms a butterfly net while keeping its rim fixed (Stokes)",
+          "sections": "St 16.8",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-outflow-equal-the-sources-inside",
+          "title": "Why does outflow equal the sources inside?",
+          "tag": "WHY",
+          "summary": "Counts the arrows leaving a closed surface (divergence theorem)",
+          "sections": "St 16.9",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "vector-calculus/curl-divergence/divergence-as-sources-and-sinks"
+          ]
+        },
+        {
+          "slug": "one-big-idea-boundary-integral-of-a-derivative",
+          "title": "One big idea: boundary = integral of a derivative",
+          "tag": "WHY",
+          "summary": "Lines up FTC, Green, Stokes and Gauss as one pattern",
+          "sections": "St 16.10",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "gauss-s-law-for-electric-flux",
+          "title": "Gauss's law for electric flux",
+          "tag": "APP",
+          "summary": "Sees the flux through a closed surface measure the enclosed charge",
+          "sections": "St 16.9",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "vector-calculus/stokes-divergence-theorems/why-does-outflow-equal-the-sources-inside"
+          ]
+        },
+        {
+          "slug": "three-men-and-two-theorems",
+          "title": "Three men and two theorems",
+          "tag": "APP",
+          "summary": "Reads the history of Green, Stokes and Gauss",
+          "sections": "St 16.8 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "vector-calculus/stokes-divergence-theorems/one-big-idea-boundary-integral-of-a-derivative"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 17
+}

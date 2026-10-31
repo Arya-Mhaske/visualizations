@@ -1,0 +1,522 @@
+{
+  "slug": "integral-applications",
+  "title": "Applications of Integrals",
+  "source": "Stewart, Calculus 8e; additions from Dawkins Calc II/III notes",
+  "children": [
+    {
+      "slug": "area-between-curves",
+      "title": "Area Between Curves",
+      "sections": "St 5.1",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-top-minus-bottom-even-below-the-axis",
+          "title": "Why top minus bottom, even below the axis?",
+          "tag": "WHY",
+          "summary": "Shifts both curves down and the area doesn't change",
+          "sections": "St 5.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/the-definite-integral/why-does-area-below-the-axis-count-as-negative"
+          ]
+        },
+        {
+          "slug": "why-slice-sideways-sometimes",
+          "title": "Why slice sideways sometimes?",
+          "tag": "WHY",
+          "summary": "Compares x-slices with y-slices on a sideways parabola",
+          "sections": "St 5.1",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "find-the-intersections-then-integrate",
+          "title": "Find the intersections, then integrate",
+          "tag": "HOW",
+          "summary": "Locates the bounds, then sets up the integral",
+          "sections": "St 5.1",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integral-applications/area-between-curves/why-top-minus-bottom-even-below-the-axis"
+          ]
+        },
+        {
+          "slug": "gini-index-of-inequality",
+          "title": "Gini index of inequality",
+          "tag": "APP",
+          "summary": "Measures the area between the Lorenz curve and the equality line",
+          "sections": "St 5.1 project",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integral-applications/area-between-curves/why-top-minus-bottom-even-below-the-axis"
+          ]
+        },
+        {
+          "slug": "area-of-an-ellipse-and-a-circle-s-segment",
+          "title": "Area of an ellipse and a circle's segment",
+          "tag": "APP",
+          "summary": "Integrates y = (b/a)√(a² − x²) to get πab (see Functions & Graphs → Area by Stretching)",
+          "sections": "MXII 8.2",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "functions-graphs/area-by-stretching/why-is-an-ellipse-s-area-piab",
+            "functions-graphs/area-by-stretching",
+            "integral-applications/area-between-curves/why-top-minus-bottom-even-below-the-axis"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "volumes",
+      "title": "Volumes",
+      "sections": "St 5.2–5.3",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-do-equal-slices-mean-equal-volumes",
+          "title": "Why do equal slices mean equal volumes?",
+          "tag": "WHY",
+          "summary": "Shears a stack of coins (Cavalieri's principle)",
+          "sections": "St 5.2",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-discs-and-washers",
+          "title": "Why discs and washers?",
+          "tag": "WHY",
+          "summary": "Rotates a region; every slice is a circle or a ring",
+          "sections": "St 5.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-shells",
+          "title": "Why shells?",
+          "tag": "WHY",
+          "summary": "Unrolls a thin cylinder into a flat slab: 2πrh·dr",
+          "sections": "St 5.3",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-cone-13-of-its-cylinder",
+          "title": "Why is a cone ⅓ of its cylinder?",
+          "tag": "WHY",
+          "summary": "Sums disc slices of a cone and compares",
+          "sections": "St 5.2",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/rates-in-science/filling-a-cone-with-water"
+          ]
+        },
+        {
+          "slug": "why-is-a-sphere-43pir3",
+          "title": "Why is a sphere ⁴⁄₃πr³?",
+          "tag": "WHY",
+          "summary": "Stacks discs of radius √(r² − x²)",
+          "sections": "St 5.2",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "disc-washer-or-shell",
+          "title": "Disc, washer or shell?",
+          "tag": "HOW",
+          "summary": "Picks the method that avoids splitting the region",
+          "sections": "St 5.3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "integral-applications/volumes/why-is-a-cone-13-of-its-cylinder"
+          ]
+        },
+        {
+          "slug": "rotating-on-a-slant",
+          "title": "Rotating on a slant",
+          "tag": "APP",
+          "summary": "Rotates about a tilted line",
+          "sections": "St 5.2 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "integral-applications/volumes/why-discs-and-washers",
+            "functions-graphs/rational-functions/why-a-slant-asymptote"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "work",
+      "title": "Work",
+      "sections": "St 5.4",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-work-an-integral-when-the-force-changes",
+          "title": "Why is work an integral when the force changes?",
+          "tag": "WHY",
+          "summary": "Stretches a spring: F = kx gives the area of a triangle",
+          "sections": "St 5.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "integrals/net-change/indefinite-integral-table"
+          ]
+        },
+        {
+          "slug": "pumping-out-a-tank",
+          "title": "Pumping out a tank",
+          "tag": "APP",
+          "summary": "Lifts each slice its own distance",
+          "sections": "St 5.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "integral-applications/work/why-is-work-an-integral-when-the-force-changes"
+          ]
+        },
+        {
+          "slug": "lifting-a-chain-or-a-leaking-bucket",
+          "title": "Lifting a chain or a leaking bucket",
+          "tag": "APP",
+          "summary": "Handles a changing weight as it rises",
+          "sections": "St 5.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integral-applications/work/why-is-work-an-integral-when-the-force-changes"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "average-value",
+      "title": "Average Value",
+      "sections": "St 5.5",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-is-the-average-value-the-integral-width",
+          "title": "Why is the average value the integral ÷ width?",
+          "tag": "WHY",
+          "summary": "Lets the 'water' under the curve settle into a level rectangle",
+          "sections": "St 5.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-average-actually-reached",
+          "title": "Why is the average actually reached?",
+          "tag": "WHY",
+          "summary": "Sees the level line must cross a continuous curve (MVT for integrals)",
+          "sections": "St 5.5",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "limits-continuity/continuity/why-must-a-continuous-path-cross-every-level-ivt"
+          ]
+        },
+        {
+          "slug": "average-temperature-over-a-day",
+          "title": "Average temperature over a day",
+          "tag": "APP",
+          "summary": "Integrates a sinusoidal temperature model",
+          "sections": "St 5.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integral-applications/average-value/why-is-the-average-actually-reached"
+          ]
+        },
+        {
+          "slug": "bat-meets-ball-impulse",
+          "title": "Bat meets ball: impulse",
+          "tag": "APP",
+          "summary": "Sees the impulse ∫F dt is the area under the force-time graph",
+          "sections": "St 5.5 project",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integral-applications/average-value/why-is-the-average-value-the-integral-width"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "arc-length-surface-area",
+      "title": "Arc Length & Surface Area",
+      "sections": "St 8.1–8.2, 10.2, 10.4 · Ax 4.1",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-arc-length-integralroot-1-dy-dx-2-dx",
+          "title": "Why is arc length ∫√(1 + (dy/dx)²) dx?",
+          "tag": "WHY",
+          "summary": "Adds up tiny hypotenuses",
+          "sections": "St 8.1 · Ax 4.1",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle",
+            "derivatives/parametric-polar-slopes/why-isn-t-d2y-dx2-y-t-x-t"
+          ]
+        },
+        {
+          "slug": "why-does-surface-area-use-the-slant-height",
+          "title": "Why does surface area use the slant height?",
+          "tag": "WHY",
+          "summary": "Unrolls lampshade bands; the radius alone undercounts",
+          "sections": "St 8.2",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-polar-area-12integralr2-dtheta",
+          "title": "Why is polar area ½∫r² dθ?",
+          "tag": "WHY",
+          "summary": "Fills the curve with thin sectors instead of rectangles",
+          "sections": "St 10.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-is-there-one-ds-for-every-coordinate-system",
+          "title": "Why is there one ds for every coordinate system?",
+          "tag": "WHY",
+          "summary": "Sees the same tiny hypotenuse ds written for y = f(x), for parametric and for polar curves, so one formula covers all three",
+          "sections": "D2 3-11",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/parametric-polar-slopes/slopes-of-polar-curves"
+          ]
+        },
+        {
+          "slug": "arc-length-of-parametric-and-polar-curves",
+          "title": "Arc length of parametric and polar curves",
+          "tag": "HOW",
+          "summary": "Uses √(x′² + y′²) and √(r² + r′²)",
+          "sections": "St 10.2, 10.4",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integral-applications/arc-length-surface-area/why-is-there-one-ds-for-every-coordinate-system",
+            "derivatives/parametric-polar-slopes/slopes-of-polar-curves"
+          ]
+        },
+        {
+          "slug": "area-under-a-parametric-curve",
+          "title": "Area under a parametric curve",
+          "tag": "HOW",
+          "summary": "Uses ∫y dx = ∫y(t) x′(t) dt and watches the sign flip if the curve runs right to left",
+          "sections": "D2 3-3",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "integral-applications/arc-length-surface-area/why-is-polar-area-12integralr2-dtheta",
+            "integrals/area-distance/why-is-the-area-under-x2-from-0-to-1-exactly-13"
+          ]
+        },
+        {
+          "slug": "arc-length-contest",
+          "title": "Arc-length contest",
+          "tag": "APP",
+          "summary": "Designs a curve between two points with the shortest or longest length",
+          "sections": "St 8.1 project",
+          "extension": false,
+          "order": 7,
+          "aids": [
+            "integral-applications/arc-length-surface-area/why-is-arc-length-integralroot-1-dy-dx-2-dx"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "physics-engineering",
+      "title": "Physics & Engineering",
+      "sections": "St 8.3",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-does-water-push-harder-on-a-dam-s-base",
+          "title": "Why does water push harder on a dam's base?",
+          "tag": "WHY",
+          "summary": "Slices the dam into strips and integrates the pressure × area",
+          "sections": "St 8.3",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-centre-of-mass-a-weighted-average",
+          "title": "Why is the centre of mass a weighted average?",
+          "tag": "WHY",
+          "summary": "Balances a plate on a pin",
+          "sections": "St 8.3",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "pappus-volume-area-x-distance-travelled",
+          "title": "Pappus: volume = area × distance travelled",
+          "tag": "WHY",
+          "summary": "Rotates a region and tracks its centroid",
+          "sections": "St 8.3",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integrals/net-change/displacement-versus-distance-travelled"
+          ]
+        },
+        {
+          "slug": "hydrostatic-force-on-a-dam-or-tank-end",
+          "title": "Hydrostatic force on a dam or tank end",
+          "tag": "APP",
+          "summary": "Computes the force for realistic shapes",
+          "sections": "St 8.3",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integral-applications/physics-engineering/why-does-water-push-harder-on-a-dam-s-base"
+          ]
+        },
+        {
+          "slug": "complementary-coffee-cups",
+          "title": "Complementary coffee cups",
+          "tag": "APP",
+          "summary": "Compares two cups whose profiles fill each other's gaps",
+          "sections": "St 8.3 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integral-applications/physics-engineering/why-is-the-centre-of-mass-a-weighted-average"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "economics-biology",
+      "title": "Economics & Biology",
+      "sections": "St 8.4",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-is-consumer-surplus-an-area",
+          "title": "Why is consumer surplus an area?",
+          "tag": "WHY",
+          "summary": "Adds up each buyer's 'would have paid' minus the price",
+          "sections": "St 8.4",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "blood-flow-in-a-vessel",
+          "title": "Blood flow in a vessel",
+          "tag": "APP",
+          "summary": "Integrates Poiseuille's velocity profile",
+          "sections": "St 8.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "integral-applications/economics-biology/why-is-consumer-surplus-an-area"
+          ]
+        },
+        {
+          "slug": "measuring-cardiac-output",
+          "title": "Measuring cardiac output",
+          "tag": "APP",
+          "summary": "Uses the dye-dilution integral",
+          "sections": "St 8.4",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "integral-applications/economics-biology/why-is-consumer-surplus-an-area",
+            "integrals/net-change/indefinite-integral-table"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "continuous-probability",
+      "title": "Continuous Probability",
+      "sections": "St 8.5",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-does-probability-become-area",
+          "title": "Why does probability become area?",
+          "tag": "WHY",
+          "summary": "Shrinks histogram bins until they become a density curve",
+          "sections": "St 8.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-p-x-exactly-5-0",
+          "title": "Why is P(X = exactly 5) = 0?",
+          "tag": "WHY",
+          "summary": "Sees a single point has zero width",
+          "sections": "St 8.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-is-the-mean-the-balance-point",
+          "title": "Why is the mean the balance point?",
+          "tag": "WHY",
+          "summary": "Balances the density on a pin",
+          "sections": "St 8.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "sequences-probability/random-variables-expectation/why-is-the-mean-xi-pi-a-balance-point"
+          ]
+        },
+        {
+          "slug": "normal-curve-heights-and-exam-scores",
+          "title": "Normal curve: heights and exam scores",
+          "tag": "APP",
+          "summary": "Shades P(a < X < b) under a bell curve",
+          "sections": "St 8.5",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "integral-applications/continuous-probability/why-does-probability-become-area",
+            "derivative-applications/shape-of-a-graph/curve-sketching-checklist"
+          ]
+        },
+        {
+          "slug": "waiting-times",
+          "title": "Waiting times",
+          "tag": "APP",
+          "summary": "Uses the exponential density for waiting at a counter",
+          "sections": "St 8.5",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "integral-applications/continuous-probability/why-is-the-mean-the-balance-point"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 12
+}

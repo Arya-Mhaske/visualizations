@@ -1,0 +1,394 @@
+{
+  "slug": "limits-continuity",
+  "title": "Limits & Continuity",
+  "source": "Stewart, Calculus 8e",
+  "children": [
+    {
+      "slug": "why-calculus",
+      "title": "Why Calculus?",
+      "sections": "St Preview, 1.4",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-do-we-need-limits-to-find-areas",
+          "title": "Why do we need limits to find areas?",
+          "tag": "WHY",
+          "summary": "Fills a circle with polygons of 6, 12, 24 … sides; their areas creep up to πr² but never reach it in finitely many steps (Archimedes)",
+          "sections": "St Preview",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-is-a-tangent-the-limit-of-secants",
+          "title": "Why is a tangent the limit of secants?",
+          "tag": "WHY",
+          "summary": "Slides the second point toward the first and watches the secant settle into the tangent",
+          "sections": "St 1.4",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "trigonometry/tan-cot-sec-csc/why-is-it-called-tangent"
+          ]
+        },
+        {
+          "slug": "why-is-speed-right-now-a-limit",
+          "title": "Why is 'speed right now' a limit?",
+          "tag": "WHY",
+          "summary": "Shrinks the time interval for an average speed: 1 s, 0.1 s, 0.01 s … and the values settle",
+          "sections": "St 1.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "why-can-infinitely-many-steps-take-finite-time",
+          "title": "Why can infinitely many steps take finite time?",
+          "tag": "WHY",
+          "summary": "Runs Zeno's Achilles and tortoise: the infinitely many catch-up times add to a finite total",
+          "sections": "St Preview",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "newton-leibniz-and-the-invention-of-calculus",
+          "title": "Newton, Leibniz and the invention of calculus",
+          "tag": "APP",
+          "summary": "Reads a timeline of who found what, and why the two notations both survived",
+          "sections": "St 4 project",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "limits-continuity/why-calculus/why-is-speed-right-now-a-limit"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-limit-idea",
+      "title": "The Limit Idea",
+      "sections": "St 1.5",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-doesn-t-a-limit-care-about-the-point-itself",
+          "title": "Why doesn't a limit care about the point itself?",
+          "tag": "WHY",
+          "summary": "Fills, empties and moves the dot at x = a; the limit doesn't change",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-do-left-and-right-limits-have-to-agree",
+          "title": "Why do left and right limits have to agree?",
+          "tag": "WHY",
+          "summary": "Approaches a jump from each side and gets two different answers",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-does-sin-1-x-have-no-limit-at-0",
+          "title": "Why does sin(1/x) have no limit at 0?",
+          "tag": "WHY",
+          "summary": "Zooms toward 0 and finds infinitely many wiggles, all between −1 and 1",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "trigonometry/inverses-equations/why-does-sin-x-0-5-have-infinitely-many-solutions",
+            "functions-graphs/lines-slope/why-does-a-vertical-line-have-no-slope"
+          ]
+        },
+        {
+          "slug": "why-can-a-calculator-lie-about-a-limit",
+          "title": "Why can a calculator lie about a limit?",
+          "tag": "WHY",
+          "summary": "Evaluates (√(t² + 9) − 3)/t² for ever-smaller t; the true limit is 1/6, but rounding eventually shows 0",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 4,
+          "aids": []
+        },
+        {
+          "slug": "why-is-infinity-not-a-number",
+          "title": "Why is '→ ∞' not a number?",
+          "tag": "WHY",
+          "summary": "Watches 1/x² grow past every bound you set; an infinite limit describes how the function behaves",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 5,
+          "aids": []
+        },
+        {
+          "slug": "estimate-a-limit-from-a-table-and-a-graph",
+          "title": "Estimate a limit from a table and a graph",
+          "tag": "HOW",
+          "summary": "Zooms the graph and fills in the table together",
+          "sections": "St 1.5",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "limits-continuity/the-limit-idea/why-does-sin-1-x-have-no-limit-at-0",
+            "exponentials-logs/e-ln-as-areas/estimate-ln-c-with-rectangles"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "limit-laws",
+      "title": "Limit Laws",
+      "sections": "St 1.6",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-can-you-just-substitute-for-polynomials",
+          "title": "Why can you just substitute for polynomials?",
+          "tag": "WHY",
+          "summary": "Sees there's no gap or jump to worry about; that's what continuity will mean",
+          "sections": "St 1.6",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "what-does-0-0-tell-you",
+          "title": "What does 0/0 tell you?",
+          "tag": "WHY",
+          "summary": "Factors and cancels to reveal the hole, then reads the height of the hole",
+          "sections": "St 1.6",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "functions-graphs/rational-functions/why-vertical-asymptotes-and-when-only-a-hole"
+          ]
+        },
+        {
+          "slug": "why-does-the-squeeze-theorem-work",
+          "title": "Why does the squeeze theorem work?",
+          "tag": "WHY",
+          "summary": "Traps x² sin(1/x) between −x² and x²; both squeeze to 0",
+          "sections": "St 1.6",
+          "extension": false,
+          "order": 3,
+          "aids": [
+            "functions-graphs/polynomial-functions/why-does-the-remainder-theorem-work"
+          ]
+        },
+        {
+          "slug": "why-is-lim-xn-an-x-a-nan1",
+          "title": "Why is lim (xⁿ − aⁿ)/(x − a) = naⁿ⁻¹?",
+          "tag": "WHY",
+          "summary": "Factors xⁿ − aⁿ = (x − a)(xⁿ⁻¹ + … + aⁿ⁻¹), then substitutes x = a",
+          "sections": "NM 12",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "derivatives/differentiation-rules/why-is-d-dx-xn-nxn1",
+            "numbers-algebra/exponents-roots/why-is-an-1-an"
+          ]
+        },
+        {
+          "slug": "limit-law-stepper",
+          "title": "Limit-law stepper",
+          "tag": "HOW",
+          "summary": "Applies the sum, product and quotient laws one at a time with a reason shown",
+          "sections": "St 1.6",
+          "extension": false,
+          "order": 5,
+          "aids": [
+            "limits-continuity/limit-laws/why-is-lim-xn-an-x-a-nan1",
+            "numbers-algebra/quadratic-equations/why-are-the-sum-and-product-of-roots-b-a-and-c-a"
+          ]
+        },
+        {
+          "slug": "rationalise-to-find-a-limit",
+          "title": "Rationalise to find a limit",
+          "tag": "HOW",
+          "summary": "Multiplies by the conjugate to clear a 0/0",
+          "sections": "St 1.6",
+          "extension": false,
+          "order": 6,
+          "aids": [
+            "limits-continuity/limit-laws/why-is-lim-xn-an-x-a-nan1"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-precise-definition",
+      "title": "The Precise Definition",
+      "sections": "St 1.7",
+      "order": 4,
+      "children": [
+        {
+          "slug": "what-does-as-close-as-you-like-really-mean",
+          "title": "What does 'as close as you like' really mean?",
+          "tag": "WHY",
+          "summary": "Plays the ε–δ game: you pick a band ε around L, the tool finds a δ window that fits (spec below)",
+          "sections": "St 1.7",
+          "extension": false,
+          "spec": "Game: the student drags an ε band around L; the tool shades the largest δ window whose graph stays inside the band. Shrink: an ε slider down to 0.001 shows δ always exists for a limit that's true. Failure: a jump function where no δ works for small ε, so the student sees why the limit doesn't exist. Formula strip: |x − a| < δ ⇒ |f(x) − L| < ε, with live numbers.",
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "why-does-delta-depend-on-epsilon-and-on-steepness",
+          "title": "Why does δ depend on ε, and on steepness?",
+          "tag": "WHY",
+          "summary": "Steepens the function and watches the δ window shrink",
+          "sections": "St 1.7",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "limits-at-infinity-the-n-version",
+          "title": "Limits at infinity: the N version",
+          "tag": "WHY",
+          "summary": "Sets a band around the asymptote and finds where the graph enters it for good",
+          "sections": "St 1.7",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "epsilondelta-proof-builder",
+          "title": "ε–δ proof builder",
+          "tag": "HOW",
+          "summary": "Writes the proof for linear and quadratic examples with each choice explained",
+          "sections": "St 1.7",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "limits-continuity/the-precise-definition/why-does-delta-depend-on-epsilon-and-on-steepness",
+            "sequences-probability/mathematical-induction/guided-proof-builder"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "continuity",
+      "title": "Continuity",
+      "sections": "St 1.8",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-does-no-lifting-the-pen-need-three-conditions",
+          "title": "Why does 'no lifting the pen' need three conditions?",
+          "tag": "WHY",
+          "summary": "Breaks each condition in turn: the value is missing, the limit is missing, or they disagree",
+          "sections": "St 1.8",
+          "extension": false,
+          "order": 1,
+          "aids": []
+        },
+        {
+          "slug": "three-kinds-of-discontinuity",
+          "title": "Three kinds of discontinuity",
+          "tag": "WHY",
+          "summary": "Sorts removable, jump and infinite breaks",
+          "sections": "St 1.8",
+          "extension": false,
+          "order": 2,
+          "aids": []
+        },
+        {
+          "slug": "why-must-a-continuous-path-cross-every-level-ivt",
+          "title": "Why must a continuous path cross every level? (IVT)",
+          "tag": "WHY",
+          "summary": "Walks a climber from 1000 m to 3000 m; they must pass 2000 m, unless the path jumps",
+          "sections": "St 1.8",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "make-a-piecewise-function-continuous",
+          "title": "Make a piecewise function continuous",
+          "tag": "HOW",
+          "summary": "Picks the constant that joins the pieces",
+          "sections": "St 1.8",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "limits-continuity/continuity/why-must-a-continuous-path-cross-every-level-ivt",
+            "functions-graphs/properties-library/piecewise-function-builder",
+            "functions-graphs/properties-library/income-tax-slabs-as-a-piecewise-function"
+          ]
+        },
+        {
+          "slug": "two-opposite-points-on-the-equator-with-equal-temperature",
+          "title": "Two opposite points on the equator with equal temperature",
+          "tag": "APP",
+          "summary": "Applies the IVT to the temperature difference around a circle",
+          "sections": "—",
+          "extension": true,
+          "order": 5,
+          "aids": [
+            "limits-continuity/continuity/why-must-a-continuous-path-cross-every-level-ivt"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "limits-at-infinity",
+      "title": "Limits at Infinity",
+      "sections": "St 3.4, 6.8",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-do-dominant-terms-decide-horizontal-asymptotes",
+          "title": "Why do dominant terms decide horizontal asymptotes?",
+          "tag": "WHY",
+          "summary": "Divides by the highest power and sees the other terms fade (see Functions & Graphs → Rational Functions)",
+          "sections": "St 3.4",
+          "extension": false,
+          "order": 1,
+          "aids": [
+            "functions-graphs/rational-functions"
+          ]
+        },
+        {
+          "slug": "why-does-ex-beat-every-power-and-ln-x-lose-to-every-power",
+          "title": "Why does eˣ beat every power, and ln x lose to every power?",
+          "tag": "WHY",
+          "summary": "Races eˣ against x¹⁰⁰ and ln x against x^0.01 far out",
+          "sections": "St 6.8",
+          "extension": false,
+          "order": 2,
+          "aids": [
+            "exponentials-logs/exponential-growth/why-does-doubling-beat-any-power"
+          ]
+        },
+        {
+          "slug": "why-is-infinity-infinity-undetermined",
+          "title": "Why is ∞ − ∞ undetermined?",
+          "tag": "WHY",
+          "summary": "Finds that √(x² + x) − x → ½, while other ∞ − ∞ forms give 0 or ∞",
+          "sections": "St 3.4",
+          "extension": false,
+          "order": 3,
+          "aids": []
+        },
+        {
+          "slug": "divide-by-the-highest-power",
+          "title": "Divide by the highest power",
+          "tag": "HOW",
+          "summary": "Steps through rational and root examples",
+          "sections": "St 3.4",
+          "extension": false,
+          "order": 4,
+          "aids": [
+            "limits-continuity/limits-at-infinity/why-do-dominant-terms-decide-horizontal-asymptotes"
+          ]
+        }
+      ]
+    }
+  ],
+  "order": 8
+}
