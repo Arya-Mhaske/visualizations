@@ -2,7 +2,7 @@
   "slug": "induction-ac-em",
   "title": "Induction, AC & EM Waves",
   "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
-  "order": 28,
+  "order": 9,
   "children": [
     {
       "slug": "faraday-lenz",

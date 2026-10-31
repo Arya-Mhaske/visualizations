@@ -31,12 +31,20 @@
         </ol>
       </nav>
       {% endif %}
+      <form class="nb-search" role="search" data-index="{% url 'search_index' %}">
+        <label class="visually-hidden" for="nb-search-input">Search topics and tools</label>
+        <input class="nb-input nb-search__input" id="nb-search-input" type="search" placeholder="Search topics and tools"
+               autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="nb-search-list">
+        <div class="nb-search__panel" hidden>
+          <p class="nb-search__status" role="status"></p>
+          <div class="nb-search__list" id="nb-search-list" role="listbox" aria-label="Search results"></div>
+        </div>
+      </form>
     </div>
   </header>
 
   <main{% if is_landing %} class="nb-main--full"{% endif %}>
     <div class="nb-container">
-      {% if subject %}<p><span class="nb-location">IN: {{ subject.title }}</span></p>{% endif %}
       {% block content %}{% endblock %}
     </div>
   </main>
@@ -47,6 +55,7 @@
     </div>
   </footer>
   <script type="module" src="{% static 'js/nav.js' %}"></script>
+  <script type="module" src="{% static 'js/search.js' %}"></script>
   <script type="module" src="{% static 'js/accent.js' %}"></script>
   {% block scripts %}{% endblock %}
 </body>

@@ -3,7 +3,7 @@
 {% block content %}
 {% if is_landing %}
 <section class="nb-hero nb-hero--landing">
-  <h1 class="nb-hero__title">{{ site_name }}</h1>
+  <h1 class="visually-hidden">{{ site_name }}</h1>
   <nav class="nb-jump" aria-label="Jump to a group of subjects">
     {% for group in groups %}<a href="#{{ group.anchor }}">{{ group.title }}</a>{% endfor %}
   </nav>
@@ -25,9 +25,6 @@
 
 <div class="nb-grid">
   {% for item in items %}{% include "catalogue/_tile.html" %}{% endfor %}
-  {% for _ in empty_slots %}
-    <div class="nb-tile is-empty" aria-hidden="true">empty slot</div>
-  {% endfor %}
 </div>
 {% endif %}
 {% endblock %}

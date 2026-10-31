@@ -19,9 +19,10 @@ from catalogue.views import resolve
 from django.contrib import admin
 from django.urls import path, re_path
 
-from catalogue.views import resolve
+from catalogue.views import resolve, search_index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('search-index.json', search_index, name='search_index'),
     re_path(r'^(?P<path>(?:[-\w]+/){0,3})$', resolve, name='resolve'),
 ]

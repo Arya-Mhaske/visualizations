@@ -2,7 +2,7 @@
   "slug": "linear-algebra",
   "title": "Linear Algebra",
   "source": "Strang, Introduction to Linear Algebra 5e",
-  "order": 18,
+  "order": 29,
   "children": [
     {
       "slug": "vectors-combinations",

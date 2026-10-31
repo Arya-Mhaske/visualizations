@@ -2,7 +2,7 @@
   "slug": "measurement-motion",
   "title": "Measurement & Motion",
   "source": "NCERT Physics Class XI (2026-27 reprint)",
-  "order": 20,
+  "order": 1,
   "children": [
     {
       "slug": "units-measurement",

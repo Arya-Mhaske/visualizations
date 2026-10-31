@@ -1,16 +1,18 @@
 from django.conf import settings
 from django.db.models import Count
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from django.shortcuts import render
+from django.views.decorators.cache import cache_control
+from django.views.decorators.gzip import gzip_page
 
-from .models import MAX_CHILDREN, Tile
+from .models import Tile
 from .paths import LiveChecker, tool_template_name
 
 ACCENTS = ['yellow', 'coral', 'sky', 'green', 'orange', 'lavender']
 TAG_ORDER = {'WHY': 0, 'HOW': 1, 'APP': 2}
 KINDS = [Tile.SUBJECT, Tile.BOX, Tile.TOOL]
 # Landing sections: (anchor, title, last subject order). The last group takes everything left.
-GROUPS = [('maths', 'Maths', 19), ('physics-xi', 'Physics XI', 25), ('physics-xii', 'Physics XII', None)]
+GROUPS = [('physics-xi', 'Physics XI', 6), ('physics-xii', 'Physics XII', 11), ('maths', 'Maths', None)]
 
 
 def _crumbs(tile):
@@ -63,6 +65,22 @@ def _sorted_tools(box):
     return sorted(tools, key=lambda t: (TAG_ORDER.get(t.tag, 9), t.order))
 
 
+@gzip_page
+@cache_control(public=True, max_age=3600)
+def search_index(request):
+    """Every subject, box and tool, for static/js/search.js to filter in the browser."""
+    live = LiveChecker()
+    tiles = Tile.objects.select_related('parent__parent')
+    return JsonResponse([{
+        'title': tile.title,
+        'url': tile.url,
+        'kind': tile.kind,
+        'tag': tile.tag,
+        'where': ' / '.join(crumb.title for crumb in _crumbs(tile)[:-1]),
+        'live': tile.kind == Tile.TOOL and live(tile),
+    } for tile in sorted(tiles, key=lambda t: KINDS.index(t.kind))], safe=False)
+
+
 def resolve(request, path):
     """One view for /, /<subject>/, /<subject>/<box>/ and /<subject>/<box>/<tool>/."""
     slugs = [s for s in path.split('/') if s]
@@ -83,10 +101,8 @@ def resolve(request, path):
     else:
         children = tile.children.annotate(count=Count('children')).order_by('order')
     crumbs = _crumbs(tile)
-    items = _grid_items(children, live)
     return render(request, 'catalogue/grid.html', {
-        'tile': tile, 'crumbs': crumbs, 'subject': crumbs[0],
-        'items': items, 'empty_slots': range(MAX_CHILDREN - len(items)),
+        'tile': tile, 'crumbs': crumbs, 'subject': crumbs[0], 'items': _grid_items(children, live),
     })
 
 

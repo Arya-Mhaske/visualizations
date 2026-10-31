@@ -171,12 +171,6 @@ main { flex: 1; padding: var(--s-5) 0 var(--s-8); }
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: min(40ch, 100%);
 }
 .nb-nav nav, .nb-crumbs li { max-width: 100%; }  /* a long current crumb ellipsises on phones */
-/* "you are IN trig" pill shown under the navbar on subject, box and tool pages */
-.nb-location {
-  display: inline-flex; align-items: center; gap: var(--s-2);
-  font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase;
-  padding: 2px var(--s-2); border: var(--border-thin); background: var(--lavender);
-}
 
 /* ---------- 4. Page header ---------------------------------------------- */
 .nb-hero { margin-bottom: var(--s-6); }
@@ -241,12 +235,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
   box-shadow: var(--shadow-sm);
 }
 .nb-tile.is-soon .nb-tile__title { color: var(--muted); }
-/* empty slot in a grid (no tile defined yet) */
-.nb-tile.is-empty {
-  border-style: dashed; box-shadow: none; background: transparent;
-  align-items: center; justify-content: center;
-  font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted);
-}
 
 /* ---------- 6. Badges / tags -------------------------------------------- */
 .nb-badge {
@@ -603,12 +591,8 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .nb-btn--fit { align-self: flex-start; text-align: left; }
 
 /* ---------- 17. Landing page -------------------------------------------- */
-/* compact header, so the first 12 tiles fit the first screen on a desktop */
-.nb-hero--landing {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: var(--s-3); margin-bottom: var(--s-4);
-}
-.nb-hero--landing .nb-hero__title { font-size: 1.75rem; margin: 0; }
+/* the h1 is visually hidden, so only the jump bar sits above the first 12 tiles */
+.nb-hero--landing { margin-bottom: var(--s-4); }
 .nb-jump { display: flex; flex-wrap: wrap; gap: var(--s-2); }
 .nb-jump a {
   font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
@@ -634,3 +618,35 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .nb-aid.is-soon { background: repeating-linear-gradient(-45deg, var(--paper) 0 10px, var(--bg) 10px 20px); }
 .nb-aid__title { font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; line-height: 1.2; }
 .nb-aid__meta { margin-top: auto; font-family: var(--font-mono); font-size: 0.7rem; }
+
+/* ---------- 19. Navbar search ------------------------------------------- */
+/* phones: logo and search share the top row, the breadcrumb takes the row below */
+.nb-search { position: relative; order: 2; flex: 1 1 0; min-width: 0; margin-left: auto; }
+.nb-nav nav { order: 3; flex-basis: 100%; }
+@media (min-width: 720px) {
+  .nb-nav__inner { flex-wrap: nowrap; }
+  .nb-nav nav { order: 0; flex: 1 1 0; min-width: 0; }
+  .nb-search { flex: 0 0 260px; }
+}
+.nb-search__input { width: 100%; min-height: 40px; padding-top: var(--s-1); padding-bottom: var(--s-1); }
+.nb-search__panel {
+  position: absolute; top: calc(100% + var(--s-2)); right: 0; z-index: 60;
+  width: min(440px, calc(100vw - 2 * var(--gutter)));
+  background: var(--paper); border: var(--border); box-shadow: var(--shadow);
+}
+.nb-search__status {
+  margin: 0; padding: var(--s-2) var(--s-3);
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
+}
+.nb-search__list { max-height: min(60vh, 420px); overflow-y: auto; }
+.nb-search__result {
+  display: flex; flex-direction: column; gap: var(--s-1);
+  padding: var(--s-2) var(--s-3); border-top: var(--border-thin);
+  text-decoration: none; color: var(--ink);
+}
+.nb-search__result:hover, .nb-search__result[aria-selected="true"] { background: var(--yellow); }
+.nb-search__title { font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; line-height: 1.2; }
+.nb-search__meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1);
+  font-family: var(--font-mono); font-size: 0.7rem;
+}

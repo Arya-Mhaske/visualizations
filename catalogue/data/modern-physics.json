@@ -2,7 +2,7 @@
   "slug": "modern-physics",
   "title": "Modern Physics",
   "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
-  "order": 30,
+  "order": 11,
   "children": [
     {
       "slug": "photoelectric-effect",

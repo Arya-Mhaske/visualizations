@@ -116,11 +116,17 @@ class CatalogueTests(TestCase):
     def test_landing_content(self):
         landing = self.client.get('/')
         self.assertContains(landing, 'nb-jump')
+        html = landing.content.decode()
+        self.assertLess(html.index('href="#physics-xi"'), html.index('href="#physics-xii"'))
+        self.assertLess(html.index('href="#physics-xii"'), html.index('href="#maths"'))
+        self.assertLess(html.index('id="physics-xi"'), html.index('id="physics-xii"'))
+        self.assertLess(html.index('id="physics-xii"'), html.index('id="maths"'))
+        self.assertLess(html.index('href="/modern-physics/"'), html.index('href="/numbers-algebra/"'))
+        self.assertContains(landing, '<h1 class="visually-hidden">MuskMelon</h1>', html=True)
         for anchor in ['maths', 'physics-xi', 'physics-xii']:
             self.assertContains(landing, f'href="#{anchor}"')
             self.assertContains(landing, f'id="{anchor}"')
         self.assertContains(landing, '135 tools')
-        self.assertNotContains(landing, 'is-empty')
         self.assertNotContains(landing, 'nb-crumbs')
         self.assertNotContains(landing, 'nb-location')
         self.assertContains(landing, '<title>MuskMelon</title>', html=True)
@@ -141,17 +147,18 @@ class CatalogueTests(TestCase):
         tool_page = self.client.get('/trigonometry/angles-arcs/why-360-degrees/')
         self.assertContains(tool_page, '<title>Why is a full turn 360°? · MuskMelon</title>', html=True)
 
-    def test_grids_pad_to_twelve(self):
+    def test_grids_show_only_real_tiles(self):
         box = self.client.get('/trigonometry/angles-arcs/')
         self.assertContains(box, 'nb-badge--live')
         self.assertContains(box, 'is-soon')
-        self.assertContains(box, 'IN: Trigonometry')
+        self.assertNotContains(box, 'nb-location')
         self.assertContains(box, 'nb-crumbs')
-        self.assertNotContains(box, 'empty slot')
         subject = Tile.objects.get(slug='numbers-algebra')
         page = self.client.get(subject.url)
         self.assertEqual(subject.children.count(), 10)
-        self.assertEqual(page.content.decode().count('empty slot'), 2)
+        self.assertEqual(page.content.decode().count('class="nb-tile '), 10)
+        self.assertNotContains(page, 'is-empty')
+        self.assertNotContains(page, 'empty slot')
 
     def test_aid_count_badge(self):
         tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()
@@ -185,6 +192,30 @@ class CatalogueTests(TestCase):
         self.assertNotContains(self.client.get(tile.url), 'Build notes')
         with self.settings(DEBUG=True):
             self.assertContains(self.client.get(tile.url), 'Build notes')
+
+    def test_search_box_on_every_level(self):
+        for url in ['/', '/trigonometry/', '/trigonometry/angles-arcs/',
+                    '/trigonometry/angles-arcs/why-360-degrees/',
+                    '/trigonometry/angles-arcs/what-is-an-angle-really/']:
+            with self.subTest(url=url):
+                page = self.client.get(url)
+                self.assertContains(page, 'class="nb-search"')
+                self.assertContains(page, 'data-index="/search-index.json"')
+
+    def test_search_index_lists_every_tile(self):
+        with self.assertNumQueries(1):
+            response = self.client.get('/search-index.json')
+        self.assertEqual(response.status_code, 200)
+        entries = response.json()
+        self.assertEqual(len(entries), 30 + 256 + 1538)
+        by_url = {entry['url']: entry for entry in entries}
+        self.assertEqual(len(by_url), len(entries))
+        self.assertEqual(by_url['/trigonometry/angles-arcs/why-360-degrees/'], {
+            'title': 'Why is a full turn 360°?', 'url': '/trigonometry/angles-arcs/why-360-degrees/',
+            'kind': 'tool', 'tag': 'WHY', 'where': 'Trigonometry / Angles & Arcs', 'live': True})
+        self.assertEqual(by_url['/trigonometry/angles-arcs/']['where'], 'Trigonometry')
+        self.assertEqual(by_url['/trigonometry/']['kind'], 'subject')
+        self.assertEqual(sum(entry['live'] for entry in entries), 1)
 
     def test_query_budget(self):
         tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()

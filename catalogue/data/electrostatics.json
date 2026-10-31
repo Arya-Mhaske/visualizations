@@ -2,7 +2,7 @@
   "slug": "electrostatics",
   "title": "Electrostatics",
   "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
-  "order": 26,
+  "order": 7,
   "children": [
     {
       "slug": "electric-charge",

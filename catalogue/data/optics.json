@@ -2,7 +2,7 @@
   "slug": "optics",
   "title": "Optics",
   "source": "NCERT Physics Class XII (2026-27 reprint; ch 14 from 2025-26)",
-  "order": 29,
+  "order": 10,
   "children": [
     {
       "slug": "mirrors",
