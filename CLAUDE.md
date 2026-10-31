@@ -86,7 +86,7 @@ A tool is two files: `templates/tools/<subject>/<box>/<slug>.html` (extends `too
 3. `.viz-body`: `.viz-stage` (canvas or SVG; the student acts here), plus `.viz-panel` (sliders, toggles,
    live `.viz-readout`). The stage comes first on phones.
 4. `.viz-formula` (optional): a live KaTeX line, only when it adds something the `.viz-readout` does not already show. Skip it if it repeats the panel.
-5. `.viz-why`: the "So why?" takeaway, 1–3 sentences in a `.nb-callout--why`. This is the point of the page.
+5. `.viz-why`: the "So, why?" takeaway, 1–3 sentences in a `.nb-callout--why`. This is the point of the page.
 6. `.viz-try`: 2–4 "Try this" prompts that make the student discover something with the controls.
 7. History or convention caveats go in `.nb-callout--note`. **Label conjecture as conjecture.**
 8. `.viz-next`: previous/next tool in the same box, plus a back-to-box link.

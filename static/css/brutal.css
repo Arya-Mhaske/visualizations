@@ -461,7 +461,7 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
   overflow-x: auto; font-size: 1.15rem; text-align: center;
 }
 
-/* the takeaway: "So why?" */
+/* the takeaway: "So, why?" */
 .viz-why { margin-top: var(--s-6); }
 .viz-why details summary {
   cursor: pointer; list-style: none;
