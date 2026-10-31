@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A pulse runs into the end of a string. Turn on the image pulse: it is the pulse that would have to arrive from beyond the end to make the string behave there.{% endblock %}
+{% block why_text %}A wall cannot move, so the string at the wall must stay at zero. Two pulses cancel at one point for ever only if one is upside down, so the image is inverted and the reflected pulse comes back flipped. A ring on a smooth rod feels no sideways pull, so the string must be level there. The image must then be the same way up, the end swings twice as high, and the pulse returns unflipped.{% endblock %}
+{% block try_items %}
+<li>With the wall, slide time through 6 s. What is the height of the end the whole time?</li>
+<li>Switch to the ring. What is the greatest height the end reaches, compared with the pulse?</li>
+<li>Switch the image off and watch only the real string. Can you still tell which end it is?</li>
+{% endblock %}

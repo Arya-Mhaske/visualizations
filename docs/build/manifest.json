@@ -1979,26 +1979,26 @@
 "oscillations-waves/superposition-reflection/why-do-waves-pass-through-each-other-unchanged": {
 "archetype": "sim",
 "priority": 104,
-"notes": "",
-"reviewed": false
+"notes": "Exact d'Alembert sum on a timeline, not a stepped sim.",
+"reviewed": true
 },
 "oscillations-waves/superposition-reflection/constructive-versus-destructive": {
 "archetype": "sim",
 "priority": 104,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/superposition-reflection/why-does-a-fixed-end-flip-the-pulse-but-a-free-end-doesn-t": {
 "archetype": "sim",
 "priority": 104,
-"notes": "",
-"reviewed": false
+"notes": "Method of images; the image pulse is the reason made visible.",
+"reviewed": true
 },
 "oscillations-waves/superposition-reflection/two-pulse-sandbox": {
-"archetype": "stepper",
+"archetype": "sim",
 "priority": 104,
-"notes": "",
-"reviewed": false
+"notes": "Archetype changed from stepper: it is a free-play sandbox on the timeline.",
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/why-do-only-certain-notes-fit-on-a-string": {
 "archetype": "sim",

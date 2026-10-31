@@ -78,6 +78,7 @@ Each file's header comment is its documentation.
 - `drill.js`: `createDrill`, `isRight`
 - `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
 - `tool.js`: `createTool`
+- `timeline.js`: `createTimeline` (a looping `state.t` shared by a time slider and Play; for exact-formula animations)
 - `draw.js`'s neighbour `docs/build/sheet.py` makes the contact sheet for a box
 - `colors.js`: `readColors`
 
@@ -125,6 +126,13 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   speeds and `isoP`/`adiaP` curves, and `MATERIALS` (stiffness and density of air, water, aluminium, steel, with `materialSpeed`). Long races
   (a push down 100 m of steel) run in slow motion with a stated factor (×20); say so in a note. Log-scale bars: put a long bar's label inside it.
 - Wide stages (16:9) are too short at 360 px for two-line plots; use square or tall for anything with a ruler or several labels.
+- `lib/timeline.js` gives a slider-plus-Play time axis (`state.t`, looping): put `{ key: 't', ... }` and `transport(line.clock)` in the controls and
+  call `line.sync()` from `onChange`. Use it instead of a bare `createClock` whenever a student should scrub time.
+- `_superposition-math.js` has `field` (sum of Gaussian pulses, optionally between two fixed/free walls by the method of images, period 2L/v),
+  `wallField`/`wallImage` (one wall), `resultant`/`kindOf` (two sine waves), and `energy` (conserved between walls; it is still 100% when two
+  pulses cancel, because the energy is all in the motion). Its tests check the string against an independent leapfrog solution of the wave
+  equation (Courant number 1). In such tests put every sampled x on a grid node (the first run failed on half-node rounding).
+  Next box (`standing-waves-music`) can reuse `field` with `walls: -1` for standing waves from two travelling waves.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -239,7 +247,7 @@ it reaches the front of the queue.
 | 98 | `exponentials-logs/the-number-e` | 4 | 1 | |
 | 99 | `oscillations-waves/travelling-waves` | 6 | 1 | ✓ |
 | 100 | `exponentials-logs/logarithms` | 9 | 1 | |
-| 101 | `oscillations-waves/superposition-reflection` | 4 | 1 | |
+| 101 | `oscillations-waves/superposition-reflection` | 4 | 1 | ✓ |
 | 102 | `exponentials-logs/log-scales` | 6 | 1 | |
 | 103 | `oscillations-waves/standing-waves-music` | 6 | 1 | |
 | 104 | `exponentials-logs/exp-log-equations` | 4 | 1 | |

@@ -14,12 +14,12 @@ oscillations-waves/beats
 current-magnetism/current-drift
 current-magnetism/resistance-temperature
 current-magnetism/cells-emf-power
-current-magnetism/kirchhoff-wheatstone  opus high  # first needs the circuit engine
+current-magnetism/kirchhoff-wheatstone  opus medium  # first needs the circuit engine
 current-magnetism/magnetic-force-on-charges
 current-magnetism/sources-of-magnetic-field
 current-magnetism/loops-meters
 current-magnetism/magnetism-matter
-optics/mirrors  opus high  # first needs the rays engine
+optics/mirrors  opus medium  # first needs the rays engine
 optics/refraction-total-internal-reflection
 optics/lenses
 optics/prism-dispersion

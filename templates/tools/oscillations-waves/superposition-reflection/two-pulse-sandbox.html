@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Shape two pulses, choose what happens at the ends, and slide time. The string is always their sum.{% endblock %}
+{% block why_text %}Any shape on the string is a sum of pulses, and each pulse travels on its own. To predict the string at any moment, find where each pulse is, then add the heights point by point. A wall just adds one more pulse, upside down for a fixed end.{% endblock %}
+{% block try_items %}
+<li>Press Cancel and slide to 3 s. Where did the energy go? Slide on to 5 s.</li>
+<li>Make the two pulses unequal in height and cancel as well as you can. Why is it never perfect?</li>
+<li>Fix both ends and let one pulse run for 20 s. What do you notice about the energy?</li>
+{% endblock %}
