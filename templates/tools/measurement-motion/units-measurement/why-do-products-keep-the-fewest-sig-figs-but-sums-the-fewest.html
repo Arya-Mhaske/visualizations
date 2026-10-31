@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two readings, each with an uncertainty bar. Add them, then multiply them, and watch the bars stack.{% endblock %}
+{% block why_text %}In a sum the absolute errors add, so the coarsest reading sets the result: keep the fewest decimals. In a product the relative errors add, so the reading with the largest relative error (fewest sig figs) sets the result: keep the fewest sig figs.{% endblock %}
+{% block try_items %}
+<li>Add with a at 1 decimal and b at 3 decimals. Which bar decides the size of the result's bar?</li>
+<li>Now multiply the same pair. Which of the two bars is now tiny, and why?</li>
+<li>Give both numbers 0 decimals. Does the rule still match the error bar?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">A shortcut</span>Each reading's uncertainty is taken as one unit in its last digit. The rules are a quick way to track this; for a very exact answer the error bar is the better guide.</div>{% endblock %}

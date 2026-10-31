@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Count significant figures, round, add and multiply. Four kinds of question, mixed.{% endblock %}
+{% block formula %}{% endblock %}
+{% block why_text %}Count from the first non-zero digit. Sums keep the fewest decimals; products keep the fewest significant figures. Ask which error is adding: absolute for a sum, relative for a product.{% endblock %}
+{% block try_items %}
+<li>Answer ten questions. Which kind do you get wrong most often?</li>
+<li>Change the question set to repeat the same ten later.</li>
+<li>For each sum question, check which number has the fewest decimals before you look at the options.</li>
+{% endblock %}

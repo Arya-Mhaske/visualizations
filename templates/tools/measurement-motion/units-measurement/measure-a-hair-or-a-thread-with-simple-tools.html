@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A thread is thinner than any ruler division. Wind many turns side by side and measure them all at once.{% endblock %}
+{% block why_text %}The ruler is off by about one division whatever you measure. Spread that error over N turns and each turn's thickness is off by only one division ÷ N. More turns, smaller uncertainty.{% endblock %}
+{% block try_items %}
+<li>Set turns to 1. How large is the uncertainty compared with the thread itself?</li>
+<li>Raise the turns to 50, then 100. Watch the uncertainty fall.</li>
+<li>Change the least count to 0.5 mm. By how much does the uncertainty halve?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Another way</span>A travelling microscope is another way to measure a hair. The idea is the same: use a finer instrument or spread the error across many readings.</div>{% endblock %}

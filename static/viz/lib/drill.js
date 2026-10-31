@@ -4,7 +4,7 @@
 //     { prompt, tex?, options: [text, ...], answer: index, hint, explain }   multiple choice
 //     { prompt, tex?, answer: number, tolerance?, unit?, hint, explain }     typed number
 //   Either kind may add figure(ctx, stage, c) to draw a picture above the answers.
-//   Give the page the viz-stage--flow class.
+//   Give the page the viz-stage--flow class. The stage itself is labelled "Practice questions" for screen readers.
 import { createRng } from './rng.js';
 import { bindControls } from './controls.js';
 import { renderTex } from './formula.js';
@@ -25,6 +25,8 @@ export const isRight = (question, value) => (question.options
 
 export function createDrill({ stage, panel, seed = 1, generate }) {
   const state = { seed, right: 0, tried: 0, feedback: 'Pick an answer.' };
+  stage.setAttribute('role', 'group');
+  stage.setAttribute('aria-label', 'Practice questions');
   const box = el(stage, 'div', 'viz-drill');
   let rng = createRng(seed);
   let question = null;

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}An angle is arc ÷ radius. Both are lengths. Drag the radius and watch the ratio stay put.{% endblock %}
+{% block why_text %}Arc and radius are both measured in cm, so cm ÷ cm cancels and a radian is a pure number. A steradian is the same idea in 3D: area ÷ r², cm² ÷ cm². "rad" and "sr" are labels that tell you which ratio it is, not units that survive.{% endblock %}
+{% block try_items %}
+<li>Keep θ at 60° and change r. What changes, and what does not?</li>
+<li>Set θ = 360°. What is s ÷ r? Compare with 2π.</li>
+<li>Switch to steradian and set the half-angle to 180°. What solid angle does the whole sphere subtend?</li>
+{% endblock %}

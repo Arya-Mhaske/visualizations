@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A rectangle 16.2 cm by 10.1 cm, each side good to ± 0.1 cm. The extra strips are the area's error.{% endblock %}
+{% block why_text %}Make L a little longer and you gain a strip of area W × δL. Make W longer and you gain L × δW. Divide by A = L × W and each strip becomes δL/L or δW/W, so the relative errors simply add. The tiny corner δL × δW is too small to matter.{% endblock %}
+{% block try_items %}
+<li>Keep the defaults. Is δA ÷ A equal to the sum of the two percentages?</li>
+<li>Set both errors to 0.5 cm. How big is the corner now? Does the sum still match exactly?</li>
+<li>Shorten the width. Which side's error matters more to the area, and why?</li>
+{% endblock %}

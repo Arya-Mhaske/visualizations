@@ -100,6 +100,13 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   shows the idea: the empty-set tool first opened on six blank buttons.
 - Exact-formula animations: `createClock` plus `transport(clock)`; create the clock before `createTool`. One maths file can serve
   neighbouring boxes (`_shm-math.js`). Use one commit per box even then.
+- Exact decimals: `_units-measurement-math.js` holds `{n, e}` decimals with `parseDecimal`, `sigFigs`, `sigMask`, `roundDecimals`,
+  `roundSig`, `showSig` and a drill question generator. Reuse it for any later box that rounds or counts figures
+  (`numbers-algebra/exponents-roots`, `dimensions`). Floats are never used to round, so 2.735 and 2.745 behave.
+- Drill tests: build questions for 300 seeds and recompute each answer with Python `Decimal`. Check half-even and half-up agree,
+  so no drill answer hangs on a rounding convention. `createDrill` now labels its stage ("Practice questions") for `smoke_tools`.
+- Sheet cleanup that recurs: long canvas labels clip at 360 px (keep under about 30 characters), and a stage's tall layout leaves
+  rows far apart at 1280 px. Check both sheets.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -114,7 +121,7 @@ it reaches the front of the queue.
 | P2 | `measurement-motion/motion-in-a-straight-line` | 8 | 1 | ✓ |
 | P3 | `vectors-3d/3d-coordinates` | 4 | 1 | ✓ |
 | P4 | `sequences-probability/conditional-probability-bayes` | 8 | 1 | ✓ |
-| 1 | `measurement-motion/units-measurement` | 11 | 1 | |
+| 1 | `measurement-motion/units-measurement` | 11 | 1 | ✓ |
 | 2 | `numbers-algebra/sets` | 11 | 1 | ✓ |
 | 3 | `measurement-motion/dimensions` | 7 | 1 | |
 | 4 | `functions-graphs/coordinate-plane` | 7 | 1 | |

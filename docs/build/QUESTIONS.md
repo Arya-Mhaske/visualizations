@@ -13,3 +13,17 @@ Log anything a tool can't follow from the catalogue: tool path, the problem, a p
 - **Maths XII Ch. 3–13 section refs are unverified.** They were catalogued without the PDFs (docs/catalogue/maths-xii.md).
   Boxes built so far that cite them: `sequences-probability/conditional-probability-bayes` (MXII 13.1–13.5).
   Fix: check against the NCERT PDFs when available, and correct the `sections` values in the JSON.
+
+- **`measurement-motion/units-measurement/why-are-si-units-now-defined-by-constants-of-nature`: drift rate is invented.**
+  The kilogram artefact drifts at an illustrative 0.5 µg a year, labelled as such in a note (the figure often quoted is about
+  50 µg in a century against its copies). Fix: replace with a sourced figure if one is wanted, and keep the label until then.
+- **`measurement-motion/units-measurement/why-do-we-need-agreed-units-at-all`: span, cubit and foot sizes are made up.**
+  Asha, Bilal and Chen have invented hand and arm sizes; the summary only says "three different numbers". Fix: none needed
+  unless a historical set of values is preferred, but it must not be presented as a real record.
+- **`measurement-motion/units-measurement/why-do-products-keep-the-fewest-sig-figs-but-sums-the-fewest`: the rules are shortcuts.**
+  Each reading's uncertainty is taken as one unit in its last digit. The rule matches the error bar's last digit for sums
+  always, and is tested to be within one digit for products (it can be off by one). The tool says so in a note. Check this is
+  the message you want for Class 11.
+- **`measurement-motion/units-measurement/measure-a-hair-or-a-thread-with-simple-tools`: no microscope view.**
+  The summary says "or uses a microscope". Only winding is built; the microscope is a one-line note. Fix: add a second view
+  (vernier microscope with a least count of 0.01 mm) if wanted.

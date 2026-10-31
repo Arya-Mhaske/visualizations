@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One length, read with four instruments, written in five units. Count the green boxes.{% endblock %}
+{% block why_text %}Changing units only moves the decimal point. It cannot make the instrument better. So 2.308 cm, 0.02308 m and 23.08 mm all have four reliable digits, and the zeros that merely hold the place do not count.{% endblock %}
+{% block try_items %}
+<li>With the screw gauge, switch between cm, m and mm. Does the count of green boxes change?</li>
+<li>Switch instruments. What does a better instrument change: the length or the number of reliable digits?</li>
+<li>Write the ruler's 2.3 cm in µm. Why is 23000 µm still only 2 significant figures?</li>
+{% endblock %}

@@ -3,67 +3,68 @@
 "archetype": "table",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-are-si-units-now-defined-by-constants-of-nature": {
-"archetype": "table",
+"archetype": "plot",
 "priority": 4,
-"notes": "",
-"reviewed": false
+"notes": "Kilogram drift rate is illustrative; labelled in a note.",
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-only-seven-base-units": {
 "archetype": "table",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-is-a-radian-dimensionless-and-what-is-a-steradian": {
-"archetype": "table",
+"archetype": "geometry",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-do-we-bother-with-significant-figures": {
 "archetype": "table",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-do-products-keep-the-fewest-sig-figs-but-sums-the-fewest": {
-"archetype": "sim",
+"archetype": "table",
 "priority": 4,
-"notes": "",
-"reviewed": false
+"notes": "Static error bars, not a time-stepped sim.",
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-does-2-745-round-to-2-74-but-2-735-to-2-74": {
-"archetype": "sim",
+"archetype": "table",
 "priority": 4,
-"notes": "",
-"reviewed": false
+"notes": "Ten exact ties, not random sampling.",
+"reviewed": true
 },
 "measurement-motion/units-measurement/why-do-relative-errors-add-when-you-multiply": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/significant-figure-drill": {
 "archetype": "drill",
 "priority": 4,
+"formula": false,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/orders-of-magnitude-atom-to-earth": {
 "archetype": "table",
 "priority": 4,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/units-measurement/measure-a-hair-or-a-thread-with-simple-tools": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 4,
-"notes": "",
-"reviewed": false
+"notes": "Winding method only; the microscope is mentioned in a note.",
+"reviewed": true
 },
 "measurement-motion/dimensions/why-can-t-you-add-a-velocity-to-a-force": {
 "archetype": "table",

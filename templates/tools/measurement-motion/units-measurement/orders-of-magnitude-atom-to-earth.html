@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A hydrogen atom is about 10⁻¹⁰ m across and the Earth's radius about 10⁷ m. Climb the ladder between them.{% endblock %}
+{% block why_text %}Each step up the ladder multiplies by ten, so the gap between two sizes is just the difference of their powers. 7 − (−10) = 17 orders, so the Earth is about 10¹⁷ times the atom.{% endblock %}
+{% block try_items %}
+<li>Keep the hydrogen atom as red and the Earth radius as blue. How many orders apart are they?</li>
+<li>Make the human height red and Mount Everest blue. What power of ten is the ratio?</li>
+<li>Find two objects exactly 10 orders apart.</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Convention</span>The order of magnitude is the power of ten nearest the size (a value above 3.16 × 10ⁿ counts as 10ⁿ⁺¹). The sizes are typical round values, so the orders are rough.</div>{% endblock %}

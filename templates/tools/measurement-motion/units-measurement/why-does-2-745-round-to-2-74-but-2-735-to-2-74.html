@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Ten numbers that all end in exactly 5. Round them one way, then the other, and see which one stays fair.{% endblock %}
+{% block why_text %}A 5 that is exactly half is as close to the number above as to the one below. If you always go up, every one of them errs the same way and the errors pile up. Going to the even digit sends about half up and half down, so the errors cancel.{% endblock %}
+{% block try_items %}
+<li>Set d = 4 (2.745), then d = 3 (2.735). Both give 2.74. Which one went up, and which went down?</li>
+<li>Choose "Always up". Read the total error of the ten numbers.</li>
+<li>Choose "To even". Why is the total error now zero?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Convention</span>This is the NCERT rule (§1.3.2) for a digit 5 with nothing after it. If any nonzero digit follows the 5, as in 2.7451, round up as usual. Some calculators and many textbooks round half up instead.</div>{% endblock %}
