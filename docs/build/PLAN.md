@@ -76,6 +76,9 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `tpl`-style generation of the templates is fine, but check every line of copy: facts in `why` text need tests too.
 - Passing the smoke test proves nothing about the picture. **Look at a contact sheet of every box.** Pilot 1 passed the smoke test
   with a belt wrapped the wrong way round a pulley.
+- `createPlot` takes `box` for stacked graphs (`viz-stage--tall` gives three of them room). `drill` questions take `figure`.
+- Sims: create the sim before `createTool`, so controls can use `transport(sim)` directly, and use `onChange` to restart it.
+- Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -85,7 +88,7 @@ Mark a finished box with ✓ in the last column.
 | # | Box | Tools | Tier | Done |
 |---|---|---|---|---|
 | P1 | `trigonometry/angles-arcs` | 12 | 1 | ✓ |
-| P2 | `measurement-motion/motion-in-a-straight-line` | 8 | 1 | |
+| P2 | `measurement-motion/motion-in-a-straight-line` | 8 | 1 | ✓ |
 | P3 | `vectors-3d/3d-coordinates` | 4 | 1 | |
 | P4 | `sequences-probability/conditional-probability-bayes` | 8 | 1 | |
 | 1 | `measurement-motion/units-measurement` | 11 | 1 | |

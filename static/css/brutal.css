@@ -438,6 +438,7 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 }
 .viz-stage--square { aspect-ratio: 1 / 1; }
 .viz-stage--wide   { aspect-ratio: 16 / 9; }
+.viz-stage--tall   { aspect-ratio: 3 / 4; }
 /* an HTML stage (worked steps, drills, cell grids) that grows with its content and lets the page scroll */
 .viz-stage--flow   { aspect-ratio: auto; min-height: 280px; padding: var(--s-4); touch-action: auto; overflow-wrap: anywhere; }
 /* a canvas with nothing to drag: a vertical swipe scrolls the page */
@@ -514,6 +515,8 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 /* generated practice (static/viz/lib/drill.js) */
 .viz-drill { display: flex; flex-direction: column; gap: var(--s-4); }
 .viz-drill__prompt { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; overflow-x: auto; }
+.viz-drill__figure { aspect-ratio: 16 / 9; border: var(--border-thin); position: relative; overflow: hidden; }
+.viz-drill__figure > canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .viz-drill__options { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--s-3); }
 .viz-drill__note { margin: 0; padding: var(--s-2) var(--s-3); border: var(--border-thin); }
 .viz-drill__note[data-state="good"] { background: var(--good); }

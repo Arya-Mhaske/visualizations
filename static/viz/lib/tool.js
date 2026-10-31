@@ -6,6 +6,7 @@
 //     draw: (ctx, stage, c, extra) => { ... },
 //     controls: [ ...bindControls spec... ],
 //     tex: (state) => 's = r\\theta',                  // optional
+//     onChange: (state) => {},                         // optional; runs when a control changes
 //   });
 //   tool.update()  after changing state from the stage (a drag or a frame). tool.stage, tool.c, tool.ui.
 import { readColors } from './colors.js';
@@ -15,7 +16,7 @@ import { liveFormula } from './formula.js';
 
 const find = (selector) => document.querySelector(selector);
 
-export function createTool({ state, label, setup = null, draw, controls = [], tex = null }) {
+export function createTool({ state, label, setup = null, draw, controls = [], tex = null, onChange = () => {} }) {
   const c = readColors();
   const tool = { state, c, extra: null };
   let paint = () => {};
@@ -28,7 +29,10 @@ export function createTool({ state, label, setup = null, draw, controls = [], te
     tool.stage.invalidate();
   };
   const list = typeof controls === 'function' ? controls(tool) : controls;
-  tool.ui = bindControls(find('#panel'), state, list, repaint);
+  tool.ui = bindControls(find('#panel'), state, list, () => {
+    onChange(state);
+    repaint();
+  });
   tool.update = () => {
     tool.ui.refresh();
     repaint();

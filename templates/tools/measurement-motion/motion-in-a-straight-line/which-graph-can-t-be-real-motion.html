@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Some graphs look fine but could never happen. Spot them.{% endblock %}
+{% block formula %}{% endblock %}
+{% block why_text %}A real object has one position at each time, can't jump, and can't have negative speed. Negative x and negative v are both fine: they only say which side, and which way.{% endblock %}
+{% block try_items %}
+<li>Answer five questions. What rule catches most of the impossible ones?</li>
+<li>Change the question set and try again.</li>
+<li>Why is a negative position allowed but negative speed not?</li>
+{% endblock %}

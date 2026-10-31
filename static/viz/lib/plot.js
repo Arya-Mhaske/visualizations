@@ -3,6 +3,7 @@
 //   Inside draw: plot.axes({ xLabel, yLabel }); plot.fn(f, { color, domain, dash }); plot.shade(f, g, a, b, fill);
 //   plot.point(x, y, { fill }); plot.segment(x1, y1, x2, y2, opts); plot.text(s, x, y, opts);
 //   plot.toPx(x, y) and plot.toWorld(px, py) convert. plot.setRange(x, y) changes the window.
+//   box: (stage) => ({ x, y, w, h }) puts the plot in part of the stage, so graphs can stack.
 // sample(), niceStep() and tickValues() are pure and exported so tests can check them.
 import { line, dot, label } from './draw.js';
 import { fixed, piFrac } from './format.js';
@@ -63,21 +64,29 @@ export function sample(f, a, b, { yRange, tolerance = 0.0015, depth = 9, start =
   return pieces;
 }
 
-export function createPlot(stage, { x = [-5, 5], y = [-5, 5], ticks = 'auto', c, pad = 26 }) {
+export function createPlot(stage, { x = [-5, 5], y = [-5, 5], ticks = 'auto', c, pad = 26, box = null }) {
   const view = { x, y };
   const ctx = stage.ctx;
-  const toPx = (wx, wy) => [
-    pad + ((wx - view.x[0]) / (view.x[1] - view.x[0])) * (stage.w - pad * 2),
-    stage.h - pad - ((wy - view.y[0]) / (view.y[1] - view.y[0])) * (stage.h - pad * 2),
-  ];
-  const toWorld = (px, py) => [
-    view.x[0] + ((px - pad) / (stage.w - pad * 2)) * (view.x[1] - view.x[0]),
-    view.y[0] + ((stage.h - pad - py) / (stage.h - pad * 2)) * (view.y[1] - view.y[0]),
-  ];
+  const area = () => (box ? box(stage) : { x: 0, y: 0, w: stage.w, h: stage.h });
+  const toPx = (wx, wy) => {
+    const a = area();
+    return [
+      a.x + pad + ((wx - view.x[0]) / (view.x[1] - view.x[0])) * (a.w - pad * 2),
+      a.y + a.h - pad - ((wy - view.y[0]) / (view.y[1] - view.y[0])) * (a.h - pad * 2),
+    ];
+  };
+  const toWorld = (px, py) => {
+    const a = area();
+    return [
+      view.x[0] + ((px - a.x - pad) / (a.w - pad * 2)) * (view.x[1] - view.x[0]),
+      view.y[0] + ((a.y + a.h - pad - py) / (a.h - pad * 2)) * (view.y[1] - view.y[0]),
+    ];
+  };
   const clipped = (body) => {
+    const a = area();
     ctx.save();
     ctx.beginPath();
-    ctx.rect(pad, pad, stage.w - pad * 2, stage.h - pad * 2);
+    ctx.rect(a.x + pad, a.y + pad, a.w - pad * 2, a.h - pad * 2);
     ctx.clip();
     body();
     ctx.restore();
@@ -85,7 +94,7 @@ export function createPlot(stage, { x = [-5, 5], y = [-5, 5], ticks = 'auto', c,
 
   function xTicks() {
     if (ticks !== 'pi') {
-      const step = niceStep(view.x[1] - view.x[0], stage.w < 420 ? 5 : 8);
+      const step = niceStep(view.x[1] - view.x[0], area().w < 420 ? 5 : 8);
       return tickValues(view.x[0], view.x[1], step).map((v) => [v, fixed(v, 3)]);
     }
     const span = view.x[1] - view.x[0];
@@ -94,18 +103,20 @@ export function createPlot(stage, { x = [-5, 5], y = [-5, 5], ticks = 'auto', c,
   }
 
   function axes({ xLabel = 'x', yLabel = 'y', grid = true } = {}) {
+    const a = area();
+    const [left, right, top, bottom] = [a.x + pad, a.x + a.w - pad, a.y + pad, a.y + a.h - pad];
     const [ox, oy] = toPx(Math.max(view.x[0], Math.min(view.x[1], 0)), Math.max(view.y[0], Math.min(view.y[1], 0)));
     const xs = xTicks();
-    const ys = tickValues(view.y[0], view.y[1], niceStep(view.y[1] - view.y[0], stage.h < 300 ? 4 : 6))
+    const ys = tickValues(view.y[0], view.y[1], niceStep(view.y[1] - view.y[0], a.h < 300 ? 4 : 6))
       .map((v) => [v, fixed(v, 3)]);
-    for (const [v] of grid ? xs : []) line(ctx, toPx(v, 0)[0], pad, toPx(v, 0)[0], stage.h - pad, { color: c.grid, width: 1 });
-    for (const [v] of grid ? ys : []) line(ctx, pad, toPx(0, v)[1], stage.w - pad, toPx(0, v)[1], { color: c.grid, width: 1 });
-    line(ctx, pad, oy, stage.w - pad, oy, { color: c.ink, width: 2 });
-    line(ctx, ox, pad, ox, stage.h - pad, { color: c.ink, width: 2 });
-    for (const [v, text] of xs) if (Math.abs(v) > 1e-9) label(ctx, text, toPx(v, 0)[0], Math.min(oy + 13, stage.h - 8), c, { size: 10, bounds: stage });
-    for (const [v, text] of ys) if (Math.abs(v) > 1e-9) label(ctx, text, Math.max(ox - 5, 26), toPx(0, v)[1], c, { size: 10, align: 'right', bounds: stage });
-    label(ctx, xLabel, stage.w - 5, Math.max(oy - 12, 10), c, { size: 12, align: 'right', bounds: stage });
-    label(ctx, yLabel, Math.min(ox + 8, stage.w - 40), 12, c, { size: 12, align: 'left', bounds: stage });
+    for (const [v] of grid ? xs : []) line(ctx, toPx(v, 0)[0], top, toPx(v, 0)[0], bottom, { color: c.grid, width: 1 });
+    for (const [v] of grid ? ys : []) line(ctx, left, toPx(0, v)[1], right, toPx(0, v)[1], { color: c.grid, width: 1 });
+    line(ctx, left, oy, right, oy, { color: c.ink, width: 2 });
+    line(ctx, ox, top, ox, bottom, { color: c.ink, width: 2 });
+    for (const [v, text] of xs) if (Math.abs(v) > 1e-9) label(ctx, text, toPx(v, 0)[0], Math.min(oy + 13, bottom + 16), c, { size: 10, bounds: stage });
+    for (const [v, text] of ys) if (Math.abs(v) > 1e-9) label(ctx, text, Math.max(ox - 5, left), toPx(0, v)[1], c, { size: 10, align: 'right', bounds: stage });
+    label(ctx, xLabel, right + 20, Math.max(oy - 12, top - 10), c, { size: 12, align: 'right', bounds: stage });
+    label(ctx, yLabel, Math.min(ox + 8, right - 40), top - 12, c, { size: 12, align: 'left', bounds: stage });
   }
 
   function fn(f, { color = c.a, width = 3, dash = [], domain = view.x } = {}) {

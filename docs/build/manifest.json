@@ -111,49 +111,50 @@
 "archetype": "sim",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/why-is-velocity-a-slope-and-displacement-an-area": {
 "archetype": "table",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/how-can-something-be-at-rest-yet-accelerating": {
 "archetype": "sim",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/why-doesn-t-the-sign-of-a-say-speeding-up-or-slowing-down": {
 "archetype": "sim",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/why-is-average-speed-average-velocity": {
 "archetype": "sim",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/why-must-real-motion-graphs-be-smooth": {
 "archetype": "sim",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/linked-xt-vt-at-graphs": {
 "archetype": "stepper",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/which-graph-can-t-be-real-motion": {
 "archetype": "drill",
 "priority": 1,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "measurement-motion/uniform-acceleration/why-do-the-three-equations-of-motion-come-from-one-picture": {
 "archetype": "sim",

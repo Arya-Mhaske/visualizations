@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}How can an area be a distance? Check the units on the axes.{% endblock %}
+{% block why_text %}Slope is rise ÷ run, here metres ÷ seconds, which is velocity. Area is height × width, here (m/s) × s, which is metres. So the graph of one quantity contains the other. The shape of the area doesn't matter, only its units.{% endblock %}
+{% block try_items %}
+<li>Slide t. Do the slope and height readouts ever differ?</li>
+<li>Make the velocity go negative. What does area below the axis do to x?</li>
+<li>Find a setting where the object returns to x = 0.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}"Negative acceleration means slowing down" is a popular mistake. Flip the axis and test it.{% endblock %}
+{% block why_text %}The sign of a depends on which way you call positive, but the car doesn't care. Speeding up or slowing down depends on a compared with v: same direction speeds up, opposite slows down. Flipping the axis flips both signs, so the product v × a stays the same.{% endblock %}
+{% block try_items %}
+<li>Find a negative a that speeds the car up.</li>
+<li>Flip the axis. Which readouts change, and does the car's behaviour?</li>
+<li>Set v = 0 and a = 2. What happens next?</li>
+{% endblock %}

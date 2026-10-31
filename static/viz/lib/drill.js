@@ -3,10 +3,13 @@
 //   generate(rng) returns a question:
 //     { prompt, tex?, options: [text, ...], answer: index, hint, explain }   multiple choice
 //     { prompt, tex?, answer: number, tolerance?, unit?, hint, explain }     typed number
+//   Either kind may add figure(ctx, stage, c) to draw a picture above the answers.
 //   Give the page the viz-stage--flow class.
 import { createRng } from './rng.js';
 import { bindControls } from './controls.js';
 import { renderTex } from './formula.js';
+import { createStage } from './stage.js';
+import { readColors } from './colors.js';
 
 function el(parent, tag, className, text = '') {
   const node = document.createElement(tag);
@@ -47,6 +50,11 @@ export function createDrill({ stage, panel, seed = 1, generate }) {
     box.replaceChildren();
     el(box, 'p', 'viz-drill__prompt', question.prompt);
     if (question.tex) renderTex(el(box, 'p', 'viz-drill__prompt'), question.tex);
+    if (question.figure) {
+      const colours = readColors();
+      const shown = question;
+      createStage(el(box, 'div', 'viz-drill__figure'), (ctx, size, stage) => shown.figure(ctx, stage, colours), { label: question.alt || question.prompt });
+    }
     if (question.options) {
       const row = el(box, 'div', 'viz-drill__options');
       question.options.forEach((text, i) => {
