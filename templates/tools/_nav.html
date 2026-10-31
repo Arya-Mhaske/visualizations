@@ -1,0 +1,5 @@
+<nav class="viz-next" aria-label="More tools in this box">
+  {% if prev_tool %}<a class="nb-btn nb-btn--ghost" href="{{ prev_tool.url }}">← {{ prev_tool.title }}</a>{% endif %}
+  <a class="nb-btn" href="{{ box.url }}">Back to {{ box.title }}</a>
+  {% if next_tool %}<a class="nb-btn nb-btn--ghost" href="{{ next_tool.url }}">{{ next_tool.title }} →</a>{% endif %}
+</nav>

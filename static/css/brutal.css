@@ -543,3 +543,22 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
   .nb-nav, .viz-panel, .viz-steps, .viz-next, .nb-footer { display: none; }
   .viz-stage, .nb-card, .nb-tile { box-shadow: none; }
 }
+
+/* ---------- 15. Additions (tool pages) ---------------------------------- */
+/* author display rules (.nb-stack etc.) would otherwise beat the hidden attribute */
+[hidden] { display: none !important; }
+
+/* a row of small number chips, e.g. n = 1..36; .is-good marks "works" */
+.nb-chips { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.nb-chip {
+  font-family: var(--font-mono); font-weight: 700; font-size: 0.75rem;
+  min-width: 34px; min-height: 34px; padding: 0 4px;
+  border: var(--border-thin); background: var(--paper); color: var(--ink);
+  cursor: pointer;
+}
+.nb-chip.is-good { background: var(--green); }
+.nb-chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.nb-chip.is-good[aria-pressed="true"] { background: var(--ink); color: var(--green); }
+
+/* a focused canvas shows its outline inside the (overflow: hidden) stage */
+.viz-stage > canvas:focus-visible { outline-offset: -6px; }

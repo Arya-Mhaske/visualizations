@@ -1,0 +1,44 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Syne:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/brutal.css' %}">
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+  <header class="nb-nav">
+    <div class="nb-container nb-nav__inner">
+      <a class="nb-logo" href="/">{{ site_name }}</a>
+      {% if crumbs %}
+      <nav aria-label="Breadcrumb">
+        <ol class="nb-crumbs">
+          <li><a href="/">Home</a></li>
+          {% for crumb in crumbs %}
+          <li>{% if forloop.last %}<span aria-current="page">{{ crumb.title }}</span>{% else %}<a href="{{ crumb.url }}">{{ crumb.title }}</a>{% endif %}</li>
+          {% endfor %}
+        </ol>
+      </nav>
+      {% endif %}
+    </div>
+  </header>
+
+  <main>
+    <div class="nb-container">
+      {% if subject %}<p><span class="nb-location">IN: {{ subject.title }}</span></p>{% endif %}
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  <footer class="nb-footer">
+    <div class="nb-container">
+      <strong>{{ site_name }}</strong>: see why, not just how.
+    </div>
+  </footer>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

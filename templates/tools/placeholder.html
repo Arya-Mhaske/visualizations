@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ tile.title }} · {{ site_name }}{% endblock %}
+
+{% block content %}
+<article class="nb-soon">
+  <span class="nb-soon__tape">Coming soon</span>
+  <h1 class="viz-head__question">{{ tile.title }}</h1>
+  <div class="viz-head__meta">{% include "tools/_head_meta.html" %}</div>
+  {% if tile.summary %}
+  <h2 class="nb-mt-4">What you'll do</h2>
+  <p>{{ tile.summary }}</p>
+  {% endif %}
+  {% if tile.sections %}<p class="viz-source">Textbook: § {{ tile.sections }}</p>{% endif %}
+  {% if tile.spec %}
+  <details class="nb-mt-4">
+    <summary><strong>Build notes</strong></summary>
+    <p class="nb-muted">{{ tile.spec|linebreaksbr }}</p>
+  </details>
+  {% endif %}
+  {% include "tools/_nav.html" %}
+</article>
+{% endblock %}

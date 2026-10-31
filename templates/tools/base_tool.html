@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% comment %}
+Tool page skeleton (CLAUDE.md §5). A tool template fills these blocks:
+  katex   include "tools/_katex.html" ONLY if the tool shows formulas
+  lead, steps, stage, panel, formula, why, try, notes, source, scripts
+The question (H1), badges and prev/next links come from the view context.
+{% endcomment %}
+
+{% block title %}{{ tile.title }} · {{ site_name }}{% endblock %}
+{% block head_extra %}{% block katex %}{% endblock %}{% endblock %}
+
+{% block content %}
+<article>
+  <header class="viz-head">
+    <h1 class="viz-head__question">{{ tile.title }}</h1>
+    <div class="viz-head__meta">{% include "tools/_head_meta.html" %}</div>
+    <p class="viz-head__lead">{% block lead %}{{ tile.summary }}{% endblock %}</p>
+  </header>
+
+  {% block steps %}{% endblock %}
+
+  <div class="viz-body">
+    <div class="viz-stage viz-stage--square" id="stage">{% block stage %}{% endblock %}</div>
+    <div class="viz-panel">{% block panel %}{% endblock %}</div>
+  </div>
+
+  {% block formula %}{% endblock %}
+
+  <section class="viz-why">{% block why %}{% endblock %}</section>
+  <section class="viz-try">{% block try %}{% endblock %}</section>
+  {% block notes %}{% endblock %}
+
+  {% include "tools/_nav.html" %}
+  <p class="viz-source">{% block source %}Textbook: {{ subject.title }}, § {{ tile.sections }}{% endblock %}</p>
+</article>
+{% endblock %}

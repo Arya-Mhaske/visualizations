@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}{% if tile %}{{ tile.title }} · {% endif %}{{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="nb-hero">
+  {% if is_landing %}
+    <h1 class="nb-hero__title">{{ site_name }}</h1>
+    <p class="nb-hero__lead">See why, not just how.</p>
+  {% else %}
+    <p class="nb-hero__kicker">{% if tile.kind == "subject" %}Subject{% else %}Box in {{ subject.title }}{% endif %}</p>
+    <h1 class="nb-hero__title">{{ tile.title }}</h1>
+    {% if tile.sections %}<p class="nb-hero__lead">Textbook: {{ tile.sections }}</p>{% endif %}
+  {% endif %}
+</section>
+
+<div class="nb-grid">
+  {% for item in items %}
+    {% with t=item.tile %}
+    {% if t.kind == "tool" %}
+    <a class="nb-tile{% if not item.is_live %} is-soon{% endif %}" href="{{ item.url }}">
+      <span class="nb-tile__num">{{ item.num|stringformat:"02d" }}</span>
+      <span class="nb-tile__badges">
+        <span class="nb-badge nb-badge--{{ t.tag|lower }}">{{ t.tag }}</span>
+        {% if item.is_live %}<span class="nb-badge nb-badge--live">Live</span>{% else %}<span class="nb-badge nb-badge--soon">Soon</span>{% endif %}
+        {% if t.extension %}<span class="nb-badge nb-badge--ext">Ext</span>{% endif %}
+      </span>
+      <h2 class="nb-tile__title">{{ t.title }}</h2>
+      {% if t.sections %}<span class="nb-tile__meta">§ {{ t.sections }}</span>{% endif %}
+    </a>
+    {% else %}
+    <a class="nb-tile nb-tile--{{ item.accent }}" href="{{ item.url }}">
+      <span class="nb-tile__num">{{ item.num|stringformat:"02d" }}</span>
+      <h2 class="nb-tile__title">{{ t.title }}</h2>
+      <span class="nb-tile__meta">{{ item.count }}</span>
+    </a>
+    {% endif %}
+    {% endwith %}
+  {% endfor %}
+  {% for _ in empty_slots %}
+    <div class="nb-tile is-empty" aria-hidden="true">empty slot</div>
+  {% endfor %}
+</div>
+{% endblock %}
