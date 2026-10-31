@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Send a wave to the right and an identical wave to the left. Add them. Where does the string never move, and how far apart are those places?{% endblock %}
+{% block why_text %}At a node the two waves always have equal and opposite heights, so they cancel at every moment. The sum is 2a sin kx cos ωt, and sin kx is zero whenever kx is a multiple of π. That is x = 0, λ/2, λ, 3λ/2 … so nodes sit half a wavelength apart.{% endblock %}
+{% block try_items %}
+<li>Follow the string at 2 m with λ = 4 m. Play the motion. What do the blue and purple heights do, and what does the green one do?</li>
+<li>Pick any λ. Slide the follow-point until the green height stays at zero for the whole cycle. Is it on a black dot?</li>
+<li>Change λ from 4 m to 2 m. How does the gap between black dots change?</li>
+{% endblock %}

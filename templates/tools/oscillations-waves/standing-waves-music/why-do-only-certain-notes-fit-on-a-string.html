@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A tiny driver shakes the left end of a string. The right end is fixed. Change the frequency and watch the waves bounce back and forth.{% endblock %}
+{% block why_text %}Each wave runs to the fixed end, flips, and comes back. It meets the driver again after one round trip, 2L. If 2L is a whole number of wavelengths, every return arrives in step and the swings pile up. Any other frequency lets each return arrive out of step with the last, so they cancel. That is why only νₙ = nv/2L survives.{% endblock %}
+{% block try_items %}
+<li>Press Mode 1, then Mode 2. Count the half-wavelengths in L. What do you notice?</li>
+<li>Set the round trips to 0, then raise them to 10 at 200 Hz. Do the same at 260 Hz. Which one piles up?</li>
+<li>Shorten L with the slider. Press Mode 1 again and listen: does the lowest note go up or down?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The picture is slowed down so you can see it; the real string vibrates hundreds of times a second. The driver and the string lose 15% of the swing on each round trip, so the peaks are tall but not endless. Phone speakers cannot play the lowest notes well.
+</div>
+{% endblock %}

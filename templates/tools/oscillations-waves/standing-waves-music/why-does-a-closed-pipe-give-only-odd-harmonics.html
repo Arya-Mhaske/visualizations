@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Slide the frequency of the air in a pipe. The closed end always forces a node. Does the open end get the antinode it needs?{% endblock %}
+{% block why_text %}A closed end holds the air still, so it must be a node. An open end lets the air swing freely, so it must be an antinode. From a node to the next antinode is a quarter of a wavelength, so the pipe must hold 1, 3, 5 … quarter-waves: odd harmonics only. An even number would end on a node at the open end.{% endblock %}
+{% block try_items %}
+<li>Press × 1, × 2 and × 3. Which ones turn the open-end ring green?</li>
+<li>Switch to a pipe that is open at both ends. Which multiples fit now? What note does it start on?</li>
+<li>Slide slowly between × 1 and × 3. What happens to the swing of the air at the open end?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The air dots show the swing of the air along the pipe, magnified so you can see it. A real open end is slightly beyond the rim; the Resonance column tool measures that end correction.
+</div>
+{% endblock %}

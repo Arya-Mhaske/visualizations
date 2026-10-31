@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose a string or a pipe and a mode. See the pattern, where the nodes and antinodes are, and the note it sings.{% endblock %}
+{% block why_text %}The ends decide the pattern. A fixed end of a string and a closed end of a pipe are nodes. An open end of a pipe is an antinode. Count the quarter-waves or half-waves that fit between the ends, and you get νₙ = nv/2L for a string or open pipe, and νₙ = (2n − 1)v/4L for a closed pipe.{% endblock %}
+{% block try_items %}
+<li>Set mode 1 for all three. Which instrument gives the lowest note for the same length?</li>
+<li>On the closed pipe, count the nodes and antinodes for modes 1, 2 and 3. What is the pattern?</li>
+<li>Halve the length (0.6 m to 0.3 m). What happens to every frequency?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Mode n counts the patterns that exist. For a closed pipe, mode n is the (2n − 1)th harmonic. The string runs at 240 m/s and air at 340 m/s. Real pipes sound slightly lower because their open ends act a little beyond the rim.
+</div>
+{% endblock %}

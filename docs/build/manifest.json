@@ -2003,38 +2003,38 @@
 "oscillations-waves/standing-waves-music/why-do-only-certain-notes-fit-on-a-string": {
 "archetype": "sim",
 "priority": 106,
-"notes": "",
-"reviewed": false
+"notes": "Driven string, fixed far end: bounces pile up only at whole half-wavelengths. Driver at one end, not two.",
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/why-does-a-closed-pipe-give-only-odd-harmonics": {
 "archetype": "sim",
 "priority": 106,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/why-are-nodes-2-apart": {
 "archetype": "sim",
 "priority": 106,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/harmonic-explorer-for-strings-and-pipes": {
-"archetype": "stepper",
+"archetype": "sim",
 "priority": 106,
-"notes": "",
-"reviewed": false
+"notes": "Archetype changed from stepper: it is a free-play explorer on the timeline.",
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/why-does-a-sitar-string-rise-in-pitch-when-tightened-or-fret": {
 "archetype": "sim",
 "priority": 106,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/standing-waves-music/resonance-column": {
 "archetype": "sim",
 "priority": 106,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/beats/why-do-two-close-notes-throb-at-1-2": {
 "archetype": "sim",

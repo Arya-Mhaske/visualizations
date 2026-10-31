@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Tighten the string and press a fret. Watch the pitch change, and hear it.{% endblock %}
+{% block why_text %}The lowest note is the wave that fits one half-wavelength between bridge and fret: λ = 2L, so ν = v/2L. Tightening raises the wave speed, v = √(T/μ), so ν goes up. Pressing a fret shortens L, so ν goes up as 1/L. Halve the length and the pitch doubles: one octave.{% endblock %}
+{% block try_items %}
+<li>Press Octave. What happened to L, and what happened to ν?</li>
+<li>With the open string, make the tension four times bigger (20 N to 80 N). How many times higher is ν?</li>
+<li>Find two different settings of T and L that give the same pitch.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is a sitar-like string of 0.9 m with μ = 0.5 g/m. The grey ticks are where a guitar's twelve equal semitone frets would be, L₀/2<sup>k/12</sup>. A sitar's frets are movable and set by the raga, so the notes you find may sit a little away from these.
+</div>
+{% endblock %}

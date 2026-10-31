@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Hold a tuning fork over a tube and change the water level. Find the two lengths where the tube sings loudest, then use them to find the speed of sound.{% endblock %}
+{% block why_text %}The water is a node and the open top is an antinode, so the first resonance is a quarter-wave and the next is three quarters. Both lengths are shorter than they look by the same end correction e, so l₂ − l₁ = λ/2 with e cancelled out. That gives v = νλ = 2ν(l₂ − l₁).{% endblock %}
+{% block try_items %}
+<li>Slide the water level slowly. Watch the coral dot on the curve. Record the two loudest lengths.</li>
+<li>Compare v from 2ν(l₂ − l₁) with v from 4ν·l₁ alone. Which is closer to the true speed? Why?</li>
+<li>Make the tube wider (bigger r). What happens to l₁, and to the difference l₂ − l₁?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The loudness curve is a model: the wave goes down, flips at the water, and comes back, keeping 80% of its size each round trip. The end correction e = 0.6 r is a standard rule of thumb for a tube like this. The speed of sound used is 331.3 √(1 + θ/273.15) m/s.
+</div>
+{% endblock %}

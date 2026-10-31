@@ -133,6 +133,14 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   pulses cancel, because the energy is all in the motion). Its tests check the string against an independent leapfrog solution of the wave
   equation (Courant number 1). In such tests put every sampled x on a grid node (the first run failed on half-node rounding).
   Next box (`standing-waves-music`) can reuse `field` with `walls: -1` for standing waves from two travelling waves.
+- `lib/tone.js` (`createTone`: `set(freq)`, `level(x)`, `supported`) plays a pure sine through Web Audio; call it from a control's handler (browsers need a click first).
+  Use it for any later box with sound (`beats`). The smoke test does not hear anything, so check by ear on a real device.
+- `_standing-waves-math.js`: `modeFreq/shape/nodesOf/antinodesOf` for string, open and closed pipes; `drivenPhasor/drivenParts/swingGain` is a string
+  driven at x = 0 and fixed at x = L, losing 15% per round trip, summed over N round trips in closed form (a WHY for "only some frequencies fit":
+  returns pile up in step only at whole half-wavelengths); `noteOf` (name and cents), `fretLength`; the resonance column (`airSpeed`, `loudness`,
+  `resonanceLengths`, end correction 0.6 r). Tests check the driven string against a direct sum of real sine passes. Don't guess test values:
+  two of my hand-guessed numbers (5.5, 82.7) were off in the last digit.
+- At 360 px long axis labels collide with ticks: use short ones ('ν (Hz)', 'L (m)').
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -249,7 +257,7 @@ it reaches the front of the queue.
 | 100 | `exponentials-logs/logarithms` | 9 | 1 | |
 | 101 | `oscillations-waves/superposition-reflection` | 4 | 1 | ✓ |
 | 102 | `exponentials-logs/log-scales` | 6 | 1 | |
-| 103 | `oscillations-waves/standing-waves-music` | 6 | 1 | |
+| 103 | `oscillations-waves/standing-waves-music` | 6 | 1 | ✓ |
 | 104 | `exponentials-logs/exp-log-equations` | 4 | 1 | |
 | 105 | `oscillations-waves/beats` | 3 | 1 | |
 | 106 | `exponentials-logs/money-finance` | 7 | 1 | |
