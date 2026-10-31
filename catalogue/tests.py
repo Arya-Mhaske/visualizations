@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 import subprocess
 import tempfile
@@ -17,6 +18,7 @@ from django.test.utils import CaptureQueriesContext
 
 from .management.commands.load_catalogue import DATA_DIR
 from .models import Tile, TileAid
+from .views import GROUPS, GROUPS_BY_SLUG
 
 LOADER = 'catalogue.management.commands.load_catalogue.DATA_DIR'
 PLAIN_STATIC = {
@@ -85,8 +87,9 @@ class CatalogueTests(TestCase):
             extra.full_clean()
 
     def test_every_url_returns_200(self):
-        urls = ['/'] + [t.url for t in Tile.objects.select_related('parent__parent')]
-        self.assertEqual(len(urls), 1 + 30 + 256 + 1538)
+        urls = ['/', *(group.url for group in GROUPS)]
+        urls += [t.url for t in Tile.objects.select_related('parent__parent')]
+        self.assertEqual(len(urls), 1 + 3 + 30 + 256 + 1538)
         for url in urls:
             with self.subTest(url=url):
                 self.assertEqual(self.client.get(url).status_code, 200)
@@ -106,30 +109,41 @@ class CatalogueTests(TestCase):
             with self.subTest(url=url):
                 self.assertEqual(self.client.get(url).status_code, 404)
 
-    def test_landing_lists_all_subjects_in_order(self):
-        html = self.client.get('/').content.decode()
-        titles = list(Tile.objects.filter(parent=None).values_list('slug', flat=True))
-        self.assertEqual(len(titles), 30)
-        positions = [html.index(f'href="/{slug}/"') for slug in titles]
-        self.assertEqual(positions, sorted(positions))
-
-    def test_landing_content(self):
+    def test_landing_shows_only_the_three_options(self):
         landing = self.client.get('/')
-        self.assertContains(landing, 'nb-jump')
         html = landing.content.decode()
-        self.assertLess(html.index('href="#physics-xi"'), html.index('href="#physics-xii"'))
-        self.assertLess(html.index('href="#physics-xii"'), html.index('href="#maths"'))
-        self.assertLess(html.index('id="physics-xi"'), html.index('id="physics-xii"'))
-        self.assertLess(html.index('id="physics-xii"'), html.index('id="maths"'))
-        self.assertLess(html.index('href="/modern-physics/"'), html.index('href="/numbers-algebra/"'))
-        self.assertContains(landing, '<h1 class="visually-hidden">MuskMelon</h1>', html=True)
-        for anchor in ['maths', 'physics-xi', 'physics-xii']:
-            self.assertContains(landing, f'href="#{anchor}"')
-            self.assertContains(landing, f'id="{anchor}"')
-        self.assertContains(landing, '135 tools')
-        self.assertNotContains(landing, 'nb-crumbs')
-        self.assertNotContains(landing, 'nb-location')
+        self.assertEqual(re.findall(r'<a class="nb-door[^>]*href="([^"]+)">([^<]+)</a>', html), [
+            ('/physics-part-i/', 'Physics Part I'), ('/physics-part-ii/', 'Physics Part II'), ('/math/', 'Math')])
+        self.assertContains(landing, 'nb-logo__word')
         self.assertContains(landing, '<title>MuskMelon</title>', html=True)
+        self.assertContains(landing, '<h1 class="visually-hidden">MuskMelon</h1>', html=True)
+        for absent in ['nb-tile', 'nb-search', 'nb-crumbs', 'nb-footer', 'tools']:
+            self.assertNotContains(landing, absent)
+
+    def test_group_pages_list_every_subject_once_in_order(self):
+        seen = []
+        for url, count in [('/physics-part-i/', 6), ('/physics-part-ii/', 5), ('/math/', 19)]:
+            html = self.client.get(url).content.decode()
+            links = re.findall(r'<a class="nb-tile[^>]*href="/([^"]+)/"', html)
+            self.assertEqual(len(links), count)
+            seen += links
+        self.assertEqual(seen, list(Tile.objects.filter(parent=None).values_list('slug', flat=True)))
+        self.assertContains(self.client.get('/physics-part-i/'), 'href="/measurement-motion/"')
+        self.assertContains(self.client.get('/physics-part-ii/'), 'href="/optics/"')
+        self.assertContains(self.client.get('/math/'), '135 tools')
+
+    def test_group_page_title_and_breadcrumb(self):
+        group = self.client.get('/physics-part-i/')
+        self.assertContains(group, '<title>Physics Part I · MuskMelon</title>', html=True)
+        self.assertContains(group, '<span aria-current="page">Physics Part I</span>', html=True)
+        for url, link in [('/optics/', '/physics-part-ii/'), ('/trigonometry/angles-arcs/', '/math/'),
+                          ('/trigonometry/angles-arcs/why-360-degrees/', '/math/'),
+                          ('/trigonometry/angles-arcs/what-is-an-angle-really/', '/math/')]:
+            with self.subTest(url=url):
+                self.assertContains(self.client.get(url), f'<a href="{link}">')
+
+    def test_group_slugs_are_reserved(self):
+        self.assertFalse(Tile.objects.filter(parent=None, slug__in=GROUPS_BY_SLUG).exists())
 
     def test_brand_on_every_level(self):
         for url in ['/', '/trigonometry/', '/trigonometry/angles-arcs/',
@@ -193,8 +207,8 @@ class CatalogueTests(TestCase):
         with self.settings(DEBUG=True):
             self.assertContains(self.client.get(tile.url), 'Build notes')
 
-    def test_search_box_on_every_level(self):
-        for url in ['/', '/trigonometry/', '/trigonometry/angles-arcs/',
+    def test_search_box_below_the_landing_page(self):
+        for url in ['/math/', '/trigonometry/', '/trigonometry/angles-arcs/',
                     '/trigonometry/angles-arcs/why-360-degrees/',
                     '/trigonometry/angles-arcs/what-is-an-angle-really/']:
             with self.subTest(url=url):
@@ -219,7 +233,7 @@ class CatalogueTests(TestCase):
 
     def test_query_budget(self):
         tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()
-        urls = ['/', tile.parent.parent.url, tile.parent.url, tile.url,
+        urls = ['/', '/math/', tile.parent.parent.url, tile.parent.url, tile.url,
                 '/trigonometry/angles-arcs/why-360-degrees/']
         for url in urls:
             with self.subTest(url=url), CaptureQueriesContext(connection) as queries:

@@ -33,7 +33,8 @@ catalogue/                 Tile model, load_catalogue command, grid/breadcrumb v
 catalogue/data/*.json      ← source of truth for navigation (one file per subject)
 templates/
   base.html                navbar, breadcrumb, footer, loads brutal.css + fonts
-  catalogue/grid.html      any 3×4 grid page (landing, subject, box)
+  catalogue/landing.html   the three-option landing page
+  catalogue/grid.html      any tile grid page (group, subject, box)
   tools/base_tool.html     tool page skeleton (see §5)
   tools/placeholder.html   "coming soon" page for tools not built yet
   tools/<subject>/<box>/<tool-slug>.html   one file per built tool
@@ -60,18 +61,21 @@ build.sh, render.yaml      Render build + service config
   under `.viz-head` (live aids in colour, placeholders striped). Aids may cross subjects, so a physics tool can point
   to a maths tool. On grids, show a small count badge ("3 aids") on tool tiles that have them.
 - Grids are 3×4 (4 columns on desktop, 3 on tablet, 2 on phones). **Boxes and subjects hold at most 12 children**
-  (enforce in `clean()` and `load_catalogue`). **The landing page may hold more than 12 subjects:** the first 12 (by
-  `order`) fill the first screen, and the rest continue below as the page scrolls.
-- Subjects carry an `order` field (landing sequence). Grids render only real tiles: when a box or subject has fewer
+  (enforce in `clean()` and `load_catalogue`).
+- **The landing page shows no subjects or tools:** only the logo and three full-width stacked rows (Physics Part I,
+  Physics Part II, Math). Each opens a group page (`/physics-part-i/`, `/physics-part-ii/`, `/math/`) listing its
+  subjects by `order`; a group page may hold more than 12 and scrolls. `GROUPS` in `catalogue/views.py` sets which
+  `order` range each covers. These three slugs are reserved: no subject may use them.
+- Subjects carry an `order` field (site-wide sequence). Grids render only real tiles: when a box or subject has fewer
   than 12 children, the remaining space stays blank, with no placeholder elements.
-- URL scheme: `/` → `/<subject>/` → `/<subject>/<box>/` → `/<subject>/<box>/<tool>/`. One path-resolving view walks
+- URL scheme: `/` → `/<group>/`; `/<subject>/` → `/<subject>/<box>/` → `/<subject>/<box>/<tool>/`. One path-resolving view walks
   the slugs. Unknown paths return a 404.
 - **Live vs placeholder is derived, never stored.** A tool is *live* if `templates/tools/<subject>/<box>/<tool>.html`
   exists. Otherwise its URL renders `tools/placeholder.html` (question, summary, textbook sections, "coming soon").
   Grids show live tiles in colour and placeholders with the striped `.is-soon` style.
 - Inside a box, order tiles WHY first, then HOW, then APP (the JSON is already in this order; keep it).
-- Every page under a subject shows the breadcrumb (`Home / Trigonometry / Unit Circle / <tool>`). Every page has the
-  navbar search, so students always know where they are and can jump anywhere.
+- Every page under a subject shows the breadcrumb (`Home / Math / Trigonometry / Unit Circle / <tool>`). Its trail starts with the
+  group. Every page except the landing page has the navbar search, so students can always find their place.
 - Adding a new textbook: write `catalogue/data/<subject>.json` (or extend an existing subject's file), run
   `load_catalogue`, commit. The loader is idempotent: it upserts by slug path and deletes tiles no longer in the JSON.
 
@@ -87,7 +91,7 @@ build.sh, render.yaml      Render build + service config
           "spec": "optional build notes",
           "aids": ["trigonometry/similar-triangles/why-does-the-ratio-depend-only-on-the-angle"] } ] } ] }
 ```
-Subjects also carry `"order"` (landing position). Physics XI is 1–6, Physics XII is 7–11, Maths is 12–30 (30 subjects, about 1,500 tools).
+Subjects also carry `"order"` (position within the site). Physics XI is 1–6, Physics XII is 7–11, Maths is 12–30 (30 subjects, about 1,500 tools).
 The JSON files are now hand-maintained: edit them directly, keep tag order, and let `load_catalogue` validate them.
 
 ## 5. Tool page contract (every tool follows this anatomy)

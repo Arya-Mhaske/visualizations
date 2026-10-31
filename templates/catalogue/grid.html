@@ -1,23 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% if is_landing %}
-<section class="nb-hero nb-hero--landing">
-  <h1 class="visually-hidden">{{ site_name }}</h1>
-  <nav class="nb-jump" aria-label="Jump to a group of subjects">
-    {% for group in groups %}<a href="#{{ group.anchor }}">{{ group.title }}</a>{% endfor %}
-  </nav>
-</section>
-
-{% for group in groups %}
-<section class="nb-group" id="{{ group.anchor }}">
-  <h2 class="nb-group__title">{{ group.title }}</h2>
-  <div class="nb-grid">
-    {% for item in group.tiles %}{% include "catalogue/_tile.html" %}{% endfor %}
-  </div>
-</section>
-{% endfor %}
-{% else %}
 <section class="nb-hero">
   <h1 class="nb-hero__title">{{ tile.title }}</h1>
   {% if tile.sections %}<p class="nb-hero__lead">Textbook: {{ tile.sections }}</p>{% endif %}
@@ -26,5 +9,4 @@
 <div class="nb-grid">
   {% for item in items %}{% include "catalogue/_tile.html" %}{% endfor %}
 </div>
-{% endif %}
 {% endblock %}

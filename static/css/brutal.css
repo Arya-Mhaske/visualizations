@@ -154,7 +154,7 @@ main { flex: 1; padding: var(--s-5) 0 var(--s-8); }
 }
 .nb-logo:hover { background: var(--yellow); transform: translate(-1px, -1px); box-shadow: var(--shadow); }
 .nb-logo__mark { width: 1.6rem; height: 1.6rem; flex: none; display: block; }   /* static/img/muskmelon.svg */
-@media (max-width: 380px) { .nb-logo__word { display: none; } }                 /* mark only on tiny phones */
+@media (max-width: 380px) { .nb-nav:has(.nb-search) .nb-logo__word { display: none; } }   /* tiny phones: search needs the room */
 
 .nb-crumbs {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2);
@@ -566,8 +566,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .nb-nav { transition: transform var(--t-med); }
 .nb-nav.is-hidden { transform: translateY(-100%); }
 
-/* landing page: main content fills the viewport, so the footer only appears after scrolling */
-.nb-main--full { min-height: 100vh; min-height: 100svh; }
 
 
 /* ---------- 16. Text hierarchy ------------------------------------------ */
@@ -591,17 +589,22 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .nb-btn--fit { align-self: flex-start; text-align: left; }
 
 /* ---------- 17. Landing page -------------------------------------------- */
-/* the h1 is visually hidden, so only the jump bar sits above the first 12 tiles */
-.nb-hero--landing { margin-bottom: var(--s-4); }
-.nb-jump { display: flex; flex-wrap: wrap; gap: var(--s-2); }
-.nb-jump a {
-  font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
-  text-decoration: none; padding: 2px var(--s-2);
-  border: var(--border-thin); background: var(--paper);
+/* three full-width rows, stacked, filling the screen under the navbar */
+.nb-main--landing { display: flex; padding: 0; }
+.nb-doors { flex: 1; display: grid; grid-template-rows: repeat(3, minmax(0, 1fr)); }
+.nb-door {
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--s-3);
+  font-family: var(--font-display); font-weight: 800; line-height: 1.1; text-align: center;
+  font-size: clamp(1.75rem, 6vw, 4rem);
+  color: var(--ink); text-decoration: none;
 }
-.nb-group { scroll-margin-top: 80px; }
-.nb-group + .nb-group { margin-top: var(--s-7); }
-.nb-group__title { font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.nb-door + .nb-door { border-top: var(--border); }
+.nb-door:hover { text-decoration: underline; }
+.nb-door:focus-visible { outline-offset: -8px; }
+.nb-door--yellow, .nb-door--yellow:hover { background: var(--yellow); }
+.nb-door--coral, .nb-door--coral:hover { background: var(--coral); }
+.nb-door--sky, .nb-door--sky:hover { background: var(--sky); }
 
 /* ---------- 18. Aids strip ("Understand these first") ------------------- */
 .nb-aids { margin: var(--s-5) 0; }

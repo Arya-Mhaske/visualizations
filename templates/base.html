@@ -31,6 +31,7 @@
         </ol>
       </nav>
       {% endif %}
+      {% if not is_landing %}
       <form class="nb-search" role="search" data-index="{% url 'search_index' %}">
         <label class="visually-hidden" for="nb-search-input">Search topics and tools</label>
         <input class="nb-input nb-search__input" id="nb-search-input" type="search" placeholder="Search topics and tools"
@@ -40,10 +41,12 @@
           <div class="nb-search__list" id="nb-search-list" role="listbox" aria-label="Search results"></div>
         </div>
       </form>
+      {% endif %}
     </div>
   </header>
 
-  <main{% if is_landing %} class="nb-main--full"{% endif %}>
+  {% block main %}
+  <main>
     <div class="nb-container">
       {% block content %}{% endblock %}
     </div>
@@ -54,6 +57,7 @@
       <span class="nb-footer__name">{{ site_name }}</span>
     </div>
   </footer>
+  {% endblock %}
   <script type="module" src="{% static 'js/nav.js' %}"></script>
   <script type="module" src="{% static 'js/search.js' %}"></script>
   <script type="module" src="{% static 'js/accent.js' %}"></script>

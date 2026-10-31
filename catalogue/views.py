@@ -1,3 +1,5 @@
+from dataclasses import dataclass
+
 from django.conf import settings
 from django.db.models import Count
 from django.http import Http404, JsonResponse
@@ -11,8 +13,25 @@ from .paths import LiveChecker, tool_template_name
 ACCENTS = ['yellow', 'coral', 'sky', 'green', 'orange', 'lavender']
 TAG_ORDER = {'WHY': 0, 'HOW': 1, 'APP': 2}
 KINDS = [Tile.SUBJECT, Tile.BOX, Tile.TOOL]
-# Landing sections: (anchor, title, last subject order). The last group takes everything left.
-GROUPS = [('physics-xi', 'Physics XI', 6), ('physics-xii', 'Physics XII', 11), ('maths', 'Maths', None)]
+
+
+@dataclass(frozen=True)
+class Group:
+    """A landing page option. Holds subjects up to order `last`; a last of None takes everything left."""
+    slug: str
+    title: str
+    accent: str
+    last: int | None
+
+    @property
+    def url(self):
+        return f'/{self.slug}/'
+
+
+GROUPS = [Group('physics-part-i', 'Physics Part I', 'yellow', 6),
+          Group('physics-part-ii', 'Physics Part II', 'coral', 11),
+          Group('math', 'Math', 'sky', None)]
+GROUPS_BY_SLUG = {group.slug: group for group in GROUPS}
 
 
 def _crumbs(tile):
@@ -41,14 +60,14 @@ def _grid_items(tiles, live):
     return items
 
 
-def _groups(items):
-    groups, rest = [], items
-    for anchor, title, last in GROUPS:
-        tiles = [item for item in rest if last is None or item['tile'].order <= last]
-        rest = rest[len(tiles):]
-        if tiles:
-            groups.append({'anchor': anchor, 'title': title, 'tiles': tiles})
-    return groups
+def _group_of(subject):
+    return next(group for group in GROUPS if group.last is None or subject.order <= group.last)
+
+
+def _page_crumbs(tile):
+    """The breadcrumb trail for a page: its landing group, then the tile's own ancestors."""
+    chain = _crumbs(tile)
+    return [_group_of(chain[0]), *chain]
 
 
 def _find(slugs):
@@ -82,13 +101,13 @@ def search_index(request):
 
 
 def resolve(request, path):
-    """One view for /, /<subject>/, /<subject>/<box>/ and /<subject>/<box>/<tool>/."""
+    """One view for /, /<group>/, /<subject>/, /<subject>/<box>/ and /<subject>/<box>/<tool>/."""
     slugs = [s for s in path.split('/') if s]
     live = LiveChecker()
     if not slugs:
-        subjects = Tile.objects.filter(parent=None).annotate(count=Count('children__children')).order_by('order')
-        groups = _groups(_grid_items(subjects, live))
-        return render(request, 'catalogue/grid.html', {'is_landing': True, 'crumbs': [], 'groups': groups})
+        return render(request, 'catalogue/landing.html', {'is_landing': True, 'groups': GROUPS})
+    if len(slugs) == 1 and slugs[0] in GROUPS_BY_SLUG:
+        return _group(request, GROUPS_BY_SLUG[slugs[0]], live)
 
     tile = _find(slugs)
     if tile is None:
@@ -100,9 +119,16 @@ def resolve(request, path):
         children = _sorted_tools(tile)
     else:
         children = tile.children.annotate(count=Count('children')).order_by('order')
-    crumbs = _crumbs(tile)
     return render(request, 'catalogue/grid.html', {
-        'tile': tile, 'crumbs': crumbs, 'subject': crumbs[0], 'items': _grid_items(children, live),
+        'tile': tile, 'crumbs': _page_crumbs(tile), 'items': _grid_items(children, live),
+    })
+
+
+def _group(request, group, live):
+    subjects = Tile.objects.filter(parent=None).annotate(count=Count('children__children')).order_by('order')
+    tiles = [subject for subject in subjects if _group_of(subject) == group]
+    return render(request, 'catalogue/grid.html', {
+        'tile': group, 'crumbs': [group], 'items': _grid_items(tiles, live),
     })
 
 
@@ -119,9 +145,8 @@ def _tool(request, tool, live):
     box = tool.parent
     siblings = _sorted_tools(box)
     index = siblings.index(tool)
-    crumbs = _crumbs(tool)
     context = {
-        'tile': tool, 'box': box, 'subject': crumbs[0], 'crumbs': crumbs,
+        'tile': tool, 'box': box, 'subject': _crumbs(tool)[0], 'crumbs': _page_crumbs(tool),
         'aids': _aids(tool, live),
         'prev_tool': siblings[index - 1] if index > 0 else None,
         'next_tool': siblings[index + 1] if index + 1 < len(siblings) else None,

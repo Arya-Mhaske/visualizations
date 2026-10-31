@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main class="nb-main--landing">
+  <h1 class="visually-hidden">{{ site_name }}</h1>
+  <nav class="nb-doors" aria-label="Choose a subject area">
+    {% for group in groups %}
+    <a class="nb-door nb-door--{{ group.accent }}" href="{{ group.url }}">{{ group.title }}</a>
+    {% endfor %}
+  </nav>
+</main>
+{% endblock %}
