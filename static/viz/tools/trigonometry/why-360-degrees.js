@@ -94,9 +94,6 @@ function updateDivisibility() {
     chip.classList.toggle('is-good', divides(total, i + 1));
     chip.setAttribute('aria-pressed', String(i + 1 === n));
   });
-  const shown = whole ? fmt(slice) : fmt(slice);
-  setFormula(`\\frac{${total}}{${n}} = ${shown}${whole ? '' : '\\ \\text{(not a whole number)}'}`,
-    `${total} / ${n} = ${shown}`);
 }
 
 // ---------- view 2: the hexagon ----------
@@ -385,6 +382,7 @@ function showView(v, { updateHash = true } = {}) {
   tabs.forEach((tab, i) => tab.setAttribute('aria-selected', String(i + 1 === v)));
   document.querySelectorAll('[data-view]').forEach((el) => { el.hidden = Number(el.dataset.view) !== v; });
   stage.canvas.setAttribute('aria-label', VIEW_LABELS[v]);
+  formulaEl.hidden = v === 1; // the panel already shows the slice size
   if (v !== 4) stage.canvas.removeAttribute('tabindex'); else stage.canvas.tabIndex = 0;
   if (v !== 3 && loop.playing) { loop.stop(); playBtn.textContent = stepMode ? 'Step +15 days' : 'Play'; }
   if (updateHash) history.replaceState(null, '', `#view-${v}`);
