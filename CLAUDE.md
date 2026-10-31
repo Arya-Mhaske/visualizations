@@ -1,0 +1,144 @@
+# CLAUDE.md: Visualisations site
+
+Interactive physics and maths visualisations for school students (NCERT Class 11–12 level), built and taught by Arya.
+Students open the site on their own phones and laptops at any time, so it must work without the teacher present.
+
+**The one idea behind the site: WHY before HOW.** Every concept gets a visual that shows *why* a definition or rule is
+the way it is (why a turn is 360°, why the sine graph is a wave) before any tool that drills the procedure.
+
+---
+
+## 1. Stack and hard constraints
+
+- Django (server-rendered templates) + vanilla JavaScript ES modules. **No Node, no bundler, no build step, no npm.**
+  Everything in `static/` is served as written, via WhiteNoise.
+- Hosted on **Render free tier**:
+  - The filesystem is ephemeral and the SQLite DB is recreated on every deploy. **The database is a cache, not the
+    source of truth.** All navigation content lives in `catalogue/*.json` (in git) and is loaded at build time by
+    `python manage.py load_catalogue` (called from `build.sh`). Never rely on data entered via the admin.
+  - The service sleeps after ~15 min idle. Pages must be light: no heavy libraries, and tools must work once the HTML and JS have loaded.
+- Allowed third-party JS/CSS, always with **pinned exact versions** from cdn.jsdelivr.net:
+  - KaTeX `0.16.11` (formulas). Load it only on tool pages that use formulas.
+  - Nothing else without asking first. Prefer Canvas 2D or inline SVG with the shared helpers in `static/viz/lib/`.
+- Fonts: Google Fonts (Syne 800, Space Grotesk 500/700, Inter 400/600, Space Mono 400/700), loaded once in `base.html`.
+
+## 2. Repo layout
+
+```
+<project>/                 Django project package (settings, urls, wsgi)
+core/                      home page + shared template tags
+catalogue/                 Tile model, load_catalogue command, grid/breadcrumb views
+catalogue/data/*.json      ← source of truth for navigation (one file per subject)
+templates/
+  base.html                navbar, breadcrumb, footer, loads brutal.css + fonts
+  catalogue/grid.html      any 3×4 grid page (landing, subject, box)
+  tools/base_tool.html     tool page skeleton (see §5)
+  tools/placeholder.html   "coming soon" page for tools not built yet
+  tools/<subject>/<box>/<tool-slug>.html   one file per built tool
+static/
+  css/brutal.css           the ONLY stylesheet (design system, see §6)
+  viz/lib/                 shared JS modules (stage, colours, drawing, controls)
+  viz/tools/<subject>/<tool-slug>.js       one ES module per built tool
+docs/catalogue/            human-readable catalogues (Markdown) per book
+```
+
+## 3. Navigation model
+
+- One model, `catalogue.Tile`, a tree: `parent` (FK to self, null for top level), `slug`, `title`, `kind`
+  (`subject` | `box` | `tool`), `tag` (`WHY` | `HOW` | `APP`, tools only), `summary`, `sections` (textbook refs),
+  `extension` (bool, the tool goes beyond the book), `spec` (optional longer build notes), `order`.
+- **Max 12 children per tile**, shown as a 3×4 grid (4 columns on desktop, 3 on tablet, 2 on phones). Enforce this in
+  `clean()` and in `load_catalogue`.
+- The landing page shows the subject tiles (max 12). Empty slots render as dashed "empty slot" tiles so the 3×4 shape
+  stays visible.
+- URL scheme: `/` → `/<subject>/` → `/<subject>/<box>/` → `/<subject>/<box>/<tool>/`. One path-resolving view walks
+  the slugs. Unknown paths return a 404.
+- **Live vs placeholder is derived, never stored.** A tool is *live* if `templates/tools/<subject>/<box>/<tool>.html`
+  exists. Otherwise its URL renders `tools/placeholder.html` (question, summary, textbook sections, "coming soon").
+  Grids show live tiles in colour and placeholders with the striped `.is-soon` style.
+- Inside a box, order tiles WHY first, then HOW, then APP (the JSON is already in this order; keep it).
+- Every page under a subject shows the breadcrumb (`Home / Trigonometry / Unit Circle / <tool>`) and the
+  `.nb-location` pill, so students always know where they are.
+- Adding a new textbook: write `catalogue/data/<subject>.json` (or extend an existing subject's file), run
+  `load_catalogue`, commit. The loader is idempotent: it upserts by slug path and deletes tiles no longer in the JSON.
+
+## 4. Catalogue JSON shape
+
+```json
+{ "slug": "trigonometry", "title": "Trigonometry", "source": "Barnett et al., Analytic Trigonometry, 11th ed.",
+  "children": [
+    { "slug": "angles-arcs", "title": "Angles & Arcs", "sections": "§1.1, §2.1, §2.2", "order": 1,
+      "children": [
+        { "slug": "why-360-degrees", "title": "Why is a full turn 360°?", "tag": "WHY",
+          "summary": "…what the student does…", "sections": "1.1", "extension": false, "order": 1,
+          "spec": "optional build notes" } ] } ] }
+```
+
+## 5. Tool page contract (every tool follows this anatomy)
+
+A tool is two files: `templates/tools/<subject>/<box>/<slug>.html` (extends `tools/base_tool.html`) and
+`static/viz/tools/<subject>/<slug>.js` (an ES module). Sections, in this order:
+
+1. `.viz-head`: the **question** as the H1 (the tile title, word for word), tag badge, textbook section badge, and a
+   1–2 sentence lead.
+2. `.viz-steps` (optional): tabs for multi-view tools ("1 Divisibility, 2 The hexagon, …"). Each view must answer
+   "why not something else?" on its own.
+3. `.viz-body`: `.viz-stage` (canvas or SVG; the student acts here), plus `.viz-panel` (sliders, toggles,
+   live `.viz-readout`). The stage comes first on phones.
+4. `.viz-formula`: a live KaTeX line whose numbers update with the controls, so the maths is tied to the picture.
+5. `.viz-why`: the "So why?" takeaway, 1–3 sentences in a `.nb-callout--why`. This is the point of the page.
+6. `.viz-try`: 2–4 "Try this" prompts that make the student discover something with the controls.
+7. History or convention caveats go in `.nb-callout--note`. **Label conjecture as conjecture.**
+8. `.viz-next`: previous/next tool in the same box, plus a back-to-box link.
+9. `.viz-source`: textbook reference line.
+
+Interaction rules:
+- Every value a student can change has a visible control and a live number. No hidden state.
+- Default state must already show something meaningful. Never open on a blank stage.
+- Use pointer events (mouse + touch + pen) for drags on the stage. Sliders stay outside the stage, so a vertical swipe
+  scrolls the page on phones.
+- Use canvas at `devicePixelRatio` resolution with a `ResizeObserver`; redraw on change, not in a permanent loop. Pause
+  animations when the tab is hidden or the stage is off-screen (`IntersectionObserver`).
+- Respect `prefers-reduced-motion`: animations become instant or step-through.
+- Keyboard: every control is a real `<input>`/`<button>`, and draggable stage points also respond to arrow keys when focused.
+- Works at **360 px wide** with no horizontal scroll. Test at 360, 768 and 1280.
+
+## 6. Visual style: neo-brutalism (`static/css/brutal.css`)
+
+- Reference: neubrutalism.com. Flat colours, 3px black borders, zero-blur offset shadows, zero border-radius, buttons
+  that press into their shadow.
+- **Use only the tokens and classes in `brutal.css`.** No inline styles, no other stylesheets, no hex codes in
+  templates or JS. If something is missing, add a token or class to `brutal.css` (in its section) and use that.
+- Canvas/SVG colours come from CSS variables via `static/viz/lib/colors.js` (reads `--viz-*` with
+  `getComputedStyle`). Meaning stays consistent site-wide:
+  `--viz-a` coral = the thing the student moves · `--viz-b` blue = second quantity · `--viz-c` green =
+  works / whole / correct · `--viz-d` purple = fourth series · `--viz-ink` black outlines, `--viz-grid` for guides.
+- Shapes on the stage use 3px black outlines and flat fills (`--viz-fill-*`) to match the page.
+- Tag colours: WHY yellow, HOW sky blue, APP green.
+
+## 7. Content rules
+
+- Maths and physics must be correct. Verify every number shown (write a quick check script or a Django test for
+  any computed fact, e.g. divisor counts).
+- Notation follows NCERT: θ for angles, `sin θ`, radians written as plain numbers or with π, degrees with °.
+- British/Indian English spelling in UI text (visualise, colour, centre).
+- Tool titles are questions in the student's voice. Keep the catalogue title word for word.
+- Short sentences. One idea per callout. No walls of text: the picture does the explaining.
+- Cite the textbook section on every tool page.
+
+## 8. Definition of done (for any change)
+
+1. `python manage.py check` and `python manage.py test` pass. Tests cover: catalogue loads, the ≤12-children rule,
+   every catalogue URL returns 200 (live or placeholder), unknown paths 404, and any maths facts the tool displays.
+2. `python manage.py collectstatic --no-input` succeeds with `DEBUG=False` (the manifest storage fails on missing files).
+3. Load the page in a browser (Playwright is fine) at 360 px and 1280 px: no console errors, no horizontal scroll,
+   and the stage shows the default state.
+4. Small, logical commits with clear messages. **Never push** or touch remotes; Arya pushes, and Render deploys from GitHub.
+
+## 9. Things to never do
+
+- Add a JS framework, bundler or `package.json`.
+- Store navigation content only in the database.
+- Hard-code colours, fonts or shadows outside `brutal.css`.
+- Rename a tile's slug once it is live (students bookmark URLs). Retitle freely, keep the slug.
+- Present a historical story as proven fact.

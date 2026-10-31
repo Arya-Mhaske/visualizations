@@ -1,0 +1,1220 @@
+{
+  "slug": "trigonometry",
+  "title": "Trigonometry",
+  "source": "Barnett, Ziegler & Byleen, Analytic Trigonometry with Applications, 11th ed.",
+  "children": [
+    {
+      "slug": "angles-arcs",
+      "title": "Angles & Arcs",
+      "sections": "§1.1, §2.1, §2.2",
+      "order": 1,
+      "children": [
+        {
+          "slug": "why-360-degrees",
+          "title": "Why is a full turn 360°?",
+          "tag": "WHY",
+          "summary": "Works through four stacked views (spec below)",
+          "sections": "1.1",
+          "extension": false,
+          "order": 1,
+          "spec": "The page stacksfour views, each answering \"why not something else?\":\n\n1. **Divisibility:** a slider splits the circle into n equal slices. With 360, slices come out in whole degrees for 24 different n (2, 3, 4, 5, 6, 8, 9, 10, 12…). A 100-unit circle manages only 9, and the 400-gradian circle 15. The student sees 360 win.\n2. **The hexagon:** six radius-length chords close up exactly around any circle, giving six equilateral triangles. Babylonian base-60 makes each one 60, and 6 × 60 = 360.\n3. **The sky:** the Sun shifts about 1° a day against the stars over a year of about 365 days, and early calendars rounded that to 360.\n4. **It's a convention:** the same angle is shown as degrees, gradians, turns and radians. The geometry never changes; only the label does. This is the hand-off to radians.\n\nLabel views 2–3 honestly as the most widely accepted historical explanation, not a proven fact. View 1 is pure maths and always holds."
+        },
+        {
+          "slug": "what-is-an-angle-really",
+          "title": "What is an angle, really?",
+          "tag": "WHY",
+          "summary": "Spins the terminal ray past 360° and clockwise; a counter tracks revolutions, and coterminal angles show as ghosts",
+          "sections": "1.1, 2.1",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-60-minutes-in-a-degree",
+          "title": "Why 60 minutes in a degree?",
+          "tag": "WHY",
+          "summary": "Zooms into a 1° wedge that splits into 60 parts, then 60 again, beside a clock showing h:m:s (the book's marathon Explore/Discuss)",
+          "sections": "1.1",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-radians-are-the-natural-unit",
+          "title": "Why radians are the natural unit",
+          "tag": "WHY",
+          "summary": "Wraps a radius-length string around a circle: it fits about 6.28 times, and still does after resizing the circle, so 1 rad ≈ 57.3°",
+          "sections": "2.1",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-does-s-rtheta-only-work-in-radians",
+          "title": "Why does s = rθ only work in radians?",
+          "tag": "WHY",
+          "summary": "Changes r and θ to watch the arc grow; switching to degrees breaks the formula unless π/180 sneaks in",
+          "sections": "2.1",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-is-sector-area-halfr2theta",
+          "title": "Why is sector area ½r²θ?",
+          "tag": "WHY",
+          "summary": "Slices a sector into thin triangles and rearranges them; the sector is the fraction θ/2π of the disc",
+          "sections": "2.1",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "why-arc-chord-for-small-angles",
+          "title": "Why arc ≈ chord for small angles",
+          "tag": "WHY",
+          "summary": "Shrinks the angle and watches arc and chord merge; this sets up the Sun/Moon tool",
+          "sections": "1.1",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "why-does-the-outer-horse-go-faster-v-romega",
+          "title": "Why does the outer horse go faster? (v = rω)",
+          "tag": "WHY",
+          "summary": "Sees a merry-go-round where every rider has the same ω but the outer riders cover more arc per second",
+          "sections": "2.2",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "angle-unit-lab-dms-dd-radians",
+          "title": "Angle unit lab: DMS ↔ DD ↔ radians",
+          "tag": "HOW",
+          "summary": "Converts with a dual-scale protractor; also classifies acute/right/obtuse and complementary/supplementary pairs",
+          "sections": "1.1, 2.1",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "belts-gears-and-bicycle-wheels",
+          "title": "Belts, gears and bicycle wheels",
+          "tag": "APP",
+          "summary": "Links two pulleys: the belt carries one linear speed, so the angular speeds differ",
+          "sections": "2.2",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "eratosthenes-measures-the-earth",
+          "title": "Eratosthenes measures the Earth",
+          "tag": "APP",
+          "summary": "Sets the shadow angle at Alexandria and the distance to Syene, then reads off Earth's circumference",
+          "sections": "1.1",
+          "extension": false,
+          "order": 11
+        },
+        {
+          "slug": "how-big-are-the-sun-and-the-moon",
+          "title": "How big are the Sun and the Moon?",
+          "tag": "APP",
+          "summary": "Sets angular size and distance to get the diameter; both subtend about 0.5°, which is why total eclipses work",
+          "sections": "1.1",
+          "extension": false,
+          "order": 12
+        }
+      ]
+    },
+    {
+      "slug": "similar-triangles",
+      "title": "Similar Triangles",
+      "sections": "§1.2, App. C",
+      "order": 2,
+      "children": [
+        {
+          "slug": "why-do-a-triangle-s-angles-add-to-180",
+          "title": "Why do a triangle's angles add to 180°?",
+          "tag": "WHY",
+          "summary": "Drags vertices anywhere; the three corners tear off and line up on a straight line (and a parallel-line proof)",
+          "sections": "C.2",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-do-same-shaped-triangles-have-proportional-sides",
+          "title": "Why do same-shaped triangles have proportional sides?",
+          "tag": "WHY",
+          "summary": "Scales a triangle with its angles locked while a live table of side ratios stays frozen (Euclid's theorem)",
+          "sections": "1.2",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-are-two-angles-enough",
+          "title": "Why are two angles enough?",
+          "tag": "WHY",
+          "summary": "Fixes two angles, tries to build a differently shaped triangle, and finds it can't, because the third angle is forced",
+          "sections": "1.2",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-does-the-ratio-depend-only-on-the-angle",
+          "title": "Why does the ratio depend only on the angle?",
+          "tag": "WHY",
+          "summary": "Fixes θ and resizes the right triangle: opp/hyp never moves. Changing θ changes it, so the ratio is a function of θ. This is the bridge into Box 3",
+          "sections": "1.2 → 1.3",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "missing-side-by-proportion",
+          "title": "Missing side by proportion",
+          "tag": "HOW",
+          "summary": "Matches corresponding sides with colour coding and solves the proportion",
+          "sections": "1.2",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "measure-a-tree-with-its-shadow",
+          "title": "Measure a tree with its shadow",
+          "tag": "APP",
+          "summary": "Moves a stick and the Sun; similar shadow triangles give the height (Thales)",
+          "sections": "1.2",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "how-deep-is-a-lunar-crater",
+          "title": "How deep is a lunar crater?",
+          "tag": "APP",
+          "summary": "Uses the shadow length and Sun angle on the Moon to find the rim height (book exercise)",
+          "sections": "1.2",
+          "extension": false,
+          "order": 7
+        }
+      ]
+    },
+    {
+      "slug": "right-triangle-ratios",
+      "title": "Right-Triangle Ratios",
+      "sections": "§1.3, §1.4, §2.4, App. A.3",
+      "order": 3,
+      "children": [
+        {
+          "slug": "why-is-a2-b2-c2",
+          "title": "Why is a² + b² = c²?",
+          "tag": "WHY",
+          "summary": "Drags a slider that rearranges four copies of the triangle inside a square; the leftover area is c² or a² + b²",
+          "sections": "1.3",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-exactly-six-ratios",
+          "title": "Why exactly six ratios?",
+          "tag": "WHY",
+          "summary": "Picks 2 of the 3 sides in order and finds 6 combinations, in 3 reciprocal pairs",
+          "sections": "1.3",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-is-it-called-co-sine",
+          "title": "Why is it called \"co\"-sine?",
+          "tag": "WHY",
+          "summary": "Switches the viewpoint to the other acute angle: opposite and adjacent swap, so cos θ = sin(90° − θ)",
+          "sections": "1.3",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-do-sin-and-cos-stay-1-while-tan-doesn-t",
+          "title": "Why do sin and cos stay ≤ 1 while tan doesn't?",
+          "tag": "WHY",
+          "summary": "Pushes θ toward 90°: the hypotenuse is always longest, but tan blows up",
+          "sections": "1.3",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "where-does-the-calculator-s-0-6018-come-from",
+          "title": "Where does the calculator's 0.6018 come from?",
+          "tag": "WHY",
+          "summary": "Measures a huge drawn 37° triangle and compares the ratio with the calculator",
+          "sections": "1.3",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "solve-a-right-triangle",
+          "title": "Solve a right triangle",
+          "tag": "HOW",
+          "summary": "Enters any two parts and gets a step-by-step solution, with the triangle highlighting which ratio is used",
+          "sections": "1.3",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "how-accurate-is-my-answer",
+          "title": "How accurate is my answer?",
+          "tag": "HOW",
+          "summary": "Sees how the precision of an angle pairs with the significant digits of the sides (the book's accuracy table)",
+          "sections": "1.3, A.3",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "angles-of-elevation-and-depression",
+          "title": "Angles of elevation and depression",
+          "tag": "APP",
+          "summary": "Walks an observer toward a building and reads its height off the angle",
+          "sections": "1.4",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "height-from-two-sightings",
+          "title": "Height from two sightings",
+          "tag": "APP",
+          "summary": "Takes angles from two points and finds the height without reaching the base (the book's 4.8 + x problem)",
+          "sections": "1.4",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "why-does-light-bend-refraction",
+          "title": "Why does light bend? (refraction)",
+          "tag": "APP",
+          "summary": "Moves the incoming ray and changes the material; sin α / sin β stays constant (Snell's law)",
+          "sections": "2.4",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "why-is-a-wake-v-shaped",
+          "title": "Why is a wake V-shaped?",
+          "tag": "APP",
+          "summary": "Uses one cone tool with three presets, boat bow wave, sonic boom and Čerenkov light, all following sin(θ/2) = slow speed / fast speed",
+          "sections": "2.4",
+          "extension": false,
+          "order": 11
+        }
+      ]
+    },
+    {
+      "slug": "unit-circle",
+      "title": "Unit Circle",
+      "sections": "§2.3, §2.5, App. B.1",
+      "order": 4,
+      "children": [
+        {
+          "slug": "why-do-we-need-a-circle-at-all",
+          "title": "Why do we need a circle at all?",
+          "tag": "WHY",
+          "summary": "Pushes a right triangle past 90° until it collapses; switches to point (x, y) on a circle of radius r, where x/r and y/r agree with the triangle for acute angles and keep working beyond",
+          "sections": "2.3",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-radius-1",
+          "title": "Why radius 1?",
+          "tag": "WHY",
+          "summary": "Resizes the circle: the ratios don't change, and at r = 1 the coordinates simply are (cos θ, sin θ)",
+          "sections": "2.3",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-do-signs-change-by-quadrant",
+          "title": "Why do signs change by quadrant?",
+          "tag": "WHY",
+          "summary": "Drags the point around and watches the signs of x and y; ASTC falls out of this, with nothing to memorise",
+          "sections": "2.3",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-do-reference-angles-work",
+          "title": "Why do reference angles work?",
+          "tag": "WHY",
+          "summary": "Mirrors a Q2/Q3/Q4 point into Q1: the same lengths with different signs",
+          "sections": "2.5",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-is-sin-30-exactly-half",
+          "title": "Why is sin 30° exactly ½?",
+          "tag": "WHY",
+          "summary": "Halves an equilateral triangle to get 30–60–90, cuts a square on its diagonal to get 45–45–90, and reads off the exact values",
+          "sections": "2.5",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-sin2theta-cos2theta-1",
+          "title": "Why sin²θ + cos²θ = 1",
+          "tag": "WHY",
+          "summary": "Sees Pythagoras on the radius of the unit circle, true at every angle",
+          "sections": "2.5",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "why-do-trig-functions-repeat",
+          "title": "Why do trig functions repeat?",
+          "tag": "WHY",
+          "summary": "Winds around several times: coterminal angles land on the same point, so the period is 2π; tan repeats every π because opposite points give the same slope",
+          "sections": "2.5",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "why-is-tan-90-undefined",
+          "title": "Why is tan 90° undefined?",
+          "tag": "WHY",
+          "summary": "Moves the point to (0, 1), where y/x divides by zero; the nearby values shoot off to ±∞",
+          "sections": "2.3",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "why-is-sine-a-function-and-the-circle-isn-t",
+          "title": "Why is sine a function (and the circle isn't)?",
+          "tag": "WHY",
+          "summary": "Feeds angles into a machine: one input gives exactly one output, but one x gives two points on the circle",
+          "sections": "B.1",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "exact-value-drill",
+          "title": "Exact-value drill",
+          "tag": "HOW",
+          "summary": "Clicks a special or quadrantal angle and fills in all six values, with the triangle shown as a hint",
+          "sections": "2.5",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "degree-mode-vs-radian-mode",
+          "title": "Degree mode vs radian mode",
+          "tag": "HOW",
+          "summary": "Sees the same keystrokes give different answers; spots the classic sin(30) = −0.988 mistake",
+          "sections": "2.3",
+          "extension": false,
+          "order": 11
+        }
+      ]
+    },
+    {
+      "slug": "sine-cosine-graphs",
+      "title": "Sine & Cosine Graphs",
+      "sections": "§3.1–3.3, §2.4, App. B.2",
+      "order": 5,
+      "children": [
+        {
+          "slug": "why-is-the-sine-graph-a-wave",
+          "title": "Why is the sine graph a wave?",
+          "tag": "WHY",
+          "summary": "Watches a point spin on the unit circle while its height is traced onto a time axis beside it. This is the signature visual of the site",
+          "sections": "3.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-is-cosine-a-shifted-sine",
+          "title": "Why is cosine a shifted sine?",
+          "tag": "WHY",
+          "summary": "Traces the horizontal shadow of the same spinner: it's sine started a quarter-turn early",
+          "sections": "3.1",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "what-does-a-do-amplitude-radius",
+          "title": "What does A do? Amplitude = radius",
+          "tag": "WHY",
+          "summary": "Grows the circle and the wave grows taller with it",
+          "sections": "3.2",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "what-does-b-do-why-period-2pi-b",
+          "title": "What does B do? Why period = 2π/B",
+          "tag": "WHY",
+          "summary": "Spins B times faster, so one full turn takes 2π/B",
+          "sections": "3.2",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "what-does-c-do-why-the-shift-is-c-b",
+          "title": "What does C do? Why the shift is −C/B",
+          "tag": "WHY",
+          "summary": "Starts the spinner early by angle C and sees why the graph shifts left, and why the shift divides by B",
+          "sections": "3.3",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "what-does-k-do",
+          "title": "What does k do?",
+          "tag": "WHY",
+          "summary": "Lifts the axle and the whole wave rises with it",
+          "sections": "3.2",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "transformation-lab-for-any-graph",
+          "title": "Transformation lab for any graph",
+          "tag": "WHY",
+          "summary": "Applies shifts, reflections and stretches to any f(x) and sees A, B, C, k as one general idea",
+          "sections": "B.2",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "graph-y-k-a-sin-bx-c-by-hand",
+          "title": "Graph y = k + A sin(Bx + C) by hand",
+          "tag": "HOW",
+          "summary": "Gets the five key points step by step, then checks against the live plot",
+          "sections": "3.2, 3.3",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "find-the-equation-from-a-graph",
+          "title": "Find the equation from a graph",
+          "tag": "HOW",
+          "summary": "Drags a sine curve to fit a target graph, then writes its equation (simple harmonic)",
+          "sections": "3.3",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "why-does-the-graph-window-matter",
+          "title": "Why does the graph window matter?",
+          "tag": "HOW",
+          "summary": "Zooms a plotter out until the samples skip cycles and a fake wave appears (aliasing)",
+          "sections": "3.1",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "why-do-tilted-lines-fool-your-eyes",
+          "title": "Why do tilted lines fool your eyes?",
+          "tag": "APP",
+          "summary": "Tilts a field of lines and plots the error d = a + b sin 4θ; the period is 90° because the pattern looks the same after a quarter-turn (Berliner experiment)",
+          "sections": "2.4",
+          "extension": false,
+          "order": 11
+        }
+      ]
+    },
+    {
+      "slug": "tan-cot-sec-csc",
+      "title": "Tan, Cot, Sec, Csc",
+      "sections": "§3.1, §3.6",
+      "order": 6,
+      "children": [
+        {
+          "slug": "why-is-it-called-tangent",
+          "title": "Why is it called \"tangent\"?",
+          "tag": "WHY",
+          "summary": "Sees tan θ is the length of the tangent line at (1, 0) and sec θ the length of the secant line out to it, so the names are literal",
+          "sections": "3.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-does-tan-have-asymptotes",
+          "title": "Why does tan have asymptotes?",
+          "tag": "WHY",
+          "summary": "Pushes θ toward 90°: the ray becomes parallel to the tangent line and the segment runs off forever",
+          "sections": "3.1",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "tan-theta-is-a-slope",
+          "title": "tan θ is a slope",
+          "tag": "WHY",
+          "summary": "Rotates a ray and reads its slope, which equals tan θ; that's why the period is π",
+          "sections": "3.1",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-is-cot-the-co-tangent",
+          "title": "Why is cot the \"co\"-tangent?",
+          "tag": "WHY",
+          "summary": "Uses the tangent line at (0, 1) instead: the complementary angle and the mirror-image graph",
+          "sections": "3.1",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-do-csc-and-sec-hug-sin-and-cos",
+          "title": "Why do csc and sec hug sin and cos?",
+          "tag": "WHY",
+          "summary": "Overlays the reciprocals: where sin → 0, csc → ∞, and where sin = ±1 they touch, which makes the U-shapes",
+          "sections": "3.1",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "graph-y-a-tan-bx-c-and-a-cot-bx-c",
+          "title": "Graph y = A tan(Bx + C) and A cot(Bx + C)",
+          "tag": "HOW",
+          "summary": "Places the asymptotes π/B apart first, then the curve between them",
+          "sections": "3.6",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "graph-y-a-sec-bx-c-and-a-csc-bx-c",
+          "title": "Graph y = A sec(Bx + C) and A csc(Bx + C)",
+          "tag": "HOW",
+          "summary": "Draws the guide sine/cosine faintly, then flips it into U-shapes",
+          "sections": "3.6",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "why-is-there-no-amplitude-for-tan",
+          "title": "Why is there no amplitude for tan?",
+          "tag": "HOW",
+          "summary": "Tries to measure a peak height and finds none; A becomes a vertical stretch",
+          "sections": "3.6",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "lighthouse-beam-on-a-wall",
+          "title": "Lighthouse beam on a wall",
+          "tag": "APP",
+          "summary": "Rotates the beam steadily and sees the spot's position (d tan θ) and its speed explode near 90°",
+          "sections": "—",
+          "extension": true,
+          "order": 9
+        }
+      ]
+    },
+    {
+      "slug": "waves-oscillations",
+      "title": "Waves & Oscillations",
+      "sections": "§3.2 apps, §3.4, §3.5, §4.5 music, Ch. 3 activity",
+      "order": 7,
+      "children": [
+        {
+          "slug": "why-does-a-spring-trace-a-sine",
+          "title": "Why does a spring trace a sine?",
+          "tag": "WHY",
+          "summary": "Runs a spinning point and a mass on a spring side by side: the mass is the point's shadow (simple harmonic motion)",
+          "sections": "3.4",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-do-waves-add-point-by-point",
+          "title": "Why do waves add point by point?",
+          "tag": "WHY",
+          "summary": "Drags two waves and watches a vertical line add their heights at each x (addition of ordinates)",
+          "sections": "3.5",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-do-beats-happen",
+          "title": "Why do beats happen?",
+          "tag": "WHY",
+          "summary": "Tunes two close frequencies and sees and hears the loud–soft envelope; the product–sum identity explains it",
+          "sections": "3.5, 4.5",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-does-damping-make-an-envelope",
+          "title": "Why does damping make an envelope?",
+          "tag": "WHY",
+          "summary": "Multiplies the sine by a decaying curve and sees the curve become the boundary",
+          "sections": "3.4",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-does-resonance-build-up",
+          "title": "Why does resonance build up?",
+          "tag": "WHY",
+          "summary": "Sweeps the drive frequency past the natural frequency and watches the amplitude spike",
+          "sections": "3.4",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-is-any-shape-a-sum-of-sines",
+          "title": "Why is any shape a sum of sines?",
+          "tag": "WHY",
+          "summary": "Adds harmonics one by one and watches a square or sawtooth wave assemble (Fourier)",
+          "sections": "3.5",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "pitch-1-period",
+          "title": "Pitch = 1 / period",
+          "tag": "APP",
+          "summary": "Changes B and hears the tone change (Web Audio) with the graph locked to it",
+          "sections": "3.2",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "weigh-a-floating-object-by-its-bobbing",
+          "title": "Weigh a floating object by its bobbing",
+          "tag": "APP",
+          "summary": "Sets the mass and area and times the period, then inverts to find the mass",
+          "sections": "3.2",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "why-120pi-in-ac-current",
+          "title": "Why 120π in AC current?",
+          "tag": "APP",
+          "summary": "Reads 60 cycles per second off the graph of I = A sin 120πt",
+          "sections": "3.4",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "light-and-em-waves-c-f",
+          "title": "Light and EM waves: c = λf",
+          "tag": "APP",
+          "summary": "Slides across the spectrum; wavelength and frequency trade off at constant speed",
+          "sections": "3.4",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "water-waves",
+          "title": "Water waves",
+          "tag": "APP",
+          "summary": "Changes wavelength and period and sees the wave speed",
+          "sections": "3.4",
+          "extension": false,
+          "order": 11
+        },
+        {
+          "slug": "coyotes-and-rabbits",
+          "title": "Coyotes and rabbits",
+          "tag": "APP",
+          "summary": "Watches two population sines run a quarter-cycle apart; predators lag prey",
+          "sections": "Ch. 3",
+          "extension": false,
+          "order": 12
+        }
+      ]
+    },
+    {
+      "slug": "identities",
+      "title": "Identities",
+      "sections": "§4.1–4.5, Ch. 4 activity",
+      "order": 8,
+      "children": [
+        {
+          "slug": "why-three-pythagorean-identities",
+          "title": "Why three Pythagorean identities?",
+          "tag": "WHY",
+          "summary": "Scales the unit-circle triangle by 1/cos and by 1/sin to get 1 + tan² = sec² and 1 + cot² = csc², the same triangle resized",
+          "sections": "4.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "identity-vs-equation-true-everywhere-or-somewhere",
+          "title": "Identity vs equation: true everywhere or somewhere?",
+          "tag": "WHY",
+          "summary": "Graphs both sides: an identity overlaps everywhere, an equation only crosses at points",
+          "sections": "4.2",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-cos-a-b-cos-a-cos-b-sin-a-sin-b",
+          "title": "Why cos(A − B) = cos A cos B + sin A sin B",
+          "tag": "WHY",
+          "summary": "Rotates a chord around the unit circle; its length is the same both ways, which gives the identity",
+          "sections": "4.3",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-sin-a-b-sin-a-cos-b-cos-a-sin-b",
+          "title": "Why sin(A + B) = sin A cos B + cos A sin B",
+          "tag": "WHY",
+          "summary": "Stacks one triangle on another inside a rectangle; the side lengths read off the identity",
+          "sections": "4.3",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-isn-t-sin-a-b-sin-a-sin-b",
+          "title": "Why isn't sin(A + B) = sin A + sin B?",
+          "tag": "WHY",
+          "summary": "Drags A and B and watches the two bars disagree, with a live counterexample",
+          "sections": "4.3",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-double-angle-formulas",
+          "title": "Why double-angle formulas?",
+          "tag": "WHY",
+          "summary": "Sets B = A in the sum formula, then checks with an isosceles triangle in a circle",
+          "sections": "4.4",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "why-do-half-angle-formulas-have",
+          "title": "Why do half-angle formulas have ±?",
+          "tag": "WHY",
+          "summary": "Moves θ around and sees which quadrant θ/2 lands in, which picks the sign",
+          "sections": "4.4",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "why-can-products-become-sums",
+          "title": "Why can products become sums?",
+          "tag": "WHY",
+          "summary": "Adds two spinning phasors; their sum and difference frequencies appear (links to beats)",
+          "sections": "4.5",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "why-is-m-sin-bt-n-cos-bt-a-single-sine",
+          "title": "Why is M sin Bt + N cos Bt a single sine?",
+          "tag": "WHY",
+          "summary": "Adds two perpendicular phasors: the resultant has length √(M² + N²) and a phase angle",
+          "sections": "Ch. 4",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "identity-verifier-sandbox",
+          "title": "Identity verifier sandbox",
+          "tag": "HOW",
+          "summary": "Transforms one side step by step while a graph confirms that every step stays equal",
+          "sections": "4.2",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "all-six-from-one",
+          "title": "All six from one",
+          "tag": "HOW",
+          "summary": "Given sin θ = 3/5 in Q2, draws the triangle in that quadrant and reads off the rest",
+          "sections": "4.1",
+          "extension": false,
+          "order": 11
+        }
+      ]
+    },
+    {
+      "slug": "inverses-equations",
+      "title": "Inverses & Equations",
+      "sections": "§5.1–5.4, App. B.3, Ch. 5 activity",
+      "order": 9,
+      "children": [
+        {
+          "slug": "why-can-t-sine-be-inverted-as-it-is",
+          "title": "Why can't sine be inverted as it is?",
+          "tag": "WHY",
+          "summary": "Sweeps a horizontal line across the wave: it hits many times, so sine is not one-to-one",
+          "sections": "B.3, 5.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-those-exact-ranges-for-arcsin-and-arccos",
+          "title": "Why those exact ranges for arcsin and arccos?",
+          "tag": "WHY",
+          "summary": "Slides a window along the graph; only some windows are one-to-one, cover −1…1, are unbroken, and include 0 to π/2",
+          "sections": "5.1",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-is-an-inverse-graph-a-mirror-image",
+          "title": "Why is an inverse graph a mirror image?",
+          "tag": "WHY",
+          "summary": "Folds the graph over y = x",
+          "sections": "B.3",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-does-sin-x-0-5-have-infinitely-many-solutions",
+          "title": "Why does sin x = 0.5 have infinitely many solutions?",
+          "tag": "WHY",
+          "summary": "Sees the line cross the wave again and again; the unit circle shows two per turn, plus 2πk",
+          "sections": "5.3",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-sin-sin1-x-x-but-sin1-sin-x-x",
+          "title": "Why sin(sin⁻¹ x) = x but sin⁻¹(sin x) ≠ x",
+          "tag": "WHY",
+          "summary": "Chains the two machines and sees outputs fold back once x leaves the range",
+          "sections": "5.1",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-do-books-disagree-on-arcsec-s-range",
+          "title": "Why do books disagree on arcsec's range?",
+          "tag": "WHY",
+          "summary": "Compares the two common branch choices side by side",
+          "sections": "5.2",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "what-happens-to-sin-1-x-near-0",
+          "title": "What happens to sin(1/x) near 0?",
+          "tag": "WHY",
+          "summary": "Zooms in forever and finds more and more solutions",
+          "sections": "Ch. 5",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "solve-a-trig-equation",
+          "title": "Solve a trig equation",
+          "tag": "HOW",
+          "summary": "Isolates the function, finds the reference angle, picks every quadrant, writes the general solution",
+          "sections": "5.3",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "solve-graphically-including-inequalities",
+          "title": "Solve graphically, including inequalities",
+          "tag": "HOW",
+          "summary": "Finds intersections, then shades where f > g",
+          "sections": "5.4",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "inverse-and-composition-drill",
+          "title": "Inverse and composition drill",
+          "tag": "HOW",
+          "summary": "Evaluates sin⁻¹, cos⁻¹, tan⁻¹ and their compositions, with the answer drawn on the circle",
+          "sections": "5.1, 5.2",
+          "extension": false,
+          "order": 10
+        }
+      ]
+    },
+    {
+      "slug": "solving-any-triangle",
+      "title": "Solving Any Triangle",
+      "sections": "§6.1–6.3, Ch. 6 activity",
+      "order": 10,
+      "children": [
+        {
+          "slug": "why-the-law-of-sines",
+          "title": "Why the law of sines?",
+          "tag": "WHY",
+          "summary": "Drops an altitude: h = b sin A = a sin B, and the law follows",
+          "sections": "6.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-a-sin-a-2r",
+          "title": "Why a/sin A = 2R",
+          "tag": "WHY",
+          "summary": "Draws the circumcircle and sees every ratio equal its diameter",
+          "sections": "—",
+          "extension": true,
+          "order": 2
+        },
+        {
+          "slug": "why-is-ssa-ambiguous",
+          "title": "Why is SSA ambiguous?",
+          "tag": "WHY",
+          "summary": "Swings side a like a compass arc that crosses the base 0, 1 or 2 times",
+          "sections": "6.1, Ch. 6",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-is-the-law-of-cosines-pythagoras-with-a-correction",
+          "title": "Why is the law of cosines Pythagoras with a correction?",
+          "tag": "WHY",
+          "summary": "Opens the right angle; the −2ab cos C term grows and shrinks with it",
+          "sections": "6.2",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-does-sss-fix-a-triangle-but-aaa-doesn-t",
+          "title": "Why does SSS fix a triangle but AAA doesn't?",
+          "tag": "WHY",
+          "summary": "Three rods make a rigid frame, while three angles still allow any size",
+          "sections": "6.2",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-is-area-halfab-sin-c",
+          "title": "Why is area ½ab sin C?",
+          "tag": "WHY",
+          "summary": "Sees the height is b sin C, so ½ × base × height becomes ½ab sin C",
+          "sections": "6.3",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "heron-s-formula-check",
+          "title": "Heron's formula check",
+          "tag": "HOW",
+          "summary": "Drags vertices and compares ½ × base × height, ½ab sin C and Heron's formula live",
+          "sections": "6.3",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "triangle-solver-which-law-and-why",
+          "title": "Triangle solver: which law, and why?",
+          "tag": "HOW",
+          "summary": "Picks the case (ASA, AAS, SSA, SAS, SSS) and is shown the law to use and the reason",
+          "sections": "6.1, 6.2",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "area-of-any-polygon",
+          "title": "Area of any polygon",
+          "tag": "HOW",
+          "summary": "Splits a shape into triangles and sums them (the book's arbitrary-triangle method)",
+          "sections": "6.3",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "distance-across-a-river",
+          "title": "Distance across a river",
+          "tag": "APP",
+          "summary": "Sights a tree from two points on one bank and finds the width with the law of sines",
+          "sections": "6.1",
+          "extension": false,
+          "order": 10
+        }
+      ]
+    },
+    {
+      "slug": "vectors",
+      "title": "Vectors",
+      "sections": "§6.4, §6.5",
+      "order": 11,
+      "children": [
+        {
+          "slug": "why-does-a-vector-need-two-numbers",
+          "title": "Why does a vector need two numbers?",
+          "tag": "WHY",
+          "summary": "Drags an arrow and sees magnitude + direction and components ⟨‖v‖ cos θ, ‖v‖ sin θ⟩ as two names for one thing",
+          "sections": "6.4",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-tip-to-tail",
+          "title": "Why tip-to-tail?",
+          "tag": "WHY",
+          "summary": "Walks one displacement, then another; the parallelogram gives the same result",
+          "sections": "6.4",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-does-a-scalar-stretch-but-not-turn-a-vector",
+          "title": "Why does a scalar stretch but not turn a vector?",
+          "tag": "WHY",
+          "summary": "Slides k from −2 to 2: the arrow stretches and flips, but stays on its line",
+          "sections": "6.4",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "why-is-u-v-u-v-cos-theta",
+          "title": "Why is u · v = ‖u‖ ‖v‖ cos θ?",
+          "tag": "WHY",
+          "summary": "Casts u's shadow onto v; the law of cosines shows the algebraic and geometric forms agree",
+          "sections": "6.5",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-does-perpendicular-mean-dot-0",
+          "title": "Why does perpendicular mean dot = 0?",
+          "tag": "WHY",
+          "summary": "Rotates u around v and watches the shadow vanish at 90°",
+          "sections": "6.5",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "plane-in-a-crosswind",
+          "title": "Plane in a crosswind",
+          "tag": "APP",
+          "summary": "Sets heading, airspeed and wind; the ground track is the vector sum",
+          "sections": "6.4",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "why-do-cable-tensions-explode-as-they-flatten",
+          "title": "Why do cable tensions explode as they flatten?",
+          "tag": "APP",
+          "summary": "Hangs a sign from two cables; as the angle closes in, the tension needed to hold the weight shoots up (static equilibrium)",
+          "sections": "6.4",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "work-when-pulling-at-an-angle",
+          "title": "Work when pulling at an angle",
+          "tag": "APP",
+          "summary": "Pulls a sled: only the component along the motion does work, W = F · d",
+          "sections": "6.5",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "block-on-an-incline",
+          "title": "Block on an incline",
+          "tag": "APP",
+          "summary": "Splits gravity into components along and across the slope (scalar component)",
+          "sections": "6.5",
+          "extension": false,
+          "order": 9
+        }
+      ]
+    },
+    {
+      "slug": "polar-complex",
+      "title": "Polar & Complex",
+      "sections": "§7.1–7.4, App. A.2, Ch. 7 activity",
+      "order": 12,
+      "children": [
+        {
+          "slug": "why-polar-coordinates",
+          "title": "Why polar coordinates?",
+          "tag": "WHY",
+          "summary": "Locates points radar-style (turn, then walk) and compares with x = r cos θ, y = r sin θ",
+          "sections": "7.1",
+          "extension": false,
+          "order": 1
+        },
+        {
+          "slug": "why-does-one-point-have-many-polar-names",
+          "title": "Why does one point have many polar names?",
+          "tag": "WHY",
+          "summary": "Adds 2π or flips to negative r and lands on the same dot",
+          "sections": "7.1",
+          "extension": false,
+          "order": 2
+        },
+        {
+          "slug": "why-does-a-rose-have-n-or-2n-petals",
+          "title": "Why does a rose have n or 2n petals?",
+          "tag": "WHY",
+          "summary": "Traces r = a cos nθ with a pen: for even n, negative r draws new petals behind; for odd n, it retraces",
+          "sections": "7.2",
+          "extension": false,
+          "order": 3
+        },
+        {
+          "slug": "polar-curve-gallery",
+          "title": "Polar curve gallery",
+          "tag": "WHY",
+          "summary": "Moves sliders through cardioid, limaçon, spiral, lemniscate and rose (the book's table of standard curves)",
+          "sections": "7.2",
+          "extension": false,
+          "order": 4
+        },
+        {
+          "slug": "why-does-i-live-on-a-perpendicular-axis",
+          "title": "Why does i live on a perpendicular axis?",
+          "tag": "WHY",
+          "summary": "Multiplies by i repeatedly: each time is a 90° turn, so i² = −1 is a 180° turn",
+          "sections": "7.3, A.2",
+          "extension": false,
+          "order": 5
+        },
+        {
+          "slug": "why-does-multiplying-complex-numbers-add-angles",
+          "title": "Why does multiplying complex numbers add angles?",
+          "tag": "WHY",
+          "summary": "Multiplies two numbers and sees the lengths multiply and the angles add",
+          "sections": "7.3",
+          "extension": false,
+          "order": 6
+        },
+        {
+          "slug": "why-de-moivre",
+          "title": "Why De Moivre?",
+          "tag": "WHY",
+          "summary": "Raises r∠θ to the n-th power: a spiral of n equal turns",
+          "sections": "7.4",
+          "extension": false,
+          "order": 7
+        },
+        {
+          "slug": "why-are-n-roots-evenly-spaced",
+          "title": "Why are n roots evenly spaced?",
+          "tag": "WHY",
+          "summary": "Drags n: the roots form a regular n-gon on a circle",
+          "sections": "7.4",
+          "extension": false,
+          "order": 8
+        },
+        {
+          "slug": "polar-rectangular-converter",
+          "title": "Polar ↔ rectangular converter",
+          "tag": "HOW",
+          "summary": "Converts points and equations both ways, with a dual grid",
+          "sections": "7.1",
+          "extension": false,
+          "order": 9
+        },
+        {
+          "slug": "complex-arithmetic-rectangular-vs-polar",
+          "title": "Complex arithmetic: rectangular vs polar",
+          "tag": "HOW",
+          "summary": "Does the same product both ways and sees why polar is easier",
+          "sections": "7.3",
+          "extension": false,
+          "order": 10
+        },
+        {
+          "slug": "orbits-of-planets",
+          "title": "Orbits of planets",
+          "tag": "APP",
+          "summary": "Changes the eccentricity in r = a(1 − e²)/(1 + e cos θ) to go from circle to ellipse",
+          "sections": "Ch. 7",
+          "extension": false,
+          "order": 11
+        }
+      ]
+    }
+  ]
+}
