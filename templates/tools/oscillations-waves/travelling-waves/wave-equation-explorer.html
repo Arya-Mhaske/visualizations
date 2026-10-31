@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Change a, k, ω and φ in y = a sin(kx − ωt + φ). The top graph is the string now. The bottom graph is one point of it over time.{% endblock %}
+{% block why_text %}Each number has one job. a sets the height, k sets the spacing along x (λ = 2π/k), ω sets the speed of the bobbing in time (T = 2π/ω), and φ slides the pattern. Together they fix the speed ω/k.{% endblock %}
+{% block try_items %}
+<li>Change k only. Which graph stretches, the top one or the bottom one?</li>
+<li>Change ω only. Which graph changes now?</li>
+<li>Slide φ and watch the dashed t = 0 curve. Which way does it shift?</li>
+<li>Make k and ω both double. What happens to the speed?</li>
+{% endblock %}

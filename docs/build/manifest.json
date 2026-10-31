@@ -1941,40 +1941,40 @@
 "reviewed": true
 },
 "oscillations-waves/travelling-waves/why-does-y-a-sin-kx-t-move-right": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/why-is-v-k": {
 "archetype": "sim",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/why-is-the-speed-on-a-string-root-t": {
 "archetype": "sim",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/why-was-newton-s-speed-of-sound-15-too-low": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/wave-equation-explorer": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/travelling-waves/why-does-sound-travel-faster-in-steel-than-in-air": {
 "archetype": "sim",
 "priority": 102,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/superposition-reflection/why-do-waves-pass-through-each-other-unchanged": {
 "archetype": "sim",

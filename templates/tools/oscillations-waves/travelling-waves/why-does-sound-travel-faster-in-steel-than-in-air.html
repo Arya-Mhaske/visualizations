@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Send a push down 100 m of air and 100 m of steel. Then compare how stiff and how dense each one is.{% endblock %}
+{% block why_text %}Speed is √(stiffness ÷ density). Steel is about a million times stiffer than air, but only about 6000 times denser. The stiffness wins, so the square root of the ratio is about 15: sound is 15 times faster in steel.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Which stiffness?</span>In a gas it is γP. In a liquid it is the bulk modulus B. In a thin solid rod it is Young’s modulus Y. The animation runs 20 times slower than real life. Values: steel Y = 2.0 × 10¹¹ Pa, ρ = 7800 kg/m³; aluminium Y = 7.0 × 10¹⁰ Pa, ρ = 2700 kg/m³; water B = 2.2 × 10⁹ Pa, ρ = 1000 kg/m³.</div>{% endblock %}
+{% block try_items %}
+<li>Compare air with water. Which is bigger, the stiffness ratio or the density ratio?</li>
+<li>Switch to aluminium. It is lighter than steel and less stiff. Why is its speed so close to steel’s?</li>
+<li>Watch the race. How long does the push take to cross air compared with steel?</li>
+{% endblock %}

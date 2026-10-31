@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square{% endblock %}
+{% block lead %}Watch one crest for one period. It moves exactly one wavelength, and that gives the speed.{% endblock %}
+{% block why_text %}In one period T the pattern slides forward by one wavelength λ, because the next crest has then taken the first one’s place. Distance λ in time T gives v = λ/T = λν. Since λ = 2π/k and ν = ω/2π, that is also ω/k.{% endblock %}
+{% block try_items %}
+<li>Double the frequency. What happens to the time the crest needs to cover the ruler?</li>
+<li>Make λ longer at the same frequency. Does the crest travel further in one period?</li>
+<li>Compare the two speeds in the readout. Do they ever differ?</li>
+{% endblock %}

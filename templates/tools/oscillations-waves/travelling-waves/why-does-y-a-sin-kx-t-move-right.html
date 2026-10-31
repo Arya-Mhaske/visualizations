@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pick one point on the wave and follow it. Its phase stays fixed, so its position has to change as time passes.{% endblock %}
+{% block why_text %}A point of the wave keeps its shape only if the phase kx − ωt stays the same. When t goes up, ωt goes up, so x must go up too, by exactly ω/k each second. That is why the minus sign sends the wave to the right.{% endblock %}
+{% block try_items %}
+<li>Ride a crest, then a trough. Does the rider’s speed change?</li>
+<li>Switch the sign to kx + ωt. Which way does the same rider go now?</li>
+<li>Double ω. How does the slope of the x–t line change?</li>
+{% endblock %}

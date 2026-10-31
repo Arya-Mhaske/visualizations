@@ -121,6 +121,10 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `_wave-basics-math.js` has the Gaussian `pulse`/`pulseVel`/`energyCentre`, slinky `shift`/`densityRatio` (needs A·k < 1 so coils never
   cross; the tool clamps A to 0.9/k), `airLayout`/`relay` (a seeded nested molecule list and a breadth-first "hand-off" chain, used to show
   sound failing when air is removed), and `standing`. The sheet script does not load KaTeX, so formulas show as raw TeX there: that is normal.
+- `_travelling-waves-math.js` has `wave`, `riderX` (a point of constant phase, either direction), `stringSpeed`, `pulseY`, Newton/Laplace
+  speeds and `isoP`/`adiaP` curves, and `MATERIALS` (stiffness and density of air, water, aluminium, steel, with `materialSpeed`). Long races
+  (a push down 100 m of steel) run in slow motion with a stated factor (×20); say so in a note. Log-scale bars: put a long bar's label inside it.
+- Wide stages (16:9) are too short at 360 px for two-line plots; use square or tall for anything with a ruler or several labels.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -233,7 +237,7 @@ it reaches the front of the queue.
 | 96 | `exponentials-logs/exponential-growth` | 6 | 1 | |
 | 97 | `oscillations-waves/what-is-a-wave` | 4 | 1 | ✓ |
 | 98 | `exponentials-logs/the-number-e` | 4 | 1 | |
-| 99 | `oscillations-waves/travelling-waves` | 6 | 1 | |
+| 99 | `oscillations-waves/travelling-waves` | 6 | 1 | ✓ |
 | 100 | `exponentials-logs/logarithms` | 9 | 1 | |
 | 101 | `oscillations-waves/superposition-reflection` | 4 | 1 | |
 | 102 | `exponentials-logs/log-scales` | 6 | 1 | |

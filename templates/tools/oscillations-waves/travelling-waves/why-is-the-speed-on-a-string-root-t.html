@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Race a pulse on your string against one on a reference string. Pull it tighter or make it heavier and watch who wins.{% endblock %}
+{% block why_text %}At the top of a pulse, tension pulls the string back down. A tighter string pulls harder (force ∝ T). A heavier string has more inertia (mass ∝ μ). So the string snaps back with acceleration ∝ T/μ, and the pulse speed is √(T/μ).{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Slow motion</span>The animation runs 20 times slower than real life, or the pulse would cross the string too fast to see. The close-up is a sketch of the idea, not to scale. The full derivation uses a small pulse on a string stretched by T.</div>{% endblock %}
+{% block try_items %}
+<li>Make the tension four times the reference. By how much does the speed grow?</li>
+<li>Now make μ four times the reference as well. What happens?</li>
+<li>Find two different settings that give the same speed.</li>
+{% endblock %}

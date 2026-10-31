@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square{% endblock %}
+{% block lead %}Squeeze a pocket of air two ways: slowly, so heat leaks out, or quickly, so it cannot. See which one pushes back harder.{% endblock %}
+{% block why_text %}Sound squeezes air hundreds of times a second, far too fast for heat to flow away. So the air gets hotter as it is squeezed, and pressure climbs along the steeper adiabatic curve. The stiffness is γP, not P, so the speed is √γ times Newton’s. For air that is 1.18 times, and Newton’s value was 15% too low.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Numbers used</span>Dry air at 0 °C: P = 1.013 × 10⁵ Pa, ρ = 1.29 kg/m³, γ = 1.40. The measured speed is about 331 m/s. The dashed lines are tangents at the start, and their slopes are the stiffnesses P and γP.</div>{% endblock %}
+{% block try_items %}
+<li>Squeeze by 10%. Which curve gives the higher pressure?</li>
+<li>Set γ = 1. What happens to the two curves and the two speeds?</li>
+<li>Raise γ to 1.65. Does Newton’s error get bigger or smaller?</li>
+{% endblock %}
