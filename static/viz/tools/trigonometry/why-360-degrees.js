@@ -136,7 +136,6 @@ function drawHexagon(ctx, S) {
     ctx.fillStyle = k === 0 ? C.a : C.ink;
     ctx.fillRect(x - 5, y - 5, 10, 10);
   }
-  text(ctx, 'centre', cx, cy + 14, 11, 'center');
   if (state.steps === 6) text(ctx, 'the chords close exactly', cx, S - 14, Math.max(11, S * 0.032), 'center', C.c);
 }
 

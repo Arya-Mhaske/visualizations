@@ -9,8 +9,8 @@ export function createStage(container, draw, { label = '' } = {}) {
   const stage = { canvas, ctx, size: 0, redraw };
 
   function resize() {
-    const rect = container.getBoundingClientRect();
-    const size = Math.round(Math.min(rect.width, rect.height || rect.width));
+    // clientWidth/Height exclude the stage's border, matching the canvas box
+    const size = Math.round(Math.min(container.clientWidth, container.clientHeight || container.clientWidth));
     if (size < 1) return;
     const dpr = window.devicePixelRatio || 1;
     stage.size = size;

@@ -562,3 +562,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 
 /* a focused canvas shows its outline inside the (overflow: hidden) stage */
 .viz-stage > canvas:focus-visible { outline-offset: -6px; }
+
+/* the navbar wraps on phones so logo + breadcrumb never force sideways scrolling */
+.nb-nav__inner { flex-wrap: wrap; padding-top: var(--s-2); padding-bottom: var(--s-2); }
