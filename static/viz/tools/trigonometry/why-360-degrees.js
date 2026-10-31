@@ -78,8 +78,6 @@ function drawDivisibility(ctx, S) {
     }
   }
   if (n === 1) text(ctx, label, cx, cy, Math.max(14, S * 0.06));
-  text(ctx, whole ? 'every slice is a whole number' : 'slices are not whole numbers',
-    cx, S - 14, Math.max(11, S * 0.032), 'center', whole ? C.c : C.a);
 }
 
 function updateDivisibility() {
@@ -136,7 +134,6 @@ function drawHexagon(ctx, S) {
     ctx.fillStyle = k === 0 ? C.a : C.ink;
     ctx.fillRect(x - 5, y - 5, 10, 10);
   }
-  if (state.steps === 6) text(ctx, 'the chords close exactly', cx, S - 14, Math.max(11, S * 0.032), 'center', C.c);
 }
 
 function updateHexagon() {

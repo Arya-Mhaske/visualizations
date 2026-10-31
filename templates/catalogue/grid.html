@@ -6,9 +6,7 @@
 <section class="nb-hero">
   {% if is_landing %}
     <h1 class="nb-hero__title">{{ site_name }}</h1>
-    <p class="nb-hero__lead">See why, not just how.</p>
   {% else %}
-    <p class="nb-hero__kicker">{% if tile.kind == "subject" %}Subject{% else %}Box in {{ subject.title }}{% endif %}</p>
     <h1 class="nb-hero__title">{{ tile.title }}</h1>
     {% if tile.sections %}<p class="nb-hero__lead">Textbook: {{ tile.sections }}</p>{% endif %}
   {% endif %}
@@ -38,7 +36,7 @@
     {% endwith %}
   {% endfor %}
   {% for _ in empty_slots %}
-    <div class="nb-tile is-empty" aria-hidden="true">empty slot</div>
+    <div class="nb-tile is-empty" aria-hidden="true"></div>
   {% endfor %}
 </div>
 {% endblock %}

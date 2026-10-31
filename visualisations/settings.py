@@ -26,7 +26,7 @@ if not SECRET_KEY:
     else:
         raise RuntimeError('SECRET_KEY environment variable is required when DEBUG is False.')
 
-SITE_NAME = os.environ.get('SITE_NAME', 'Visualisations')
+SITE_NAME = os.environ.get('SITE_NAME', 'MuskMelon')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.11']
 CSRF_TRUSTED_ORIGINS = []

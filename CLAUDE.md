@@ -49,16 +49,16 @@ docs/catalogue/            human-readable catalogues (Markdown) per book
   `extension` (bool, the tool goes beyond the book), `spec` (optional longer build notes), `order`.
 - **Max 12 children per tile**, shown as a 3×4 grid (4 columns on desktop, 3 on tablet, 2 on phones). Enforce this in
   `clean()` and in `load_catalogue`.
-- The landing page shows the subject tiles (max 12). Empty slots render as dashed "empty slot" tiles so the 3×4 shape
-  stays visible.
+- The landing page shows the subject tiles (max 12). Unused slots are invisible spacers (no border, no label); the grid
+  columns stay aligned.
 - URL scheme: `/` → `/<subject>/` → `/<subject>/<box>/` → `/<subject>/<box>/<tool>/`. One path-resolving view walks
   the slugs. Unknown paths return a 404.
 - **Live vs placeholder is derived, never stored.** A tool is *live* if `templates/tools/<subject>/<box>/<tool>.html`
   exists. Otherwise its URL renders `tools/placeholder.html` (question, summary, textbook sections, "coming soon").
   Grids show live tiles in colour and placeholders with the striped `.is-soon` style.
 - Inside a box, order tiles WHY first, then HOW, then APP (the JSON is already in this order; keep it).
-- Every page under a subject shows the breadcrumb (`Home / Trigonometry / Unit Circle / <tool>`) and the
-  `.nb-location` pill, so students always know where they are.
+- Every page under a subject shows the breadcrumb (`Home / Trigonometry / Unit Circle / <tool>`) in the
+  navbar. The landing page has no navbar, and there is no logo button or "IN: …" pill.
 - Adding a new textbook: write `catalogue/data/<subject>.json` (or extend an existing subject's file), run
   `load_catalogue`, commit. The loader is idempotent: it upserts by slug path and deletes tiles no longer in the JSON.
 
@@ -142,3 +142,7 @@ Interaction rules:
 - Hard-code colours, fonts or shadows outside `brutal.css`.
 - Rename a tile's slug once it is live (students bookmark URLs). Retitle freely, keep the slug.
 - Present a historical story as proven fact.
+
+## 10. Site identity
+
+- The site is called **MuskMelon** (`SITE_NAME`). Show the bare name only, with no slogan anywhere.

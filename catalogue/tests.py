@@ -83,13 +83,18 @@ class CatalogueTests(TestCase):
 
     def test_landing_and_grid_content(self):
         landing = self.client.get('/')
-        self.assertContains(landing, 'See why, not just how.')
+        self.assertContains(landing, 'MuskMelon')
+        self.assertNotContains(landing, 'nb-nav')
+        self.assertNotContains(landing, 'See why')
         self.assertContains(landing, '124 tools')
         self.assertEqual(landing.content.decode().count('is-empty'), 3)
         box = self.client.get('/trigonometry/angles-arcs/')
         self.assertContains(box, 'nb-badge--live')
         self.assertContains(box, 'is-soon')
-        self.assertContains(box, 'IN: Trigonometry')
+        self.assertNotContains(box, 'IN: ')
+        self.assertNotContains(box, 'empty slot')
+        self.assertNotContains(box, 'nb-logo')
+        self.assertContains(box, 'nb-nav')
 
 
 class DivisorFactTests(TestCase):
