@@ -71,13 +71,13 @@ function drawDivisibility(ctx, S) {
     ctx.fillStyle = whole ? C.fillC : C.fillA;
     ctx.fill();
     stroke(ctx, n > 24 ? 2 : C.line);
-    if (size) {
+    if (size && n > 1) {
       const mid = (a0 + a1) / 2;
-      const r = n === 1 ? 0 : R * (n <= 4 ? 0.6 : 0.68);
+      const r = R * (n <= 4 ? 0.6 : 0.68);
       text(ctx, label, cx + r * Math.cos(mid), cy + r * Math.sin(mid), size);
     }
   }
-  if (n === 1) text(ctx, label, cx, cy, Math.max(14, S * 0.06));
+  if (n === 1) text(ctx, label, cx, cy + R * 0.45, Math.max(14, S * 0.06));
 }
 
 function updateDivisibility() {

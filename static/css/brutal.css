@@ -551,3 +551,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 /* phones: the navbar slides away on scroll down (static/js/nav.js) and returns on scroll up */
 .nb-nav { transition: transform var(--t-med); }
 @media (max-width: 719px) { .nb-nav.is-hidden { transform: translateY(-100%); } }
+
+/* landing page: main content fills the viewport, so the footer only appears after scrolling */
+.nb-main--full { min-height: 100vh; min-height: 100svh; }

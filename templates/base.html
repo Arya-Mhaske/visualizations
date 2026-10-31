@@ -27,7 +27,7 @@
   </header>
   {% endif %}
 
-  <main>
+  <main{% if is_landing %} class="nb-main--full"{% endif %}>
     <div class="nb-container">
       {% block content %}{% endblock %}
     </div>
