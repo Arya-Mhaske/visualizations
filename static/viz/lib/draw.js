@@ -2,14 +2,20 @@
 // Every function takes ctx first. c is the object from readColors().
 export const TAU = Math.PI * 2;
 
+// A horizontal or vertical line lands on whole device pixels, so its edges are crisp at any display scale.
 export function line(ctx, x1, y1, x2, y2, { color, width = 3, dash = [] } = {}) {
+  const scale = ctx.getTransform?.().a || 1;
+  const pixels = Math.max(1, Math.round(width * scale));
+  const shift = pixels % 2 ? 0.5 : 0; // an odd width centres on the middle of a pixel, an even one on its edge
+  const snap = (v) => (Math.round(v * scale - shift) + shift) / scale;
+  const straight = x1 === x2 || y1 === y2;
   ctx.save();
   ctx.strokeStyle = color;
-  ctx.lineWidth = width;
+  ctx.lineWidth = straight ? pixels / scale : width;
   ctx.setLineDash(dash);
   ctx.beginPath();
-  ctx.moveTo(x1, y1);
-  ctx.lineTo(x2, y2);
+  ctx.moveTo(x1 === x2 ? snap(x1) : x1, y1 === y2 ? snap(y1) : y1);
+  ctx.lineTo(x1 === x2 ? snap(x2) : x2, y1 === y2 ? snap(y2) : y2);
   ctx.stroke();
   ctx.restore();
 }

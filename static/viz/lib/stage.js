@@ -1,4 +1,4 @@
-// Stages: a canvas or SVG that fills .viz-stage at devicePixelRatio and redraws only on change.
+// Stages: a canvas or SVG that fills .viz-stage at exact device pixels and redraws only on change.
 //   createStage(el, draw, {label})   draw(ctx, size, stage); stage has .w .h .size .ctx .canvas
 //     stage.redraw()      draws now.  stage.invalidate()  draws once on the next frame, and waits
 //                         while the stage is off-screen or the tab is hidden.
@@ -21,20 +21,29 @@ export function createStage(container, draw, { label = '' } = {}) {
   canvas.setAttribute('role', 'img');
   if (label) canvas.setAttribute('aria-label', label);
   container.appendChild(canvas);
-  const ctx = canvas.getContext('2d');
+  // Opaque, so the browser can use its sharper LCD text smoothing. redraw() paints the stage background first.
+  const ctx = canvas.getContext('2d', { alpha: false });
   const stage = { canvas, ctx, size: 0, w: 0, h: 0, redraw, invalidate };
   let frame = 0;
   let dirty = false;
 
-  function resize() {
-    // clientWidth/Height exclude the stage's border, matching the canvas box
-    const w = Math.round(container.clientWidth);
-    const h = Math.round(container.clientHeight || w);
-    if (w < 1 || h < 1) return;
+  // The canvas must cover a whole number of device pixels and its buffer must match them exactly, or the browser
+  // resamples the whole picture and it blurs. A grid column is usually a fractional width, so the buffer rounds down
+  // and the canvas is sized to it (never more than one device pixel short of the stage). stage.w and stage.h can be
+  // fractional: they are that size in CSS pixels, so a drawn pixel lands on a real one.
+  function measure() {
     const dpr = window.devicePixelRatio || 1;
+    const box = container.getBoundingClientRect();
+    const inner = [box.width - container.offsetWidth + container.clientWidth, box.height - container.offsetHeight + container.clientHeight];
+    const pixelW = Math.floor(inner[0] * dpr + 1e-6);
+    const pixelH = Math.floor((inner[1] || inner[0]) * dpr + 1e-6);
+    if (pixelW < 1 || pixelH < 1) return;
+    const [w, h] = [pixelW / dpr, pixelH / dpr];
     Object.assign(stage, { w, h, size: Math.min(w, h) });
-    canvas.width = Math.round(w * dpr);
-    canvas.height = Math.round(h * dpr);
+    canvas.width = pixelW;
+    canvas.height = pixelH;
+    canvas.style.width = `${w}px`;
+    canvas.style.height = `${h}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     redraw();
   }
@@ -42,7 +51,8 @@ export function createStage(container, draw, { label = '' } = {}) {
   function redraw() {
     if (!stage.w) return;
     dirty = false;
-    ctx.clearRect(0, 0, stage.w, stage.h);
+    ctx.fillStyle = getComputedStyle(container).backgroundColor;
+    ctx.fillRect(0, 0, stage.w, stage.h);
     draw(ctx, stage.size, stage);
   }
 
@@ -57,8 +67,19 @@ export function createStage(container, draw, { label = '' } = {}) {
   }
 
   const seen = watchVisible(container, () => { if (dirty) invalidate(); });
-  new ResizeObserver(resize).observe(container);
-  resize();
+  new ResizeObserver(measure).observe(container);
+  // A zoom, or a move to another monitor, may change the display scale with no change of layout (wide pages are capped).
+  // Browsers differ in which of these two fire, so both are watched; a repeat does nothing.
+  let scale = 0;
+  const followScale = () => {
+    const now = window.devicePixelRatio || 1;
+    if (now === scale) return;
+    scale = now;
+    measure();
+    matchMedia(`(resolution: ${now}dppx)`).addEventListener('change', followScale, { once: true });
+  };
+  window.addEventListener('resize', followScale);
+  followScale();
   return stage;
 }
 
