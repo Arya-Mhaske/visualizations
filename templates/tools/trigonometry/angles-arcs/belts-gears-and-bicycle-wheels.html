@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A belt joins two wheels. Both rims move at the belt's speed, so the wheels can't share an angular speed.{% endblock %}
+{% block why_text %}The belt doesn't slip, so both rims have the same linear speed v. Since v = rω, a smaller wheel must spin faster: r₁ω₁ = r₂ω₂. That is how bicycle gears trade speed for effort.{% endblock %}
+{% block try_items %}
+<li>Make r₁ twice r₂. How does ω₂ compare with ω₁?</li>
+<li>Make the two radii equal. What happens?</li>
+<li>Which setting suits climbing a hill, big follower or small?</li>
+{% endblock %}

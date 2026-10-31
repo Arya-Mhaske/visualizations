@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A curve and a straight line are different, yet for small angles we swap one for the other. How small is small?{% endblock %}
+{% block why_text %}Zoom in far enough and any smooth arc looks straight, so the chord almost equals it. This is the same as sin x ≈ x for small x in radians, and it lets astronomers treat a tiny arc as a straight length.{% endblock %}
+{% block try_items %}
+<li>At what angle does the gap fall below 1%?</li>
+<li>What about below 0.01%?</li>
+<li>At 1°, how close is chord ÷ arc to 1?</li>
+{% endblock %}

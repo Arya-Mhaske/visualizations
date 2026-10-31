@@ -4300,67 +4300,67 @@
 "archetype": "rays",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-60-minutes-in-a-degree": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-radians-are-the-natural-unit": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-does-s-rtheta-only-work-in-radians": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-is-sector-area-halfr2theta": {
 "archetype": "discrete",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-arc-chord-for-small-angles": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-does-the-outer-horse-go-faster-v-romega": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/angle-unit-lab-dms-dd-radians": {
 "archetype": "stepper",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/belts-gears-and-bicycle-wheels": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/eratosthenes-measures-the-earth": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/how-big-are-the-sun-and-the-moon": {
 "archetype": "geometry",
 "priority": 0,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/why-do-a-triangle-s-angles-add-to-180": {
 "archetype": "geometry",

@@ -2,7 +2,8 @@
 //   sig(x, n)            n significant figures, trailing zeros trimmed
 //   fixed(x, n)          n decimals, trailing zeros trimmed
 //   sci(x, n)            scientific notation as 3.0 ×10⁸
-//   withUnit(x, unit, n) sig() plus a thin-spaced unit
+//   texSci(x, n)         the same in TeX, for formulas
+//   withUnit(x, unit, n) sig() plus a unit
 //   frac(x, maxDen)      nearest p/q as {p, q}, or null
 //   piFrac(x)            radians as a π multiple: 3π/4, or null if not a simple multiple
 //   deg(x, n)            degrees with the ° sign
@@ -28,6 +29,13 @@ export function sci(x, n = 3) {
   const [mantissa, exponent] = x.toExponential(n - 1).split('e');
   const power = String(Number(exponent)).replace(/[-0-9]/g, (ch) => SUPERS[ch]);
   return `${signed(mantissa)} ×10${power}`;
+}
+
+export function texSci(x, n = 3) {
+  const [mantissa, exponent] = x.toExponential(n - 1).split('e');
+  return Number(exponent) >= 6 || Number(exponent) <= -4
+    ? `${mantissa} \\times 10^{${Number(exponent)}}`
+    : String(Number(x.toPrecision(n)));
 }
 
 export const withUnit = (x, unit, n = 3) => `${sig(x, n)} ${unit}`;

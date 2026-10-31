@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a sector into thin triangles and slide them into a row. A sector is secretly a rectangle.{% endblock %}
+{% block why_text %}The row has height r and width half the arc, ½rθ, so its area is ½r²θ. It also matches the fraction θ/2π of the disc πr². Two different routes reach the same formula.{% endblock %}
+{% block try_items %}
+<li>Set 40 triangles and slide to the row. Does it look like a rectangle?</li>
+<li>Compare the two area readouts at 2 triangles and at 40.</li>
+<li>Set θ = 180°. Is the answer half of πr²?</li>
+{% endblock %}

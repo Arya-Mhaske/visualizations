@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The arc length formula s = rθ looks too simple to be true. It is true, but only for one unit.{% endblock %}
+{% block why_text %}A radian is defined as arc ÷ radius, so s = rθ just says the definition again. A degree has no such link to the radius, so degrees need the extra π/180 to convert first.{% endblock %}
+{% block try_items %}
+<li>Switch to degrees. How many times too big is r × θ?</li>
+<li>Does that factor change when you change r or the angle?</li>
+<li>Where have you seen 57.3 before?</li>
+{% endblock %}
