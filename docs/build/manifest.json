@@ -1853,32 +1853,32 @@
 "oscillations-waves/force-law-energy/why-does-f-kx-always-give-shm": {
 "archetype": "sim",
 "priority": 96,
-"notes": "",
-"reviewed": false
+"notes": "Reviewed. Compares a full swing with a half swing drawn double, for F = -k sgn(x)|x|^p.",
+"reviewed": true
 },
 "oscillations-waves/force-law-energy/why-does-energy-slosh-but-stay-constant": {
 "archetype": "sim",
 "priority": 96,
-"notes": "",
-"reviewed": false
+"notes": "Reviewed. K, U and total bars plus a graph against time or position.",
+"reviewed": true
 },
 "oscillations-waves/force-law-energy/why-is-root-k-m": {
 "archetype": "sim",
 "priority": 96,
-"notes": "",
-"reviewed": false
+"notes": "Reviewed. Races a student-set spring against a fixed reference.",
+"reviewed": true
 },
 "oscillations-waves/force-law-energy/springmass-simulator": {
-"archetype": "chance",
+"archetype": "sim",
 "priority": 96,
-"notes": "",
-"reviewed": false
+"notes": "Reviewed. Archetype corrected from chance: it has no randomness.",
+"reviewed": true
 },
 "oscillations-waves/force-law-energy/why-do-buildings-and-bridges-have-a-natural-frequency": {
 "archetype": "sim",
 "priority": 96,
-"notes": "",
-"reviewed": false
+"notes": "Reviewed. Steady-state base-excitation response of a damped frame.",
+"reviewed": true
 },
 "oscillations-waves/the-simple-pendulum/why-is-a-pendulum-shm-only-for-small-angles": {
 "archetype": "sim",

@@ -90,6 +90,21 @@ export function arc(ctx, x, y, r, a0, a1, { color, width = 3, dash = [] } = {}) 
   ctx.restore();
 }
 
+// A zig-zag coil spring from (x1, y) to (x2, y), for spring–mass scenes. Coils stay the same size as it stretches.
+export function spring(ctx, x1, x2, y, { color, coils = 10, width = 3, size = 9 } = {}) {
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = width;
+  ctx.beginPath();
+  ctx.moveTo(x1, y);
+  for (let i = 0; i < coils * 2; i++) {
+    ctx.lineTo(x1 + ((x2 - x1) * (i + 0.5)) / (coils * 2), y + (i % 2 ? size : -size));
+  }
+  ctx.lineTo(x2, y);
+  ctx.stroke();
+  ctx.restore();
+}
+
 // Text on a small paper patch, so a label stays readable over lines. Stays inside the stage when given bounds.
 export function label(ctx, text, x, y, c, { color, size = 12, align = 'center', bounds = null, patch = true } = {}) {
   ctx.save();

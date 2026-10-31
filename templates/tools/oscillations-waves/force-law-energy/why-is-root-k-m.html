@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Your spring races a reference spring, both pulled aside by the same distance. Change k and m and see which one swings faster.{% endblock %}
+{% block why_text %}A stiffer spring pulls harder, so the mass accelerates faster: a = kA/m at release. A heavier mass resists, so it accelerates less. A bigger acceleration means a quicker swing, so ω rises with k and falls with m. The square root comes from a = ω²x: ω² = k/m.{% endblock %}
+{% block try_items %}
+<li>Make k four times the reference k. How many times faster does it swing: 4 or 2?</li>
+<li>Double k and double m together. What happens to ω? Why?</li>
+<li>Find two different pairs of k and m that give exactly the same graph as the reference.</li>
+{% endblock %}

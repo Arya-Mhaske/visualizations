@@ -107,6 +107,12 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   so no drill answer hangs on a rounding convention. `createDrill` now labels its stage ("Practice questions") for `smoke_tools`.
 - Sheet cleanup that recurs: long canvas labels clip at 360 px (keep under about 30 characters), and a stage's tall layout leaves
   rows far apart at 1280 px. Check both sheets.
+- `draw.spring(ctx, x1, x2, y, {color, width})` draws a coil spring; use it for any spring–mass scene (pendulum and wave boxes may too).
+  `_force-law-math.js` has RK4 for power-law forces (`trajectory`, `period`, `gap`), spring energies, and the damped base-shaking
+  response (`response`, `lag`, `naturalFreq`). Its tests check the response against a Python integration of the equation of motion.
+- Odd power-law forces (x², x³, √x) differ from a cosine by only 3–7% of A, too little to see. Show the period change instead
+  (a full swing against a half swing drawn double). Check how big a "visible" difference really is before promising it in the copy.
+- Absolute base-excitation phase tends to π/2, not π, at high frequency. Don't assume a lag runs to half a turn.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -213,7 +219,7 @@ it reaches the front of the queue.
 | 90 | `trigonometry/solving-any-triangle` | 12 | 1 | |
 | 91 | `oscillations-waves/shm-circular-motion` | 6 | 1 | ✓ |
 | 92 | `trigonometry/vectors` | 12 | 1 | |
-| 93 | `oscillations-waves/force-law-energy` | 5 | 1 | |
+| 93 | `oscillations-waves/force-law-energy` | 5 | 1 | ✓ |
 | 94 | `trigonometry/polar-complex` | 11 | 1 | |
 | 95 | `oscillations-waves/the-simple-pendulum` | 6 | 1 | |
 | 96 | `exponentials-logs/exponential-growth` | 6 | 1 | |

@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A building is a stiff spring with a lot of mass. Shake its ground at different frequencies and see when it sways most.{% endblock %}
+{% block why_text %}A building has a natural frequency f₀ = (1/2π)√(k/m), just like a mass on a spring. Shaking near f₀ pushes it in step with its own swing, so each push adds to the last. That is resonance. A taller building has more mass, so a lower f₀. Damping lowers the peak.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Simplified model</span>One stiff frame with the floors lumped together, shaken steadily. Real buildings have several natural frequencies, and real earthquakes are not a single steady frequency.</div>{% endblock %}
+{% block try_items %}
+<li>Sweep the frequency slowly from 0.1 Hz upwards. Where does the sway peak?</li>
+<li>Add floors. Which way does the peak move, and why?</li>
+<li>Choose high damping. How much does the peak shrink? Is the building safe from shaking at f₀ now?</li>
+{% endblock %}
