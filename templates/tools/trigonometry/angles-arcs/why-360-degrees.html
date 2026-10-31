@@ -1,8 +1,6 @@
 {% extends "tools/base_tool.html" %}
 {% load static %}
 
-{% block katex %}{% include "tools/_katex.html" %}{% endblock %}
-
 {% block lead %}A full turn could have been any number. Why did people pick 360? Try a few alternatives and see what goes wrong.{% endblock %}
 
 {% block steps %}
@@ -101,9 +99,7 @@
 {% endblock %}
 
 {% block formula %}
-<div class="viz-formula" id="formula" aria-live="polite"></div>
-
-<div class="nb-callout nb-callout--note nb-mt-4" data-view="2" hidden>
+<div class="nb-callout nb-callout--note nb-mt-6" data-view="2" hidden>
   <span class="nb-callout__label">History, not proof</span>
   Babylonian astronomers counted in base 60, so six parts × 60 = 360 is the most widely accepted historical explanation. Historians still debate it.
 </div>

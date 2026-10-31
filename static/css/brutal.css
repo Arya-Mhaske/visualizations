@@ -437,10 +437,10 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
   padding: var(--s-4);
 }
 .viz-panel__title {
-  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.06em;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.25rem;
   margin: 0; padding-bottom: var(--s-2); border-bottom: var(--border-thin);
 }
+.viz-panel p { font-family: var(--font-head); font-weight: 500; font-size: 1.05rem; }
 
 /* live numbers */
 .viz-readout {
@@ -463,7 +463,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 
 /* the takeaway: "So why?" */
 .viz-why { margin-top: var(--s-6); }
-.viz-why .nb-callout { font-family: var(--font-head); font-weight: 500; font-size: 1.15rem; line-height: 1.45; }
 .viz-why details summary {
   cursor: pointer; list-style: none;
   font-family: var(--font-head); font-weight: 700;
@@ -555,5 +554,12 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 /* landing page: main content fills the viewport, so the footer only appears after scrolling */
 .nb-main--full { min-height: 100vh; min-height: 100svh; }
 
-/* the "So why?" label is a heading, so it must outsize the explanation under it */
-.viz-why .nb-callout__label { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; text-transform: none; letter-spacing: -0.01em; margin-bottom: var(--s-2); }
+
+/* ---------- 16. Text hierarchy ------------------------------------------ */
+/* every callout: heading-style label that outsizes a Space Grotesk body */
+.nb-callout { font-family: var(--font-head); font-weight: 500; font-size: 1.15rem; line-height: 1.45; }
+.nb-callout__label {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.6rem;
+  text-transform: none; letter-spacing: -0.01em; margin-bottom: var(--s-2);
+}
+.nb-soon p { font-family: var(--font-head); font-weight: 500; font-size: 1.1rem; }

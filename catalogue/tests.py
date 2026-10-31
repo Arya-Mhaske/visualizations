@@ -70,7 +70,7 @@ class CatalogueTests(TestCase):
         live = self.client.get('/trigonometry/angles-arcs/why-360-degrees/')
         self.assertTemplateUsed(live, 'tools/trigonometry/angles-arcs/why-360-degrees.html')
         self.assertTemplateNotUsed(live, 'tools/placeholder.html')
-        self.assertContains(live, 'katex@0.16.11')
+        self.assertNotContains(live, 'viz-formula')
         other = self.client.get('/trigonometry/angles-arcs/what-is-an-angle-really/')
         self.assertTemplateUsed(other, 'tools/placeholder.html')
         self.assertNotContains(other, 'katex')

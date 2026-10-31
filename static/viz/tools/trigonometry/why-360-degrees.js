@@ -26,7 +26,6 @@ const state = {
 };
 
 const stageEl = $('#stage');
-const formulaEl = $('#formula');
 
 // ---------- helpers ----------
 function text(ctx, str, x, y, size, align = 'center', color = C.ink) {
@@ -42,11 +41,6 @@ function stroke(ctx, width = C.line) {
   ctx.strokeStyle = C.ink;
   ctx.lineJoin = 'miter';
   ctx.stroke();
-}
-
-function setFormula(tex, plain) {
-  if (window.katex) window.katex.render(tex, formulaEl, { throwOnError: false });
-  else formulaEl.textContent = plain;
 }
 
 const rad = (deg) => (deg * Math.PI) / 180;
@@ -142,9 +136,6 @@ function updateHexagon() {
   const gap = Math.hypot(pts[6].x - pts[0].x, pts[6].y - pts[0].y);
   $('#r2-gap').textContent = steps === 6 ? (gap < 1e-9 ? '0 (closed)' : gap.toFixed(6)) : 'keep stepping';
   $('#step-btn').disabled = steps >= 6;
-  setFormula(steps === 6 ? '6 \\times 60^\\circ = 360^\\circ'
-    : `${steps} \\times 60^\\circ = ${60 * steps}^\\circ`,
-  `${steps} x 60° = ${60 * steps}°`);
 }
 
 // ---------- view 3: the sky ----------
@@ -224,8 +215,6 @@ function updateSky() {
   $('#r3-day').textContent = String(Math.round(state.day));
   $('#r3-deg').textContent = `${fmt(deg, 1)}°`;
   $('#r3-perday').textContent = `${perDay.toFixed(3)}°`;
-  setFormula(`\\frac{360^\\circ}{${state.year360 ? '360' : '365.25'}} \\approx ${perDay.toFixed(3)}^\\circ \\text{ per day}`,
-    `360° / ${yearLength()} = ${perDay.toFixed(3)}° per day`);
 }
 
 // ---------- view 4: it's a convention ----------
@@ -271,14 +260,13 @@ function drawConvention(ctx, S) {
 function radianText() {
   const frac = piFraction(state.theta);
   const dec = rad(state.theta).toFixed(4);
-  if (!frac) return { dec, plain: dec, tex: dec };
+  if (!frac) return { dec, plain: dec };
   const { p, q } = frac;
-  if (p === 0) return { dec, plain: '0', tex: '0' };
+  if (p === 0) return { dec, plain: '0' };
   const num = p === 1 ? '' : String(p);
   return {
     dec,
     plain: q === 1 ? `${num}π` : `${num}π/${q}`,
-    tex: q === 1 ? `${num}\\pi` : `\\frac{${num}\\pi}{${q}}`,
   };
 }
 
@@ -291,8 +279,6 @@ function updateConvention() {
   $('#r4-grad').textContent = `${grad} grad`;
   $('#r4-turn').textContent = `${turn} turn`;
   $('#r4-rad').textContent = r.plain === r.dec ? `${r.dec} rad` : `${r.dec} rad (${r.plain})`;
-  setFormula(`\\theta = ${th}^\\circ = ${grad}\\ \\text{grad} = ${turn}\\ \\text{turn} = ${r.tex}\\ \\text{rad}`,
-    `θ = ${th}° = ${grad} grad = ${turn} turn = ${r.plain} rad`);
 }
 
 // ---------- drawing and view plumbing ----------
@@ -382,7 +368,6 @@ function showView(v, { updateHash = true } = {}) {
   tabs.forEach((tab, i) => tab.setAttribute('aria-selected', String(i + 1 === v)));
   document.querySelectorAll('[data-view]').forEach((el) => { el.hidden = Number(el.dataset.view) !== v; });
   stage.canvas.setAttribute('aria-label', VIEW_LABELS[v]);
-  formulaEl.hidden = v === 1; // the panel already shows the slice size
   if (v !== 4) stage.canvas.removeAttribute('tabindex'); else stage.canvas.tabIndex = 0;
   if (v !== 3 && loop.playing) { loop.stop(); playBtn.textContent = stepMode ? 'Step +15 days' : 'Play'; }
   if (updateHash) history.replaceState(null, '', `#view-${v}`);
