@@ -19,7 +19,9 @@ class LiveChecker:
         self._folders = {}
 
     def __call__(self, tool):
-        subject, box, slug = tool.slug_path
+        return self.is_live(*tool.slug_path)
+
+    def is_live(self, subject, box, slug):
         key = (subject, box)
         if key not in self._folders:
             folder = self.root / 'tools' / subject / box

@@ -20,6 +20,9 @@ class Tile(models.Model):
     extension = models.BooleanField(default=False)
     spec = models.TextField(blank=True)
     order = models.PositiveIntegerField(default=0)
+    source = models.CharField(max_length=300, blank=True)
+    aids = models.ManyToManyField('self', through='TileAid', through_fields=('tile', 'aid'),
+                                  symmetrical=False, blank=True, related_name='aided_tiles')
 
     class Meta:
         ordering = ['order']
@@ -50,3 +53,20 @@ class Tile(models.Model):
     @property
     def url(self):
         return '/' + '/'.join(self.slug_path) + '/'
+
+
+class TileAid(models.Model):
+    """One "understand this first" link: `aid` helps with `tile`, shown in `order`."""
+    tile = models.ForeignKey(Tile, on_delete=models.CASCADE, related_name='aid_links')
+    aid = models.ForeignKey(Tile, on_delete=models.CASCADE, related_name='+')
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+        constraints = [
+            models.UniqueConstraint(fields=['tile', 'aid'], name='unique_aid_per_tile'),
+            models.CheckConstraint(condition=~models.Q(tile=models.F('aid')), name='no_self_aid'),
+        ]
+
+    def __str__(self):
+        return f'{self.aid} helps {self.tile}'
