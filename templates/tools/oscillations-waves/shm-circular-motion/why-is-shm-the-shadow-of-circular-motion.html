@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Light a turning peg from above and watch its shadow. That shadow is doing SHM.{% endblock %}
+{% block why_text %}The peg moves at constant speed round a circle, so its shadow's x is A cos(ωt + φ). The shadow's v and a are the shadows of the peg's v and centripetal a. That a always points to the centre, which gives a = −ω²x and so F = −kx with k = mω².{% endblock %}
+{% block try_items %}
+<li>Step through the four views.</li>
+<li>In the v and a view, where is the shadow fastest?</li>
+<li>Compare the a and −ω²x readouts at several moments.</li>
+<li>Double ω. What happens to k?</li>
+{% endblock %}

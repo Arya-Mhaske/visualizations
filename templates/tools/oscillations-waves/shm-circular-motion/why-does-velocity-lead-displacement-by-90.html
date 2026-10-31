@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}The mass is fastest in the middle and stops at the ends. So v and x can't peak together.{% endblock %}
+{% block why_text %}Differentiating cos ωt gives −sin ωt, which is cos ωt shifted a quarter cycle earlier. Do it again and you get −cos ωt: a is exactly opposite to x, which is the restoring force at work.{% endblock %}
+{% block try_items %}
+<li>Pause when x is largest. What is v? What is a?</li>
+<li>Which arrow is always opposite to x?</li>
+<li>Raise ω. Why does a grow faster than v?</li>
+{% endblock %}

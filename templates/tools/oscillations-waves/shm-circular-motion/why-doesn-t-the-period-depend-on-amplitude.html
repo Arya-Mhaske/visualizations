@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pull a spring twice as far. It has twice as far to go, so why does it not take longer?{% endblock %}
+{% block why_text %}A bigger amplitude means a bigger restoring force at every matching point, so everything scales together. Twice the distance is covered at twice the speed, so the time stays the same.{% endblock %}
+{% block try_items %}
+<li>Press Play. Do the two masses pass the centre together?</li>
+<li>Compare the distance ratio with the top-speed ratio.</li>
+<li>What would have to change to change the period?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Springs, not every swing</span>This holds exactly when F = −kx. A pendulum obeys that only for small swings, so a very wide swing takes a little longer.</div>{% endblock %}
