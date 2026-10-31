@@ -26,7 +26,9 @@ if not SECRET_KEY:
     else:
         raise RuntimeError('SECRET_KEY environment variable is required when DEBUG is False.')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+SITE_NAME = os.environ.get('SITE_NAME', 'Visualisations')
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.11']
 CSRF_TRUSTED_ORIGINS = []
 
 # Render sets RENDER_EXTERNAL_HOSTNAME automatically on web services.
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'catalogue',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.site',
             ],
         },
     },
