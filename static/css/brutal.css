@@ -554,3 +554,6 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 
 /* landing page: main content fills the viewport, so the footer only appears after scrolling */
 .nb-main--full { min-height: 100vh; min-height: 100svh; }
+
+/* the "So why?" label is a heading, so it must outsize the explanation under it */
+.viz-why .nb-callout__label { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; text-transform: none; letter-spacing: -0.01em; margin-bottom: var(--s-2); }
