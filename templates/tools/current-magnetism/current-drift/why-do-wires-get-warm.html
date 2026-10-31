@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Each collision hands the ions a tiny amount of energy. Find out how something so tiny can warm a wire.{% endblock %}
+{% block why_text %}The field keeps giving electrons energy, but their drift speed stays steady, so the energy cannot be stored there. It goes to the ions at each collision, and shaking ions are heat. Each collision hands over almost nothing, but there are more than 10³⁶ of them a second. Together they add up to exactly I²R.{% endblock %}
+{% block try_items %}
+<li>Compare Their product with I²R. Change I and A. Do they stay equal?</li>
+<li>Double the current. Why does the heating go up four times, not two?</li>
+<li>Set 20 A, then change the area from 0.5 mm² to 2 mm². Why do thin wires run hotter?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The graph ignores cooling, so real wires level off at a safe temperature while this line keeps climbing. Play runs at 6 times real speed. The energy per collision uses the model from "Why does drift give Ohm's law?", with τ worked out from copper's resistivity. The shaking of the ions is only a sketch.
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}R = V/I works for almost anything. Measure a resistor and a diode, and see what Ohm's law really claims.{% endblock %}
+{% block why_text %}R = V/I is only a definition: divide and you get a number, for any device. Ohm's law says more: that this number stays the same as V changes, so the V–I graph is a straight line through the origin. The resistor obeys it. The diode has an R at every point, but a different one each time, so it does not obey Ohm's law.{% endblock %}
+{% block try_items %}
+<li>On the resistor, drag the point. What happens to the dashed line and to R?</li>
+<li>Switch to the diode and do the same. Does a value of R still exist?</li>
+<li>On the diode, set V = 0.3 V. What does doubling V do to the current?</li>
+<li>Try V = 0.5 V and −0.5 V on each device. Which one cares about direction?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The diode is a model of a typical silicon diode, I = I₀(e<sup>V/nV<sub>T</sub></sup> − 1), with I₀ = 1 nA and nV<sub>T</sub> = 39 mV. The resistor is 50 Ω. Real diodes differ.
+</div>
+{% endblock %}

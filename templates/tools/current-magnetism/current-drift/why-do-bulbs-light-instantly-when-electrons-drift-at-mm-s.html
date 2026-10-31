@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Electrons in a wire creep at about a millimetre a second, yet the bulb lights as you flick the switch. Push a pipe of marbles, then look inside the wire.{% endblock %}
+{% block why_text %}The wire is already full of electrons, like the full pipe. The switch sends an electric field down the wire at nearly the speed of light, and that field sets every electron drifting almost at once. So the electrons in the bulb's own filament start moving straight away. No electron has to travel from the switch.{% endblock %}
+{% block try_items %}
+<li>In Pipe, push by a small amount. How far has the far marble moved in each pipe?</li>
+<li>In Wire, set the drift to True size. Can you see any drift at all? Why not?</li>
+<li>In Signal, set L to 100 m. How long would one electron from the switch take? And the signal?</li>
+<li>In Speeds, how many times faster than the drift do you walk?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real marbles pass a push along at the speed of sound in glass, so the pipe is only a picture. In a wire the signal is the field. Its speed depends on the cable; 2 × 10⁸ m/s is a typical value. The wire here is NCERT's: copper, area 10⁻⁷ m². The thermal speed is an order of size. The Wire view is slowed down, and its drift is drawn 10 million times too big unless you choose True size.
+</div>
+{% endblock %}

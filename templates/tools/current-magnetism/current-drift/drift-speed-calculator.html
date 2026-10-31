@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the drift speed of the electrons in a wire from I = neAv<sub>d</sub>. It opens on NCERT's copper wire.{% endblock %}
+{% block why_text %}In one second, every electron within a slice v<sub>d</sub> long crosses the end of the wire. That slice has volume Av<sub>d</sub> and holds nAv<sub>d</sub> electrons, each carrying charge e. So the charge per second is I = neAv<sub>d</sub>, and v<sub>d</sub> = I/neA.{% endblock %}
+{% block try_items %}
+<li>Check the opening numbers by hand. Do you get about 1.1 mm/s?</li>
+<li>Double the area. What happens to the drift speed, and why?</li>
+<li>Keep I and A, and change copper to aluminium. Why do the electrons drift slower?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The value of n for aluminium assumes three conduction electrons per atom, and for silver one. The slice is drawn to scale along the wire, and at least 3 pixels wide so that you can see it.
+</div>
+{% endblock %}

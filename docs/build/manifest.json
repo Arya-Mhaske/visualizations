@@ -2316,37 +2316,37 @@
 "archetype": "sim",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/why-does-drift-give-ohm-s-law": {
 "archetype": "sim",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/why-is-current-a-scalar-despite-its-arrow": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/is-v-ir-ohm-s-law-not-quite": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/drift-speed-calculator": {
-"archetype": "stepper",
+"archetype": "table",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/why-do-wires-get-warm": {
 "archetype": "sim",
 "priority": 124,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/resistance-temperature/why-is-r-l-a": {
 "archetype": "sim",

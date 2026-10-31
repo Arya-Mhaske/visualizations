@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}A field should make an electron go faster and faster. Run it with collisions and see why it settles at a steady average speed instead.{% endblock %}
+{% block why_text %}Between collisions the field speeds the electron up by eE/m each second. Each collision wipes that speed out, so it never builds up. On average it keeps the speed gained in a time τ: v_d = eEτ/m. The time τ is set by the fast thermal motion, not by the field. So double E and you double v_d, and j = nev_d doubles too. That is Ohm's law.{% endblock %}
+{% block try_items %}
+<li>Turn off Collisions happen. What happens to the speed? Would a steady current be possible?</li>
+<li>With collisions on, try five values of E. What shape do the dots make?</li>
+<li>Change τ. The dots start again. Is the new line steeper or shallower for a bigger τ?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The graph shows only the speed along the field; the far larger random thermal speed is left out. Time is slowed about 4 × 10¹³ times, and the electron's hops are not to scale. Gaps between collisions are random here. If every gap were exactly τ the average would be eEτ/2m, but random gaps include some long flights, which give eEτ/m.
+</div>
+{% endblock %}
