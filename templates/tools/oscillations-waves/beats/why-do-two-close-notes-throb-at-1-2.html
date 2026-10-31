@@ -1,0 +1,20 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Sound 440 Hz and 444 Hz together and you hear one note that swells 4 times a second. Drag the coral dot through time and watch the second wave slide past the first.{% endblock %}
+{% block why_text %}In one second the 444 Hz note makes 4 more cycles than the 440 Hz note, so it gains a whole cycle every ¼ s. Each whole cycle gained puts the two back in step, and the sound is loud. Half way between, crest meets trough and they cancel. So the beats per second are the cycles gained per second: |ν₁ − ν₂|.{% endblock %}
+{% block try_items %}
+<li>Drag the dot until 1.00 cycle is gained, then to 1.50. What happens to the sum each time?</li>
+<li>Turn on Hear both notes. Count the swells for 5 seconds. Do you get 20?</li>
+<li>Set ν₂ to 436 Hz, then to 440 Hz. Why 4 beats again, and then none at all?</li>
+<li>The dashed purple cos runs at (ν₁ − ν₂)/2, only 2 Hz here. Why are there 4 lobes a second and not 2? Look at what happens to the sum when the dashed line is at −2.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A 440 Hz wave is far too fast to draw as it happens. So the close-up holds the first note still and shows only how far the second has slid, like looking once per cycle. Small speakers are fine for these notes, and earphones are clearer.
+</div>
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Beats are easy to count when they are slow. As the gap grows they blur into roughness, and then you hear two notes. Where this happens varies from person to person.
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}This string is out of tune with a 440 Hz fork. Tighten or slacken it until the beats vanish.{% endblock %}
+{% block why_text %}Beats give the size of the gap, not its direction: 5 beats a second means 435 Hz or 445 Hz. So make a small change and listen. Tightening raises the string's pitch. If the beats slow down, the string was flat; if they speed up, it was sharp. When the beats stop, the two pitches are equal.{% endblock %}
+{% block try_items %}
+<li>Tighten a little once. Did the beats speed up or slow down? So which of the two possible pitches was right?</li>
+<li>Tune the string, then keep tightening. What shape do the dots make on the lower graph?</li>
+<li>Press New string and tune it in as few moves as you can.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The string counts as tuned at under 0.25 beats a second, which is slower than one beat in 4 seconds. Each new string has a different mass per length, μ, so the same tension will not work twice.
+</div>
+{% endblock %}

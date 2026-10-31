@@ -6,7 +6,9 @@
 //   tone.level(0.4)        loudness from 0.03 to 1 (default 1); can be changed while sounding
 //   tone.playing           true while sounding
 // The tone fades in and out so there are no clicks, and stops when the tab is hidden or the page is left.
+// All tones on a page share one audio clock, so two set() calls in one handler start exactly in step (beats need this).
 const Context = typeof window === 'undefined' ? null : window.AudioContext || window.webkitAudioContext;
+let shared = null;
 
 export function createTone({ volume = 0.15 } = {}) {
   let ctx = null;
@@ -28,7 +30,10 @@ export function createTone({ volume = 0.15 } = {}) {
       if (!Context) return;
       if (!(freq > 0)) { stop(); return; }
       const hz = Math.min(6000, Math.max(40, freq));
-      if (!ctx) ctx = new Context();
+      if (!ctx) {
+        shared ??= new Context();
+        ctx = shared;
+      }
       if (ctx.state === 'suspended') ctx.resume();
       if (osc) {
         osc.frequency.setTargetAtTime(hz, ctx.currentTime, 0.02);

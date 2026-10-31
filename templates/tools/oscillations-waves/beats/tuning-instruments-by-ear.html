@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Tune a whole guitar from one 440 Hz fork. Press a fret, match it to the string above, and stop when the beats stop.{% endblock %}
+{% block why_text %}A tiny pitch gap is hard to judge, but it makes a slow throb you can time. A quarter of a beat a second at 440 Hz is a gap of only 0.06%. That is why tuners listen for beats. Each string is tuned to the one before, so leftover errors add up. That is why players finish by checking the low E against the high E.{% endblock %}
+{% block try_items %}
+<li>Tune E₄ against the fork first, then work down to E₂. Watch the green dots appear.</li>
+<li>Now turn on Show cents off true pitch. Which string is furthest off, and why is it near the end of the chain?</li>
+<li>Leave E₄ a little sharp, then match every other string to it. What does the final check say?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This uses equal temperament, where one fret multiplies the pitch by 2<sup>1/12</sup>. Working down from the fork is one common order; many players start from the A string. Real strings also sound harmonics, while these are pure tones. The low strings are quiet on phone speakers, so use earphones or watch the lobes.
+</div>
+{% endblock %}

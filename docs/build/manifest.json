@@ -2037,22 +2037,22 @@
 "reviewed": true
 },
 "oscillations-waves/beats/why-do-two-close-notes-throb-at-1-2": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 108,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/beats/beat-frequency-game": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 108,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/beats/tuning-instruments-by-ear": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 108,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/why-are-there-exactly-two-kinds-of-charge": {
 "archetype": "sim",

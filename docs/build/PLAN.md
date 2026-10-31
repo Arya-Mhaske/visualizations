@@ -142,6 +142,12 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   two of my hand-guessed numbers (5.5, 82.7) were off in the last digit.
 - At 360 px long axis labels collide with ticks: use short ones ('ν (Hz)', 'L (m)').
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
+- `lib/tone.js`: all tones on a page now share one AudioContext, so two `set()` calls in one handler start in step. `_beats-math.js` has the beat
+  identities, `gameString` (a hidden μ, the only hidden value, with a switch that reveals the pitch) and a guitar chain tuned down from the fork
+  (`GUITAR`, `openFreqs`, `pairBeats`, `closure`, `detune`). `_beats-view.js` has `beatStrip`, the lobes; draw it before `axes`, or its fill hides the ticks.
+  Audible waves can't be drawn in real time: hold one note still and show the other's slide (a strobe view), and say so in a note. A time loop stays
+  seamless if it lasts a whole number of cycles of every allowed frequency (0.5 Hz steps, 2 s loop). A tool may have to reach what a student does in
+  the wrong order: the guitar's peg range covers matching a neighbour that is still out of tune. `smoke_tools` fails a page with over 4 Try prompts.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -259,7 +265,7 @@ it reaches the front of the queue.
 | 102 | `exponentials-logs/log-scales` | 6 | 1 | |
 | 103 | `oscillations-waves/standing-waves-music` | 6 | 1 | ✓ |
 | 104 | `exponentials-logs/exp-log-equations` | 4 | 1 | |
-| 105 | `oscillations-waves/beats` | 3 | 1 | |
+| 105 | `oscillations-waves/beats` | 3 | 1 | ✓ |
 | 106 | `exponentials-logs/money-finance` | 7 | 1 | |
 | 107 | `electrostatics/electric-charge` | 7 | 1 | |
 | 108 | `functions-graphs/combining-inverting` | 12 | 1 | |
