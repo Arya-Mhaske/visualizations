@@ -18,6 +18,7 @@ from django.test.utils import CaptureQueriesContext
 
 from .management.commands.load_catalogue import DATA_DIR
 from .models import Tile, TileAid
+from .paths import LiveChecker
 from .views import GROUPS, GROUPS_BY_SLUG
 
 LOADER = 'catalogue.management.commands.load_catalogue.DATA_DIR'
@@ -38,6 +39,12 @@ def tool(slug, tag='WHY', **extra):
             'extension': False, 'order': 1, 'aids': [], **extra}
 
 
+def placeholders(**filters):
+    """Tools with no template yet. Live status changes as tools are built, so tests look it up."""
+    live = LiveChecker()
+    return [tile for tile in Tile.objects.filter(kind='tool', **filters).order_by('pk') if not live(tile)]
+
+
 @override_settings(STORAGES=PLAIN_STATIC)
 class CatalogueTests(TestCase):
     @classmethod
@@ -53,9 +60,11 @@ class CatalogueTests(TestCase):
 
     def test_summary_line(self):
         output = load()
-        self.assertIn('trigonometry: 12 boxes, 135 tools (1 live, 134 placeholders)', output)
-        self.assertIn('30 subjects, 256 boxes, 1538 tools (1 live, 1537 placeholders), '
+        soon = len(placeholders())
+        self.assertIn(f'30 subjects, 256 boxes, 1538 tools ({1538 - soon} live, {soon} placeholders), '
                       '1385 aid links, 0 broken aids', output)
+        soon = len(placeholders(parent__parent__slug='trigonometry'))
+        self.assertIn(f'trigonometry: 12 boxes, 135 tools ({135 - soon} live, {soon} placeholders)', output)
 
     def test_every_aid_resolves_in_json_order(self):
         self.assertEqual(TileAid.objects.count(), 1385)
@@ -99,7 +108,7 @@ class CatalogueTests(TestCase):
         self.assertTemplateUsed(live, 'tools/trigonometry/angles-arcs/why-360-degrees.html')
         self.assertTemplateNotUsed(live, 'tools/placeholder.html')
         self.assertNotContains(live, 'viz-formula')
-        other = self.client.get('/trigonometry/angles-arcs/what-is-an-angle-really/')
+        other = self.client.get(placeholders()[0].url)
         self.assertTemplateUsed(other, 'tools/placeholder.html')
         self.assertNotContains(other, 'katex')
 
@@ -182,7 +191,7 @@ class CatalogueTests(TestCase):
     def test_aids_strip_live_and_placeholder_across_subjects(self):
         tool = Tile.objects.get(slug='what-is-an-angle-really')
         live = Tile.objects.get(slug='why-360-degrees')
-        other = Tile.objects.filter(kind='tool').exclude(parent__parent__slug='trigonometry').first()
+        other = next(t for t in placeholders() if t.slug_path[0] != 'trigonometry')
         box = Tile.objects.get(slug='polar-complex')
         TileAid.objects.filter(tile=tool).delete()
         for i, aid in enumerate([live, other, box], start=1):
@@ -198,11 +207,11 @@ class CatalogueTests(TestCase):
         self.assertNotContains(self.client.get('/trigonometry/angles-arcs/why-360-degrees/'), 'Understand these first')
 
     def test_placeholder_marks_extensions(self):
-        tile = Tile.objects.filter(kind='tool', extension=True).exclude(sections='').first()
+        tile = placeholders(extension=True)[0]
         self.assertContains(self.client.get(tile.url), '(ext.)')
 
     def test_spec_needs_debug(self):
-        tile = Tile.objects.filter(kind='tool').exclude(spec='').exclude(slug='why-360-degrees').first()
+        tile = next(t for t in placeholders() if t.spec)
         self.assertNotContains(self.client.get(tile.url), 'Build notes')
         with self.settings(DEBUG=True):
             self.assertContains(self.client.get(tile.url), 'Build notes')

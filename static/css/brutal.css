@@ -438,6 +438,10 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 }
 .viz-stage--square { aspect-ratio: 1 / 1; }
 .viz-stage--wide   { aspect-ratio: 16 / 9; }
+/* an HTML stage (worked steps, drills, cell grids) that grows with its content and lets the page scroll */
+.viz-stage--flow   { aspect-ratio: auto; min-height: 280px; padding: var(--s-4); touch-action: auto; overflow-wrap: anywhere; }
+/* a canvas with nothing to drag: a vertical swipe scrolls the page */
+.viz-stage--scroll { touch-action: pan-y; }
 .viz-stage > canvas, .viz-stage > svg { width: 100%; height: 100%; }
 .viz-stage__hint {
   position: absolute; left: var(--s-3); bottom: var(--s-3);
@@ -500,6 +504,41 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 
 /* textbook reference footer line */
 .viz-source { margin-top: var(--s-5); font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+
+/* worked steps (static/viz/lib/stepper.js) */
+.viz-worked { margin: 0; padding-left: 1.6rem; }
+.viz-worked li { margin-bottom: var(--s-3); font-family: var(--font-head); font-weight: 500; }
+.viz-worked li::marker { font-family: var(--font-mono); font-weight: 700; }
+.viz-worked__tex { display: block; margin-top: var(--s-1); overflow-x: auto; font-size: 1.1rem; }
+
+/* generated practice (static/viz/lib/drill.js) */
+.viz-drill { display: flex; flex-direction: column; gap: var(--s-4); }
+.viz-drill__prompt { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; overflow-x: auto; }
+.viz-drill__options { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--s-3); }
+.viz-drill__note { margin: 0; padding: var(--s-2) var(--s-3); border: var(--border-thin); }
+.viz-drill__note[data-state="good"] { background: var(--good); }
+.viz-drill__note[data-state="bad"]  { background: var(--bad); }
+
+/* cell grids (static/viz/lib/discrete.js): a real button per cell, so keyboards work */
+.viz-cells { display: grid; gap: var(--s-1); }
+.viz-cells[data-cols="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.viz-cells[data-cols="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.viz-cells[data-cols="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.viz-cells[data-cols="5"] { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.viz-cells[data-cols="6"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.viz-cells[data-cols="7"] { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.viz-cells[data-cols="8"] { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.viz-cell {
+  min-height: 40px; padding: 0 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-weight: 700; font-size: 0.75rem;
+  border: var(--border-thin); background: var(--paper); color: var(--ink);
+}
+button.viz-cell { cursor: pointer; }
+.viz-cell[data-state="on"]   { background: var(--green); }
+.viz-cell[data-state="mark"] { background: var(--yellow); }
+.viz-cell[data-state="both"] { background: var(--coral); }
+.viz-cell[data-state="off"]  { background: var(--viz-grid); color: var(--muted); }
 
 /* ---------- 11. Placeholder tool page ----------------------------------- */
 .nb-soon {

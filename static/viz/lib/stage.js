@@ -1,37 +1,95 @@
-// A canvas that fills its container at devicePixelRatio resolution.
-// draw(ctx, size) is called with a CSS-pixel coordinate system; call stage.redraw() after state changes.
+// Stages: a canvas or SVG that fills .viz-stage at devicePixelRatio and redraws only on change.
+//   createStage(el, draw, {label})   draw(ctx, size, stage); stage has .w .h .size .ctx .canvas
+//     stage.redraw()      draws now.  stage.invalidate()  draws once on the next frame, and waits
+//                         while the stage is off-screen or the tab is hidden.
+//   createSvgStage(el, draw, {label}) draw(svg, w, h) with an emptied <svg>; add shapes with svgEl().
+//   enableDrag(canvas, handlers)     pointer drag (mouse, touch, pen) plus keys.
+//   handles(stage, points, options)  draggable points with arrow keys; Enter moves to the next point.
+
+function watchVisible(el, onVisible) {
+  const state = { onScreen: true };
+  new IntersectionObserver((entries) => {
+    state.onScreen = entries[entries.length - 1].isIntersecting;
+    if (state.onScreen) onVisible();
+  }).observe(el);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) onVisible(); });
+  return state;
+}
+
 export function createStage(container, draw, { label = '' } = {}) {
   const canvas = document.createElement('canvas');
   canvas.setAttribute('role', 'img');
   if (label) canvas.setAttribute('aria-label', label);
   container.appendChild(canvas);
   const ctx = canvas.getContext('2d');
-  const stage = { canvas, ctx, size: 0, redraw };
+  const stage = { canvas, ctx, size: 0, w: 0, h: 0, redraw, invalidate };
+  let frame = 0;
+  let dirty = false;
 
   function resize() {
     // clientWidth/Height exclude the stage's border, matching the canvas box
-    const size = Math.round(Math.min(container.clientWidth, container.clientHeight || container.clientWidth));
-    if (size < 1) return;
+    const w = Math.round(container.clientWidth);
+    const h = Math.round(container.clientHeight || w);
+    if (w < 1 || h < 1) return;
     const dpr = window.devicePixelRatio || 1;
-    stage.size = size;
-    canvas.width = Math.round(size * dpr);
-    canvas.height = Math.round(size * dpr);
+    Object.assign(stage, { w, h, size: Math.min(w, h) });
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     redraw();
   }
 
   function redraw() {
-    if (!stage.size) return;
-    ctx.clearRect(0, 0, stage.size, stage.size);
-    draw(ctx, stage.size);
+    if (!stage.w) return;
+    dirty = false;
+    ctx.clearRect(0, 0, stage.w, stage.h);
+    draw(ctx, stage.size, stage);
   }
 
+  function flush() {
+    frame = 0;
+    if (dirty && seen.onScreen && !document.hidden) redraw();
+  }
+
+  function invalidate() {
+    dirty = true;
+    if (!frame) frame = requestAnimationFrame(flush);
+  }
+
+  const seen = watchVisible(container, () => { if (dirty) invalidate(); });
   new ResizeObserver(resize).observe(container);
   resize();
   return stage;
 }
 
-// Pointer drag (mouse, touch, pen) plus arrow keys when the canvas has focus.
+export function svgEl(parent, tag, attrs = {}, text = '') {
+  const node = document.createElementNS('http://www.w3.org/2000/svg', tag);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+  if (text) node.textContent = text;
+  if (parent) parent.appendChild(node);
+  return node;
+}
+
+export function createSvgStage(container, draw, { label = '' } = {}) {
+  const svg = svgEl(container, 'svg', { role: 'img' });
+  if (label) svg.setAttribute('aria-label', label);
+  const stage = { svg, w: 0, h: 0, redraw, invalidate: redraw };
+
+  function redraw() {
+    if (!stage.w) return;
+    svg.replaceChildren();
+    draw(svg, stage.w, stage.h);
+  }
+
+  new ResizeObserver(() => {
+    stage.w = container.clientWidth;
+    stage.h = container.clientHeight;
+    svg.setAttribute('viewBox', `0 0 ${stage.w} ${stage.h}`);
+    redraw();
+  }).observe(container);
+  return stage;
+}
+
 // handlers: { start(x, y) -> bool (true to begin a drag), move(x, y), end(), key(name, event) -> bool }
 export function enableDrag(canvas, handlers) {
   canvas.tabIndex = 0;
@@ -60,4 +118,52 @@ export function enableDrag(canvas, handlers) {
   canvas.addEventListener('keydown', (e) => {
     if (handlers.key && handlers.key(e.key, e)) e.preventDefault();
   });
+}
+
+const ARROWS = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
+
+// points: [{ at() -> [px, py], move(px, py), keyStep? }], in stage pixels.
+// options: radius (touch target), keyStep (pixels per arrow press), pan(dx, dy) for a drag that misses
+// every point (a 3D scene uses this to orbit), onChange() after every move.
+// Returns { active }: the index of the point the keyboard moves, so a tool can ring it when drawing.
+export function handles(stage, points, { radius = 24, keyStep = 4, pan = null, onChange = () => {} } = {}) {
+  const state = { active: 0 };
+  let grabbed = -1;
+  let last = null;
+  enableDrag(stage.canvas, {
+    start(x, y) {
+      let best = radius;
+      grabbed = -1;
+      points.forEach((point, i) => {
+        const [px, py] = point.at();
+        const distance = Math.hypot(px - x, py - y);
+        if (distance <= best) { best = distance; grabbed = i; }
+      });
+      if (grabbed >= 0) state.active = grabbed;
+      last = [x, y];
+      return grabbed >= 0 || Boolean(pan);
+    },
+    move(x, y) {
+      if (grabbed >= 0) points[grabbed].move(x, y);
+      else if (pan) pan(x - last[0], y - last[1]);
+      last = [x, y];
+      onChange();
+    },
+    key(name) {
+      if ((name === 'Enter' || name === ' ') && points.length > 1) {
+        state.active = (state.active + 1) % points.length;
+        onChange();
+        return true;
+      }
+      const arrow = ARROWS[name];
+      const point = points[state.active];
+      if (!arrow || !point) return false;
+      const [px, py] = point.at();
+      const step = point.keyStep || keyStep;
+      point.move(px + arrow[0] * step, py + arrow[1] * step);
+      onChange();
+      return true;
+    },
+  });
+  return state;
 }

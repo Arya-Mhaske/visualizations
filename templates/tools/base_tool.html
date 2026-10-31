@@ -1,8 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 {% comment %}
-Tool page skeleton (CLAUDE.md §5). A tool template fills these blocks:
-  katex   include "tools/_katex.html" ONLY if the tool shows formulas
-  lead, steps, stage, panel, formula, why, try, notes, source, scripts
+Tool page skeleton (CLAUDE.md §5). A tool template normally fills only:
+  lead, why_text, try_items, and steps or notes when it has them
+The script viz/tools/<subject>/<slug>.js loads by itself. It builds the stage in #stage, the
+controls in #panel and the live KaTeX line in #formula. Other blocks, only when needed:
+  stage_class  viz-stage--square (default), --wide, --flow (HTML stages), --scroll (no drags on the stage)
+  formula      empty it for a tool with no equation, and set "formula": false in docs/build/manifest.json
+  stage, panel, why, try, source, scripts    replace the default markup
 The question (H1), badges and prev/next links come from the view context.
 {% endcomment %}
 
@@ -21,17 +26,22 @@ The question (H1), badges and prev/next links come from the view context.
   {% block steps %}{% endblock %}
 
   <div class="viz-body">
-    <div class="viz-stage viz-stage--square" id="stage">{% block stage %}{% endblock %}</div>
-    <div class="viz-panel">{% block panel %}{% endblock %}</div>
+    <div class="viz-stage {% block stage_class %}viz-stage--square{% endblock %}" id="stage">{% block stage %}{% endblock %}</div>
+    <div class="viz-panel" id="panel">{% block panel %}{% endblock %}</div>
   </div>
 
-  {% block formula %}{% endblock %}
+  {% block formula %}<div class="viz-formula" id="formula"></div>{% endblock %}
 
-  <section class="viz-why">{% block why %}{% endblock %}</section>
-  <section class="viz-try">{% block try %}{% endblock %}</section>
+  <section class="viz-why">{% block why %}<div class="nb-callout nb-callout--why">
+      <span class="nb-callout__label">So, why?</span>
+      {% block why_text %}{% endblock %}
+    </div>{% endblock %}</section>
+  <section class="viz-try">{% block try %}<h2>Try this</h2><ol>{% block try_items %}{% endblock %}</ol>{% endblock %}</section>
   {% block notes %}{% endblock %}
 
   {% include "tools/_nav.html" %}
   <p class="viz-source">{% block source %}Textbook: {{ subject.source }}, § {{ tile.sections }}{% endblock %}</p>
 </article>
 {% endblock %}
+
+{% block scripts %}<script type="module" src="{% static tool_js %}"></script>{% endblock %}

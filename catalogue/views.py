@@ -151,6 +151,7 @@ def _tool(request, tool, live):
         'prev_tool': siblings[index - 1] if index > 0 else None,
         'next_tool': siblings[index + 1] if index + 1 < len(siblings) else None,
         'show_build_notes': settings.DEBUG,
+        'tool_js': f'viz/tools/{tool.slug_path[0]}/{tool.slug}.js',
     }
     if live(tool):
         return render(request, tool_template_name(tool), context)
