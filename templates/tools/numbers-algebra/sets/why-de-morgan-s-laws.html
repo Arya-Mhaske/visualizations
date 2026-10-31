@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Is "not (A or B)" the same as "not A and not B"? Shade both and compare.{% endblock %}
+{% block why_text %}To be outside A ∪ B you must miss both sets, so you must be in A′ and also in B′. To be outside A ∩ B you need only miss one, so you are in A′ or B′. Taking the complement swaps ∪ and ∩.{% endblock %}
+{% block try_items %}
+<li>Shade A′, then B′. Which region is in both?</li>
+<li>Switch laws. How many regions are shaded now?</li>
+<li>Say each law in words, using "not tea or coffee".</li>
+{% endblock %}

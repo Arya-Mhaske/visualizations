@@ -8,8 +8,9 @@
 Each tool is checked at 360 px, 1280 px and 360 px with reduced motion, for: console and page errors,
 horizontal scroll, a blank stage, missing §5 sections, an H1 that differs from the catalogue title, a
 stage with no aria-label, unlabelled inputs, and JS over the 25 KB budget. At 1280 px it also moves the
-first slider and presses arrow keys on a focusable stage: something on the page must respond. Needs
-requirements-dev.txt.
+first slider and presses arrow keys on a focusable stage (something must respond), presses Play (the
+stage must move), answers a drill question (feedback must appear) and presses every button (nothing may
+throw). Needs requirements-dev.txt.
 """
 import base64
 import json
@@ -193,6 +194,20 @@ class Command(BaseCommand):
                     break
             else:
                 problems.append('arrow keys on the stage changed nothing')
+        play = page.get_by_role('button', name='Play', exact=True)
+        if play.count():
+            before = page.evaluate(SIGNATURE)
+            play.first.click()
+            page.wait_for_timeout(500)
+            if page.evaluate(SIGNATURE) == before:
+                problems.append('Play changed nothing')
+        option = page.locator('.viz-drill__options button')
+        if option.count():
+            option.first.click()
+            if not page.locator('.viz-drill__note[data-state]').count():
+                problems.append('answering a drill question gave no feedback')
+        page.evaluate("""() => document.querySelectorAll('#panel button, #stage button').forEach((b) => b.click())""")
+        page.wait_for_timeout(150)
         return problems
 
     def check_tool(self, browser, port, tile, manifest, offline):

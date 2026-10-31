@@ -3346,67 +3346,68 @@
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/why-does-a-set-of-n-elements-have-2n-subsets": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/why-is-n-a-b-n-a-n-b-n-a-b": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/why-de-morgan-s-laws": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/why-three-separate-tests-reflexive-symmetric-transitive": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/roster-set-builder": {
 "archetype": "stepper",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "numbers-algebra/sets/intervals-as-subsets-of-r": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/test-a-relation": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/count-equivalence-relations-on-1-2-3": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/survey-problems-with-venn-diagrams": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/which-day-of-the-week-classes-mod-7": {
 "archetype": "discrete",
 "priority": 5,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-is-a0-1": {
 "archetype": "discrete",

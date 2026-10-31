@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Why three tests? Because a relation can pass any two and still fail the third.{% endblock %}
+{% block why_text %}The tests check different things, and none follows from the others. ≤ is reflexive and transitive but not symmetric; "is a sibling of" is symmetric but not reflexive, as nobody is their own sibling. Only all three together make an equivalence relation.{% endblock %}
+{% block try_items %}
+<li>Press each preset. Which test fails each time?</li>
+<li>Remove (1, 1) from a passing relation. Which test breaks?</li>
+<li>Remove every pair. Which tests still pass?</li>
+{% endblock %}

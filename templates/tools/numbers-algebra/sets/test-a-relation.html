@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Check a relation on {1, 2, 3} against all three tests, then repair it.{% endblock %}
+{% block why_text %}Each failed test names exactly the pair that is missing. Adding it can create new gaps, so we repeat until nothing is missing. The result is the smallest equivalence relation containing the pairs you started with.{% endblock %}
+{% block try_items %}
+<li>Starting from (1, 2) and (2, 3), predict how many pairs are needed.</li>
+<li>Press Add the fewest pairs. Did you get the full set?</li>
+<li>Start from only (1, 2). What do you get?</li>
+{% endblock %}

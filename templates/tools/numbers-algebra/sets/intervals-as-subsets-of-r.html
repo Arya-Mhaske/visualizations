@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Between any two real numbers lie infinitely many more, so we can't list them. An interval names them all at once.{% endblock %}
+{% block why_text %}An interval is the set of all real numbers between two ends, so it is a subset of ℝ. The bracket records whether an end belongs: [ for included, ( for not. ∞ is not a number, so it always takes (.{% endblock %}
+{% block try_items %}
+<li>Set [−2, 3). Test x = −2, then x = 3.</li>
+<li>Turn on To ∞. Why is there no way to include ∞?</li>
+<li>Move a past b. What does the readout say?</li>
+{% endblock %}

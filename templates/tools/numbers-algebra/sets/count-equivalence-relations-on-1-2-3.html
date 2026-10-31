@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Listing every relation on {1, 2, 3} would mean checking 512 of them. There is a far shorter way.{% endblock %}
+{% block why_text %}An equivalence relation is the same thing as a way of splitting the set into classes. {1, 2, 3} splits in just 5 ways, so there are 5 equivalence relations. Only 2 of them contain (1, 2).{% endblock %}
+{% block try_items %}
+<li>Why does a set of 9 possible pairs give 512 relations?</li>
+<li>Choose (1, 2). Which two splits stay lit?</li>
+<li>Press the split with one class. How many pairs does it give?</li>
+{% endblock %}

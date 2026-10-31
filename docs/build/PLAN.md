@@ -2,6 +2,7 @@
 
 Turns all 1,538 catalogue tools into live tools, following the CLAUDE.md §5 contract. Teaching starts August 2027.
 All work goes on branch `build/tools`. Nothing is ever pushed by Claude; Arya merges and pushes.
+The prompt for starting a session is in `docs/build/SESSION_PROMPT.md`; change only its `TARGET:` line.
 
 ## How to continue (for a fresh session)
 1. Read `CLAUDE.md` and this file. Run `python manage.py catalogue_status --todo`.
@@ -73,7 +74,9 @@ Each file's header comment is its documentation.
 - `format.js`: `sig`, `fixed`, `sci`, `withUnit`, `frac`, `piFrac`, `deg`, `gcd`
 - `stepper.js`: `createStepper`
 - `drill.js`: `createDrill`, `isRight`
-- `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`
+- `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
+- `tool.js`: `createTool`
+- `draw.js`'s neighbour `docs/build/sheet.py` makes the contact sheet for a box
 - `colors.js`: `readColors`
 
 If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
@@ -91,6 +94,8 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - Element screenshots at 360 px can show the sticky navbar over the stage. That is the capture, not a bug.
 - HTML stages: `createTool({ dom })` for grids of real buttons. Rotary handles need `nudge`, or arrow keys do nothing.
 - `smoke_tools` now moves a slider and presses arrow keys. Clicks, sims and drills were checked by hand in the pilots.
+- `venn` paints each region separately, so complements and overlaps shade exactly. Sparse HTML stages need a default that already
+  shows the idea: the empty-set tool first opened on six blank buttons.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -106,7 +111,7 @@ it reaches the front of the queue.
 | P3 | `vectors-3d/3d-coordinates` | 4 | 1 | ✓ |
 | P4 | `sequences-probability/conditional-probability-bayes` | 8 | 1 | ✓ |
 | 1 | `measurement-motion/units-measurement` | 11 | 1 | |
-| 2 | `numbers-algebra/sets` | 11 | 1 | |
+| 2 | `numbers-algebra/sets` | 11 | 1 | ✓ |
 | 3 | `measurement-motion/dimensions` | 7 | 1 | |
 | 4 | `functions-graphs/coordinate-plane` | 7 | 1 | |
 | 5 | `measurement-motion/uniform-acceleration` | 8 | 1 | |

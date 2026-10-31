@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}60 drink tea, 45 drink coffee, 20 drink both. How many drink neither?{% endblock %}
+{% block why_text %}Fill the overlap first: it is the only region given directly. Each "only" region is then the total minus the overlap, and whatever is left of the survey is outside both circles.{% endblock %}
+{% block try_items %}
+<li>With 100 people, how many drink neither?</li>
+<li>Make "both" bigger than coffee. What goes wrong?</li>
+<li>Find numbers where nobody drinks neither.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Forget listing subsets. Ask each element one question: in or out?{% endblock %}
+{% block why_text %}Building a subset means making one in-or-out choice per element, and each choice is free of the others. So the choices multiply: 2 × 2 × … × 2, n times. Each new element doubles the total, because every old subset now comes with and without it.{% endblock %}
+{% block try_items %}
+<li>Go from n = 2 to n = 3. What happens to each old subset?</li>
+<li>Which path gives ∅? Which gives the whole set?</li>
+<li>How many subsets does a set with 10 elements have?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}∅ has nothing in it, so how can it be inside every set? Try to prove it isn't.{% endblock %}
+{% block why_text %}B ⊂ A fails only if you can point to an element of B that is outside A. The empty set has no elements to point to, so it can never fail. That makes it a subset of every set, even of ∅ itself.{% endblock %}
+{% block try_items %}
+<li>Build a B that fails. Which number gives it away?</li>
+<li>Press Empty B. Can you still find a rule-breaker?</li>
+<li>Set A = ∅. Is ∅ ⊂ ∅?</li>
+{% endblock %}

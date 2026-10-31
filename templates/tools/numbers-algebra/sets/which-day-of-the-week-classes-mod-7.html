@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}If the 3rd is a Monday, which other dates are Mondays? Group the dates by remainder.{% endblock %}
+{% block why_text %}Dates 7 apart share a weekday, so a and b fall on the same day exactly when 7 divides a − b. That relation is reflexive, symmetric and transitive, so it splits the dates into 7 classes, one per weekday.{% endblock %}
+{% block try_items %}
+<li>Press 3. Which dates share its class?</li>
+<li>Why is a date always related to itself?</li>
+<li>If a ~ b and b ~ c, why must 7 divide a − c?</li>
+{% endblock %}

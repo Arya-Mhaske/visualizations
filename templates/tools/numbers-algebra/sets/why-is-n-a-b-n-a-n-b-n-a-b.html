@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add the people in A to the people in B, and some get counted twice. Who?{% endblock %}
+{% block why_text %}n(A) + n(B) counts everyone in the overlap once in A and again in B. Subtracting n(A ∩ B) removes exactly the extra count, so each person is counted once.{% endblock %}
+{% block try_items %}
+<li>At step 2, compare n(A) + n(B) with the count by regions.</li>
+<li>Set "in both" to 0. Why does the formula now just add?</li>
+<li>Set "in A only" to 0. What is A then, compared with B?</li>
+{% endblock %}
