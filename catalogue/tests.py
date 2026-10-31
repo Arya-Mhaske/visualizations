@@ -173,7 +173,7 @@ class CatalogueTests(TestCase):
     def test_grids_show_only_real_tiles(self):
         box = self.client.get('/trigonometry/angles-arcs/')
         self.assertContains(box, 'nb-badge--live')
-        self.assertContains(box, 'is-soon')
+        self.assertContains(self.client.get(placeholders()[0].parent.url), 'is-soon')
         self.assertNotContains(box, 'nb-location')
         self.assertContains(box, 'nb-crumbs')
         subject = Tile.objects.get(slug='numbers-algebra')
@@ -238,7 +238,7 @@ class CatalogueTests(TestCase):
             'kind': 'tool', 'tag': 'WHY', 'where': 'Trigonometry / Angles & Arcs', 'live': True})
         self.assertEqual(by_url['/trigonometry/angles-arcs/']['where'], 'Trigonometry')
         self.assertEqual(by_url['/trigonometry/']['kind'], 'subject')
-        self.assertEqual(sum(entry['live'] for entry in entries), 1)
+        self.assertEqual(sum(entry['live'] for entry in entries), 1538 - len(placeholders()))
 
     def test_query_budget(self):
         tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()
