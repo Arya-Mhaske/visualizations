@@ -49,7 +49,7 @@ with a `readout` entry, `liveFormula(el, build)`. Call `formula.update(state)` a
 | plot | function graphs with sliders | `plot` |
 | sim | time-stepped physics | `sim`, `plot` |
 | rays | optics, field lines | to be written (first optics box) |
-| phasor | rotating vectors, AC | to be written (Oscillations or AC) |
+| phasor | rotating vectors, AC | `phasor`, `sim` (`createClock`); AC parts still to come |
 | space3d | 3D scenes | `project3d`, `vec` |
 | chance | sampling with a seeded generator | `rng` |
 | discrete | exact finite objects: grids, trees, Venn, tables | `discrete` |
@@ -66,7 +66,8 @@ Each file's header comment is its documentation.
 - `plot.js`: `createPlot`, `sample`, `niceStep`, `tickValues`
 - `controls.js`: `bindControls`, `readout`, `bindRange`, `bindChoice`
 - `formula.js`: `liveFormula`, `renderTex`, `plainTex`
-- `sim.js`: `createSim`, `transport`, `verletStep`, `rk4Step`
+- `sim.js`: `createSim`, `createClock`, `transport`, `verletStep`, `rk4Step`
+- `phasor.js`: `phasor`, `project`
 - `anim.js`: `createLoop`, `reducedMotion`
 - `vec.js`: `v2`, `v3`
 - `project3d.js`: `createCamera`, `rotation`, `splitQuad`
@@ -96,6 +97,8 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `smoke_tools` now moves a slider and presses arrow keys. Clicks, sims and drills were checked by hand in the pilots.
 - `venn` paints each region separately, so complements and overlaps shade exactly. Sparse HTML stages need a default that already
   shows the idea: the empty-set tool first opened on six blank buttons.
+- Exact-formula animations: `createClock` plus `transport(clock)`; create the clock before `createTool`. One maths file can serve
+  neighbouring boxes (`_shm-math.js`). Use one commit per box even then.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -198,9 +201,9 @@ it reaches the front of the queue.
 | 86 | `functions-graphs/area-by-stretching` | 5 | 1 | |
 | 87 | `heat-thermodynamics/mean-free-path` | 4 | 1 | |
 | 88 | `trigonometry/waves-oscillations` | 12 | 1 | |
-| 89 | `oscillations-waves/periodic-motion` | 4 | 1 | |
+| 89 | `oscillations-waves/periodic-motion` | 4 | 1 | ✓ |
 | 90 | `trigonometry/solving-any-triangle` | 12 | 1 | |
-| 91 | `oscillations-waves/shm-circular-motion` | 6 | 1 | |
+| 91 | `oscillations-waves/shm-circular-motion` | 6 | 1 | ✓ |
 | 92 | `trigonometry/vectors` | 12 | 1 | |
 | 93 | `oscillations-waves/force-law-energy` | 5 | 1 | |
 | 94 | `trigonometry/polar-complex` | 11 | 1 | |

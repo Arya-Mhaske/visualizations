@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Period is seconds per cycle. Frequency is cycles per second. Count them and see.{% endblock %}
+{% block why_text %}If one cycle takes T seconds, then 1 second holds 1/T cycles. The two are the same fact read in opposite directions, so T × f is always 1.{% endblock %}
+{% block try_items %}
+<li>Set T = 0.25 s. Count the shaded cycles.</li>
+<li>Halve T. What happens to f?</li>
+<li>Set T = 0.3 s. Why isn't f a whole number when the count is?</li>
+{% endblock %}

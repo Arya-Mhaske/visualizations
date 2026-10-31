@@ -7,6 +7,7 @@
 //   sim.play(), sim.pause(), sim.step(), sim.reset(); sim.state; sim.playing.
 //   With reduced motion, play() does nothing and returns false: use sim.step(), offered by transport().
 //   transport(sim) returns a { row: [...] } entry for bindControls.
+//   createClock(target, { onFrame }) is a sim with no physics, for tools that animate an exact formula: use clock.state.t.
 import { createLoop, reducedMotion } from './anim.js';
 
 export function verletStep({ t, x, v }, accel, dt) {
@@ -60,6 +61,10 @@ export function createSim(target, { init, accel, deriv, dt = 1 / 120, speed = 1,
   });
   return sim;
 }
+
+export const createClock = (target, { speed = 1, onFrame = () => {} } = {}) => createSim(target, {
+  init: () => ({ t: 0, y: [] }), deriv: () => [], dt: 1 / 60, speed, onFrame,
+});
 
 export function transport(sim, { onChange = () => {} } = {}) {
   const row = [

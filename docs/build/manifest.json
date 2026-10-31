@@ -1792,61 +1792,62 @@
 "archetype": "sim",
 "priority": 92,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/periodic-motion/why-is-f-1-t": {
 "archetype": "sim",
 "priority": 92,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/periodic-motion/when-is-a-sum-of-two-shms-periodic": {
 "archetype": "sim",
 "priority": 92,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/periodic-motion/period-frequency-and-converter": {
 "archetype": "stepper",
 "priority": 92,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "oscillations-waves/shm-circular-motion/why-is-shm-the-shadow-of-circular-motion": {
 "archetype": "sim",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/shm-circular-motion/what-does-the-phase-do": {
 "archetype": "sim",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/shm-circular-motion/why-does-velocity-lead-displacement-by-90": {
 "archetype": "sim",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/shm-circular-motion/why-doesn-t-the-period-depend-on-amplitude": {
 "archetype": "sim",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/shm-circular-motion/fit-a-and-from-the-initial-conditions": {
 "archetype": "stepper",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/shm-circular-motion/stacked-x-v-a-graphs": {
 "archetype": "stepper",
 "priority": 94,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/force-law-energy/why-does-f-kx-always-give-shm": {
 "archetype": "sim",

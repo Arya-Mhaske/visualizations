@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Each SHM repeats by itself. Does their sum always repeat too?{% endblock %}
+{% block why_text %}The sum repeats only when both SHMs finish whole numbers of cycles at the same moment, which needs ω₁/ω₂ to be a ratio of whole numbers. For √2 or π that moment never comes: the curve comes close, but never lands exactly on itself.{% endblock %}
+{% block try_items %}
+<li>With 3 : 2, slide τ to 12.57 s. What happens to the gap?</li>
+<li>Switch to √2 : 1. Can you get the gap to 0?</li>
+<li>Find the repeat time for 5 : 3.</li>
+{% endblock %}
