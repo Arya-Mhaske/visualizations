@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}The 2D distance formula is Pythagoras. In 3D we simply use Pythagoras again.{% endblock %}
+{% block why_text %}The floor diagonal d comes from one right triangle, d² = x² + y². That diagonal and the height z then make a second right triangle, standing on the floor. So the third term is just one more use of the same theorem.{% endblock %}
+{% block try_items %}
+<li>Find a box with a whole-number floor diagonal.</li>
+<li>Try (3, 4, 12). What is the distance?</li>
+<li>Turn the box until triangle 2 looks flat. Where is its right angle?</li>
+{% endblock %}

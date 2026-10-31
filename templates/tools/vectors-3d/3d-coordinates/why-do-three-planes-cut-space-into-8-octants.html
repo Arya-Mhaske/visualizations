@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}One wall splits a room in two. What do three planes do to all of space?{% endblock %}
+{% block why_text %}Each plane is an either-or: above or below, left or right, front or back. Each new plane cuts every existing region in two, so 2 × 2 × 2 = 8. The three signs of (x, y, z) name which region you are in.{% endblock %}
+{% block try_items %}
+<li>Turn the planes on one at a time. Read the region count.</li>
+<li>Put the point in octant VII. What are its signs?</li>
+<li>Which octant has only z negative?</li>
+{% endblock %}

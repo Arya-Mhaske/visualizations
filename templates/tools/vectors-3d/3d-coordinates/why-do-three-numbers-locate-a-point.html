@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Stand in the corner of a room. How would you tell a friend exactly where a fly is?{% endblock %}
+{% block why_text %}Space has three independent directions: moving along one can never replace a move along another. So each needs its own number. Two aren't enough, and a fourth would add nothing.{% endblock %}
+{% block try_items %}
+<li>Slide Walked from 0 to 3 and watch each leg.</li>
+<li>Set z = 0. Where is the point now?</li>
+<li>Can you reach (4, 3, 3) with only the x and y legs?</li>
+<li>Drag the room. Do the three numbers change?</li>
+{% endblock %}

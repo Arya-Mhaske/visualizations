@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}An equation in x, y and z is a test each point passes or fails. The points that pass make a surface.{% endblock %}
+{% block why_text %}A sphere is every point at distance r from its centre, so the distance formula is its equation. Completing the square turns the expanded form back into that shape, and the centre and radius can be read off.{% endblock %}
+{% block try_items %}
+<li>Set centre (1, 2, 1) and r = 3. Check the expanded equation.</li>
+<li>Switch to the plane. Why does one equation give a whole plane?</li>
+<li>Switch to the cylinder. Which letter is missing from its equation, and what does that do?</li>
+{% endblock %}
