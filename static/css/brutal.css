@@ -168,8 +168,9 @@ main { flex: 1; padding: var(--s-5) 0 var(--s-8); }
 .nb-crumbs a:hover { background: var(--yellow); }
 .nb-crumbs [aria-current="page"] {
   padding: 2px 6px; background: var(--ink); color: var(--paper);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 40ch;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: min(40ch, 100%);
 }
+.nb-nav nav, .nb-crumbs li { max-width: 100%; }  /* a long current crumb ellipsises on phones */
 /* "you are IN trig" pill shown under the navbar on subject, box and tool pages */
 .nb-location {
   display: inline-flex; align-items: center; gap: var(--s-2);
