@@ -1,17 +1,16 @@
+from django.conf import settings
 from django.db.models import Count
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Tile
+from .models import MAX_CHILDREN, Tile
 from .paths import LiveChecker, tool_template_name
 
 ACCENTS = ['yellow', 'coral', 'sky', 'green', 'orange', 'lavender']
 TAG_ORDER = {'WHY': 0, 'HOW': 1, 'APP': 2}
-
-
-def _pad(count):
-    """Empty slots so the grid fills whole rows of 4 on desktop."""
-    return range((-count) % 4)
+KINDS = [Tile.SUBJECT, Tile.BOX, Tile.TOOL]
+# Landing sections: (anchor, title, last subject order). The last group takes everything left.
+GROUPS = [('maths', 'Maths', 19), ('physics-xi', 'Physics XI', 25), ('physics-xii', 'Physics XII', None)]
 
 
 def _crumbs(tile):
@@ -32,53 +31,85 @@ def _grid_items(tiles, live):
         item = {'tile': tile, 'num': i + 1, 'url': tile.url}
         if tile.kind == Tile.TOOL:
             item['is_live'] = live(tile)
+            item['aids'] = _plural(tile.count, 'aid') if tile.count else ''
         else:
             item['accent'] = ACCENTS[i % len(ACCENTS)]
-            if tile.kind == Tile.SUBJECT:
-                n = Tile.objects.filter(kind=Tile.TOOL, parent__parent=tile).count()
-            else:
-                n = tile.children.count()
-            item['count'] = _plural(n, 'tool')
+            item['count'] = _plural(tile.count, 'tool')
         items.append(item)
     return items
+
+
+def _groups(items):
+    groups, rest = [], items
+    for anchor, title, last in GROUPS:
+        tiles = [item for item in rest if last is None or item['tile'].order <= last]
+        rest = rest[len(tiles):]
+        if tiles:
+            groups.append({'anchor': anchor, 'title': title, 'tiles': tiles})
+    return groups
+
+
+def _find(slugs):
+    """The tile at a slug path, with its ancestors, in one query. None if there isn't one."""
+    lookups, field = {'kind': KINDS[len(slugs) - 1]}, 'slug'
+    for slug in reversed(slugs):
+        lookups[field] = slug
+        field = f'parent__{field}'
+    return Tile.objects.select_related('parent__parent').filter(**lookups).first()
+
+
+def _sorted_tools(box):
+    tools = box.children.annotate(count=Count('aid_links'))
+    return sorted(tools, key=lambda t: (TAG_ORDER.get(t.tag, 9), t.order))
 
 
 def resolve(request, path):
     """One view for /, /<subject>/, /<subject>/<box>/ and /<subject>/<box>/<tool>/."""
     slugs = [s for s in path.split('/') if s]
     live = LiveChecker()
-    tile = None
-    for depth, slug in enumerate(slugs):
-        tile = Tile.objects.filter(parent=tile, slug=slug).select_related('parent__parent').first()
-        if tile is None:
-            raise Http404('No such page')
-    if tile is not None and tile.kind == Tile.TOOL:
+    if not slugs:
+        subjects = Tile.objects.filter(parent=None).annotate(count=Count('children__children')).order_by('order')
+        groups = _groups(_grid_items(subjects, live))
+        return render(request, 'catalogue/grid.html', {'is_landing': True, 'crumbs': [], 'groups': groups})
+
+    tile = _find(slugs)
+    if tile is None:
+        raise Http404('No such page')
+    if tile.kind == Tile.TOOL:
         return _tool(request, tile, live)
 
-    if tile is None:
-        children = list(Tile.objects.filter(parent=None))
-        context = {'is_landing': True, 'crumbs': []}
+    if tile.kind == Tile.BOX:
+        children = _sorted_tools(tile)
     else:
-        children = list(tile.children.all())
-        context = {'tile': tile, 'crumbs': _crumbs(tile),
-                   'subject': _crumbs(tile)[0]}
-    if tile is not None and tile.kind == Tile.BOX:
-        children.sort(key=lambda t: (TAG_ORDER.get(t.tag, 9), t.order))
+        children = tile.children.annotate(count=Count('children')).order_by('order')
+    crumbs = _crumbs(tile)
     items = _grid_items(children, live)
-    context.update(items=items, empty_slots=_pad(len(items)))
-    return render(request, 'catalogue/grid.html', context)
+    return render(request, 'catalogue/grid.html', {
+        'tile': tile, 'crumbs': crumbs, 'subject': crumbs[0],
+        'items': items, 'empty_slots': range(MAX_CHILDREN - len(items)),
+    })
+
+
+def _aids(tool, live):
+    aids = []
+    for link in tool.aid_links.select_related('aid__parent__parent'):
+        aid = link.aid
+        aids.append({'tile': aid, 'url': aid.url, 'subject': _crumbs(aid)[0],
+                     'is_live': aid.kind == Tile.BOX or live(aid)})
+    return aids
 
 
 def _tool(request, tool, live):
     box = tool.parent
-    siblings = list(box.children.all())
-    siblings.sort(key=lambda t: (TAG_ORDER.get(t.tag, 9), t.order))
+    siblings = _sorted_tools(box)
     index = siblings.index(tool)
     crumbs = _crumbs(tool)
     context = {
         'tile': tool, 'box': box, 'subject': crumbs[0], 'crumbs': crumbs,
+        'aids': _aids(tool, live),
         'prev_tool': siblings[index - 1] if index > 0 else None,
         'next_tool': siblings[index + 1] if index + 1 < len(siblings) else None,
+        'show_build_notes': settings.DEBUG,
     }
     if live(tool):
         return render(request, tool_template_name(tool), context)

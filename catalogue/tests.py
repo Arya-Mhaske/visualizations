@@ -10,7 +10,10 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.core.management import call_command
 from django.core.management.base import CommandError
+from django.db import connection
+from django.db.models import Count
 from django.test import TestCase, override_settings
+from django.test.utils import CaptureQueriesContext
 
 from .management.commands.load_catalogue import DATA_DIR
 from .models import Tile, TileAid
@@ -103,20 +106,94 @@ class CatalogueTests(TestCase):
             with self.subTest(url=url):
                 self.assertEqual(self.client.get(url).status_code, 404)
 
-    def test_landing_and_grid_content(self):
+    def test_landing_lists_all_subjects_in_order(self):
+        html = self.client.get('/').content.decode()
+        titles = list(Tile.objects.filter(parent=None).values_list('slug', flat=True))
+        self.assertEqual(len(titles), 30)
+        positions = [html.index(f'href="/{slug}/"') for slug in titles]
+        self.assertEqual(positions, sorted(positions))
+
+    def test_landing_content(self):
         landing = self.client.get('/')
-        self.assertContains(landing, 'MuskMelon')
-        self.assertNotContains(landing, 'nb-nav')
-        self.assertNotContains(landing, 'See why')
+        self.assertContains(landing, 'nb-jump')
+        for anchor in ['maths', 'physics-xi', 'physics-xii']:
+            self.assertContains(landing, f'href="#{anchor}"')
+            self.assertContains(landing, f'id="{anchor}"')
         self.assertContains(landing, '135 tools')
-        self.assertEqual(landing.content.decode().count('is-empty'), 2)
+        self.assertNotContains(landing, 'is-empty')
+        self.assertNotContains(landing, 'nb-crumbs')
+        self.assertNotContains(landing, 'nb-location')
+        self.assertContains(landing, '<title>MuskMelon</title>', html=True)
+
+    def test_brand_on_every_level(self):
+        for url in ['/', '/trigonometry/', '/trigonometry/angles-arcs/',
+                    '/trigonometry/angles-arcs/why-360-degrees/',
+                    '/trigonometry/angles-arcs/what-is-an-angle-really/']:
+            with self.subTest(url=url):
+                page = self.client.get(url)
+                self.assertContains(page, 'nb-logo__mark')
+                self.assertContains(page, 'nb-logo__word')
+                self.assertContains(page, 'img/muskmelon.svg')
+                self.assertContains(page, 'og:title')
+                self.assertNotContains(page, 'Visualisations')
+
+    def test_titles(self):
+        tool_page = self.client.get('/trigonometry/angles-arcs/why-360-degrees/')
+        self.assertContains(tool_page, '<title>Why is a full turn 360°? · MuskMelon</title>', html=True)
+
+    def test_grids_pad_to_twelve(self):
         box = self.client.get('/trigonometry/angles-arcs/')
         self.assertContains(box, 'nb-badge--live')
         self.assertContains(box, 'is-soon')
-        self.assertNotContains(box, 'IN: ')
+        self.assertContains(box, 'IN: Trigonometry')
+        self.assertContains(box, 'nb-crumbs')
         self.assertNotContains(box, 'empty slot')
-        self.assertNotContains(box, 'nb-logo')
-        self.assertContains(box, 'nb-nav')
+        subject = Tile.objects.get(slug='numbers-algebra')
+        page = self.client.get(subject.url)
+        self.assertEqual(subject.children.count(), 10)
+        self.assertEqual(page.content.decode().count('empty slot'), 2)
+
+    def test_aid_count_badge(self):
+        tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()
+        page = self.client.get(tile.parent.url)
+        self.assertContains(page, f'{tile.n} aids')
+
+    def test_aids_strip_live_and_placeholder_across_subjects(self):
+        tool = Tile.objects.get(slug='what-is-an-angle-really')
+        live = Tile.objects.get(slug='why-360-degrees')
+        other = Tile.objects.filter(kind='tool').exclude(parent__parent__slug='trigonometry').first()
+        box = Tile.objects.get(slug='polar-complex')
+        TileAid.objects.filter(tile=tool).delete()
+        for i, aid in enumerate([live, other, box], start=1):
+            TileAid.objects.create(tile=tool, aid=aid, order=i)
+        response = self.client.get(tool.url)
+        self.assertContains(response, 'Understand these first')
+        self.assertEqual([a['is_live'] for a in response.context['aids']], [True, False, True])
+        self.assertContains(response, f'<a class="nb-aid" href="{live.url}">')
+        self.assertContains(response, f'<a class="nb-aid is-soon" href="{other.url}">')
+        self.assertContains(response, f'<a class="nb-aid" href="{box.url}">')
+
+    def test_live_tool_with_no_aids_has_no_strip(self):
+        self.assertNotContains(self.client.get('/trigonometry/angles-arcs/why-360-degrees/'), 'Understand these first')
+
+    def test_placeholder_marks_extensions(self):
+        tile = Tile.objects.filter(kind='tool', extension=True).exclude(sections='').first()
+        self.assertContains(self.client.get(tile.url), '(ext.)')
+
+    def test_spec_needs_debug(self):
+        tile = Tile.objects.filter(kind='tool').exclude(spec='').exclude(slug='why-360-degrees').first()
+        self.assertNotContains(self.client.get(tile.url), 'Build notes')
+        with self.settings(DEBUG=True):
+            self.assertContains(self.client.get(tile.url), 'Build notes')
+
+    def test_query_budget(self):
+        tile = Tile.objects.annotate(n=Count('aid_links')).filter(kind='tool', n__gte=2).first()
+        urls = ['/', tile.parent.parent.url, tile.parent.url, tile.url,
+                '/trigonometry/angles-arcs/why-360-degrees/']
+        for url in urls:
+            with self.subTest(url=url), CaptureQueriesContext(connection) as queries:
+                self.client.get(url)
+            self.assertLessEqual(len(queries), 10)
 
 
 class DivisorFactTests(TestCase):

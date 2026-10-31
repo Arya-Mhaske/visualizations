@@ -6,7 +6,6 @@ Tool page skeleton (CLAUDE.md §5). A tool template fills these blocks:
 The question (H1), badges and prev/next links come from the view context.
 {% endcomment %}
 
-{% block title %}{{ tile.title }} · {{ site_name }}{% endblock %}
 {% block head_extra %}{% block katex %}{% endblock %}{% endblock %}
 
 {% block content %}
@@ -16,6 +15,8 @@ The question (H1), badges and prev/next links come from the view context.
     <div class="viz-head__meta">{% include "tools/_head_meta.html" %}</div>
     <p class="viz-head__lead">{% block lead %}{{ tile.summary }}{% endblock %}</p>
   </header>
+
+  {% include "tools/_aids.html" %}
 
   {% block steps %}{% endblock %}
 
@@ -31,6 +32,6 @@ The question (H1), badges and prev/next links come from the view context.
   {% block notes %}{% endblock %}
 
   {% include "tools/_nav.html" %}
-  <p class="viz-source">{% block source %}Textbook: {{ subject.title }}, § {{ tile.sections }}{% endblock %}</p>
+  <p class="viz-source">{% block source %}Textbook: {{ subject.source }}, § {{ tile.sections }}{% endblock %}</p>
 </article>
 {% endblock %}

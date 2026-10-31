@@ -1,0 +1,13 @@
+{% if aids %}
+<section class="nb-aids" aria-labelledby="aids-title">
+  <h2 class="nb-aids__title" id="aids-title">Understand these first</h2>
+  <div class="nb-aids__row">
+    {% for aid in aids %}
+    <a class="nb-aid{% if not aid.is_live %} is-soon{% endif %}" href="{{ aid.url }}">
+      <span class="nb-aid__title">{{ aid.tile.title }}</span>
+      <span class="nb-aid__meta">{{ aid.subject.title }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

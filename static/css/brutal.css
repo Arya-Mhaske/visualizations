@@ -1,5 +1,5 @@
 /* =========================================================================
-   brutal.css: neo-brutalist design system for the visualisations site
+   brutal.css: neo-brutalist design system for MuskMelon (the visualisations site)
    Reference: neubrutalism.com tokens (flat colours, black 3px borders,
    zero-blur offset shadows, zero radius, press-into-shadow buttons).
    Lives at: static/css/brutal.css. Every page loads it via base.html.
@@ -140,6 +140,22 @@ main { flex: 1; padding: var(--s-5) 0 var(--s-8); }
   display: flex; align-items: center; gap: var(--s-4);
   min-height: 60px;
 }
+.nb-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: var(--s-1) var(--s-3);
+  background: var(--orange);          /* MuskMelon: melon-flesh orange */
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+  display: inline-flex; align-items: center; gap: var(--s-2);
+}
+.nb-logo:hover { background: var(--yellow); transform: translate(-1px, -1px); box-shadow: var(--shadow); }
+.nb-logo__mark { width: 1.6rem; height: 1.6rem; flex: none; display: block; }   /* static/img/muskmelon.svg */
+@media (max-width: 380px) { .nb-logo__word { display: none; } }                 /* mark only on tiny phones */
+
 .nb-crumbs {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2);
   margin: 0; padding: 0; list-style: none;
@@ -153,6 +169,12 @@ main { flex: 1; padding: var(--s-5) 0 var(--s-8); }
 .nb-crumbs [aria-current="page"] {
   padding: 2px 6px; background: var(--ink); color: var(--paper);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 40ch;
+}
+/* "you are IN trig" pill shown under the navbar on subject, box and tool pages */
+.nb-location {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase;
+  padding: 2px var(--s-2); border: var(--border-thin); background: var(--lavender);
 }
 
 /* ---------- 4. Page header ---------------------------------------------- */
@@ -218,8 +240,12 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
   box-shadow: var(--shadow-sm);
 }
 .nb-tile.is-soon .nb-tile__title { color: var(--muted); }
-/* unused slot in a grid: keeps the column layout but shows nothing */
-.nb-tile.is-empty { visibility: hidden; }
+/* empty slot in a grid (no tile defined yet) */
+.nb-tile.is-empty {
+  border-style: dashed; box-shadow: none; background: transparent;
+  align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted);
+}
 
 /* ---------- 6. Badges / tags -------------------------------------------- */
 .nb-badge {
@@ -574,3 +600,36 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .nb-btn--lavender, .nb-btn--lavender:hover { background: var(--lavender); }
 /* button only as wide as its label, even in a column layout */
 .nb-btn--fit { align-self: flex-start; text-align: left; }
+
+/* ---------- 17. Landing page -------------------------------------------- */
+/* compact header, so the first 12 tiles fit the first screen on a desktop */
+.nb-hero--landing {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: var(--s-3); margin-bottom: var(--s-4);
+}
+.nb-hero--landing .nb-hero__title { font-size: 1.75rem; margin: 0; }
+.nb-jump { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.nb-jump a {
+  font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
+  text-decoration: none; padding: 2px var(--s-2);
+  border: var(--border-thin); background: var(--paper);
+}
+.nb-group { scroll-margin-top: 80px; }
+.nb-group + .nb-group { margin-top: var(--s-7); }
+.nb-group__title { font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ---------- 18. Aids strip ("Understand these first") ------------------- */
+.nb-aids { margin: var(--s-5) 0; }
+.nb-aids__title { font-family: var(--font-head); font-size: 1rem; margin-bottom: var(--s-2); }
+.nb-aids__row { display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); }
+.nb-aid {
+  display: flex; flex-direction: column; gap: var(--s-1);
+  padding: var(--s-2) var(--s-3);
+  background: var(--yellow);
+  border: var(--border-thin); box-shadow: var(--shadow-sm);
+  text-decoration: none; color: var(--ink);
+}
+.nb-aid:hover { background: var(--yellow); transform: translate(-1px, -1px); box-shadow: var(--shadow); }
+.nb-aid.is-soon { background: repeating-linear-gradient(-45deg, var(--paper) 0 10px, var(--bg) 10px 20px); }
+.nb-aid__title { font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; line-height: 1.2; }
+.nb-aid__meta { margin-top: auto; font-family: var(--font-mono); font-size: 0.7rem; }
