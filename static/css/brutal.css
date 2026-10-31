@@ -564,3 +564,13 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 }
 .nb-soon p { font-family: var(--font-head); font-weight: 500; font-size: 1.1rem; }
 .nb-teaser { font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; }
+
+/* colour variants for buttons (picked at random by static/js/accent.js) */
+.nb-btn--yellow, .nb-btn--yellow:hover { background: var(--yellow); }
+.nb-btn--coral, .nb-btn--coral:hover { background: var(--coral); }
+.nb-btn--sky, .nb-btn--sky:hover { background: var(--sky); }
+.nb-btn--green, .nb-btn--green:hover { background: var(--green); }
+.nb-btn--orange, .nb-btn--orange:hover { background: var(--orange); }
+.nb-btn--lavender, .nb-btn--lavender:hover { background: var(--lavender); }
+/* button only as wide as its label, even in a column layout */
+.nb-btn--fit { align-self: flex-start; text-align: left; }
