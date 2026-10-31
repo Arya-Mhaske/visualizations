@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}0.1% are ill, 99% of cases are detected, and 0.5% of healthy people test positive. You test positive. Now what?{% endblock %}
+{% block why_text %}P(ill | positive) = 22/133, about 17%. It is about 165 times the starting risk of 0.1%, so it is news, but most positives are still healthy. A second positive test raises it to about 98%, which is why doctors retest.{% endblock %}
+{% block try_items %}
+<li>Compare the two positive counts. Why is one so much bigger?</li>
+<li>Switch to two positive tests.</li>
+<li>Which matters more here, detection rate or false-positive rate?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note nb-mt-4"><span class="nb-callout__label">Simplified model</span>The two-test figure assumes the tests are independent given a person's true state. Real repeat tests may not be.</div>{% endblock %}

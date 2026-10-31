@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Exclusive and independent sound alike. They are nearly opposites.{% endblock %}
+{% block why_text %}If A and B can't happen together, then knowing A tells you B certainly didn't happen. That is strong information, so they depend on each other. Independence needs P(A ∩ B) = P(A)P(B), which is above 0 when both events are possible.{% endblock %}
+{% block try_items %}
+<li>Set A = first die is 1 and B = first die is 6. Which test do they pass?</li>
+<li>Set A = first die is even and B = second die is even. Are they independent?</li>
+<li>Can two possible events be both exclusive and independent?</li>
+{% endblock %}

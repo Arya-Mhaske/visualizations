@@ -122,7 +122,9 @@ export function enableDrag(canvas, handlers) {
 
 const ARROWS = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] };
 
-// points: [{ at() -> [px, py], move(px, py), keyStep? }], in stage pixels.
+// points: [{ at() -> [px, py], move(px, py), keyStep?, nudge? }], in stage pixels. A point that turns about a
+// centre must give nudge(direction): direction is +1 for right/up and −1 for left/down, because a pixel step
+// along the ray would change nothing.
 // options: radius (touch target), keyStep (pixels per arrow press), pan(dx, dy) for a drag that misses
 // every point (a 3D scene uses this to orbit), onChange() after every move.
 // Returns { active }: the index of the point the keyboard moves, so a tool can ring it when drawing.
@@ -158,6 +160,11 @@ export function handles(stage, points, { radius = 24, keyStep = 4, pan = null, o
       const arrow = ARROWS[name];
       const point = points[state.active];
       if (!arrow || !point) return false;
+      if (point.nudge) {
+        point.nudge(arrow[0] - arrow[1]);
+        onChange();
+        return true;
+      }
       const [px, py] = point.at();
       const step = point.keyStep || keyStep;
       point.move(px + arrow[0] * step, py + arrow[1] * step);

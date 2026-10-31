@@ -7,7 +7,9 @@
 
 Each tool is checked at 360 px, 1280 px and 360 px with reduced motion, for: console and page errors,
 horizontal scroll, a blank stage, missing §5 sections, an H1 that differs from the catalogue title, a
-stage with no aria-label, unlabelled inputs, and JS over the 25 KB budget. Needs requirements-dev.txt.
+stage with no aria-label, unlabelled inputs, and JS over the 25 KB budget. At 1280 px it also moves the
+first slider and presses arrow keys on a focusable stage: something on the page must respond. Needs
+requirements-dev.txt.
 """
 import base64
 import json
@@ -75,10 +77,29 @@ AUDIT = """(needsFormula) => {
 }"""
 
 
+# Runs in the page: a fingerprint of everything a student can see change.
+SIGNATURE = """() => [...document.querySelectorAll('#stage canvas')].map((c) => c.toDataURL()).join()
+  + document.querySelector('#stage').innerText + (document.querySelector('.viz-formula')?.textContent || '')
+  + [...document.querySelectorAll('.viz-readout')].map((r) => r.innerText).join()"""
+
+MOVE_SLIDER = """() => {
+  const input = [...document.querySelectorAll('#panel input[type=range]')].find((el) => el.offsetParent);
+  if (!input) return false;
+  input.value = input.value === input.max ? input.min : input.max;
+  input.dispatchEvent(new Event('input', { bubbles: true }));
+  return true;
+}"""
+
+
 def free_port():
     with socket.socket() as sock:
         sock.bind(('127.0.0.1', 0))
         return sock.getsockname()[1]
+
+
+def manifest_exempt(manifest):
+    """Multi-view tools whose stage only responds in a later view."""
+    return {path for path, entry in manifest.items() if entry.get('no_response_check')}
 
 
 def changed_files():
@@ -150,6 +171,30 @@ class Command(BaseCommand):
             time.sleep(0.1)
         raise CommandError('The test server did not start.')
 
+    @staticmethod
+    def responds(page):
+        problems = []
+        before = page.evaluate(SIGNATURE)
+        if page.evaluate(MOVE_SLIDER):
+            page.wait_for_timeout(150)
+            after = page.evaluate(SIGNATURE)
+            if after == before:
+                problems.append('moving the first slider changed nothing')
+            before = after
+        canvas = page.locator('#stage canvas[tabindex]')
+        if canvas.count():
+            canvas.first.focus()
+            # The slider above may have left a value at its limit, so try both directions.
+            for keys in (('ArrowLeft', 'ArrowDown'), ('ArrowRight', 'ArrowUp')):
+                for key in keys * 2:
+                    page.keyboard.press(key)
+                page.wait_for_timeout(150)
+                if page.evaluate(SIGNATURE) != before:
+                    break
+            else:
+                problems.append('arrow keys on the stage changed nothing')
+        return problems
+
     def check_tool(self, browser, port, tile, manifest, offline):
         path = '/'.join(tile.slug_path)
         script = settings.BASE_DIR / 'static/viz/tools' / tile.slug_path[0] / f'{tile.slug}.js'
@@ -178,6 +223,8 @@ class Command(BaseCommand):
             ink = page.evaluate(INK_SHARE, base64.b64encode(png).decode('ascii'))
             if ink < MIN_INK_SHARE:
                 problems.append(f'blank stage ({ink:.4f} ink)')
+            if width > 1000 and path not in manifest_exempt(manifest):
+                problems += self.responds(page)
             failures += [f'{path} @{width}{" reduced" if motion == "reduce" else ""}: {p}' for p in problems]
             context.close()
         self.stdout.write(f"{'FAIL' if failures else 'ok  '} {path}")

@@ -59,6 +59,7 @@ const tool = createTool({
 
 handles(tool.stage, [{
   at: () => tip(tool.stage),
+  nudge(direction) { state.d = Math.max(0, Math.min(180, state.d + direction)); },
   move(px, py) {
     const [cx, cy] = origin(tool.stage);
     const a = Math.atan2(cy - py, px - cx) / DEG;

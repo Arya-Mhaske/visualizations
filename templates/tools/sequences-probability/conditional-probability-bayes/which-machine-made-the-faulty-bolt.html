@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Three machines, one faulty bolt. Which machine should you blame?{% endblock %}
+{% block why_text %}Blame depends on both how much a machine makes and how often it fails. Machine A fails most often, but B has the largest share of the defective area: 28/69, about 41%. Bayes compares areas, not failure rates.{% endblock %}
+{% block try_items %}
+<li>With the book's numbers, which machine is most likely? Is that the worst machine?</li>
+<li>Check that the three answers add to 1.</li>
+<li>Find settings where machine C is the most likely.</li>
+{% endblock %}

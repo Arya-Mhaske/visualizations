@@ -78,6 +78,11 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   with a belt wrapped the wrong way round a pulley.
 - `createPlot` takes `box` for stacked graphs (`viz-stage--tall` gives three of them room). `drill` questions take `figure`.
 - Sims: create the sim before `createTool`, so controls can use `transport(sim)` directly, and use `onChange` to restart it.
+- 3D: `splitQuad` crossing planes before `cam.faces`, and choose a default yaw that doesn't look along the key triangle. Add a
+  "Drag to turn the view" hint. Orbit stages block page scroll on touch; students scroll from the panel. Revisit if it annoys.
+- Element screenshots at 360 px can show the sticky navbar over the stage. That is the capture, not a bug.
+- HTML stages: `createTool({ dom })` for grids of real buttons. Rotary handles need `nudge`, or arrow keys do nothing.
+- `smoke_tools` now moves a slider and presses arrow keys. Clicks, sims and drills were checked by hand in the pilots.
 - Check textbook examples against the book by hand: Table 2.1 uses an interval centred on t, not one starting at t.
 
 ## Box queue
@@ -89,8 +94,8 @@ Mark a finished box with ✓ in the last column.
 |---|---|---|---|---|
 | P1 | `trigonometry/angles-arcs` | 12 | 1 | ✓ |
 | P2 | `measurement-motion/motion-in-a-straight-line` | 8 | 1 | ✓ |
-| P3 | `vectors-3d/3d-coordinates` | 4 | 1 | |
-| P4 | `sequences-probability/conditional-probability-bayes` | 8 | 1 | |
+| P3 | `vectors-3d/3d-coordinates` | 4 | 1 | ✓ |
+| P4 | `sequences-probability/conditional-probability-bayes` | 8 | 1 | ✓ |
 | 1 | `measurement-motion/units-measurement` | 11 | 1 | |
 | 2 | `numbers-algebra/sets` | 11 | 1 | |
 | 3 | `measurement-motion/dimensions` | 7 | 1 | |

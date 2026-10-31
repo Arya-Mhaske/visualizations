@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The test catches 99% of illness. So if you test positive, are you 99% likely to be ill? Count 1000 people.{% endblock %}
+{% block why_text %}P(+ | ill) asks about the ill. P(ill | +) asks about the positives, and most positives are healthy people because healthy people are so many. Bayes' theorem just takes the share of the lit dots that are ill.{% endblock %}
+{% block try_items %}
+<li>In view 3, count the lit dots. How many are ill?</li>
+<li>Raise the illness rate to 10%. What happens to P(ill | +)?</li>
+<li>Lower the false-positive rate. Which slider helps most?</li>
+{% endblock %}

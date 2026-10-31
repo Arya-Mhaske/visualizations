@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A hard probability often becomes easy if you split the world into cases first.{% endblock %}
+{% block why_text %}E₁, E₂, E₃ cover everything with no overlap, so A is cut into separate slices. Each slice has area P(Eᵢ)P(A | Eᵢ), and separate slices just add.{% endblock %}
+{% block try_items %}
+<li>Make all three P(A | Eᵢ) equal. What is P(A)?</li>
+<li>Make E₁ very wide. Which slice now matters most?</li>
+<li>Set P(A | E₂) to 0. What happens to that slice?</li>
+{% endblock %}

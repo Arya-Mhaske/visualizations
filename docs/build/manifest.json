@@ -5729,49 +5729,50 @@
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/why-are-mutually-exclusive-events-not-independent": {
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/why-does-total-probability-split-along-a-partition": {
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/why-does-bayes-theorem-flip-a-conditional": {
 "archetype": "chance",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/tree-diagram-builder": {
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/drawing-without-replacement": {
 "archetype": "stepper",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "sequences-probability/conditional-probability-bayes/is-a-positive-test-bad-news": {
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/which-machine-made-the-faulty-bolt": {
 "archetype": "discrete",
 "priority": 3,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/random-variables-expectation/why-is-a-random-variable-a-function-not-a-variable": {
 "archetype": "discrete",
@@ -7691,25 +7692,25 @@
 "archetype": "space3d",
 "priority": 2,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/3d-coordinates/why-does-the-distance-formula-gain-a-z2-term": {
 "archetype": "space3d",
 "priority": 2,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/3d-coordinates/why-do-three-planes-cut-space-into-8-octants": {
 "archetype": "space3d",
 "priority": 2,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/3d-coordinates/spheres-and-simple-surfaces": {
 "archetype": "space3d",
 "priority": 2,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/why-do-the-direction-cosines-squared-add-to-1": {
 "archetype": "space3d",

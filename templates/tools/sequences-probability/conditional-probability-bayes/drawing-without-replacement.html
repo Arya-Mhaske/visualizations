@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Take a ball out and the bag changes. So the second draw depends on the first.{% endblock %}
+{% block formula %}{% endblock %}
+{% block why_text %}Without replacement, the second draw comes from a smaller bag with different counts. That is why we need P(B | A) and not P(B). The multiplication rule tracks exactly that.{% endblock %}
+{% block try_items %}
+<li>Press Next step until the bag changes. What changed?</li>
+<li>Is P(red, blue) the same as P(blue, red)?</li>
+<li>Make the bag huge. Why does replacement stop mattering?</li>
+{% endblock %}

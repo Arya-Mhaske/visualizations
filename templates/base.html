@@ -24,7 +24,6 @@
       {% if crumbs %}
       <nav aria-label="Breadcrumb">
         <ol class="nb-crumbs">
-          <li><a href="/">Home</a></li>
           {% for crumb in crumbs %}
           <li>{% if forloop.last %}<span aria-current="page">{{ crumb.title }}</span>{% else %}<a href="{{ crumb.url }}">{{ crumb.title }}</a>{% endif %}</li>
           {% endfor %}

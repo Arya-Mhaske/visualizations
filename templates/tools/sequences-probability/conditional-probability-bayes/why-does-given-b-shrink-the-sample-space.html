@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Knowing something happened removes every world where it didn't. Grey those out and count again.{% endblock %}
+{% block why_text %}Once B has happened, outcomes outside B are impossible, so B is the new sample space. P(A | B) is simply the share of B that is also in A. That is why we divide by P(B).{% endblock %}
+{% block try_items %}
+<li>Turn "We know B happened" on and off. Which number changes?</li>
+<li>Find A and B with P(A | B) bigger than P(A).</li>
+<li>Find a pair where knowing B changes nothing.</li>
+{% endblock %}

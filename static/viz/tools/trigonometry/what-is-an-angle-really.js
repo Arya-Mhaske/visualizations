@@ -59,9 +59,10 @@ const tool = createTool({
 
 handles(tool.stage, [{
   at: () => ray(tool.stage, tool.stage.size * 0.44),
+  nudge(direction) { state.theta = Math.max(-LIMIT, Math.min(LIMIT, state.theta + direction * 5)); },
   move(px, py) {
     const pointer = Math.atan2(tool.stage.h / 2 - py, px - tool.stage.w / 2) / DEG;
     const delta = ((pointer - state.theta + 540) % 360 + 360) % 360 - 180;
     state.theta = Math.max(-LIMIT, Math.min(LIMIT, Math.round(state.theta + delta)));
   },
-}], { keyStep: 3, onChange: tool.update });
+}], { onChange: tool.update });

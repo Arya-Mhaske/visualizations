@@ -4,6 +4,7 @@
 //     label: 'What the stage shows, for screen readers',
 //     setup: (stage, c) => createPlot(stage, { c }),   // optional; its result reaches draw as `extra`
 //     draw: (ctx, stage, c, extra) => { ... },
+//     dom: (el, c) => ({ refresh() {} }),              // instead of draw: an HTML stage, built in el
 //     controls: [ ...bindControls spec... ],
 //     tex: (state) => 's = r\\theta',                  // optional
 //     onChange: (state) => {},                         // optional; runs when a control changes
@@ -16,13 +17,21 @@ import { liveFormula } from './formula.js';
 
 const find = (selector) => document.querySelector(selector);
 
-export function createTool({ state, label, setup = null, draw, controls = [], tex = null, onChange = () => {} }) {
+export function createTool({ state, label, setup = null, draw = null, dom = null, controls = [], tex = null, onChange = () => {} }) {
   const c = readColors();
   const tool = { state, c, extra: null };
   let paint = () => {};
-  tool.stage = createStage(find('#stage'), (ctx, size, stage) => paint(ctx, stage), { label });
-  if (setup) tool.extra = setup(tool.stage, c);
-  paint = (ctx, stage) => draw(ctx, stage, c, tool.extra);
+  if (dom) {
+    const el = find('#stage');
+    el.setAttribute('aria-label', label);
+    el.setAttribute('role', 'group');
+    const view = dom(el, c);
+    tool.stage = { invalidate: () => view.refresh(), redraw: () => view.refresh() };
+  } else {
+    tool.stage = createStage(find('#stage'), (ctx, size, stage) => paint(ctx, stage), { label });
+    if (setup) tool.extra = setup(tool.stage, c);
+    paint = (ctx, stage) => draw(ctx, stage, c, tool.extra);
+  }
   const formula = tex ? liveFormula(find('#formula'), tex) : null;
   const repaint = () => {
     if (formula) formula.update(state);

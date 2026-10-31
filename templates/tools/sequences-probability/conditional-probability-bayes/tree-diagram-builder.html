@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A tree keeps every case in view. Multiply along a branch, add across branches.{% endblock %}
+{% block why_text %}Each path is one story, and along it P(A ∩ B) = P(A)P(B | A), so we multiply. Different paths can't both happen, so we add them. All the ends together must make 1.{% endblock %}
+{% block try_items %}
+<li>Follow AB and check its product by hand.</li>
+<li>Find P(B) by adding the two paths that end in B.</li>
+<li>Set P(B | A) = P(B | A′). What does that say about A and B?</li>
+{% endblock %}

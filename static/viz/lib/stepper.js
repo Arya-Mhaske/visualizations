@@ -11,7 +11,7 @@ export function createStepper({ stage, panel, state, controls = [], steps, onCha
   list.className = 'viz-worked';
   list.setAttribute('aria-label', 'Worked steps');
   stage.appendChild(list);
-  let shown = 1;
+  let shown = 2;
 
   function render() {
     const all = steps(state);
@@ -33,7 +33,7 @@ export function createStepper({ stage, panel, state, controls = [], steps, onCha
     row: [
       { button: 'Next step', onClick() { shown++; render(); } },
       { button: 'Show all', ghost: true, onClick() { shown = Infinity; render(); } },
-      { button: 'Start again', ghost: true, onClick() { shown = 1; render(); } },
+      { button: 'Start again', ghost: true, onClick() { shown = 2; render(); } },
     ],
   }], () => {
     onChange(state);
