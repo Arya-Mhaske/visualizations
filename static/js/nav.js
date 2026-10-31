@@ -1,4 +1,4 @@
-// On phones, hide the sticky navbar while scrolling down and bring it back on scroll up.
+// On every device, hide the sticky navbar while scrolling down and bring it back on scroll up.
 const nav = document.querySelector('.nb-nav');
 if (nav) {
   let lastY = window.scrollY;
