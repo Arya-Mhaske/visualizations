@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A factor can only change sign at its own zero, so you need only test one point in each region.{% endblock %}
+{% block why_text %}Each factor (x − r) is negative to the left of r and positive to the right, and it changes sign only at r. So a product can change sign only where one of its factors is zero (or, for a rational expression, where the denominator is zero). Between two critical points the sign never changes, so one test point tells you the sign of the whole region. A squared factor such as (x − 2)² never changes sign at all.{% endblock %}
+{% block try_items %}
+<li>Choose the first expression. How many regions need testing, and what are their signs?</li>
+<li>Choose (x − 2)²(x + 1). Why does the sign not change at 2?</li>
+<li>Choose the rational expression. What is different about the dots at 1 and 3?</li>
+{% endblock %}

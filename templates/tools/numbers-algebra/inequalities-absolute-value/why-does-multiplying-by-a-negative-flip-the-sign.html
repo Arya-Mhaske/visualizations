@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Multiply two points by a number and watch whether the left one stays on the left.{% endblock %}
+{% block why_text %}Multiplying by a positive number stretches the number line from zero, so points keep their order. Multiplying by a negative number stretches it and also reflects it through zero, so left and right swap. That is the only reason the inequality sign flips. Multiplying by zero squashes everything to zero, and the inequality becomes an equality.{% endblock %}
+{% block try_items %}
+<li>Set k = 2. Does a stay left of b?</li>
+<li>Set k = −1. What happens to the order, and where does each point go?</li>
+<li>Set k = 0. What is left of the inequality?</li>
+{% endblock %}

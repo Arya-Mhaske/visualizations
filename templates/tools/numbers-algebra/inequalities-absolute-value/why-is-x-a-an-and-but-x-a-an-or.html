@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}"Within a of 0" is one band. "More than a away" is two rays, one on each side.{% endblock %}
+{% block why_text %}|x| is the distance of x from 0. Within a means x is above −a and also below a, so both tests must pass: AND. More than a away means x is below −a or above a, so just one test has to pass: OR. The picture makes this obvious: the band is one piece, and the far region is in two pieces that cannot be joined.{% endblock %}
+{% block try_items %}
+<li>Choose |x| < a and drag x outside the band. Which test fails?</li>
+<li>Choose |x| > a and put x in the middle. How many tests pass?</li>
+<li>Can any x be both below −a and above a? What does that tell you about "and" for |x| > a?</li>
+{% endblock %}

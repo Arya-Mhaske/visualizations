@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}A part is 5.00 ± 0.02 cm. Write it as |x − 5| ≤ 0.02 and test the parts.{% endblock %}
+{% block why_text %}|x − 5| ≤ 0.02 means the length is within 0.02 cm of the target, which is the same as 4.98 ≤ x ≤ 5.02. The ends are included, because ≤ keeps them. A part just outside the band is rejected, even by a hair. A tighter tolerance means a narrower band and more rejected parts.{% endblock %}
+{% block try_items %}
+<li>With a tolerance of 0.02, how many parts are accepted? Which are on the edge?</li>
+<li>Tighten the tolerance to 0.01. How many pass now?</li>
+<li>Move the target. Does the same part always pass?</li>
+{% endblock %}

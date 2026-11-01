@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Where is the parabola above the axis, and where is it below? The roots are the boundary.{% endblock %}
+{% block why_text %}ax² + bx + c > 0 asks where the graph is above the x-axis, and < 0 asks where it is below. The roots are where it crosses, so they are the end points. For a > 0 the graph is above outside the roots and below between them. A closed dot means the root itself is included (≥ or ≤), and an open dot means it is not.{% endblock %}
+{% block try_items %}
+<li>Use a = 1, b = −1, c = −6. Where is y > 0? Where is y < 0?</li>
+<li>Flip a to −1. What happens to the two answers?</li>
+<li>Raise c until the parabola never touches the axis. What is the solution to y > 0 now?</li>
+{% endblock %}

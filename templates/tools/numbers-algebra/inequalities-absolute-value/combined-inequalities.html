@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Solve a < mx + k ≤ b by doing the same thing to all three parts, then read the interval off.{% endblock %}
+{% block why_text %}A combined inequality is two inequalities that must both hold. Doing the same step to all three parts keeps both true. The only trap is multiplying or dividing by a negative number, which flips the signs and swaps the ends. The answer is an interval, and the brackets say which ends are included.{% endblock %}
+{% block try_items %}
+<li>Use 3 < 2x + 1 ≤ 9. What is the interval?</li>
+<li>Set m = −2. What happens to the order of the ends?</li>
+<li>Which end of the interval is open, and which is closed, and why?</li>
+{% endblock %}

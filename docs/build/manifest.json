@@ -3559,49 +3559,49 @@
 "archetype": "discrete",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/why-multiply-by-the-conjugate-to-divide": {
 "archetype": "rays",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/why-do-complex-roots-come-in-conjugate-pairs": {
 "archetype": "rays",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/why-do-the-powers-of-i-cycle": {
 "archetype": "discrete",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/why-can-t-we-say-one-complex-number-is-bigger-than-another": {
 "archetype": "discrete",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/complex-arithmetic-on-the-plane": {
 "archetype": "stepper",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/solve-quadratics-in-the-complex-numbers": {
 "archetype": "stepper",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/modulus-and-argument-on-the-argand-plane": {
 "archetype": "stepper",
 "priority": 25,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/why-do-the-same-thing-to-both-sides": {
 "archetype": "discrete",
@@ -3649,97 +3649,97 @@
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/why-does-the-discriminant-count-the-roots": {
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/why-are-the-sum-and-product-of-roots-b-a-and-c-a": {
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/why-do-radical-equations-give-extraneous-roots": {
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/choose-a-method-factor-complete-or-formula": {
 "archetype": "stepper",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/equations-quadratic-in-form": {
 "archetype": "stepper",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/when-does-the-ball-land": {
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/a-babylonian-problem-solved-with-geometry": {
 "archetype": "discrete",
 "priority": 27,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/why-does-multiplying-by-a-negative-flip-the-sign": {
 "archetype": "discrete",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/why-is-x-a-an-and-but-x-a-an-or": {
 "archetype": "rays",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/why-do-sign-charts-work": {
 "archetype": "discrete",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/quadratic-inequality-above-or-below-the-axis": {
 "archetype": "discrete",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/why-is-a-b-a-b": {
 "archetype": "discrete",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/combined-inequalities": {
 "archetype": "stepper",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/absolute-value-equations-two-cases": {
 "archetype": "rays",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/inequalities-absolute-value/machining-tolerance": {
 "archetype": "discrete",
 "priority": 29,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/variation/why-does-direct-variation-pass-through-the-origin": {
 "archetype": "discrete",
@@ -4754,73 +4754,73 @@
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/identity-vs-equation-true-everywhere-or-somewhere": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-cos-a-b-cos-a-cos-b-sin-a-sin-b": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-sin-a-b-sin-a-cos-b-cos-a-sin-b": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-isn-t-sin-a-b-sin-a-sin-b": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-double-angle-formulas": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-do-half-angle-formulas-have": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-can-products-become-sums": {
-"archetype": "phasor",
+"archetype": "plot",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-is-m-sin-bt-n-cos-bt-a-single-sine": {
-"archetype": "phasor",
+"archetype": "plot",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-is-arccos-t-arcsin-t-pi-2": {
 "archetype": "geometry",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/identity-verifier-sandbox": {
-"archetype": "phasor",
+"archetype": "plot",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/all-six-from-one": {
 "archetype": "stepper",
 "priority": 23,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-can-t-sine-be-inverted-as-it-is": {
 "archetype": "geometry",

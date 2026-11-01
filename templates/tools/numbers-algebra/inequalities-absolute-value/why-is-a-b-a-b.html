@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Walk a, then walk b. You end no farther from zero than the two walks added up.{% endblock %}
+{% block why_text %}Walk a from zero, then walk b more. If both walks go the same way, the distance you end up from zero is exactly |a| + |b|. If they go opposite ways, part of the second walk undoes the first, so you end up nearer. You can never end up farther than the total length walked. That is |a + b| ≤ |a| + |b|.{% endblock %}
+{% block try_items %}
+<li>Set a = 3 and b = 2. Is the gap zero?</li>
+<li>Set a = 3 and b = −3. How far from zero do you finish?</li>
+<li>Find a and b where |a + b| is exactly |a| + |b|. What do they have in common?</li>
+{% endblock %}
