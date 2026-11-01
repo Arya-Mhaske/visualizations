@@ -49,7 +49,7 @@ with a `readout` entry, `liveFormula(el, build)`. Call `formula.update(state)` a
 | geometry | draggable points, lines, arcs | `stage` `handles`, `draw`, `vec` |
 | plot | function graphs with sliders | `plot` |
 | sim | time-stepped physics | `sim`, `plot` |
-| rays | optics, field lines | to be written (first optics box) |
+| rays | optics; field lines still to come | `rays` |
 | phasor | rotating vectors, AC | `phasor`, `sim` (`createClock`); AC parts still to come |
 | space3d | 3D scenes | `project3d`, `vec` |
 | chance | sampling with a seeded generator | `rng` |
@@ -79,6 +79,7 @@ Each file's header comment is its documentation.
 - `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
 - `tool.js`: `createTool`
 - `circuit.js`: `solveLinear`, `solveCircuit` (exact DC nodal solver), `resistor`, `cell`, `flowDots`
+- `rays.js`: `reflect`, `refract`, `hitCircle`, `axisCrossing`, `unit`, `createBench` (equal-scale optical bench: `axis`, `mark`, `object`, `mirror`, `ray`, `rayTo`)
 - `timeline.js`: `createTimeline` (a looping `state.t` shared by a time slider and Play; for exact-formula animations)
 - `draw.js`'s neighbour `docs/build/sheet.py` makes the contact sheet for a box
 - `colors.js`: `readColors`
@@ -171,6 +172,11 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - A computed zero is not zero: a balanced bridge read 1.78 ×10⁻¹⁴ mA. Snap it in the maths, and test with `assertEqual`, not `assertAlmostEqual`.
 - `createStage` calls `draw(ctx, size, stage)`, and `createTool` hides that. A bare `createStage` with the wrong arguments draws nothing and still passes `smoke_tools`,
   which only measures ink on the whole stage. A canvas inside a flow stage goes in `.viz-figure`. Contact sheets show only the default: drive the toggles and presets too, as that is where the zero and the crowded bridge showed up.
+- `circuit.js` is linear DC only. `rectifiers` and `p-n-junction-diode` need a diode, and `loops-meters` needs galvanometer and meter symbols (the bridge draws its own in `drawMeter`): extend it there.
+- `lib/rays.js` uses NCERT's Cartesian signs: pole at 0, light along +x, `refract` is ready for the next optics boxes and tested on Snell and the critical angle. `_mirrors-math.js` has `imageOf`, `describe`, `region`, `exactRay` (a true
+  sphere), `principalRays` (paraxial), `triangles`, and `fieldEdge`/`firstSeen` (a mirror's field of view); `_mirrors-view.js` has `drawBench` and `drawScene`. Lenses can copy the shape of both.
+- Paraxial rays turn at the plane x = 0, so a truly curved mirror leaves them crossing the glass: draw the mirror much flatter than it is and say so. Only `why-is-f-r-2-for-a-mirror` uses the true sphere.
+- An unsigned mirror formula gets concave sizes right and convex sizes wrong. Dropping signs is only visibly wrong on a convex mirror, so that is the sign tool's default.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -332,7 +338,7 @@ it reaches the front of the queue.
 | 146 | `integrals/integration-by-parts` | 4 | 1 | |
 | 147 | `induction-ac-em/electromagnetic-waves` | 6 | 1 | |
 | 148 | `integrals/trig-integrals-substitution` | 5 | 1 | |
-| 149 | `optics/mirrors` | 5 | 1 | |
+| 149 | `optics/mirrors` | 5 | 1 | ✓ |
 | 150 | `integrals/partial-fractions-strategy` | 6 | 1 | |
 | 151 | `optics/refraction-total-internal-reflection` | 5 | 1 | |
 | 152 | `integral-applications/area-between-curves` | 5 | 1 | |

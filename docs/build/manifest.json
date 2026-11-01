@@ -2760,31 +2760,31 @@
 "archetype": "rays",
 "priority": 152,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/mirrors/why-1-v-1-u-1-f": {
 "archetype": "rays",
 "priority": 152,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/mirrors/why-a-sign-convention": {
 "archetype": "rays",
 "priority": 152,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/mirrors/ray-diagram-builder": {
 "archetype": "rays",
 "priority": 152,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/mirrors/shaving-mirrors-and-rear-view-mirrors": {
 "archetype": "rays",
 "priority": 152,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/refraction-total-internal-reflection/why-does-light-bend-at-a-boundary": {
 "archetype": "rays",

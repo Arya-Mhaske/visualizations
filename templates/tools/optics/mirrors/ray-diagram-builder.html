@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag the object along the axis. Any two rays from its tip fix the image, and the mirror equation gives the same answer.{% endblock %}
+{% block why_text %}A ray that is easy to predict needs no calculation: parallel rays leave through F, rays through F leave parallel, and rays through C come straight back. Solid lines meet at a real image. Dashed lines only seem to meet, which gives a virtual image.{% endblock %}
+{% block try_items %}
+<li>Walk the object from far away to P on the concave mirror. Where does the image turn from real to virtual?</li>
+<li>Put the object exactly at C, then at F. What happens each time?</li>
+<li>Turn off one ray. Do the other two still find the image?</li>
+<li>On the convex mirror, can you ever get a real image?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The mirror is drawn much flatter than its true curve, and the rays turn at the plane through P. This is the paraxial picture the equation assumes.
+</div>
+{% endblock %}

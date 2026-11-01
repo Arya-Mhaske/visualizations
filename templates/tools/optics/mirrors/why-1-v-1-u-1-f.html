@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two rays fix the image, and each pair of rays makes similar triangles. Look at the pair at P, then the pair at F, then join them.{% endblock %}
+{% block why_text %}Both pairs of triangles have the same ratio on one side, A′B′/AB, because PM equals AB. So their other ratios must be equal too: B′P/BP = B′F/FP. Write those lengths with signs, divide by v, and the mirror equation drops out. It is not a new law. It is just the shape of the ray diagram.{% endblock %}
+{% block try_items %}
+<li>On step 1, drag the arrow. Do A′B′/AB and B′P/BP ever differ?</li>
+<li>Do the same on step 2. Which ratio is equal to the same number?</li>
+<li>On step 3, compare 1/v + 1/u with 1/f as you drag.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This uses paraxial rays, as NCERT does: the curve at M is treated as flat, so PM = AB. The lengths in the triangles are positive. In signs, B′P = −v, BP = −u, FP = −f and B′F = f − v.
+</div>
+{% endblock %}

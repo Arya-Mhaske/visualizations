@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Send a parallel beam at a curved mirror and see where each ray crosses the axis. Then drag one ray and look at the shaded triangle.{% endblock %}
+{% block why_text %}The radius at any point is the normal there, so the ray turns by equal angles θ about it. That makes the shaded triangle isosceles: its two equal sides meet at the crossing point. Close to the axis, one of those sides is almost the distance from the pole, so the crossing point falls halfway along R. That is why f = R/2.{% endblock %}
+{% block try_items %}
+<li>Drag the ray close to the axis. How small does Miss get?</li>
+<li>Drag it far out. Which way does the crossing point move?</li>
+<li>Turn on the whole beam. Where do the crossings bunch up?</li>
+<li>Switch to Convex. Where do the reflected rays seem to come from?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  f = R/2 holds only for rays near the axis, which NCERT calls paraxial rays. Rays far out cross closer to the mirror. This is why a wide spherical mirror gives a slightly blurred focus, and why a dish uses a parabola.
+</div>
+{% endblock %}
