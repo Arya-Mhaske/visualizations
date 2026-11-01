@@ -40,7 +40,7 @@ const tool = createTool({
     cam.label('a', a.map((v) => v * 1.1), { size: 13, color: c.a });
     cam.label('b', b.map((v) => v * 1.1), { size: 13, color: c.b });
     curl(cam, c, p, q, 1.6, c.ink);
-    const tip = [0, 0, Math.sign(n[2]) * 3];
+    const tip = [0, 0, n[2] / 4];   // length follows |a × b| = 12 sin θ (one unit per 4)
     cam.line(O, neg(tip), { color: c.grid, width: 2, dash: [5, 4] });
     if (n[2] !== 0) {
       cam.arrow(O, tip, { color: c.c, width: 6 });
