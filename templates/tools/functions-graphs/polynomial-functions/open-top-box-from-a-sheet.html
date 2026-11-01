@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Cut corners of size x; the volume is a cubic with a best x.{% endblock %}
+{% block why_text %}Cutting squares of side x from a flat sheet and folding up the sides makes a box with volume x(L − 2x)(W − 2x). This is a cubic in x. Small x makes a flat box, large x makes a thin tall one, and the best volume is at a turning point in between.{% endblock %}
+{% block try_items %}
+<li>Slide the cut from 1 to 11. Where is the volume largest?</li>
+<li>Make the sheet bigger. Does the best cut change?</li>
+<li>What is the volume at x = 0 and x = W/2?</li>
+{% endblock %}

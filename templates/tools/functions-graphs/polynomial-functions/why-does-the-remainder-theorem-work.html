@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Plug c into P(x) = (x − c)Q(x) + R and the first term vanishes.{% endblock %}
+{% block why_text %}Dividing P by x − c gives P(x) = (x − c)Q(x) + R with R a constant. Putting x = c makes (x − c) zero, so the whole first term disappears and P(c) = R. The remainder is the value of the polynomial at c. If it is 0, x − c is a factor.{% endblock %}
+{% block try_items %}
+<li>Choose c so that the remainder is 0. What does the graph do there?</li>
+<li>Compare R with the height of the marker.</li>
+<li>Change a coefficient. Does the connection hold?</li>
+{% endblock %}

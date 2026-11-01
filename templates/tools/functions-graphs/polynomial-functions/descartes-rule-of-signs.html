@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Count sign changes and compare with the actual positive roots.{% endblock %}
+{% block why_text %}The rule says the number of positive roots is the number of sign changes in the coefficients, or less by an even number. Applying it to P(−x) bounds the negative roots. It is shown here, not proved. It never gives an exact answer but often narrows the search.{% endblock %}
+{% block try_items %}
+<li>Choose x³ − 6x² + 11x − 6. How many sign changes?</li>
+<li>Choose x³ + x² + x + 1. Why are there no positive roots?</li>
+<li>Is the number of roots always equal to the sign changes?</li>
+{% endblock %}

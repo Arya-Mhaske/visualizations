@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Halve an interval where the sign changes until the root is pinned.{% endblock %}
+{% block why_text %}A continuous function that is negative at one end of an interval and positive at the other must cross zero in between. Test the middle: whichever half still has a sign change contains a root. Repeating halves the interval each time, so after ten steps you know the root to about three decimal places.{% endblock %}
+{% block try_items %}
+<li>Step through ten halvings. How wide is the interval then?</li>
+<li>Why must the root stay inside the interval?</li>
+<li>Would the method work on a function with a jump?</li>
+{% endblock %}

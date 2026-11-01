@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}See that p must divide the constant and q the leading coefficient.{% endblock %}
+{% block why_text %}Put x = p/q into the polynomial and multiply by qⁿ. Every term becomes a whole number, and the only term not divisible by q is the one with the constant, so q must divide the leading coefficient, and similarly p must divide the constant. That cuts the candidates down to a short list.{% endblock %}
+{% block try_items %}
+<li>Choose 2x³ − 3x² − 11x + 6. How many candidates are there, and how many are roots?</li>
+<li>Choose the one with no rational root. What do the candidates show?</li>
+<li>Check one candidate on the graph.</li>
+{% endblock %}

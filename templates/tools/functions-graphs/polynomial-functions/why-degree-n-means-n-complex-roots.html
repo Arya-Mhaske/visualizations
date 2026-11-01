@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Peel off one factor at a time until nothing is left.{% endblock %}
+{% block why_text %}The Fundamental Theorem of Algebra says every polynomial of degree 1 or more has a root in the complex numbers. Divide it out and you are left with a polynomial of degree one less, which has a root in turn. Repeating gives n roots, counting repeats.{% endblock %}
+{% block try_items %}
+<li>Peel one factor at a time. How does the degree change?</li>
+<li>Choose x⁴ − 1. What are its four roots?</li>
+<li>Where do the complex roots lie in pairs?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The theorem is stated here and illustrated, not proved. The roots are computed numerically.
+</div>
+{% endblock %}

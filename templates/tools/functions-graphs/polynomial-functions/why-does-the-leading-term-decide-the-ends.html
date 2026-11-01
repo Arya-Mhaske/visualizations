@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Zoom out until xⁿ swamps every other term.{% endblock %}
+{% block why_text %}For large x the highest power grows faster than all the rest, so the other terms become a negligible part of the total. The ratio of the polynomial to its leading term tends to 1. So the ends of the graph follow the leading term: its sign and whether the degree is odd or even decide which way each end points.{% endblock %}
+{% block try_items %}
+<li>Zoom out on the cubic. Do the curves come together?</li>
+<li>Choose the quartic with a negative leading coefficient. Which way do both ends point?</li>
+<li>Watch the ratio. How close to 1 does it get?</li>
+{% endblock %}

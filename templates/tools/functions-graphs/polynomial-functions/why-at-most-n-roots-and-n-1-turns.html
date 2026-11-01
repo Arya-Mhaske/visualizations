@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Build a degree-n polynomial from its factors and count.{% endblock %}
+{% block why_text %}A degree n polynomial has n linear factors over the complex numbers; real roots come from the real ones, and the others come in complex pairs. So there are at most n real roots. The graph turns where the slope, a polynomial of degree n − 1, changes sign, so there are at most n − 1 turns.{% endblock %}
+{% block try_items %}
+<li>Set degree 5 and 5 real roots. How many turns?</li>
+<li>Reduce the real roots by 2. What happens to the turns?</li>
+<li>Can you ever beat n − 1 turns?</li>
+{% endblock %}

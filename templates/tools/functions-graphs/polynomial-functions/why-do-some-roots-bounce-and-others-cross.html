@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Change the multiplicity: (x − a)² can't change sign.{% endblock %}
+{% block why_text %}Near a root a the polynomial behaves like (x − a) raised to its multiplicity. An odd power changes sign on either side, so the graph crosses. An even power is never negative, so the graph touches the axis and bounces back. A bigger multiplicity makes the graph flatter where it meets the axis.{% endblock %}
+{% block try_items %}
+<li>Set every multiplicity to 1. Does the graph cross at each root?</li>
+<li>Set the root at 1 to multiplicity 2. What happens there?</li>
+<li>Set it to 3. How does the crossing look?</li>
+{% endblock %}

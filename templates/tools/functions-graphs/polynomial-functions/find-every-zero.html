@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}List candidates, use synthetic division, then finish with the quadratic formula.{% endblock %}
+{% block why_text %}First list the possible rational roots. Test them by synthetic division: a zero remainder means a root and gives a smaller polynomial. Keep going until a quadratic is left, then use the quadratic formula for the rest, which may be complex.{% endblock %}
+{% block try_items %}
+<li>Step through the first polynomial. Which candidate works first?</li>
+<li>Try the fourth one. Which roots are not real?</li>
+<li>Check the real zeros on the graph.</li>
+{% endblock %}
