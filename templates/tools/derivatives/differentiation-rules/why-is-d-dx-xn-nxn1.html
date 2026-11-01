@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Grow a square of side x by dx. The new area is about 2x·dx. A cube grows on three faces.{% endblock %}
+{% block why_text %}A square of side x grows by two strips of area x·dx and a tiny corner dx². Dividing by dx and letting dx shrink leaves 2x, the derivative of x². In general (x + dx)ⁿ − xⁿ has a first piece n·xⁿ⁻¹·dx and then smaller pieces with dx² and higher powers. Divide by dx and those vanish, leaving n·xⁿ⁻¹.{% endblock %}
+{% block try_items %}
+<li>With n = 2, make dx tiny. How big is the corner compared with the strips?</li>
+<li>Set n = 3. How many pieces are there, and which is largest?</li>
+<li>Raise n to 5. What share does the first piece have at dx = 0.1?</li>
+{% endblock %}

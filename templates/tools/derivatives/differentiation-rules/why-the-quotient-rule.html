@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build it from the product rule applied to u = (u/v)·v.{% endblock %}
+{% block why_text %}Write u as the product (u/v)·v. The product rule gives u′ = (u/v)′ v + (u/v) v′. Solve for (u/v)′: it is (u′ − (u/v) v′)/v, which simplifies to (u′v − uv′)/v². The tool checks it against a measured slope, and shows that the tempting u′/v′ is wrong.{% endblock %}
+{% block try_items %}
+<li>Compare the measured slope and the formula for x² ÷ (x + 1). Do they agree?</li>
+<li>Compare with the tempting guess u′ ÷ v′. How far off is it?</li>
+<li>Try sin x ÷ x at x = 2.</li>
+{% endblock %}

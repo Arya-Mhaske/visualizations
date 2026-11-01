@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Try bases 2, 2.5, 3 and find the one whose slope at 0 is exactly 1.{% endblock %}
+{% block why_text %}Every exponential b^x has a tangent at x = 0, and its slope depends on b. For b = 2 the slope is below 1, for b = 3 it is above 1. There is one base in between where the slope is exactly 1. That base is called e, about 2.718. For it, the slope at every point equals the height there, so the function is its own derivative.{% endblock %}
+{% block try_items %}
+<li>Slide b from 2 to 3. Where does the tangent match the dashed line?</li>
+<li>Press b = e. What is the slope?</li>
+<li>Why is the slope at x = 0 equal to ln b?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The slope of b^x at 0 is ln b. The tool shows it directly. The fact that it is exactly 1 for b = e is the definition of e used here.
+</div>
+{% endblock %}

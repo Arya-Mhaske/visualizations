@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Join track pieces so that heights and slopes match and the ride is smooth.{% endblock %}
+{% block why_text %}Two pieces of track join smoothly only if their heights match, which avoids a step, and their slopes match, which avoids a kink. For a really smooth ride the curvatures should match too, otherwise the rider feels a jolt. These are conditions on the function, its first derivative and its second derivative.{% endblock %}
+{% block try_items %}
+<li>Match the height first. What does the ride show?</li>
+<li>Now match the slope. Is the ride smooth yet?</li>
+<li>Match the curvature too. What changes?</li>
+{% endblock %}
