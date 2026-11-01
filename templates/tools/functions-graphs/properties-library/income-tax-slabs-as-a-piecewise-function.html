@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Enter an income and read the tax. The graph is a chain of straight pieces, one for each slab.{% endblock %}
+{% block why_text %}Each slab taxes only the rupees inside it, at its own rate. So the tax rises along a straight piece, and the slope of that piece is the slab's rate. When income enters the next slab, the slope steps up. There is no jump, because the graph is joined, and your average rate is always lower than the rate on your last rupee.{% endblock %}
+{% block try_items %}
+<li>Set the income to ₹10 lakh. Add the tax slab by slab by hand. Does it match the readout?</li>
+<li>Raise the income by ₹1 lakh across the ₹12 lakh mark. By how much does the tax rise on each side?</li>
+<li>Find an income where the average rate is 10%. Is the rate on the next rupee higher or lower?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  These slabs are an example, based on India's new tax regime for 2025–26. Real tax also has a rebate, a cess and a surcharge, and the slabs change from year to year. Check the current rules before relying on any figure here.
+</div>
+{% endblock %}

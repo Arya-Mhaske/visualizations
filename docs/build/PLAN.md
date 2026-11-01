@@ -229,6 +229,9 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   `FNS`/`quotient`/`shiftGap`, `PAIRS`/`sameFunction` (a hole is a domain difference, checked on a grid of exact hundredths), relation counts and `presetTicks`, `RULES`/`table`, and `GRAPHS` (pieces with open or closed ends) with
   `domainIntervals`, `rangeOf`, `solutions`. Reuse `GRAPHS` pieces in `properties-library`. Give a formula's TeX as a field next to its plain text; chaining `.replace` on the plain text produced invalid TeX on the first try.
   Built without screenshots or test runs, by request.
+- `functions-graphs/_properties-library-math.js`: `parityOf` (the domain must be symmetric too, so √x is neither), `mirrorY`/`halfTurn`, `SHAPES`/`turningPoints`/`stretches` (exact slopes, bisected sign changes),
+  `LIBRARY` of eight parents with `increasingOn`, `buildPieces`/`coefficients` (three straight pieces, a jump at each break and an owner for each break point), `MOTIONS`/`averageRate`, and the tax `SLABS`/`tax`/`marginalRate`.
+  The tax slabs are the 2025–26 new-regime example in lakh rupees, and the page says they are illustrative. Check that a plot window holds the curve at the slider's ends: first guesses for the cubic and x³ did not.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -249,7 +252,7 @@ it reaches the front of the queue.
 | 5 | `measurement-motion/uniform-acceleration` | 8 | 1 | |
 | 6 | `functions-graphs/what-is-a-function` | 8 | 1 | ✓ |
 | 7 | `measurement-motion/vectors` | 7 | 1 | |
-| 8 | `functions-graphs/properties-library` | 7 | 1 | |
+| 8 | `functions-graphs/properties-library` | 7 | 1 | ✓ |
 | 9 | `measurement-motion/projectiles` | 9 | 1 | |
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | |

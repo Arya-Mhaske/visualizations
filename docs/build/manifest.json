@@ -3922,46 +3922,46 @@
 "reviewed": true
 },
 "functions-graphs/properties-library/why-are-even-functions-mirror-images": {
-"archetype": "rays",
+"archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/why-are-turning-points-where-max-and-min-live": {
 "archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/the-library-of-parent-functions": {
 "archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/why-does-the-greatest-integer-function-jump": {
 "archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/piecewise-function-builder": {
-"archetype": "stepper",
+"archetype": "geometry",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/average-rate-of-change": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/income-tax-slabs-as-a-piecewise-function": {
 "archetype": "plot",
 "priority": 11,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/why-does-f-x-2-move-the-graph-right": {
 "archetype": "plot",

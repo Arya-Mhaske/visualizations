@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}⌊x⌋ means the greatest whole number that is not above x. Slide x slowly across 2 and watch the output.{% endblock %}
+{% block why_text %}The output only counts whole steps. Until x reaches the next whole number, ⌊x⌋ stays on the old one. The moment x reaches it, the answer goes up by one with nothing in between. That is why the graph is a staircase, and why the end dot on the left of each step is empty and on the right is filled.{% endblock %}
+{% block try_items %}
+<li>Start at x = 1.5. Slide up to 2. At which exact value does ⌊x⌋ change?</li>
+<li>Compare ⌊x⌋ with "a hair to the left" at x = 2. What are they?</li>
+<li>Try negative numbers. What is ⌊−1.5⌋? Is it −1 or −2?</li>
+{% endblock %}

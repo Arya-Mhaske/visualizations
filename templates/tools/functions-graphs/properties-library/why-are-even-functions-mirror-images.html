@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Flip the graph in the y-axis, or turn it half a turn about the origin. See which functions land on themselves.{% endblock %}
+{% block why_text %}f(−x) = f(x) says the height at −x equals the height at x. That is a mirror image across the y-axis, so such a function is called even. f(−x) = −f(x) says the height at −x is the opposite of the height at x. That is a half-turn about the origin, and such a function is odd. Most functions are neither.{% endblock %}
+{% block try_items %}
+<li>Choose x² with the mirror. Does the dashed copy sit on the graph? Try the half-turn.</li>
+<li>Choose x³, then sin x. Which move makes them match?</li>
+<li>Choose x² + x. Does any move work? What is f(a) compared with f(−a)?</li>
+{% endblock %}

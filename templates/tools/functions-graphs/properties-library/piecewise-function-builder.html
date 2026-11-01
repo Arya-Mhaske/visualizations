@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut the x-axis into three intervals and give each a straight rule. Choose which piece owns each break point.{% endblock %}
+{% block why_text %}A piecewise function is one function with different rules on different intervals. At a break point it must give exactly one answer, so only one piece may own that point. A filled dot says "this piece owns it". An empty dot says "this piece stops just short". With a jump of 0 the two dots sit on top of each other and the graph is joined.{% endblock %}
+{% block try_items %}
+<li>Set both jumps to 0. Is the graph one unbroken line? What happens to f(b₁)?</li>
+<li>Set a jump at b₁. Move the b₁ toggle. Which dot fills in, and what does f(b₁) become?</li>
+<li>Build a graph shaped like the letter V, using only slopes and break points.</li>
+{% endblock %}
