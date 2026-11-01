@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Trap x² sin(1/x) between −x² and x². Both walls squeeze to 0.{% endblock %}
+{% block why_text %}The sine factor is always between −1 and 1, so x² sin(1/x) is always between −x² and x². Both of those walls go to 0 at x = 0. Anything trapped between two things that meet must go to the same place. The wiggling sine cannot stop the product from being squeezed to 0.{% endblock %}
+{% block try_items %}
+<li>Zoom in. Does the coral graph ever leave the blue walls?</li>
+<li>How big can the coral graph be at x = 0.1?</li>
+<li>Why does the same trick fail for sin(1/x) alone?</li>
+{% endblock %}

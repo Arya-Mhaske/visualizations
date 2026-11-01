@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}For a polynomial the graph has no gap or jump, so the limit is just the value.{% endblock %}
+{% block why_text %}A polynomial is built from sums and products of x, which behave nicely, so its graph is one unbroken curve. The values on either side of a point head for the value at the point. This is what being continuous means. A graph with a hole or a jump is not like that, and substituting can fail.{% endblock %}
+{% block try_items %}
+<li>Choose the polynomial and move a. Does the substituted value ever differ from the neighbours?</li>
+<li>Choose the hole graph and set a = 1. What does substitution give?</li>
+<li>Choose the jump graph and set a = 1. What are the left and right values?</li>
+{% endblock %}

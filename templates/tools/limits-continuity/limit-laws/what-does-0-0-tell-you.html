@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}A fraction that is 0/0 at a point is a hole in disguise. Cancel the factor to find its height.{% endblock %}
+{% block why_text %}0/0 tells you that top and bottom share a factor that is zero at that point. It does not mean the limit is 0, or that the limit does not exist. Factor and cancel the shared factor: what remains is a simpler function that agrees with the original everywhere except at that point. Its value there is the height of the hole, and that is the limit.{% endblock %}
+{% block try_items %}
+<li>Press the cancel switch. What line appears?</li>
+<li>Change the second factor. How does the hole move up and down?</li>
+<li>Make the two factors the same. What is the graph now?</li>
+{% endblock %}

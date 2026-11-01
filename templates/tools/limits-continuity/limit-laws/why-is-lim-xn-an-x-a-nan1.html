@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Factor xⁿ − aⁿ and the hole in the fraction fills with n terms, each equal to aⁿ⁻¹.{% endblock %}
+{% block why_text %}xⁿ − aⁿ = (x − a)(xⁿ⁻¹ + xⁿ⁻²a + … + aⁿ⁻¹). Divide by (x − a) and the factor cancels for x ≠ a. What is left is a sum of n terms, and putting x = a makes each term aⁿ⁻¹. So the limit is n times aⁿ⁻¹. This is the derivative of xⁿ at a.{% endblock %}
+{% block try_items %}
+<li>Set n = 2. What is the limit, and what is the sum?</li>
+<li>Double a. What happens to the limit for n = 4?</li>
+<li>Make h very small. Does the fraction match n·aⁿ⁻¹?</li>
+{% endblock %}

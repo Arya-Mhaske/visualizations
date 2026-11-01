@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Multiply by the conjugate to clear a 0/0.{% endblock %}
+{% block why_text %}When a square root is subtracted in a fraction that gives 0/0, multiplying top and bottom by the conjugate (the same terms with a plus) turns the top into a difference of squares with no root. The factor that made it 0 cancels, and the limit can be found by substituting.{% endblock %}
+{% block try_items %}
+<li>Set a = 3. What is the limit?</li>
+<li>Double a. What happens to the limit?</li>
+<li>Check with the h = 0.001 value. Is it close?</li>
+{% endblock %}
