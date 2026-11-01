@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The hours of daylight rise and fall through the year. Fit a sine wave to them and read its constants.{% endblock %}
+{% block why_text %}Daylight repeats once a year because the Earth goes round the Sun once a year, so the period is 12 months. Half the gap between the longest and shortest days is the amplitude A. The average is the middle level B. The month of the longest day fixes the phase φ. Cities nearer the equator have a small A, and cities far from it have a large A.{% endblock %}
+{% block try_items %}
+<li>Choose Delhi. Adjust A, B and φ by hand until the error is small. Then press "Best fit" to compare.</li>
+<li>Compare Thiruvananthapuram with Srinagar. Which has the bigger amplitude, and why?</li>
+<li>Change the period to 10 months. Press "Best fit". Does the error go up or down?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The dots are not measurements. They are calculated from the Sun's position (its declination) on the 15th of each month for the city's latitude, and they ignore refraction and the Sun's size. Real tables from an almanac differ by a few minutes.
+</div>
+{% endblock %}

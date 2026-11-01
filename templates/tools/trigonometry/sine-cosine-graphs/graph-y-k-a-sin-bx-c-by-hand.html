@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose k, A, B and C. Press Next step to find the five key points, then see them land on the live graph.{% endblock %}
+{% block why_text %}A sine wave has a pattern: middle, top, middle, bottom, middle, at four equal steps of a quarter period. So you only need three facts to draw it. The middle line and amplitude give the heights. The period gives the step. Where the cycle starts gives the first x. Everything else is joining the dots.{% endblock %}
+{% block try_items %}
+<li>Start with the defaults. Work out the five x-values yourself before you press Show all.</li>
+<li>Make A negative. Which key point changes, and which stay the same?</li>
+<li>Choose B = 0.5. Do all five key points fit on the graph? Why not?</li>
+{% endblock %}

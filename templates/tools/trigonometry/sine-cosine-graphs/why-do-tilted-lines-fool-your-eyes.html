@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A square lattice of lines looks the same after a quarter turn. So the eye's error should repeat every quarter turn. What kind of curve does that?{% endblock %}
+{% block why_text %}A sine wave sin(Bθ) repeats every 360° ÷ B. For the error to repeat every 90°, B must be 4. That is why the model is d = a + b sin 4θ: b sets the swing, and a is a steady error that shifts the whole curve. The curve's period comes straight from the symmetry of the picture.{% endblock %}
+{% block try_items %}
+<li>Turn the lattice by 90°. Does the picture look the same? What happens to d?</li>
+<li>Look at the four dots on the curve. Why do they all have the same height?</li>
+<li>Change a and b. Which one moves the curve up, and which one makes the swing bigger?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Berliner's experiment found that people misjudge tilt in a pattern like this one. The numbers a and b differ from person to person, and the values here are made up so you can see how the model behaves. They are not measurements.
+</div>
+{% endblock %}

@@ -4553,76 +4553,76 @@
 "reviewed": true
 },
 "trigonometry/sine-cosine-graphs/why-is-the-sine-graph-a-wave": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/why-is-cosine-a-shifted-sine": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/what-does-a-do-amplitude-radius": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/what-does-b-do-why-period-2pi-b": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/what-does-c-do-why-the-shift-is-c-b": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/what-does-k-do": {
-"archetype": "geometry",
+"archetype": "phasor",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/transformation-lab-for-any-graph": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/graph-y-k-a-sin-bx-c-by-hand": {
 "archetype": "stepper",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/find-the-equation-from-a-graph": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/why-does-the-graph-window-matter": {
-"archetype": "chance",
+"archetype": "plot",
 "priority": 19,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/why-do-tilted-lines-fool-your-eyes": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 19,
-"notes": "",
-"reviewed": false
+"notes": "a and b are made-up illustration values, not Berliner data; the page says so.",
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/fit-a-sine-to-real-data": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 19,
-"notes": "",
-"reviewed": false
+"notes": "Daylight hours are computed from solar declination, not measured; the page says so.",
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/why-is-it-called-tangent": {
 "archetype": "geometry",

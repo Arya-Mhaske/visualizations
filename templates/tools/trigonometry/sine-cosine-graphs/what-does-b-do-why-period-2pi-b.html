@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Make the arrow turn B times as fast. How long does one full cycle of the wave take now?{% endblock %}
+{% block why_text %}In y = sin(Bx), the arrow's angle is Bx. It completes a turn when Bx reaches 2π, which happens when x = 2π ÷ B. So a faster arrow (bigger B) goes round sooner, and the cycle is shorter. B does not change the height, only how quickly the wave repeats.{% endblock %}
+{% block try_items %}
+<li>Set B = 2. How long is one cycle? How many cycles fit in 4π?</li>
+<li>Set B = 0.5. What is the period now, and why is it longer than 2π?</li>
+<li>Find B so that the period is exactly π. What does the arrow do in a time of π?</li>
+{% endblock %}

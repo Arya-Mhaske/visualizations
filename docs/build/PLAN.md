@@ -240,7 +240,11 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   Built without screenshots or test runs, by request: look at all twelve pictures, especially the sliding triangles and the sine story.
 - `trigonometry/_unit-circle-math.js` (degrees throughout): `pointAt` (clears rounding noise so an axis is an exact 0), `quadrant` (0 on an axis), `positives` (the ASTC rule, tested against the real signs), `referenceAngle`, `exact(θ)` (all six values at the 17 special angles as
   `[text, number]`, `null` where undefined; the tests parse every text back to a number), `texOf` (an exact text to TeX), `SIDES_AT` (the half-equilateral and half-square triangles), `pointsAtX`, `evaluate`/`usedAngle` (calculator mode). `_unit-circle-view.js`
-  has `frame` (centre, scale and `px`), `drawFrame` and `angleHandle` (a draggable point on the circle with `nudge`). Reuse them in `sine-cosine-graphs`, `tan-cot-sec-csc` and `identities`. Built without screenshots or test runs, by request.
+  has `frame` (centre, scale and `px`), `drawFrame` and `angleHandle` (a draggable point on the circle with `nudge`). Reuse them in `tan-cot-sec-csc` and `identities`. Built without screenshots or test runs, by request.
+- `trigonometry/_sine-cosine-math.js`: `wave`, `period`, `shift` (−C/B), `keyPoints`, `tip` (a spinner of radius |A|; a negative A points the other way, so the height is still A sin), `BASES`/`transformPoint`/`transformed` (any graph through A f(Bx + C) + k), `gap`/`TARGETS`
+  (every target sits on the sliders' grid, tested), `sampledPoints`/`apparentCycles` (aliasing), `tiltError`, and daylight (`declination`, `daylight`, `dataFor`, `leastSquaresSine` by 3 × 3 normal equations, checked against an independent Python solve).
+  `_sine-cosine-view.js` draws the spinner beside the graph on one vertical scale (`makePlot`, `fit`, `drawSpinnerWave`); `fit` re-sets the graph's y range every draw so the circle and the wave stay the same size at any stage width, which limits A to 1.5 on a phone.
+  Reuse the view in `tan-cot-sec-csc`. The tilt tool's a and b and the daylight dots are said on the page to be made-up and calculated, not measured. Built without screenshots or test runs, by request: look at all twelve, especially circle size at 360 px.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -269,7 +273,7 @@ it reaches the front of the queue.
 | 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |
 | 14 | `trigonometry/unit-circle` | 12 | 1 | ✓ |
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | |
-| 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | |
+| 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | ✓ |
 | 17 | `forces-energy/third-law-momentum-conservation` | 7 | 1 | |
 | 18 | `trigonometry/tan-cot-sec-csc` | 9 | 1 | |
 | 19 | `forces-energy/equilibrium-free-body-diagrams` | 5 | 1 | |

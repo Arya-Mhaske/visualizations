@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A graphing tool does not draw a curve. It samples points and joins them. Zoom out and see what that can do.{% endblock %}
+{% block why_text %}If the plotter takes fewer than two samples in each cycle, it cannot tell how many cycles passed between samples. The samples then fit a slower wave just as well as the true one, and that slower wave is what you see. This is called aliasing. A good window shows only a few cycles, so many samples fall in each one.{% endblock %}
+{% block try_items %}
+<li>Start with 3 cycles. Slide up to 20. When does the coral line stop looking like a wave?</li>
+<li>Set 40 samples and 40 cycles. What do you see? Why is it a flat line?</li>
+<li>Set 100 cycles with 40 samples. How many cycles does the plotter show, and how many are really there?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real graphing calculators and apps sample very densely, so you meet this effect only when you zoom out a long way. Film does the same thing: a wheel can seem to turn backwards on screen.
+</div>
+{% endblock %}

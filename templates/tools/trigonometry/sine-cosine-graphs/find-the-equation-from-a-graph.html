@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A target wave is drawn in blue. Adjust A, B, C and k until your wave sits exactly on it, then read off its equation.{% endblock %}
+{% block why_text %}Each constant has a visible job. A is half the distance from the lowest to the highest point. The middle line gives k. The period gives B, since the period is 2π ÷ B. Where a cycle starts gives C, since the start is −C ÷ B. Read the picture in that order and the equation follows, whether the wave is a spring, a sound or a tide.{% endblock %}
+{% block try_items %}
+<li>Read A and k first, from the top and bottom of the target. Then match the period for B.</li>
+<li>Press "New target" a few times. Which constants are easiest to read, and which are hardest?</li>
+<li>Match a target with a negative A. Can you find a different set of constants that gives the same curve?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Different constants can draw the same curve. For example, a negative A gives the same wave as a positive A with C moved by π. The tool checks whether the curves match, not whether the numbers are the same.
+</div>
+{% endblock %}
