@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A source moves away while it sends out wavefronts. Each front is a circle centred where the source was when it was emitted. See how far apart they land.{% endblock %}
+{% block why_text %}Each new front starts further from the observer than the last one, so the fronts arrive further apart. The observed wavelength is longer by the fraction v ÷ c, which shifts light towards red. Galaxies show lines shifted to longer wavelengths, so they are moving away.{% endblock %}
+{% block try_items %}
+<li>Set v ÷ c to 0. Where do the fronts sit, and how far apart are they?</li>
+<li>Press "Far galaxy". What is the observed H-α wavelength? Is that red-shifted?</li>
+<li>Compare the speed in km s⁻¹ with the exact formula at 0.3. Where do the two start to differ?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  NCERT gives Δλ ÷ λ = v ÷ c, which is the low-speed rule. The exact relativistic z is a little larger. The galaxy names are only rough scales for the speeds, not real catalogue entries. The drawing is in units where one front is emitted per time step.
+</div>
+{% endblock %}

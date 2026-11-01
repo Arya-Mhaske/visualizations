@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A plane wave reaches a boundary. Each point it touches starts a wavelet, but wavelets in the second medium grow at a different speed.{% endblock %}
+{% block why_text %}The wavefront reaches different points of the boundary at different times. Each wavelet then grows at v₂ from the moment it starts. The line touching all of them is tilted, and the geometry gives sin i ÷ sin r = v₁ ÷ v₂. Slow wavelets bend the front towards the normal.{% endblock %}
+{% block try_items %}
+<li>Slide the time. Which wavelets are biggest, and which have only just started?</li>
+<li>Set v₁ ÷ v₂ = 1. Does the front bend? Then raise it to 2.</li>
+<li>Set v₁ ÷ v₂ below 1 and raise i. At what angle does no common tangent exist?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Reflected wavelets are left out here. The next tool builds the reflected front the same way. The refractive index is n = c ÷ v, so v₁ ÷ v₂ is n₂ ÷ n₁.
+</div>
+{% endblock %}

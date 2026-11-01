@@ -2901,28 +2901,28 @@
 "reviewed": false
 },
 "optics/huygens-wavefronts/why-does-every-point-on-a-wavefront-act-as-a-new-source": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 162,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/huygens-wavefronts/why-does-snell-s-law-follow-from-wavefronts": {
 "archetype": "rays",
 "priority": 162,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/huygens-wavefronts/reflection-from-wavefronts": {
 "archetype": "rays",
 "priority": 162,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/huygens-wavefronts/doppler-shift-of-light": {
-"archetype": "rays",
+"archetype": "sim",
 "priority": 162,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/interference/why-do-we-need-coherent-sources": {
 "archetype": "rays",

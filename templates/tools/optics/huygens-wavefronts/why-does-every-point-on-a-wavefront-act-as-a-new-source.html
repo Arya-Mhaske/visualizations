@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Treat each point of a wavefront as a tiny source. Draw its wavelet a moment later and see what line they make together.{% endblock %}
+{% block why_text %}Each point of a wavefront disturbs its neighbours, so each sends out a wavelet. Far from their sources the wavelets cancel, and only where they all touch a common line do they add up. That line is the next wavefront, a distance vt ahead. More sources make it smoother.{% endblock %}
+{% block try_items %}
+<li>Use 2 sources. Where do the wavelets touch a common line, and where are there gaps?</li>
+<li>Raise the sources to 30. What happens to the scallop depth?</li>
+<li>Turn off "forward half only". Why does the textbook draw only the forward half?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Huygens' rule as drawn here gives the forward front. Why there is no backward wave needs Fresnel's later argument with interference, so the picture only shows the forward half.
+</div>
+{% endblock %}
