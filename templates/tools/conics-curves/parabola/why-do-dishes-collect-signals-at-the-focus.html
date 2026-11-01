@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Send parallel rays into a parabola. Every one bounces through the focus.{% endblock %}
+{% block why_text %}The parabola turns every ray parallel to its axis so that it passes through the focus. At each point the curve has a tangent, and a ray reflects like light off a mirror. The numbers fall out exactly: the reflected ray from every point aims at the same place. A circle of the same width fails, because its reflected rays cross the axis at different places.{% endblock %}
+{% block try_items %}
+<li>Use the parabola with 7 rays. Do all the red rays meet at the green dot?</li>
+<li>Switch to the circle. How wide is the spread where the rays cross the axis?</li>
+<li>Increase the number of rays. Does the meeting point of the parabola change?</li>
+{% endblock %}

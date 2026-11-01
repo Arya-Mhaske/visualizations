@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Fit a parabola to the towers and the sag, then read the cable height at any point.{% endblock %}
+{% block why_text %}A cable that carries a bridge deck of equal weight per metre hangs in a parabola, y = x²/4a, measured from its lowest point. The towers are at x = ±L/2 and are the sag higher, so (L/2)² = 4a · sag, which gives a = L²/(16 · sag). The height of any hanger follows from the equation. A cable that hangs under its own weight alone is a slightly different curve, called a catenary.{% endblock %}
+{% block try_items %}
+<li>Use L = 600 and a sag of 80. How high is the cable at x = 150?</li>
+<li>Double the sag. What happens to a?</li>
+<li>Increase the span while the sag stays the same. What happens to the cable's height at x = 150?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The lengths here are made up for practice, not the measurements of a real bridge.
+</div>
+{% endblock %}

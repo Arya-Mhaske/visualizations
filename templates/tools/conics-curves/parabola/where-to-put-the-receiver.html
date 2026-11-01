@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}A dish is a parabola. The receiver must sit exactly at its focus.{% endblock %}
+{% block why_text %}For a dish of width D and depth d, the parabola is x² = 4fy with (D/2)² = 4fd, so the focus is at f = D²/(16d) above the vertex. A deeper dish has a closer focus. The receiver must be at that height, or the signals will miss it. A headlight is the same shape used backwards: a lamp at the focus sends parallel light out.{% endblock %}
+{% block try_items %}
+<li>Slide the receiver until all nine rays are caught. How does its height compare with the focus?</li>
+<li>Make the dish deeper. Where does the focus move?</li>
+<li>Switch to the headlight. What happens to the rays when the lamp is off the focus?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The widths and depths here are made up for practice. Real dishes and reflectors differ.
+</div>
+{% endblock %}
