@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compute √2 and solve cos x = x.{% endblock %}
+{% block why_text %}Each row is one step of x → x − f(x)/f′(x). The values f(xₙ) shrink very quickly towards 0, and the xₙ settle on the answer.{% endblock %}
+{% block try_items %}
+<li>Show 3 steps for √2. How many digits agree with 1.41421356?</li>
+<li>Switch to cos x = x. What is the solution?</li>
+<li>Change the start value. Does it still converge?</li>
+{% endblock %}

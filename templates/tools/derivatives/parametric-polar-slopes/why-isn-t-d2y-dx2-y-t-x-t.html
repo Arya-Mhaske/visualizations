@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Differentiate dy/dx with respect to t, then divide by dx/dt, and compare with the wrong guess.{% endblock %}
+{% block why_text %}d²y/dx² is the rate of change of the slope with respect to x. Since dy/dx depends on t, differentiate it with respect to t and then divide by dx/dt. The shortcut y″(t)/x″(t) skips this and is wrong.{% endblock %}
+{% block try_items %}
+<li>Move t. Which parabola follows the curve?</li>
+<li>Find a t where the two second derivatives are far apart.</li>
+<li>Does the wrong guess ever agree with the correct one?</li>
+{% endblock %}

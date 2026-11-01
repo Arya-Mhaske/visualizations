@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Tune a car's shock absorber.{% endblock %}
+{% block why_text %}Little damping lets the car bounce again and again. Critical damping, c = 2√(mk), brings it back fastest without crossing zero. More damping than that makes it creep back slowly. Car designers aim near critical.{% endblock %}
+{% block try_items %}
+<li>Set c = 0.5. How many times does it cross zero?</li>
+<li>Press critical damping. What changes?</li>
+<li>Set c = 10. Is it faster or slower than critical?</li>
+{% endblock %}

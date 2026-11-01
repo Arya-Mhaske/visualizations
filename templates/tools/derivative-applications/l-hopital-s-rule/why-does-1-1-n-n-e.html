@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take ln, apply l'Hôpital, then exponentiate.{% endblock %}
+{% block why_text %}ln(1 + 1/n)ⁿ = ln(1 + u) ÷ u with u = 1/n. As u → 0 this is 0/0, and l'Hôpital gives (1/(1+u)) ÷ 1 → 1. So the log of the expression goes to 1, and the expression goes to e¹ = e.{% endblock %}
+{% block try_items %}
+<li>Slide n to 10⁶. What does ln of the expression read?</li>
+<li>Compare (1 + 1/n)ⁿ with e.</li>
+<li>At n = 1, how far off is it?</li>
+{% endblock %}

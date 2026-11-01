@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Substitute it and get the characteristic equation.{% endblock %}
+{% block why_text %}The derivative of eʳˣ is r·eʳˣ, so each derivative gives the same function times a number. Putting it into y″ + py′ + qy = 0 leaves (r² + pr + q)·eʳˣ. That is zero everywhere exactly when r² + pr + q = 0.{% endblock %}
+{% block try_items %}
+<li>Snap to a root. What happens to the blue curve?</li>
+<li>Change p and q so that no real root exists.</li>
+<li>Guess r between the two roots. Is the leftover positive or negative?</li>
+{% endblock %}

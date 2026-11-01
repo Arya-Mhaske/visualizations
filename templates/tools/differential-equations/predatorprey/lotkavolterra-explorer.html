@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change birth and death rates.{% endblock %}
+{% block why_text %}The balance point is c/d prey and a/b predators. Changing the rates moves the balance point and changes the loop size and period, but the cycling stays.{% endblock %}
+{% block try_items %}
+<li>Double c. Where does the balance point move?</li>
+<li>Raise a. Which population gets more numerous?</li>
+<li>Compare the period with 2π ÷ √(ac) for a small loop.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The model is simplified. Real populations seldom cycle perfectly.
+</div>
+{% endblock %}

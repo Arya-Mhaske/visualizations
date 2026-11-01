@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find a particular solution.{% endblock %}
+{% block why_text %}Guess a particular solution of the same shape as the forcing term, with unknown coefficients, and put it into the equation. Add any combination of the homogeneous solutions to get the general solution. The leftover is zero for every choice of C₁ and C₂.{% endblock %}
+{% block try_items %}
+<li>Choose the e^kx forcing and read the guess.</li>
+<li>Add C₁ and C₂. Does the leftover change?</li>
+<li>Switch to sin kx.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Variation of parameters is a second method that works for forcing terms the guessing method cannot handle.
+</div>
+{% endblock %}

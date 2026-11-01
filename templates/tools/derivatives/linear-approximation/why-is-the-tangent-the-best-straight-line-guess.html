@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Tilt a line through a point on the curve and watch the gap shrink as you move closer.{% endblock %}
+{% block why_text %}For any line through the point, the gap to the curve at distance h is about |slope difference| × h, so gap ÷ h stays put. For the tangent the gap shrinks faster than h, so gap ÷ h goes to 0. That is the meaning of "best".{% endblock %}
+{% block try_items %}
+<li>Use the tangent. What does gap ÷ h do when h falls to a tenth?</li>
+<li>Tilt the line off the tangent. Does gap ÷ h still shrink?</li>
+<li>Try a different curve. Is the tangent still the best?</li>
+{% endblock %}

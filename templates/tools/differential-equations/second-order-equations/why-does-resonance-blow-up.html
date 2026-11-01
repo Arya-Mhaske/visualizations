@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drive at the natural frequency and watch the amplitude grow linearly.{% endblock %}
+{% block why_text %}Pushing at the natural frequency adds energy in step with every swing, so the amplitude keeps growing. Without damping it grows as t/(2ω₀). Pushing at other frequencies gives bounded motion.{% endblock %}
+{% block try_items %}
+<li>Drive at the natural frequency. What is the envelope?</li>
+<li>Drive at 1.9. What do you see?</li>
+<li>Drive at 3. How big is the largest swing?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real systems have damping, which limits the amplitude.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the correct digits roughly double each step.{% endblock %}
+{% block why_text %}Newton's method replaces the curve by its tangent line, which is extremely close near the root. The error is roughly squared each step, so the number of correct digits roughly doubles.{% endblock %}
+{% block try_items %}
+<li>Take 4 steps on x² − 2. How many digits are correct?</li>
+<li>Compare with the dashed line, which gains about 0.3 digits a step.</li>
+<li>Start further from the root. Does the doubling still happen?</li>
+{% endblock %}

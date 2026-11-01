@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use e^((a + bi)x) = e^(ax)(cos bx + i sin bx).{% endblock %}
+{% block why_text %}When the characteristic equation has complex roots α ± iβ, the real solution is e^(αx) cos βx. The cos βx makes the oscillation, and e^(αx) is the envelope that shrinks if α < 0 and grows if α > 0.{% endblock %}
+{% block try_items %}
+<li>Set α = 0. What does the solution do?</li>
+<li>Make α negative. What happens to the envelope?</li>
+<li>Raise β. What changes?</li>
+{% endblock %}

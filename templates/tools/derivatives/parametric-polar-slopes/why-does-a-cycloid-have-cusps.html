@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}See the rolling point stop dead (x′ = y′ = 0) every time it touches the ground.{% endblock %}
+{% block why_text %}A point on a rolling wheel has velocity x′ = 1 − cos t and y′ = sin t. At the ground, t = 0, 2π, …, both are zero. The point stops for an instant, and the path turns back sharply: a cusp.{% endblock %}
+{% block try_items %}
+<li>Roll the wheel to t = 2π. What are x′ and y′?</li>
+<li>Where is the point fastest?</li>
+<li>How many cusps appear by t = 13?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a solution term by term from a recurrence.{% endblock %}
+{% block why_text %}Write y = Σ aₙxⁿ, put it in the equation and match powers of x. This gives a recurrence for the coefficients, which can be computed one after another, even when the sum is not a function we have a formula for.{% endblock %}
+{% block try_items %}
+<li>Take N = 2, then raise N. What changes?</li>
+<li>On y″ = xy, how fast do the coefficients shrink?</li>
+<li>Where does the polynomial stop matching?</li>
+{% endblock %}

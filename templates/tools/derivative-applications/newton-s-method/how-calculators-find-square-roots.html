@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the Babylonian averaging method is Newton's method for x² = a.{% endblock %}
+{% block why_text %}To find √a, average a guess x with a/x. This is exactly Newton's method for x² − a = 0, because x − (x² − a)/(2x) = (x + a/x)/2. Each average makes the rectangle more square.{% endblock %}
+{% block try_items %}
+<li>Take a = 10 and watch the points reach the diagonal.</li>
+<li>Compare the two rules in the readout.</li>
+<li>Start with a poor first side. How many steps does it take?</li>
+{% endblock %}

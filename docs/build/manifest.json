@@ -6705,73 +6705,73 @@
 "archetype": "plot",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/why-is-root4-1-2-025": {
 "archetype": "plot",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/why-is-sin-x-x-for-small-x": {
 "archetype": "plot",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/dy-versus-y": {
 "archetype": "plot",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/measurement-error": {
 "archetype": "space3d",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/taylor-polynomials-a-first-look": {
 "archetype": "plot",
 "priority": 191,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/why-is-dy-dx-dy-dt-dx-dt": {
 "archetype": "plot",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/horizontal-and-vertical-tangents": {
 "archetype": "plot",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/how-can-one-point-have-two-tangents": {
 "archetype": "plot",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/why-isn-t-d2y-dx2-y-t-x-t": {
 "archetype": "plot",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/slopes-of-polar-curves": {
 "archetype": "stepper",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/parametric-polar-slopes/why-does-a-cycloid-have-cusps": {
 "archetype": "plot",
 "priority": 192,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/why-are-peaks-where-the-tangent-is-flat": {
 "archetype": "plot",
@@ -6915,55 +6915,56 @@
 "archetype": "plot",
 "priority": 193,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/l-hopital-s-rule/why-isn-t-0-0-a-number": {
 "archetype": "plot",
 "priority": 193,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/l-hopital-s-rule/why-does-1-1-n-n-e": {
 "archetype": "plot",
 "priority": 193,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/l-hopital-s-rule/indeterminate-form-converter": {
 "archetype": "stepper",
 "priority": 193,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/l-hopital-s-rule/who-really-found-l-hopital-s-rule": {
 "archetype": "plot",
 "priority": 193,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "derivative-applications/newton-s-method/why-does-sliding-down-tangents-find-roots-so-fast": {
 "archetype": "discrete",
 "priority": 194,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/newton-s-method/why-can-newton-s-method-fail": {
 "archetype": "plot",
 "priority": 194,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/newton-s-method/iteration-stepper": {
 "archetype": "stepper",
 "priority": 194,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/newton-s-method/how-calculators-find-square-roots": {
 "archetype": "plot",
 "priority": 194,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/antiderivatives/why-does-every-antiderivative-carry-c": {
 "archetype": "plot",
@@ -7521,25 +7522,25 @@
 "archetype": "plot",
 "priority": 205,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/direction-fields-euler/why-does-euler-s-method-drift": {
 "archetype": "plot",
 "priority": 205,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/direction-fields-euler/euler-stepper": {
 "archetype": "stepper",
 "priority": 205,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/direction-fields-euler/current-in-an-rl-circuit": {
 "archetype": "plot",
 "priority": 205,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/why-does-separating-dy-and-dx-work": {
 "archetype": "plot",
@@ -7593,19 +7594,19 @@
 "archetype": "plot",
 "priority": 206,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/population-models/why-is-p-k-stable-but-p-0-not": {
 "archetype": "plot",
 "priority": 206,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/population-models/sustainable-fishing": {
 "archetype": "plot",
 "priority": 206,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/linear-first-order/why-does-the-integrating-factor-work": {
 "archetype": "plot",
@@ -7629,67 +7630,67 @@
 "archetype": "plot",
 "priority": 207,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/predatorprey/why-do-predators-peak-after-prey": {
 "archetype": "plot",
 "priority": 207,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/predatorprey/lotkavolterra-explorer": {
 "archetype": "plot",
 "priority": 207,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/why-does-guessing-e-rx-work": {
 "archetype": "plot",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/why-do-complex-roots-mean-oscillation": {
 "archetype": "chance",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/under-critically-and-over-damped": {
 "archetype": "plot",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/why-does-resonance-blow-up": {
 "archetype": "discrete",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/undetermined-coefficients-and-variation-of-parameters": {
 "archetype": "stepper",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/second-order-equations/springmass-and-lc-circuits": {
 "archetype": "plot",
 "priority": 208,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/series-solutions/why-can-power-series-solve-what-formulas-can-t": {
 "archetype": "plot",
 "priority": 209,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/series-solutions/series-solution-stepper": {
 "archetype": "phasor",
 "priority": 209,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/3d-coordinates/why-do-three-numbers-locate-a-point": {
 "archetype": "space3d",

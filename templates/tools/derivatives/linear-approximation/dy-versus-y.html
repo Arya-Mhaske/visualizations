@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the tangent's rise against the curve's rise.{% endblock %}
+{% block why_text %}dy is how far the tangent line rises over a step dx, and Δy is how far the curve rises. For small dx they are nearly equal. Their gap is the error of the linear approximation.{% endblock %}
+{% block try_items %}
+<li>Make dx small. What happens to the difference?</li>
+<li>Try a negative dx. Which rise is bigger?</li>
+<li>Compare x² and √x. For which curve is dy bigger than Δy?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch a self-crossing curve pass the same point twice with two different slopes.{% endblock %}
+{% block why_text %}A curve y = f(x) has one slope at each point, but a parametric curve can pass through a point twice at different times. Each pass has its own velocity direction, so each pass has its own tangent.{% endblock %}
+{% block try_items %}
+<li>Go to t = −1, then t = 1. What are the slopes?</li>
+<li>Slide t slowly through the loop. What does the tangent do?</li>
+<li>Where does the curve have a vertical tangent?</li>
+{% endblock %}

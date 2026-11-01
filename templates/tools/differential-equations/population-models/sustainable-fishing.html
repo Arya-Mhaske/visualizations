@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add a harvest rate and find the collapse threshold.{% endblock %}
+{% block why_text %}The stock stays steady where growth equals the catch. The growth curve has a highest point of rK/4, so a catch above that has no steady stock at all and the fishery collapses. Even a smaller catch collapses a stock that starts too low.{% endblock %}
+{% block try_items %}
+<li>Set the catch to 100. Is there a steady stock?</li>
+<li>Raise it above 125. What happens?</li>
+<li>Start at 150 with a catch of 100. Does it recover?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The numbers are made up for practice and do not describe a real fishery.
+</div>
+{% endblock %}

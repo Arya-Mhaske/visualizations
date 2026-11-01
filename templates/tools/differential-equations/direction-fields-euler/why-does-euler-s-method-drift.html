@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take straight steps along a curving path; halving the step halves the error.{% endblock %}
+{% block why_text %}Euler's method follows the slope at the start of each step as if it stayed the same across the step. On a curve it does not, so each step has a small error, and the errors pile up. A smaller step means smaller errors, and the total error shrinks in proportion to h.{% endblock %}
+{% block try_items %}
+<li>Choose h = 1. How far off is the end?</li>
+<li>Halve h. What happens to the error?</li>
+<li>Compare error ÷ h across all step sizes.</li>
+{% endblock %}

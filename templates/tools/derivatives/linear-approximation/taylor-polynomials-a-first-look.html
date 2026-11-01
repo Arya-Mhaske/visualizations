@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add a quadratic term to beat the tangent line.{% endblock %}
+{% block why_text %}The tangent line copies a function's height and slope at 0. Adding an x² term also copies how it bends, so the parabola stays close for longer. This is the first step towards Taylor polynomials.{% endblock %}
+{% block try_items %}
+<li>Start with the line only. How big is its error at x = 1?</li>
+<li>Turn on the x² term. How much does the error fall?</li>
+<li>Try x = 2. Is the parabola still close?</li>
+{% endblock %}

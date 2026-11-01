@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Ride the tangent at x = 4 instead of the curve.{% endblock %}
+{% block why_text %}Near x = 4 the tangent line to √x is y = 2 + (x − 4)/4. At x = 4.1 it gives 2.025, and the true value is 2.0248…. A straight line is much easier to calculate with than a square root.{% endblock %}
+{% block try_items %}
+<li>Keep x = 4.1 and zoom out and in. What happens to the picture?</li>
+<li>Move x to 4.5. How does the error change?</li>
+<li>Move x to 3.5. Is the estimate too high or too low?</li>
+{% endblock %}

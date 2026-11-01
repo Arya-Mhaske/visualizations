@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Measure a radius as 21 ± 0.05 cm and estimate the error in the volume.{% endblock %}
+{% block why_text %}A small error dr in the radius gives an error of about dQ = Q′(r)·dr in the result. For a sphere, dV = 4πr²·dr. With r = 21 ± 0.05 cm, V is about 38 800 cm³, give or take about 277 cm³, or 0.7%.{% endblock %}
+{% block try_items %}
+<li>Leave r = 21 cm and dr = 0.05 cm. What is the error in V?</li>
+<li>Double dr. What happens to the error?</li>
+<li>Compare the estimate with the true worst case.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Estimates assume the error is small compared with the radius.
+</div>
+{% endblock %}

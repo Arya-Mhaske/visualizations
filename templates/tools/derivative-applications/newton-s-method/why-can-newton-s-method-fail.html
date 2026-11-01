@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Try a bad start, a flat tangent and a 2-cycle.{% endblock %}
+{% block why_text %}Newton's method trusts the tangent. If the tangent is nearly flat, or the curve bends the wrong way, the next guess can be thrown far away or can bounce back and forth forever.{% endblock %}
+{% block try_items %}
+<li>On ∛x, step 4 times. Where do the guesses go?</li>
+<li>On x² − 2, start near 0. What does the first step do?</li>
+<li>On x³ − 2x + 2 from 0, what do the guesses do?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom in near a until both functions look like lines; the ratio of heights becomes the ratio of slopes.{% endblock %}
+{% block why_text %}Near a, a smooth function that is 0 at a looks like its tangent line. So f/g ≈ (f′(a)·h)/(g′(a)·h), and the h cancels: f/g → f′(a)/g′(a).{% endblock %}
+{% block try_items %}
+<li>Zoom right in on sin x ÷ x. What does the ratio read?</li>
+<li>Compare it with f′ ÷ g′ at the point.</li>
+<li>Try ln x ÷ (x − 1).</li>
+{% endblock %}

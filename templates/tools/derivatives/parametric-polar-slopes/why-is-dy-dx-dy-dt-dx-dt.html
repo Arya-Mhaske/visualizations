@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Run a point along the curve: over a tiny time step the rise is y′dt and the run is x′dt.{% endblock %}
+{% block why_text %}In a small time dt the point moves x′(t)·dt across and y′(t)·dt up. The slope is rise over run, and dt cancels: dy/dx = (dy/dt) ÷ (dx/dt). Where dx/dt = 0 the tangent is vertical.{% endblock %}
+{% block try_items %}
+<li>Make dt small. How close does the chord slope get?</li>
+<li>Find t where dx/dt = 0. What does the tangent do?</li>
+<li>Find t where dy/dt = 0.</li>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use a direction field for L dI/dt + RI = E.{% endblock %}
+{% block why_text %}The equation gives the slope dI/dt = (E − RI)/L at each point. The slope is steepest at I = 0 and flat at I = E/R. The solution rises smoothly and levels off, with time constant L/R.{% endblock %}
+{% block try_items %}
+<li>Raise L. What happens to the time constant?</li>
+<li>Raise R. What happens to the final current?</li>
+<li>Find the current at t = L/R. What fraction of E/R is it?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This assumes an ideal battery, resistor and inductor.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom in at 0 until the two graphs merge.{% endblock %}
+{% block why_text %}Near 0 the curve sin x is almost exactly its tangent line y = x, because the slope of sin x at 0 is cos 0 = 1. This is why the pendulum formula, which replaces sin θ by θ, works for small swings.{% endblock %}
+{% block try_items %}
+<li>Set the window half-width to 3. Where do the graphs differ?</li>
+<li>Set it to 0.2. Can you tell them apart?</li>
+<li>What is the relative error at 0.5 radian?</li>
+{% endblock %}

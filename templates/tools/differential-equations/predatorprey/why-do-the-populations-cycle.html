@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch closed loops in the phase plane.{% endblock %}
+{% block why_text %}More prey feed more predators, more predators eat more prey, and fewer prey starve the predators, so prey recover. The numbers chase each other round a closed loop, because the quantity d·x − c·ln x + b·y − a·ln y stays constant.{% endblock %}
+{% block try_items %}
+<li>Start at the balance point (20, 10). What happens?</li>
+<li>Start far from it. How big is the loop?</li>
+<li>Check the drift of the invariant.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is an idealised model. Real populations also have limits and randomness.
+</div>
+{% endblock %}
