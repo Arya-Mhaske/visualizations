@@ -33,8 +33,9 @@ const tool = createTool({
       const r = norm(d);
       const E = d.map((v) => (q * v) / r ** 3);
       const out = dot(E, n);
-      const len = Math.min(1.1, 2.2 / r ** 2) * Math.sign(q || 1);
-      const e = d.map((v) => (v / r) * len);
+      // Arrow length follows |E| = |q| / r² (1.2 units per unit of |E|), capped so none runs off the stage.
+      const mag = norm(E);
+      const e = mag === 0 ? [0, 0, 0] : E.map((v) => (v / mag) * Math.min(1.8, 1.2 * mag));
       cam.arrow(pt, pt.map((v, k) => v + e[k]), { color: out >= 0 ? c.c : c.b, width: 3 });
     }
     cam.point([px, 0, 0], { fill: q > 0 ? c.a : q < 0 ? c.b : c.ink, r: 9 });
