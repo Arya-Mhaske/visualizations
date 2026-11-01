@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the halfway point of a segment by finding halfway along x and halfway along y, each on its own axis.{% endblock %}
+{% block why_text %}Moving along the plane splits into moving along x and moving along y, and the two do not affect each other. Halfway along the segment is halfway in x and halfway in y. Halfway between two numbers is their average, so M = ((x₁ + x₂) ÷ 2, (y₁ + y₂) ÷ 2).{% endblock %}
+{% block try_items %}
+<li>Move A and B so the x halves overlap but the y halves do not. Does the x-coordinate of M change?</li>
+<li>Put B at the origin. What is M in terms of A?</li>
+<li>Can the midpoint ever lie outside the segment? Why not?</li>
+{% endblock %}

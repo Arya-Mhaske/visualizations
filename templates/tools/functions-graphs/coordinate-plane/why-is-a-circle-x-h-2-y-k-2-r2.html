@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A circle is every point at the same distance r from a centre. Drag a point round it and check the distance formula each time.{% endblock %}
+{% block why_text %}The distance from (h, k) to (x, y) is √((x − h)² + (y − k)²). A point is on the circle exactly when that distance is r. Squaring both sides gives (x − h)² + (y − k)² = r². Inside the circle the left side is smaller than r², and outside it is larger.{% endblock %}
+{% block try_items %}
+<li>Drag P round the circle. What stays the same, and what changes?</li>
+<li>Switch to "Anywhere" and put P inside, then outside. Is the left side smaller or larger than r²?</li>
+<li>Move the centre to (0, 0). What does the equation become?</li>
+{% endblock %}

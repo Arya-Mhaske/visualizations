@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two points on a plane always make a right triangle with the axes. Drag them and watch the squares on its sides.{% endblock %}
+{% block why_text %}Going across by Δx and up by Δy makes a right angle, so the segment AB is the hypotenuse. Pythagoras says the green square equals the coral square plus the blue square. So AB² = Δx² + Δy², and the distance is the square root of that sum.{% endblock %}
+{% block try_items %}
+<li>Make Δx = 3 and Δy = 4. What is AB?</li>
+<li>Make A and B share the same y. What happens to the blue square and to AB?</li>
+<li>Swap A and B. Does the distance change? Why not?</li>
+{% endblock %}

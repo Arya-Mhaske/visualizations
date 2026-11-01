@@ -3772,46 +3772,46 @@
 "reviewed": false
 },
 "functions-graphs/coordinate-plane/why-does-the-distance-formula-come-from-pythagoras": {
-"archetype": "plot",
+"archetype": "geometry",
 "priority": 7,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/why-is-the-midpoint-an-average": {
-"archetype": "plot",
+"archetype": "geometry",
 "priority": 7,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/why-is-a-circle-x-h-2-y-k-2-r2": {
-"archetype": "plot",
+"archetype": "geometry",
 "priority": 7,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/why-do-the-symmetry-tests-work": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 7,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/why-is-the-perpendicular-the-shortest-way-to-a-line": {
+"archetype": "geometry",
+"priority": 7,
+"notes": "",
+"reviewed": true
+},
+"functions-graphs/coordinate-plane/intercepts-and-plotting-by-points": {
 "archetype": "plot",
 "priority": 7,
 "notes": "",
-"reviewed": false
-},
-"functions-graphs/coordinate-plane/intercepts-and-plotting-by-points": {
-"archetype": "stepper",
-"priority": 7,
-"notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/find-a-circle-s-centre-from-its-general-form": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 7,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/why-is-slope-the-same-anywhere-on-a-line": {
 "archetype": "plot",

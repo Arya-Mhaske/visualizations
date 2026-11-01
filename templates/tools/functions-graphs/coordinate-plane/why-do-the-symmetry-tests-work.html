@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick a point on a curve and mirror it. If the mirror point is on the curve for every point, the curve has that symmetry.{% endblock %}
+{% block why_text %}Replacing x by −x moves a point to its mirror image across the y-axis. If the new equation is the same as the old one, every mirrored point still satisfies it, so it lies on the graph. Replacing y by −y gives the x-axis. Doing both gives the origin.{% endblock %}
+{% block try_items %}
+<li>Take y = x² − 3 and mirror in the y-axis. How many of the 41 points land?</li>
+<li>Take y = x³ − 3x and try all three mirrors. Which one works?</li>
+<li>Take y = x² + x − 2. Does any mirror work for every point? Can a single lucky point prove symmetry?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The count uses 41 sample points, which is a check for this picture. The algebra test (replace and compare) is what proves symmetry for every point.
+</div>
+{% endblock %}

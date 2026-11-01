@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change D, E and F. Complete the square in x and in y to read off the centre and the radius.{% endblock %}
+{% block why_text %}x² + Dx needs (D ÷ 2)² to make a perfect square, and y² + Ey needs (E ÷ 2)². Add both to each side. Then (x + D÷2)² + (y + E÷2)² = D²÷4 + E²÷4 − F. So the centre is (−D÷2, −E÷2) and r² = D²÷4 + E²÷4 − F.{% endblock %}
+{% block try_items %}
+<li>Set D = −4, E = 6, F = −12. What are the centre and the radius?</li>
+<li>Raise F until r² is zero. What does the "circle" become?</li>
+<li>Raise F further. What does r² show, and what happens to the circle?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Slide a point along a line and watch its distance to a fixed point Q. Where is it smallest?{% endblock %}
+{% block why_text %}The distance to Q is smallest where the segment meets the line at 90°. Any other point on the line is the far end of a right triangle with the perpendicular as one leg, so its distance is the hypotenuse, which is longer. The shortest distance from a point to a line is the perpendicular one.{% endblock %}
+{% block try_items %}
+<li>Slide P until PQ is least. What is the angle between PQ and the line?</li>
+<li>Move P a little to each side of that spot. Does PQ rise on both sides?</li>
+<li>Change the slope. Does the shortest distance still come from the perpendicular?</li>
+{% endblock %}
