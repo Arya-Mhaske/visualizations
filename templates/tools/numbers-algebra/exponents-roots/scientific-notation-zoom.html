@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Slide a power-of-ten dial from nanoseconds to a googol. The mantissa stays between 1 and 10.{% endblock %}
+{% block why_text %}Scientific notation writes a number as a mantissa between 1 and 10 times a power of ten. Moving the decimal point k places makes the mantissa 10ᵏ times larger, so the power of ten must go down by k to keep the number the same. The standard form is the one with the mantissa between 1 and 10.{% endblock %}
+{% block try_items %}
+<li>Set 6.02 × 10²³. Slide the decimal point by 1. What is the number now?</li>
+<li>Which unit prefix sits at 10⁻⁹?</li>
+<li>Set the power to 100. What is that number called?</li>
+{% endblock %}

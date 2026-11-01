@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Plot y = √(x²) and y = x together. They disagree for every negative x.{% endblock %}
+{% block why_text %}√ means the positive root. For a negative number a, a² is positive, and its positive root is −a (which is positive), not a. So √(a²) = |a|. The two graphs match for x ≥ 0 and split apart for x < 0.{% endblock %}
+{% block try_items %}
+<li>Set a = −3. What is √(a²)?</li>
+<li>Where do the graphs agree?</li>
+<li>What would √(a²) = a claim for a = −3?</li>
+{% endblock %}

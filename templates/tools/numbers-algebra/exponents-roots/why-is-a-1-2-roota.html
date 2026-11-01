@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The exponent laws force a^(1/2) to be √a, and the same reasoning extends to a^(m/n).{% endblock %}
+{% block why_text %}If exponents add when you multiply, then a^½ × a^½ = a^(½+½) = a¹ = a. So a^½ squared is a, which is exactly what √a is (the positive number that squares to a). Likewise a^(1/n) multiplied n times is a, so it is the nth root, and a^(m/n) is that root raised to the power m.{% endblock %}
+{% block try_items %}
+<li>Set m = 1 and n = 2 with base 4. What is the value?</li>
+<li>Set m = 3, n = 2. Do the two root forms agree?</li>
+<li>Look at (a^(m/n))ⁿ. Why does it equal aᵐ?</li>
+{% endblock %}

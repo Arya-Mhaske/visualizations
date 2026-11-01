@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Walk down 2³, 2², 2¹, dividing by 2 each step. The pattern forces 2⁰ = 1.{% endblock %}
+{% block why_text %}Each step down from aⁿ to aⁿ⁻¹ divides by a. Starting at 2³ = 8: 8 ÷ 2 = 4 = 2², 4 ÷ 2 = 2 = 2¹, and 2 ÷ 2 = 1. The next step down is a⁰, so a⁰ has to be 1 for the pattern to continue. The same works for any base.{% endblock %}
+{% block try_items %}
+<li>Walk down from 2⁴. What do you get at the end?</li>
+<li>Change the base to 5. What is 5⁰?</li>
+<li>Why is it that the value at exponent 0 does not depend on the base?</li>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Zoom through sizes, each step × 10, and place familiar objects on the scale.{% endblock %}
+{% block why_text %}On a scale of powers of ten each tick is ten times the last. The size of an atom, a cell, a person, the Earth and the universe are separated by many ticks, which is why a logarithmic scale is needed to see them together. Slide the window to see which objects fall in it.{% endblock %}
+{% block try_items %}
+<li>Centre the window on 10⁰. What objects are near a metre?</li>
+<li>How many ticks separate an atom and a person?</li>
+<li>Move to the largest scale. What is there?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  All the sizes are typical values, rounded to one or two figures.
+</div>
+{% endblock %}

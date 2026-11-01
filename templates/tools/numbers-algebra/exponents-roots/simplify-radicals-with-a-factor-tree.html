@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Split the radicand into prime factors and pull out pairs.{% endblock %}
+{% block why_text %}A pair of equal factors under a square root comes out as one factor: √(p × p) = p. Break the number into primes, group them in pairs, and pull each pair out. Whatever is left unpaired stays inside the root.{% endblock %}
+{% block try_items %}
+<li>Use 72. What pairs come out?</li>
+<li>Try a number with no pairs, like 30. What happens?</li>
+<li>Try a perfect square. What is left under the root?</li>
+{% endblock %}

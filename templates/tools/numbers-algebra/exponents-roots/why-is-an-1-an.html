@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Keep halving past zero: 2⁻¹ = ½, 2⁻² = ¼.{% endblock %}
+{% block why_text %}The pattern of dividing by a at each step does not stop at a⁰. Dividing 1 by a gives 1/a, which must be a⁻¹. Dividing again gives 1/a², which is a⁻². So a negative exponent means "divide that many times", and a⁻ⁿ = 1/aⁿ.{% endblock %}
+{% block try_items %}
+<li>Walk down to −4 with base 2. What are the values?</li>
+<li>Try base 10. What is 10⁻³?</li>
+<li>What is 2⁻¹ × 2¹, and why?</li>
+{% endblock %}
