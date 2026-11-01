@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Two arrows a quarter-turn apart add to one arrow that turns at the same rate.{% endblock %}
+{% block why_text %}M sin t is the height of an arrow of length M. N cos t is the height of an arrow of length N that is a quarter-turn ahead. Placing them tip to tail makes a right angle, so the sum arrow has length √(M² + N²) by Pythagoras. All three turn together, so the sum arrow keeps its length and its angle ahead of the first. Its height is R sin(t + φ), a single sine.{% endblock %}
+{% block try_items %}
+<li>Set N = 0. What are R and φ?</li>
+<li>Set M = N. What phase angle do you get?</li>
+<li>Slide t. Does the length of the green arrow ever change?</li>
+{% endblock %}

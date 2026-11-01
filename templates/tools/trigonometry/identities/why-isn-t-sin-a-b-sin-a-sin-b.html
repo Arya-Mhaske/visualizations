@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Test the tempting rule. The sine of a sum is not the sum of the sines.{% endblock %}
+{% block why_text %}A function does not spread over a sum. The two angles add inside the sine, but the stacked triangles show the result is two products, not two sines. The wrong rule even fails the basic test that a sine cannot exceed 1. The two rules agree only by luck, for example when B = 0°.{% endblock %}
+{% block try_items %}
+<li>Press A = B = 30°. Which bar is longer, and by how much?</li>
+<li>Try A = B = 90°. Can sin A + sin B ever reach 2 for a real sine?</li>
+<li>Find an A and B where the wrong rule happens to be right.</li>
+{% endblock %}

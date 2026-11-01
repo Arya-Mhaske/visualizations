@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}In a right triangle the two acute angles add to 90°. The unit circle shows it for every t.{% endblock %}
+{% block why_text %}In a right triangle with hypotenuse 1 and one leg t, one acute angle has sine t and the other has cosine t. The two acute angles add to 90°, or π/2. The circle shows more: the points for arcsin t and arccos t are mirror images in the 45° line, because swapping x and y swaps sine and cosine. So the sum is π/2 even when t is negative.{% endblock %}
+{% block try_items %}
+<li>Set t = 0.5. What are the two angles?</li>
+<li>Set t = 0. Which angle is 0° and which is 90°?</li>
+<li>Set t negative. Does the sum stay at 90°?</li>
+{% endblock %}

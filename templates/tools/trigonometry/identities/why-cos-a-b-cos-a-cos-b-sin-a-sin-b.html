@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn a picture and a chord does not change length. That is the whole proof.{% endblock %}
+{% block why_text %}Two points on the unit circle at A and B are joined by a chord. The distance formula gives its length from their coordinates, and that involves cos A cos B + sin A sin B. Now turn the whole circle back by B. One point lands on the x-axis, and the other is at angle A − B. A rotation cannot change a length, so the two expressions for the chord must be equal, which gives cos(A − B).{% endblock %}
+{% block try_items %}
+<li>Slide "Turn the picture back" from 0% to 100%. Does the chord ever change length?</li>
+<li>Set A = B. What is the chord, and what is cos 0°?</li>
+<li>Make A − B = 90°. What should cos A cos B + sin A sin B be?</li>
+{% endblock %}

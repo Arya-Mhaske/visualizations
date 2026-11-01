@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put B = A in the sum formula, then see it in an isosceles triangle.{% endblock %}
+{% block why_text %}Setting B = A in the sum and difference formulas gives sin 2A = 2 sin A cos A and cos 2A = cos²A − sin²A. The triangle shows it too. Two radii at angle 2A make an isosceles triangle. Its area is ½ sin 2A one way, and half the chord times the height the other way, which is sin A cos A. The same sum formula gives cos 2A three ways, using sin²A + cos²A = 1.{% endblock %}
+{% block try_items %}
+<li>Slide A to 45°. What are sin 2A and 2 sin A cos A?</li>
+<li>Slide A beyond 45°. What happens to cos 2A?</li>
+<li>Look at the three ways of writing cos 2A. Are they ever different?</li>
+{% endblock %}

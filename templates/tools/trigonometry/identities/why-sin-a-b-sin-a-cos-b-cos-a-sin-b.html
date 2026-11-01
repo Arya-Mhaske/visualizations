@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stack one right triangle on another. The height of the top corner is two pieces.{% endblock %}
+{% block why_text %}The first triangle has hypotenuse cos B and angle A. The second sits on its end with hypotenuse 1 and legs cos B and sin B. Its far corner is at angle A + B on the unit circle, so its height is sin(A + B). A horizontal line through the join cuts that height into cos B sin A and sin B cos A. Adding them gives the formula, and no algebra was needed.{% endblock %}
+{% block try_items %}
+<li>Set A = 30° and B = 60°. Check that the two pieces add to sin 90° = 1.</li>
+<li>Make B small. Which piece nearly disappears?</li>
+<li>Read the x-coordinate of the top corner. Which formula is that?</li>
+{% endblock %}

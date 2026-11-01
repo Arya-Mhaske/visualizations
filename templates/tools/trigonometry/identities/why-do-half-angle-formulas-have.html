@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Going round once more gives the same cos θ but a different half angle.{% endblock %}
+{% block why_text %}The half-angle formula starts from cos θ, and cos θ forgets which turn you are on. The angles θ and θ + 360° land on the same point, but their halves are 180° apart, on opposite sides of the circle. So sin(θ/2) has two possible values with the same size and opposite signs. The ± is real. You pick the sign from the quadrant of θ/2.{% endblock %}
+{% block try_items %}
+<li>Slide θ from 100° up to 460°. Does cos θ change? Does the sign needed change?</li>
+<li>Find the quadrants of θ/2 where sin(θ/2) is negative.</li>
+<li>Set θ = 360°. What are the two possible values of sin(θ/2), and which is right?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The same ± appears in the half-angle formula for cosine. Tangent does not need one, because tan(θ/2) = sin θ ÷ (1 + cos θ).
+</div>
+{% endblock %}

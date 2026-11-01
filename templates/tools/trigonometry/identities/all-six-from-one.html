@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Give one ratio and the quadrant. Draw the triangle, then read off the other five.{% endblock %}
+{% block why_text %}One ratio gives two sides of a triangle. Pythagoras gives the third. The quadrant gives the signs of x and y. After that every other ratio is just a different pair of sides, read as a fraction. The check sin²θ + cos²θ = 1 always works.{% endblock %}
+{% block try_items %}
+<li>Choose sin θ = 3/5 in quadrant 2. What is cos θ, and why is it negative?</li>
+<li>Keep the same triangle and move it through quadrants 1 to 4. Which ratios flip sign?</li>
+<li>Pick tan θ with quadrant 3. Why are sin θ and cos θ both negative?</li>
+{% endblock %}

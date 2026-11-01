@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Two curves, one on each side of the equals sign. Do they lie on top of each other, or only cross?{% endblock %}
+{% block why_text %}An identity is true for every x, so the two sides are the same curve. An equation is true only where the curves meet, and those meeting points are its solutions. Solving an equation means finding the crossings. Proving an identity means showing there are none to find, because the curves never come apart.{% endblock %}
+{% block try_items %}
+<li>Step through all eight statements. Which ones leave only one visible curve?</li>
+<li>Pick "sin x = 1/2". How many solutions are there in two turns?</li>
+<li>Pick "cos x = x". There is only one crossing. Is that a solution you could find by an identity?</li>
+{% endblock %}

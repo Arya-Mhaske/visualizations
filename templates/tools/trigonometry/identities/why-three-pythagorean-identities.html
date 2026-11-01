@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One triangle, three sizes. Scale the unit-circle triangle so a different leg becomes 1.{% endblock %}
+{% block why_text %}There is only one identity: Pythagoras on the unit-circle triangle, cos²θ + sin²θ = 1. Divide every side by cos θ and the triangle is the same shape, so its legs are 1 and tan θ and its hypotenuse is sec θ. Pythagoras on that bigger triangle is 1 + tan²θ = sec²θ. Divide by sin θ instead and you get cot²θ + 1 = csc²θ.{% endblock %}
+{% block try_items %}
+<li>Choose "1 ÷ cos θ" and slide θ. Which side of the big triangle always equals 1?</li>
+<li>At θ = 45° all three triangles are special. What are tan θ and cot θ?</li>
+<li>Push θ towards 75° with "1 ÷ cos θ". Which side grows fastest, and why?</li>
+{% endblock %}
