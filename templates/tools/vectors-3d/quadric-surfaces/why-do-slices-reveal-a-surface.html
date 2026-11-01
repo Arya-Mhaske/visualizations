@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A surface is hard to see all at once. Cut it with a plane and look at the curve left behind. Then move the plane.{% endblock %}
+{% block why_text %}Each slice is a flat curve we already know: an ellipse, a parabola or a hyperbola. Stack the slices and the surface appears. Slice in three directions and you can tell one surface from another.{% endblock %}
+{% block try_items %}
+<li>Slice the ellipsoid by z = k. How does the ellipse change as k grows?</li>
+<li>Slice the saddle by z = k, then by x = k. What curves do you get?</li>
+<li>Find a k where a slice shrinks to a point. Which surfaces can do that?</li>
+{% endblock %}

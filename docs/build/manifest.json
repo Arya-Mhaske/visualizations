@@ -7827,79 +7827,79 @@
 "archetype": "space3d",
 "priority": 210,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/quadric-surfaces/quadric-gallery": {
 "archetype": "space3d",
 "priority": 210,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/quadric-surfaces/why-can-cooling-towers-be-built-from-straight-beams": {
 "archetype": "space3d",
 "priority": 210,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/why-is-velocity-tangent-and-acceleration-into-the-turn": {
 "archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/why-does-a-tight-turn-mean-large-curvature": {
-"archetype": "chance",
+"archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/tangential-and-normal-acceleration": {
 "archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/why-t-n-and-b-a-rider-s-moving-axes": {
 "archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/arc-length-of-a-helix": {
 "archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/space-curves-motion/kepler-s-laws-from-newton": {
 "archetype": "space3d",
 "priority": 211,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cylindrical-spherical-coordinates/why-give-cylinders-and-spheres-their-own-coordinates": {
 "archetype": "space3d",
 "priority": 212,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cylindrical-spherical-coordinates/why-is-measured-down-from-the-z-axis": {
 "archetype": "space3d",
 "priority": 212,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cylindrical-spherical-coordinates/convert-between-the-three-systems": {
-"archetype": "stepper",
+"archetype": "space3d",
 "priority": 212,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cylindrical-spherical-coordinates/latitude-and-longitude-are-spherical-coordinates": {
 "archetype": "space3d",
 "priority": 212,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/sequences-limits/why-must-a-bounded-increasing-sequence-converge": {
 "archetype": "plot",
