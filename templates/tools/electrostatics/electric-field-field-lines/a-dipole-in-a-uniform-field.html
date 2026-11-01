@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Twist a dipole in a uniform field. The two forces always cancel, but they do not act along the same line.{% endblock %}
+{% block why_text %}The forces are +qE and −qE, equal and opposite, so the dipole's centre stays put. They act along two lines a distance 2a sin θ apart, which makes a couple. Its torque is qE × 2a sin θ, or pE sin θ, and it turns p towards E.{% endblock %}
+{% block try_items %}
+<li>Which angle gives the biggest torque? Which arm gives it?</li>
+<li>Set θ to 0° and 180°. Both have no torque. Press Play after a small nudge from each. Which is stable?</li>
+<li>Double the length and halve the charge. What happens to p and to the torque?</li>
+<li>Does the net force change with any control?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  In vector form τ = p × E. Here p and E lie in the screen, so τ points into or out of it. Into the screen is clockwise.
+</div>
+{% endblock %}

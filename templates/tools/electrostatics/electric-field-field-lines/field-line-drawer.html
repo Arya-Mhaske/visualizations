@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Place charges, then drag them about. The lines are traced point by point, following the field.{% endblock %}
+{% block why_text %}Each line follows the direction of the total field. Lines start on positive charges and end on negative ones, and the number at a charge is proportional to its size. If the total is not zero, the extra lines go off to infinity.{% endblock %}
+{% block try_items %}
+<li>Load +2 and −1. How many lines miss the −1 charge?</li>
+<li>Load Two alike. Where do lines avoid each other?</li>
+<li>Make the total charge zero. How many lines go off to infinity?</li>
+<li>Drag a charge right next to another. How does the far picture change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is a flat slice of a 3D field. The directions are exact, but the spacing of lines on a slice only roughly shows the strength. A few lines may leave the drawing and come back.
+</div>
+{% endblock %}

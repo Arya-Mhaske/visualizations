@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A field line shows the direction of the field at every point. Try to make two lines cross, then try to bend one into a closed loop.{% endblock %}
+{% block why_text %}At a crossing a charge would have two directions to go, but the fields add to one arrow, so only one line passes through a point. A closed line is ruled out by energy: the field would help a charge all the way round, giving it energy for nothing on every lap. A static electric field always takes back on the way what it gave.{% endblock %}
+{% block try_items %}
+<li>Drag the point around. Can you ever find two green directions at once?</li>
+<li>Set the right charge to +3 nC and hunt for the midpoint. What happens to the direction there?</li>
+<li>In A closed loop, drag the loop anywhere. Does the gain per lap ever move from 0?</li>
+<li>Now pretend the loop is a field line. What would that gain mean?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Lines can seem to meet at a neutral point, where the field is zero. That is not a crossing: with no field there is no direction, so no line passes through it. Closed lines are ruled out for static charges only. Changing magnetic fields do make closed electric field lines, as you will see in electromagnetic induction.
+</div>
+{% endblock %}

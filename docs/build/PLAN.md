@@ -49,7 +49,7 @@ with a `readout` entry, `liveFormula(el, build)`. Call `formula.update(state)` a
 | geometry | draggable points, lines, arcs | `stage` `handles`, `draw`, `vec` |
 | plot | function graphs with sliders | `plot` |
 | sim | time-stepped physics | `sim`, `plot` |
-| rays | optics; field lines still to come | `rays` |
+| rays | optics, field lines | `rays`, `field` |
 | phasor | rotating vectors, AC | `phasor`, `sim` (`createClock`); AC parts still to come |
 | space3d | 3D scenes | `project3d`, `vec` |
 | chance | sampling with a seeded generator | `rng` |
@@ -79,6 +79,7 @@ Each file's header comment is its documentation.
 - `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
 - `tool.js`: `createTool`
 - `circuit.js`: `solveLinear`, `solveCircuit` (exact DC nodal solver), `resistor`, `cell`, `flowDots`
+- `field.js`: `fieldAt`, `potentialAt`, `traceLine` (RK4 along the field), `fieldLines`, `drawLine`, `drawCharge`
 - `rays.js`: `reflect`, `refract`, `hitCircle`, `axisCrossing`, `unit`, `createBench` (equal-scale optical bench: `axis`, `mark`, `object`, `mirror`, `ray`, `rayTo`)
 - `timeline.js`: `createTimeline` (a looping `state.t` shared by a time slider and Play; for exact-formula animations)
 - `draw.js`'s neighbour `docs/build/sheet.py` makes the contact sheet for a box
@@ -178,6 +179,11 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - Paraxial rays turn at the plane x = 0, so a truly curved mirror leaves them crossing the glass: draw the mirror much flatter than it is and say so. Only `why-is-f-r-2-for-a-mirror` uses the true sphere.
 - An unsigned mirror formula gets the size right but the side wrong on a concave mirror, and the size wrong on a convex one. Plot its answer on the signed axis, so it fails visibly in both.
 - A control must change what a student sees in every state. `smoke_tools` only tests the first slider, and it passed a toggle that did nothing on a concave mirror. When adding a toggle, compare the stage and panel with it on and off, in each mode.
+- `lib/field.js` traces lines of any point charges. `fieldLines` keeps a − charge's lines only if no + charge sent them, so counts stay honest. `createBench` from `rays.js` is a good equal-scale stage for fields too. Reuse both in
+  `flux-gauss-s-law`, `electric-potential` and `sources-of-magnetic-field`. `_electric-field-math.js` has `sourceAt` (a change spreads at c, slowed 10⁸ times), `loopWork`, `nullPoint`, `dipoleField`/`dipoleSlope`, `dipoleTorque`, `paperForces`.
+- A charge cannot vanish, so a "removed" source is cancelled by bringing up −q. A student cannot land on a point exactly by dragging: if a Try prompt needs one (a neutral point), snap to it.
+- A drawn moment arm is the perpendicular gap between the lines of force. Check any drawn length against its formula: the sheet showed a bracket along the wrong direction with correct numbers beside it.
+- When one bar or arrow scale must serve very different sizes, split it: the paper's two forces share a scale, and a separate bar compares their difference with the weight.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -301,7 +307,7 @@ it reaches the front of the queue.
 | 108 | `functions-graphs/combining-inverting` | 12 | 1 | |
 | 109 | `electrostatics/coulomb-s-law` | 5 | 1 | |
 | 110 | `trigonometry/inverses-equations` | 12 | 1 | |
-| 111 | `electrostatics/electric-field-field-lines` | 6 | 1 | |
+| 111 | `electrostatics/electric-field-field-lines` | 6 | 1 | ✓ |
 | 112 | `systems-matrices/matrices-row-reduction` | 4 | 1 | |
 | 113 | `electrostatics/flux-gauss-s-law` | 5 | 1 | |
 | 114 | `systems-matrices/matrix-algebra` | 10 | 1 | |

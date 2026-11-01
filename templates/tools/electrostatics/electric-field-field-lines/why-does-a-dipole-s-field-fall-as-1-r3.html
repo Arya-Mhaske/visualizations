@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A dipole's two charges are equal and opposite. Walk away from it and see how much of their fields survives.{% endblock %}
+{% block why_text %}Far away, +q and −q are almost the same distance from you, so their two 1/r² fields nearly cancel. What survives is only the small difference, and that share shrinks like a/r. So the field is 1/r² times a/r, which is 1/r³. It falls faster than a single charge's field because the dipole has no net charge.{% endblock %}
+{% block try_items %}
+<li>Drag P away and watch Sum is this share of +q. How does it change when r doubles?</li>
+<li>Read the slope on the graph. Where does it settle?</li>
+<li>Compare the sum with the formula close in and far out. Where does the formula start to work?</li>
+<li>Try Sideways. What changes, and what stays the same?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The arrows for +q always have the same length, so you can compare the share left over. They are not to one scale as you move. P's position uses a log scale.
+</div>
+{% endblock %}

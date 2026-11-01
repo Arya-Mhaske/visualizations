@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Paper has no net charge, so why does a comb pull it? Move the paper closer and compare the forces on its two sides.{% endblock %}
+{% block why_text %}The comb's field pulls apart the charges inside the paper, so the side nearer the comb has the opposite sign. That side sits in a stronger field than the far side, so the pull beats the push. In a uniform field the two would cancel: the net pull comes from the field getting stronger towards the comb.{% endblock %}
+{% block try_items %}
+<li>Bring the paper in slowly. At what gap does it lift?</li>
+<li>Switch the comb to positive. Does the paper now fall away? Why not?</li>
+<li>Swap to a uniform field. What happens to the net pull?</li>
+<li>Halve the gap. By how much does the net pull grow?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is a rough model. The comb acts as a point charge, and the 1 mg scrap as a small conducting ball of radius 2 mm. Real paper separates charge less readily, so the true pull is weaker. The numbers show the size of the effect, not a measurement.
+</div>
+{% endblock %}

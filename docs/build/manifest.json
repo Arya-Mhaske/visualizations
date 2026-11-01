@@ -2130,37 +2130,37 @@
 "archetype": "sim",
 "priority": 114,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-field-field-lines/why-can-t-field-lines-cross-or-close-on-themselves": {
 "archetype": "rays",
 "priority": 114,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-field-field-lines/why-does-a-dipole-s-field-fall-as-1-r3": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 114,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-field-field-lines/field-line-drawer": {
-"archetype": "stepper",
+"archetype": "rays",
 "priority": 114,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-field-field-lines/a-dipole-in-a-uniform-field": {
-"archetype": "space3d",
-"priority": 114,
-"notes": "",
-"reviewed": false
-},
-"electrostatics/electric-field-field-lines/why-does-a-charged-comb-pick-up-paper": {
 "archetype": "sim",
 "priority": 114,
 "notes": "",
-"reviewed": false
+"reviewed": true
+},
+"electrostatics/electric-field-field-lines/why-does-a-charged-comb-pick-up-paper": {
+"archetype": "geometry",
+"priority": 114,
+"notes": "",
+"reviewed": true
 },
 "electrostatics/flux-gauss-s-law/what-is-flux-count-the-lines-through-a-net": {
 "archetype": "rays",
