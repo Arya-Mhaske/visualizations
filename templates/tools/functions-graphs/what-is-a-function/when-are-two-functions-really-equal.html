@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare x with x²/x. They look the same after cancelling, but check them at x = 0.{% endblock %}
+{% block why_text %}A function is a rule together with its domain. Cancelling x²/x gives x, but x²/x has no value at 0 and x does. Different domains make different functions, even though the graphs agree everywhere else. Two functions are equal only if their domains match and they give the same output for every input.{% endblock %}
+{% block try_items %}
+<li>With x and x²/x, slide the test input to 0. What does each formula give?</li>
+<li>Choose (x² − 1)/(x − 1). Where is the hole? Which simpler formula looks the same?</li>
+<li>Choose |x| and √(x²). Can you find any input where they differ?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick x and a gap h. Join the two points on the graph with a line. Its slope is the difference quotient.{% endblock %}
+{% block why_text %}The slope of a line is rise over run. Between x and x + h the run is h and the rise is f(x + h) − f(x). So the difference quotient is the slope of the secant line, or the average rate of change. Shrink h and the secant settles on the tangent. That is the idea of calculus.{% endblock %}
+{% block try_items %}
+<li>Take f(x) = x² at x = 1 with h = 2. Read the secant slope. Now shrink h to 0.1. Which number does it head for?</li>
+<li>For x², compare the secant slope with 2x + h. Do they agree for every h?</li>
+<li>Switch to √x. Does the tangent get steeper or flatter as x grows?</li>
+{% endblock %}

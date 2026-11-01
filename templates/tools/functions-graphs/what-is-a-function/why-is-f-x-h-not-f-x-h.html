@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The input moves from x to x + h. Does the output just go up by h? Compare the two heights above x + h.{% endblock %}
+{% block why_text %}f(x + h) means: add h to the input, then apply the rule. f(x) + h means: apply the rule, then add h to the output. These are different orders, so they usually give different numbers. For f(x) = x², the gap is 2xh + h² − h. They agree only when f(x) = x, the rule that does nothing.{% endblock %}
+{% block try_items %}
+<li>With x², x = 2 and h = 1, find f(x + h) and f(x) + h. How big is the gap?</li>
+<li>Does the gap grow as h gets larger? Check against 2xh + h² − h.</li>
+<li>Switch to 3x. The gap is not zero. Switch to x. When is it zero?</li>
+{% endblock %}

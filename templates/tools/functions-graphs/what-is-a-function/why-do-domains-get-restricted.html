@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag x along √x, 1/x and ln x. Watch where each one stops giving a number, and read the reason.{% endblock %}
+{% block why_text %}A function must give a real number for every input you allow. Square roots, divisions and logarithms cannot do that for every x, so we take the bad inputs out of the domain. The domain is not a rule added for fun. It is the list of inputs where the formula still works.{% endblock %}
+{% block try_items %}
+<li>Choose √x and slide x below 0. Where exactly does the curve stop?</li>
+<li>Choose 1/x. Is x = 0 allowed? Which values nearby are?</li>
+<li>Choose 1/√(x − 1). Find the smallest x that works. Is x = 1 itself allowed?</li>
+{% endblock %}

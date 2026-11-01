@@ -3877,49 +3877,49 @@
 "archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/why-do-domains-get-restricted": {
 "archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/why-the-difference-quotient": {
 "archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/why-is-f-x-h-not-f-x-h": {
 "archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/when-are-two-functions-really-equal": {
 "archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/why-is-a-relation-a-subset-of-a-x-b": {
 "archetype": "discrete",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/function-machine-rule-table-graph": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/read-a-graph": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 9,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/properties-library/why-are-even-functions-mirror-images": {
 "archetype": "rays",

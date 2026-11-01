@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Every possible pair (a, b) has its own cell in the grid. A relation is whichever cells you tick.{% endblock %}
+{% block why_text %}A × B is the list of all pairs, and a relation says which pairs "go together". So a relation is a subset of A × B, nothing more. With p·q cells you can tick or not tick each one, which gives 2 to the power p·q relations. A function is the neat case where every a has exactly one tick.{% endblock %}
+{% block try_items %}
+<li>Press "a &lt; b". Which rows have more than one tick? Is it a function?</li>
+<li>Tick exactly one cell in every row. Does the readout say "yes"?</li>
+<li>Grow B from 4 to 5. How many functions are there now, compared with relations?</li>
+{% endblock %}
