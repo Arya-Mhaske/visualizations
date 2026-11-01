@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Treat potential as height. A cell is a lift and a resistor is a ramp. Walk round a loop and see where you end up.{% endblock %}
+{% block why_text %}Every point in a circuit has one potential, just as every spot on a map has one height. So a walk that returns to its start must end at the height it began: every climb is paid back by a fall. Height here is energy per coulomb, so the loop rule says a charge gains nothing for free going round.{% endblock %}
+{% block try_items %}
+<li>Walk the Left loop. Compare Climbed and Fallen when you get back.</li>
+<li>Change E₁ and R₃, then look at the sum in the formula. Can you make it anything but 0?</li>
+<li>Try the Outer loop. It goes up one lift and down the other: is the rule still true?</li>
+<li>Raise E₁ and drop E₂ until I₂ turns negative. On the Right loop, which way does R₂ slope now?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The sign rule comes straight from the picture. Walking with the current through a resistor you go down, −IR. Walking against it you go up, +IR. These are ideal cells: any internal resistance is counted in R₁ and R₂.
+</div>
+{% endblock %}

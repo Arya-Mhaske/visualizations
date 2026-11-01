@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Count the charge going into a node and the charge coming out. Then break the rule on purpose, and see where the difference has to go.{% endblock %}
+{% block why_text %}Charge cannot appear or vanish, so anything that comes in and does not leave stays at the node. That pile pushes back: it repels more charge coming in and drives more going out. The currents shift until in equals out. That is the junction rule.{% endblock %}
+{% block try_items %}
+<li>With You do, press Play. Then set I₃ so the pile stops growing. What must I₃ be?</li>
+<li>Read Node potential for a pile of just 1 C. Could a wire ever hold that?</li>
+<li>Switch to The circuit does and press Play. The out wire starts with no current. What gets it moving?</li>
+<li>When it settles, change a terminal. Does the node stay unbalanced for long?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  You do is a thought experiment: no real circuit lets you fix the currents like this. Its Node potential is for a metal ball of radius 1 cm. In The circuit does, the pile is drawn huge and slowed down. A real node holds about 10⁻¹¹ C and settles in far less than a microsecond. Dots show conventional current; electrons run the other way, and the count is the same.
+</div>
+{% endblock %}

@@ -2412,25 +2412,25 @@
 "archetype": "sim",
 "priority": 130,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/kirchhoff-wheatstone/why-is-the-loop-rule-energy-conservation": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 130,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/kirchhoff-wheatstone/why-does-a-balanced-wheatstone-bridge-show-no-current": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 130,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/kirchhoff-wheatstone/circuit-solver-with-kirchhoff-s-rules": {
 "archetype": "stepper",
 "priority": 130,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetic-force-on-charges/why-does-a-magnetic-force-never-do-work": {
 "archetype": "space3d",

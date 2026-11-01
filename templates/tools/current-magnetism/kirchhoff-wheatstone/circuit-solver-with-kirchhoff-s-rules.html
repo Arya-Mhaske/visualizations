@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}One junction and two loops give three equations for three currents. Press Next step to write them and solve them.{% endblock %}
+{% block why_text %}Each rule gives one linear equation. Guess a direction for each current and keep to it. Solving the system tells you the size, and a minus sign tells you the guess was backwards. Nothing else needs fixing.{% endblock %}
+{% block try_items %}
+<li>Work to the end, then change R₃. Which numbers change?</li>
+<li>Raise E₁ to 24 V. Which current goes negative, and what is happening to cell E₂?</li>
+<li>Turn cell E₂ round. Which currents change sign?</li>
+<li>Find a setting where I₂ is exactly 0. What is the top rail's potential then?</li>
+{% endblock %}

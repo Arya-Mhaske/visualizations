@@ -78,6 +78,7 @@ Each file's header comment is its documentation.
 - `drill.js`: `createDrill`, `isRight`
 - `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
 - `tool.js`: `createTool`
+- `circuit.js`: `solveLinear`, `solveCircuit` (exact DC nodal solver), `resistor`, `cell`, `flowDots`
 - `timeline.js`: `createTimeline` (a looping `state.t` shared by a time slider and Play; for exact-formula animations)
 - `draw.js`'s neighbour `docs/build/sheet.py` makes the contact sheet for a box
 - `colors.js`: `readColors`
@@ -162,6 +163,14 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
   (a zoom on a capped wide page changes no layout, so ResizeObserver alone misses it), and uses an opaque canvas for LCD text. `.viz-stage > canvas` is `pixelated`
   because CSS sizes round to 1/64 px and even that blends the whole picture at 125%. `draw.line` snaps straight lines to device pixels. So `stage.w`/`h` can be
   fractional, and `devicePixelContentBoxSize` must not be used: it ignores emulated scales, so nothing built on it can be tested here.
+
+- `lib/circuit.js` is the DC engine: `solveCircuit(n, branches, fixed)` (an ideal source is a fixed node, because R must be above 0), `resistor`, `cell` at any angle, and `flowDots`, driven by
+  charge passed so a dot arrives per coulomb and a count stays honest. Use it in `resistance-temperature`, `cells-emf-power` and `loops-meters`. `_kirchhoff-math.js` has the two-cell circuit (`twoLoop`,
+  `loopEdges`, `walkAt`, `eliminate`), the node with a pile (`nodeRates`) and the bridge (`bridge`, `r4ForPotential`). Drawing height as true potential works well: the bridge wire lies flat at balance.
+- A height map's depth must not run up the screen, or a falling ramp looks flat (depth cancels the drop). Keep depth mostly sideways.
+- A computed zero is not zero: a balanced bridge read 1.78 ×10⁻¹⁴ mA. Snap it in the maths, and test with `assertEqual`, not `assertAlmostEqual`.
+- `createStage` calls `draw(ctx, size, stage)`, and `createTool` hides that. A bare `createStage` with the wrong arguments draws nothing and still passes `smoke_tools`,
+  which only measures ink on the whole stage. A canvas inside a flow stage goes in `.viz-figure`. Contact sheets show only the default: drive the toggles and presets too, as that is where the zero and the crowded bridge showed up.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -301,7 +310,7 @@ it reaches the front of the queue.
 | 124 | `derivatives/exp-log-inverse-derivatives` | 7 | 1 | |
 | 125 | `current-magnetism/cells-emf-power` | 5 | 1 | |
 | 126 | `derivatives/rates-in-science` | 6 | 1 | |
-| 127 | `current-magnetism/kirchhoff-wheatstone` | 4 | 1 | |
+| 127 | `current-magnetism/kirchhoff-wheatstone` | 4 | 1 | ✓ |
 | 128 | `derivative-applications/maxima-minima` | 6 | 1 | |
 | 129 | `current-magnetism/magnetic-force-on-charges` | 5 | 1 | |
 | 130 | `derivative-applications/mean-value-theorem` | 4 | 1 | |

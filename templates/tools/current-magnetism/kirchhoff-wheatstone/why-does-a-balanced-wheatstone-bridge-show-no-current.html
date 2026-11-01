@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A bridge is two potential dividers side by side. Here height is potential, so B and D sit at their true levels. Drag D until the bridge wire lies flat.{% endblock %}
+{% block why_text %}Current in a wire needs a potential difference between its ends. Each side of the bridge splits the battery's voltage in the ratio of its resistors. If both sides split it in the same ratio, R₁/R₂ = R₃/R₄, then B and D are at the same potential. Nothing pushes charge across, so no current flows, whatever the battery.{% endblock %}
+{% block try_items %}
+<li>Drag D until the galvanometer reads zero. Compare R₁/R₂ with R₃/R₄.</li>
+<li>Now change the battery and the galvanometer. Does the balance survive?</li>
+<li>At balance, cut the bridge wire. Do B and D move? Try again away from balance.</li>
+<li>Load the NCERT Example and find the galvanometer current. Which R₄ would balance it?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is why a bridge measures an unknown resistance so well. You look for a zero, so the meter does not need a true scale, and the result does not depend on the battery. The needle here is not to scale: small currents are stretched so you can see them.
+</div>
+{% endblock %}
