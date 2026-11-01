@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Turn a prism slowly and watch how far it bends the ray. The bend does not just rise or fall: it dips.{% endblock %}
+{% block why_text %}D = i + e − A. Turning the prism raises i, which makes the ray enter more slanted, but it also lowers e at the other face. The two changes compete. At one angle they balance: the ray passes symmetrically, with i = e and the ray inside parallel to the base. That is the lowest point of D. On either side the ray is bent more.{% endblock %}
+{% block try_items %}
+<li>Drag the point along the curve. Where is the ray inside parallel to the base?</li>
+<li>At that lowest point, compare i and e. What do you notice?</li>
+<li>Raise n. Does the minimum deviation go up or down?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The green dot marks the exact minimum, D = 2 sin⁻¹(n sin A/2) − A. For small i the ray cannot leave the second face, and the curve stops. The same ray is traced at both faces with Snell's law.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A big lens and a big mirror have the same job. Compare where each one brings the colours of starlight to a focus.{% endblock %}
+{% block why_text %}A lens works by refraction, and glass bends violet more than red, so each colour focuses at a different point and every star gets a coloured fringe. A mirror works by reflection, and the law of reflection does not depend on colour, so all colours meet at one point. A mirror also has just one surface to polish, and it can be held up from behind. A lens can only be held by its edge, and it sags under its own weight.{% endblock %}
+{% block try_items %}
+<li>Make the telescope bigger. How does the colour gap and the blur on the image change?</li>
+<li>Change the focal ratio. Does the gap grow? Does the blur across the image change?</li>
+<li>Look at the mirror's line. Does anything you change move its colours apart?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The lens is a single crown-glass lens with two equal curves. Real refractors use two glasses together (a doublet) to cancel most of the colour, but not all. The gap is the shift in focus between 700 nm and 410 nm, computed from the lens maker's formula. The weight argument is about support, not mass: the largest working refractor lens is about one metre across, while mirrors of ten metres are made.
+</div>
+{% endblock %}

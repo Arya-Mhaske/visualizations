@@ -46,6 +46,14 @@
   --viz-fill-c: rgba(136, 212, 152, 0.45);
   --viz-fill-y: rgba(255, 210, 63, 0.55);
   --viz-line: 3px;            /* default stroke for main shapes */
+  /* the visible spectrum, red to violet, for prisms and rainbows (read as c.spec[0..6]) */
+  --viz-spec-0: #E8312F;
+  --viz-spec-1: #F28C28;
+  --viz-spec-2: #E6C200;
+  --viz-spec-3: #2E9E5B;
+  --viz-spec-4: #1FB5C9;
+  --viz-spec-5: #2E5FD0;
+  --viz-spec-6: #7A3FC4;
 
   /* borders, shadows, radius */
   --border-thin: 2px solid var(--ink);

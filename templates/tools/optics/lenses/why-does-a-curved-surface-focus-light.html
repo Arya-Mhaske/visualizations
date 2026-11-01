@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Send rays from a point of light at a glass surface. Compare a flat surface with a curved one.{% endblock %}
+{% block why_text %}Each ray bends by an amount that depends on the angle at which it meets the surface. On a flat surface every ray meets it at its own angle and they just spread. On a curved surface a ray that hits further from the axis meets the surface at a bigger angle, so it bends more. That is exactly what is needed to bring them all to one point. The result is n₂/v − n₁/u = (n₂ − n₁)/R.{% endblock %}
+{% block try_items %}
+<li>Switch to a flat surface. Do the rays ever meet?</li>
+<li>Go back to curved. Watch the outer rays and the inner rays. Which ones bend more?</li>
+<li>Move the object closer. When does the image stop being real?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Rays are traced exactly with Snell's law, but the formula is for rays close to the axis (paraxial). The outer rays cross a little short of the formula's image point: that is spherical aberration. Signs follow the Cartesian convention, with light going to the right.
+</div>
+{% endblock %}

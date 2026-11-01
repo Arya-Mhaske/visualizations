@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A star is too far away to look any bigger. See what a telescope does instead.{% endblock %}
+{% block why_text %}The objective makes a tiny image at its focus, of height f₀ tan α. The eyepiece, placed one fₑ beyond that image, turns the rays from each point into a parallel beam, and the image is seen at the angle β where tan β = f₀ tan α / fₑ. So the angle grows by f₀/fₑ. The image is not larger than the object, and it is not nearer. It just takes up a bigger angle of your view.{% endblock %}
+{% block try_items %}
+<li>Shorten the eyepiece's focal length. What happens to the angle the rays leave at?</li>
+<li>Compare β ÷ α with f₀/fₑ.</li>
+<li>Look at the image at the middle. Is it bigger or smaller than the objective lens?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Angles are exaggerated (up to 8°) so that they can be seen. For real stars α is a tiny fraction of a degree. The image is upside down, as it is in an astronomical telescope. The objective's focal length is fixed at 10 units.
+</div>
+{% endblock %}

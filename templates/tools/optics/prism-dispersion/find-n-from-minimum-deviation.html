@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}You measured the prism angle and the smallest deviation. Turn them into the refractive index of the glass.{% endblock %}
+{% block why_text %}At minimum deviation the ray passes symmetrically, so inside the prism r₁ = r₂ = A/2, and outside i = (A + D)/2. Snell's law at the first face gives n = sin i / sin r₁ = sin((A + D)/2) / sin(A/2).{% endblock %}
+{% block try_items %}
+<li>Set A = 60° and D = 37°. What is n?</li>
+<li>Raise D by 5°. How much does n change?</li>
+<li>Check the last row: does it give back your D?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Measured D is only as good as the protractor. A 0.5° error in D makes a small error in n. The picture shows the ray inside parallel to the base.
+</div>
+{% endblock %}

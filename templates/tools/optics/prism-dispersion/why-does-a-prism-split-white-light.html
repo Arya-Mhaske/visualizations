@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}White light is a mixture of colours. Let the glass treat each colour slightly differently and see them fan out.{% endblock %}
+{% block why_text %}Glass slows violet light a little more than red, so n is a little larger for violet. A larger n means a bigger bend at each face. So violet is turned most and red least, and the white beam spreads into a spectrum. Set the slider to "none" and the colours stay together: with no dependence of n on λ there is no dispersion.{% endblock %}
+{% block try_items %}
+<li>Set the dependence to "none". What does the prism do to white light?</li>
+<li>Raise it. Which colour is bent most?</li>
+<li>Compare the spread in degrees with the difference in n between red and violet.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The index follows Cauchy's formula n = a + b/λ² with values close to crown glass (a = 1.5046, b = 0.0042 μm²). The slider multiplies b, and × 1 is close to real glass; larger values exaggerate the effect so that it can be seen. The seven colours stand for a continuous spectrum.
+</div>
+{% endblock %}

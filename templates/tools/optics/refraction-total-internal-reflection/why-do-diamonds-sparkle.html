@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Shine a ray into a cut diamond, then into a glass copy of it. One bounces the light back to your eye. The other lets it escape.{% endblock %}
+{% block why_text %}Diamond has n = 2.42, so its critical angle is only about 24°. Light that enters meets the lower facets at angles above that, so it is totally reflected, again and again, until it finds its way back out of the top. Glass has C near 42°, so the same ray often meets the facet at a smaller angle and leaks out through the bottom.{% endblock %}
+{% block try_items %}
+<li>With diamond at 10°, follow the ray. How many times is it reflected before it leaves?</li>
+<li>Switch to glass with the same ray. Where does the light go?</li>
+<li>Move the landing point and the angle. Can you find a ray that escapes from the diamond's bottom?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A flat, simplified 2D cut. A real diamond is a 3D shape with many facets, and its cut is chosen so that most rays are trapped. Diamond also spreads colours (dispersion), which adds to the "fire". Only the first light to escape is drawn.
+</div>
+{% endblock %}

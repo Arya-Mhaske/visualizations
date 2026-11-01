@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Guess how a pendulum's period depends on its length, on g and on its mass. Let the dimensions decide.{% endblock %}
+{% block why_text %}The period is a time. So lˣ gʸ mᶻ must be a time too: mass appears only in m, so z must be 0 to leave no [M]. Then [L] gives x + y = 0 and [T] gives −2y = 1. So y = −½ and x = ½: T = k √(l/g), and the mass is forced out. A heavier bob has no effect, because nothing else in the problem has a mass to compare it with.{% endblock %}
+{% block try_items %}
+<li>Make [M], [L] and [T] all match. Which values of x, y and z did you need?</li>
+<li>Check the last row: do two pendulums of different length and mass give the same k?</li>
+<li>Try z = 0.5 with the best x and y. What goes wrong?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Dimensional analysis cannot give the number k. The virtual pendulums measure it, for small swings, as 2π ≈ 6.283. It also assumes that l, g and m are all that matter. If the bob were hung in oil, the formula would need more variables.
+</div>
+{% endblock %}

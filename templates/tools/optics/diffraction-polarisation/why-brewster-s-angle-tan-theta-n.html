@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Glare off glass or water is partly polarised. Find the angle where it is completely polarised.{% endblock %}
+{% block why_text %}Reflection is caused by the electrons in the glass vibrating in the refracted light and re-radiating. An electron vibrating in the plane of the page cannot radiate along its own line of vibration. When the reflected ray points along that line, that is, when the reflected and refracted rays are at 90°, none of the in-plane light is reflected. Then i + r = 90°, and with Snell's law sin i = n sin r this gives tan i = n.{% endblock %}
+{% block try_items %}
+<li>Drag the point along the coral curve to where it touches zero. What is i + r?</li>
+<li>Raise n. Does Brewster's angle go up or down?</li>
+<li>At that angle, which kind of light is left in the reflected beam?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Reflectances come from the Fresnel formulas. Coral is light vibrating in the plane of incidence (the page), blue is light vibrating across it. At Brewster's angle the reflected light is all blue: vibrating across the page, parallel to the surface. For glass of n = 1.5 this is 56.3°, for water 53.1°.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Sunglasses that cut glare off water and roads without making everything dark. See how they do it.{% endblock %}
+{% block why_text %}Light reflected from a flat surface is mostly polarised parallel to the surface, that is, horizontally, and most strongly near Brewster's angle. The lenses have their pass axis vertical, so they block horizontal vibrations and let through only the vertical part of the glare. Ordinary light has vibrations in every direction, so the lenses cut it by half only.{% endblock %}
+{% block try_items %}
+<li>Set the angle to Brewster's angle. How much glare is removed?</li>
+<li>Tilt the glasses to 90°, as if you tilted your head sideways. What happens to the glare?</li>
+<li>Try a steep angle, near 20°. Is the glare still blocked well?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Water is n = 1.33. Each bar shows the share of that kind of light that reaches your eye, so the unfiltered glare and the unfiltered ordinary light are both 100%. The glare is treated as the reflection of equal amounts of in-plane and across-plane light, with the in-plane part taken to vibrate vertically. This is accurate near Brewster's angle. Since glare is horizontally polarised, polaroid sunglasses are made with a vertical axis.
+</div>
+{% endblock %}

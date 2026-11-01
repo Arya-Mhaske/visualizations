@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A microscope has two lenses. See how the second one works on the picture made by the first.{% endblock %}
+{% block why_text %}The objective makes a real, enlarged image of the object: that is magnification m₀. The eyepiece does not look at the object at all. It acts as a magnifier on that image and enlarges it by a further factor Mₑ. A picture enlarged by m₀ and then by Mₑ has been enlarged by m₀ × Mₑ, so the magnifications multiply.{% endblock %}
+{% block try_items %}
+<li>Increase the distance between the lenses. Which magnification changes?</li>
+<li>Shorten the eyepiece's focal length. Which magnification changes?</li>
+<li>Switch the final image to the near point. How much does Mₑ change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The bars use a log scale, so that equal steps on the page are equal multiplications. The objective's image is placed so that the eyepiece forms the final image where you choose. The formula m₀ ≈ L/f₀ is the usual approximation when the tube is long; here m₀ is worked out exactly.
+</div>
+{% endblock %}

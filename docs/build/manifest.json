@@ -70,43 +70,43 @@
 "archetype": "table",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/why-doesn-t-dimensionally-correct-mean-correct": {
 "archetype": "chance",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/why-must-sin-log-and-ex-take-pure-numbers": {
 "archetype": "sim",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/why-doesn-t-a-pendulum-s-period-depend-on-its-mass": {
 "archetype": "table",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/dimensional-formula-builder": {
 "archetype": "table",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/convert-units-between-systems": {
 "archetype": "table",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/dimensions/where-does-c-go-in-m-m0-root-1-v2": {
 "archetype": "table",
 "priority": 6,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/motion-in-a-straight-line/why-is-velocity-at-an-instant-a-limit": {
 "archetype": "sim",
@@ -2791,115 +2791,115 @@
 "archetype": "rays",
 "priority": 154,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/refraction-total-internal-reflection/why-does-a-pool-look-shallower-than-it-is": {
 "archetype": "rays",
 "priority": 154,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/refraction-total-internal-reflection/why-does-light-get-trapped-total-internal-reflection": {
 "archetype": "rays",
 "priority": 154,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/refraction-total-internal-reflection/optical-fibres": {
 "archetype": "rays",
 "priority": 154,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/refraction-total-internal-reflection/why-do-diamonds-sparkle": {
 "archetype": "rays",
 "priority": 154,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/lenses/why-does-a-curved-surface-focus-light": {
 "archetype": "rays",
 "priority": 156,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/lenses/why-the-lens-maker-s-formula": {
 "archetype": "rays",
 "priority": 156,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/lenses/why-do-lens-powers-add": {
 "archetype": "rays",
 "priority": 156,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/lenses/thin-lens-ray-tracer": {
 "archetype": "rays",
 "priority": 156,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/lenses/spectacles": {
 "archetype": "rays",
 "priority": 156,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/prism-dispersion/why-does-a-prism-have-a-minimum-deviation": {
 "archetype": "rays",
 "priority": 158,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/prism-dispersion/why-does-a-prism-split-white-light": {
 "archetype": "rays",
 "priority": 158,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/prism-dispersion/find-n-from-minimum-deviation": {
 "archetype": "stepper",
 "priority": 158,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/prism-dispersion/why-is-a-rainbow-at-42": {
 "archetype": "rays",
 "priority": 158,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/optical-instruments/why-does-a-magnifier-help-angular-size": {
 "archetype": "rays",
 "priority": 160,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/optical-instruments/why-does-a-compound-microscope-multiply-magnifications": {
 "archetype": "rays",
 "priority": 160,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/optical-instruments/why-does-a-telescope-magnify-angles-not-size": {
 "archetype": "rays",
 "priority": 160,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/optical-instruments/build-a-microscope-or-telescope": {
 "archetype": "rays",
 "priority": 160,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/optical-instruments/why-are-big-telescopes-reflectors": {
 "archetype": "rays",
 "priority": 160,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/huygens-wavefronts/why-does-every-point-on-a-wavefront-act-as-a-new-source": {
 "archetype": "geometry",
@@ -2959,37 +2959,37 @@
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/why-is-there-a-limit-to-how-sharp-an-image-can-be": {
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/why-does-polarisation-prove-light-is-transverse": {
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/why-i-i0-cos2-theta-malus": {
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/why-brewster-s-angle-tan-theta-n": {
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/polaroid-sunglasses": {
 "archetype": "rays",
 "priority": 166,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/photoelectric-effect/why-does-colour-matter-not-brightness": {
 "archetype": "sim",

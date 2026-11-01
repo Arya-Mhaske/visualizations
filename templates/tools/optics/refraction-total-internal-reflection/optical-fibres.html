@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A fibre is a thin glass thread wrapped in glass of lower index. Bend it, and see how far you can go before the light escapes.{% endblock %}
+{% block why_text %}Light inside the core hits the wall at an angle bigger than the critical angle C, so it is totally reflected again and again, with no loss. On a bend the outer wall turns towards the ray, and the angle of incidence there falls. Bend too tightly and it drops below C. Then some light refracts out and the fibre leaks.{% endblock %}
+{% block try_items %}
+<li>Make the bend radius large. Does the light reach the end?</li>
+<li>Shrink the radius until the light leaks. Compare with the tightest bend that works.</li>
+<li>Raise the core index above the cladding. What happens to the tightest bend?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The core is drawn about 10 000 times wider than a real one, and a bend of a few core widths would never happen in practice. Only rays in the plane of the bend are traced. Real fibres also lose a little light to absorption.
+</div>
+{% endblock %}

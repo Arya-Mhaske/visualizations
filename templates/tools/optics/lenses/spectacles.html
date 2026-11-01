@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A short-sighted eye focuses too soon, a long-sighted eye too late. Find the lens that puts the focus back on the retina.{% endblock %}
+{% block why_text %}Short sight: the eye is too strong, so the far point is close, and the picture of a distant star forms in front of the retina. A diverging lens spreads the light first. Its power should be P = −1/(far point). Long sight: the eye cannot bend light enough for close objects, so the picture forms behind the retina. A converging lens helps, with P = 1/0.25 − 1/(near point) so that a book at 25 cm looks as if it is at the near point.{% endblock %}
+{% block try_items %}
+<li>Short sight with a far point of 0.4 m. Which way is the focus out? Wear the spectacles.</li>
+<li>Reduce the far point to 0.3 m, then raise it to 2 m. How does the power of the lens change?</li>
+<li>Long sight with a near point of 1 m. What power gives a clear book at 25 cm?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The eye is a single thin lens 2.27 cm from the retina, with a relaxed power of about 44 D. The spectacles are treated as touching the eye lens, which is close enough for powers of a few dioptres. Real eyes also have astigmatism and age-related changes that are not modelled here.
+</div>
+{% endblock %}

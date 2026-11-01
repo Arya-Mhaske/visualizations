@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two formulas for kinetic energy pass the dimension test. Only one is true. Check them against a falling ball.{% endblock %}
+{% block why_text %}A dimension check can only see units, and a pure number such as ½ or 3/16 has no units. So k m v² passes for any k at all. Dimensions can reject a wrong formula, but they cannot approve a right one: they leave pure numbers, and any function of pure numbers, completely free. To find k you must measure, or derive it. Here a falling ball gains m g h and v² = 2gh, so only k = ½ matches.{% endblock %}
+{% block try_items %}
+<li>Slide k around. Does the dimension check ever fail?</li>
+<li>Press 3/16, then 1/2. Which one matches the real energy?</li>
+<li>Change the mass and height with k = 3/16. Does the error go away?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The real gain m g h is energy conservation for a dropped ball with no air drag, and g = 9.8 m/s². The same fact is why dimensional analysis can show T ∝ √(l/g) for a pendulum but cannot give the 2π.
+</div>
+{% endblock %}

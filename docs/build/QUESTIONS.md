@@ -40,3 +40,6 @@ Log anything a tool can't follow from the catalogue: tool path, the problem, a p
 - **`functions-graphs/modelling-with-data/diamond-price-versus-carat`: the book's data are not in the repo.** The summary asks for the book's Hope-diamond style data. The tool uses eight made-up prices and says so in a note. Fix: replace the `DATA` array with the book's table when available.
 - **`functions-graphs/modelling-with-data/model-picker`: the logistic fit is approximate.** It fixes the ceiling a little above the largest value and fits a straight line to ln(L/y − 1). That is not a true least-squares logistic fit. The note on the page says the method is simple. Fix: a Gauss–Newton fit if exact R² values matter.
 - **Data sets and rates in several tools are made up for practice:** the shop and taxi stories, the bridge, dish and can numbers, the cost figures and the exchange rate. Each page says so in a note.
+
+## optics/optical-instruments/why-are-big-telescopes-reflectors
+The summary says "heavy glass". A single thin lens is usually lighter than a mirror blank of the same diameter, so a mass comparison would mislead. Built with the true reasons: colour (shown by computing the foci) and support (a lens can only be held by its rim and sags; a mirror is held from behind). Proposed summary: "Avoids chromatic aberration and the problem of supporting a huge lens."

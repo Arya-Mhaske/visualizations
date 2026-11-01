@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Trace two rays from a coin on the bottom of a pool, and see where your eye thinks the coin is.{% endblock %}
+{% block why_text %}A ray leaving the water bends away from the normal, so it looks as if it came from higher up. The eye follows the ray back in a straight line and places the coin where that line meets the vertical through the coin. For rays close to vertical this works out to d/n: the water seems 1.33 times shallower.{% endblock %}
+{% block try_items %}
+<li>Set the viewing angle to 0°. Is the apparent depth d/n?</li>
+<li>Raise the viewing angle. Does the pool look even shallower, or less shallow?</li>
+<li>Change n to 1.5. What happens to the apparent depth?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The usual formula, apparent depth = real depth ÷ n, holds for rays near the vertical. For a slanted view the coin seems to sit on the vertical through the coin, at depth d tan r / tan i. A real eye sees the rays through a small pupil, so the picture is only approximate at large angles.
+</div>
+{% endblock %}

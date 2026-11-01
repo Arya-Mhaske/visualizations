@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Polarised light meets a polaroid turned at an angle θ. How much light gets through?{% endblock %}
+{% block why_text %}The polaroid passes only the part of the electric field that lies along its axis. Projecting E₀ onto the axis gives E₀ cos θ. The brightness of light goes as the square of its field, so the intensity is I = I₀ cos² θ. A cos θ appears for the amplitude and a second one when it is squared.{% endblock %}
+{% block try_items %}
+<li>Set θ = 60°. What fraction of the amplitude gets through, and what fraction of the intensity?</li>
+<li>Compare the solid curve (intensity) with the dashed one (amplitude). Which is lower?</li>
+<li>Set θ = 180°. Why is the light as bright as at 0°?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is Malus's law, for light that is already polarised. Unpolarised light through one polaroid loses half its intensity. The dashed curve is the amplitude, E/E₀ = cos θ, shown to 90°. Drag the point on the graph to turn the polaroid.
+</div>
+{% endblock %}

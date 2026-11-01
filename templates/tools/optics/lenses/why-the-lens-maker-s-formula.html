@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A lens is two curved surfaces back to back. Follow a beam through the first face, then the second, and see where the formula comes from.{% endblock %}
+{% block why_text %}The first face alone would focus a parallel beam at v₁ = nR₁/(n − 1). That point becomes the object for the second face. Applying the surface formula again gives 1/v₂ = (n − 1)(1/R₁ − 1/R₂). That v₂ is the focal length of the lens, so 1/f = (n − 1)(1/R₁ − 1/R₂): two refractions, one after the other.{% endblock %}
+{% block try_items %}
+<li>Take R₁ = 5 and R₂ = −5. Compare the "face 1 alone" mark with the final focus.</li>
+<li>Make the second face flat. Does f match nR₁/(n − 1)?</li>
+<li>Flip the signs of both radii. What happens to f?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Rays are traced exactly through two spheres. The formula is for a thin lens with rays close to the axis, so the lens is drawn only 0.1 thick and the outer rays cross a little short of F. Signs: a face is positive if its centre is on the right.
+</div>
+{% endblock %}

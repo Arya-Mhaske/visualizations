@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Place an object in front of a converging or diverging lens. Trace three rays and find the image.{% endblock %}
+{% block why_text %}Three rays are easy to draw: one parallel to the axis, which the lens sends through the focus; one through the centre, which goes straight on; and one aimed at the focus, which comes out parallel. Where they cross is the image. The lens formula 1/v − 1/u = 1/f gives the same point. For a diverging lens the rays spread, so the image is always virtual, upright and smaller.{% endblock %}
+{% block try_items %}
+<li>With a converging lens, put the object far away, then bring it in past 2f and past f. Describe the image at each stage.</li>
+<li>Put the object inside f. What kind of image is it, and who uses that?</li>
+<li>Switch to a diverging lens. Does the image ever become real?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Cartesian signs: light goes to the right, distances to the left of the lens are negative. So u is negative and v is positive for a real image. Dashed lines and dashed arrows are virtual. Drag the object's tip to move it. The lens is thin, so every ray bends at the lens plane.
+</div>
+{% endblock %}

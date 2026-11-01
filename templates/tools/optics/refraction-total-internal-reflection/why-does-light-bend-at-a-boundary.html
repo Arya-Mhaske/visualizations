@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the crests of a light wave arrive at glass. They are squeezed together inside, and that forces them to tilt.{% endblock %}
+{% block why_text %}Light is slower in glass, so its wavelength shrinks: λ₂ = λ₁/n. But the crests must still meet the boundary at the same points from both sides, because the wave cannot break at the boundary. Crests that are closer together, yet meet the boundary at the same points, have to lean over. That lean is the bend, and it gives sin i / sin r = n.{% endblock %}
+{% block try_items %}
+<li>Press Play. Do the blue and coral crests always meet the boundary at the same points?</li>
+<li>Raise n. What happens to the wavelength in the glass and to the angle r?</li>
+<li>Set i to 10°. Why are the crests nearly parallel to the boundary on both sides?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The frequency does not change when light crosses a boundary, only the speed and the wavelength. The wavelength is drawn much larger than real light, which is about 500 nm.
+</div>
+{% endblock %}

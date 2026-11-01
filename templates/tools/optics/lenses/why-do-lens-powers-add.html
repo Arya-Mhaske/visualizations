@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put two thin lenses together and trace a beam through both. Find the single lens that does the same job.{% endblock %}
+{% block why_text %}A thin lens bends a ray by an amount proportional to its height: the turn is y/f = yP. With two lenses in contact the ray has almost the same height at both, so the two turns simply add: y(P₁ + P₂). A single lens with power P = P₁ + P₂ would give the same bend. Adding powers is adding bends, and power is measured in dioptres (D = 1/m).{% endblock %}
+{% block try_items %}
+<li>Set P₁ = 2 D and P₂ = 3 D. What is the focal length of the pair, and is it larger or smaller than either?</li>
+<li>Set P₂ = −P₁. What do the rays do?</li>
+<li>Make the second lens diverging, say −2 D. How does the focus move?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Heights are drawn ten times larger than they are so that the bends can be seen. Thin lenses and rays close to the axis are assumed, and the lenses are 2 cm apart, small compared with the focal lengths. Spectacle wearers know this rule: the power of a lens is quoted in dioptres.
+</div>
+{% endblock %}

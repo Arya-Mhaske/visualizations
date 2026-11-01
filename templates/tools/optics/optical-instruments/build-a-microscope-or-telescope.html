@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose two lenses, place them on the bench, and check the magnification.{% endblock %}
+{% block why_text %}Telescope: the objective makes an image at its focus, and the eyepiece should sit one fₑ beyond it. Then the final image is at infinity and m = f₀/fₑ. Move the eyepiece and the image comes closer and the magnification changes. Microscope: the objective makes a real, enlarged image, and the eyepiece magnifies it, so M = m₀ × (25/fₑ).{% endblock %}
+{% block try_items %}
+<li>Telescope: press "Normal adjustment". Check m = f₀/fₑ.</li>
+<li>Move the eyepiece 1 cm closer to the objective. What happens to the final image?</li>
+<li>Microscope: how far from the objective does the slide go for the lenses you chose?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A telescope's angular magnification is worked out for a very distant object as f₀ divided by the distance from the image to the eyepiece. The microscope is set for a relaxed eye, with the final image at infinity.
+</div>
+{% endblock %}

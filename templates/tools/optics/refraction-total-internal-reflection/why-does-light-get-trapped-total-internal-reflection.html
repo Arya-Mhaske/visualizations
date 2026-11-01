@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Send light up from inside glass towards air. Raise the angle and watch the part that escapes fade out.{% endblock %}
+{% block why_text %}Going from glass to air the ray bends away from the normal. The more slanted the incoming ray, the closer the outgoing ray gets to skimming along the boundary. At the critical angle C it just grazes it: sin C = 1/n. Past C there is no refracted ray that satisfies Snell's law (it would need sin r > 1), so all the light is reflected. It is trapped.{% endblock %}
+{% block try_items %}
+<li>Raise i slowly from 0°. Does the blue ray bend towards or away from the normal?</li>
+<li>Find the angle where the blue ray lies along the boundary. Does it match C?</li>
+<li>Raise n. What happens to the critical angle?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Ray widths show how much light each carries, using the Fresnel formulas for unpolarised light. Even below C a little light is reflected, and the reflected share grows steeply near C. Drag the dark ray's tail, or use the slider.
+</div>
+{% endblock %}

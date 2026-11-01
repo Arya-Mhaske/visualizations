@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}An object looks bigger when it makes a bigger angle at your eye. Compare the angle at the near point with the angle through a magnifier.{% endblock %}
+{% block why_text %}You cannot see sharply closer than the near point, about 25 cm, so that sets the biggest angle you can get unaided: h/25. A magnifier lets you hold the object much closer, inside its focal length, while your eye sees a comfortable virtual image. The angle is then h/u, which is bigger. The magnification is the ratio of the two angles, 25/u.{% endblock %}
+{% block try_items %}
+<li>Make the focal length smaller. What happens to the angle with the magnifier?</li>
+<li>Move the image from 25 cm to 100 cm. Is the object closer to the lens or further from it?</li>
+<li>Compare M with 1 + 25/f when the image is at 25 cm.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A relaxed eye wants the image at infinity (M = 25/f). Putting it at the near point gives a bit more, M = 1 + 25/f, but tires the eye. Angles are small angles in radians, drawn true to scale.
+</div>
+{% endblock %}

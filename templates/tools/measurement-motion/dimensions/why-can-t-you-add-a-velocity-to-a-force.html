@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Treat units like algebra. Add two quantities, or multiply them, and see which combinations make sense.{% endblock %}
+{% block why_text %}A sum only makes sense between things of the same kind: 3 m + 5 m = 8 m, but 3 m + 5 s says nothing. A velocity and a force have different dimensions, so there is no unit for their sum. Multiplying has no such rule, because it just builds a new quantity: N × m is a new thing, energy. So every real equation must have the same dimension on both sides of the equals sign and of each plus sign.{% endblock %}
+{% block try_items %}
+<li>Add speed and force. Why is that meaningless?</li>
+<li>Add energy and work. Why does that work?</li>
+<li>Multiply force by length. What quantity has that dimension?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  M, L and T stand for mass, length and time. Work and energy are measured in joules and have the same dimension, which is why they can be added.
+</div>
+{% endblock %}

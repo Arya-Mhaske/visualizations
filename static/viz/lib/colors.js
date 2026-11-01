@@ -9,6 +9,8 @@ export function readColors() {
   const style = getComputedStyle(document.documentElement);
   const out = {};
   for (const [key, name] of Object.entries(NAMES)) out[key] = style.getPropertyValue(name).trim();
+  // The spectrum, red to violet: c.spec[0] to c.spec[6] (prisms, rainbows).
+  out.spec = [0, 1, 2, 3, 4, 5, 6].map((k) => style.getPropertyValue(`--viz-spec-${k}`).trim());
   out.line = parseFloat(style.getPropertyValue('--viz-line')) || 3;
   out.fontMono = style.getPropertyValue('--font-mono').trim();
   out.fontHead = style.getPropertyValue('--font-head').trim();

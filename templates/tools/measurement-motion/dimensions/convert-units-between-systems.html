@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A constant's number depends on the units. Rewrite a calorie, G or g in new units for mass, length and time.{% endblock %}
+{% block why_text %}A quantity with dimension [M^a L^b T^c] changes by the ratio of each unit raised to its power: n₂ = n₁ (M₁/M₂)^a (L₁/L₂)^b (T₁/T₂)^c. A smaller unit of length makes a bigger number, and it does so b times over. So the same energy is 4.186 J in SI and about 4.186 × 10⁷ erg in CGS, where mass is in g, length in cm and time in s.{% endblock %}
+{% block try_items %}
+<li>With grams, centimetres and seconds, what is G? What is g?</li>
+<li>Choose km and hours for g. Is the number bigger or smaller than 9.8?</li>
+<li>For the density of water, change only the unit of length. Which way does the number go, and why?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The starting units are CGS: g, cm and s. One calorie is taken as 4.186 J, G = 6.674 × 10⁻¹¹ N m² kg⁻² and g = 9.8 m s⁻².
+</div>
+{% endblock %}

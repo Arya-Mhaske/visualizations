@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Sunlight enters a raindrop, reflects once and comes out. Why do we see the bow at 42° and nowhere else?{% endblock %}
+{% block why_text %}The total turn is D = 180° + 2i − 4r. As i changes, D has a lowest value of about 138°, where its slope is zero. Near that angle many different rays are turned by almost the same amount, so they leave together as a bright beam. We see it 180° − 138° = 42° from the direction opposite the Sun. Red has a slightly smaller n, so its minimum is a little different, and the colours separate.{% endblock %}
+{% block try_items %}
+<li>Drag the point to the bottom of the curve. Do the grey rays bunch up near that ray when they leave?</li>
+<li>Move i far from the minimum. Do nearby rays still leave together?</li>
+<li>Change the colour from red to violet. How does the rainbow angle change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Finding the lowest point of D is a maxima-and-minima problem: setting dD/di = 0 gives cos²i = (n² − 1)/3. Red light gives about 42.4° and violet about 40.6°, so red is on the outside of the bow. The index of water follows n = 1.3235 + 0.0033/λ², with λ in micrometres.
+</div>
+{% endblock %}

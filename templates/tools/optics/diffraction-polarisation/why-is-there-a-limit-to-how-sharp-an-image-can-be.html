@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Bring two stars closer together and watch their blobs merge. No lens can prevent it.{% endblock %}
+{% block why_text %}Light spreads as it goes through any opening, so a point of light never forms a point. It forms a bright disc with faint rings. Two stars make two such discs. When they are closer than 1.22 λ/D, the centre of one lies on the first dark ring of the other, and the discs merge into one blob. A bigger opening D or shorter wavelength shrinks the discs, which is why big telescopes see finer detail.{% endblock %}
+{% block try_items %}
+<li>Set the separation to the limit. How deep is the dip between the peaks?</li>
+<li>Make it smaller. At what point does the dip vanish?</li>
+<li>Double the opening, D. What happens to the limit?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The stars are equally bright and the opening is circular, so each blob is an Airy pattern (2J₁(x)/x)². The 1.22 comes from the first zero of the Bessel function J₁. At the Rayleigh limit the dip is about 26%. A 5 mm pupil has a diffraction limit near 27 arcseconds, though the eye's real limit is about 60 because of its retina.
+</div>
+{% endblock %}

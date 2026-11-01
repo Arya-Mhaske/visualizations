@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Try sin(5 m). Then try the sine of an angle. See what goes wrong with the first.{% endblock %}
+{% block why_text %}A function like sin x is built from powers of x: x − x³/3! + x⁵/5! − … If x is in metres, the terms are in m, m³, m⁵, and these cannot be added. So sin of a length is meaningless. The same goes for log and eˣ, which also have power series. An angle works because it is a ratio: arc ÷ radius is metres divided by metres, a pure number. Its "radian" is a name, not a unit.{% endblock %}
+{% block try_items %}
+<li>Choose "A length". What unit does each term carry?</li>
+<li>Choose "Arc ÷ radius". Why is every term now a pure number?</li>
+<li>Double the radius and the arc together. Does the angle change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Only the first three terms are shown. The full series carries on in the same way, with terms in m⁷, m⁹ and so on. Likewise, ln(5 m) is meaningless but ln(5 m ÷ 2 m) is fine.
+</div>
+{% endblock %}

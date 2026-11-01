@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pair each ray from the top half of a slit with one from the bottom half. See where all the pairs cancel.{% endblock %}
+{% block why_text %}Take a ray from the top of the slit and one from the middle. They are a/2 apart, so in direction θ one lags the other by (a/2) sin θ. When that lag is half a wavelength, they cancel. Every ray in the top half has such a partner in the bottom half, so the whole slit is dark: a sin θ = λ. The central peak runs from −θ₁ to +θ₁, which is twice as wide as each side peak, which only runs from θ₁ to θ₂.{% endblock %}
+{% block try_items %}
+<li>Drag the point to the first dark spot. What is the pair gap?</li>
+<li>Narrow the slit. Does the pattern get wider or narrower?</li>
+<li>Compare the central width with the side width in the readout.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Only four pairs of rays are drawn; the slit really has infinitely many. The pattern is I = I₀ (sin β / β)² with β = π a sin θ / λ. The side peaks are about the same width only for small angles.
+</div>
+{% endblock %}

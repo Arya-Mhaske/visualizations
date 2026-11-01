@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}You half-remember m = m₀/√(1 − v²), and c has gone missing. Put it back so the formula makes sense.{% endblock %}
+{% block why_text %}The "1" is a pure number, and you can only subtract things of the same kind, so what is taken from 1 must be a pure number too. v² has units of m²/s². To cancel them, divide by something with those units: c², the square of a speed. That also fixes the fact that mass should not depend on the direction of travel, so v/c alone will not do, even though it is dimensionless.{% endblock %}
+{% block try_items %}
+<li>Choose v² and then v²/c. Why do both fail the unit test?</li>
+<li>Choose v/c and v²/c². Both pass the unit test. Which one passes the "+v and −v" test?</li>
+<li>With v²/c², bring v/c close to 1. What happens to the mass?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Dimensions alone left two choices, v/c and v²/c². They cannot choose between them. The symmetry argument (direction does not matter) does. Dimensional analysis narrows down a formula but rarely finishes the job.
+</div>
+{% endblock %}
