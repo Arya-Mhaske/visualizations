@@ -36,3 +36,7 @@ Log anything a tool can't follow from the catalogue: tool path, the problem, a p
 - **`measurement-motion/units-measurement/measure-a-hair-or-a-thread-with-simple-tools`: no microscope view.**
   The summary says "or uses a microscope". Only winding is built; the microscope is a one-line note. Fix: add a second view
   (vernier microscope with a least count of 0.01 mm) if wanted.
+- **`functions-graphs/transformations/match-the-graph-to-the-equation`: no timer.** The summary says "timed matching game". The drill has no clock, so the tool is untimed practice with a score, and a note says so. Fix: add an optional countdown to `lib/drill.js` if a timed version is wanted.
+- **`functions-graphs/modelling-with-data/diamond-price-versus-carat`: the book's data are not in the repo.** The summary asks for the book's Hope-diamond style data. The tool uses eight made-up prices and says so in a note. Fix: replace the `DATA` array with the book's table when available.
+- **`functions-graphs/modelling-with-data/model-picker`: the logistic fit is approximate.** It fixes the ceiling a little above the largest value and fits a straight line to ln(L/y − 1). That is not a true least-squares logistic fit. The note on the page says the method is simple. Fix: a Gauss–Newton fit if exact R² values matter.
+- **Data sets and rates in several tools are made up for practice:** the shop and taxi stories, the bridge, dish and can numbers, the cost figures and the exchange rate. Each page says so in a note.

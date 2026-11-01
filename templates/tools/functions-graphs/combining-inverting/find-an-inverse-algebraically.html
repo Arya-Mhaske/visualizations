@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Swap x and y, solve, then check on the graph.{% endblock %}
+{% block why_text %}To find an inverse: write y = f(x), swap x and y, then solve for y. The result is f⁻¹. Check by reflecting in y = x, or by testing that f⁻¹(f(x)) = x.{% endblock %}
+{% block try_items %}
+<li>Step through (x − 1) ÷ (x + 2). Which step takes the most care?</li>
+<li>Check the readout. Is f⁻¹(f(x)) = x?</li>
+<li>Compare the graphs with the mirror line.</li>
+{% endblock %}

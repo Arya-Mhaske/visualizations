@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Put socks on then shoes, then shoes then socks, with two function machines.{% endblock %}
+{% block why_text %}f(g(x)) means do g first, then f. g(f(x)) means do f first, then g. In general these give different results, just as the order of socks and shoes matters. They are equal only for special pairs.{% endblock %}
+{% block try_items %}
+<li>Choose f = double and g = add 3. Compare the two rows.</li>
+<li>Find a pair for which the two rows agree.</li>
+<li>Choose f = square and g = add 3 with x = 2.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Map 5 balls to 5 boxes, then map ℕ → ℕ by n ↦ 2n.{% endblock %}
+{% block why_text %}With a finite number of balls and the same number of boxes, if no two balls share a box then every box is used, so one-to-one forces onto. With infinitely many numbers, n ↦ 2n gives each output at most once yet never reaches the odd numbers, so it is one-to-one but not onto.{% endblock %}
+{% block try_items %}
+<li>Find a mapping with no clash. Are any boxes empty?</li>
+<li>Force a clash. What must be true of the boxes?</li>
+<li>Switch to n ↦ 2n. Which numbers are never reached?</li>
+{% endblock %}

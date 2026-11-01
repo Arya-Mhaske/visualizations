@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Remove g's outputs that f can't accept.{% endblock %}
+{% block why_text %}f∘g is defined at x only when g(x) is a valid input for f. So you must remove from g's domain every x whose output f cannot take. That is why the domain of f∘g is often smaller than the domain of g.{% endblock %}
+{% block try_items %}
+<li>Choose √x after x² − 4. Which x are removed?</li>
+<li>Choose 1/x after x − 2. Which x is removed?</li>
+<li>Why is the bar along the axis shorter than the whole axis?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Write √(x² + 1) as f∘g in several ways.{% endblock %}
+{% block why_text %}A function can be broken into an inner function g, applied first, and an outer function f. Several splits can work for the same function. Always check by putting f after g and comparing with the original at several values.{% endblock %}
+{% block try_items %}
+<li>Check all four splits of √(x² + 1). Which are wrong?</li>
+<li>Choose (3x − 2)⁴. Find a split with a different inner function.</li>
+<li>Why does a wrong split fail the test?</li>
+{% endblock %}

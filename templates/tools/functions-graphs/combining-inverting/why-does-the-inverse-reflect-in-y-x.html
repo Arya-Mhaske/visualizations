@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Swap every (a, b) to (b, a) and watch the graph fold.{% endblock %}
+{% block why_text %}If f takes a to b, the inverse takes b back to a. So the graph of the inverse has the point (b, a) wherever the graph of f has (a, b). Swapping the coordinates of a point reflects it in the line y = x, so the whole graph of the inverse is the mirror image of the graph of f.{% endblock %}
+{% block try_items %}
+<li>Choose 2x + 1 and add more pairs. What shape do the blue points make?</li>
+<li>Choose eˣ. What curve is its mirror image?</li>
+<li>Why does x² need x ≥ 0?</li>
+{% endblock %}

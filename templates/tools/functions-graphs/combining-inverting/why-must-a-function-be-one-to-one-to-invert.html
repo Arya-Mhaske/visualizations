@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Sweep a horizontal line: two hits means undo is ambiguous.{% endblock %}
+{% block why_text %}To undo a function, each output must come from exactly one input. If a horizontal line meets the graph twice, two inputs give the same output, and the inverse would not know which to return. A function that every horizontal line meets at most once is one-to-one and can be inverted.{% endblock %}
+{% block try_items %}
+<li>Sweep the line across x². How many hits do you get above 0?</li>
+<li>Choose x³. Does any line hit twice?</li>
+<li>Choose x³ − 3x. For which heights are there three hits?</li>
+{% endblock %}

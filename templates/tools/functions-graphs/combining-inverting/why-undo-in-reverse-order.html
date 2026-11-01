@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Take the shoes off before the socks.{% endblock %}
+{% block why_text %}If you apply g and then f, the last thing done is f, so it has to be undone first. Undoing g first gets the machines in the wrong order, and the number that returns is not the one you started with. So (f∘g)⁻¹ = g⁻¹∘f⁻¹.{% endblock %}
+{% block try_items %}
+<li>Run the correct row. Does the start value return?</li>
+<li>Run the wrong row. What comes back?</li>
+<li>Try the square pair with x = 4.</li>
+{% endblock %}

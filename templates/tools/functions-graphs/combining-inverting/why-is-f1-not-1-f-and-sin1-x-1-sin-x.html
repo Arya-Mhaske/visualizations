@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Plot sin⁻¹ x and (sin x)⁻¹ = cosec x side by side.{% endblock %}
+{% block why_text %}The small −1 in f⁻¹ means the inverse function, which undoes f. Written on a number, as in 2⁻¹, it means the reciprocal. For functions, f⁻¹ and 1/f are different. sin⁻¹ x is the angle whose sine is x. (sin x)⁻¹ = 1/sin x is cosec x.{% endblock %}
+{% block try_items %}
+<li>Compare the two graphs for sine. How are they shaped?</li>
+<li>Put v = 0.5. What are the two answers?</li>
+<li>Which one would you use to find an angle from a ratio?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The inverse of sine here is the principal arcsine, defined for x between −1 and 1.
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Slide a horizontal line across a rising graph. It can only hit once.{% endblock %}
+{% block why_text %}If a graph only ever goes up, then once it passes a height it never returns to it. So a horizontal line meets it at most once, and the function is one-to-one. The wobble k shows it: for k ≤ 1 the graph is always rising, and for k > 1 it dips and the line can meet it three times.{% endblock %}
+{% block try_items %}
+<li>Set k = 0.5 and slide the line. How many hits?</li>
+<li>Set k = 2. Find a height with three hits.</li>
+<li>What is the lowest slope at k = 1?</li>
+{% endblock %}

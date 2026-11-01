@@ -3415,55 +3415,55 @@
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-is-an-1-an": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-do-exponents-add-when-you-multiply": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-is-a-1-2-roota": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-is-root-a2-a-not-a": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/why-rationalise-the-denominator": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/simplify-radicals-with-a-factor-tree": {
 "archetype": "discrete",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/scientific-notation-zoom": {
 "archetype": "stepper",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/exponents-roots/powers-of-ten-atom-to-universe": {
 "archetype": "space3d",
 "priority": 69,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-is-a-b-2-not-a2-b2": {
 "archetype": "space3d",
@@ -3967,331 +3967,331 @@
 "archetype": "plot",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/why-does-f-2x-squeeze-but-2f-x-stretch": {
 "archetype": "plot",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/why-does-the-order-of-transformations-matter": {
 "archetype": "plot",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/f-x-versus-f-x": {
 "archetype": "plot",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/transformation-sequence-builder": {
 "archetype": "stepper",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/transformations/match-the-graph-to-the-equation": {
 "archetype": "stepper",
 "priority": 79,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-is-fg-not-gf": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-does-the-domain-of-fg-shrink": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-must-a-function-be-one-to-one-to-invert": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-does-the-inverse-reflect-in-y-x": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-undo-in-reverse-order": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-is-every-increasing-function-one-to-one": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-is-one-one-the-same-as-onto-for-a-finite-set-but-not-for": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/why-is-f1-not-1-f-and-sin1-x-1-sin-x": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/find-an-inverse-algebraically": {
 "archetype": "stepper",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/add-subtract-multiply-functions": {
 "archetype": "stepper",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/decompose-a-function": {
 "archetype": "stepper",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/combining-inverting/c-f-and-currency-there-and-back": {
 "archetype": "plot",
 "priority": 111,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/why-is-the-vertex-at-x-b-2a": {
 "archetype": "plot",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/why-does-a-control-direction-and-width": {
 "archetype": "plot",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/why-is-every-parabola-the-same-shape": {
 "archetype": "plot",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/standard-vertex-factored-form": {
 "archetype": "stepper",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/find-a-quadratic-from-a-vertex-and-a-point": {
 "archetype": "stepper",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/biggest-field-for-a-fixed-fence": {
 "archetype": "plot",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/price-that-maximises-revenue": {
 "archetype": "space3d",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/quadratic-functions/projectiles-and-bridge-arches": {
 "archetype": "plot",
 "priority": 81,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-does-the-leading-term-decide-the-ends": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-do-some-roots-bounce-and-others-cross": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-at-most-n-roots-and-n-1-turns": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-does-the-remainder-theorem-work": {
 "archetype": "discrete",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-is-the-list-of-rational-roots-so-short": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/descartes-rule-of-signs": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-degree-n-means-n-complex-roots": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/why-is-there-no-formula-past-degree-4": {
 "archetype": "plot",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/find-every-zero": {
 "archetype": "stepper",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/trap-a-root-intermediate-value-theorem": {
 "archetype": "stepper",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/polynomial-functions/open-top-box-from-a-sheet": {
 "archetype": "space3d",
 "priority": 83,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/why-vertical-asymptotes-and-when-only-a-hole": {
 "archetype": "plot",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/why-do-degrees-decide-the-horizontal-asymptote": {
 "archetype": "phasor",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/why-a-slant-asymptote": {
 "archetype": "discrete",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/why-can-a-graph-cross-a-horizontal-asymptote-but-never-a-ver": {
 "archetype": "plot",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/analyse-a-rational-function": {
 "archetype": "stepper",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/average-cost-falls-toward-a-limit": {
 "archetype": "plot",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/rational-functions/least-metal-for-a-can": {
 "archetype": "space3d",
 "priority": 85,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/why-does-best-fit-mean-least-squares": {
 "archetype": "chance",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/what-does-r-measure": {
 "archetype": "discrete",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/why-take-logs-of-exponential-data": {
 "archetype": "plot",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/linear-or-not": {
 "archetype": "stepper",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/model-picker": {
 "archetype": "stepper",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/modelling-with-data/diamond-price-versus-carat": {
 "archetype": "plot",
 "priority": 87,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/area-by-stretching/why-is-a-triangle-half-a-parallelogram": {
 "archetype": "plot",
 "priority": 89,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/area-by-stretching/why-does-stretching-by-c-multiply-area-by-c": {
 "archetype": "discrete",
 "priority": 89,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/area-by-stretching/why-is-an-ellipse-s-area-piab": {
 "archetype": "plot",
 "priority": 89,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/area-by-stretching/why-is-a-circle-s-area-pir2": {
 "archetype": "plot",
 "priority": 89,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/area-by-stretching/area-of-any-polygon": {
 "archetype": "stepper",
 "priority": 89,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/angles-arcs/why-360-degrees": {
 "archetype": "geometry",
@@ -6321,73 +6321,73 @@
 "archetype": "plot",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/why-do-left-and-right-limits-have-to-agree": {
 "archetype": "plot",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/why-does-sin-1-x-have-no-limit-at-0": {
 "archetype": "plot",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/why-can-a-calculator-lie-about-a-limit": {
 "archetype": "plot",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/why-is-infinity-not-a-number": {
 "archetype": "discrete",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/estimate-a-limit-from-a-table-and-a-graph": {
 "archetype": "stepper",
 "priority": 53,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/why-can-you-just-substitute-for-polynomials": {
 "archetype": "chance",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/what-does-0-0-tell-you": {
 "archetype": "plot",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/why-does-the-squeeze-theorem-work": {
 "archetype": "plot",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/why-is-lim-xn-an-x-a-nan1": {
 "archetype": "plot",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/limit-law-stepper": {
 "archetype": "stepper",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limit-laws/rationalise-to-find-a-limit": {
 "archetype": "stepper",
 "priority": 55,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-precise-definition/what-does-as-close-as-you-like-really-mean": {
 "archetype": "chance",
@@ -6513,67 +6513,67 @@
 "archetype": "plot",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/why-the-product-rule": {
 "archetype": "space3d",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/why-the-quotient-rule": {
 "archetype": "plot",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/why-is-ex-its-own-derivative": {
 "archetype": "plot",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/rule-drill": {
 "archetype": "drill",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/second-derivatives-and-the-equations-they-satisfy": {
 "archetype": "stepper",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/build-a-better-roller-coaster": {
 "archetype": "plot",
 "priority": 59,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/trig-derivatives/why-does-sin-theta-theta-1-and-only-in-radians": {
 "archetype": "plot",
 "priority": 61,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/trig-derivatives/why-is-sin-x-prime-cos-x": {
 "archetype": "plot",
 "priority": 61,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/trig-derivatives/why-is-cos-x-prime-sin-x": {
 "archetype": "plot",
 "priority": 61,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/trig-derivatives/derivatives-of-tan-sec-csc-cot": {
 "archetype": "stepper",
 "priority": 61,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/chain-rule/why-do-rates-multiply": {
 "archetype": "plot",
