@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One equation, r = ℓ/(1 − e cos θ), and the eccentricity decides which conic you get.{% endblock %}
+{% block why_text %}Every conic is the set of points whose distance from the focus is e times their distance from the directrix. That one rule gives one equation in polar form. When e is 0 it is a circle. Below 1 it is an ellipse. At 1 it is a parabola, and above 1 it is a hyperbola. The same formula covers all four, which is why astronomers use it for orbits.{% endblock %}
+{% block try_items %}
+<li>Slide e from 0 to 3. At which values does the shape change?</li>
+<li>Move the marker round the curve. Does r always equal e times the distance to the directrix?</li>
+<li>Set e = 1. What happens to the curve as the marker nears 0°?</li>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The Sun is at a focus of the orbit: the planet moves fast near it and slow far away.{% endblock %}
+{% block why_text %}Kepler's second law says a line from the Sun to the planet sweeps out equal areas in equal times. Near the Sun the line is short, so to sweep the same area the planet must move fast. Far away the line is long, so the planet moves slowly. The ratio of the fastest and slowest speeds is (1 + e)/(1 − e).{% endblock %}
+{% block try_items %}
+<li>Set e = 0.6 and compare the two wedges. Do they look alike? Do they have the same area?</li>
+<li>Move the planet to the far end of the orbit. What happens to its speed?</li>
+<li>Set e = 0. What is the speed everywhere?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The orbit is drawn with a = 1 and the speed is measured in units of the speed of a circular orbit of the same size. The equal-areas law is Kepler's second law.
+</div>
+{% endblock %}

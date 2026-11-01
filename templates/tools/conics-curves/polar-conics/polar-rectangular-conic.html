@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Convert a conic between polar and rectangular form.{% endblock %}
+{% block why_text %}Multiply out the polar equation to get r = ℓ + e r cos θ. Replace r cos θ by x and square both sides, using r² = x² + y². That gives a quadratic equation in x and y, with the coefficient of x² equal to 1 − e². Its sign tells you the type at once: positive for an ellipse, zero for a parabola, negative for a hyperbola.{% endblock %}
+{% block try_items %}
+<li>Use e = 0.5. What is the coefficient of x²?</li>
+<li>Set e = 1.0. What happens to the x² term?</li>
+<li>Switch the direction and read the eccentricity back out of the polar form.</li>
+{% endblock %}
