@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Shine a light straight down onto the line of b. The shadow of a is the part of a that points along b.{% endblock %}
+{% block why_text %}The dashed drop from the tip of a meets the line of b at a right angle, so the drop has a · b = 0. That is why the shadow is (a · b / b · b) b: it is the only multiple of b that leaves a right-angled leftover.{% endblock %}
+{% block try_items %}
+<li>Make b = (0, 0, 5) and turn a. What does the shadow become?</li>
+<li>Choose a and b at right angles, such as (3, 0, 0) and (0, 4, 0). How long is the shadow?</li>
+<li>Point a against b. What sign does the shadow length take?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}In components, every operation works one coordinate at a time. Pick an operation and watch the green arrow.{% endblock %}
+{% block why_text %}Adding or scaling a vector never mixes x, y and z. Each coordinate is its own number line. To normalise, divide every component by the length.{% endblock %}
+{% block try_items %}
+<li>Add u and v. Do the dashed edges make a parallelogram?</li>
+<li>Scale u by k = −1. Which way does the result point?</li>
+<li>Normalise any u. What is the length of the result?</li>
+{% endblock %}

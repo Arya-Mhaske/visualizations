@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A vector makes an angle with each axis. The cosine of each angle is the length of a shadow. Watch the shadows of a length-1 arrow.{% endblock %}
+{% block why_text %}Make the vector length 1. Its shadows on the axes are the edges of a box, and the arrow is the box's long diagonal. The space diagonal squared is x² + y² + z² (Pythagoras twice), and the diagonal is 1. So l² + m² + n² = 1, whatever the direction.{% endblock %}
+{% block try_items %}
+<li>Choose (3, 4, 0). Which cosine is 0, and what is that angle?</li>
+<li>Choose (1, 1, 1). Are all three angles equal? What are they?</li>
+<li>Make a negative. What happens to that cosine, and to the sum?</li>
+{% endblock %}

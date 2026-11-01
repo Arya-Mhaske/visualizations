@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}An internal point lies between P and Q. An external point lies on the line beyond one end. Both have the same PR : RQ = m : n.{% endblock %}
+{% block why_text %}External division is internal division with n made negative: the segment RQ points the other way. So m + n becomes m − n, and m = n has no answer.{% endblock %}
+{% block try_items %}
+<li>Divide internally 2 : 1. Then switch to external. Where does R go?</li>
+<li>Set external with m = 1 and n = 3. Which end is R beyond?</li>
+<li>Set external with m = n. What does the page say?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Three points are on one line when AB is a multiple of AC. Slide C and see when the three component ratios agree.{% endblock %}
+{% block why_text %}If AB = λ AC, the two arrows share the point A and point the same way (or the opposite way), so they lie on one line. One number λ must work for x, y and z together.{% endblock %}
+{% block try_items %}
+<li>Slide C with Lift at 0. Do all three ratios stay equal?</li>
+<li>Lift C by 1. Which ratio breaks first?</li>
+<li>Slide C to −1. What is λ, and what does its sign mean?</li>
+{% endblock %}

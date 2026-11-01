@@ -7719,37 +7719,37 @@
 "archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/projections-in-3d": {
 "archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/why-does-the-section-formula-weight-the-far-end": {
 "archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/component-operations": {
 "archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/section-formula-internal-and-external": {
-"archetype": "stepper",
+"archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/vectors-in-space/collinear-points-with-vectors": {
-"archetype": "phasor",
+"archetype": "space3d",
 "priority": 163,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cross-product/why-is-a-x-b-perpendicular-to-both": {
 "archetype": "space3d",
