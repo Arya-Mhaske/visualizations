@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A coil on a soft-iron rod is an electromagnet. Change the current and the turns, and see how much stronger the iron makes it.{% endblock %}
+{% block why_text %}The field inside a coil grows with the turns per metre and the current: B = μ₀nI. Soft iron adds its own magnetisation, so the same coil gives a field hundreds of times larger. The lifting power grows as B², until the iron is saturated and more current helps little.{% endblock %}
+{% block try_items %}
+<li>Keep the current and double the turns. What happens to the field with air, and with iron?</li>
+<li>Raise the current to 3 A with 400 turns. Does the iron field still double when you double the current?</li>
+<li>Compare the two bars. How many times more mass does the iron core lift?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The iron curve is a simple model of soft iron (it saturates near 1.6 T), not a measurement. The lifting mass assumes the plate touches a flat pole face of 2 cm². Real electromagnets use a closed iron frame to do better. The coil is 20 cm long.
+</div>
+{% endblock %}

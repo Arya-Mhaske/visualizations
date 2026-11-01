@@ -2463,46 +2463,46 @@
 "reviewed": false
 },
 "current-magnetism/sources-of-magnetic-field/why-biotsavart-each-piece-of-wire-adds-its-bit": {
-"archetype": "space3d",
+"archetype": "geometry",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/why-is-the-field-on-a-loop-s-axis-0ir2-2-x2-r2-3-2": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/why-is-a-long-wire-s-field-0i-2pir-ampere": {
-"archetype": "space3d",
+"archetype": "geometry",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/why-is-a-solenoid-s-field-uniform-inside": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/why-do-parallel-currents-attract": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/field-calculator": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/electromagnets": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 134,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/loops-meters/why-is-a-current-loop-a-magnetic-dipole": {
 "archetype": "sim",

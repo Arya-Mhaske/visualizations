@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}One loop makes a field that is strong near the wire and weak in the middle. Add loops side by side and watch the inside line up while the outside fades.{% endblock %}
+{% block why_text %}Inside the coil every loop pushes the field the same way along the axis, so the bits add. Outside, the field of one loop opposes the field of its neighbour, so they largely cancel. In a long coil the inside field is uniform, B = μ₀nI, where n is the turns per metre.{% endblock %}
+{% block try_items %}
+<li>Start with 1 turn, then add turns. What happens to the arrows inside?</li>
+<li>Keep 20 turns and stretch L from 6 cm to 30 cm. Does the field stay the same?</li>
+<li>Double the current. What happens to μ₀nI and to the arrows?</li>
+<li>Make the radius bigger. Does the field get less uniform?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The formula B = μ₀nI is for a very long solenoid. At the very end of a long coil the field is about half as strong. A short, fat coil never gets a uniform field.
+</div>
+{% endblock %}

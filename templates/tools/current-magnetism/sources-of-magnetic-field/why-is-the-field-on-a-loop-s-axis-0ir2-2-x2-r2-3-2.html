@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pick a point on the axis of a current loop. Every piece of the loop pushes the field sideways and along the axis. Add the pieces and see which parts survive.{% endblock %}
+{% block why_text %}Two opposite pieces push the field sideways in opposite directions, so the sideways parts cancel all the way round. The along-axis parts all point the same way, so they add. Each is dB × R ÷ r, with r² = x² + R², and that gives B = μ₀IR² ÷ 2(x² + R²)^(3/2).{% endblock %}
+{% block try_items %}
+<li>Slide x to 0. Why is there no sideways part at the centre?</li>
+<li>Set 2 pieces and look at the lower picture: the two sideways parts go out and back. Raise to 8. What shape do they make?</li>
+<li>Raise the pieces to 24. Does the total along the axis change?</li>
+<li>Slide x far out. How does the share of the centre field fall?</li>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Each wire sits in the field of the other. See which way that field pushes a wire that carries current, and how the push depends on the currents and the gap.{% endblock %}
+{% block why_text %}Wire 1 makes a field μ₀I₁ ÷ 2πd at wire 2. Wire 2 carries I₂ across that field, so each metre feels a force I₂B. For currents the same way, the force on each wire points towards the other. That gives F ÷ L = μ₀I₁I₂ ÷ 2πd, and 1 ampere is defined as the current that gives 2 × 10⁻⁷ N per metre at 1 m.{% endblock %}
+{% block try_items %}
+<li>Switch the right current the other way. What happens to the push?</li>
+<li>Halve the gap. How does the push per metre change?</li>
+<li>Double I₁ only. Does the force on the right wire change? And on the left wire?</li>
+<li>Press "Set both to 1 A" and read the line "Same wires, 1 m apart".</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The wires are shown end on, so their length is into the page. The formula assumes wires much longer than the gap.
+</div>
+{% endblock %}

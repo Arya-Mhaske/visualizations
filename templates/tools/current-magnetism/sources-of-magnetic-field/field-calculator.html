@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick a wire, a coil or a solenoid, set the numbers, and read the field. The graph shows how it changes with the quantity you move.{% endblock %}
+{% block why_text %}Each source has one formula. A long wire gives B = μ₀I ÷ 2πr. A coil gives B = μ₀NIR² ÷ 2(x² + R²)^(3/2) on its axis, and μ₀NI ÷ 2R at its centre. A long solenoid gives B = μ₀nI inside.{% endblock %}
+{% block try_items %}
+<li>Wire: set I = 10 A and r = 5 cm. Compare B with Earth's field.</li>
+<li>Coil: move x from 0 to 20 cm. How far out is the field half its centre value?</li>
+<li>Solenoid: what current gives 5 mT at 1000 turns per metre?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The wire formula is for a very long wire. The solenoid formula is for a very long solenoid, inside it. The coil formula gives the field only on its axis.
+</div>
+{% endblock %}
