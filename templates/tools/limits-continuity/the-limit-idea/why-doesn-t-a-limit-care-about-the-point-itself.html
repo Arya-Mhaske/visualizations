@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Fill the hole, empty it, or move the dot. The limit does not change.{% endblock %}
+{% block why_text %}A limit asks what the function is heading for as x gets close to a point, not what it equals at the point. The graph on either side of x = 1 heads for 2 whatever you do at x = 1 itself. You can leave the point out, put a dot at 2, or put it somewhere else: the limit is still 2. The limit and the value at the point agree only when the function is continuous there.{% endblock %}
+{% block try_items %}
+<li>Switch the dot off. What is f(1), and what is the limit?</li>
+<li>Put the dot at 5. Does the limit change?</li>
+<li>Put the dot at 2. What do you notice about the graph now?</li>
+{% endblock %}

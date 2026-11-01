@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Zoom the graph and fill the table together until the limit shows itself.{% endblock %}
+{% block why_text %}To estimate a limit, evaluate the function at points closer and closer to the target from both sides, and zoom the graph in at the same time. If the left and right values settle on one number, that is the limit. The table and the graph give the same answer from two points of view.{% endblock %}
+{% block try_items %}
+<li>Choose sin x ÷ x. What do the values approach?</li>
+<li>Choose (x² − 1) ÷ (x − 1). Why does the graph have a hole?</li>
+<li>Zoom in fully. Do the left and right values agree?</li>
+{% endblock %}

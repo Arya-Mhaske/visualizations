@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Zoom in on sin(1/x) at 0. It keeps swinging between −1 and 1 however far you go.{% endblock %}
+{% block why_text %}As x gets close to 0, 1/x gets huge, and sine of a huge number keeps going up and down between −1 and 1, faster and faster. Zooming in never calms it. There is no single value that the function approaches, so there is no limit. The wiggles pack in without end near 0.{% endblock %}
+{% block try_items %}
+<li>Zoom in step by step. Does the picture ever settle?</li>
+<li>Count the crossings of the axis in the last readout. How does the number change when you zoom?</li>
+<li>Which two values does the graph keep touching?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The picture is drawn with several thousand points. Very close to 0 the wiggles are too narrow to show on screen, which is itself part of the point.
+</div>
+{% endblock %}

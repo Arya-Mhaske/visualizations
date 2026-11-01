@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Approach a jump from each side and get two different answers.{% endblock %}
+{% block why_text %}A limit needs one number that the function approaches from both sides. If the left side heads for one height and the right side for another, no single number works, so the limit does not exist, even though each one-sided limit does. A limit exists exactly when both one-sided limits exist and are equal.{% endblock %}
+{% block try_items %}
+<li>Choose "A jump". What do the left and right values approach?</li>
+<li>Choose "No jump". Do they agree?</li>
+<li>Make h very small. Does the jump get any smaller?</li>
+{% endblock %}

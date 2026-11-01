@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Watch 1/x² beat every bound you set. "Infinite" describes how it behaves, not a number it reaches.{% endblock %}
+{% block why_text %}The statement "the limit is infinity" means that for any bound M you name, the function is bigger than M once x is close enough to 0. The picture shows the band that does this for M, and it exists for every M. There is no number "infinity" being reached. It is a short way of saying the function grows past every bound.{% endblock %}
+{% block try_items %}
+<li>Set M = 10. How close to 0 must x be?</li>
+<li>Set M = 10 000 000. Does a band still exist?</li>
+<li>What happens to the band as M grows?</li>
+{% endblock %}

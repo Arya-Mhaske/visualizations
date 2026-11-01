@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Evaluate (√(t² + 9) − 3)/t² for smaller and smaller t. The calculator drifts away from the true limit 1/6.{% endblock %}
+{% block why_text %}The true limit is 1/6, about 0.1667. A calculator keeps a fixed number of digits. For tiny t the two numbers √(t² + 9) and 3 agree in every digit it keeps, so their difference is 0 and the fraction is 0 over something. Rounding, not mathematics, produces the wrong answer. Rationalising the top first gives a form with no subtraction, which stays accurate.{% endblock %}
+{% block try_items %}
+<li>Set 10 digits. At which row do the answers stop looking like 1/6?</li>
+<li>Raise the digits kept. Does the failure move down the table?</li>
+<li>Compare with the rationalised column. Does it ever fail?</li>
+{% endblock %}
