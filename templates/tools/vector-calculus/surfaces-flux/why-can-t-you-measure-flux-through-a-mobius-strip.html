@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Walk an arrow once round the middle of the band, keeping it standing out of the paper. Does it come home the same way up?{% endblock %}
+{% block why_text %}Flux needs a choice of "which side counts as positive", and that choice has to stay the same all over the surface. On an ordinary band you can make it. On a Möbius strip, the arrow returns pointing the other way: the strip has one side only. No consistent choice exists, so flux through it has no meaning.{% endblock %}
+{% block try_items %}
+<li>Walk round the ordinary band. Does the arrow come back unchanged?</li>
+<li>Walk round the Möbius strip. What does the arrow do in the last stretch?</li>
+<li>Run your finger along the strip's edge. How many edges does it have?</li>
+{% endblock %}

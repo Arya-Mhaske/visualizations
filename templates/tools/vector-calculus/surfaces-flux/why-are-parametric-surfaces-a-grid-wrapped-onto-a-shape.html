@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A flat sheet of graph paper has two directions, u and v. Bend it onto a shape. Every point of the shape gets its own pair (u, v).{% endblock %}
+{% block why_text %}A parametric surface is a function r(u, v) that takes each point of a flat (u, v) rectangle to a point in space. The coral and blue grid lines are the images of the lines u = constant and v = constant. A small grid cell becomes a small curved patch, and that is what we add up in surface integrals.{% endblock %}
+{% block try_items %}
+<li>Slide Flat ↔ wrapped slowly. Which edges of the sheet meet on the cylinder?</li>
+<li>Look at the sphere's poles. What happens to the grid cells there?</li>
+<li>Move the shaded cell. Does it stay the same size on the flat sheet and on the shape?</li>
+{% endblock %}

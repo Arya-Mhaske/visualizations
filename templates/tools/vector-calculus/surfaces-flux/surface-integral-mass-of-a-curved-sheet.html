@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A bowl-shaped sheet is heavier on one side. Blue patches are light, yellow medium, coral heavy. Chop it finer and add up the masses.{% endblock %}
+{% block why_text %}Each small patch has almost constant density, so its mass is density times its area, ρ ΔS. A curved patch has more area than its shadow on the floor, by the factor √(1 + z_x² + z_y²). Adding the patch masses and making the patches smaller gives ∬ ρ dS.{% endblock %}
+{% block try_items %}
+<li>Start with 1 patch. How far is the estimate from the fine-grid mass?</li>
+<li>Double the patches per side a few times. When does the estimate stop changing?</li>
+<li>Watch the sheet area. Is it more than the 16 m² of the flat square below it?</li>
+{% endblock %}

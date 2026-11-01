@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A net sits in a steady stream. Face it square on and everything passes through. Turn it, and less does.{% endblock %}
+{% block why_text %}Water crosses the net only if it also crosses the net's shadow as seen from upstream. The shadow has area A cos θ, where θ is the angle between the net's normal n and the stream. So flux is F · n A, the speed times the shadow's area. At 90° the net is edge-on, the shadow is a line, and no water crosses.{% endblock %}
+{% block try_items %}
+<li>Set the tilt to 0°. What is the flux, and what is the shadow area?</li>
+<li>Tilt to 60°. How much is left, as a fraction of the 0° flux?</li>
+<li>Tilt to 90°. Why is the flux zero even though the stream is still flowing?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A tiny patch of the surface is nearly a parallelogram, spanned by r_u du (coral) and r_v dv (blue). Its area is the size of their cross product.{% endblock %}
+{% block why_text %}Step du along u, and the point moves by r_u du. Step dv along v, and it moves by r_v dv. These two arrows are the sides of the patch, and the area of a parallelogram is |a × b|. Adding |r_u × r_v| du dv over the whole (u, v) rectangle gives the surface area.{% endblock %}
+{% block try_items %}
+<li>Move the patch round the torus. Where is |r_u × r_v| largest?</li>
+<li>Switch to the cone. How does |r_u × r_v| change as v grows?</li>
+<li>Raise the number of patches. How close does the sum get to the exact area?</li>
+{% endblock %}
