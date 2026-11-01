@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pass the plane through the apex. The curve collapses to a point, a line, or two lines.{% endblock %}
+{% block why_text %}A plane that misses the apex cuts a proper conic. A plane through the apex cuts the cone only along lines through that point. If the plane is flatter than the cone's side it touches the cone only at the apex: a point. If it is exactly as steep as the side it lies along one side of the cone: one line. If it is steeper it cuts through the cone along two lines. These are the degenerate conics, the limits of the ellipse, parabola and hyperbola.{% endblock %}
+{% block try_items %}
+<li>With β bigger than α, slide the plane up to the apex. What is left of the ellipse?</li>
+<li>Set β = α and slide up to the apex. How many lines are left?</li>
+<li>Make β smaller than α. What is the angle between the two lines when β is very small?</li>
+{% endblock %}

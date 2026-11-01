@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Tilt a plane through a double cone. The cut shape goes circle, ellipse, parabola, hyperbola.{% endblock %}
+{% block why_text %}Cut a cone flat across and you get a circle. Tilt the plane and the circle stretches into an ellipse. Tilt it until it is exactly as steep as the side of the cone and the curve opens out into a parabola. Tilt it more and the plane meets both halves of the cone, giving the two branches of a hyperbola. One rule decides it: compare the plane's tilt with the cone's side. Less steep is an ellipse, equal is a parabola, steeper is a hyperbola.{% endblock %}
+{% block try_items %}
+<li>Start at 90° and lower β slowly. At which angle does the circle turn into an ellipse?</li>
+<li>Set β equal to α. What is the shape, and what is e?</li>
+<li>Make β smaller than α. How many pieces does the curve have?</li>
+<li>Change the cone half-angle α. Does the angle at which the parabola appears change with it?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The Greek mathematician Apollonius studied these curves around 200 BC and gave them the names ellipse, parabola and hyperbola. In the picture the shape beside the cone is drawn from its focus; for a nearly parabolic ellipse only part of it fits in the frame.
+</div>
+{% endblock %}

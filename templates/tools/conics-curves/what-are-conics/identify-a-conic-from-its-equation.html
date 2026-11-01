@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Read the type of a conic from B² − 4AC.{% endblock %}
+{% block why_text %}In Ax² + Bxy + Cy² + Dx + Ey + F = 0, only A, B and C decide the type. If B² − 4AC is negative the curve is an ellipse (a circle when A = C and B = 0). If it is zero the curve is a parabola. If it is positive the curve is a hyperbola. The other numbers shift, turn and size the curve, and in special cases make it collapse into lines or a point.{% endblock %}
+{% block try_items %}
+<li>Press the five preset buttons. What is B² − 4AC for each?</li>
+<li>Starting from the ellipse, make C negative. When does the curve change type?</li>
+<li>Add a B term to the circle. Which type do you get, and why?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  When a certain 3 × 3 determinant of the coefficients is zero, the curve has fallen apart into lines or a point. The tool shows such curves in purple. The discriminant B² − 4AC still tells you which family they belong to.
+</div>
+{% endblock %}
