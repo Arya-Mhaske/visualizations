@@ -5,6 +5,8 @@
 //     R must be above 0, so model an ideal source as a fixed node. Returns { V: [...], I: [...] }, I in branch order.
 //   resistor(ctx, x1, y1, x2, y2, { color, width, size, teeth })   zig-zag in the middle of a wire, at any angle
 //   cell(ctx, x1, y1, x2, y2, { color, width })                    the long (+) plate faces (x2, y2)
+//   inductor(ctx, x1, y1, x2, y2, { color, width, loops })         a row of coil humps in the middle of a wire, at any angle
+//   capacitor(ctx, x1, y1, x2, y2, { color, width, plate, gap })   two equal plates across the wire; returns nothing
 //   flowDots(ctx, x1, y1, x2, y2, charge, { count, r, fill, ink }) one dot per unit of charge, running from 1 to 2.
 //     charge is the total that has passed, so a dot reaches the end each time it goes up by 1 and a count stays honest.
 import { dot } from './draw.js';
@@ -91,6 +93,40 @@ export function cell(ctx, x1, y1, x2, y2, { color, width = 3 } = {}) {
     ctx.lineTo(mid - gap, 7);
     ctx.moveTo(mid + gap, -14);
     ctx.lineTo(mid + gap, 14);
+    ctx.stroke();
+  });
+}
+
+export function inductor(ctx, x1, y1, x2, y2, { color, width = 3, loops = 4 } = {}) {
+  along(ctx, x1, y1, x2, y2, (length) => {
+    const body = Math.min(length * 0.8, loops * 15);
+    const start = (length - body) / 2;
+    const r = body / loops / 2;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(start, 0);
+    for (let i = 0; i < loops; i++) ctx.arc(start + r * (2 * i + 1), 0, r, Math.PI, 0);
+    ctx.lineTo(length, 0);
+    ctx.stroke();
+  });
+}
+
+export function capacitor(ctx, x1, y1, x2, y2, { color, width = 3, plate = 16, gap = 6 } = {}) {
+  along(ctx, x1, y1, x2, y2, (length) => {
+    const mid = length / 2;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(mid - gap, 0);
+    ctx.moveTo(mid + gap, 0);
+    ctx.lineTo(length, 0);
+    ctx.moveTo(mid - gap, -plate);
+    ctx.lineTo(mid - gap, plate);
+    ctx.moveTo(mid + gap, -plate);
+    ctx.lineTo(mid + gap, plate);
     ctx.stroke();
   });
 }

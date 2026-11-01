@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}An alternating current averages to zero, yet it heats a wire. Find the steady current that heats the same wire just as fast.{% endblock %}
+{% block why_text %}Heat follows i², so a backward current heats as well as a forward one. Over a cycle i² averages to i_m²/2: it is the same curve as its quarter-cycle shift, and the two always add to i_m². The steady current with that heat is i_m/√2. That is the rms value: the root of the mean of the square.{% endblock %}
+{% block try_items %}
+<li>Slide the DC until the two heat bars match. What fraction of the peak is it?</li>
+<li>Press "Try the peak". How many times too much heat is that?</li>
+<li>Press "Try the average". This is the mean size of i. Why does it fall short?</li>
+<li>Get a match, then change R. Does the match survive?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The fill shows AC above the DC line (blue) and below it (coral). At a match the two areas are equal. i_m is NCERT's name for the peak; some books write I₀. The factor √2 holds for a sine wave only.
+</div>
+{% endblock %}

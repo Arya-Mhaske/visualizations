@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A meter on the mains says 230 V, but the wave goes much higher. Find the peak, and see which parts feel it.{% endblock %}
+{% block why_text %}A meter shows the rms value: 230 V AC heats a kettle as fast as 230 V DC would. The wave spends time near zero, so it must rise higher to make up for it, and for a sine the peak is √2 times the rms value: 325 V. Heat follows the rms value, but insulation and capacitors must survive the peak.{% endblock %}
+{% block try_items %}
+<li>Raise the part's limit until it is safe on Indian mains. What is the smallest safe limit?</li>
+<li>Read "Time above meter". Does it change with the voltage?</li>
+<li>Press the USA button. What peak must a part there survive?</li>
+<li>Stop the time at 5 ms at 50 Hz. What is v at that instant?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Mains can kill. Think with these numbers, but never test them. A part marked "V AC" is already rated in rms, and one marked "V DC" is not. Real mains also wanders, so designers leave a margin above 325 V.
+</div>
+{% endblock %}

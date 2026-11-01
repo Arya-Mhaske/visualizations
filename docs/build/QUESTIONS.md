@@ -7,6 +7,15 @@ Log anything a tool can't follow from the catalogue: tool path, the problem, a p
 - **`measurement-motion/motion-in-a-straight-line/why-is-velocity-at-an-instant-a-limit`: table layout unchecked against the book.**
   The tool centres the interval on t = 4 s (Δt = 2 s gives 3.92 m/s). That is from memory of NCERT Table 2.1; the summary gives only
   the end values. Fix: compare with the 2026-27 reprint, and change `centredVelocity` if the book differs.
+- **`induction-ac-em/ac-basics/phasor-diagram-builder`: two aids don't help.** They point to `heat-thermodynamics/change-of-state/phase-diagram-why-does-dry-ice-sublime`
+  and `forces-energy/potential-energy-conservation/read-an-energy-diagram`, which look like matches on the word "diagram" and have nothing to do with phasors.
+  Students would see them under "Understand these first". The tool is built; the aids are unchanged. Fix: replace both with
+  `induction-ac-em/ac-basics/why-draw-ac-as-rotating-phasors` and `induction-ac-em/ac-basics/why-does-current-lag-in-an-inductor-and-lead-in-a-capacitor`.
+- **`induction-ac-em/ac-basics/phasor-diagram-builder`: "any combination" is built as series only.** All seven mixes of R, L and C in series, which is what NCERT covers.
+  Fix: none unless parallel is wanted; it would draw V first and add the currents.
+- **`induction-ac-em/ac-basics`: notation.** The `why-use-rms-values` summary writes I₀, and NCERT writes i_m, with I for rms. The pages use i_m and a note mentions I₀.
+  Fix: change the summary to i_m (it isn't shown on the live page).
+
 - **Orbit stages on phones.** On 3D stages a swipe turns the scene and does not scroll the page, and the stage fills the width at
   360 px. Students scroll from the panel or heading. Proposed: keep this unless it annoys students in class.
 

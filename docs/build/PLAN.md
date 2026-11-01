@@ -50,7 +50,7 @@ with a `readout` entry, `liveFormula(el, build)`. Call `formula.update(state)` a
 | plot | function graphs with sliders | `plot` |
 | sim | time-stepped physics | `sim`, `plot` |
 | rays | optics, field lines | `rays`, `field` |
-| phasor | rotating vectors, AC | `phasor`, `sim` (`createClock`); AC parts still to come |
+| phasor | rotating vectors, AC | `phasor`, `sim` (`createClock`), `timeline` |
 | space3d | 3D scenes | `project3d`, `vec` |
 | chance | sampling with a seeded generator | `rng` |
 | discrete | exact finite objects: grids, trees, Venn, tables | `discrete` |
@@ -68,7 +68,7 @@ Each file's header comment is its documentation.
 - `controls.js`: `bindControls`, `readout`, `bindRange`, `bindChoice`
 - `formula.js`: `liveFormula`, `renderTex`, `plainTex`
 - `sim.js`: `createSim`, `createClock`, `transport`, `verletStep`, `rk4Step`
-- `phasor.js`: `phasor`, `project`
+- `phasor.js`: `phasor` (`shadowY` for SHM, `shadowX` for AC), `project`, `height`, `addPhasors`, `wave` (a trace flowing away from the arrow)
 - `anim.js`: `createLoop`, `reducedMotion`
 - `vec.js`: `v2`, `v3`
 - `project3d.js`: `createCamera`, `rotation`, `splitQuad`
@@ -78,7 +78,7 @@ Each file's header comment is its documentation.
 - `drill.js`: `createDrill`, `isRight`
 - `discrete.js`: `dotGrid`, `dotLayout`, `cellGrid`, `drawTree`, `venn`, `drawRelation`
 - `tool.js`: `createTool`
-- `circuit.js`: `solveLinear`, `solveCircuit` (exact DC nodal solver), `resistor`, `cell`, `flowDots`
+- `circuit.js`: `solveLinear`, `solveCircuit` (exact DC nodal solver), `resistor`, `cell`, `inductor`, `capacitor`, `flowDots`
 - `field.js`: `fieldAt`, `potentialAt`, `traceLine` (RK4 along the field), `fieldLines`, `drawLine`, `drawCharge`
 - `rays.js`: `reflect`, `refract`, `hitCircle`, `axisCrossing`, `unit`, `createBench` (equal-scale optical bench: `axis`, `mark`, `object`, `mirror`, `ray`, `rayTo`)
 - `timeline.js`: `createTimeline` (a looping `state.t` shared by a time slider and Play; for exact-formula animations)
@@ -184,6 +184,15 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - A charge cannot vanish, so a "removed" source is cancelled by bringing up −q. A student cannot land on a point exactly by dragging: if a Try prompt needs one (a neutral point), snap to it.
 - A drawn moment arm is the perpendicular gap between the lines of force. Check any drawn length against its formula: the sheet showed a bracket along the wrong direction with correct numbers beside it.
 - When one bar or arrow scale must serve very different sizes, split it: the paper's two forces share a scale, and a separate bar compares their difference with the weight.
+- AC follows NCERT: v = v_m sin ωt, read from the arrow's height on the vertical axis (SHM tools read the horizontal shadow). Peak is i_m, rms is I. `phasor.wave` draws a trace from the arrow's own angle, so it has no history to keep and a drag moves it too.
+  `_ac-basics-math.js` has `rms`, the cycle means, `acHeat`/`dcHeat`, `aroundLevel`, `twoWaves`, `ruleCurve`/`ruleGap` (a trial phase against each part's own rule), reactances, `humpArea`/`chargeSwing`, `seriesCircuit` (NCERT's φ, with a part left out acting as wire and a `null` φ when Z = 0),
+  `ringScale`, `MAINS` and `shareAbove`. Reuse them in `lcr-resonance` and `power-transformers`. `seriesCircuit` is checked against Python complex impedance.
+- A good WHY for a phase or a constant: let the student try wrong values against the governing rule. The lag tool has a trial phase, and a dashed curve from `v = L di/dt` lands on v only at −90°.
+- A `label` patch hides whatever lies under it, and the first 360 px sheet showed a flat-topped sine for that reason. Put labels where the curve isn't, at every setting.
+- A diagram's arrows scaled to a ring need a fine step (`ringScale`): with only 1, 2 and 5 the default arrows filled under half the ring. Anything built in steps must hide later results until their step: the builder first showed `v` on step 1.
+- Check every "find the value" Try prompt against slider steps. Two prompts asked for values no step could reach; they now use φ = 120° at equal peaks, and "close to zero" for resonance.
+- Readout labels set the column width at 360 px: keep labels and values short, or a one-word verdict wraps a letter column wide.
+- Besides the sheets, script a pass through every view and toggle, reading `#formula` overflow and the readouts. It found the step 1 curve, a pinned dot at the slider's end, and a 4 px formula overflow that the default view hid.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -337,7 +346,7 @@ it reaches the front of the queue.
 | 138 | `integrals/area-distance` | 4 | 1 | |
 | 139 | `induction-ac-em/inductance-generators` | 5 | 1 | |
 | 140 | `integrals/the-definite-integral` | 6 | 1 | |
-| 141 | `induction-ac-em/ac-basics` | 6 | 1 | |
+| 141 | `induction-ac-em/ac-basics` | 6 | 1 | ✓ |
 | 142 | `integrals/fundamental-theorem` | 4 | 1 | |
 | 143 | `induction-ac-em/lcr-resonance` | 5 | 1 | |
 | 144 | `integrals/substitution` | 4 | 1 | |

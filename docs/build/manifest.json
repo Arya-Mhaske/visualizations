@@ -2631,40 +2631,40 @@
 "reviewed": false
 },
 "induction-ac-em/ac-basics/why-use-rms-values": {
-"archetype": "phasor",
+"archetype": "plot",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/why-draw-ac-as-rotating-phasors": {
 "archetype": "phasor",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/why-does-current-lag-in-an-inductor-and-lead-in-a-capacitor": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/why-does-reactance-depend-on-frequency": {
-"archetype": "phasor",
+"archetype": "plot",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/phasor-diagram-builder": {
 "archetype": "phasor",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/why-does-230-v-mains-peak-at-325-v": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 144,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/lcr-resonance/why-is-impedance-root-r2-x-l-x-c-2": {
 "archetype": "phasor",

@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Build the diagram for any mix of R, L and C in series, one arrow at a time. Step through it, then let it turn.{% endblock %}
+{% block why_text %}In series every part carries the same current, so draw I first. Then each voltage has a fixed place: V_R along I, V_L a quarter turn ahead, V_C a quarter turn behind. Join them tip to tail, and the arrow from start to finish is the source voltage.{% endblock %}
+{% block try_items %}
+<li>Switch off L and C, then R and C, then R and L. Which way does the phase go each time?</li>
+<li>With all three on, move f until the phase is close to zero. What has happened to V_L and V_C?</li>
+<li>Find a setting where V_L is larger than the source voltage V. How can that be?</li>
+<li>Press Play. Does the shape of the diagram change as it turns?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is for series circuits, and arrows show peak values. Divide all by √2 for rms, and the shape stays the same. The I arrow has its own scale, so only its direction counts. NCERT's φ is the phase of the current ahead of the voltage: tan φ = (X_C − X_L)/R.
+</div>
+{% endblock %}

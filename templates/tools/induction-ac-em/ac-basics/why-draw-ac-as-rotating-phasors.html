@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn an arrow and watch its height. That height is the AC value at that instant. Then add two waves the easy way.{% endblock %}
+{% block why_text %}A sine wave is the height of a turning arrow. Adding two waves by hand means a new sum at every instant. Adding two arrows is one triangle, and the triangle keeps its shape as it turns. So one drawing gives the peak and the phase of the sum for all time.{% endblock %}
+{% block try_items %}
+<li>Drag the arrow tip to 90°. Where on the wave is that?</li>
+<li>In "Add two", stop at any angle. Compare "Added by hand" with the green shadow.</li>
+<li>Set φ to 0°, then 180°. What is the peak of the sum each time?</li>
+<li>Make both peaks 5 V. Find the φ that makes the sum's peak 5 V too.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The trick needs one frequency. Both arrows then turn together, so the angle between them never changes. NCERT reads the instantaneous value from the vertical axis, so v = v_m sin ωt starts from zero.
+</div>
+{% endblock %}

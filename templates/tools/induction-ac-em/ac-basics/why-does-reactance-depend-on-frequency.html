@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Reactance is how hard a part holds back alternating current. Raise the frequency and compare what a half cycle can do in each part.{% endblock %}
+{% block why_text %}An inductor's current grows only while v pushes. Higher frequency means a shorter push, so i_m falls and X_L = ωL rises. A capacitor must move the same charge each half cycle, set by v_m and C. Less time for the same charge means a larger current, so X_C = 1/ωC falls.{% endblock %}
+{% block try_items %}
+<li>Double f from 50 Hz to 100 Hz. What happens to each peak current?</li>
+<li>Sweep f and watch "C: charge moved". What stays fixed?</li>
+<li>Follow the trend towards 0 Hz. Which part would act like a plain wire, and which like a break?</li>
+<li>Change v_m. Do X_L and X_C change? Why not?</li>
+{% endblock %}
