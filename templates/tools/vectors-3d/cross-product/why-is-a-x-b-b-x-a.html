@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}The curved arrow shows how your fingers curl from the first vector to the second. Swap the order and see where the thumb goes.{% endblock %}
+{% block why_text %}The parallelogram is the same, so the length is the same. But a to b and b to a are opposite turns, so the right-hand rule gives opposite thumbs. That is a × b = −(b × a).{% endblock %}
+{% block try_items %}
+<li>Switch between a × b and b × a. What stays the same, and what flips?</li>
+<li>Set θ = 90° and then 170°. Does the length change with the order?</li>
+<li>What is a × a? Think of the turn from a to a.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Take a as the base. The dashed green line is how far b rises above the line of a. Change θ and watch it.{% endblock %}
+{% block why_text %}A parallelogram's area is base × height. The base is |a|. The height of b above a's line is |b| sin θ. So the area is |a||b| sin θ, and that is the length of a × b.{% endblock %}
+{% block try_items %}
+<li>Set θ = 90°. Is the parallelogram a rectangle? What is its area?</li>
+<li>Squeeze θ towards 0° and then 180°. What happens to the area?</li>
+<li>Keep the sides fixed and compare θ = 30° with θ = 150°. Why are the areas equal?</li>
+{% endblock %}

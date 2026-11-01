@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A spanner turns a nut. Move the hand along the handle and watch the green torque arrow along the bolt.{% endblock %}
+{% block why_text %}Torque is r × F, so its size is r F sin φ. The same push at twice the distance gives twice the torque. A longer spanner lets a smaller force do the same job.{% endblock %}
+{% block try_items %}
+<li>Fix the torque you need at 60 N m. How much force at r = 1 m and at r = 4 m?</li>
+<li>Push along the handle (φ = 0°). Does the nut turn?</li>
+<li>Find the push angle that gives the biggest torque.</li>
+{% endblock %}

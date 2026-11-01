@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Three vectors build a slanted box. The floor face is the parallelogram of a and b, and c reaches up from it.{% endblock %}
+{% block why_text %}A box holds base area × height. The base is |a × b|. The height is how far c rises above the base, which is c's part along a × b. That is exactly the dot product, so V = a · (b × c) up to sign.{% endblock %}
+{% block try_items %}
+<li>Slide c's x and y. Does the volume change? Why not?</li>
+<li>Change c: z from 3 to −3. What happens to the sign of the triple product?</li>
+<li>Set c: z = 0. What is the volume, and what does the box look like?</li>
+{% endblock %}

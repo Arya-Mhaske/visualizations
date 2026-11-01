@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Spin the pair of vectors about the z axis. The green arrow turns with them and stays square to the yellow parallelogram.{% endblock %}
+{% block why_text %}Each component of a × b is built so that its dot product with a and with b cancels to zero. The arrow is tied to the parallelogram, so wherever the pair goes, it stands perpendicular. The right-hand rule only chooses which of the two perpendicular directions to use.{% endblock %}
+{% block try_items %}
+<li>Spin the pair through 360°. Do both dot products ever leave 0?</li>
+<li>Curl the fingers of your right hand from a to b. Where does your thumb point?</li>
+<li>Make b a multiple of a. What happens to the green arrow?</li>
+{% endblock %}

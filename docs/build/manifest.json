@@ -7755,73 +7755,73 @@
 "archetype": "space3d",
 "priority": 165,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cross-product/why-is-a-x-b-the-parallelogram-s-area": {
 "archetype": "space3d",
 "priority": 165,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cross-product/why-is-a-x-b-b-x-a": {
 "archetype": "space3d",
 "priority": 165,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cross-product/why-is-the-triple-product-a-volume": {
 "archetype": "space3d",
 "priority": 165,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/cross-product/why-does-a-longer-spanner-help-torque": {
 "archetype": "space3d",
 "priority": 165,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/why-does-one-normal-vector-define-a-plane": {
 "archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/why-can-lines-in-3d-be-skew": {
 "archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/why-is-the-shortest-distance-between-skew-lines-along-the-co": {
 "archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/distance-from-a-point-to-a-plane": {
-"archetype": "stepper",
+"archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/equation-of-a-line-vector-and-cartesian-forms": {
-"archetype": "phasor",
+"archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/angle-between-two-lines": {
-"archetype": "stepper",
+"archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/lines-planes/geometry-of-a-tetrahedron": {
 "archetype": "space3d",
 "priority": 167,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vectors-3d/quadric-surfaces/why-do-slices-reveal-a-surface": {
 "archetype": "space3d",
