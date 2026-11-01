@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Switch between linear, semi-log and log-log axes and see which data turn straight.{% endblock %}
+{% block why_text %}For y = a·bˣ, log y = log a + x log b is a straight line against x. For y = a·xᵖ, log y = log a + p log x is a straight line against log x. A straight line on one of these plots tells you which law the data follow.{% endblock %}
+{% block try_items %}
+<li>Take "Cells doubling" on semi-log axes. Is it straight?</li>
+<li>Take "Distance fallen" on log-log axes. Is it straight?</li>
+<li>Which data are straight on plain linear axes?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The data are made up, with a small wobble added, to look like real measurements.
+</div>
+{% endblock %}

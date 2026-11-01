@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare lemon juice (pH about 2) with pure water (pH 7).{% endblock %}
+{% block why_text %}pH = −log₁₀[H⁺]. One step of pH is a factor of ten in concentration, so lemon juice, at pH 2, has 10⁵ = 100 000 times as much H⁺ as pure water, at pH 7.{% endblock %}
+{% block try_items %}
+<li>Leave the markers at 2 and 7. How many times more H⁺ does lemon juice have?</li>
+<li>Move one marker by 1 pH. What happens to [H⁺]?</li>
+<li>Where is bleach on the scale, and is it acidic?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The pH values for everyday liquids are typical and rounded. Real samples vary.
+</div>
+{% endblock %}

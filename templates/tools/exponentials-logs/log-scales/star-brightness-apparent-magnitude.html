@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See that 5 magnitudes means 100 times the brightness, and that brighter stars get smaller numbers.{% endblock %}
+{% block why_text %}Magnitude is a backwards log scale: m₂ − m₁ = −2.5 log₁₀(b₂/b₁). Five magnitudes is exactly 100 times, so one magnitude is 100^(1/5) ≈ 2.512 times. Brighter objects have smaller, even negative, magnitudes.{% endblock %}
+{% block try_items %}
+<li>Put the markers 5 apart. How many times brighter?</li>
+<li>Compare Sirius with Polaris.</li>
+<li>How much brighter is the Sun than the full Moon?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Magnitudes shown are typical rounded values.
+</div>
+{% endblock %}

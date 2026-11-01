@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Check each answer against the domain of every log.{% endblock %}
+{% block why_text %}Algebra does not know about domains. Combining logs and squaring can produce answers that make a log argument negative. Always put each answer back into every log in the original equation.{% endblock %}
+{% block try_items %}
+<li>In the first equation, test both roots. Which one is rejected?</li>
+<li>Try the ln equation. Are both roots accepted?</li>
+<li>For a rejected root, which argument is negative?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squeeze 2 to a slightly smaller power and a slightly larger power, and watch one value trapped between them.{% endblock %}
+{% block why_text %}√2 is not a fraction, so 2^√2 cannot mean "multiply 2 by itself that many times". Instead we squeeze it: 2 to a fraction just below √2 is smaller, 2 to a fraction just above is bigger, and the gap shrinks to nothing. The one value left is what 2^√2 means.{% endblock %}
+{% block try_items %}
+<li>Start at 0 decimals. How wide is the gap?</li>
+<li>Add one decimal at a time. How many digits agree at 8 decimals?</li>
+<li>Would the squeeze work for any irrational power, like 2^π?</li>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply by looking up two logs, adding them, and looking up the answer.{% endblock %}
+{% block why_text %}Long multiplication was slow and easy to get wrong. With a table of logs, multiplying becomes: look up, add, look up. Napier published his tables in 1614, and astronomers took them up for their sums.{% endblock %}
+{% block try_items %}
+<li>Multiply 347 and 829 with 5 table decimals. How close is the answer?</li>
+<li>Reduce the table to 2 decimals. How far off does it get?</li>
+<li>Which step does the real work: the lookups or the sum?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Napier's own logarithms were not quite to base 10. Briggs later helped make the base-10 tables used for centuries.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Sees the thin strip under 1/x is almost a 1 × x rectangle.{% endblock %}
+{% block why_text %}The strip under 1/t from 1 to 1 + x is thinner than the 1 × x rectangle and thicker than the x × 1/(1+x) rectangle. When x is small, both are nearly x, so ln(1 + x) ≈ x.{% endblock %}
+{% block try_items %}
+<li>Make x small. What happens to the gap between the rectangles?</li>
+<li>Try x = 1. How big is the error?</li>
+<li>Switch to the graph. Where do the two curves meet?</li>
+{% endblock %}

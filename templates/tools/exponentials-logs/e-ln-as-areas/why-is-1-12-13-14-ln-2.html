@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the partial sums close in on 0.6931.{% endblock %}
+{% block why_text %}The series for ln(1 + x) is x − x²/2 + x³/3 − …. Putting x = 1 gives 1 − ½ + ⅓ − ¼ + …, so the sum is ln 2. Each new term swings the total across ln 2, and the swings shrink.{% endblock %}
+{% block try_items %}
+<li>Add 10 terms. Is the total above or below ln 2?</li>
+<li>Add 11. What happened?</li>
+<li>How many terms do you need to be within 0.01?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This series is only conditionally convergent. Rearranging its terms can change the sum, so the order matters.
+</div>
+{% endblock %}

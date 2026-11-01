@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare 7% continuous with 7% annual growth: e^0.07 − 1 = 7.25%.{% endblock %}
+{% block why_text %}7% continuous growth means e^{0.07t}. That equals a yearly rate of e^{0.07} − 1 = 7.25%. The same number in the same words can mean different things: always ask whether a rate is per year or continuous.{% endblock %}
+{% block try_items %}
+<li>Leave r at 7%. Switch on the matching yearly rate. What happens?</li>
+<li>Set r = 30%. How different are the two meanings?</li>
+<li>After 40 years, how far apart are the two ends?</li>
+{% endblock %}

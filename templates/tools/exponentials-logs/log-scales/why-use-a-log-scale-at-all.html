@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Plot city populations on a linear axis, then on a log axis.{% endblock %}
+{% block why_text %}On a log axis, equal steps mean equal multiples, not equal amounts. When values run from thousands to tens of millions, only the log axis keeps every value visible and comparable.{% endblock %}
+{% block try_items %}
+<li>With the linear axis, how long is the Leh bar?</li>
+<li>Switch to the log axis. Can you now read every bar?</li>
+<li>On the log axis, what does one gridline step mean?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The populations are rounded and approximate, chosen to show the spread. They are not exact census figures.
+</div>
+{% endblock %}

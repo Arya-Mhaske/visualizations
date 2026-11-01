@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Apply one log rule at a time and check that the value never changes.{% endblock %}
+{% block why_text %}Each rule is a power law: a quotient becomes a subtraction, a product becomes an addition, a power becomes a multiplication. Every line has the same value, so every rewrite is a legal move.{% endblock %}
+{% block try_items %}
+<li>Step through the first expression. Which rule is used first?</li>
+<li>Switch to "condense" and run the steps in reverse.</li>
+<li>Change x, y and z. Do the values still agree on every line?</li>
+{% endblock %}

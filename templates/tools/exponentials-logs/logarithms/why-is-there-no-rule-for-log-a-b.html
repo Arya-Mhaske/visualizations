@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Try the tempting rules for log(a + b) and see them fail.{% endblock %}
+{% block why_text %}Logs turn products into sums because bᵐ·bⁿ = bᵐ⁺ⁿ. That rule is about multiplying. Nothing like it exists for log(a + b). The sum log a + log b equals log(ab), not log(a + b).{% endblock %}
+{% block try_items %}
+<li>Set a = 3 and b = 5. Does log(a + b) equal log a + log b?</li>
+<li>Try a = 2 and b = 2. What is special here?</li>
+<li>Does log a · log b ever match log(a + b)?</li>
+{% endblock %}

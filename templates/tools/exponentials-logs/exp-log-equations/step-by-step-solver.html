@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Isolate, take logs, solve and check.{% endblock %}
+{% block why_text %}Four moves solve these equations: isolate the power or the log, undo it with the opposite (a log or a power), solve the simple equation left, then check the answer in the original.{% endblock %}
+{% block try_items %}
+<li>Step through the default equation. Does the check work?</li>
+<li>Make c smaller than d. What goes wrong?</li>
+<li>Switch to the log type. Which step is different?</li>
+{% endblock %}

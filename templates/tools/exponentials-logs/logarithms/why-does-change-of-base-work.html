@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare log graphs for two bases and stretch one to land on the other.{% endblock %}
+{% block why_text %}Every log graph is the same curve stretched up or down by a constant. Changing the base changes only the units, like converting metres to feet: log_b x = log_c x ÷ log_c b.{% endblock %}
+{% block try_items %}
+<li>Pick bases 2 and 10 and move x. Does the ratio change?</li>
+<li>Switch on the stretch. Where does the dashed curve land?</li>
+<li>Choose base e for one curve. What is the constant now?</li>
+{% endblock %}

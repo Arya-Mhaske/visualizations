@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare 72 ÷ r with the exact doubling time, and see why ln 2 ≈ 0.693 makes it work.{% endblock %}
+{% block why_text %}Doubling needs (1 + R/100)ᵗ = 2, so t = ln 2 ÷ ln(1 + R/100). For small R, ln(1 + R/100) ≈ R/100, so R·t ≈ 100 ln 2 = 69.3. The true product drifts up to about 72 near 8%, and 72 divides neatly by 2, 3, 4, 6, 8, 9 and 12.{% endblock %}
+{% block try_items %}
+<li>Slide to 8%. How close is 72 ÷ R to the exact time?</li>
+<li>At 1%, which rule is better, 72 or 69.3?</li>
+<li>At 40%, how far off is the rule of 72?</li>
+{% endblock %}

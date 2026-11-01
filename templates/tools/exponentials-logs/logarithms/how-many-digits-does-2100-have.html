@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Count the digits of 2¹⁰⁰ without computing it.{% endblock %}
+{% block why_text %}A number with d digits lies between 10^(d−1) and 10^d, so its log₁₀ lies between d − 1 and d. So digits = ⌊log₁₀ N⌋ + 1. For 2¹⁰⁰: 100 × 0.30103 = 30.103, so 31 digits.{% endblock %}
+{% block try_items %}
+<li>Check 2¹⁰⁰ (it has 31 digits). What does it begin with?</li>
+<li>Try 3²⁰⁰. How many digits?</li>
+<li>Does the exact digit count always agree with the log reading?</li>
+{% endblock %}

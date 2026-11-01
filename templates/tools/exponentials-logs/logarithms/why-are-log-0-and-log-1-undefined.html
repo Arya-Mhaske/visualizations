@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Look for an exponent that makes bʸ equal to 0 or to a negative number.{% endblock %}
+{% block why_text %}log_b t asks: which power of b equals t? Every power of a positive base is positive, so no exponent gives 0 or −1. (log 1 = 0 is fine, because b⁰ = 1.){% endblock %}
+{% block try_items %}
+<li>Slide t down to 0. What happens to the crossing?</li>
+<li>Move t to −1. Is there any exponent that works?</li>
+<li>Find a t > 0 that does work, then read its exponent.</li>
+{% endblock %}

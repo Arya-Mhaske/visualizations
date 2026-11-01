@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fit a catenary to an arch or a sagging cable.{% endblock %}
+{% block why_text %}A cable carrying only its own weight hangs in a catenary. Flip the shape over and you get an arch loaded only by its own weight. For a small sag the parabola shortcut is close, and for a deep sag it drifts away.{% endblock %}
+{% block try_items %}
+<li>Set a 100 m span with 3 m sag. How much longer is the cable than the span?</li>
+<li>Switch to an arch. What does the shape number do?</li>
+<li>Compare the true length and the parabola shortcut at a deep sag.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real arches and cables are loaded in more complicated ways, so their shapes are only close to a pure catenary.
+</div>
+{% endblock %}

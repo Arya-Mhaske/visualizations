@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Raise the magnitude by 1 and see what happens to amplitude and energy.{% endblock %}
+{% block why_text %}Each whole number of magnitude multiplies the ground motion amplitude by 10. Energy goes up by 10^1.5, about 31.6 times, for each magnitude. So a magnitude 7 quake releases about a thousand times the energy of a magnitude 5.{% endblock %}
+{% block try_items %}
+<li>Raise the magnitude by 1. By how much does the amplitude grow?</li>
+<li>Raise it by 2. What happens to the energy?</li>
+<li>Compare a magnitude 5 and a magnitude 7 quake.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The energy rule log₁₀ E = 1.5M + 4.8 (E in joules) is an empirical formula, not an exact law.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pay ₹1 interest at 100% a year in n equal parts, and watch the year-end amount settle near 2.71828.{% endblock %}
+{% block why_text %}Splitting the year into more parts keeps adding interest, but each extra split adds less than the one before. The total creeps up towards a limit, 2.71828…, the number e. At rate r the limit is eʳ.{% endblock %}
+{% block try_items %}
+<li>Look at the bars for n = 1, 2, 4, 12 and 365. How much does each bar add?</li>
+<li>In the curve view, slide n to a million. What does the amount do?</li>
+<li>Change the rate to 50%. What is the limit now?</li>
+{% endblock %}

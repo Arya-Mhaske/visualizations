@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the rate of cooling depend on the gap to room temperature.{% endblock %}
+{% block why_text %}Newton's law of cooling says the rate of cooling is proportional to the gap between the object and its surroundings. The gap therefore shrinks by the same share each minute, which is exponential decay.{% endblock %}
+{% block try_items %}
+<li>Move the moment. How does the rate change as the gap shrinks?</li>
+<li>Look at "rate ÷ gap". Does it ever change?</li>
+<li>Raise the room temperature. What happens to the curve?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Newton's law works well for modest temperature differences, not for very hot objects.
+</div>
+{% endblock %}

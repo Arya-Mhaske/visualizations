@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find how much to invest today to have ₹X later.{% endblock %}
+{% block why_text %}Present value runs compound interest backwards: divide by the growth factor instead of multiplying. Money later is worth less today because money today can earn interest.{% endblock %}
+{% block try_items %}
+<li>How much must you invest today to reach ₹1,00,000 in 10 years at 8%?</li>
+<li>Double the time. What happens to the amount needed today?</li>
+<li>What share of the target is interest?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom in at 0, then compound more often.{% endblock %}
+{% block why_text %}Close to 0, the curve eˣ is almost indistinguishable from its tangent line 1 + x. And (1 + r/n)ⁿ gets closer to eʳ as n grows.{% endblock %}
+{% block try_items %}
+<li>Zoom in to a half-width of 0.1. Can you tell the curves apart?</li>
+<li>In the compound view, set n = 1. Which curve is it?</li>
+<li>Raise n to 200. How far is the gap now?</li>
+{% endblock %}

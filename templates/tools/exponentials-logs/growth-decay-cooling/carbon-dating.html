@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Measure remaining ¹⁴C and solve for the age. Half-life 5730 years.{% endblock %}
+{% block why_text %}Living things keep their ¹⁴C level steady. After death it halves every 5730 years. Measure what is left, and the age is 5730 × log₂(100 ÷ p) years.{% endblock %}
+{% block try_items %}
+<li>Set 50% left. How old is the sample?</li>
+<li>Set 25%. How many half-lives is that?</li>
+<li>Set 3% left. Why is the answer less reliable?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real radiocarbon dating needs calibration, because atmospheric ¹⁴C has varied over time.
+</div>
+{% endblock %}

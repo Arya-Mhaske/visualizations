@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A logarithm counts how many times you multiply.{% endblock %}
+{% block why_text %}log_b N is the number of times you multiply 1 by b to reach N. For log₂ 32 that is 5 doublings. Between two whole counts the answer is a fraction, and the curve fills in the gaps.{% endblock %}
+{% block try_items %}
+<li>Set N = 32 and base 2. How many doublings is that?</li>
+<li>Set N = 1000 and base 10. What is the count?</li>
+<li>Pick N = 20 with base 2. Between which two whole numbers is log₂ 20?</li>
+{% endblock %}

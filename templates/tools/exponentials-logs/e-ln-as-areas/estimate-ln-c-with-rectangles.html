@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use upper and lower sums under 1/x.{% endblock %}
+{% block why_text %}Rectangles trap ln c between two sums. The gap between the upper and lower sums is (c − 1)(1 − 1/c) ÷ N: double N and the gap halves.{% endblock %}
+{% block try_items %}
+<li>Take 6 rectangles with c = 3. What are the bounds?</li>
+<li>Switch to midpoints. How close is the estimate?</li>
+<li>Raise N to 100. How many decimals are certain?</li>
+{% endblock %}

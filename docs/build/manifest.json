@@ -5108,319 +5108,319 @@
 "archetype": "plot",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/why-is-a-constant-percent-change-exponential": {
 "archetype": "plot",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/what-does-2-root2-even-mean": {
 "archetype": "chance",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/why-does-0-b-1-mean-decay": {
 "archetype": "chance",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/graph-y-abx-with-transformations": {
 "archetype": "stepper",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/fold-paper-to-the-moon": {
 "archetype": "plot",
 "priority": 99,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/the-number-e/where-does-e-come-from": {
 "archetype": "plot",
 "priority": 101,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/the-number-e/why-is-ex-natural": {
 "archetype": "plot",
 "priority": 101,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/the-number-e/continuous-compounding": {
 "archetype": "stepper",
 "priority": 101,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/the-number-e/build-e-from-a-series": {
 "archetype": "stepper",
 "priority": 101,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/what-is-a-logarithm-really": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-is-log-the-inverse-of-an-exponential": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-do-logs-turn-into": {
 "archetype": "space3d",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-is-there-no-rule-for-log-a-b": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-does-change-of-base-work": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-are-log-0-and-log-1-undefined": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/why-napier-invented-logs": {
 "archetype": "plot",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/expand-and-condense-logs": {
 "archetype": "phasor",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/logarithms/how-many-digits-does-2100-have": {
 "archetype": "discrete",
 "priority": 103,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/why-use-a-log-scale-at-all": {
 "archetype": "plot",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/richter-scale": {
 "archetype": "space3d",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/decibels": {
 "archetype": "space3d",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/ph": {
 "archetype": "plot",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/spot-power-laws-and-exponentials": {
 "archetype": "plot",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/log-scales/star-brightness-apparent-magnitude": {
 "archetype": "space3d",
 "priority": 105,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exp-log-equations/why-take-logs-of-both-sides": {
 "archetype": "plot",
 "priority": 107,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exp-log-equations/why-are-some-log-answers-rejected": {
 "archetype": "plot",
 "priority": 107,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exp-log-equations/solve-by-intersection": {
 "archetype": "stepper",
 "priority": 107,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exp-log-equations/step-by-step-solver": {
 "archetype": "stepper",
 "priority": 107,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/why-does-compound-interest-beat-simple": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/why-is-12-a-year-really-12-68": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/rule-of-72": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/continuous-versus-annual-growth-rates": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/present-value": {
 "archetype": "stepper",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/monthly-savings-annuity": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/money-finance/loan-emi": {
 "archetype": "plot",
 "priority": 109,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/why-is-half-life-constant": {
 "archetype": "discrete",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/why-is-cooling-exponential": {
 "archetype": "plot",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/why-does-logistic-growth-level-off": {
 "archetype": "plot",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/carbon-dating": {
 "archetype": "plot",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/bacteria-and-population-growth": {
 "archetype": "plot",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/growth-decay-cooling/when-was-the-tea-made": {
 "archetype": "plot",
 "priority": 173,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-is-ln-c-an-area": {
 "archetype": "plot",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-is-e-where-that-area-equals-1": {
 "archetype": "plot",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-does-ln-ab-ln-a-ln-b-follow-from-area": {
 "archetype": "plot",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-is-ln-1-x-x-for-small-x": {
 "archetype": "space3d",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-are-ex-1-x-and-1-r-n-n-er": {
 "archetype": "plot",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/why-is-1-12-13-14-ln-2": {
 "archetype": "plot",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/e-ln-as-areas/estimate-ln-c-with-rectangles": {
 "archetype": "stepper",
 "priority": 175,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/hyperbolic-functions/why-are-they-called-hyperbolic": {
 "archetype": "table",
 "priority": 177,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/hyperbolic-functions/why-is-a-hanging-chain-a-cosh": {
 "archetype": "plot",
 "priority": 177,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/hyperbolic-functions/hyperbolic-identities": {
 "archetype": "stepper",
 "priority": 177,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/hyperbolic-functions/catenary-arches-and-power-lines": {
 "archetype": "plot",
 "priority": 177,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/sequences/why-do-recursive-and-explicit-formulas-agree": {
 "archetype": "discrete",

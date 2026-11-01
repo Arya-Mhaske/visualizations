@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the same fraction disappear in each equal time step.{% endblock %}
+{% block why_text %}The decay rate is proportional to what is left, so the sample shrinks by the same factor over any equal time step, early or late. A steady multiplication is exactly what an exponential is.{% endblock %}
+{% block try_items %}
+<li>Make the window one half-life long. What fraction is left in both windows?</li>
+<li>Slide the green window later. Does the fraction change?</li>
+<li>Double the half-life. What happens to the fraction left?</li>
+{% endblock %}

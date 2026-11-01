@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change the rate and tenure and see the EMI and total interest.{% endblock %}
+{% block why_text %}An EMI is chosen so that the discounted payments equal the loan. Early on the balance is large, so most of each EMI is interest. As the balance falls, more of each EMI pays off the principal.{% endblock %}
+{% block try_items %}
+<li>Look at month 1, then month 100. How does the split change?</li>
+<li>Lengthen the tenure. What happens to the EMI and to total interest?</li>
+<li>Raise the rate by 2 points. How much more do you pay?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The results are illustrative and ignore fees, taxes and rate changes. They are not financial advice.
+</div>
+{% endblock %}

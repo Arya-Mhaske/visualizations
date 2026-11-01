@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Race 2ˣ against xᵖ. The vertical axis counts digits, so both fit on one graph.{% endblock %}
+{% block why_text %}Doubling multiplies by 2 at every step. A power xᵖ multiplies only by ((x+1)/x)ᵖ, and that factor sinks towards 1. So xᵖ may lead for a long time, but 2ˣ always overtakes it for good.{% endblock %}
+{% block try_items %}
+<li>Set p = 10 and run to x = 100. Where does the dot say 2ˣ takes over?</li>
+<li>Lower p to 2. How much sooner does doubling win?</li>
+<li>Run to x = 30 with p = 10. Who is leading, and by how much?</li>
+{% endblock %}

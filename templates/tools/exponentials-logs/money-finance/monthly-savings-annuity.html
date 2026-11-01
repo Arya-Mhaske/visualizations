@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add deposits that each grow: a geometric series.{% endblock %}
+{% block why_text %}Each deposit grows for a different number of months. Their values D, D(1+i), D(1+i)², … form a geometric series, and its sum is D·((1+i)^m − 1)/i.{% endblock %}
+{% block try_items %}
+<li>Save ₹5,000 a month for 20 years at 8%. How much is interest?</li>
+<li>Set the rate to 0%. What does the curve become?</li>
+<li>Double the years. Does the balance double?</li>
+{% endblock %}

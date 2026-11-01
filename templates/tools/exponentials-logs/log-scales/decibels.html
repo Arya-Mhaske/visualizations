@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add decibels and see the sound intensity multiply.{% endblock %}
+{% block why_text %}Sound level is L = 10 log₁₀(I/I₀). Every +10 dB multiplies the intensity by 10, and +3 dB roughly doubles it. Adding on the decibel scale is multiplying on the intensity scale.{% endblock %}
+{% block try_items %}
+<li>Add 10 dB. By how much does the intensity grow?</li>
+<li>Add 3 dB. Does the intensity roughly double?</li>
+<li>From 60 dB, add 40 dB. What is the intensity ratio?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Everyday sound levels shown are rough typical values.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add 1 + 1 + 1/2! + 1/3! + … and watch the total close in on e.{% endblock %}
+{% block why_text %}Each new term 1/k! is tiny compared with the one before, so the series gains a decimal place every term or two. The compounding formula (1 + 1/n)ⁿ is far slower to reach e.{% endblock %}
+{% block try_items %}
+<li>Add terms one at a time. How many decimals are correct after 5 terms?</li>
+<li>Compare the two lines at 10 terms.</li>
+<li>How many terms does the series need to match 8 decimals of e?</li>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fit exponential growth through two counts.{% endblock %}
+{% block why_text %}Two counts fix both unknowns in N = N₀e^{kt}: N₀ is the first count and k = ln(N₂/N₁) ÷ t. The model then predicts any other time. Real cultures level off, so predictions far ahead can fail.{% endblock %}
+{% block try_items %}
+<li>Use 500 and 4000 four hours apart. How long to double?</li>
+<li>Predict the count at hour 24. Is that believable?</li>
+<li>Make the second count smaller. What happens to k?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The counts are made up for practice.
+</div>
+{% endblock %}
