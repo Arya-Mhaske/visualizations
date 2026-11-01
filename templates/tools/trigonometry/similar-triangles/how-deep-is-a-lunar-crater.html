@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Use the shadow length and the Sun's angle on the Moon to find the height of a crater rim.{% endblock %}
+{% block why_text %}The rim, its shadow and the Sun's ray make a right triangle. At a given Sun angle, H ÷ L is the same for every such triangle, so H = L × (H ÷ L). The graph shows that ratio for each angle.{% endblock %}
+{% block try_items %}
+<li>Set the Sun at 30° and the shadow at 5 km. How high is the rim?</li>
+<li>Double the shadow. What happens to H?</li>
+<li>Raise the Sun. Does the same shadow mean a taller or a shorter rim?</li>
+{% endblock %}

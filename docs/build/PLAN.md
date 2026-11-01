@@ -1,4 +1,4 @@
-# MuskMelon tool build: the plan
+﻿# MuskMelon tool build: the plan
 
 Turns all 1,538 catalogue tools into live tools, following the CLAUDE.md §5 contract. Teaching starts August 2027.
 All work goes on branch `build/tools`. Nothing is ever pushed by Claude; Arya merges and pushes.
@@ -236,7 +236,7 @@ it reaches the front of the queue.
 | 7 | `measurement-motion/vectors` | 7 | 1 | |
 | 8 | `functions-graphs/properties-library` | 7 | 1 | |
 | 9 | `measurement-motion/projectiles` | 9 | 1 | |
-| 10 | `trigonometry/similar-triangles` | 7 | 1 | |
+| 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | |
 | 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | |
 | 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |

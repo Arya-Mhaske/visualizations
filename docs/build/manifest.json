@@ -4370,43 +4370,43 @@
 "archetype": "geometry",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/why-do-same-shaped-triangles-have-proportional-sides": {
 "archetype": "discrete",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/why-are-two-angles-enough": {
 "archetype": "geometry",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/why-does-the-ratio-depend-only-on-the-angle": {
 "archetype": "geometry",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/missing-side-by-proportion": {
 "archetype": "stepper",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/measure-a-tree-with-its-shadow": {
 "archetype": "discrete",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/similar-triangles/how-deep-is-a-lunar-crater": {
 "archetype": "geometry",
 "priority": 13,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-is-a2-b2-c2": {
 "archetype": "discrete",

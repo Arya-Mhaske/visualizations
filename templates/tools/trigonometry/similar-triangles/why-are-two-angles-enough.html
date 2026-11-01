@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fix two angles of a triangle, then try to ask for a different third angle.{% endblock %}
+{% block why_text %}Once two angles are set, the third is forced: γ = 180° − α − β. A triangle with two given angles can have any size, but only one shape. So two matching angles are enough to make two triangles similar.{% endblock %}
+{% block try_items %}
+<li>Set α = 55°, β = 65°. What third angle can you ask for?</li>
+<li>Move the wished γ away from the real one. How far off is it?</li>
+<li>Change α and β. Does the real γ follow?</li>
+{% endblock %}
