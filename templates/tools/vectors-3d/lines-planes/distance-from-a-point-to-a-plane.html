@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Drop from Q straight to the plane, along the normal. That green drop is the distance.{% endblock %}
+{% block why_text %}Any arrow from a point P on the plane to Q has a part along n and a part lying in the plane. Only the part along n counts for the distance. Projecting onto n gives |A x₀ + B y₀ + C z₀ − D| / |n|.{% endblock %}
+{% block try_items %}
+<li>Move Q to the other side of the plane. What changes in the signed value?</li>
+<li>Find a Q for which the distance is 0. Where is it?</li>
+<li>Double A, B, C and D together. Does the distance change?</li>
+{% endblock %}

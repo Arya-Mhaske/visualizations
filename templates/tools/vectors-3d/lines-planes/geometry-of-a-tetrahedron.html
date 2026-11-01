@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Each face gets an outward arrow whose length is the face's area. Add the four arrows and see what is left.{% endblock %}
+{% block why_text %}The four arrows always close into a loop, whatever shape the tetrahedron has. A closed solid has no net "outward area": push it evenly from all sides and it goes nowhere. The four area vectors sum to zero.{% endblock %}
+{% block try_items %}
+<li>Move D anywhere. Does the sum ever leave (0, 0, 0)?</li>
+<li>Switch to Head to tail. Where does the chain end?</li>
+<li>Find a D that makes two faces the same area.</li>
+{% endblock %}

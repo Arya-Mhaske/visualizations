@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Two lines make two angles, θ and 180° − θ. We report the acute one, so the top of the formula has absolute-value bars.{% endblock %}
+{% block why_text %}A line has no arrowhead, so its direction ratios can be flipped in sign. Flipping one changes the dot product's sign but not the lines. The bars on the top keep the answer between 0° and 90°.{% endblock %}
+{% block try_items %}
+<li>Set line 2 equal to line 1. What is θ?</li>
+<li>Choose (1, 0, 0) and (0, 1, 0). What is θ, and what is the dot product?</li>
+<li>Flip every sign of line 2. Does the picture or θ change?</li>
+{% endblock %}

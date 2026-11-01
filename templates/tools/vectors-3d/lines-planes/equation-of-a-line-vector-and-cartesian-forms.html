@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Start at P₁ and walk λ steps of the direction b. The vector form says exactly that. The Cartesian form says every coordinate has taken the same λ.{% endblock %}
+{% block why_text %}x = x₁ + λa, y = y₁ + λb, z = z₁ + λc. Solve each for λ and the three are equal. When a direction ratio is 0, that coordinate never changes, so it is written as an equation by itself.{% endblock %}
+{% block try_items %}
+<li>Slide λ. Does the point stay on the grey line?</li>
+<li>Set b = 0. How does the formula line change, and why?</li>
+<li>Double a, b and c. Is it the same line? What changes?</li>
+{% endblock %}

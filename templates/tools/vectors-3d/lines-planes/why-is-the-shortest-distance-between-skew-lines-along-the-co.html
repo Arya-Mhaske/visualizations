@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Slide the two ends of the purple segment along their lines. Watch the length, and the cosine of its angle with each line.{% endblock %}
+{% block why_text %}If the segment is not square to a line, you can slide that end along the line and make the segment shorter. So the shortest segment leaves no room to slide: it is perpendicular to both lines. That direction is u × v, which gives the distance formula.{% endblock %}
+{% block try_items %}
+<li>Move both ends until the length is as small as you can get. What do the two cosines show?</li>
+<li>Move one end only. Can you beat the shortest length?</li>
+<li>Compare your best length with the formula value.</li>
+{% endblock %}

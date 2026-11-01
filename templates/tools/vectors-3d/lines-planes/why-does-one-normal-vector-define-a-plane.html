@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Aim the green normal anywhere. The blue sheet turns with it and stays square to it. Spin the coral arrow around inside the sheet.{% endblock %}
+{% block why_text %}A point r is on the plane when the arrow r − p is perpendicular to n, that is n · (r − p) = 0. The only arrows that are square to one fixed direction fill a flat sheet. So one normal, plus one point, fixes the whole plane.{% endblock %}
+{% block try_items %}
+<li>Turn the coral arrow all the way round. Does n · (r − p) ever leave 0?</li>
+<li>Set the tilt to 0°. What plane is this, and what is its equation?</li>
+<li>Tip the normal and watch the equation. Which numbers change?</li>
+{% endblock %}
