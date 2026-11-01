@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A weather map shows the wind as an arrow at each place. A vector field is exactly that: a rule that gives every point its own arrow.{% endblock %}
+{% block why_text %}A single vector describes one push. A field must describe the push everywhere, so it gives one arrow to each point: F(x, y) = (P(x, y), Q(x, y)). Move the probe and the arrow changes, because the rule changes with the point.{% endblock %}
+{% block try_items %}
+<li>Move the probe along a row. Which parts of the arrow change, and which stay?</li>
+<li>Switch to Swirl. Which way does the arrow point at (1, 0), and at (0, 1)?</li>
+<li>Find a point in the Source field where the arrow is zero.</li>
+{% endblock %}

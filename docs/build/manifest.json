@@ -8334,166 +8334,167 @@
 "reviewed": false
 },
 "vector-calculus/vector-fields/why-is-a-field-an-arrow-at-every-point": {
-"archetype": "discrete",
+"archetype": "plot",
 "priority": 226,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/vector-fields/why-do-gradient-fields-cross-contours-at-right-angles": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 226,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/vector-fields/gravity-and-electric-fields": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 226,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/why-is-work-integralf-dr": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/why-are-conservative-fields-path-independent": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/why-is-a-closed-loop-worth-zero-in-a-conservative-field": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/why-is-integralf-ds-the-area-of-a-curtain": {
 "archetype": "space3d",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/why-does-integralf-dr-care-about-direction-but-integralf-ds": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/spot-a-conservative-field-equal-cross-partials": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/find-a-potential-function": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/line-integrals/gravity-on-any-roller-coaster-track": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 227,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/green-s-theorem/why-do-the-inside-circulations-cancel": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 228,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/green-s-theorem/why-does-orientation-matter-keep-the-region-on-your-left": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 228,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/green-s-theorem/planimeter-area-by-tracing-the-edge": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 228,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/curl-divergence/curl-as-a-paddle-wheel": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 229,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/curl-divergence/divergence-as-sources-and-sinks": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 229,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/curl-divergence/why-are-curl-grad-f-and-div-curl-f-zero": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 229,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/surfaces-flux/why-are-parametric-surfaces-a-grid-wrapped-onto-a-shape": {
 "archetype": "space3d",
 "priority": 230,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/surfaces-flux/why-does-flux-depend-on-tilt": {
-"archetype": "rays",
+"archetype": "space3d",
 "priority": 230,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/surfaces-flux/surface-integral-mass-of-a-curved-sheet": {
 "archetype": "space3d",
 "priority": 230,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/surfaces-flux/why-can-t-you-measure-flux-through-a-mobius-strip": {
-"archetype": "discrete",
+"archetype": "space3d",
 "priority": 230,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/surfaces-flux/surface-area-of-a-parametric-surface": {
 "archetype": "space3d",
 "priority": 230,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/stokes-divergence-theorems/why-does-any-surface-with-the-same-rim-give-the-same-circula": {
-"archetype": "phasor",
+"archetype": "space3d",
 "priority": 231,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/stokes-divergence-theorems/why-does-outflow-equal-the-sources-inside": {
 "archetype": "space3d",
 "priority": 231,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/stokes-divergence-theorems/one-big-idea-boundary-integral-of-a-derivative": {
 "archetype": "space3d",
 "priority": 231,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "vector-calculus/stokes-divergence-theorems/gauss-s-law-for-electric-flux": {
-"archetype": "rays",
-"priority": 231,
-"notes": "",
-"reviewed": false
-},
-"vector-calculus/stokes-divergence-theorems/three-men-and-two-theorems": {
 "archetype": "space3d",
 "priority": 231,
 "notes": "",
-"reviewed": false
+"reviewed": true
+},
+"vector-calculus/stokes-divergence-theorems/three-men-and-two-theorems": {
+"archetype": "table",
+"priority": 231,
+"notes": "",
+"reviewed": true,
+"formula": false
 },
 "linear-algebra/vectors-combinations/what-can-you-reach-with-cu-dv": {
 "archetype": "discrete",
