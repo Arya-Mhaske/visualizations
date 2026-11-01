@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A slope field never curls, and a swirl never leaks. Test both with a small circle at any point you like.{% endblock %}
+{% block why_text %}Curl of a gradient is f_yx − f_xy, and the mixed partials of f are equal, so it is zero: a slope has no spin. In the plane, a swirl (f_y, −f_x) has divergence f_yx − f_xy, which is zero for the same reason: a swirl has no source. In 3D, div(curl F) = 0 follows the same way.{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The identity div(curl F) = 0 lives in 3D, where curl F is a vector. Here we show its plane counterpart: rotate a gradient by a quarter turn and its divergence is also 0. Both rest on f_xy = f_yx.
+</div>
+{% endblock %}
+{% block try_items %}
+<li>In Slope view, change the circle's radius and place. Does the spin ever leave 0?</li>
+<li>Switch to Swirl. Does any flow leave the circle?</li>
+<li>Try a different height f. Which fact is behind both zeros?</li>
+{% endblock %}

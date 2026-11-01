@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Place a small box in the flow. Green arrows show flow leaving, blue arrows flow entering. Is more going out than coming in?{% endblock %}
+{% block why_text %}If more flows out of a tiny box than flows in, something inside must be making fluid: a source. If less, it is a sink. Dividing the net outflow by the box's area gives the divergence, P_x + Q_y, which is the rate the flow is spreading out at that point.{% endblock %}
+{% block try_items %}
+<li>In the Source field, shrink the box. Does "per unit area" change?</li>
+<li>Choose Stretch (x, 0). Flow only goes sideways, so how can it be a source?</li>
+<li>Choose Swirl. Does any net flow leave the box?</li>
+{% endblock %}
