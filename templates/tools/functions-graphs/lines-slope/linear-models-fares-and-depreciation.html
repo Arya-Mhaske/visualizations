@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Build C = mx + b from a story and say what m and b mean in it.{% endblock %}
+{% block why_text %}In a linear model the intercept b is the value when the input is 0, and the slope m is how much the value changes for each unit of input. For a taxi fare, b is the starting charge and m is the price of each extra kilometre. For a scooter's value, m is negative: it loses the same amount each year.{% endblock %}
+{% block try_items %}
+<li>Switch between the two stories. Why does the line go down for the scooter?</li>
+<li>Double m for the taxi. How much does a 10 km ride cost now?</li>
+<li>In the scooter story, how many years until it is worth nothing?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Both stories use made-up numbers for practice. Real fares and resale values differ.
+</div>
+{% endblock %}

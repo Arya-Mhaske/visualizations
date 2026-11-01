@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Check the distance formula against the perpendicular you can measure.{% endblock %}
+{% block why_text %}The shortest path from a point to a line is the perpendicular. Its length is |Ax₀ + By₀ + C| / √(A² + B²). The numerator is the value the point gives to the line's equation, and the denominator turns that into a true distance. The tool measures the perpendicular on the graph and compares it.{% endblock %}
+{% block try_items %}
+<li>Use A = 3, B = 4, C = −12 and P = (5, 4). What are the two answers?</li>
+<li>Move P onto the line. What is the distance?</li>
+<li>Set B = 0 so the line is vertical. Does the formula still work?</li>
+{% endblock %}

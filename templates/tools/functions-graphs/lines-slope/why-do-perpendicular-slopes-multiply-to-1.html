@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn a slope triangle through 90°. The rise and run swap, and one changes sign.{% endblock %}
+{% block why_text %}A slope triangle with run 4 and rise 2 turned through a quarter-turn has run −2 and rise 4. The slope of the new line is 4 ÷ (−2) = −2, the negative reciprocal of ½. In general, (run, rise) becomes (−rise, run), so the new slope is run ÷ (−rise), and the product of the two slopes is −1.{% endblock %}
+{% block try_items %}
+<li>Set the turn to 90°. What is the product of the two slopes?</li>
+<li>Choose rise = 0. What happens to the second slope, and why?</li>
+<li>Try 45°. Is the product still −1?</li>
+{% endblock %}

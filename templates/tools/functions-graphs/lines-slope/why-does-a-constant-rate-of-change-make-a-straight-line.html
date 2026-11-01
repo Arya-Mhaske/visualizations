@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Compare tables with equal steps in y and tables with growing steps.{% endblock %}
+{% block why_text %}If x goes up by the same amount each time and y also goes up by the same amount each time, every little piece has the same slope, so the points are in a straight line. If y's steps keep growing, the pieces get steeper and the points curve. A constant rate of change is exactly what makes a graph straight.{% endblock %}
+{% block try_items %}
+<li>Choose y = 2x + 1. What are the steps in y?</li>
+<li>Choose y = x². Are the steps equal?</li>
+<li>Change the step in x for y = 2x + 1. What happens to the steps in y and to the slope?</li>
+{% endblock %}

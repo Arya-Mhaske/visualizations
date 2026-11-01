@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Plot the y-intercept first, then step by the slope.{% endblock %}
+{% block why_text %}In y = mx + b, b is where the line crosses the y-axis. Start there. The slope is rise ÷ run, so go right by the run and up (or down) by the rise to reach the next point. Repeat as often as you like, and extend the line both ways. Every step has the same rise and run, which is why the points line up.{% endblock %}
+{% block try_items %}
+<li>Make the rise negative. Which way does the step go?</li>
+<li>Use a run of 1. How does stepping compare with a bigger run?</li>
+<li>Check a point from the line. Does it satisfy the equation?</li>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Subtract the two inclinations with tan(A − B) and the slopes appear.{% endblock %}
+{% block why_text %}The slope of a line is tan of its inclination. The angle between two lines is A − B, the difference of their inclinations. The formula for tan(A − B) gives (tan A − tan B)/(1 + tan A tan B). Replace each tangent by a slope and you get (m₂ − m₁)/(1 + m₁m₂). When m₁m₂ = −1 the denominator is 0 and the lines are perpendicular.{% endblock %}
+{% block try_items %}
+<li>Set the two inclinations to 60° and 20°. What is the angle between the lines?</li>
+<li>Make A − B = 90°. What happens to the formula?</li>
+<li>Set A = 100° and B = 20°. Which angle does the formula give: A − B, or its supplement?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The formula gives the acute angle between the lines. If you want the obtuse one, subtract from 180°.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Three points are on one line exactly when the slope of AB equals the slope of BC.{% endblock %}
+{% block why_text %}If A, B and C are on one line then the slope from A to B and the slope from B to C are the same, because both are the slope of that line. If the slopes differ, the path bends at B. The tool compares the slopes using whole-number arithmetic, so there are no rounding mistakes.{% endblock %}
+{% block try_items %}
+<li>Make AB and BC have equal slopes. What does the picture show?</li>
+<li>Move C one step off the line. What happens to the slope of BC?</li>
+<li>Put B in line with A and C but not between them. Does the test still work?</li>
+{% endblock %}
