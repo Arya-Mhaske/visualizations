@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Match a transformed graph to its equation.{% endblock %}
+{% block why_text %}Read the graph in this order: find the corner or vertex to get the shifts, check whether it opens up or down to see the sign of a, and compare widths to the parent to see stretching. Then match the equation.{% endblock %}
+{% block try_items %}
+<li>Answer ten and see which kind of shift trips you up.</li>
+<li>Check by testing one point in your chosen equation.</li>
+<li>Look for flips before shifts.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is practice without a timer. A timed version is on the list of improvements.
+</div>
+{% endblock %}

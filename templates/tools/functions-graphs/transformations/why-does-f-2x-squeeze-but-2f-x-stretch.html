@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Change the input versus the output and see horizontal changes act backwards.{% endblock %}
+{% block why_text %}In f(2x) the function sees a number twice as big as x, so it reaches each value at half the x: the graph is squeezed towards the y-axis. In 2f(x) the output is doubled at the same x: the graph is stretched upward. Changes to the input act backwards because the input is what you feed in, not what you read off.{% endblock %}
+{% block try_items %}
+<li>Set c = 2 with "Input". Where does the marked point go?</li>
+<li>Switch to "Output". Where does it go now?</li>
+<li>Set c = 0.5 and compare.</li>
+{% endblock %}

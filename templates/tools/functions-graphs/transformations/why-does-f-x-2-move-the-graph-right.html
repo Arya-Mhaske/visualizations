@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Compare tables: the input must be 2 bigger to get the same output.{% endblock %}
+{% block why_text %}In f(x − 2), the function receives x − 2. To make it receive the old input, say 0, you need x = 2. So every feature of the graph that was at x now appears 2 later: the graph moves right. The minus sign is easy to read as "go left", but the shift is in the input, and it works backwards. f(x) − 2 subtracts from the output instead, and moves the graph down.{% endblock %}
+{% block try_items %}
+<li>Set h = 2. Where is the old point at x = 0 now?</li>
+<li>Set h = −2. Which way does the graph move?</li>
+<li>Turn on f(x) − h. How does that differ?</li>
+{% endblock %}

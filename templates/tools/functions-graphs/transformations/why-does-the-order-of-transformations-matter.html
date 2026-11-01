@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Shift then stretch, then reverse the order, and get a different graph.{% endblock %}
+{% block why_text %}A shift moves a graph by a fixed amount. A stretch multiplies distances from the axis. Stretch after shifting and the shift is stretched too; stretch first and the shift is not. So the two orders give different graphs. In the sequence builder, inside changes are done in one order and outside changes in another, which is why.{% endblock %}
+{% block try_items %}
+<li>Use the horizontal case with shift 2 and stretch 2. Where do the graphs have their lowest points?</li>
+<li>Set the stretch to 1. Do the graphs match?</li>
+<li>Try the vertical case.</li>
+{% endblock %}

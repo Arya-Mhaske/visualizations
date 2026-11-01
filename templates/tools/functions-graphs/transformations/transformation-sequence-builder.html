@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Stack shifts, stretches and reflections on any parent function.{% endblock %}
+{% block why_text %}y = a f(b(x − h)) + k combines four changes. The inside ones act on the input and so work backwards: h shifts right, b squeezes. The outside ones act on the output: a stretches, k shifts up. The key points of the parent follow the changes, so you can sketch any transformed graph from a few points.{% endblock %}
+{% block try_items %}
+<li>Change h only. How does the key point move?</li>
+<li>Set a negative. What flips?</li>
+<li>Set b = 2 and h = 1. Where does the key point at x = 1 go?</li>
+{% endblock %}

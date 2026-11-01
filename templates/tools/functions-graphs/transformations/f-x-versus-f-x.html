@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Flip over the x-axis versus the y-axis.{% endblock %}
+{% block why_text %}Minus f(x) changes the sign of every output, so each point (x, y) goes to (x, −y): a flip over the x-axis. f(−x) changes the sign of every input, so each point (x, y) goes to (−x, y): a flip over the y-axis. They are different unless f is symmetric.{% endblock %}
+{% block try_items %}
+<li>Show only −f(x). What happens to a point?</li>
+<li>Show only f(−x). What happens now?</li>
+<li>Which function has f(−x) = f(x)?</li>
+{% endblock %}
