@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}The same circle: the horizontal speed is minus the height.{% endblock %}
+{% block why_text %}The point's horizontal position is cos t. Its horizontal speed is the horizontal part of the velocity, which is minus the sine of the angle: when the point is above the axis it is moving left. So the rate of change of cos t is −sin t.{% endblock %}
+{% block try_items %}
+<li>Where is the point moving right?</li>
+<li>Where does cos t stop changing?</li>
+<li>Why is there a minus sign?</li>
+{% endblock %}

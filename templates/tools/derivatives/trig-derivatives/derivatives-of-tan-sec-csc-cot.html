@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Derive each from sine and cosine with the quotient rule.{% endblock %}
+{% block why_text %}tan x is sin x over cos x, cot x is cos x over sin x, sec x is 1 over cos x, and csc x is 1 over sin x. The quotient rule with the known derivatives of sine and cosine gives all four. Notice how each ends up with a squared denominator.{% endblock %}
+{% block try_items %}
+<li>Step through tan x. Where does the 1 in the top come from?</li>
+<li>Which derivatives have a minus sign?</li>
+<li>Compare the measured slope and the formula at any x.</li>
+{% endblock %}

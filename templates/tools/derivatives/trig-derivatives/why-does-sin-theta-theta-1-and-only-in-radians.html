@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Squeeze the sector between two triangles. In degrees the limit becomes π/180.{% endblock %}
+{% block why_text %}A thin sector of the unit circle is bigger than the triangle inside it (area ½ sin θ) and smaller than the triangle around it (½ tan θ). Its own area is ½ θ, but only when θ is measured in radians. Dividing out gives cos θ < sin θ/θ < 1, which squeezes to 1. In degrees the sector area is not ½θ, and the limit turns out to be π/180.{% endblock %}
+{% block try_items %}
+<li>Make θ small. What happens to sin θ ÷ θ?</li>
+<li>Switch to degrees. What does sin(θ°) ÷ θ settle at?</li>
+<li>Compare that with π ÷ 180.</li>
+{% endblock %}

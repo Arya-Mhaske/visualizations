@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A point goes round the unit circle. Its vertical speed is its horizontal position.{% endblock %}
+{% block why_text %}A point moving at steady speed round the unit circle has a velocity along the tangent. The part of that velocity that is upward equals the cosine of the angle, the point's horizontal position. The height of the point is sin t, so the rate of change of sin t is cos t.{% endblock %}
+{% block try_items %}
+<li>Where is the point rising fastest?</li>
+<li>Where is the point at the top, and what is its vertical speed there?</li>
+<li>Compare the tangent slope on the graph with cos t.</li>
+{% endblock %}
