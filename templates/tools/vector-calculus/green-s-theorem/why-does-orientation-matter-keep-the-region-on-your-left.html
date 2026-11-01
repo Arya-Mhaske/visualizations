@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Walk the edge of the region both ways. The blue arrow points to your left. Counter-clockwise, it points into the region.{% endblock %}
+{% block why_text %}Green's theorem was built from small loops, each walked counter-clockwise, with the inside on the left. Walk the same edge backwards and every dr flips sign, so the circulation flips too. The area integral does not know which way you walk, so the theorem only holds with the region on your left.{% endblock %}
+{% block try_items %}
+<li>Switch to Clockwise. What happens to ∮ F · dr, and to the area integral?</li>
+<li>Move the walker round. Does the blue arrow always point into the region when counter-clockwise?</li>
+<li>Make the oval larger. How do both numbers change?</li>
+{% endblock %}

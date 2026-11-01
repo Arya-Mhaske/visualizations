@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A planimeter finds an area by tracing only the edge. Trace the shape and watch the reading build up. Green shows area counted, coral shows area taken away.{% endblock %}
+{% block why_text %}Take F = (−y, x)/2. Then Q_x − P_y = 1, so Green's theorem gives the area as ½ ∮ (x dy − y dx). Each bit of edge sweeps a thin triangle from the pivot. Where the pivot is outside the shape, some triangles count backwards and are cancelled later.{% endblock %}
+{% block try_items %}
+<li>Trace the triangle with the pivot outside it. When does coral appear?</li>
+<li>Move the pivot. Does the final reading change?</li>
+<li>Trace the star. Check that the final reading equals the area of the shape.</li>
+{% endblock %}
