@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Stand a curtain along a curve on the floor, with height f at each point. Its area is the line integral ∫ f ds.{% endblock %}
+{% block why_text %}A tiny strip of the curtain is a rectangle: width ds along the curve, height f. Its area is f ds. Adding all the strips along the curve gives ∫ f ds, which is the area of the whole curtain. If f = 1, the area is just the length of the curve.{% endblock %}
+{% block try_items %}
+<li>Choose Same height. Check that the area equals 1.5 times the length.</li>
+<li>Choose Rises with x on the circle. Which side of the curtain is tall?</li>
+<li>Build only half the circle. Is the area half of the whole?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Given F = (P, Q), find f with ∇f = F. Go one step at a time. The formula line shows each step, and the last step draws the contours of f.{% endblock %}
+{% block why_text %}P = f_x, so integrating P with respect to x gets f up to an unknown function g(y). Then Q = f_y fixes g′(y), and one more integral finds g. The last check is that ∇f lands back on F.{% endblock %}
+{% block try_items %}
+<li>Work through the first field. At step 3, what is left over after the x² terms cancel?</li>
+<li>At step 4, compare ∇f with F at several points. Do they agree?</li>
+<li>Why can the answer be shifted by a constant C and still work?</li>
+{% endblock %}

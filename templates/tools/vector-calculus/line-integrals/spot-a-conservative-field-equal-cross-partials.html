@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A field F = (P, Q) can only be a gradient if ∂P/∂y = ∂Q/∂x. The map shades where they differ: coral if Q_x is bigger, blue if P_y is bigger.{% endblock %}
+{% block why_text %}If F = ∇f then P = f_x and Q = f_y. Then P_y = f_xy and Q_x = f_yx, and the mixed partials of f agree. So a conservative field must have equal cross-partials. The reverse holds only on a region with no holes.{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The last field, F = (−y, x)/r², has equal cross-partials everywhere except the origin, where it is not defined. Yet one trip round the origin is worth 2π. The test is a proof only on a region without holes, such as the whole plane.
+</div>
+{% endblock %}
+{% block try_items %}
+<li>Choose F = (2xy, x²). Is the map blank? What does that say?</li>
+<li>Choose Swirl. What colour is the map, and does it change from place to place?</li>
+<li>Choose the last field and change the loop size. Does the loop value change?</li>
+{% endblock %}
