@@ -176,7 +176,8 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `lib/rays.js` uses NCERT's Cartesian signs: pole at 0, light along +x, `refract` is ready for the next optics boxes and tested on Snell and the critical angle. `_mirrors-math.js` has `imageOf`, `describe`, `region`, `exactRay` (a true
   sphere), `principalRays` (paraxial), `triangles`, and `fieldEdge`/`firstSeen` (a mirror's field of view); `_mirrors-view.js` has `drawBench` and `drawScene`. Lenses can copy the shape of both.
 - Paraxial rays turn at the plane x = 0, so a truly curved mirror leaves them crossing the glass: draw the mirror much flatter than it is and say so. Only `why-is-f-r-2-for-a-mirror` uses the true sphere.
-- An unsigned mirror formula gets concave sizes right and convex sizes wrong. Dropping signs is only visibly wrong on a convex mirror, so that is the sign tool's default.
+- An unsigned mirror formula gets the size right but the side wrong on a concave mirror, and the size wrong on a convex one. Plot its answer on the signed axis, so it fails visibly in both.
+- A control must change what a student sees in every state. `smoke_tools` only tests the first slider, and it passed a toggle that did nothing on a concave mirror. When adding a toggle, compare the stage and panel with it on and off, in each mode.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order

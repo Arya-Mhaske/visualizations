@@ -66,6 +66,15 @@ export function triangles(u, f, h) {
 // What the same formula gives if every sign is dropped.
 export const unsignedV = (u, f) => 1 / (1 / Math.abs(f) - 1 / Math.abs(u));
 
+// Read that answer on the signed axis, and it always fails: the wrong size on a convex mirror, the wrong side on a concave one.
+export function noSignsVerdict(u, f) {
+  const { v, atInfinity } = imageOf(u, f);
+  if (atInfinity) return 'No image here';
+  const wrong = unsignedV(u, f);
+  if (Math.abs(Math.abs(wrong) - Math.abs(v)) > 0.005) return 'Wrong size';
+  return wrong * v < 0 ? 'Right size, wrong side' : 'Right';
+}
+
 // ---- Rear-view mirror, seen from above, in metres. The mirror faces −x, the eye is on its axis ----
 // R = Infinity is a flat mirror. Returns where the outermost visible ray leaves the rim, and its slope back along the road.
 export function fieldEdge(eye, w, R) {

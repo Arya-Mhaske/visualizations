@@ -3,7 +3,7 @@ import { handles } from '../../lib/stage.js';
 import { arrow, dot, label } from '../../lib/draw.js';
 import { createBench } from '../../lib/rays.js';
 import { fixed } from '../../lib/format.js';
-import { describe, imageOf, signedF, unsignedV } from './_mirrors-math.js';
+import { describe, imageOf, noSignsVerdict, signedF, unsignedV } from './_mirrors-math.js';
 import { drawBench, drawScene } from './_mirrors-view.js';
 
 const state = { u: -15, kind: 'convex', fSize: 5, drop: true };
@@ -13,10 +13,9 @@ const cm = (x) => (Number.isFinite(x) ? `${fixed(x, 2)} cm` : 'infinity');
 const signed = (x) => (x > 0 ? `+${fixed(x, 2)}` : fixed(x, 2));
 
 function verdict(s) {
-  if (image(s).atInfinity) return { text: 'No image here', good: true };
-  const wrong = unsignedV(s.u, f(s));
-  if (Math.abs(Math.abs(wrong) - Math.abs(image(s).v)) > 0.005) return { text: 'Wrong size of v', good: false };
-  return { text: 'Right size, but no side', good: false };
+  if (!s.drop) return 'Switched off';
+  const text = noSignsVerdict(s.u, f(s));
+  return { text, good: text === 'No image here' };
 }
 
 // Signed lengths, each drawn as an arrow leaving the pole. The arrow's direction is its sign.
@@ -39,8 +38,11 @@ function drawMeasures(ctx, stage, c, bench) {
 function drawGhost(ctx, stage, c, bench) {
   if (!state.drop || image().atInfinity) return;
   const wrong = unsignedV(state.u, f());
-  if (Math.abs(Math.abs(wrong) - Math.abs(image().v)) < 0.005 || !bench.inView(-wrong, 0)) return;
-  const [x, y] = bench.toPx(-wrong, 0);
+  if (!bench.inView(wrong, 0)) {
+    label(ctx, 'No signs: off the drawing', stage.w - 8, 14, c, { size: 12, align: 'right', bounds: stage });
+    return;
+  }
+  const [x, y] = bench.toPx(wrong, 0);
   dot(ctx, x, y, 8, c.paper, c.ink, 3);
   label(ctx, 'No signs', x, y + 18, c, { size: 12, bounds: stage });
 }
@@ -64,7 +66,7 @@ const tool = createTool({
     { readout: [
       ['With signs, v', (s) => cm(image(s).v)],
       ['Image', (s) => describe(image(s))],
-      ['No signs, v', (s) => cm(unsignedV(s.u, f(s)))],
+      ['No signs, v', (s) => (s.drop ? cm(unsignedV(s.u, f(s))) : 'Switched off')],
       ['No signs verdict', verdict],
     ] },
   ],

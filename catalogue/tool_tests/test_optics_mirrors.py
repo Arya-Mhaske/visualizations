@@ -138,6 +138,16 @@ class SignTests(SimpleTestCase):
         self.assertAlmostEqual(js(MATH, 'm.unsignedV(-3,-5)'), -7.5)  # true |v| 7.5, but the minus has no meaning
         self.assertAlmostEqual(js(MATH, 'm.unsignedV(-10,5)'), 10)  # true |v| is 10/3
 
+    def test_no_signs_fails_in_every_case_the_toggle_can_show(self):
+        cases = [(-15, -5, 'Right size, wrong side'), (-3, -5, 'Right size, wrong side'), (-15, 5, 'Wrong size'),
+                 (-3, 5, 'Wrong size'), (-5, -5, 'No image here')]
+        for u, f, words in cases:
+            self.assertEqual(js(MATH, f'm.noSignsVerdict({u},{f})'), words)
+        # every slider setting, so the toggle always has something to show
+        got = js(MATH, """[...Array(43).keys()].map((i) => -1 - i / 2).flatMap((u) => [...Array(13).keys()].map((i) => 2 + i / 2)
+          .flatMap((f) => [m.noSignsVerdict(u, f), m.noSignsVerdict(u, -f)]))""")
+        self.assertEqual(set(got), {'Right size, wrong side', 'Wrong size', 'No image here'})
+
 
 @needs_node
 class RearViewTests(SimpleTestCase):
