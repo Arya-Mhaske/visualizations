@@ -2,23 +2,19 @@ import { createTool } from '../../lib/tool.js';
 import { dot, label, line } from '../../lib/draw.js';
 import { fixed } from '../../lib/format.js';
 import { degenerate, eccentricityOf, polarPoint, rad, sectionType } from './_conics-math.js';
+import { drawCone } from './_conics-view.js';
 
 const state = { beta: 60, alpha: 35, height: 0 };
 const H = 0.45;
 
 createTool({
   state,
-  label: 'Top: a side view of a double cone with a cutting plane. Slide the plane up until it passes through the apex. Bottom: the cut shape. A plane through the apex cuts a single point if it is flatter than the cone\'s side, one line if it is exactly as steep, and two crossing lines if it is steeper.',
+  label: 'Top: a double cone seen from slightly above, with a flat cutting plane (coral). Slide the plane up until it passes through the apex. Bottom: the cut shape. A plane through the apex cuts a single point if it is flatter than the cone\'s side, one line if it is exactly as steep, and two crossing lines if it is steeper.',
   draw(ctx, stage, c) {
     const h = stage.h * 0.5;
     const O = [stage.w / 2, h * 0.5];
     const k = h * 0.42;
-    const a = rad(state.alpha);
-    [-1, 1].forEach((s) => line(ctx, O[0] - s * Math.tan(a) * k * 1.1, O[1] - k * 1.1, O[0] + s * Math.tan(a) * k * 1.1, O[1] + k * 1.1, { color: c.ink, width: 3 }));
-    const P0 = [O[0], O[1] + k * H * state.height];
-    const b = rad(state.beta);
-    const u = [Math.sin(b), -Math.cos(b)];
-    line(ctx, P0[0] - u[0] * k * 2, P0[1] - u[1] * k * 2, P0[0] + u[0] * k * 2, P0[1] + u[1] * k * 2, { color: c.a, width: 4 });
+    drawCone(ctx, c, O, k, state.alpha, state.beta, H * state.height);
     dot(ctx, ...O, 6, c.fillY, c.ink);
     const C = [stage.w / 2, h + (stage.h - h) / 2];
     const scale = Math.min(stage.w, stage.h - h) / 7;

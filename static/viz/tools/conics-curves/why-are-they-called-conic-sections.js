@@ -2,7 +2,7 @@ import { createTool } from '../../lib/tool.js';
 import { dot, label, line } from '../../lib/draw.js';
 import { fixed } from '../../lib/format.js';
 import { eccentricityOf, polarPoint, rad, sectionType } from './_conics-math.js';
-import { curve, trace } from './_conics-view.js';
+import { curve, drawCone, trace } from './_conics-view.js';
 
 const state = { alpha: 35, beta: 60 };
 const NAMES = { circle: 'circle', ellipse: 'ellipse', parabola: 'parabola', hyperbola: 'hyperbola' };
@@ -10,20 +10,12 @@ const L = 1.4;
 
 createTool({
   state,
-  label: 'Top: a side view of a double cone with a cutting plane seen edge-on as a line. Bottom: the shape the plane cuts out of the cone. Tilt the plane from flat to steep. Flat gives a circle. Less steep than the cone\'s side gives an ellipse. Exactly as steep as the side gives a parabola. Steeper gives a hyperbola, which cuts both halves of the cone.',
+  label: 'Top: a double cone seen from slightly above, with a flat cutting plane (coral) passing through it. Bottom: the shape the plane cuts out of the cone. Tilt the plane from flat to steep. Flat gives a circle. Less steep than the cone\'s side gives an ellipse. Exactly as steep as the side gives a parabola. Steeper gives a hyperbola, which cuts both halves of the cone.',
   draw(ctx, stage, c) {
     const h = stage.h * 0.5;
     const O = [stage.w / 2, h * 0.5];
     const k = h * 0.42;
-    const a = rad(state.alpha);
-    [-1, 1].forEach((s) => {
-      line(ctx, O[0] - s * Math.tan(a) * k * 1.1, O[1] - k * 1.1, O[0] + s * Math.tan(a) * k * 1.1, O[1] + k * 1.1, { color: c.ink, width: 3 });
-    });
-    // the plane crosses the axis a little below the apex
-    const P0 = [O[0], O[1] + k * 0.45];
-    const b = rad(state.beta);
-    const u = [Math.sin(b), -Math.cos(b)];
-    line(ctx, P0[0] - u[0] * k * 2, P0[1] - u[1] * k * 2, P0[0] + u[0] * k * 2, P0[1] + u[1] * k * 2, { color: c.a, width: 4 });
+    drawCone(ctx, c, O, k, state.alpha, state.beta, 0.45);
     dot(ctx, ...O, 5, c.ink, c.ink);
     label(ctx, 'apex', O[0] + 24, O[1] - 8, c, { size: 10, bounds: stage, patch: false });
     // the cut shape, from the conic's polar equation with a focus at the origin
