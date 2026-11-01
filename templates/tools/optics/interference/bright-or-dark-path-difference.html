@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Place a point near two coherent sources. Measure its two paths, subtract, and say bright or dark before you read the answer.{% endblock %}
+{% block why_text %}At any point the two waves start together but travel different distances. If the paths differ by a whole number of wavelengths, crests meet crests and the point is bright. If they differ by a half number, a crest meets a trough and the point is dark. The shading shows that rule at every point.{% endblock %}
+{% block try_items %}
+<li>Move P until Δ = 1 λ exactly. Is it bright or dark?</li>
+<li>Move P until Δ = 1.5 λ. What does the shading look like there?</li>
+<li>Widen d. How many bright bands can fit? Why can Δ never be more than d?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Distances are in wavelengths, so the numbers are easy to read. The points counted as bright or dark are within 0.1 λ of a whole or half number.
+</div>
+{% endblock %}

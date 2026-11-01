@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two separate bulbs give no fringes. Two slits lit by one source do. Add snapshots and watch what happens to the dark bands.{% endblock %}
+{% block why_text %}Two bulbs have no steady phase between them. Each snapshot puts the bright bands in a different place, so adding them fills in the dark ones. Two slits lit by one source copy the same wave, so the phase gap never changes and the fringes stay put. Steady fringes need coherent sources.{% endblock %}
+{% block try_items %}
+<li>With two bulbs, raise the snapshots from 1 to 12. What happens to the contrast?</li>
+<li>Switch to two slits. Does the contrast change as you add snapshots?</li>
+<li>Look at the dashed line. What does the bulbs' average settle near?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real bulbs change phase billions of times a second, so your eye adds up an enormous number of snapshots. Twelve fixed phases show the idea. The brightness scale makes one wave alone equal to 1.
+</div>
+{% endblock %}

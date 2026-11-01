@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Change the wavelength, the slit gap and the screen distance. Watch the fringes spread and squeeze, and read off where each one lands.{% endblock %}
+{% block why_text %}Every fringe position follows y = nλD ÷ d. The spacing is the same between all neighbours, β = λD ÷ d. Wider fringes need a longer λ, a longer D or a smaller d.{% endblock %}
+{% block try_items %}
+<li>Find a set of values that gives β = 2 mm.</li>
+<li>Set n = 4. What is y₄ in terms of β?</li>
+<li>Find the smallest d that still shows at least 10 fringes in the window.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A real single slit also dims the fringes towards the edges (diffraction), which the next box explains. Here every fringe is equally bright. The "nth dark" line gives the dark fringe between the (n−1)th and nth bright ones.
+</div>
+{% endblock %}

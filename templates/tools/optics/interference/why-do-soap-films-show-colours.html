@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Light reflects from the front and the back of a soap film. The two reflections interfere, and the result depends on the colour and on the thickness.{% endblock %}
+{% block why_text %}The back reflection travels an extra 2nt through the film. The front reflection also flips its phase, so reflection is bright when 2nt is a half number of wavelengths. Different colours have different wavelengths, so at one thickness one colour is bright and another is cancelled. That is the colour you see.{% endblock %}
+{% block try_items %}
+<li>Slide to 0 nm. Why is every colour dark for a very thin film?</li>
+<li>Find a thickness where green is strongest. What is 2nt there, and how does it compare with half of 550 nm?</li>
+<li>Thicken to 800 nm. Why do the colours get harder to tell apart?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This goes beyond the NCERT text. It treats light as three colours (650, 550 and 450 nm) at normal incidence, with n = 1.33, so it only shows the idea. Real films reflect every wavelength, and light entering at an angle shifts the colours.
+</div>
+{% endblock %}

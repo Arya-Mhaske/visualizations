@@ -2925,34 +2925,34 @@
 "reviewed": true
 },
 "optics/interference/why-do-we-need-coherent-sources": {
-"archetype": "rays",
+"archetype": "plot",
 "priority": 164,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/interference/why-are-young-s-fringes-spaced-d-d": {
-"archetype": "rays",
+"archetype": "plot",
 "priority": 164,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/interference/bright-or-dark-path-difference": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 164,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/interference/young-s-double-slit-explorer": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 164,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/interference/why-do-soap-films-show-colours": {
-"archetype": "rays",
+"archetype": "plot",
 "priority": 164,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/diffraction-polarisation/why-is-the-single-slit-central-maximum-twice-as-wide": {
 "archetype": "rays",

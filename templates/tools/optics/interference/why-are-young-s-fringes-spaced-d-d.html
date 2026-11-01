@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Slide the point along the screen and read its path difference. A bright fringe sits wherever the paths differ by a whole number of wavelengths.{% endblock %}
+{% block why_text %}The two paths to a point differ by Δ ≈ dy ÷ D. Waves add when Δ = nλ, so bright fringes sit at y = nλD ÷ d. The gap between neighbours is β = λD ÷ d. A longer λ or D spreads the fringes, and a bigger d squeezes them.{% endblock %}
+{% block try_items %}
+<li>Slide y to the first bright fringe next to the centre. What is Δ ÷ λ there?</li>
+<li>Double D. What happens to β?</li>
+<li>Double d. What happens to β?</li>
+<li>Change λ from 400 nm to 700 nm. In which direction do the fringes move?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The sketch is not to scale: in the real set-up the slits are less than a millimetre apart and the screen is a metre away. The graph uses the exact path lengths, and the formula uses the small-angle rule, which agrees here.
+</div>
+{% endblock %}
