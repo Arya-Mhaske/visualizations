@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Read the length and angle of a complex number off the plane.{% endblock %}
+{% block why_text %}A complex number a + bi is a point, so it also has a distance r from zero and an angle θ from the positive real axis. Pythagoras gives r, and the quadrant gives θ. Then z = r(cos θ + i sin θ), which is the polar form. The calculator's inverse tangent only gives quadrants 1 and 4, so the quadrant matters.{% endblock %}
+{% block try_items %}
+<li>Set z = −3 + 4i. What does the calculator say, and what is the true angle?</li>
+<li>Move z into each quadrant. When does the angle need 180° added?</li>
+<li>Set a = 0. What is the angle for b > 0 and for b < 0?</li>
+{% endblock %}

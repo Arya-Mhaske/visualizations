@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiplying by i turns a point a quarter-turn. Four quarter-turns bring it home.{% endblock %}
+{% block why_text %}Multiplying by i rotates any point 90° anticlockwise about zero. i⁰ = 1, i¹ = i, i² = −1, i³ = −i, and a fourth turn is a full circle, so i⁴ = 1. After that the cycle repeats. That is why you only need n mod 4 to evaluate iⁿ.{% endblock %}
+{% block try_items %}
+<li>Slide n from 0 to 4. Where do you end?</li>
+<li>What is i⁹⁹? Use n = 12 and think of n mod 4.</li>
+<li>Change the start to 2 + i. Is the cycle still four points?</li>
+{% endblock %}

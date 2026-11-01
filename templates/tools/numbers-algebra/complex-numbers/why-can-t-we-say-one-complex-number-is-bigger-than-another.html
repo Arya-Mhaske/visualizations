@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Try to say i is bigger than 0, smaller than 0, or equal to it. Every case fails.{% endblock %}
+{% block why_text %}An order has to respect multiplication: positive times positive is positive. Assume i > 0 or i < 0, multiply, and you get −1 on the wrong side of 0 either way. If i = 0 then i² = 0, not −1. So no ordering of the complex numbers can work like the ordering of the reals. You can compare sizes |z|, but not the numbers themselves.{% endblock %}
+{% block try_items %}
+<li>Step through all three assumptions. Which line makes each one fail?</li>
+<li>Which real number is the only one whose square is 0?</li>
+<li>Can you compare |i| and |1|? What does that tell you?</li>
+{% endblock %}

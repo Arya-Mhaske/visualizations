@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag two points. The sum is vector addition; the product turns and stretches.{% endblock %}
+{% block why_text %}Adding complex numbers adds their real and imaginary parts: the far corner of a parallelogram. Multiplying multiplies the lengths and adds the angles, so a product is a turn plus a stretch. This is why multiplying by i is a quarter-turn.{% endblock %}
+{% block try_items %}
+<li>In add mode, drag z so it lies along the real axis. What does w do to the sum?</li>
+<li>In multiply mode, set w = 1 + 0i. What is z × w?</li>
+<li>Multiply z = 1 + i by itself. What is the angle of the result?</li>
+{% endblock %}

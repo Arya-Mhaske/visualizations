@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply top and bottom by the conjugate. The bottom becomes a real number, so you can divide.{% endblock %}
+{% block why_text %}(a + bi)(a − bi) = a² + b², which has no i left. On the plane, z and its conjugate are mirror images, so their angles cancel and the product lands on the real axis. Dividing by a real number is easy, so multiplying top and bottom by the conjugate turns a hard division into an easy one.{% endblock %}
+{% block try_items %}
+<li>Set z = 3 + 2i. What is z · z̄, and where does it sit?</li>
+<li>Set z = 0 + 3i. What does z̄ look like, and what is the product?</li>
+<li>Move w and watch the purple point w ÷ z. Does it change when you only move z̄'s mirror line?</li>
+{% endblock %}

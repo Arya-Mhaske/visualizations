@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Lift a parabola off the axis and watch its roots leave the real line, together, as mirror images.{% endblock %}
+{% block why_text %}The roots of a(x − h)² + k = 0 are h ± √(−k/a). When k is negative the root is real. When k becomes positive the number under the root is negative, and the roots are h + bi and h − bi. The ± in the formula gives one of each sign, so complex roots of a real quadratic always come as a conjugate pair.{% endblock %}
+{% block try_items %}
+<li>Set k = −4, then raise it to 0. What happens to the two roots?</li>
+<li>Raise k above 0. Which way does each root move, and are they always mirror images?</li>
+<li>Move h. Does the pair stay mirror images about the real axis?</li>
+{% endblock %}

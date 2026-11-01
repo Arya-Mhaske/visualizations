@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose a, b and c. Follow each step of the formula, and see where the roots land.{% endblock %}
+{% block why_text %}The discriminant b² − 4ac decides everything. If it is zero or positive, both roots are real. If it is negative, the square root is imaginary, and the two roots are a conjugate pair, mirror images in the real axis.{% endblock %}
+{% block try_items %}
+<li>Set a = 1, b = 2, c = 5. What are the roots?</li>
+<li>Raise c until the roots become real. At which c does that happen?</li>
+<li>Check the last step. Do the roots always add to −b/a?</li>
+{% endblock %}

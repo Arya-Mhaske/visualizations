@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cardano's formula solves x³ = 15x + c. For some c it needs the square root of a negative number on the way to a real answer.{% endblock %}
+{% block why_text %}In 1572 Bombelli saw that x³ = 15x + 4 has the real root 4, yet Cardano's formula asks for √−121 on the way. He treated √−121 as a number, 11i, and the imaginary parts cancelled: (2 + i) + (2 − i) = 4. Whenever the line cuts the curve three times, the formula passes through a negative number under the root. So imaginary numbers are not decoration. They are the road to real answers.{% endblock %}
+{% block try_items %}
+<li>Press "c = 4". How many real solutions are there, and what is the number under the root?</li>
+<li>Slide c towards 22. What happens to the number under the root as the line touches the top bump?</li>
+<li>Slide c past 23. Now the number under the root is positive. How many solutions are there?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The story of Bombelli and Cardano is well documented, but the details of who first used what notation vary between sources. Only the mathematics here is guaranteed.
+</div>
+{% endblock %}
