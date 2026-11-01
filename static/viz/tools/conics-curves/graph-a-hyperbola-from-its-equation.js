@@ -21,7 +21,7 @@ function geo(s = state) {
 const stageEl = document.querySelector('#stage');
 stageEl.setAttribute('role', 'group');
 stageEl.setAttribute('aria-label', 'The hyperbola with its box, asymptotes and branches, followed by the worked steps');
-const figure = equalFigure(stageEl, 'The hyperbola with its box and asymptotes', 8, (ctx, plot, c) => {
+const figure = equalFigure(stageEl, 'The hyperbola with its box and asymptotes', 7.5, (ctx, plot, c) => {
   const g = geo();
   poly(ctx, [plot.toPx(...g.at(-g.a, -g.b)), plot.toPx(...g.at(g.a, -g.b)), plot.toPx(...g.at(g.a, g.b)), plot.toPx(...g.at(-g.a, g.b))], { fill: c.fillB, stroke: c.ink, width: 2, dash: [5, 4] });
   [-1, 1].forEach((s) => {
@@ -31,7 +31,7 @@ const figure = equalFigure(stageEl, 'The hyperbola with its box and asymptotes',
     curve(plot, trace((t) => g.at(s * g.a * Math.cosh(t), g.b * Math.sinh(t)), -3, 3, 200), { color: c.a, width: 4 });
   });
   [-1, 1].forEach((s) => { const f = g.at(s * g.c, 0); plot.point(f[0], f[1], { fill: c.c, r: 6 }); const v = g.at(s * g.a, 0); plot.point(v[0], v[1], { fill: c.fillY, r: 6 }); });
-}, [0, 0]);
+}, () => [state.h, state.k]);
 
 function steps(s) {
   const g = geo(s);

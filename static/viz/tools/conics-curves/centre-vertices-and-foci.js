@@ -23,7 +23,7 @@ const pt = (p) => `(${n(p[0])}, ${n(p[1])})`;
 const stageEl = document.querySelector('#stage');
 stageEl.setAttribute('role', 'group');
 stageEl.setAttribute('aria-label', 'The ellipse with its centre, vertices, co-vertices and foci marked, followed by the worked reading of the equation');
-const figure = equalFigure(stageEl, 'The ellipse with centre, vertices and foci', 7, (ctx, plot, c) => {
+const figure = equalFigure(stageEl, 'The ellipse with centre, vertices and foci', 6.5, (ctx, plot, c) => {
   const g = geo();
   curve(plot, trace((t) => {
     const e = ellipsePoint(g.a, g.b, t);
@@ -33,7 +33,7 @@ const figure = equalFigure(stageEl, 'The ellipse with centre, vertices and foci'
   g.co.forEach((p) => plot.point(p[0], p[1], { fill: c.fillB, r: 5 }));
   g.foci.forEach((p) => plot.point(p[0], p[1], { fill: c.c, r: 7 }));
   plot.point(g.centre[0], g.centre[1], { fill: c.ink, r: 4 });
-}, [0, 0]);
+}, () => [state.h, state.k]);
 
 function steps(s) {
   const g = geo(s);

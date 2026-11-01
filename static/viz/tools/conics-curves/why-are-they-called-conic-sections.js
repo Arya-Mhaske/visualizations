@@ -14,7 +14,7 @@ createTool({
   draw(ctx, stage, c) {
     const h = stage.h * 0.5;
     const O = [stage.w / 2, h * 0.5];
-    const k = h * 0.42;
+    const k = h * 0.3;
     drawCone(ctx, c, O, k, state.alpha, state.beta, 0.45);
     dot(ctx, ...O, 5, c.ink, c.ink);
     label(ctx, 'apex', O[0] + 24, O[1] - 8, c, { size: 10, bounds: stage, patch: false });

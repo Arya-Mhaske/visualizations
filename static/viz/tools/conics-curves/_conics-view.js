@@ -1,6 +1,7 @@
 // Drawing helpers for the Conics box.
 //   equalFigure(stageEl, label, half, draw)  a stepper figure whose axes have equal scales;
 //     draw(ctx, plot, c, stage) gets a createPlot already set to show [-half, half] on the shorter side.
+//     centre is [x, y] or a function returning it (so the view can follow the curve). The figure is square.
 //   curve(plot, points, opts)  draws a polyline of [x, y] points, breaking at nulls.
 //   nudgePoint(tool, get, set, snapFn)  a draggable point for a createTool plot (tool.extra).
 import { line, poly } from '../../lib/draw.js';
@@ -11,13 +12,14 @@ import { readColors } from '../../lib/colors.js';
 export function equalFigure(stageEl, label, half, draw, centre = [0, 0]) {
   const c = readColors();
   const holder = document.createElement('div');
-  holder.className = 'viz-figure';
+  holder.className = 'viz-figure viz-figure--square';
   stageEl.appendChild(holder);
   let plot = null;
   return createStage(holder, (ctx, size, stage) => {
     plot ??= createPlot(stage, { x: [-half, half], y: [-half, half], c, pad: 14 });
     const ratio = stage.w / stage.h;
-    plot.setRange([centre[0] - half * ratio, centre[0] + half * ratio], [centre[1] - half, centre[1] + half]);
+    const mid = typeof centre === 'function' ? centre() : centre;
+    plot.setRange([mid[0] - half * ratio, mid[0] + half * ratio], [mid[1] - half, mid[1] + half]);
     plot.axes();
     draw(ctx, plot, c, stage);
   }, { label });
@@ -77,4 +79,10 @@ export function drawCone(ctx, c, O, k, alpha, beta, down) {
     line(ctx, O[0], O[1], O[0] + s * rx, O[1] + H, { color: c.ink, width: 3 });
     line(ctx, O[0], O[1], O[0] + s * rx, O[1] - H, { color: c.ink, width: 3 });
   });
+}
+
+// Make a plot's window equal-scaled for the stage: centre (cx, cy), half-height `half`, width follows the stage's shape.
+export function fitEqual(plot, stage, cx, cy, half) {
+  const ratio = stage.w / stage.h;
+  plot.setRange([cx - half * ratio, cx + half * ratio], [cy - half, cy + half]);
 }

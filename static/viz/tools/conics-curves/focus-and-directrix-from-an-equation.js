@@ -29,7 +29,7 @@ function geometry(s = state) {
 const stageEl = document.querySelector('#stage');
 stageEl.setAttribute('role', 'group');
 stageEl.setAttribute('aria-label', 'The parabola with its vertex, focus and directrix marked, followed by the worked reading of the equation');
-const figure = equalFigure(stageEl, 'The parabola with vertex, focus and directrix', 7, (ctx, plot, c) => {
+const figure = equalFigure(stageEl, 'The parabola with vertex, focus and directrix', 5.5, (ctx, plot, c) => {
   const g = geometry();
   curve(plot, trace(g.point, -3, 3, 160), { color: c.a, width: 4 });
   if (g.vertical) plot.segment(-20, g.directrix.y, 20, g.directrix.y, { color: c.b, width: 3 });
@@ -38,7 +38,7 @@ const figure = equalFigure(stageEl, 'The parabola with vertex, focus and directr
   plot.point(g.V[0], g.V[1], { fill: c.fillY, r: 7 });
   plot.text('F', g.F[0] + 0.5, g.F[1] + 0.5, { size: 12, patch: false });
   plot.text('V', g.V[0] + 0.5, g.V[1] - 0.6, { size: 12, patch: false });
-}, [0, 0]);
+}, () => { const g = geometry(); return [(g.V[0] + g.F[0]) / 2, (g.V[1] + g.F[1]) / 2]; });
 
 function steps(s) {
   const g = geometry(s);

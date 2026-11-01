@@ -13,7 +13,7 @@ createTool({
   draw(ctx, stage, c) {
     const h = stage.h * 0.5;
     const O = [stage.w / 2, h * 0.5];
-    const k = h * 0.42;
+    const k = h * 0.3;
     drawCone(ctx, c, O, k, state.alpha, state.beta, H * state.height);
     dot(ctx, ...O, 6, c.fillY, c.ink);
     const C = [stage.w / 2, h + (stage.h - h) / 2];

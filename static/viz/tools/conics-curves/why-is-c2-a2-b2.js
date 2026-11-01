@@ -10,8 +10,9 @@ const R = 7;
 const c = (s = state) => focalC(s.a, s.b);
 const pen = (s = state) => ellipsePoint(s.a, s.b, (s.t * Math.PI) / 180);
 const atTop = (s = state) => s.t === 90;
+let tool;
 
-createTool({
+tool = createTool({
   state,
   label: 'An ellipse with its two foci. Move the pen to the top of the minor axis. There the two distances to the foci are equal, and they add to 2a, so each is exactly a. The centre, the top point and a focus then form a right triangle with legs b and c and hypotenuse a, so c squared plus b squared equals a squared.',
   setup: (stage, col) => createPlot(stage, { x: [-R, R], y: [-R, R], c: col, pad: 16 }),
@@ -37,13 +38,14 @@ createTool({
     { key: 't', label: 'Pen position (angle)', min: 0, max: 360, step: 1, format: (n) => `${n}°` },
     { key: 'a', label: 'Semi-major axis, a', min: 3, max: 6, step: 0.5 },
     { key: 'b', label: 'Semi-minor axis, b', min: 1, max: 5.5, step: 0.5 },
-    { text: 'Set the pen to 90° (the top of the minor axis).' },
+    { button: 'Move the pen to the top', onClick: () => { state.t = 90; tool.update(); } },
+    { text: 'The pen snaps to 90° when you get within 4° of the top.' },
     { readout: [
       ['Pen to each focus', (s) => `${fixed(dist(pen(s), [-c(s), 0]), 2)} and ${fixed(dist(pen(s), [c(s), 0]), 2)}`],
       ['At the top?', (s) => ({ text: atTop(s) ? 'yes: both distances = a' : 'not yet', good: atTop(s) })],
       ['c = √(a² − b²)', (s) => fixed(c(s), 3)],
     ] },
   ],
-  onChange(s) { if (s.b >= s.a) s.b = s.a - 0.5; },
+  onChange(s) { if (s.b >= s.a) s.b = s.a - 0.5; if (Math.abs(s.t - 90) <= 4) s.t = 90; },
   tex: (s) => `c^2=a^2-b^2=${s.a}^2-${s.b}^2=${fixed(s.a * s.a - s.b * s.b, 2)}\\Rightarrow c=${fixed(c(s), 3)}`,
 });

@@ -515,6 +515,7 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .viz-worked li::marker { font-family: var(--font-mono); font-weight: 700; }
 .viz-worked__tex { display: block; margin-top: var(--s-1); overflow-x: auto; font-size: 1.1rem; }
 .viz-figure { height: 230px; margin-bottom: var(--s-4); background: var(--viz-paper); }
+.viz-figure--square { height: auto; aspect-ratio: 1; max-width: 520px; margin-inline: auto; }
 .viz-figure > canvas { display: block; image-rendering: pixelated; }
 
 /* generated practice (static/viz/lib/drill.js) */
