@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag a line while squared errors are drawn as real squares.{% endblock %}
+{% block why_text %}A good line should be close to all the points, so we add up how far each point is from it. Squaring each gap makes every gap positive and makes big gaps count more. The squares in the picture show this directly. The best-fit line is the one with the smallest total area of squares.{% endblock %}
+{% block try_items %}
+<li>Try to make the total as small as you can by hand.</li>
+<li>Press the best-fit button. How much smaller is it?</li>
+<li>Tilt the line far off. What happens to the squares?</li>
+{% endblock %}

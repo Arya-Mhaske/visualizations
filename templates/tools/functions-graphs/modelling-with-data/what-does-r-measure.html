@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}The correlation coefficient tracks how straight the cloud is, not how steep.{% endblock %}
+{% block why_text %}r is close to 1 or −1 when the points hug a line closely, and close to 0 when they are scattered. It does not measure steepness: a flat line with no scatter has the same r as a steep one with no scatter. It also says nothing about whether one thing causes the other.{% endblock %}
+{% block try_items %}
+<li>Press "Steep and messy". What is r?</li>
+<li>Press "Flat and tidy". What is r?</li>
+<li>Set the scatter very high. What happens to r?</li>
+{% endblock %}

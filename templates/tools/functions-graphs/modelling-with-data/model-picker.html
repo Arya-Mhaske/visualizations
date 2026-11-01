@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Fit linear, quadratic, cubic, exponential, logarithmic and logistic models to the same points and compare.{% endblock %}
+{% block why_text %}Each model has its own shape: linear grows steadily, exponential speeds up, logarithmic slows down, logistic speeds up then levels off. R² says how much of the variation the model explains. A model with more parameters always fits at least as well, so pick the simplest model that fits and makes sense for the story behind the data.{% endblock %}
+{% block try_items %}
+<li>Choose the bacteria data. Which model has the highest R²?</li>
+<li>Choose the population limited by food. Which shape fits best?</li>
+<li>Does the best R² always give the best model?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  All the data sets are made up for practice. The logistic fit uses a simple method, not the best possible one.
+</div>
+{% endblock %}

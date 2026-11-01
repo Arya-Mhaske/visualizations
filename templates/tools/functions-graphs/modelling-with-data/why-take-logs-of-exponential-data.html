@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Re-plot the data on a log axis and it straightens into a line.{% endblock %}
+{% block why_text %}If y grows by the same factor each step, then ln y grows by the same amount each step, so ln y against x is a straight line. The slope is ln of the growth factor and the intercept is ln of the starting value. A straight line is easy to fit and easy to read.{% endblock %}
+{% block try_items %}
+<li>Turn on "ln y". What happens to the shape?</li>
+<li>Raise the growth factor. What happens to the slope?</li>
+<li>How does the fitted growth factor compare with the one you set?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Sort scatter plots into linear and nonlinear.{% endblock %}
+{% block why_text %}A straight line is a good model when the points scatter evenly about it. If they bend in a pattern, a line misses them in a pattern: too low at both ends and too high in the middle, say. Look at the shape, not just at r.{% endblock %}
+{% block try_items %}
+<li>Answer ten and note which curved ones look nearly straight.</li>
+<li>For each wrong answer, find the bend you missed.</li>
+<li>What feature tells you a point cloud is not a line?</li>
+{% endblock %}
