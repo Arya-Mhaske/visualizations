@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn the point round once, twice, or backwards. Where does it end up?{% endblock %}
+{% block why_text %}After a whole turn the point is back where it started, so it has the same x and y. That means the same sine and cosine, and the period is 360° or 2π. Tangent is y ÷ x, a slope. The opposite point has both signs flipped, and y ÷ x does not change, so tangent repeats after only half a turn: its period is 180° or π.{% endblock %}
+{% block try_items %}
+<li>Set θ = 40°, then 400°, then −320°. Do sine and cosine give the same values?</li>
+<li>Switch on the opposite point. Which values flip sign when you add 180°? Which do not?</li>
+<li>Find two angles that have the same tangent but different sine.</li>
+{% endblock %}

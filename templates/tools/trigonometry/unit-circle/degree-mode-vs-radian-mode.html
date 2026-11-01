@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Type sin 30 with the calculator in radian mode. The answer is not 0.5. See where the calculator actually puts the angle.{% endblock %}
+{% block why_text %}A calculator does not know what unit you have in your head. In DEG mode it reads 30 as 30 degrees. In RAD mode it reads 30 as 30 radians, which is about 1719°, or 4.8 turns round the circle. That lands in a quite different place, and sin 30 gives −0.988. Always check the mode before you press the key.{% endblock %}
+{% block try_items %}
+<li>Leave the calculator in RAD, meant in degrees, and press sin 30. What do you get? Where is the coral point?</li>
+<li>Switch the calculator to DEG. Does the answer become 0.5?</li>
+<li>Now mean radians. Type 1 in RAD mode and press sin. Is that the right mode now?</li>
+{% endblock %}

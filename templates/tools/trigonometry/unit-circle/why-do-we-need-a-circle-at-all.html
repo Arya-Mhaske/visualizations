@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A right triangle can only have angles below 90°. Turn the point past 90° and see what survives.{% endblock %}
+{% block why_text %}A right triangle already has a right angle, so its other angles must be less than 90°. Triangle ratios therefore stop there. A point on a circle has no such limit. It has an x and a y at every angle. For acute angles x ÷ r and y ÷ r are exactly the triangle ratios. So we keep those two fractions as the definition, and they keep working all the way round.{% endblock %}
+{% block try_items %}
+<li>Set θ = 60°. Check that the triangle is there and that x ÷ r is the adjacent ÷ hypotenuse.</li>
+<li>Push θ up to 90° and past it. When does the triangle disappear? What happens to x?</li>
+<li>Go to 200°. Is there a triangle? Do x ÷ r and y ÷ r still make sense?</li>
+{% endblock %}

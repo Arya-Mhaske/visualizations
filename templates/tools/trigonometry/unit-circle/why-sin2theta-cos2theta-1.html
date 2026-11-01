@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn the radius round the circle. The two legs of the triangle change, but something about them does not.{% endblock %}
+{% block why_text %}The point (cos θ, sin θ) is on a circle of radius 1. The radius, the x-coordinate and the y-coordinate form a right triangle. Pythagoras says x² + y² = r², so cos²θ + sin²θ = 1. It holds at every angle, in every quadrant, because squaring removes the signs and the radius never changes.{% endblock %}
+{% block try_items %}
+<li>Slide θ through 0°, 90°, 180° and 270°. What are cos²θ and sin²θ at each?</li>
+<li>Set θ = 45°. How much of the bar is cos²θ?</li>
+<li>Go into the third quadrant, where both are negative. Does the sum still reach 1?</li>
+{% endblock %}

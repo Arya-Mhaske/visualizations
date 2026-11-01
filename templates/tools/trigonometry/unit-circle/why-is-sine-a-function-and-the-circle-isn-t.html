@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Ask the circle for a point in two different ways: by angle, and by x-value. Count the answers.{% endblock %}
+{% block why_text %}A function gives exactly one output for every input. Give the circle an angle, and there is exactly one point, so sine is a function of the angle. Give it an x-value, and the vertical line cuts the circle twice, at +y and −y. So y is not a function of x on the circle. This is why trigonometry measures everything from the angle.{% endblock %}
+{% block try_items %}
+<li>Set x = 0.6. What are the two values of y?</li>
+<li>Slide x to 1. How many points are left? What about at x = −1?</li>
+<li>Change the angle through a full turn. Does the angle ever give two points?</li>
+{% endblock %}

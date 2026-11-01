@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut an equilateral triangle in half, and cut a square along its diagonal. The pieces give the exact values for 30°, 45° and 60°.{% endblock %}
+{% block why_text %}An equilateral triangle of side 2 has three 60° angles. Cutting it down the middle gives a right triangle with a hypotenuse 2 and a short side 1, so the 30° angle has sine 1 ÷ 2. The other side comes from Pythagoras: √(4 − 1) = √3. A square of side 1 cut along its diagonal gives a 45° right triangle with sides 1, 1 and √2. So these values are exact, not rounded.{% endblock %}
+{% block try_items %}
+<li>Choose 30° and cut the triangle. Read off sin 30° from the sides.</li>
+<li>Switch to 60°. Which side is now opposite? How are sin 60° and cos 30° related?</li>
+<li>Choose 45°. Why are sin 45° and cos 45° equal?</li>
+{% endblock %}

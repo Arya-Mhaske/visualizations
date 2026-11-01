@@ -4484,73 +4484,73 @@
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-radius-1": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-do-signs-change-by-quadrant": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-do-reference-angles-work": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-is-sin-30-exactly-half": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-sin2theta-cos2theta-1": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-do-trig-functions-repeat": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-is-tan-90-undefined": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-is-sine-a-function-and-the-circle-isn-t": {
 "archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/why-is-cos-even-and-sin-odd": {
-"archetype": "rays",
+"archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/exact-value-drill": {
-"archetype": "drill",
+"archetype": "table",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/unit-circle/degree-mode-vs-radian-mode": {
-"archetype": "stepper",
+"archetype": "geometry",
 "priority": 17,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/sine-cosine-graphs/why-is-the-sine-graph-a-wave": {
 "archetype": "geometry",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Make the circle bigger or smaller and keep the angle. What changes, and what does not?{% endblock %}
+{% block why_text %}A bigger circle stretches the whole picture. Both x and y grow by the same factor as r, so x ÷ r and y ÷ r do not change. The ratios belong to the angle and not to the circle. If we choose r = 1, the division does nothing, and the coordinates themselves are cos θ and sin θ. That is the only reason for the unit circle: it removes a division.{% endblock %}
+{% block try_items %}
+<li>Fix θ = 40° and change r. Which readouts change, and which do not?</li>
+<li>Set r = 1. Compare x, y with x ÷ r, y ÷ r.</li>
+<li>Pick a point on a circle of radius 3. What are cos θ and sin θ there?</li>
+{% endblock %}

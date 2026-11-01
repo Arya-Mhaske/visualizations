@@ -238,6 +238,9 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `lib/formula.js` now turns the true minus sign that `fixed()` prints into a hyphen before KaTeX sees it (stepper steps too), so tools can put `fixed()` straight into TeX. A stepper with a figure hides unused sliders: collect `#panel .nb-field` after `createStepper`
   and set `.hidden` by case (see `solve-a-right-triangle`). A gap that must be equal at both ends of a slide (Pythagoras) is easiest to get by moving rigid triangles inside a fixed square.
   Built without screenshots or test runs, by request: look at all twelve pictures, especially the sliding triangles and the sine story.
+- `trigonometry/_unit-circle-math.js` (degrees throughout): `pointAt` (clears rounding noise so an axis is an exact 0), `quadrant` (0 on an axis), `positives` (the ASTC rule, tested against the real signs), `referenceAngle`, `exact(θ)` (all six values at the 17 special angles as
+  `[text, number]`, `null` where undefined; the tests parse every text back to a number), `texOf` (an exact text to TeX), `SIDES_AT` (the half-equilateral and half-square triangles), `pointsAtX`, `evaluate`/`usedAngle` (calculator mode). `_unit-circle-view.js`
+  has `frame` (centre, scale and `px`), `drawFrame` and `angleHandle` (a draggable point on the circle with `nudge`). Reuse them in `sine-cosine-graphs`, `tan-cot-sec-csc` and `identities`. Built without screenshots or test runs, by request.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -264,7 +267,7 @@ it reaches the front of the queue.
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | |
 | 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | ✓ |
 | 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |
-| 14 | `trigonometry/unit-circle` | 12 | 1 | |
+| 14 | `trigonometry/unit-circle` | 12 | 1 | ✓ |
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | |
 | 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | |
 | 17 | `forces-energy/third-law-momentum-conservation` | 7 | 1 | |

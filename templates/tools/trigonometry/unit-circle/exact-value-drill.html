@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pick a special angle and see all six exact values. Switch the answers off and try to fill them in yourself.{% endblock %}
+{% block why_text %}You only need to learn three triangles: 30–60–90, 45–45–90, and the flat cases on the axes. Every special angle has one of them as its reference triangle. Find the reference angle, read the values off that triangle, then fix the signs from the quadrant. Tan and the reciprocal functions are undefined where the divisor is 0.{% endblock %}
+{% block try_items %}
+<li>Choose 150°. Find the reference angle, then give sin 150° and cos 150° before you switch the answers on.</li>
+<li>Choose 90°. Which two of the six values are undefined, and why?</li>
+<li>Choose 225°. What are sin and cos? Why are they equal?</li>
+<li>Switch "Hide the answers" on and step through the angles. Can you name all six every time?</li>
+{% endblock %}

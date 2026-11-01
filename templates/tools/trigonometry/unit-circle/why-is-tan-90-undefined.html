@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide θ towards 90° from either side. Watch what happens to y ÷ x.{% endblock %}
+{% block why_text %}Tangent is y ÷ x. At 90° the point is at (0, 1), so x = 0 and the fraction asks for 1 ÷ 0, which has no answer. Just before 90°, x is tiny and positive, so tan is huge and positive. Just after 90°, x is tiny and negative, so tan is huge and negative. The values run off to +∞ on one side and −∞ on the other, and there is no single number in between.{% endblock %}
+{% block try_items %}
+<li>Slide to 89.9°. Then to 89.5°. How does tan θ change as x shrinks?</li>
+<li>Slide to 90.1°. What sign does tan θ have now, and why?</li>
+<li>Stop on exactly 90.0°. What does the readout say about x?</li>
+{% endblock %}
