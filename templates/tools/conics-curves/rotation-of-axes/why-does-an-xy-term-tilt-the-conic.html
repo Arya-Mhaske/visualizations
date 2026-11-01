@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn an ellipse and watch an xy term appear in its equation.{% endblock %}
+{% block why_text %}An ellipse that lines up with the x and y axes has an equation with only x² and y². Turn it and its points no longer move independently in x and y, so the equation must mix them: an xy term, B, appears. The more the ellipse is tilted, and the more it differs from a circle, the larger B is. At 0° and 90° B is zero, and for a circle B is always zero, because turning a circle changes nothing.{% endblock %}
+{% block try_items %}
+<li>Set φ = 0. What is B? Now set φ = 90°.</li>
+<li>Set φ = 45°. Is B larger or smaller than at 30°?</li>
+<li>Make a = b so the ellipse is a circle. What happens to B as you tilt?</li>
+{% endblock %}

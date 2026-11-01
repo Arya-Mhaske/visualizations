@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Rotate freely: A, B and C change, but B² − 4AC does not.{% endblock %}
+{% block why_text %}The numbers A′, B′ and C′ describe the curve in the turned axes, and they change. But the curve itself does not change, and B² − 4AC is what decides its type. So it must stay the same however you turn the axes. A + C also stays fixed. This is why you can read the type of a tilted conic straight from its original equation, without rotating first.{% endblock %}
+{% block try_items %}
+<li>Slide θ and watch B′² − 4A′C′. Does it ever move?</li>
+<li>Change A, B or C so the type changes. What happens to the sign of the discriminant?</li>
+<li>Find an angle where B′ is zero. What are A′ and C′ there?</li>
+{% endblock %}

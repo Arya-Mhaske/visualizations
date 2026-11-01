@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Work through the rotation step by step, from a tilted conic to standard form.{% endblock %}
+{% block why_text %}To get rid of the xy term, find the angle from cot 2θ = (A − C)/B, then substitute x = x′cos θ − y′sin θ and y = x′sin θ + y′cos θ. The new A′ and C′ come from the formulas, and B′ is zero. Dividing by the right side puts the equation in standard form, where you can read a and b.{% endblock %}
+{% block try_items %}
+<li>Use A = 5, B = −6, C = 5. What is the angle?</li>
+<li>Change B. What happens to the rotation angle?</li>
+<li>Check the last step. Is B² − 4AC the same before and after?</li>
+{% endblock %}

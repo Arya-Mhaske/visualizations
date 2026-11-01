@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn the axes until the xy term disappears.{% endblock %}
+{% block why_text %}Turning the axes by θ changes B to B′ = (C − A) sin 2θ + B cos 2θ. Setting B′ = 0 gives (A − C) sin 2θ = B cos 2θ, so cot 2θ = (A − C)/B. At that angle the new axes line up with the ellipse itself, and the equation has no cross term. There are two such angles, 90° apart, one for each axis of the ellipse.{% endblock %}
+{% block try_items %}
+<li>Turn the axes by hand. Where does B′ reach zero?</li>
+<li>Press the button. Does it find the same place?</li>
+<li>Set A = C. What angle does the rule give, and why?</li>
+{% endblock %}
