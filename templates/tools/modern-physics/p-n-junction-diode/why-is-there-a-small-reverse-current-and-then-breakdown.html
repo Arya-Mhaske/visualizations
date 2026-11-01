@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Reverse bias pushes the majority carriers away, so only the few minority carriers cross. Raise the reverse voltage and see what finally changes.{% endblock %}
+{% block why_text %}In reverse bias the field sweeps across only the minority carriers: electrons in the p side and holes in the n side. With 10²² dopants per m³ there are about 10¹² times fewer of them than majority carriers, so the current is only a few μA, and it hardly grows with voltage. At the breakdown voltage the field is so strong that a crossing carrier knocks new carriers loose, and those knock out more. Each starting carrier brings a crowd, and the current shoots up.{% endblock %}
+{% block try_items %}
+<li>With V_br = 20 V, raise the reverse voltage from 0 to 15 V. How much does the current change?</li>
+<li>Now go from 15 V up to 20 V. What does M do? Why does it change so late?</li>
+<li>Choose V_br = 6 V and compare the layer width and field at breakdown with V_br = 50 V.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The breakdown is drawn with an empirical model: each carrier crossing frees a new pair with probability (V/V<sub>br</sub>)<sup>4</sup>, so the average number of carriers per starting carrier is M = 1/(1 − (V/V<sub>br</sub>)<sup>4</sup>). The six rows use the same random draws at every voltage, so they only get longer as V rises. At V<sub>br</sub> the diode holds its voltage and the circuit sets the current. The slight rise before breakdown is the layer getting wider and generating a few more pairs. Heavily doped diodes break down by a different effect (the Zener effect), which comes later in the chapter.
+</div>
+{% endblock %}

@@ -3213,40 +3213,40 @@
 "reviewed": false
 },
 "modern-physics/p-n-junction-diode/why-does-a-depletion-layer-form-at-a-p-n-junction": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Time axis is log, in arbitrary units; bias slider on the settled junction.",
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/why-can-t-you-just-press-a-p-slab-against-an-n-slab": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Seeded rough surfaces, zoom from 3 nm to 300 um, contact map, one-crystal view.",
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/why-does-forward-bias-lower-the-barrier-and-reverse-bias-rai": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Energy diagram plus strip; shared model in _p-n-junction-diode-math.js.",
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/why-does-a-silicon-diode-stay-off-until-about-0-7-v": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Boltzmann tail (linear or log) above the I-V curve.",
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/why-is-there-a-small-reverse-current-and-then-breakdown": {
-"archetype": "sim",
+"archetype": "plot",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Miller-type multiplication, 1/(1-(V/Vbr)^4), shown as seeded chains.",
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/diode-iv-plotter": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 182,
-"notes": "",
-"reviewed": false
+"notes": "Two secant readings, forward (mA) and reverse (uA); was a stepper in the classification, built as a plot.",
+"reviewed": true
 },
 "modern-physics/rectifiers/why-does-a-diode-turn-ac-into-one-way-current": {
 "archetype": "phasor",

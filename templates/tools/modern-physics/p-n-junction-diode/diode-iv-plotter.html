@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}A diode is not a resistor, so "V ÷ I" changes from point to point. Pick two points on each side of the curve and read the resistance as the slope ΔV/ΔI.{% endblock %}
+{% block why_text %}On the forward side a small rise in voltage makes the current jump, so ΔV/ΔI is small: about 10 Ω. On the reverse side a big change in voltage barely moves the current, so ΔV/ΔI is huge: about 10⁷ Ω. The diode passes current one way and nearly blocks it the other way, and that is its use.{% endblock %}
+{% block try_items %}
+<li>Keep the forward ΔV at 0.01 V and slide the first voltage from 0.5 V to 0.75 V. Does r stay the same?</li>
+<li>On the reverse side, change the first voltage from −1 V to −10 V. Does R change much?</li>
+<li>Make the forward step bigger. Why does the value of r drift away from 10 Ω?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The two graphs have different units: milliamps forward, microamps reverse, and the reverse current is drawn downwards. The curve is the model used in this box. ΔV/ΔI is the slope of the line you drew, so it is exact only in the limit of a very small step. The forward value is about 10 Ω near 0.7 V and falls as the current rises. The reverse value is about 10⁷ Ω.
+</div>
+{% endblock %}

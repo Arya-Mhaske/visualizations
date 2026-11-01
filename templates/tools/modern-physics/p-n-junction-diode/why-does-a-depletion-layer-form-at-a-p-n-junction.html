@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Join p-type and n-type material. Holes and electrons spill across, and each one leaves a fixed ion core behind. Watch what stops the spilling.{% endblock %}
+{% block why_text %}Carriers diffuse across because there are many on one side and few on the other. Each one that crosses leaves a charged core behind, so a field grows that pushes carriers back. That backward push is the drift current. The layer grows until drift equals diffusion, and then nothing more crosses. The barrier it leaves is about 0.7 V for silicon.{% endblock %}
+{% block try_items %}
+<li>Press 1, 2 and 3 in turn. Which current is bigger at first? What happens to the gap between them?</li>
+<li>At 3, drag the battery to +0.5 V. Does the layer get wider or narrower? Which current wins now?</li>
+<li>Drag the battery to −5 V. How much wider is the layer than at 0 V?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real joining takes far less than a microsecond, so the time axis is logarithmic and in arbitrary units. The strip is drawn as columns of sites, not to scale: only the shaded layer's share of the strip follows the true width. The numbers use silicon with 10²² dopant atoms per m³ on each side. The battery is meant for the settled junction (step 3).
+</div>
+{% endblock %}

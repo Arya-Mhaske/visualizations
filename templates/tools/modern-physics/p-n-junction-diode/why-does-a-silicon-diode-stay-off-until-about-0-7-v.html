@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Electrons on the n side have a spread of energies. Only the fastest can climb the barrier. Raise the voltage and see how few can climb at first, and how quickly that changes.{% endblock %}
+{% block why_text %}The share of electrons with enough energy falls off exponentially with the barrier height, e<sup>−barrier/V<sub>T</sub></sup>. While the barrier is large, almost none can climb, so the current is tiny. Every 60 mV off the barrier multiplies the climbers by about ten, so the current soon shoots up. Near 0.7 V the barrier is gone and the current reaches milliamps. That is the "knee".{% endblock %}
+{% block try_items %}
+<li>Start at 0 V and raise V by 0.1 V at a time. How many times does the current grow at each step?</li>
+<li>Switch the top graph to Log scale. What shape is the curve, and what does that say about the share?</li>
+<li>At what voltage does the current first pass 1 mA? Does that match the "about 0.7 V" in the title?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The top graph is the Boltzmann factor e<sup>−E/kT</sup> at 300 K, so the height of the curve where the dashed line cuts it is the share able to climb. The current is I = I<sub>s</sub>(e<sup>V/V<sub>T</sub></sup> − 1) with I<sub>s</sub> = 4.4 × 10<sup>−15</sup> A, chosen so that 0.7 V gives about 2.5 mA. The "0.7 V" is where the current becomes noticeable. It is not a sharp switch, and germanium's is about 0.3 V.
+</div>
+{% endblock %}

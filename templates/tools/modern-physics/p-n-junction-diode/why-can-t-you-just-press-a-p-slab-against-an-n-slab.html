@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Two slabs look flat. Press them together, then zoom in and out to see where atoms of the p-slab actually meet atoms of the n-slab.{% endblock %}
+{% block why_text %}Atoms only bond across a gap of about 3 Å. Even a polished surface has bumps hundreds of atoms tall, so the slabs touch only at a few high spots and the rest is far apart. Carriers cannot cross those gaps, and there is no continuous lattice for a depletion layer to form in. A real junction is made inside one crystal, by doping one half p-type and the other half n-type.{% endblock %}
+{% block try_items %}
+<li>Zoom out to the whole surface. How much of the green strip is lit? Zoom in on the first touch: what do you see?</li>
+<li>Change the finish from Filed to Polished. Does the share of touching atoms reach even 1%?</li>
+<li>Push the slabs in by 1 bump size. Is that a push any real slab could take? How hard is it to reach 100%?</li>
+<li>Switch to "Dope one crystal". Is there any gap left?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The surfaces are made up for this picture: a sum of waves with a fixed random seed, scaled so the root-mean-square bump is 10 μm (filed), 1 μm (ground) or 0.1 μm (polished). Real finishes vary. "Touching" means closer than 3 Å, and the atom spacing is taken as 2.5 Å. Zoomed in on the touch point, the slabs do lie flat against each other, but only over a patch tens of nanometres wide (about 30 nm for the ground finish). The slabs are treated as rigid, so "push in" shows the overlap that crushing the bumps flat would need. In the crystal view the dopant atoms are drawn far closer together than they are in a real crystal.
+</div>
+{% endblock %}

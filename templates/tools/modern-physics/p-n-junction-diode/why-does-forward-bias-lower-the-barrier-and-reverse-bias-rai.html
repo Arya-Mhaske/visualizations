@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}A battery across the diode adds its voltage to the barrier, or takes it away. Drag the bias and watch the step in the graph and the layer in the strip.{% endblock %}
+{% block why_text %}The neutral p and n regions conduct well, so the battery's voltage cannot drop across them. It all falls across the thin depletion layer, which has no free carriers. Forward bias (+ to p) opposes the built-in 0.7 V and lowers the barrier, so the layer narrows. Reverse bias (+ to n) adds to it, so the barrier rises and the layer widens.{% endblock %}
+{% block try_items %}
+<li>Set the bias to +0.3 V. How high is the barrier now? How much narrower is the layer than at 0 V?</li>
+<li>Go to +0.65 V. How little barrier is left? Compare "Climbers vs 0 V" with the current.</li>
+<li>Go to −5 V. How tall is the barrier now? Does the current grow with it?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The energy graph is for an electron. The dashed outline is the junction with no battery. "Climbers" is how many n-side electrons have enough energy to reach the top, compared with no bias: e<sup>V/V<sub>T</sub></sup>, where V<sub>T</sub> = kT/e = 25.9 mV at 300 K.
+</div>
+{% endblock %}

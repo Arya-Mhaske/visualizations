@@ -192,6 +192,13 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - A diagram's arrows scaled to a ring need a fine step (`ringScale`): with only 1, 2 and 5 the default arrows filled under half the ring. Anything built in steps must hide later results until their step: the builder first showed `v` on step 1.
 - Check every "find the value" Try prompt against slider steps. Two prompts asked for values no step could reach; they now use φ = 120° at equal peaks, and "close to zero" for resonance.
 - Readout labels set the column width at 360 px: keep labels and values short, or a one-word verdict wraps a letter column wide.
+- `_p-n-junction-diode-math.js` is one model for the whole diode box: diffusion = R·e^(−Vj/VT) in units of the drift current (R = e^(V0/VT)), so a bias gives the diode equation
+  I = Is(e^(V/VT) − 1) with Is = 4.4e-15 A (2.5 mA at 0.7 V, dynamic r about 10 Ω) and a reverse current from pair generation that grows with layer width (about 0.3 μA, reverse resistance about 10⁷ Ω).
+  `barrierAt` is the closed form of the join (no integration needed), `widthAt` the abrupt-junction width (0.43 μm at 0.7 V), `chain`/`multiplication` the avalanche (Miller-type, n = 4), and `pressTogether`
+  two seeded rough slabs (sum of sine waves, exact RMS) with a sorted gap array, so `contactShare` for any squash is a binary search. Reuse `diodeCurrent`, `forwardCurrent` and `amps` (view file) in `rectifiers`.
+  `_p-n-junction-diode-view.js` `drawStrip` is the p | layer | n strip (columns of ion cores and carriers; only the layer's share of the strip follows the real width).
+- The slab test is a Python re-implementation of mulberry32 and the surface, checked against the JS to 6 places. A time axis that spans many decades needs an offset (k = 0 to 13 here), or the plot's y axis lands at t = 0 in the middle of the graph.
+- Real contact between two rough slabs is perfect over a patch tens of nm wide, but is 0.01–0.1% of the area: show the whole-surface map beside the zoom. `ctx.fillText` at 11 px is the smallest readable at 360 px.
 - Besides the sheets, script a pass through every view and toggle, reading `#formula` overflow and the readouts. It found the step 1 curve, a pinned dot at the slider's end, and a 4 px formula overflow that the default view hid.
 
 ## Box queue
@@ -384,7 +391,7 @@ it reaches the front of the queue.
 | 176 | `sequences-probability/mathematical-induction` | 3 | 1 | |
 | 177 | `modern-physics/intrinsic-extrinsic-semiconductors` | 6 | 1 | |
 | 178 | `conics-curves/rotation-of-axes` | 4 | 1 | |
-| 179 | `modern-physics/p-n-junction-diode` | 6 | 1 | |
+| 179 | `modern-physics/p-n-junction-diode` | 6 | 1 | ✓ |
 | 180 | `conics-curves/polar-conics` | 3 | 1 | |
 | 181 | `modern-physics/rectifiers` | 5 | 1 | |
 | 182 | `conics-curves/parametric-curves` | 8 | 1 | |
