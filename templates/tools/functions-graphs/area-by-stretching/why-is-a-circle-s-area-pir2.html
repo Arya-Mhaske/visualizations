@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Unroll rings into a triangle.{% endblock %}
+{% block why_text %}Cut the disc into thin rings. A ring at distance d from the centre unrolls into a strip of length 2πd. Stacking the strips from the smallest to the largest makes a triangle with base 2πr and height r, whose area is ½ × 2πr × r = πr². The thinner the rings, the closer the stack is to a perfect triangle.{% endblock %}
+{% block try_items %}
+<li>Use 4 rings. What does the stack look like?</li>
+<li>Use 40 rings. How close to a triangle is it?</li>
+<li>Why is the height of the triangle r?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stretch a region horizontally, then vertically, while a grid of squares counts the area.{% endblock %}
+{% block why_text %}Stretching by sx horizontally makes every grid square sx times wider, so its area is multiplied by sx. Stretching by sy does the same vertically. Doing both multiplies every square, and so the whole region, by sx × sy.{% endblock %}
+{% block try_items %}
+<li>Stretch only horizontally by 2. What is the area ratio?</li>
+<li>Stretch both by 2. What is the ratio?</li>
+<li>Choose the circle. Does the rule still hold?</li>
+{% endblock %}
