@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Four famous theorems, one shape: green is the boundary, coral is the inside. Step through them and compare the two numbers.{% endblock %}
+{% block why_text %}Each theorem says the same thing: adding up a derivative over the inside gives the same answer as adding up the original quantity on the boundary. Everything in the middle cancels, as the small loops and small boxes did. The boundary of an interval is two points, of a region a loop, of a surface its rim, and of a solid its skin.{% endblock %}
+{% block try_items %}
+<li>Step through the four theorems. In each, what is the boundary and what is the inside?</li>
+<li>Change the size. Do the two numbers stay equal in every theorem?</li>
+<li>In 1D, what is the "boundary integral"? How many points does it use?</li>
+{% endblock %}

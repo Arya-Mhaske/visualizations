@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Draw an imaginary sphere. Count the electric flux through it. The answer tells you how much charge is inside, without looking.{% endblock %}
+{% block why_text %}Electric field is a source field: its divergence is the charge density over ε₀. By the divergence theorem, the flux out of a closed surface is the total charge inside divided by ε₀. A charge outside sends in as much as it takes out, so the net is zero. The flux does not depend on the size of the sphere or where the charge sits inside.{% endblock %}
+{% block try_items %}
+<li>Move the charge about inside the sphere. Does the flux change?</li>
+<li>Change the sphere's radius with the charge inside. Does the flux change?</li>
+<li>Move the charge outside the sphere. What is the net flux? Do arrows still leave and enter?</li>
+{% endblock %}

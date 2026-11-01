@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A butterfly net hangs from a fixed circular rim. Push the net up into a tall dome, or lean it. The rim does not move.{% endblock %}
+{% block why_text %}The field F = (−y + z, x, y) has the same curl everywhere. The circulation round the rim never changes, because the rim never changes. Stokes' theorem says the curl through the net must match it. So every net with that rim catches exactly the same total curl.{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This works for any net, not just domes, as long as it is a smooth surface with the rim as its edge and its normal points the right way for the direction of the rim.
+</div>
+{% endblock %}
+{% block try_items %}
+<li>Set the height to 0. This is a flat disc. What is the curl integral?</li>
+<li>Raise the net to 3. Does the integral change?</li>
+<li>Lean the net. Does the integral move away from 8π?</li>
+{% endblock %}

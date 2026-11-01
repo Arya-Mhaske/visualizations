@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Count the flow leaving a closed sphere: green arrows go out, blue arrows come in. Compare the total with what the sources inside produce.{% endblock %}
+{% block why_text %}Inside the sphere, every small box has net outflow equal to div F times its volume. Where two boxes touch, one's outflow is the other's inflow, so those cancel. Only the flow through the outer skin is left, so the outflow of the whole surface is the sum of all sources inside.{% endblock %}
+{% block try_items %}
+<li>Choose "Out sideways, in from the top". Arrows leave and enter. What is the net outflow?</li>
+<li>Choose "Faster to the right" and move the sphere left, then right. Why does the outflow change sign?</li>
+<li>Double the radius with the first flow. By what factor does the outflow grow?</li>
+{% endblock %}
