@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A car goes round a helical road. Brake or speed up and watch the acceleration split into a push along the road and a push into the turn.{% endblock %}
+{% block why_text %}Braking only changes how fast you go, so it acts along the road: a_T = dv/dt. Turning only changes the direction, so it acts into the bend: a_N = κv². Even at constant speed, a_N is not zero. Going round a bend always needs a push inward.{% endblock %}
+{% block try_items %}
+<li>Set braking to 0. Is there still acceleration? Which part, and why?</li>
+<li>Double the speed. By how much does a_N grow?</li>
+<li>Stop the car (v = 0) and press the accelerator. Which part is left?</li>
+{% endblock %}

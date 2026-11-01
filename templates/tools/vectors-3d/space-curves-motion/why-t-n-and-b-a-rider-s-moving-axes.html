@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A rider on a roller coaster carries three arrows: T forward, N into the turn, and B, the axis the turn spins about.{% endblock %}
+{% block why_text %}A fixed x, y, z frame is poor for a rider who keeps turning. T, N and B are three perpendicular directions that travel with the rider, so they say what the ride feels like. The sheet through T and N is where the curve is turning right now. B is its normal.{% endblock %}
+{% block try_items %}
+<li>Ride the helix. Does B stay fixed in space? Does it tilt with T?</li>
+<li>Watch T · N while you ride. Does it ever leave 0?</li>
+<li>On the rising bend, find a point where the curve turns from one side to the other. What happens to N?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A planet sweeps out two wedges in equal times: one starts at the coral dot, the other half an orbit later at the blue dot. Compare their areas.{% endblock %}
+{% block why_text %}The Sun pulls along the line joining it to the planet. A pull along that line gives no torque, so angular momentum r × mv stays fixed. The area swept per second is half of |r × v|, so it never changes. The planet must go faster when it is closer.{% endblock %}
+{% block try_items %}
+<li>Set e = 0.8 and compare the two speeds. Where is the planet fastest?</li>
+<li>Move the first wedge. Do the two areas stay equal?</li>
+<li>Set e = 0. What are the wedges now?</li>
+{% endblock %}

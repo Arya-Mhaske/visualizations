@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}A point moves along a curve. The coral arrow is its velocity, the blue arrow its acceleration. The dashed chord joins it to where it will be after a gap h.{% endblock %}
+{% block why_text %}Velocity is the chord divided by h, as h shrinks. A chord that gets short lies along the curve, so velocity is tangent to it. Acceleration is the change in velocity. When the path bends, the velocity arrow turns, so that change points into the bend.{% endblock %}
+{% block try_items %}
+<li>Shrink h towards 0.05. What happens to the angle between chord and v?</li>
+<li>On the helix, which way does a point, and which way is it moving?</li>
+<li>Find a place where the blue arrow is small. What is the curve doing there?</li>
+{% endblock %}

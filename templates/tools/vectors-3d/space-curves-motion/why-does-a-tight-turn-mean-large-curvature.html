@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}At every point, one circle hugs the curve best. Slide along the cone spiral and watch the circle shrink as the turn tightens.{% endblock %}
+{% block why_text %}Curvature is defined as 1 over the radius of that best-fit circle. A small circle means the path bends sharply, so κ = 1/R is large. A straight road fits only a circle of infinite radius, so κ = 0.{% endblock %}
+{% block try_items %}
+<li>On the cone spiral, move from the outside to the centre. What happens to R?</li>
+<li>On the helix, move along it. Is κ the same everywhere? Why?</li>
+<li>Find a place on the rising bend where the circle is biggest.</li>
+{% endblock %}
