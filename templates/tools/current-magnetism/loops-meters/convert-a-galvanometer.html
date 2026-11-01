@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose the coil, the meter you want and its range. Find the shunt or the series resistor.{% endblock %}
+{% block why_text %}Ammeter: at full scale the coil takes I_g and the shunt takes the rest, I − I_g, at the same voltage, so I_g G = (I − I_g) S. Voltmeter: at full scale the coil must still carry only I_g, so V = I_g (G + R). Solve for S or R. Check the result: the ammeter ends up with a tiny resistance and the voltmeter with a huge one.{% endblock %}
+{% block try_items %}
+<li>Make a 1 A ammeter from G = 50 Ω and 2 mA. Is S bigger or smaller than G?</li>
+<li>Make a 10 V voltmeter from the same coil. What does R come to?</li>
+<li>Voltmeter with G = 200 Ω, I<sub>g</sub> = 10 mA and a 0.5 V range. Why can the meter not be built?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  "Range" means the reading at which the needle is at full scale. An ammeter's range must exceed I<sub>g</sub>. A voltmeter's range must exceed I<sub>g</sub>G, the voltage the coil alone can take.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Send the same charge through a magnetic field and an electric field. One of them speeds it up. The other does not.{% endblock %}
+{% block why_text %}The magnetic force is F = qv × B, and a cross product is always perpendicular to v. A force at right angles to the motion has no part along the motion, so F·v = 0 and the speed cannot change. It can only turn the charge. An electric force has a part along v, so it can do work and raise the speed.{% endblock %}
+{% block try_items %}
+<li>In the magnetic field, press Play. Does the velocity arrow ever grow? Does it turn?</li>
+<li>Look at the force arrow. What angle does it make with the velocity at every moment?</li>
+<li>Switch to the electric field. Watch the speed and the kinetic energy. What is different?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Units are chosen so that the charge and mass are both 1. The charge is positive, B points out of the page, and E points to the right. A positive charge goes clockwise in B out of the page.
+</div>
+{% endblock %}

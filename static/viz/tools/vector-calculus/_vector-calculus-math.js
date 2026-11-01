@@ -58,7 +58,8 @@ export function levelTangent(S, x, y, half = 1.2, n = 90) {
   const step = (2 * half) / n;
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
-      const [x0, y0] = [x - half + i * step, y - half + j * step];
+      // The grid is offset so the point never sits exactly on a vertex (a zero there makes a false segment).
+      const [x0, y0] = [x - half + (i - 0.37) * step, y - half + (j - 0.29) * step];
       const pts = [[x0, y0], [x0 + step, y0], [x0 + step, y0 + step], [x0, y0 + step]];
       const vals = pts.map(([a, b]) => S.f(a, b) - level);
       const hits = [];

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Join identical cells in a chain or side by side. Find the emf and internal resistance of the combination, and which one suits the load.{% endblock %}
+{% block why_text %}In series the emfs add, but so do the internal resistances: ε_eq = nε, r_eq = nr. In parallel the emf stays at ε, but the internal resistance is shared by n paths: r_eq = r/n. Series suits a large load, because it raises the push. Parallel suits a small load, because it lowers the internal loss.{% endblock %}
+{% block try_items %}
+<li>Set 4 cells and a load of 10 Ω. Which way gives more current?</li>
+<li>Now set the load to 0.1 Ω. Does the answer change?</li>
+<li>Make r small. Does the choice of joining matter as much?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This only works for identical cells in parallel. Cells of different emf joined side by side drive current round the loop between them.
+</div>
+{% endblock %}

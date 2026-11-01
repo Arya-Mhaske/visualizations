@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A cell says 12 V on its label, yet a voltmeter across a working cell reads less. Draw more current and watch the voltage sag.{% endblock %}
+{% block why_text %}The emf is the energy the cell gives each coulomb. Some of that energy is spent pushing the charge through the cell's own internal resistance, so only ε − Ir is left at the terminals. With no current nothing is lost and V = ε. The more current you draw, the more is lost.{% endblock %}
+{% block try_items %}
+<li>Make the load very large so the current is tiny. What is V close to?</li>
+<li>Shrink the load and watch the point slide down the line. What happens to Ir?</li>
+<li>Raise r. Why does the line fall faster?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The line's slope is −r, and its left end is the emf. You can drag the point along it.
+</div>
+{% endblock %}

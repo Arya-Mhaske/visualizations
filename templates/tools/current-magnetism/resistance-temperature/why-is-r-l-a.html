@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a block out of identical unit blocks. Lengthen it, then thicken it, and watch how the resistance changes.{% endblock %}
+{% block why_text %}A longer block puts more unit blocks in series, and series resistances add, so R grows with l. A thicker block puts more strips side by side in parallel, and each new strip is one more path for the current, so R falls as 1/A. Together: R ∝ l/A. The constant of proportion, ρ, is the resistance of one unit block.{% endblock %}
+{% block try_items %}
+<li>Set A = 1 and lengthen the block. Does R grow in equal steps?</li>
+<li>Set l = 1 and thicken the block. By what factor does R fall when A doubles?</li>
+<li>Double both l and A. Why does R stay the same?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Each unit block is taken as 10 Ω. In a real wire ρ is a property of the material, measured in Ω m.
+</div>
+{% endblock %}

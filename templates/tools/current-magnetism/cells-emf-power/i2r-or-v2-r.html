@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}P = I²R says a bigger R gives more power. P = V²/R says a bigger R gives less. Both are right. Find out when each one applies.{% endblock %}
+{% block why_text %}Each formula holds one quantity fixed. In series the same current passes through every part, so P = I²R and the larger resistance gets more power. In parallel every part has the same voltage, so P = V²/R and the smaller resistance gets more power. Ask first: what is the same for both?{% endblock %}
+{% block try_items %}
+<li>In series, set bulb 2 to 30 Ω. Which bulb is brighter?</li>
+<li>Switch to parallel with the same R. Which bulb is brighter now?</li>
+<li>In series, find the R₂ that gives bulb 2 the most power. How does it compare with bulb 1?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The cell is ideal at 12 V. The bulbs are treated as fixed resistances. A real filament's resistance changes with its temperature.
+</div>
+{% endblock %}

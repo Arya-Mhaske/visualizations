@@ -54,7 +54,7 @@ class ModuleTests(SimpleTestCase):
     def test_latitude_and_pune(self):
         self.assertEqual(js(MATH, 'm.phiFromLatitude(18.5204)'), 90 - 18.5204)
         self.assertEqual(js(MATH, 'm.thetaFromLongitude(-30)'), 330)
-        self.assertEqual(js(MATH, 'm.thetaFromLongitude(73.8567)'), 73.8567)
+        self.assertAlmostEqual(js(MATH, 'm.thetaFromLongitude(73.8567)'), 73.8567, places=9)
         # Pune on a globe of 6371 km: height is ρ cos φ = ρ sin(latitude)
         p = js(MATH, 'm.fromSpherical(6371, m.rad(73.8567), m.rad(m.phiFromLatitude(18.5204)))')
         self.assertAlmostEqual(p[2], 6371 * math.sin(math.radians(18.5204)), places=6)

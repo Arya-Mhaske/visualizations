@@ -2352,61 +2352,61 @@
 "archetype": "sim",
 "priority": 126,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/resistance-temperature/why-does-a-metal-s-resistance-rise-with-heat-but-a-semicondu": {
 "archetype": "sim",
 "priority": 126,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/resistance-temperature/why-aren-t-all-devices-ohmic": {
 "archetype": "sim",
 "priority": 126,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/resistance-temperature/resistance-at-a-new-temperature": {
 "archetype": "stepper",
 "priority": 126,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/resistance-temperature/heating-elements": {
 "archetype": "sim",
 "priority": 126,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/cells-emf-power/why-isn-t-the-terminal-voltage-the-emf": {
 "archetype": "sim",
 "priority": 128,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/cells-emf-power/i2r-or-v2-r": {
 "archetype": "sim",
 "priority": 128,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/cells-emf-power/why-is-power-sent-at-high-voltage": {
 "archetype": "sim",
 "priority": 128,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/cells-emf-power/cells-in-series-and-parallel": {
 "archetype": "stepper",
 "priority": 128,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/cells-emf-power/a-car-battery-s-maximum-current": {
 "archetype": "sim",
 "priority": 128,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/kirchhoff-wheatstone/why-is-the-junction-rule-charge-conservation": {
 "archetype": "sim",
@@ -2436,31 +2436,32 @@
 "archetype": "space3d",
 "priority": 132,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetic-force-on-charges/why-does-a-charge-circle-in-a-uniform-b": {
 "archetype": "sim",
 "priority": 132,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetic-force-on-charges/why-helices": {
 "archetype": "sim",
 "priority": 132,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetic-force-on-charges/right-hand-rule-trainer": {
 "archetype": "space3d",
 "priority": 132,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "current-magnetism/magnetic-force-on-charges/auroras": {
 "archetype": "rays",
 "priority": 132,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/sources-of-magnetic-field/why-biotsavart-each-piece-of-wire-adds-its-bit": {
 "archetype": "geometry",
@@ -2508,67 +2509,67 @@
 "archetype": "sim",
 "priority": 136,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/loops-meters/why-is-m-x-b-and-the-net-force-zero": {
 "archetype": "space3d",
 "priority": 136,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/loops-meters/why-does-a-shunt-make-an-ammeter-and-a-series-r-a-voltmeter": {
 "archetype": "sim",
 "priority": 136,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/loops-meters/convert-a-galvanometer": {
 "archetype": "stepper",
 "priority": 136,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/loops-meters/inside-an-analogue-meter": {
 "archetype": "sim",
 "priority": 136,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/why-does-a-bar-magnet-act-like-a-solenoid": {
 "archetype": "rays",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/why-can-t-you-get-a-lone-north-pole": {
 "archetype": "sim",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/why-is-the-net-magnetic-flux-through-any-closed-surface-zero": {
 "archetype": "rays",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/dia-para-or-ferro": {
 "archetype": "sim",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/a-magnetic-dipole-in-a-uniform-field": {
 "archetype": "stepper",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/magnetism-matter/levitation-and-the-meissner-effect": {
 "archetype": "sim",
 "priority": 138,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/faraday-lenz/why-does-only-changing-flux-make-a-current": {
 "archetype": "rays",

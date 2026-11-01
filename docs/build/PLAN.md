@@ -407,19 +407,19 @@ it reaches the front of the queue.
 | 120 | `derivatives/chain-rule` | 4 | 1 | |
 | 121 | `current-magnetism/current-drift` | 6 | 1 | ✓ |
 | 122 | `derivatives/implicit-differentiation` | 4 | 1 | |
-| 123 | `current-magnetism/resistance-temperature` | 5 | 1 | |
+| 123 | `current-magnetism/resistance-temperature` | 5 | 1 | ✓ |
 | 124 | `derivatives/exp-log-inverse-derivatives` | 7 | 1 | |
-| 125 | `current-magnetism/cells-emf-power` | 5 | 1 | |
+| 125 | `current-magnetism/cells-emf-power` | 5 | 1 | ✓ |
 | 126 | `derivatives/rates-in-science` | 6 | 1 | |
 | 127 | `current-magnetism/kirchhoff-wheatstone` | 4 | 1 | ✓ |
 | 128 | `derivative-applications/maxima-minima` | 6 | 1 | |
-| 129 | `current-magnetism/magnetic-force-on-charges` | 5 | 1 | |
+| 129 | `current-magnetism/magnetic-force-on-charges` | 5 | 1 | ✓ |
 | 130 | `derivative-applications/mean-value-theorem` | 4 | 1 | |
 | 131 | `current-magnetism/sources-of-magnetic-field` | 7 | 1 | ✓ |
 | 132 | `derivative-applications/shape-of-a-graph` | 7 | 1 | |
-| 133 | `current-magnetism/loops-meters` | 5 | 1 | |
+| 133 | `current-magnetism/loops-meters` | 5 | 1 | ✓ |
 | 134 | `derivative-applications/optimisation` | 6 | 1 | |
-| 135 | `current-magnetism/magnetism-matter` | 6 | 1 | |
+| 135 | `current-magnetism/magnetism-matter` | 6 | 1 | ✓ |
 | 136 | `derivative-applications/antiderivatives` | 4 | 1 | |
 | 137 | `induction-ac-em/faraday-lenz` | 5 | 1 | |
 | 138 | `integrals/area-distance` | 4 | 1 | |

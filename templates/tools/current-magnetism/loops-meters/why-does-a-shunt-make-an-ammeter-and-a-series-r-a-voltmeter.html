@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A galvanometer can only take 2 mA. Switch on the shunt or the series resistor and see how it can measure amperes or volts.{% endblock %}
+{% block why_text %}A small resistance S in parallel (a shunt) takes almost all of a large current, and the coil gets only its safe 2 mA. That makes an ammeter, with a very small resistance, so it disturbs the circuit very little. A large resistance R in series with the coil soaks up almost all of a large voltage, so the coil sees only the share that gives 2 mA. That makes a voltmeter, with a very large resistance.{% endblock %}
+{% block try_items %}
+<li>With the ammeter and no shunt, set the quantity to 0.6 A. What happens to the needle? Then turn the shunt on.</li>
+<li>Look at the bar. How much of the current does the coil get?</li>
+<li>Switch to the voltmeter and raise the range. Does the added resistance go up or down?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The coil is 50 Ω and deflects fully at 2 mA. The shunt and series resistor are chosen so that the range you pick gives full-scale deflection. The same slider values are read as amperes for the ammeter and volts for the voltmeter.
+</div>
+{% endblock %}

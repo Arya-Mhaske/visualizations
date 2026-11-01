@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block formula %}{% endblock %}
+{% block lead %}Predict the direction of the force on a moving charge. Each question gives v, B and the sign of the charge.{% endblock %}
+{% block why_text %}F = qv × B. Point the fingers of your right hand along v, curl them towards B, and your thumb points along v × B. That is the force on a positive charge. For a negative charge, reverse it. The force is always at right angles to both v and B.{% endblock %}
+{% block try_items %}
+<li>Do ten questions. Which ones with an out-of-page or into-page field catch you out?</li>
+<li>For a negative charge, first find the thumb direction, then flip it.</li>
+<li>Check: is your answer ever along v or along B? It should never be.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A dot in a circle (⊙) means out of the page, towards you. A cross in a circle (⊗) means into the page.
+</div>
+{% endblock %}

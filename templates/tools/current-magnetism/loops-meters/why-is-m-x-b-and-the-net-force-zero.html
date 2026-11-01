@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put a rectangular loop in a uniform field. Find the force on each of its four sides, and add them up.{% endblock %}
+{% block why_text %}The two long sides carry opposite currents, so they get equal and opposite forces. The two short sides also get equal and opposite forces, and those two lie on the same line. So the total force is zero and the loop does not move. But the two long-side forces act at different places, a distance b sin θ apart, so they make a couple. Its torque is IaB × b sin θ = mB sin θ, which is τ = m × B.{% endblock %}
+{% block try_items %}
+<li>Drag the tip of m, or use the slider. At what angle is the torque largest?</li>
+<li>Set θ = 0° and then 180°. The forces are still there. Why is the torque zero?</li>
+<li>Check that the net force stays zero at every angle.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The loop is seen end-on from above its axis. Its short sides, at the top and bottom, are not drawn: they are pushed up and down the axis, in opposite directions along the same line. The torque turns m towards B, clockwise in this picture. The loop is 0.2 m by 0.1 m.
+</div>
+{% endblock %}

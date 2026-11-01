@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A town needs 100 kW. Raise the voltage on the cable and see how much of that is wasted as heat on the way.{% endblock %}
+{% block why_text %}The power sent is P = VI, so raising V lowers the current needed. Halve I and the heat in the cable, I²R, falls to a quarter. That is why transmission lines run at tens or hundreds of kilovolts, and transformers step the voltage down again near homes.{% endblock %}
+{% block try_items %}
+<li>Set 2 kV, then 4 kV. What happens to the current, and to the loss?</li>
+<li>Find the voltage at which the loss drops below 1 kW.</li>
+<li>At 1 kV, how much of the power never reaches the town?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The cable is 5 Ω in total, a made-up round number. Real lines use alternating current, with transformers to change the voltage.
+</div>
+{% endblock %}

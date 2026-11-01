@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heat both materials. In each one, two things change: how often electrons collide, and how many carriers there are to carry the current.{% endblock %}
+{% block why_text %}Resistance goes as 1/(nτ). Heat makes the ions shake harder, so collisions come sooner and τ falls in both materials. In a metal n is fixed, so R rises. In a semiconductor heat also frees many more carriers, and that gain in n beats the loss in τ, so R falls.{% endblock %}
+{% block try_items %}
+<li>Raise T from 300 K to 400 K. Which bar changes in the metal?</li>
+<li>Do the same for the semiconductor. Which bar wins, n or τ?</li>
+<li>Cool both to 250 K. What happens to the semiconductor's resistance?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A model, not a measurement. The metal has α = 0.0039 per K, like copper. The semiconductor has a 0.67 eV gap, like germanium, with n ∝ T<sup>3/2</sup> e<sup>−E/2kT</sup> and τ ∝ T<sup>−3/2</sup>. Bars use a log scale, with the middle line meaning "same as at 300 K".
+</div>
+{% endblock %}

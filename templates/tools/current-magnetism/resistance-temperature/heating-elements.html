@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A heater on 230 V needs a particular resistance. See how much wire of each metal that takes.{% endblock %}
+{% block why_text %}The power sets the resistance: R = V²/P. A wire's resistance is ρl/A, so the length you need is RA/ρ. Copper's ρ is tiny, so you would need hundreds of metres of it. Nichrome's ρ is about 65 times larger, so a few metres fit in a coil. That is why heaters use a high-resistivity alloy.{% endblock %}
+{% block try_items %}
+<li>Compare the three bars at 1000 W. Which metal fits inside 5 m?</li>
+<li>Make the wire thicker. Why does the length needed go up?</li>
+<li>Raise the power to 2000 W. Does the wire get longer or shorter, and why?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Resistivities near room temperature: nichrome 1.1 × 10⁻⁶ Ω m, iron 1.0 × 10⁻⁷ Ω m, copper 1.7 × 10⁻⁸ Ω m. The 5 m limit is a made-up size for a small heater. The bars use a log scale. Nichrome is also chosen because it does not oxidise easily when red hot.
+</div>
+{% endblock %}

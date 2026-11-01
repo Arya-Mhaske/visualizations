@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Charged particles from the Sun spiral along Earth's field lines. Some bounce back. Some reach the air and make an aurora.{% endblock %}
+{% block why_text %}Near the poles the field lines crowd together, so B is stronger. The sideways speed grows as B grows, and since the speed stays fixed, the speed along the field shrinks. If it reaches zero before the atmosphere, the charge turns back. A charge fired more nearly along the field gets through and hits the air, which glows. That is an aurora.{% endblock %}
+{% block try_items %}
+<li>Press Play at 25°. Where does the charge end up?</li>
+<li>Raise the angle to 45°. What happens now?</li>
+<li>Find the smallest angle at which the charge is turned back. How does it compare with the critical angle?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A simple model: one field line, with B = B₀(1 + kz²), the atmosphere at z = 3, and a constant speed. The real field is a dipole, and charges also drift sideways. The glow of the atmosphere is the picture, not a measurement.
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Fire a charge at an angle to B. Split its velocity into a part along B and a part across B, and see what each part does.{% endblock %}
+{% block why_text %}The part of v across B is turned into a circle, as before. The part along B feels no force, because v × B is zero for it, so it carries on at a steady speed. A circle plus a steady drift along its axis is a helix. Its radius depends on v sin θ, its pitch on v cos θ.{% endblock %}
+{% block try_items %}
+<li>Switch to the view from above. What shape do you see, and which part of v makes it?</li>
+<li>Switch to the side view. How far does the charge move along B in each turn?</li>
+<li>Set θ = 90°, then lower it. When does the pitch disappear, and when does the radius?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Units are chosen so charge and mass are both 1. Changing v or B scales the whole picture but not its shape: only θ changes the shape. The angled view is a simple oblique drawing. Only the last two turns are drawn.
+</div>
+{% endblock %}

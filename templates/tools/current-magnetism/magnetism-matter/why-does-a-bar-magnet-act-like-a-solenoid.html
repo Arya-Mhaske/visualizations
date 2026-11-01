@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Lay the field lines of a current-carrying solenoid over those of a bar magnet of the same size and strength.{% endblock %}
+{% block why_text %}Outside, the two patterns are almost the same: lines leave the N end, curve round and return to the S end. A solenoid is just a stack of current loops, and each loop is a small magnet. Inside a bar magnet, the atoms' tiny current loops add up in the same way. A bar magnet is a solenoid made by the atoms themselves.{% endblock %}
+{% block try_items %}
+<li>Choose Both. Where do the dashed and solid lines separate?</li>
+<li>Drag the probe far from the magnet. What happens to the angle between the two fields?</li>
+<li>Put the probe close to a pole. Is the match as good?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The solenoid is 3 m long and 1 m across, with 20 loops of 1 A. The bar magnet is drawn with a pole at each end, of strength m/L. It is a model, and it fits the field outside only. The magnet's lines are only drawn outside, where the model is good. Inside a real magnet they run on from S to N, as in the solenoid.
+</div>
+{% endblock %}

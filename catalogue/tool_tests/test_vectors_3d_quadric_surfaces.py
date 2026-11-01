@@ -14,7 +14,7 @@ class ModuleTests(SimpleTestCase):
         abc = [3, 2, 2.5]
         on = {
             'ellipsoid': [3, 0, 0], 'hyper1': [3, 0, 0], 'hyper2': [0, 0, 2.5],
-            'paraboloid': [3, 0, 9], 'saddle': [3, 0, 1], 'cone': [3, 0, 2.5],
+            'paraboloid': [3, 0, 1], 'saddle': [3, 0, 1], 'cone': [3, 0, 2.5],
         }
         for kind, p in on.items():
             self.assertAlmostEqual(js(MATH, f'm.implicit("{kind}",{p},{abc})'), 0, places=12, msg=kind)

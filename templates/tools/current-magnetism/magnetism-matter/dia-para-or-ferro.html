@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put bismuth, aluminium and iron in a magnetic field. One is pushed away, one is pulled weakly and one is pulled hard. Look at the atoms to see why.{% endblock %}
+{% block why_text %}Every material responds, but in different ways. In a diamagnet the field induces tiny opposing moments, so it is pushed away. A paramagnet has permanent atomic magnets that heat keeps jumbled; the field lines up only a few, so it is pulled weakly. A ferromagnet's atoms already line up in domains, and a small field swings the domains round, so it is pulled strongly.{% endblock %}
+{% block try_items %}
+<li>Choose Al. Raise the temperature to 300 K. What happens to the aligned share and to χ?</li>
+<li>Choose Fe at 300 K. Raise B from 0 and watch the domains.</li>
+<li>Choose Fe and heat it above 1043 K. What does it turn into?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Models, with textbook susceptibilities (Bi −1.7 × 10⁻⁴, Al +2.2 × 10⁻⁵ at 293 K, Fe about 5000). The paramagnet is a set of two-way atomic magnets, so its aligned share is tanh(μB/kT). The ferromagnet is a 2 × 2 set of domains whose directions turn towards B, and its alignment fades at the Curie temperature, 1043 K. The 2 K lower end of the slider is for seeing the paramagnet line up.
+</div>
+{% endblock %}

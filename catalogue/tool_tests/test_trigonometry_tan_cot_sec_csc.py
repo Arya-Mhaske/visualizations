@@ -11,7 +11,8 @@ LO, HI = -2 * PI, 2 * PI
 
 
 def f_of(kind, u):
-    return {'tan': math.tan(u), 'cot': 1 / math.tan(u), 'sec': 1 / math.cos(u), 'csc': 1 / math.sin(u)}[kind]
+    return {'tan': lambda: math.tan(u), 'cot': lambda: 1 / math.tan(u),
+            'sec': lambda: 1 / math.cos(u), 'csc': lambda: 1 / math.sin(u)}[kind]()
 
 
 @needs_node

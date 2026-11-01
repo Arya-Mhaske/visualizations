@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Three identical charges are fired into the same field at 1×, 2× and 3× the speed. Press Play and see who finishes a lap first.{% endblock %}
+{% block why_text %}The force qvB points to the centre, so it supplies the centripetal force: qvB = mv²/r, which gives r = mv/qB. A faster charge has a bigger circle, but it also has further to go. The two cancel: T = 2πr/v = 2πm/qB. The period does not depend on the speed, so all three stay in step.{% endblock %}
+{% block try_items %}
+<li>Press Play. Are the three dots ever at different angles?</li>
+<li>Double B. What happens to the radii and to the time for a lap?</li>
+<li>Switch from electron to proton. Which one has the bigger circle? Which one goes the other way round?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  B points out of the page. One lap takes 4 seconds on screen, whatever its real time. Speeds stay well below the speed of light, so the formulas hold.
+</div>
+{% endblock %}

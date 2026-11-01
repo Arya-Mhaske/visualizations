@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Release a small magnet at an angle to a uniform field. Find the torque and energy, and time the swings.{% endblock %}
+{% block why_text %}The torque τ = −mB sin θ always pulls the magnet towards the field. The energy U = −mB cos θ is lowest when m is along B, so the magnet rolls in a well and swings back and forth. For small angles sin θ ≈ θ, and it swings like a pendulum with period T = 2π√(I/mB).{% endblock %}
+{% block try_items %}
+<li>Release at 10° and time one swing. Compare with the small-swing period.</li>
+<li>Release at 170°. Is the period still the same? Why not?</li>
+<li>Double B. By what factor does the period change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  There is no damping, so the swings never die away. The motion is worked out step by step and the total energy stays constant. At large angles the swings are slower than the small-swing formula says.
+</div>
+{% endblock %}

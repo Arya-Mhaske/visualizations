@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A superconductor pushes a magnet's field out of itself, and the magnet floats. Find the height where the push balances the weight.{% endblock %}
+{% block why_text %}A superconductor is a perfect diamagnet: it makes currents on its surface that cancel the field inside completely. That behaves like a mirror magnet underneath, pointing the opposite way, so it repels the magnet above. The push falls steeply with height (as 1/h⁴), so there is one height where it equals the weight. The magnet floats there, and it is stable.{% endblock %}
+{% block try_items %}
+<li>Add mass. Does the magnet float lower or higher?</li>
+<li>Double m. How does the floating height change?</li>
+<li>Look at the curve above and below the crossing. If the magnet were pushed down, which way would the net force point?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A simple model: a small magnet of moment m above a flat superconductor feels the field of an image magnet of opposite sign, a distance 2h below. The force is then 3μ₀m²/(32πh⁴). Real magnets are not point dipoles, and real superconductors can also trap some field. The picture of field lines is a sketch.
+</div>
+{% endblock %}

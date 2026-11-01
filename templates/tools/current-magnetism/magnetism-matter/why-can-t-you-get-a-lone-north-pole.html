@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a bar magnet in two. Then cut again. Do you ever end up with a north pole on its own?{% endblock %}
+{% block why_text %}A magnet's field comes from tiny current loops, and every loop has two faces, a north and a south. Cutting the bar just separates the loops into groups. Each piece still has its loops pointing the same way, so each piece still has a north end and a south end. A lone pole would need a loop with only one face.{% endblock %}
+{% block try_items %}
+<li>Cut once, then compare the two pieces with the original. What do you see?</li>
+<li>Keep cutting. Count the north poles and the south poles. Do the counts ever differ?</li>
+<li>Look at the arrows below the bar. Do the cuts change which way they point?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Physicists have searched for a single magnetic pole, called a monopole. None has been found. Down at one atom the pattern is the same: the atom is a tiny loop of current, or a spinning charge, and it has two poles.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A metal's resistance climbs almost in a straight line with temperature. Use the line to find R at a new temperature, or to find α from two readings.{% endblock %}
+{% block why_text %}Between two readings R changes by R₀ α ΔT, so the graph is a straight line of slope R₀α. Knowing α gives the new R. Knowing two readings gives the slope, and dividing by R₀ gives α.{% endblock %}
+{% block try_items %}
+<li>Set R₀ = 100 Ω, α = 4 ×10⁻³ /K and T = 100 °C. What is R? Check it by hand.</li>
+<li>Switch to "α from 2 readings" and raise the second reading. Does α go up with the slope?</li>
+<li>Make the second reading smaller than R₀. What does a negative α suggest about the material?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The straight-line rule is a good approximation over a modest range. Over a wide range real metals curve. The reference temperature is 20 °C.
+</div>
+{% endblock %}

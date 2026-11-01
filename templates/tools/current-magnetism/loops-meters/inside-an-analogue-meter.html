@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A coil in a magnet's field is twisted by the current. A spring twists it back. Find where the needle stops.{% endblock %}
+{% block why_text %}The field is made radial, so the coil's plane always lies along B. That keeps the magnetic torque at NIAB at every angle (the flat line). The spring pulls back with kφ, which grows with the angle (the sloping line). The needle stops where they are equal: φ = NIAB/k. Because φ is proportional to I, the dial scale is evenly spaced.{% endblock %}
+{% block try_items %}
+<li>Double the current. Does φ double? Check the readout.</li>
+<li>Use a stiffer spring. Which line changes, and what happens to the needle?</li>
+<li>Raise I until the needle goes off scale. What is the smallest I that does it?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Each turn of the coil has an area of 10 cm². The dial covers 90°. A real meter uses curved pole pieces and a soft iron core to make the field radial. If the field were uniform instead, the torque would fall as the coil turned, and the scale would not be even.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A car battery is 12 V with an internal resistance of 0.4 Ω. Shrink the load towards zero and see the most current it can give.{% endblock %}
+{% block why_text %}With no external resistance, only the internal resistance limits the current: I = ε/r = 12/0.4 = 30 A. No load, however small, can draw more than that. A starter motor needs a large current, so a car battery is built with a very small r.{% endblock %}
+{% block try_items %}
+<li>Slide R down to 0. What current do you reach?</li>
+<li>Halve r. How does the highest current change?</li>
+<li>Set R = 0.4 Ω, equal to r. How does I compare with the highest value?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Real batteries sag and heat when pushed this hard, so the true maximum is lower. This is the ideal figure from ε/r.
+</div>
+{% endblock %}
