@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Zero the denominator: if the factor cancels you get a hole, otherwise a wall.{% endblock %}
+{% block why_text %}The fraction is undefined where the bottom is zero. If the same factor is on top it cancels, so near that x the function looks like a normal curve with one point missing: a hole. If it does not cancel, the top stays away from 0 while the bottom shrinks, so the values blow up and there is a vertical asymptote.{% endblock %}
+{% block try_items %}
+<li>Set both numerator zeros equal to the denominator zeros. What happens?</li>
+<li>Make only one factor cancel. What is the other?</li>
+<li>What is the height of a hole?</li>
+{% endblock %}

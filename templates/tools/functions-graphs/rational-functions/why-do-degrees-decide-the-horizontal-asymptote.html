@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Race the leading terms as x grows.{% endblock %}
+{% block why_text %}For large x the highest power dominates both top and bottom, so the fraction behaves like the ratio of the leading terms. If the top has lower degree it shrinks to 0. If they have the same degree it settles at the ratio of coefficients. If the top has higher degree it grows without bound.{% endblock %}
+{% block try_items %}
+<li>Set m = n. What does the ratio of coefficients give?</li>
+<li>Set m < n. What is the asymptote?</li>
+<li>Set m > n. What happens to the values at x = 10, 100, 1000?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Fix the volume and minimise surface area over the radius.{% endblock %}
+{% block why_text %}For a can of fixed volume V, the metal is S = 2πr² + 2V/r. A thin can has a large side, a wide can has a large top and bottom, and there is a radius in between where S is least. At that radius the height equals the diameter.{% endblock %}
+{% block try_items %}
+<li>Slide the radius to find the least metal.</li>
+<li>Compare the height and the diameter at the best radius.</li>
+<li>Change the volume. Does the proportion of the best can change?</li>
+{% endblock %}
