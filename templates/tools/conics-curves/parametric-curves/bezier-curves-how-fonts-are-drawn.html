@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag control points and watch the curve follow.{% endblock %}
+{% block why_text %}A Bézier curve starts at the first control point and ends at the last. The points between pull the curve towards them without lying on it. To find the point at time t, take the fraction t of the way along each segment between control points, then repeat on the new points until one remains. Fonts, vector graphics and animation paths all use curves like this. Some formats use cubic Béziers, others quadratic.{% endblock %}
+{% block try_items %}
+<li>Drag P1 up and down. How does the curve change near P0?</li>
+<li>Switch to quadratic. How many points are there now?</li>
+<li>Slide t and watch the coloured lines. What is left at t = 0.5?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The picture shows the idea of a Bézier curve. Real font outlines are made of many short pieces joined together.
+</div>
+{% endblock %}

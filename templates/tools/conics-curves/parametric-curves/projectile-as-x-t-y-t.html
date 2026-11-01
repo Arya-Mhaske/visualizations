@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Change launch speed and angle and see the parabola.{% endblock %}
+{% block why_text %}A ball thrown at speed v₀ and angle θ moves steadily forward, x = v₀ cos θ · t, while gravity makes its height y = v₀ sin θ · t − ½gt². Eliminating t gives y = x tan θ − gx²/(2v₀² cos² θ), a quadratic in x: a parabola. The two equations carry more information than the parabola, because they also tell you when.{% endblock %}
+{% block try_items %}
+<li>Set θ = 45°. Compare the range with θ = 30° and 60°.</li>
+<li>Double v₀. What happens to the range?</li>
+<li>Which two angles give the same range?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The picture ignores air resistance. g is taken as 9.8 m/s².
+</div>
+{% endblock %}

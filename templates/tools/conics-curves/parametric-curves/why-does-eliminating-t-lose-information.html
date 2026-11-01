@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two different motions give the same curve. The equation cannot tell them apart.{% endblock %}
+{% block why_text %}Eliminating t from x = 3 cos t and y = 3 sin t gives x² + y² = 9. But x = 3 cos t, y = −3 sin t gives the same equation, even though the point goes round the other way. So does 3 cos 2t, 3 sin 2t, where the point goes round twice. Direction, start point and number of laps are all lost when t is eliminated.{% endblock %}
+{% block try_items %}
+<li>Run the first motion, then the second. How do they differ?</li>
+<li>Choose "twice as fast, two laps". How far through are you at 50%?</li>
+<li>Which motion starts at (0, 3)?</li>
+{% endblock %}

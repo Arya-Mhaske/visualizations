@@ -5943,91 +5943,91 @@
 "archetype": "geometry",
 "priority": 181,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/rotation-of-axes/why-does-cot-2theta-a-c-b-remove-it": {
 "archetype": "geometry",
 "priority": 181,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/rotation-of-axes/why-doesn-t-b2-4ac-change-when-you-rotate": {
 "archetype": "geometry",
 "priority": 181,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/rotation-of-axes/rotate-to-standard-form": {
 "archetype": "stepper",
 "priority": 181,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/polar-conics/why-does-one-equation-give-every-conic": {
 "archetype": "geometry",
 "priority": 183,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/polar-conics/polar-rectangular-conic": {
 "archetype": "stepper",
 "priority": 183,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/polar-conics/kepler-orbits": {
 "archetype": "geometry",
 "priority": 183,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/why-parametric-equations": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/why-does-eliminating-t-lose-information": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/why-does-a-rolling-wheel-trace-a-cycloid": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/parametric-rectangular": {
 "archetype": "stepper",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/projectile-as-x-t-y-t": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/lissajous-figures": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/bezier-curves-how-fonts-are-drawn": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parametric-curves/circles-rolling-around-circles": {
 "archetype": "geometry",
 "priority": 185,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/linear-systems/why-one-none-or-infinitely-many": {
 "archetype": "discrete",

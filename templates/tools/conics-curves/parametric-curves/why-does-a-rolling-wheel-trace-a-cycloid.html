@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Roll a wheel and trace a point on its rim.{% endblock %}
+{% block why_text %}When a wheel of radius r rolls without slipping, its centre moves at the same speed as the wheel turns: after turning by θ, the centre has moved rθ. A point on the rim goes round the centre while the centre goes forward, so its position is (rθ − r sin θ, r − r cos θ). This curve is the cycloid: arches with cusps where the point touches the ground.{% endblock %}
+{% block try_items %}
+<li>Roll the wheel through 360°. How far has the centre moved?</li>
+<li>When is the point at the top of an arch?</li>
+<li>Move the point inside the rim. What happens to the cusps?</li>
+{% endblock %}

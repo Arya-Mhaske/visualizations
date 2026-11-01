@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Roll one circle round another and draw epicycloids and hypocycloids.{% endblock %}
+{% block why_text %}A point on a small circle rolling round a large one traces a curve with sharp points called cusps. Rolling outside gives an epicycloid. Rolling inside gives a hypocycloid. If the radii are in the ratio p : q in lowest terms, the curve has p cusps. When r = R/4 inside, you get the astroid with four cusps.{% endblock %}
+{% block try_items %}
+<li>Roll inside with R = 4 and r = 1. How many cusps?</li>
+<li>Roll outside with R = 3 and r = 1. What shape is it?</li>
+<li>Try R = 5 and r = 2. How many times must it go round before it closes?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A cardioid is the epicycloid with R = r. Spirograph toys make these curves.
+</div>
+{% endblock %}
