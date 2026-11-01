@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Draw the box, then the asymptotes, then the branches.{% endblock %}
+{% block why_text %}Start with the centre, then draw the box using a along the opening direction and b across. Its diagonals are the asymptotes. Each branch starts at a vertex on the box and bends towards the asymptotes without touching them. The positive term in the equation tells you which way the branches open.{% endblock %}
+{% block try_items %}
+<li>Choose x² as the positive term. Which way do the branches open?</li>
+<li>Switch to y². What changes about the box and the asymptote slopes?</li>
+<li>Where are the foci for a = 3 and b = 2?</li>
+{% endblock %}

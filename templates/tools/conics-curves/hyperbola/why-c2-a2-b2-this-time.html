@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build the asymptote box. Its diagonal swings down to land on the foci.{% endblock %}
+{% block why_text %}Draw a rectangle that reaches a to each side of the centre and b up and down. The diagonals are the asymptotes. The diagonal has length √(a² + b²). Swing it down to the axis with a compass and it lands on the foci, so c is the diagonal and c² = a² + b². For the ellipse c² = a² − b², and the sign change comes from the right triangle being built from the other side.{% endblock %}
+{% block try_items %}
+<li>Step through all five stages. At which step do the foci appear?</li>
+<li>Make a = b. What is c?</li>
+<li>Compare with the ellipse: which side of the triangle is c here?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is the opposite of the ellipse, where c is a leg of the right triangle. Here c is the hypotenuse.
+</div>
+{% endblock %}

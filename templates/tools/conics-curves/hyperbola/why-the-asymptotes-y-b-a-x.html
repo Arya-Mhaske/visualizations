@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom far out. The "1" in the equation stops mattering, and the curve hugs two straight lines.{% endblock %}
+{% block why_text %}For large x and y, the 1 in x²/a² − y²/b² = 1 is tiny compared with the other terms. The equation becomes x²/a² − y²/b² ≈ 0, which means y ≈ ±(b/a)x. These two lines are the asymptotes. The further out you look, the smaller the gap between the curve and the lines.{% endblock %}
+{% block try_items %}
+<li>Zoom out to ×40. Can you still see a gap between the curve and the line?</li>
+<li>Change b. How do the asymptotes tilt?</li>
+<li>Watch the share of "1" in the readout. How small does it get at ×40?</li>
+{% endblock %}

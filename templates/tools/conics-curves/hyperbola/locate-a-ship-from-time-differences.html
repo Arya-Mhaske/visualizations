@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Two stations send signals together. A ship hears one later, and the delay puts it on a hyperbola.{% endblock %}
+{% block why_text %}Radio signals travel at the speed of light, 0.2998 km every microsecond. If a ship hears the signal from one station Δt microseconds after the other, it is cΔt km farther from one than the other. A fixed difference of distances is a hyperbola with the stations as foci. A second pair of stations gives a second hyperbola, and the ship is where they cross.{% endblock %}
+{% block try_items %}
+<li>Drag the ship. What happens to the two time gaps?</li>
+<li>Turn off the second pair. Can you tell where on the hyperbola the ship is?</li>
+<li>Move the ship to the line halfway between two stations. What is the time gap?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is the idea behind the LORAN navigation system. The stations and distances here are made up for practice.
+</div>
+{% endblock %}

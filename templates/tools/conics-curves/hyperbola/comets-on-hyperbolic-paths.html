@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Make the eccentricity bigger than 1. The comet passes once and never returns.{% endblock %}
+{% block why_text %}The path of a body moving under the Sun's gravity is a conic with the Sun at a focus. If e is less than 1 the path is an ellipse and the body returns. If e is exactly 1 it is a parabola, and the body only just escapes. If e is bigger than 1 the path is a hyperbola: the body swings round the Sun once and moves off along an almost straight line for ever.{% endblock %}
+{% block try_items %}
+<li>Start at e = 0.5. Does the comet come back?</li>
+<li>Raise e to 1.0 and then to 2.0. What does the path do?</li>
+<li>At e = 2, what is the largest angle from the Sun the comet reaches?</li>
+{% endblock %}
