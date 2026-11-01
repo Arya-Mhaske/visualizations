@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A donor gives away an electron, so you might expect an n-type crystal to be charged. Count the charges in a patch of crystal.{% endblock %}
+{% block why_text %}A donor atom starts neutral. When it gives up its extra electron, it becomes a fixed + core and the electron roams free. Charge only moved from one place to another, so the cores and the free electrons cancel exactly. A crystal only becomes charged if you take carriers out.{% endblock %}
+{% block try_items %}
+<li>Add dopant atoms one at a time. After each, what is the net charge?</li>
+<li>Pull out two carriers. What charge is left behind, and where does it sit?</li>
+<li>Switch to acceptors. Which sign is the fixed core now, and which sign are the free carriers?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The patch is tiny and drawn with far more dopants than a real crystal. The thermal electron–hole pairs are left out because each pair is neutral on its own.
+</div>
+{% endblock %}

@@ -3177,40 +3177,40 @@
 "reviewed": false
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/why-does-a-hole-move-like-a-positive-charge": {
-"archetype": "sim",
+"archetype": "geometry",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/why-does-one-part-per-million-of-arsenic-change-everything": {
-"archetype": "space3d",
+"archetype": "table",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/why-is-nenh-ni2-even-after-doping": {
-"archetype": "space3d",
+"archetype": "plot",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/why-is-a-doped-semiconductor-still-neutral": {
-"archetype": "sim",
+"archetype": "discrete",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/n-type-or-p-type": {
-"archetype": "stepper",
+"archetype": "table",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/intrinsic-extrinsic-semiconductors/carrier-concentration-calculator": {
-"archetype": "stepper",
+"archetype": "table",
 "priority": 180,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/p-n-junction-diode/why-does-a-depletion-layer-form-at-a-p-n-junction": {
 "archetype": "plot",

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Add donors and the electron count jumps. Watch what happens to the holes while the crystal settles.{% endblock %}
+{% block why_text %}Heat makes electron–hole pairs all the time, and electrons also fall back into holes. At balance the two rates match, and that fixes the product nₑnₕ at nᵢ². Extra electrons from donors raise the recombination rate, so holes disappear faster than heat makes them, until nₕ is about 4.5 × 10⁹ m⁻³ for 1 ppm of arsenic.{% endblock %}
+{% block try_items %}
+<li>Press "Just added". What is n·p ÷ nᵢ²? Why is it so large?</li>
+<li>Press "Settled". What is n·p ÷ nᵢ² now? How many holes are left?</li>
+<li>Reduce the donors to 10¹⁸. Does the product still settle at nᵢ²?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The time unit is arbitrary because recombination is far too fast to watch. The rate model is the simplest one: electrons and holes meet at a rate proportional to n·p, and heat makes pairs at a fixed rate. The balance it gives, n·p = nᵢ², is the law the textbook states.
+</div>
+{% endblock %}

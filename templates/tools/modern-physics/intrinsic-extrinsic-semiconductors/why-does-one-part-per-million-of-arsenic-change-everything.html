@@ -1,0 +1,13 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Silicon has 5 × 10²⁸ atoms in every cubic metre. Replace just one atom in a million with arsenic and see how the free electrons compare.{% endblock %}
+{% block why_text %}One in a million sounds tiny, but a cubic metre holds so many atoms that it is 5 × 10²² arsenic atoms. Each gives one free electron. Heat alone frees only 1.5 × 10¹⁶ electrons per cubic metre. The donors outnumber them about 3 million to one, so the doping decides the conductivity.{% endblock %}
+{% block try_items %}
+<li>Set the doping to 1 ppm. How many times more donors than thermal electrons are there?</li>
+<li>Slide down to 3 × 10⁻⁷ ppm. At what doping do donors match the thermal electrons?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The bars use a log scale: each gridline is 10<sup>5</sup> times the one before. The thermal value is for silicon at 300 K. Real doping is usually between 10<sup>−3</sup> and 10<sup>3</sup> ppm.
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}One bond is missing its electron. A neighbour steps in to fill the gap, then the next one, and the next. Count which way the gap travels.{% endblock %}
+{% block why_text %}Every electron hops against the field, one place at a time. Each hop leaves the gap one place further along the field. Adding up the charge times the distance of all those hops gives exactly one + charge moving along the field. So the hole acts like a positive charge, even though only electrons ever move.{% endblock %}
+{% block try_items %}
+<li>Drag the hops from 0 to 5. How many electrons moved? How many places did the hole move?</li>
+<li>Turn the field round. Which way does the hole go now? Which way do the electrons go?</li>
+<li>Look at the formula. Why does a hole moving 5 places equal 5 electrons moving 1 place each?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The row is a simplified chain of bonds. In a real crystal the electron hops are quantum jumps between bonds in three dimensions, but the bookkeeping is the same.
+</div>
+{% endblock %}
