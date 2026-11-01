@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Substitute u = x² in x⁴ − 5x² + 4 = 0, solve for u, and map the answers back.{% endblock %}
+{% block why_text %}x⁴ + px² + q has the shape of a quadratic if you treat x² as a single unknown u. Solve for u, then undo the substitution. Each positive u gives two real x (plus and minus its square root), a zero gives one, and a negative u gives none, because a real square cannot be negative. So four roots can shrink to two or none.{% endblock %}
+{% block try_items %}
+<li>Start with p = −5, q = 4. How many real roots are there?</li>
+<li>Change q to 6. What happens to the u values, and what happens to the real roots?</li>
+<li>Find p and q that give exactly two real roots.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Get a quadratic and see which method is quickest, and why.{% endblock %}
+{% block why_text %}Factoring is fastest when the discriminant is a perfect square. Completing the square is fast when a = 1 and b is even. The formula always works. A good habit: look at the discriminant first, then pick the method.{% endblock %}
+{% block try_items %}
+<li>Try 1, −5, 6. Why does factoring win?</li>
+<li>Try 1, 4, 1. Why can't you factor it?</li>
+<li>Try 2, 3, −5. Which methods are awkward, and why?</li>
+{% endblock %}

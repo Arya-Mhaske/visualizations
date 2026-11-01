@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Throw a ball upward and solve h(t) = 0. There are two answers, and only one is a real landing time.{% endblock %}
+{% block why_text %}The height formula h = h₀ + v₀t − 4.9t² is a quadratic in t, so setting h = 0 gives two roots. One is the landing time. The other is negative, a time before the ball was thrown. The parabola still passes through that time because the algebra does not know about the throw. Physics decides which root to keep.{% endblock %}
+{% block try_items %}
+<li>Set h₀ = 0 and v₀ = 14. What are the two roots, and what do they mean?</li>
+<li>Raise h₀. How does the rejected root change?</li>
+<li>Slide t to the roots. At the landing time is the marker on the axis?</li>
+{% endblock %}

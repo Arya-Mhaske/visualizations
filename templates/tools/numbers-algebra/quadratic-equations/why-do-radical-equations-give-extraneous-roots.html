@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Squaring both sides adds a mirror-image curve. Some answers belong only to the mirror.{% endblock %}
+{% block why_text %}The square root symbol means the positive root only. Squaring both sides loses that: x + p = (x + q)² also holds when the left side was −√(x + p). Graphically, y = √(x + p) and y = −√(x + p) join into one sideways parabola. The line can meet the lower half, and those answers are extraneous. Always check every answer in the original equation.{% endblock %}
+{% block try_items %}
+<li>Set p = 2, q = 0. Which of the two answers fails in √(x + 2) = x?</li>
+<li>Try p = 1 and q = 1. Why are both answers genuine this time?</li>
+<li>Find p and q with no solutions at all. Can you also find the p and q where both are genuine?</li>
+{% endblock %}

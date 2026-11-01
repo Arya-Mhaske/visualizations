@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Complete the square with tiles. Each tile move matches one line of algebra, and the last line is the formula.{% endblock %}
+{% block why_text %}A strip of area (b/a)x and an x² square cannot make a square on their own. Split the strip in two and wrap it round the square: one small corner, (b/2a)², is missing. Add it to both sides and you have a perfect square, (x + b/2a)². Taking its square root gives two answers, because both a positive and a negative number square to the same thing. That ± is the formula.{% endblock %}
+{% block try_items %}
+<li>Step through the five tile moves for a = 1, b = 4, c = −5. Which move creates the ±?</li>
+<li>Make b larger. What happens to the missing corner?</li>
+<li>Set c so that b² − 4ac is negative. What goes wrong on the last move, and what does the graph show?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The tiles show the case b > 0 so the strips have a real area. A negative b works the same way with signed strips; the algebra and the formula do not change.
+</div>
+{% endblock %}

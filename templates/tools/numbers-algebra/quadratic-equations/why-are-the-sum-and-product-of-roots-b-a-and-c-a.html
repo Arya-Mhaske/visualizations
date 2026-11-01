@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Expand a(x − r)(x − s) and match the coefficients with ax² + bx + c.{% endblock %}
+{% block why_text %}A quadratic with roots r and s must be a(x − r)(x − s), because it is zero at r and at s. Expanding gives ax² − a(r + s)x + a·rs. Matching with ax² + bx + c gives b = −a(r + s) and c = a·rs. So the roots add to −b/a and multiply to c/a. You can read both without solving anything.{% endblock %}
+{% block try_items %}
+<li>Set r = 2 and s = 5. What are the sum and product, and what quadratic does that give?</li>
+<li>Make one root 0. What happens to c?</li>
+<li>Make the roots equal. What does the parabola do at that point?</li>
+{% endblock %}

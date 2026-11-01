@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Slide a parabola up and down. It crosses the axis twice, once or not at all.{% endblock %}
+{% block why_text %}The vertex of y = ax² + bx + c sits at height −(b² − 4ac)/4a. For a > 0 the parabola opens upward, so it crosses the axis exactly when the vertex is on or below it, which is when b² − 4ac is positive or zero. At zero the vertex just touches the axis, and the two roots become one. The discriminant is the vertex height in disguise.{% endblock %}
+{% block try_items %}
+<li>Set a = 1, b = 0 and slide c from −5 to 5. When does the vertex touch the axis?</li>
+<li>Choose any b, then find the c that gives exactly one crossing.</li>
+<li>Check: at that c, what is b² − 4ac?</li>
+{% endblock %}
