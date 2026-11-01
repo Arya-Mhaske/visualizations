@@ -4628,55 +4628,55 @@
 "archetype": "geometry",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/why-does-tan-have-asymptotes": {
-"archetype": "rays",
+"archetype": "plot",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/tan-theta-is-a-slope": {
-"archetype": "rays",
-"priority": 21,
-"notes": "",
-"reviewed": false
-},
-"trigonometry/tan-cot-sec-csc/why-is-cot-the-co-tangent": {
-"archetype": "rays",
-"priority": 21,
-"notes": "",
-"reviewed": false
-},
-"trigonometry/tan-cot-sec-csc/why-do-csc-and-sec-hug-sin-and-cos": {
 "archetype": "geometry",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
+},
+"trigonometry/tan-cot-sec-csc/why-is-cot-the-co-tangent": {
+"archetype": "geometry",
+"priority": 21,
+"notes": "",
+"reviewed": true
+},
+"trigonometry/tan-cot-sec-csc/why-do-csc-and-sec-hug-sin-and-cos": {
+"archetype": "plot",
+"priority": 21,
+"notes": "",
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/graph-y-a-tan-bx-c-and-a-cot-bx-c": {
 "archetype": "stepper",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/graph-y-a-sec-bx-c-and-a-csc-bx-c": {
 "archetype": "stepper",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/why-is-there-no-amplitude-for-tan": {
-"archetype": "stepper",
+"archetype": "plot",
 "priority": 21,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/tan-cot-sec-csc/lighthouse-beam-on-a-wall": {
-"archetype": "geometry",
+"archetype": "sim",
 "priority": 21,
-"notes": "",
-"reviewed": false
+"notes": "Spot speed can pass c for a distant wall; the page notes a light spot carries no matter or message.",
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-does-a-spring-trace-a-sine": {
 "archetype": "geometry",

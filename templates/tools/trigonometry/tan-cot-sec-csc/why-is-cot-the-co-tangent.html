@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Use a second tangent line, touching the circle at the top (0, 1). Where does the same ray meet it?{% endblock %}
+{% block why_text %}Measured from the vertical axis, the ray makes the complementary angle, 90° − θ. By the same picture as before, the length on the top tangent line is tan(90° − θ). We call it cot θ, the "co-tangent", just as the cosine is the complement's sine. The graph of cot is the tan graph seen in a mirror at 45°, and cot θ × tan θ = 1.{% endblock %}
+{% block try_items %}
+<li>Set θ = 30°. Compare cot 30° with tan 60°. What do you notice?</li>
+<li>Set θ = 45°. Why are tan θ and cot θ equal there?</li>
+<li>On the graph, find the two dots with the same height. How far apart are their angles?</li>
+{% endblock %}

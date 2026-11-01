@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Turn the ray towards 90° and watch where it meets the tangent line. Then see what that does to the graph.{% endblock %}
+{% block why_text %}At 90° the ray points straight up, parallel to the tangent line, and the two never meet. Just before 90° they meet very high up, and the closer the ray gets to vertical, the higher the meeting point. The graph of tan θ therefore climbs without limit and never reaches the vertical line at 90°. That line is an asymptote.{% endblock %}
+{% block try_items %}
+<li>Slide θ from 60° to 89°. How does the meeting point move? What does the dot on the graph do?</li>
+<li>Slide θ to −89°. Which way does the meeting point run off now? What sign does tan θ have?</li>
+<li>The graph has a second dashed asymptote. Which angle is it at, and why is it also an angle where the ray cannot meet the line?</li>
+{% endblock %}

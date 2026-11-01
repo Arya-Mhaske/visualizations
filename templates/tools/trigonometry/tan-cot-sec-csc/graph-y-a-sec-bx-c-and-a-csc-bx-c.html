@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Sketch the cosine or sine wave faintly, then flip it into U-shapes. Press Next step to build the graph.{% endblock %}
+{% block why_text %}Secant is 1 ÷ cosine and cosecant is 1 ÷ sine, so each one lives on a guide wave. Zeros of the guide become asymptotes. Peaks and troughs of the guide become the bottoms and tops of the U-shapes, because 1 ÷ A is A only when the guide is at ±A. Every piece then opens away from the axis. The curve can never enter the strip between −A and A.{% endblock %}
+{% block try_items %}
+<li>Choose sec with A = 1. Where does it touch the guide? Where are the asymptotes?</li>
+<li>Switch to csc. Which part of the picture moves a quarter of a period?</li>
+<li>Make A negative. Which U-shapes open up now, and which open down?</li>
+{% endblock %}

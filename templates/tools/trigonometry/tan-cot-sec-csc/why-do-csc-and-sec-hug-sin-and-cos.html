@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw sin x, then 1 ÷ sin x on the same axes. Look for where they touch and where the new graph breaks.{% endblock %}
+{% block why_text %}Csc x is 1 ÷ sin x. Where sin x is tiny, its reciprocal is huge, so the cosecant shoots off to infinity at every zero of the sine. Where sin x is 1 or −1, the reciprocal is also 1 or −1, so the curves touch. Between those places the cosecant forms a U-shape. The sine is never bigger than 1 in size, so the reciprocal is never smaller than 1 in size. Secant and cosine work the same way.{% endblock %}
+{% block try_items %}
+<li>Slide x to 0. What happens to the sine, and to the cosecant?</li>
+<li>Slide x to π/2. Where are the two dots?</li>
+<li>Look at the strip between −1 and 1 on the graph. Does the cosecant ever enter it?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Turn a line through the origin and read its slope. Compare it with tan θ.{% endblock %}
+{% block why_text %}The slope of a line is rise ÷ run. Take a run of 1, and the rise is y ÷ x = sin θ ÷ cos θ = tan θ. So tangent is just the slope of the line at angle θ. A line goes both ways from the origin, so turning it a half-turn gives the same line and the same slope. That is why tangent repeats every 180° (π), not every 360°.{% endblock %}
+{% block try_items %}
+<li>Set θ = 45°. What is the slope? Does a line at 45° rise by exactly as much as it runs?</li>
+<li>Compare θ = 30° and θ = 210°. Why are the slopes equal?</li>
+<li>Set a line to slope −1. What is θ? Is there a second angle that works?</li>
+{% endblock %}

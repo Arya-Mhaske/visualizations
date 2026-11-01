@@ -244,7 +244,10 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `trigonometry/_sine-cosine-math.js`: `wave`, `period`, `shift` (−C/B), `keyPoints`, `tip` (a spinner of radius |A|; a negative A points the other way, so the height is still A sin), `BASES`/`transformPoint`/`transformed` (any graph through A f(Bx + C) + k), `gap`/`TARGETS`
   (every target sits on the sliders' grid, tested), `sampledPoints`/`apparentCycles` (aliasing), `tiltError`, and daylight (`declination`, `daylight`, `dataFor`, `leastSquaresSine` by 3 × 3 normal equations, checked against an independent Python solve).
   `_sine-cosine-view.js` draws the spinner beside the graph on one vertical scale (`makePlot`, `fit`, `drawSpinnerWave`); `fit` re-sets the graph's y range every draw so the circle and the wave stay the same size at any stage width, which limits A to 1.5 on a phone.
-  Reuse the view in `tan-cot-sec-csc`. The tilt tool's a and b and the daylight dots are said on the page to be made-up and calculated, not measured. Built without screenshots or test runs, by request: look at all twelve, especially circle size at 360 px.
+  The tilt tool's a and b and the daylight dots are said on the page to be made-up and calculated, not measured. Built without screenshots or test runs, by request: look at all twelve, especially circle size at 360 px.
+- `trigonometry/_tan-cot-math.js`: `tanLen/secLen/cotLen/cscLen`, `secantLength`, and the four graphs as `curve(kind, A, B, C)` with `asymptotes`, `zeros`, `quarterPoints` (tan, cot: ±A a quarter of the way along), `vertices` (sec, csc: the guide's peaks), `guide`, `period`;
+  `PAIRS` (a function and its reciprocal), `crossing`/`tanAt` (tan has no top), and `spotPosition`/`spotSpeed`/`speedUp` (lighthouse). The tests find every asymptote by brute force and check that sec and csc never enter the strip between −A and A.
+  When a tool's picture has a point that can run off the stage (a tangent, a spot on a wall), clip the line to the picture and draw an arrow where the point left, instead of letting the angle look wrong. Built without screenshots or test runs, by request.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -275,7 +278,7 @@ it reaches the front of the queue.
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | |
 | 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | ✓ |
 | 17 | `forces-energy/third-law-momentum-conservation` | 7 | 1 | |
-| 18 | `trigonometry/tan-cot-sec-csc` | 9 | 1 | |
+| 18 | `trigonometry/tan-cot-sec-csc` | 9 | 1 | ✓ |
 | 19 | `forces-energy/equilibrium-free-body-diagrams` | 5 | 1 | |
 | 20 | `trigonometry/identities` | 12 | 1 | |
 | 21 | `forces-energy/friction` | 8 | 1 | |

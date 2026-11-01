@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}A lighthouse beam turns at a steady rate. Watch how fast its spot races along a straight wall.{% endblock %}
+{% block why_text %}The spot is at x = d tan θ. The beam turns at a steady rate, but tangent climbs ever more steeply as θ nears 90°. So the spot's speed d ω sec²θ is smallest when the beam points straight at the wall and grows without limit as the beam turns nearly parallel to it. A spot far down the wall moves faster than the beam can seem to turn.{% endblock %}
+{% block try_items %}
+<li>Set θ = 0°. Note the speed of the spot. Then move to 60°. How many times faster is it?</li>
+<li>Double d. What happens to the spot's speed at the same angle?</li>
+<li>Press Play. Where on the wall does the spot seem to move slowest, and where fastest?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  A light spot is not a real object, so its speed can be more than the speed of light, as long as nothing material travels along the wall. A real beam also gets dimmer and more spread out as it grows longer. The turning rate and distances here are chosen for illustration.
+</div>
+{% endblock %}

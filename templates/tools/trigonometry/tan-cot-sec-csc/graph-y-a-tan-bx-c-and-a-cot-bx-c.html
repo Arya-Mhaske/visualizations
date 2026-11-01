@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Draw the asymptotes first, one period apart. The curve then fits between them. Press Next step to build the graph.{% endblock %}
+{% block why_text %}The asymptotes are the skeleton of a tangent or cotangent graph. Once they are in place, each piece between two of them has the same shape: it crosses the axis halfway and reaches ±A a quarter of the way along. A sets the steepness, B sets how far apart the asymptotes are (π ÷ B), and C slides everything sideways. There is no amplitude, only a stretch.{% endblock %}
+{% block try_items %}
+<li>Choose tan with B = 1 and C = 0. Where are the asymptotes? How far apart are they?</li>
+<li>Double B. What happens to the spacing of the asymptotes?</li>
+<li>Switch to cot. Which things stay the same, and which one flips?</li>
+{% endblock %}

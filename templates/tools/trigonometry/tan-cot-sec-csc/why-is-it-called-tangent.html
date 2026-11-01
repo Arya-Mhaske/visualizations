@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the line that just touches the circle at (1, 0). Turn a ray from the centre and see where it meets that line.{% endblock %}
+{% block why_text %}A tangent line "touches" the circle at one point, from the Latin tangere, to touch. The ray meets this tangent line at height tan θ. The piece of the line from the touching point is therefore tan θ long. The ray itself cuts the circle and goes on to the line, so it is a secant line (from the Latin secare, to cut), and its length is sec θ. Pythagoras on the triangle gives sec²θ = 1 + tan²θ.{% endblock %}
+{% block try_items %}
+<li>Set θ = 45°. How long is the tangent piece? Why is it exactly 1?</li>
+<li>Check that sec²θ = 1 + tan²θ at θ = 30° with the readouts.</li>
+<li>Set a negative angle. Which way does the tangent piece point, and what is the sign of tan θ?</li>
+{% endblock %}
