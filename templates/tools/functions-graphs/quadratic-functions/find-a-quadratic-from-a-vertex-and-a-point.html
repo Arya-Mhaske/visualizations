@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fix the vertex, then drag a point to solve for a.{% endblock %}
+{% block why_text %}A parabola with vertex (h, k) has the form y = a(x − h)² + k. The only unknown is a. A second point on the curve gives it: a = (y − k)/(x − h)². Every point you drag the dot to gives a different a.{% endblock %}
+{% block try_items %}
+<li>Place the point on the same side as the vertex, then the other side. Does a change?</li>
+<li>Put the point level with the vertex. What happens to a?</li>
+<li>Put the point on the axis x = h. What goes wrong?</li>
+{% endblock %}

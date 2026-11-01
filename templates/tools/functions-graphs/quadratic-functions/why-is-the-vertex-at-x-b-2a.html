@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}The vertex sits midway between the roots, or wherever completing the square puts it.{% endblock %}
+{% block why_text %}A parabola is symmetric about a vertical line through its vertex. The two roots are mirror images in that line, so the vertex is halfway between them. The roots are −b/2a plus and minus the same amount, so their average is −b/2a. Even without real roots, the same symmetry puts the vertex at x = −b/2a.{% endblock %}
+{% block try_items %}
+<li>Choose a parabola with two roots. Is the vertex halfway between them?</li>
+<li>Make the parabola miss the axis. Is the vertex still at −b/2a?</li>
+<li>Change a. Does the vertex move?</li>
+{% endblock %}

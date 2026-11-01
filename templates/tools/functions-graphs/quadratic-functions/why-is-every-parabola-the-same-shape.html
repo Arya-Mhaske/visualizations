@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Zoom y = ax² until it matches y = x²: all parabolas are similar.{% endblock %}
+{% block why_text %}y = ax² is y = x² with every height multiplied by a. So if you measure the height in units of a, the graph is y/a = x², exactly the same curve. All parabolas are the same shape, just stretched, in the same way that all circles are the same shape.{% endblock %}
+{% block try_items %}
+<li>Set a = 3. Turn on "units of a". What do you see?</li>
+<li>Change a with the switch on. Does the picture change?</li>
+<li>Turn the switch off. Why does the shape seem to change?</li>
+{% endblock %}

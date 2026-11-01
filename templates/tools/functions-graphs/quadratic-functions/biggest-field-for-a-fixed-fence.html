@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Change the width; area is a parabola with its peak at the square.{% endblock %}
+{% block why_text %}With a fixed fence, width w and length L/2 − w use it all. Area = w(L/2 − w) is a downward parabola in w. Its peak is halfway between its roots 0 and L/2, at w = L/4, where the length is also L/4: a square.{% endblock %}
+{% block try_items %}
+<li>Slide the width until the area is largest. What is the shape of the field?</li>
+<li>Double the fence. What happens to the best area?</li>
+<li>Find two widths that give the same area.</li>
+{% endblock %}

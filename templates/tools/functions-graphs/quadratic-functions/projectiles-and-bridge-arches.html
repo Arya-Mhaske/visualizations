@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fit a parabola to an arch or a ball's path.{% endblock %}
+{% block why_text %}Three points that are not in a line and have different x values fix exactly one parabola. The same fitting works for the ends and top of an arch or three positions of a thrown ball. Once you have a, b and c, you can read the vertex, the roots and any height.{% endblock %}
+{% block try_items %}
+<li>Fit an arch: put P1 and P3 on the ground and P2 at the top.</li>
+<li>Move P2 to the side. What happens to the vertex?</li>
+<li>Put the three points in a line. What does a become?</li>
+{% endblock %}
