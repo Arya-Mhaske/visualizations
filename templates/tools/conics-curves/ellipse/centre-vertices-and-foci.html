@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Read the centre, vertices and foci off the equation and sketch the ellipse.{% endblock %}
+{% block why_text %}In (x − h)²/p² + (y − k)²/q² = 1 the centre is (h, k). The larger denominator is a², and it shows which way the long axis points. The vertices are a from the centre along it, and the co-vertices b along the short axis. The foci lie c from the centre along the long axis, where c² = a² − b².{% endblock %}
+{% block try_items %}
+<li>Choose p = 5 and q = 3. Where are the foci?</li>
+<li>Swap the values of p and q. Which axis is the long one now?</li>
+<li>Make p = q. How many foci are left to find?</li>
+{% endblock %}

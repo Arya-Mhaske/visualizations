@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put the pen at the end of the minor axis, and a right triangle appears.{% endblock %}
+{% block why_text %}At the top of the minor axis the pen is the same distance from both foci. Those two distances add to 2a, so each is a. The centre, the top point and a focus form a right triangle with legs b and c and hypotenuse a. Pythagoras gives c² + b² = a², so c² = a² − b².{% endblock %}
+{% block try_items %}
+<li>Move the pen to 90°. What are the two distances to the foci?</li>
+<li>Make b close to a. Where do the foci go?</li>
+<li>Check c² against a² − b² for a = 5 and b = 3.</li>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}How high is the arch at a given distance from the centre? Will the boat fit?{% endblock %}
+{% block why_text %}The top half of the ellipse x²/a² + y²/b² = 1 gives the arch height y = b√(1 − x²/a²). The arch is highest in the middle and falls away towards the banks. A boat fits only if the arch is high enough above both of its top corners, so a boat that clears the middle can still hit the arch near the edge.{% endblock %}
+{% block try_items %}
+<li>Put the boat in the middle with a height of 4 m. Does it fit?</li>
+<li>Slide the boat towards the bank. At what position does it stop fitting?</li>
+<li>Make the boat narrower. Can it get closer to the bank?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The span, rise and boat sizes are made up for practice.
+</div>
+{% endblock %}
