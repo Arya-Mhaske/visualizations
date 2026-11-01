@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Four copies of one right triangle sit inside a square. Slide them and see what is left empty.{% endblock %}
+{% block why_text %}The big square has side a + b, so its area never changes. The four triangles never change either. So the empty area is the same at the start and at the end. At the start it is one tilted square with side c, so area c². At the end it is two squares, a² and b². Therefore c² = a² + b².{% endblock %}
+{% block try_items %}
+<li>Use a = 3 and b = 4. Slide from start to end. What are c² and a² + b²?</li>
+<li>Change a and b to 2 and 5. Does the picture still work, even though c is not a whole number?</li>
+<li>Slide to the middle. The triangles are in between. Is the empty area still c²?</li>
+{% endblock %}

@@ -4409,76 +4409,76 @@
 "reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-is-a2-b2-c2": {
-"archetype": "discrete",
+"archetype": "geometry",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-exactly-six-ratios": {
-"archetype": "discrete",
+"archetype": "table",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-is-it-called-co-sine": {
 "archetype": "geometry",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-do-sin-and-cos-stay-1-while-tan-doesn-t": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/where-does-the-calculator-s-0-6018-come-from": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-is-it-called-sine": {
-"archetype": "geometry",
+"archetype": "table",
 "priority": 15,
-"notes": "",
-"reviewed": false
+"notes": "History: the half-chord and the word copy are recorded; the misreading jiba to jaib is the standard explanation, so labelled as such.",
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/solve-a-right-triangle": {
 "archetype": "stepper",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/how-accurate-is-my-answer": {
-"archetype": "discrete",
+"archetype": "table",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/angles-of-elevation-and-depression": {
 "archetype": "geometry",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/height-from-two-sightings": {
 "archetype": "geometry",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-does-light-bend-refraction": {
-"archetype": "discrete",
+"archetype": "rays",
 "priority": 15,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/right-triangle-ratios/why-is-a-wake-v-shaped": {
-"archetype": "space3d",
+"archetype": "sim",
 "priority": 15,
-"notes": "",
-"reviewed": false
+"notes": "Simple cone is exact for non-dispersive waves; boat wakes follow Kelvin 19.5 degrees, noted on the page.",
+"reviewed": true
 },
 "trigonometry/unit-circle/why-do-we-need-a-circle-at-all": {
 "archetype": "geometry",

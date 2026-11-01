@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A boat, a jet and a fast particle all leave a V behind them. Change how much faster the source is than its waves, and watch the V narrow.{% endblock %}
+{% block why_text %}Each ring is a wave sent out earlier from a point the source has since left. In the time t the ring grows to a radius v_slow × t, while the source moves on by v_fast × t. The tangent from the source to a ring makes a right triangle with the ring's radius opposite the angle. So sin(θ/2) = v_slow ÷ v_fast, and every ring touches the same two lines.{% endblock %}
+{% block try_items %}
+<li>Choose "Jet in air" at × 1.5. Read the angle. Double the ratio to × 3. Is the V exactly half as wide? Why not?</li>
+<li>Slide the ratio towards 1.1. How wide does the V get? What happens at exactly 1?</li>
+<li>Choose the particle in water. Why is the ratio so small, only about × 1.3?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This simple V is exact for waves that all travel at one speed, like sound in air or light in water. A real boat's wake is more complicated, because water waves of different lengths travel at different speeds, and the real wake has a half-angle of about 19.5° whatever the boat's speed. A fast particle in water gives a cone of light, called Cherenkov radiation. The speeds and ratios here are for illustration.
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Draw a triangle with a 37° angle and measure it with a ruler. How close does opposite ÷ hypotenuse get to the calculator's sin 37°?{% endblock %}
+{% block why_text %}The ratio depends only on the angle, so every 37° triangle gives the same number. A ruler can only read to the nearest millimetre, so each measurement is a little off. A small triangle shows that error badly. A large triangle shrinks it, because half a millimetre is a tiny part of a long side. The calculator's 0.6018 is what the ratio would be with no ruler error at all.{% endblock %}
+{% block try_items %}
+<li>Start with a 10 cm hypotenuse. What ratio do you get? How far is it from 0.6018?</li>
+<li>Slide the hypotenuse up to 100 cm. Does the ratio get closer to 0.6018?</li>
+<li>Look at the dashed band. Do the dots always stay inside it?</li>
+{% endblock %}

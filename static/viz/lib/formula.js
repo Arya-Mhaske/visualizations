@@ -36,7 +36,8 @@ export function plainTex(tex) {
     .replace(/[{}]/g, '');
 }
 
-export function renderTex(el, tex, { display = false } = {}) {
+export function renderTex(el, source, { display = false } = {}) {
+  const tex = source.replace(/−/g, '-');
   el.textContent = plainTex(tex);
   loadKatex().then((katex) => {
     if (katex) katex.render(tex, el, { throwOnError: false, displayMode: display });
@@ -57,7 +58,7 @@ export function liveFormula(el, build) {
   });
   return {
     update(state) {
-      latest = build(state);
+      latest = build(state).replace(/−/g, '-'); // fixed() prints a true minus sign; TeX wants a hyphen
       paint();
     },
   };

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stand at corner A, then at corner B. The two legs swap names. See what happens to sine and cosine.{% endblock %}
+{% block why_text %}The two acute angles of a right triangle add up to 90°, so each is the complement of the other. From corner A the vertical leg is opposite. From corner B the same leg is adjacent. So sin of one angle is cos of the other: cos θ = sin(90° − θ). "Cosine" is short for "complement's sine".{% endblock %}
+{% block try_items %}
+<li>Set the angle at A to 30°. Read sin A and cos B. Are they the same?</li>
+<li>Switch to corner B. Which leg is now opposite?</li>
+<li>Set A = 45°. Why are sin and cos equal here?</li>
+{% endblock %}

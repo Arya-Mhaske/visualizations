@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Walk towards a building and watch the angle to its top grow. Then climb to the roof and look back down.{% endblock %}
+{% block why_text %}The line of sight, the horizontal and the wall of the building make a right triangle. The side next to the angle is your distance d, and the side opposite is the height above your eye. So tan θ = height ÷ d, which gives height = d tan θ. The angle of depression from the roof equals the angle of elevation from the ground, because the horizontal lines are parallel.{% endblock %}
+{% block try_items %}
+<li>Stand 40 m away from a 30 m building. Read the angle. Then walk to 20 m. How does the angle change?</li>
+<li>Switch to the roof. Is the angle of depression equal to the angle of elevation at the same distance?</li>
+<li>Use the angle and the distance only, and work out the height by hand. Does it match the readout?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The observer's eye is 1.6 m above the ground. The horizontal dashed line is at eye level, so the angle is measured from there, and the 1.6 m is added back to get the full height.
+</div>
+{% endblock %}

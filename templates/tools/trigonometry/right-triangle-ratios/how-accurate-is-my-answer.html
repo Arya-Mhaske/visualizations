@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}An angle measured to the nearest degree cannot give a side to six figures. Match the precision of the angle with the figures you keep.{% endblock %}
+{% block why_text %}If an angle is only known to within half of its last unit, the side you compute from it can be wrong by a matching share. A share of about 1% means two figures are worth keeping. A share of about 0.1% means three. This gives the rule in the book: angle to the nearest 1° pairs with 2 figures, 10′ with 3, 1′ with 4 and 10″ with 5.{% endblock %}
+{% block try_items %}
+<li>Choose "nearest 1°". How big is the error from the angle? Is it close to the error from two figures?</li>
+<li>Go down the four rows. Each extra figure makes the error roughly six to ten times smaller. Do both bars shrink together?</li>
+<li>Change the angle A to 75°. The coral bar gets shorter than the blue one. Why does an angle near 90° matter less?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The pairing is a rule of thumb. It works best for angles in the middle of the range. Near 0° and 90° the two errors drift apart, because the sine changes at a different pace there.
+</div>
+{% endblock %}

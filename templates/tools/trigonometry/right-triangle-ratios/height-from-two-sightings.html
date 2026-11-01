@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}You cannot walk up to the base of a tower, so you cannot measure the distance. Sight the top twice, from two spots a known distance apart.{% endblock %}
+{% block why_text %}Both sightings use the same unknown height h. From the near spot the distance to the base is h ÷ tan α, and from the far spot it is h ÷ tan β. The two distances differ by exactly the step s. That gives one equation with one unknown: h(cot β − cot α) = s. So the angles and the step are enough, with no need to reach the base.{% endblock %}
+{% block try_items %}
+<li>Leave "whole degrees" off. Does the estimate match the true height exactly?</li>
+<li>Switch "whole degrees" on. How far off is the answer now? Make the step s longer. Does the error shrink?</li>
+<li>Set s very short, such as 10 m. Why do small errors in the angles hurt more?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  This is the same idea as the textbook problem in which the unknown distance is written as an extra length x, and two right triangles share the same height. Heights are measured from the observer's eye level.
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Tell the tool the two parts you know. Press Next step to see which ratio finds each missing part.{% endblock %}
+{% block why_text %}Two known parts, one of them a side, fix a right triangle completely. Choose the ratio that links what you know to what you want. Sine, cosine and tangent each connect one angle and two sides. Pythagoras connects three sides. The check at the end catches slips.{% endblock %}
+{% block try_items %}
+<li>Choose "c and A" with c = 10 and A = 35°. Which ratio finds a? Which finds b?</li>
+<li>Choose "a and b". Which step needs an inverse button on the calculator?</li>
+<li>Choose "c and a" and raise a towards c. What happens to A, and why can a never pass c?</li>
+{% endblock %}

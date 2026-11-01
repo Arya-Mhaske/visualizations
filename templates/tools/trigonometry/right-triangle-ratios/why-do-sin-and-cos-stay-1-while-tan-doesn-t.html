@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Keep the hypotenuse at 1 and tilt the triangle towards 90°. Watch the three values.{% endblock %}
+{% block why_text %}Sine and cosine divide a leg by the hypotenuse. The hypotenuse is always the longest side, so these fractions can never pass 1. Tangent divides one leg by the other leg. As θ nears 90° the adjacent leg shrinks towards 0, and dividing by something tiny gives something huge. So tan has no upper limit.{% endblock %}
+{% block try_items %}
+<li>Slide θ to 89°. How large is tan θ? And at 89.9°?</li>
+<li>Find an angle where sin θ and cos θ are both below 1 but their sum is more than 1.</li>
+<li>Find the angle where tan θ = 1. What do sin θ and cos θ equal there?</li>
+{% endblock %}

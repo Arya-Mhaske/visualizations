@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Move the incoming ray and change the material. Which quantity stays fixed, the angles or something else?{% endblock %}
+{% block why_text %}The two angles change from ray to ray, and so does their ratio α ÷ β. What stays the same is sin α ÷ sin β. It depends only on the two materials. That constant is the refractive index n, and the rule is Snell's law. It is also why the plot of sin β against sin α is a straight line through the origin.{% endblock %}
+{% block try_items %}
+<li>In water, try α = 20°, 40° and 60°. Does α ÷ β stay the same? Does sin α ÷ sin β?</li>
+<li>Switch to diamond. Does the ray bend more or less towards the normal?</li>
+<li>Set α near 85°. What is the largest β you can get in water? Why does it stop well short of 90°?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The indices are for yellow light: water 1.33, glass 1.5, diamond 2.42, with air taken as 1. The rule is a law found by experiment. Later it can be explained by light travelling at different speeds in different materials.
+</div>
+{% endblock %}

@@ -232,6 +232,12 @@ If you write a helper twice, move it here. Keep each tool's JS under 25 KB.
 - `functions-graphs/_properties-library-math.js`: `parityOf` (the domain must be symmetric too, so √x is neither), `mirrorY`/`halfTurn`, `SHAPES`/`turningPoints`/`stretches` (exact slopes, bisected sign changes),
   `LIBRARY` of eight parents with `increasingOn`, `buildPieces`/`coefficients` (three straight pieces, a jump at each break and an owner for each break point), `MOTIONS`/`averageRate`, and the tax `SLABS`/`tax`/`marginalRate`.
   The tax slabs are the 2025–26 new-regime example in lakh rupees, and the page says they are illustrative. Check that a plot window holds the curve at the slider's ends: first guesses for the cubic and x³ did not.
+- `trigonometry/_right-triangle-math.js` serves the rest of the subject: `sinD/cosD/tanD`, `arrangements`/`trianglesAt` (eight anticlockwise triangles, so one rigid turn-and-slide takes each from the tilted-square layout to the two-squares layout),
+  `RATIOS`/`orderedPairs`/`ratioOf`, `fromCorner`, `growth`, `SIN37`/`measuredRatio` (ruler to the nearest mm, error bound 0.05/L), `STORY`, `solveRight` (four cases), `PRECISION`/`angleSpread`/`roundingSpread` (the book's 2, 3, 4, 5 figures),
+  `elevation`, `heightFromTwo`, `refractAngle` (null past the critical angle) and `WAKES`/`wakeHalfAngle`. Reuse `refractAngle` in `optics/refraction`.
+- `lib/formula.js` now turns the true minus sign that `fixed()` prints into a hyphen before KaTeX sees it (stepper steps too), so tools can put `fixed()` straight into TeX. A stepper with a figure hides unused sliders: collect `#panel .nb-field` after `createStepper`
+  and set `.hidden` by case (see `solve-a-right-triangle`). A gap that must be equal at both ends of a slide (Pythagoras) is easiest to get by moving rigid triangles inside a fixed square.
+  Built without screenshots or test runs, by request: look at all twelve pictures, especially the sliding triangles and the sine story.
 
 ## Box queue
 Tier 1 is orders 1–25; Tier 2 is orders 26–30. The Class XI block runs first, then Class XII, alternating physics and NCERT-order
@@ -256,7 +262,7 @@ it reaches the front of the queue.
 | 9 | `measurement-motion/projectiles` | 9 | 1 | |
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | |
-| 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | |
+| 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | ✓ |
 | 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |
 | 14 | `trigonometry/unit-circle` | 12 | 1 | |
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | |

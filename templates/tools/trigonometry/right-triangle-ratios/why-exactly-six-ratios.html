@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A right triangle has three sides. Choose one for the top of a fraction and another for the bottom. How many different fractions can you make?{% endblock %}
+{% block why_text %}You pick 2 of the 3 sides, and the order matters: 3 × 2 = 6 fractions. Each one depends only on the angle θ, so each gets its own name. The six come in three pairs, because flipping a fraction upside down swaps the top and the bottom: sin and csc, cos and sec, tan and cot. A side divided by itself is always 1, so it needs no name.{% endblock %}
+{% block try_items %}
+<li>Choose opposite ÷ hypotenuse. Which cell lights up in coral, and which cell in blue is its mirror image?</li>
+<li>Pick every pair in turn. Do you ever find a seventh named ratio?</li>
+<li>Choose any ratio and read its reciprocal. Is the product of a ratio and its reciprocal always 1?</li>
+{% endblock %}
