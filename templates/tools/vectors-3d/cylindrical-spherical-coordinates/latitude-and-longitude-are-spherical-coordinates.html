@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Pune is at 18.52° N, 73.86° E. On a globe those are two of the three spherical coordinates. The third is the radius of the Earth.{% endblock %}
+{% block why_text %}Longitude is θ: the angle round the axis from Greenwich. Latitude is measured up from the equator, so φ = 90° − latitude. The distance from the centre is ρ, the same for every place on the surface, about 6371 km.{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Here x points through the equator at Greenwich, and z points to the north pole. Longitudes west of Greenwich are written as 360° minus their value for θ. The Earth is slightly flattened, so 6371 km is an average radius.
+</div>
+{% endblock %}
+{% block try_items %}
+<li>Choose Pune. What are θ and φ? Check that φ plus latitude is 90°.</li>
+<li>Choose Sydney. Why is φ more than 90°?</li>
+<li>Set latitude 90°. What are x and y, and why is θ no longer important?</li>
+{% endblock %}

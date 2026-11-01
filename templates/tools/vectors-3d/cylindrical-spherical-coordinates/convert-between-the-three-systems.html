@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Move the point and read it three ways. The blue line is r, the green line is z, and the coral line is ρ.{% endblock %}
+{% block why_text %}Cylindrical coordinates swap (x, y) for (r, θ) and keep z. Spherical coordinates then swap (r, z) for (ρ, φ). Two right triangles do all the work: r² = x² + y², then ρ² = r² + z².{% endblock %}
+{% block try_items %}
+<li>Set x = 3, y = 4, z = 0. What are r and ρ?</li>
+<li>Set x = 0 and y = 0. What are θ and φ? Why is θ then arbitrary?</li>
+<li>Make z negative. What happens to φ?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Sweep φ from the north pole (0°) down to the south pole (180°). The green ring shows all points with that φ. The blue arc is latitude.{% endblock %}
+{% block why_text %}Measured from the z axis, φ runs from 0° to 180° and the ring radius ρ sin φ is never negative. Every point of the sphere is reached exactly once, with no signs to track. Latitude is the same angle measured from the equator, so φ = 90° − latitude.{% endblock %}
+{% block try_items %}
+<li>Slide φ to 0°, then 90°, then 180°. What is the ring each time?</li>
+<li>Find the φ that gives latitude 0°. Where is that on a globe?</li>
+<li>Try φ = 120°. Is z positive or negative? Is r?</li>
+{% endblock %}

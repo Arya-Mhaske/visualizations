@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage %}<span class="viz-stage__hint">Drag to turn the view</span>{% endblock %}
+{% block lead %}Walk a point round a cylinder or a sphere. In x, y, z every number changes. In the surface's own coordinates, one number stays put.{% endblock %}
+{% block why_text %}A cylinder is "the same distance from the z axis everywhere", so r = 3 says it all. A sphere is "the same distance from the origin everywhere", so ρ = 2 says it all. The shape's own symmetry becomes one short equation.{% endblock %}
+{% block try_items %}
+<li>Move the point on the cylinder. Which of x, y, z change?</li>
+<li>Switch to the sphere and move φ only. Does ρ ever change?</li>
+<li>Write the cylinder x² + y² = 9 in your own words. How does r = 3 say it?</li>
+{% endblock %}
