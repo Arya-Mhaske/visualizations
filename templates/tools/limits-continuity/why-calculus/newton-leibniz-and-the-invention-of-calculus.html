@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Read a timeline of who found what, and why both notations survived.{% endblock %}
+{% block why_text %}Isaac Newton and Gottfried Leibniz both developed calculus in the late 1600s. Newton worked first, but Leibniz published first. A bitter argument over priority followed. Historians now generally agree that each reached the ideas independently. Leibniz's dy/dx and ∫ notation is the one in most mathematics books because it is easy to compute with, and Newton's dot is still used for time rates in physics.{% endblock %}
+{% block try_items %}
+<li>Move the year to 1684. Who has published, and who has not?</li>
+<li>Move to 1712. What was the dispute about?</li>
+<li>Which notation do you meet in your maths textbook, and which in physics?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Dates marked c. are approximate. How much each mathematician owed to earlier work, and exactly when each had which idea, is still discussed by historians.
+</div>
+{% endblock %}

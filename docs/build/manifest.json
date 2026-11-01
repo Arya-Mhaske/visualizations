@@ -3817,61 +3817,61 @@
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/why-do-perpendicular-slopes-multiply-to-1": {
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/why-does-a-vertical-line-have-no-slope": {
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/why-does-a-constant-rate-of-change-make-a-straight-line": {
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/why-is-the-angle-between-lines-tan-theta-m2-m1-1-m1m2": {
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/convert-between-forms-of-a-line": {
 "archetype": "phasor",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/graph-a-line-from-its-equation": {
 "archetype": "stepper",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/distance-from-a-point-to-a-line": {
 "archetype": "stepper",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/collinear-points-from-slopes": {
 "archetype": "stepper",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/lines-slope/linear-models-fares-and-depreciation": {
 "archetype": "plot",
 "priority": 41,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/what-is-a-function/why-must-a-function-give-exactly-one-output": {
 "archetype": "plot",
@@ -5811,133 +5811,133 @@
 "archetype": "space3d",
 "priority": 43,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/what-are-conics/degenerate-conics": {
 "archetype": "geometry",
 "priority": 43,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/what-are-conics/identify-a-conic-from-its-equation": {
 "archetype": "drill",
 "priority": 43,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/why-does-focus-directrix-distance-make-a-parabola": {
 "archetype": "geometry",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/why-do-dishes-collect-signals-at-the-focus": {
 "archetype": "rays",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/focus-and-directrix-from-an-equation": {
 "archetype": "stepper",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/latus-rectum-of-a-parabola": {
 "archetype": "stepper",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/where-to-put-the-receiver": {
 "archetype": "geometry",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/parabola/suspension-bridge-cable": {
 "archetype": "geometry",
 "priority": 45,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/why-do-pins-and-string-draw-an-ellipse": {
 "archetype": "geometry",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/why-is-c2-a2-b2": {
 "archetype": "geometry",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/whispering-gallery": {
 "archetype": "geometry",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/centre-vertices-and-foci": {
 "archetype": "stepper",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/latus-rectum-of-an-ellipse": {
 "archetype": "stepper",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/planet-orbits": {
 "archetype": "geometry",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/ellipse/elliptical-arch-bridge": {
 "archetype": "geometry",
 "priority": 47,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/why-does-a-constant-difference-make-a-hyperbola": {
 "archetype": "geometry",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/why-the-asymptotes-y-b-a-x": {
 "archetype": "geometry",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/why-c2-a2-b2-this-time": {
 "archetype": "geometry",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/graph-a-hyperbola-from-its-equation": {
 "archetype": "stepper",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/locate-a-ship-from-time-differences": {
 "archetype": "geometry",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/hyperbola/comets-on-hyperbolic-paths": {
 "archetype": "geometry",
 "priority": 49,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/rotation-of-axes/why-does-an-xy-term-tilt-the-conic": {
 "archetype": "geometry",
@@ -6291,31 +6291,31 @@
 "archetype": "plot",
 "priority": 51,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/why-calculus/why-is-a-tangent-the-limit-of-secants": {
 "archetype": "plot",
 "priority": 51,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/why-calculus/why-is-speed-right-now-a-limit": {
 "archetype": "plot",
 "priority": 51,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/why-calculus/why-can-infinitely-many-steps-take-finite-time": {
 "archetype": "plot",
 "priority": 51,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/why-calculus/newton-leibniz-and-the-invention-of-calculus": {
 "archetype": "plot",
 "priority": 51,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-limit-idea/why-doesn-t-a-limit-care-about-the-point-itself": {
 "archetype": "plot",

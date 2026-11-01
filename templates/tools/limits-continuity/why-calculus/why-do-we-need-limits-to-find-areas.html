@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fill a circle with polygons of 6, 12, 24 … sides and watch the areas creep towards π.{% endblock %}
+{% block why_text %}The area of a polygon with straight sides can be found exactly. A circle has none, so Archimedes squeezed it between two polygons, one inside and one outside. Doubling the number of sides narrows the gap each time. The areas get as close to π as you like, but in any finite number of steps they never equal it. The number they approach is the limit.{% endblock %}
+{% block try_items %}
+<li>Step the sides from 6 to 96. How wide is the gap at 96?</li>
+<li>Go to 1536 sides. Is the inner polygon area equal to π yet?</li>
+<li>Which polygon, inner or outer, is always below π?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Archimedes used polygons of up to 96 sides to bound π, in about the third century BC. His method used perimeters, but the idea is the same.
+</div>
+{% endblock %}

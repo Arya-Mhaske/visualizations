@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Shrink the time interval: 1 s, 0.1 s, 0.01 s … and the average speeds settle.{% endblock %}
+{% block why_text %}Speed is distance divided by time, but at a single instant no time passes and no distance is covered: 0 ÷ 0. So we find the average speed over shorter and shorter intervals. For a falling stone the average speeds get closer and closer to a single number. That number is the speed at that instant, and it is a limit.{% endblock %}
+{% block try_items %}
+<li>Step Δt down from 1 s to 0.00001 s. How many decimal places have settled?</li>
+<li>Change t. What is the limit of the speeds now?</li>
+<li>Compare with 9.8 × t. Do they agree?</li>
+{% endblock %}

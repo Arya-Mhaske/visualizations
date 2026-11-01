@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Run Zeno's Achilles and the tortoise. The infinitely many catch-up times add to a finite total.{% endblock %}
+{% block why_text %}Zeno said Achilles can never catch the tortoise, because he must first reach where it was, by which time it has moved on, and so on for ever. The stages are infinite in number, but each takes a shorter time than the one before: L/v, L/v², L/v³, … Their total is finite, L/(v − 1), and at that moment Achilles passes the tortoise.{% endblock %}
+{% block try_items %}
+<li>Count 10 stages. How much time is still to come?</li>
+<li>Make Achilles twice as fast as the tortoise. What is the catch-up time?</li>
+<li>Make him much faster. What happens to the total?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Zeno's paradoxes are old puzzles from ancient Greece. Whether Zeno knew a satisfying answer is unknown. The sum of such a series is one of the first uses of limits.
+</div>
+{% endblock %}
