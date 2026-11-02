@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Integrate v and |v| for a walk that turns back.{% endblock %}
+{% block why_text %}Displacement counts backward steps as negative. Distance travelled counts every step as positive. They agree only if you never turn back.{% endblock %}
+{% block try_items %}
+<li>Run the first walk. Where do the two curves split?</li>
+<li>Which walk never turns back?</li>
+<li>Compare the two numbers at the end of the back-and-forth walk.</li>
+{% endblock %}

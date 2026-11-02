@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Integrate the inflow rate of a tank to get the water gained.{% endblock %}
+{% block why_text %}If you know how fast something is changing, the total change is the area under that rate, counting areas below the axis as negative.{% endblock %}
+{% block try_items %}
+<li>Run the pump. How much has the tank gained by 6 minutes?</li>
+<li>Pick the leak. When does the level stop rising?</li>
+<li>Pick the in-out-in case. Is the area signed?</li>
+{% endblock %}
