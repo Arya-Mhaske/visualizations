@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Three measurements cannot lie on one line. Project them onto the plane of lines to find the best fit.{% endblock %}
+{% block why_text %}Three data points give three equations in two unknowns, which usually has no solution. The set of right-hand sides we can reach is a plane in 3D, and b is off it. The best we can do is the closest point p of the plane, found by dropping a perpendicular. Writing that as Aᵀ(b − Ax̂) = 0 gives AᵀAx̂ = Aᵀb.{% endblock %}
+{% block try_items %}
+<li>Make the three points lie exactly on a line. What is the error?</li>
+<li>Turn to the column picture. Is b above the plane?</li>
+<li>Move one point. How does the best line change?</li>
+{% endblock %}

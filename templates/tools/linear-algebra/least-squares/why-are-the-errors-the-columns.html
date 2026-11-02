@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Adjust a line by hand. The errors add up to zero, and weighted by t to zero, only at the best fit.{% endblock %}
+{% block why_text %}The error vector e = b − Ax must be perpendicular to every column of A at the best fit. For a line fit, the columns are the ones and the t values. So the errors sum to zero and the errors weighted by t sum to zero. Those are the two equations AᵀAx̂ = Aᵀb in disguise.{% endblock %}
+{% block try_items %}
+<li>Press "Jump to the best fit". Which readouts go to zero?</li>
+<li>Change only the slope D. Does the sum of errors stay at zero?</li>
+<li>Make the total squared error as small as you can by hand.</li>
+{% endblock %}

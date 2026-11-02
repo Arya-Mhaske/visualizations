@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Trust some measurements more than others by giving them weights.{% endblock %}
+{% block why_text %}Ordinary least squares treats every reading the same, so one wild reading drags the line. Weighted least squares multiplies each error by a weight before squaring, so a reading with a small weight pulls the line less. The equation changes to AᵀWAx̂ = AᵀWb.{% endblock %}
+{% block try_items %}
+<li>Lower the weight of the odd reading. Where does the coral line go?</li>
+<li>Set all the weights equal. Does the weighted line match the ordinary one?</li>
+<li>Raise the weight of the odd reading. What happens?</li>
+{% endblock %}

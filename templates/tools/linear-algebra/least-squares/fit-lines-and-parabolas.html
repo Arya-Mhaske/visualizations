@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fit a line, a parabola and a cubic to the same data and compare their errors.{% endblock %}
+{% block why_text %}Each model is a column space: a line uses the columns 1 and t, a parabola adds t², and so on. Least squares projects the data onto each. A bigger model can never fit worse, because it contains the smaller one, but a curve that fits better may be bending to the noise rather than to the pattern.{% endblock %}
+{% block try_items %}
+<li>Choose "Nearly a line". How much does the parabola improve on the line?</li>
+<li>Choose "A thrown ball". Which model has the smallest typical error?</li>
+<li>Why does the cubic never have a larger error than the parabola?</li>
+{% endblock %}
