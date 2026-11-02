@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Hang a sign from two cables. See what happens to the tension as the cables flatten.{% endblock %}
+{% block why_text %}The two cables share the weight through their upward parts. Each pulls up with T sin φ, so 2T sin φ = W and T = W / (2 sin φ). As φ gets small, sin φ gets small, so T gets large. A perfectly flat cable would need infinite tension.{% endblock %}
+{% block try_items %}
+<li>Set φ = 30°. How does T compare with W?</li>
+<li>Lower φ to 5°. How big does T get?</li>
+<li>Raise the weight. Does the shape of the graph change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The cables are treated as straight, light and perfectly stiff. Real cables stretch and sag.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The dot product from components agrees with the one from lengths and the angle. See why.{% endblock %}
+{% block why_text %}In the triangle with sides u, v and u − v, the law of cosines gives ‖u − v‖² = ‖u‖² + ‖v‖² − 2‖u‖‖v‖ cos θ. Writing the same ‖u − v‖² with components gives ‖u‖² + ‖v‖² − 2(ac + bd). So ac + bd = ‖u‖‖v‖ cos θ. The second form is the length of u’s shadow along v times ‖v‖.{% endblock %}
+{% block try_items %}
+<li>Drag u and v. Do the first two readings ever differ?</li>
+<li>Make u and v perpendicular. What is the dot product?</li>
+<li>Make them point opposite ways. What is its sign?</li>
+{% endblock %}

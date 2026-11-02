@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Shrink or stretch any vector to length 1, then scale it back.{% endblock %}
+{% block why_text %}Dividing a vector by its length leaves its direction alone and makes the length 1. So any vector is its length times its unit vector, v = ‖v‖ v̂. A unit vector is a pure direction.{% endblock %}
+{% block try_items %}
+<li>Drag v to ⟨3, 4⟩. What is the unit vector?</li>
+<li>Set L to the length of v. Where does the blue arrow land?</li>
+<li>Drag v anywhere. Does the green arrow always end on the circle?</li>
+{% endblock %}

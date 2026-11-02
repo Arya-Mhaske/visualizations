@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply a vector by k and watch what happens to its length and direction.{% endblock %}
+{% block why_text %}Multiplying by k multiplies both components by k, so the arrow stays on the same line through the origin. A bigger |k| stretches it. A negative k flips it to the other side. Only a vector multiple of another one can turn it, and a scalar cannot.{% endblock %}
+{% block try_items %}
+<li>Slide k from 0 to 2. What happens to the length?</li>
+<li>Slide k below 0. Which direction does the arrow take?</li>
+<li>Set k = 0. What is left?</li>
+{% endblock %}

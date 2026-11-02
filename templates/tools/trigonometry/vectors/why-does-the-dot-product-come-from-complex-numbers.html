@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply the conjugate of z by w and look at the real part.{% endblock %}
+{% block why_text %}Multiplying (a − bi)(c + di) gives (ac + bd) + (ad − bc)i. The real part ac + bd is exactly the dot product of the arrows ⟨a, b⟩ and ⟨c, d⟩. The imaginary part ad − bc is the cross term, which tells the signed area of the parallelogram. This is where the dot product came from historically.{% endblock %}
+{% block try_items %}
+<li>Set z = w. What is the imaginary part?</li>
+<li>Make z and w perpendicular. What is the real part?</li>
+<li>Swap z and w. What happens to the imaginary part?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The remark about where the dot product came from is a simple summary of the history. The algebra above holds whatever the history was.
+</div>
+{% endblock %}

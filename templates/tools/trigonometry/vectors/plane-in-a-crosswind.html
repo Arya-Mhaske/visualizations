@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Set a heading, an airspeed and a wind. The ground track is the vector sum.{% endblock %}
+{% block why_text %}The plane moves through the air and the air moves over the ground. Add the two velocity vectors tip to tail and the sum is the velocity over the ground. A crosswind does not just slow the plane; it also pushes it off its heading.{% endblock %}
+{% block try_items %}
+<li>Set the wind to 0. What are the ground speed and the track?</li>
+<li>Fly north with a wind from the west. Which way is the track pushed?</li>
+<li>Fly into a head wind. What happens to the ground speed?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Bearings are measured clockwise from north. “Wind from 270°” means wind from the west, blowing towards the east.
+</div>
+{% endblock %}

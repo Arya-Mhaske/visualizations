@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Swing u round v and watch its shadow on v shrink to nothing.{% endblock %}
+{% block why_text %}The dot product is ‖u‖‖v‖ cos θ, the shadow of u on v times the length of v. At 90° the shadow is just a point, so the dot product is 0. So “perpendicular” and “dot product 0” mean the same thing, because cos 90° = 0.{% endblock %}
+{% block try_items %}
+<li>Drag θ from 0° to 180°. Where does u · v change sign?</li>
+<li>At which angle is the shadow longest?</li>
+<li>Change the lengths. Does the zero move?</li>
+{% endblock %}

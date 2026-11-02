@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split u into one part along v and one part at a right angle to v.{% endblock %}
+{% block why_text %}The part of u along v is its shadow on v: (u·v / v·v) v. What is left over is perpendicular to v, because the shadow was chosen to leave a right angle. The two parts add to u.{% endblock %}
+{% block try_items %}
+<li>Drag u to point along v. What is the perpendicular part?</li>
+<li>Make u perpendicular to v. What is the parallel part?</li>
+<li>Check the dot product of the two parts. What is it?</li>
+{% endblock %}

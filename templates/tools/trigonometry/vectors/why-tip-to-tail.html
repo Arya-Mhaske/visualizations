@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Walk along u, then along v. Then do v, then u. See where both journeys end.{% endblock %}
+{% block why_text %}The end of a walk does not depend on which leg you do first. Walking u then v or v then u ends at the same point, and the four sides make a parallelogram. That is why the sum of vectors is the same in either order, and it is done component by component.{% endblock %}
+{% block try_items %}
+<li>Show only “u then v”, then only “v then u”. Do they end in the same place?</li>
+<li>Make u and v point the same way. What does the parallelogram become?</li>
+<li>Make u = −v. Where does the walk end?</li>
+{% endblock %}
