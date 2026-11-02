@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick a band ε around the limit and find the δ window that fits.{% endblock %}
+{% block why_text %}A limit L means: whatever band ε you choose, some window δ around the point keeps the graph inside it. For a real limit a window always exists, however thin the band.{% endblock %}
+{% block try_items %}
+<li>Shrink ε on 2x + 1. Does a δ always exist?</li>
+<li>Pick the jump. Why does no δ work for small ε?</li>
+<li>On the jump, try a claimed L of 0 with a big ε. What changes?</li>
+{% endblock %}

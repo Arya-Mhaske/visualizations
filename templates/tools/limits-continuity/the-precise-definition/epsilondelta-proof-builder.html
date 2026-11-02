@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Write the proof for linear and quadratic examples with each choice explained.{% endblock %}
+{% block why_text %}Work backwards from |f(x) − L| < ε to find δ, then write the proof forwards. The rest is bookkeeping.{% endblock %}
+{% block try_items %}
+<li>Run the linear example with m = 3. What is δ?</li>
+<li>Why does the quadratic need min(1, …)?</li>
+<li>Change ε. Does the proof change?</li>
+{% endblock %}
