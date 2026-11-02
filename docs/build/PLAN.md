@@ -443,7 +443,7 @@ it reaches the front of the queue.
 | 106 | `exponentials-logs/money-finance` | 7 | 1 | ✓ |
 | 107 | `electrostatics/electric-charge` | 7 | 1 | ✓ |
 | 108 | `functions-graphs/combining-inverting` | 12 | 1 | ✓ |
-| 109 | `electrostatics/coulomb-s-law` | 5 | 1 | |
+| 109 | `electrostatics/coulomb-s-law` | 5 | 1 | ✓ |
 | 110 | `trigonometry/inverses-equations` | 12 | 1 | ✓ |
 | 111 | `electrostatics/electric-field-field-lines` | 6 | 1 | ✓ |
 | 112 | `systems-matrices/matrices-row-reduction` | 4 | 1 | ✓ |
@@ -634,3 +634,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/_mfp.js`: 2D hard discs with a tagged disc (`createDisks`, `mfp2d`). The 2D free path is 1/(sqrt2 · 2d · n): checked in Node, the measured path/collisions is within about 15% for N = 30, 60 (2.57 vs 2.36, 1.00 vs 1.18); at N = 120 it falls 25% short because the strip is crowded. The 3D tube tool uses fixed seeded points and takes the first n·V of them.
 
 - `electrostatics/_charge.js` has `mark` (a + or − chip) and `E`. `electric-charge` (7 tools) is mostly drawn on raw canvas with made-up round numbers where stated (holding strengths, shock model, leaf angle).
+
+- `electrostatics/_coulomb.js`: SI constants, `forceUcCm` (µC and cm to newtons), `pithAngle` (bisection of kq²/(2L sinθ)² = mg tanθ) and `pithCharge`. Checked in Node: Fe/Fg = 2.27e39 (e–p), 1.23e36 (p–p); the default pith balls hang at 7.6°.

@@ -2100,31 +2100,31 @@
 "archetype": "chance",
 "priority": 112,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/coulomb-s-law/why-does-gravity-lose-to-electricity-by-1039": {
 "archetype": "space3d",
 "priority": 112,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/coulomb-s-law/why-can-forces-from-many-charges-simply-be-added": {
 "archetype": "sim",
 "priority": 112,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/coulomb-s-law/net-force-on-a-charge": {
 "archetype": "stepper",
 "priority": 112,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/coulomb-s-law/two-charged-pith-balls": {
 "archetype": "sim",
 "priority": 112,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-field-field-lines/why-invent-a-field-at-all": {
 "archetype": "sim",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the net force on a test charge near two sources, using components.{% endblock %}
+{% block why_text %}Each force has size kq₁q₂/r² and points along the line between the charges: away from a like charge, towards an unlike one. Split each into x and y parts using the geometry, add the x parts and add the y parts, then rebuild the net force from the two sums.{% endblock %}
+{% block try_items %}
+<li>Put the test charge at x = 0.5, y = 0.5 with A = +2, B = −2. Which way is the net force?</li>
+<li>Make A and B equal. Where is the x component zero?</li>
+<li>Check that |F| matches the square root of Fx² + Fy².</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A charge sends out a fixed number of field lines. See how thinly they spread as you go away.{% endblock %}
+{% block why_text %}The lines from a charge spread over a sphere of area 4πr². The same lines over four times the area at twice the distance means a quarter of the line density, and the field and force go the same way: F ∝ 1/r². Gravity has the same shape, because its field lines also spread over spheres.{% endblock %}
+{% block try_items %}
+<li>Go from r = 1 to r = 2. How many squares does the wall have? What happens to the force?</li>
+<li>Go from r = 2 to r = 4. By what factor does the force fall?</li>
+<li>Double the charge at one distance. What happens to the force?</li>
+{% endblock %}
