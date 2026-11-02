@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick any entry below the top. Its two parents are marked, and they add up to it.{% endblock %}
+{% block why_text %}In (a + b)ⁿ, look at what the last bracket gives. If it gives a, the other n − 1 brackets must give r bs: C(n − 1, r) ways. If it gives b, the other n − 1 brackets must give r − 1 bs: C(n − 1, r − 1) ways. All the ways are one or the other, so C(n, r) = C(n − 1, r − 1) + C(n − 1, r).{% endblock %}
+{% block try_items %}
+<li>Pick the 10 in row 5. Which two entries add up to it?</li>
+<li>Pick an end entry. How many parents does it have?</li>
+<li>Check three entries yourself.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use the general term to find one term of (px + qy)ⁿ without expanding everything.{% endblock %}
+{% block why_text %}The term with r factors of the second bracket is T<sub>r+1</sub> = C(n, r) (px)ⁿ⁻ʳ (qy)ʳ. Its numerical coefficient is C(n, r) pⁿ⁻ʳ qʳ. Put x = y = 1 and the coefficients of all terms add up to (p + q)ⁿ.{% endblock %}
+{% block try_items %}
+<li>Find the 4th term of (2x + y)⁶. (Hint: r = 3.)</li>
+<li>Check that the bars add to (p + q)ⁿ.</li>
+<li>Make q negative. What happens to the signs?</li>
+{% endblock %}

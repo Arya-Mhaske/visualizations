@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}The Meru Prastara, "staircase of Mount Meru", is the triangle of numbers that Europe later called Pascal's. Add along the rows and along the slanting diagonals.{% endblock %}
+{% block why_text %}The sum of row n is 2ⁿ, the number of ways to choose any subset. The sums along the shallow diagonals are the Fibonacci numbers 1, 1, 2, 3, 5, 8, …, which count the ways to build a metre of long and short syllables. These patterns are described in the Sanskrit tradition of studying metres.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Halāyudha (10th century) explained the Meru Prastara in his commentary on Pingala's Chandaḥśāstra. Attributing the idea to Pingala himself, much earlier, is disputed. The triangle was known in several countries long before Pascal.</p></div>{% endblock %}
+{% block try_items %}
+<li>Choose row sums. What do the sums of rows 0 to 8 look like?</li>
+<li>Choose diagonals. What numbers do you get?</li>
+<li>Why do long and short syllables lead to Fibonacci numbers?</li>
+{% endblock %}

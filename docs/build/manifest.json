@@ -5549,37 +5549,37 @@
 "archetype": "discrete",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/why-does-each-entry-add-the-two-above-it": {
 "archetype": "discrete",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/a-b-3-as-a-cube": {
 "archetype": "discrete",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/find-a-specific-term": {
 "archetype": "discrete",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/meru-prastara-pascal-s-triangle-in-india": {
 "archetype": "discrete",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/compare-huge-powers-without-a-calculator": {
 "archetype": "phasor",
 "priority": 33,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/why-do-we-multiply-choices": {
 "archetype": "discrete",

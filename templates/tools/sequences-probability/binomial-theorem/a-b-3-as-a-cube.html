@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A cube of side a + b can be taken apart into 8 blocks. They fall into four kinds: 1, 3, 3 and 1 of them.{% endblock %}
+{% block why_text %}One big cube a³, three slabs a²b, three rods ab² and one small cube b³. So (a + b)³ = a³ + 3a²b + 3ab² + b³, and the coefficients 1, 3, 3, 1 count the blocks of each kind. The square (a + b)² splits into a², two ab and b² in the same way.{% endblock %}
+{% block try_items %}
+<li>Make a = 3 and b = 1. Check that the pieces add up to 4³.</li>
+<li>Make b larger than a. Which block is biggest?</li>
+<li>Count the blocks of each kind.</li>
+{% endblock %}

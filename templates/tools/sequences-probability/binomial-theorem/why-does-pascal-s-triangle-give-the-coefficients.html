@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Press a number in Pascal's triangle to pick a row n and a place r. See which term of (a + b)ⁿ it is.{% endblock %}
+{% block why_text %}Expanding (a + b)ⁿ means choosing a or b from each of n brackets. The number of ways to choose b from exactly r of them is C(n, r), and that is the coefficient of aⁿ⁻ʳbʳ. Row n of Pascal's triangle lists C(n, 0), C(n, 1), …, C(n, n).{% endblock %}
+{% block try_items %}
+<li>Press the 6 in row 4. Which term of (a + b)⁴ is it?</li>
+<li>Read row 3 and write (a + b)³.</li>
+<li>Compare rows. What do the end numbers always equal?</li>
+{% endblock %}

@@ -364,7 +364,7 @@ it reaches the front of the queue.
 | 27 | `forces-energy/potential-energy-conservation` | 9 | 1 | ✓ |
 | 28 | `sequences-probability/counting` | 8 | 1 | ✓ |
 | 29 | `forces-energy/power` | 5 | 1 | ✓ |
-| 30 | `sequences-probability/binomial-theorem` | 6 | 1 | |
+| 30 | `sequences-probability/binomial-theorem` | 6 | 1 | ✓ |
 | 31 | `forces-energy/collisions` | 7 | 1 | |
 | 32 | `sequences-probability/sequences` | 3 | 1 | |
 | 33 | `rotation-gravitation/centre-of-mass` | 7 | 1 | |
@@ -694,3 +694,5 @@ it reaches the front of the queue.
 - `forces-energy/power`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
 
 - `sequences-probability/_counting.js` serves the counting and binomial boxes (`nPr`, `nCr`, `multichoose`, `permutations`, `combos`, `letterCounts`, `distinctArrangements`, `term`, `fib`; MISSISSIPPI gives 34650). Tools whose grid size changes rebuild their `cellGrid` inside `refresh`. Built without screenshots or tests, by request.
+
+- `sequences-probability/binomial-theorem`: Meru Prastara tool labels the Halayudha and Pingala attribution as disputed. Built without screenshots or tests, by request.

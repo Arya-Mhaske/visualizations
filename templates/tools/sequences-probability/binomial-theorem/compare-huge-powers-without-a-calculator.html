@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Is (1.01)^1 000 000 bigger than 10 000? Use only the first two terms of the binomial expansion.{% endblock %}
+{% block why_text %}(1 + x)ⁿ = 1 + nx + (positive terms). So (1 + x)ⁿ is at least 1 + nx. Here that is 1 + 10⁶ × 0.01 = 10 001, which is already more than 10 000. We never needed to compute the huge power.{% endblock %}
+{% block try_items %}
+<li>Check 1 + 10⁶ × 0.01 = 10 001.</li>
+<li>Lower n. Is the bound still below the exact value?</li>
+<li>Make x tiny. When does the bound stop being useful?</li>
+{% endblock %}
