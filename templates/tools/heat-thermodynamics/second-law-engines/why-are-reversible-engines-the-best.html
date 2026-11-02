@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Claim an engine X better than Carnot. Couple it to a Carnot engine run backwards and see what happens.{% endblock %}
+{% block why_text %}Engine X takes Q₁ from the hot place and gives work W. A reversed Carnot engine uses that W to move heat back up. If X beats Carnot, the reversed engine returns more than Q₁, and the pair moves heat from cold to hot with no outside work. That breaks the Clausius statement. So no engine beats a reversible one.{% endblock %}
+{% block try_items %}
+<li>Set X's efficiency below Carnot. Does the pair move heat uphill for free?</li>
+<li>Raise it above the Carnot value. What is the net heat to the hot place?</li>
+<li>Change the temperatures. How does the Carnot limit move?</li>
+{% endblock %}

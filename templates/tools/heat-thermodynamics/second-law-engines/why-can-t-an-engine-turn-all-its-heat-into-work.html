@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Try to build an engine that uses one hot reservoir only. Then lower the return temperature and see what changes.{% endblock %}
+{% block why_text %}An engine must return to its start to run again. On one reservoir the gas goes out and back along the same curve, so the work gained on the way out is paid back on the way in: net work zero. Net work needs a cheaper return, and that needs a colder place to dump some heat Q₂. So no engine can turn all its heat into work (Kelvin–Planck).{% endblock %}
+{% block try_items %}
+<li>Set T₂ = 500 K. What is the net work?</li>
+<li>Lower T₂ in steps. What happens to Q₂ and to W?</li>
+<li>Can you reach W = Q₁? What T₂ would that need?</li>
+{% endblock %}

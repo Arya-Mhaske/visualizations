@@ -1649,49 +1649,49 @@
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/why-doesn-t-heat-flow-from-cold-to-hot-on-its-own": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/why-are-reversible-engines-the-best": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/why-is-carnot-efficiency-1-t2-t1-whatever-the-gas": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/why-are-real-processes-irreversible": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/carnot-cycle-animator": {
 "archetype": "phasor",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/car-engine-versus-power-station": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/how-good-is-a-refrigerator": {
 "archetype": "sim",
 "priority": 84,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/the-atomic-hypothesis-from-kanada-to-feynman": {
 "archetype": "sim",

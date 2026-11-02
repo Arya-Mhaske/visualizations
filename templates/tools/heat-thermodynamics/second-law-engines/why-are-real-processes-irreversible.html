@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A Carnot engine needs heat to flow with no temperature gap, which takes forever. Add a gap and friction and watch what you lose.{% endblock %}
+{% block why_text %}Heat only flows across a temperature gap, and the bigger the gap the faster it flows. So an engine that runs at any useful speed must work with its gas a little cooler than the hot source and a little hotter than the cold sink. That already lowers the efficiency. Friction wastes more work. Only a gap of zero and no friction reaches the Carnot limit, and then the engine delivers no power.{% endblock %}
+{% block try_items %}
+<li>Set δ = 0. What is the efficiency, and what is the power?</li>
+<li>Slide δ up. Where is the power greatest?</li>
+<li>Add friction. What happens to the efficiency curve?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Heat flow is taken as proportional to the gap. Relative power is the heat rate times the efficiency, scaled so its peak is 1.</div>{% endblock %}

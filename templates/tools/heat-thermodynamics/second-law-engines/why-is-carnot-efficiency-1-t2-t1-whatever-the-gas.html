@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Run the Carnot cycle, swap the gas, and see whether the efficiency changes.{% endblock %}
+{% block why_text %}On the two adiabats the gas goes between the same two temperatures, so the volume ratio on the cold isotherm equals the one on the hot isotherm. The logarithms cancel, and Q₂/Q₁ = T₂/T₁. The gas (γ) shapes the loop but not the ratio. Efficiency 1 − T₂/T₁ reaches 1 only if T₂ is 0 K.{% endblock %}
+{% block try_items %}
+<li>Switch from monatomic to diatomic. Does the loop change? Does η?</li>
+<li>Raise T₁. What happens to η?</li>
+<li>Lower T₂ to 100 K. How close to 100% can you get?</li>
+{% endblock %}

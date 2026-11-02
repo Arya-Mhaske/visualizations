@@ -415,7 +415,7 @@ it reaches the front of the queue.
 | 78 | `functions-graphs/quadratic-functions` | 8 | 1 | ✓ |
 | 79 | `heat-thermodynamics/thermodynamic-processes` | 5 | 1 | ✓ |
 | 80 | `functions-graphs/polynomial-functions` | 11 | 1 | ✓ |
-| 81 | `heat-thermodynamics/second-law-engines` | 8 | 1 | |
+| 81 | `heat-thermodynamics/second-law-engines` | 8 | 1 | ✓ |
 | 82 | `functions-graphs/rational-functions` | 7 | 1 | ✓ |
 | 83 | `heat-thermodynamics/kinetic-theory-of-gases` | 7 | 1 | |
 | 84 | `functions-graphs/modelling-with-data` | 6 | 1 | ✓ |
@@ -624,3 +624,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/_thermo.js` serves the thermodynamics boxes: P in kPa and V in L so P·V is in J; `simpson`, `isoP`/`adiaP`, `workIsobaric/Isothermal/Adiabatic`, `gammaOf(f)`, `dU(f, ...)`. NCERT sign convention: dU = Q - W, W by the gas. `first-law` (6 tools) done; the pump tool slides the exponent from 1 to 1.4 with speed (a labelled model).
 
 - `heat-thermodynamics/_proc.js`: `end`, `work`, `curve` for the four basic processes (f = volume ratio, pressure ratio for isochoric). `why-does-quasi-static-matter` is a two-chamber isothermal gas with a leaky pipe (rate 0.3/s), RK4; checked in Node: extra work 134 J at 0.5 s, 25 J at 30 s, always > 0.
+
+- `heat-thermodynamics/_engines.js`: `carnot(T1, T2, gamma, r)` (points A–D, four curve functions, Q1, Q2, W, loop area, eta; checked in Node: area = W and eta = 1 - T2/T1 for both gases), `drawCycle`, `copFridge`, `carnotEta`. The Clausius tool uses a Q/T ledger (entropy named only in a note).

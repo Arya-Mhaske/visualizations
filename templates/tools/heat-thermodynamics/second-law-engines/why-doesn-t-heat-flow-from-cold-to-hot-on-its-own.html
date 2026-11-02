@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take heat out of a cold place and put it into a hot one. Find out how much work that costs.{% endblock %}
+{% block why_text %}Heat leaving a cold place takes away a lot of "disorder" (Q/T is large when T is small). Heat arriving at a hot place adds less per joule. With no work the ledger falls, which never happens on its own. Adding work puts in extra heat, and when the ledger stops falling the move becomes possible. That is why a fridge needs a motor.{% endblock %}
+{% block try_items %}
+<li>Set work to 0. Is the move allowed?</li>
+<li>Raise the work until the ledger is no longer negative. What is the least work?</li>
+<li>Make the two temperatures closer. Does it get easier or harder?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>The ledger is the change of entropy, ΔS = ΔQ/T. The second law says the total never decreases.</div>{% endblock %}

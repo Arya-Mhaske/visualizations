@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A fridge uses work W to move heat Q_c out of the cold inside. The coefficient of performance is Q_c ÷ W.{% endblock %}
+{% block why_text %}The best a fridge can do is a reversed Carnot engine: COP = T_c/(T_h − T_c). The colder you make the inside, or the hotter the room, the larger the temperature gap and the smaller the COP. A real fridge reaches only a share of the ideal. All the heat removed plus the work done ends up in the room.{% endblock %}
+{% block try_items %}
+<li>Lower the inside temperature to −20 °C. What happens to the COP?</li>
+<li>Raise the room temperature. Does the fridge work harder?</li>
+<li>Find the electrical work needed to remove 1000 J at your settings.</li>
+{% endblock %}
