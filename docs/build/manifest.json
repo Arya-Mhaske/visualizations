@@ -941,31 +941,31 @@
 "archetype": "phasor",
 "priority": 46,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/angular-momentum/why-does-a-particle-moving-straight-have-constant-l": {
 "archetype": "sim",
 "priority": 46,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/angular-momentum/why-does-a-spinning-bicycle-wheel-precess": {
 "archetype": "sim",
 "priority": 46,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/angular-momentum/where-does-the-skater-s-extra-ke-come-from": {
 "archetype": "phasor",
 "priority": 46,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/angular-momentum/divers-acrobats-and-pirouettes": {
 "archetype": "chance",
 "priority": 46,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/kepler-s-laws/why-are-orbits-ellipses": {
 "archetype": "sim",

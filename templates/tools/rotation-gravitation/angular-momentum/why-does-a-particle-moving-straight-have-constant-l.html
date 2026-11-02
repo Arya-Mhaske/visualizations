@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A particle moves at constant velocity along a straight line. Its angular momentum about a fixed point stays the same, even though its position changes.{% endblock %}
+{% block why_text %}L = r × mv = m v r sin θ. The quantity r sin θ is the perpendicular distance d from the point to the line of motion, which never changes. So L = m v d is constant for a particle with no force on it. Angular momentum depends on the line, not on where the particle is on the line.{% endblock %}
+{% block try_items %}
+<li>Slide the particle along its path. Does L change?</li>
+<li>Increase d. What happens to L?</li>
+<li>Set d = 0. What is L?</li>
+{% endblock %}
