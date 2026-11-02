@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Solve two remainder conditions together and see why the answer repeats every m × n.{% endblock %}
+{% block why_text %}The numbers that fit the first condition repeat every m. Looking at them mod n, they cycle through the remainders and, when m and n are coprime, hit every remainder exactly once before repeating. So exactly one fits the second condition, and the pair of conditions has one solution mod mn.{% endblock %}
+{% block try_items %}
+<li>Use x ≡ 2 (mod 3) and x ≡ 3 (mod 5). What is x?</li>
+<li>Pick two moduli with a common factor, such as 4 and 6. Can you create a case with no solution?</li>
+<li>Make m = 7 and n = 11. How long can the list get?</li>
+{% endblock %}

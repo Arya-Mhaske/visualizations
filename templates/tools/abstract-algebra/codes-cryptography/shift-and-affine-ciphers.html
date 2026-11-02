@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Encrypt a message with a shift or affine cipher, then break it by counting letters.{% endblock %}
+{% block why_text %}These ciphers just rename letters, so the letter counts keep the shape of English. The commonest ciphertext letter stands for E, which gives away the key. Only 26 shifts or 312 affine keys exist, so a computer tries them all in an instant.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> These are classroom ciphers and give no real protection.</div>{% endblock %}
+{% block try_items %}
+<li>Use a shift of 3. Does the guess by the commonest letter find it?</li>
+<li>Switch to the affine cipher. Does the bar chart keep its shape?</li>
+<li>Try a = 1 in the affine cipher. What does it turn into?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Grow the secret primes and compare the work to use the keys with the work to break them.{% endblock %}
+{% block why_text %}Encrypting and decrypting take only a few dozen steps, however large n is. Breaking n means finding its factors, and the work for that grows with the size of the primes. Publishing (n, e) is safe because the only known easy road to φ(n) goes through the factors.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Trial division is the simplest attack. Real attacks are cleverer, which is why real keys use primes with hundreds of digits.</div>{% endblock %}
+{% block try_items %}
+<li>Set the primes to 8 bits. How many steps does the attacker need?</li>
+<li>Raise the bits to 20. How do the bars change?</li>
+<li>Change the message. Does the decrypted number match?</li>
+{% endblock %}

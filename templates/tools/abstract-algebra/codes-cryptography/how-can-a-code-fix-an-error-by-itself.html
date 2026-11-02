@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Flip a bit in a Hamming codeword and watch the parity checks point at it.{% endblock %}
+{% block why_text %}Each of the three checks covers a different set of positions, chosen so that every position has its own pattern of failed checks. Read the failed checks as a binary number and you get the position of the wrong bit.{% endblock %}
+{% block try_items %}
+<li>Flip position 5. Which checks fail?</li>
+<li>Flip position 4. Does the syndrome change?</li>
+<li>Set the flip to 0. What does the syndrome say?</li>
+<li>Change the data bits. Does the diagnosis still find the flipped bit?</li>
+{% endblock %}

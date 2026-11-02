@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick small primes, make keys and send a number through the whole RSA cycle.{% endblock %}
+{% block why_text %}Anyone can compute m^e mod n, but undoing it needs d, and d comes from φ(n) = (p − 1)(q − 1). With tiny primes you can factor n by eye. With huge primes you cannot.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Real RSA also adds padding to the message. This is only the arithmetic idea.</div>{% endblock %}
+{% block try_items %}
+<li>Use p = 7 and q = 11. What is n, and what is φ(n)?</li>
+<li>Change e. Does the decrypted number stay the same?</li>
+<li>Try other messages. What happens to a message bigger than n?</li>
+{% endblock %}
