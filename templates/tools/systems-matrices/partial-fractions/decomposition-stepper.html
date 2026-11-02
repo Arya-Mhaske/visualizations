@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Cover the four cases: linear, repeated, quadratic and repeated quadratic factors.{% endblock %}
+{% block why_text %}Distinct linear factors each get a constant over them. A repeated factor gets a term for every power up to the repeat. A quadratic factor that cannot be split gets a linear numerator. A repeated quadratic gets a linear numerator for every power. Then multiply through and find the constants by substituting values or comparing coefficients.{% endblock %}
+{% block try_items %}
+<li>Pick the repeated factor. Which values make the work short?</li>
+<li>Pick the quadratic factor. Why is the top Bx + C?</li>
+<li>Check at different values of x. Does the sum always match?</li>
+{% endblock %}

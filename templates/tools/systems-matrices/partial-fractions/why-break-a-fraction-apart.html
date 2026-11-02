@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Reverse fraction addition: the graph equals the sum of simple pieces.{% endblock %}
+{% block why_text %}Adding A/(x − p) and B/(x − q) over a common denominator gives a single fraction with a linear top. Partial fractions run that backwards: for a given fraction, find the A and B that make it. The graph of the whole is exactly the sum of the graphs of the pieces, and each piece is easier to handle.{% endblock %}
+{% block try_items %}
+<li>Switch off the pieces and compare the dashed curve with the whole.</li>
+<li>Make p = q. What goes wrong?</li>
+<li>Where does each piece blow up?</li>
+{% endblock %}
