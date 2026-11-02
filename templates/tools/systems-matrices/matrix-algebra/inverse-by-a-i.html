@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Row-reduce [A | I] to [I | A⁻¹], then solve AX = B with the inverse.{% endblock %}
+{% block why_text %}Every row operation is a multiplication by an elementary matrix. The same operations that turn A into I turn I into the inverse. Once you have A⁻¹, the system AX = B is solved by multiplying both sides on the left by A⁻¹, giving X = A⁻¹B.{% endblock %}
+{% block try_items %}
+<li>Press Next step. Which rows change each time?</li>
+<li>Check that the final X really solves A X = B.</li>
+<li>Try the 3 × 3 matrix. How many operations are needed?</li>
+{% endblock %}

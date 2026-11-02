@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply a quantities matrix by a price column to total several customers' bills at once.{% endblock %}
+{% block why_text %}Each row of the quantity table is one customer, and each column an item. Multiplying one customer's row by the price column gives that customer's bill. Doing it for every row at once is the matrix product. Change a price and every bill updates in one step.{% endblock %}
+{% block try_items %}
+<li>Raise the price of a pen. Whose bill rises most?</li>
+<li>Make all prices equal. Whose bill is largest?</li>
+<li>Check one bill by hand.</li>
+{% endblock %}

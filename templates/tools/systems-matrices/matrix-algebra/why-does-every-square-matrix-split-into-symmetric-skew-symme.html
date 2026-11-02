@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Split any square matrix into a symmetric part and a skew-symmetric part.{% endblock %}
+{% block why_text %}Half of A plus its mirror is unchanged by mirroring, so it is symmetric. Half of A minus its mirror changes sign when mirrored, so it is skew-symmetric, and its diagonal entries must be 0. Added together, the mirrors cancel in the difference and double in the sum, and A comes back.{% endblock %}
+{% block try_items %}
+<li>Check that P is symmetric for each matrix.</li>
+<li>Why is the diagonal of Q always zero?</li>
+<li>Choose a matrix that is already symmetric. What is Q?</li>
+{% endblock %}

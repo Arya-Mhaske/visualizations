@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Rotate then shear, and shear then rotate, and compare the results.{% endblock %}
+{% block why_text %}Doing a rotation and then a shear leaves the square in a different place from doing the shear first. Matrix multiplication is the composition of moves, and composition depends on order. So AB and BA are usually different matrices. They match only in special cases, such as no rotation or no shear.{% endblock %}
+{% block try_items %}
+<li>Set the shear to 0. Do the two results match?</li>
+<li>Set the rotation to 180°. Do they match now?</li>
+<li>Find an angle and a shear where the two squares are far apart.</li>
+{% endblock %}

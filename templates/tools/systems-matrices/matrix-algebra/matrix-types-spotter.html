@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block formula %}{% endblock %}
+{% block lead %}Sort matrices into row, column, square, diagonal, scalar, identity and zero.{% endblock %}
+{% block why_text %}A row matrix has one row, a column matrix one column. A square matrix has equally many of both. A diagonal matrix is square with zeros off the main diagonal. A scalar matrix is diagonal with equal diagonal entries, and the identity is the scalar matrix with entries 1. The zero matrix has every entry 0.{% endblock %}
+{% block try_items %}
+<li>Answer ten questions. Which type do you mix up most?</li>
+<li>Why is the identity also a scalar matrix and a diagonal matrix?</li>
+<li>Is a 1 × 1 matrix a row, a column or a square matrix?</li>
+{% endblock %}

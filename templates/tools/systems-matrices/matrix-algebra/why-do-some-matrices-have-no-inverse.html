@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch a matrix squash the plane onto a line, which cannot be undone.{% endblock %}
+{% block why_text %}An inverse must send each output back to the one input it came from. If the columns lie on one line, the whole plane is squashed onto that line and many points land on the same spot. An inverse would have to choose between them, which is impossible. This is exactly when the determinant is 0.{% endblock %}
+{% block try_items %}
+<li>Press the button. Where do the two points go?</li>
+<li>Change one number to make det A non-zero. What happens to the other point?</li>
+<li>Why does the grid become a single line?</li>
+{% endblock %}

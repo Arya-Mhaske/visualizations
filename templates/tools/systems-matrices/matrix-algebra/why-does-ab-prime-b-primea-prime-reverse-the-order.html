@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Transpose a product entry by entry and see why the order reverses.{% endblock %}
+{% block why_text %}The entry (i, j) of (AB)′ is the entry (j, i) of AB. That is row j of A times column i of B. But column i of B is row i of B′, and row j of A is column j of A′. So the same sum is row i of B′ times column j of A′, which is an entry of B′A′. The order has to flip for the rows and columns to meet.{% endblock %}
+{% block try_items %}
+<li>Change the entry and follow the same steps. Do they work for every entry?</li>
+<li>Look at the A′B′ line. Why is it different?</li>
+<li>Try the 2 × 3 and 3 × 2 pair. What are the sizes of (AB)′ and B′A′?</li>
+{% endblock %}

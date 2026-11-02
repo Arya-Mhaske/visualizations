@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Substitute one linear system into another and see where the product matrix comes from.{% endblock %}
+{% block why_text %}If x and y depend on u and v, and u and v depend on s and t, then x and y depend on s and t. Putting the second set of equations into the first, each coefficient of s or t is a row of the first matrix times a column of the second. Cayley defined the product of matrices this way, so that combining two substitutions is multiplying their matrices.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Arthur Cayley (1858) is usually credited with defining matrix multiplication to fit composition of linear substitutions. The motive described here is the standard account.</div>{% endblock %}
+{% block try_items %}
+<li>Check the top-left entry of AB against the coefficient of s in x.</li>
+<li>Switch to the other pair. Which coefficient changes?</li>
+<li>Why does the order matter in the substitution?</li>
+{% endblock %}

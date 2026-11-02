@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick one entry of the answer and see the row and column that make it.{% endblock %}
+{% block why_text %}To find the entry in row i and column j of AB, take row i of A and column j of B, multiply them pair by pair, and add. That is the only rule. It needs the number of columns of A to equal the number of rows of B, and the product has as many rows as A and as many columns as B.{% endblock %}
+{% block try_items %}
+<li>Pick the top-right entry. Which row and column are highlighted?</li>
+<li>Which entries of AB use the first row of A?</li>
+<li>Try the 3 × 2 times 2 × 3 pair. What size is the answer?</li>
+{% endblock %}
