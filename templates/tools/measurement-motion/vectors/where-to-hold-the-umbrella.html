@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Rain falls straight down at 35 m/s. You cycle at 12 m/s. From your seat the rain comes at a slant.{% endblock %}
+{% block why_text %}Relative to you, the rain's velocity is its own velocity minus yours. That adds a backward 12 m/s to the downward 35 m/s. The umbrella must be tilted forward by tan⁻¹(12/35) ≈ 19° from the vertical.{% endblock %}
+{% block try_items %}
+<li>Stop cycling. Where should the umbrella point?</li>
+<li>Double the speed. Does the angle double?</li>
+<li>Increase the rain speed. What happens to the tilt?</li>
+{% endblock %}

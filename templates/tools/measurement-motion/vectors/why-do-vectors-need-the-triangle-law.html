@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Walk 3 m, turn, then walk 4 m. How far from the start are you? It depends on the angle.{% endblock %}
+{% block why_text %}Lengths alone do not add when directions differ. Placing the vectors tip to tail, the resultant is the third side of a triangle. It ranges from 1 m (opposite directions) to 7 m (same direction).{% endblock %}
+{% block try_items %}
+<li>Set the angle to 0°, then 180°. What are the extremes?</li>
+<li>Set 90°. What is R?</li>
+<li>Find the angle that gives R = 5.</li>
+{% endblock %}

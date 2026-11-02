@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The angle between two vectors tail to tail is θ. In the triangle, the angle opposite R is 180° − θ.{% endblock %}
+{% block why_text %}The law of cosines gives R² = A² + B² − 2AB cos(180° − θ). Since cos(180° − θ) = −cos θ, this becomes R² = A² + B² + 2AB cos θ, the vector resultant formula. The plus sign is the supplement at work.{% endblock %}
+{% block try_items %}
+<li>Set θ = 90°. Which famous theorem is this?</li>
+<li>Set θ = 0° and 180°. What does R become?</li>
+<li>Compare the two readouts. Are they equal?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the length and angle of a vector to get its components, then rebuild the vector from them.{% endblock %}
+{% block why_text %}A<sub>x</sub> = A cos θ and A<sub>y</sub> = A sin θ. Going back, A = √(A<sub>x</sub>² + A<sub>y</sub>²) and θ = tan⁻¹(A<sub>y</sub>/A<sub>x</sub>), taking care over which quadrant the vector is in.{% endblock %}
+{% block try_items %}
+<li>Try 37°. Do you get the 3-4-5 pattern?</li>
+<li>Try 150°. What signs do the components have?</li>
+<li>Check that the rebuilt length equals A.</li>
+{% endblock %}

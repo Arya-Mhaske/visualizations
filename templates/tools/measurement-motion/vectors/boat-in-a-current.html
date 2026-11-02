@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A boat moves at 25 km/h through water that flows at 10 km/h. Choose the heading and see where the boat really goes.{% endblock %}
+{% block why_text %}The boat's velocity over the ground is its velocity through the water plus the water's own velocity. Adding the two arrows tip to tail gives the true path, its speed and its drift.{% endblock %}
+{% block try_items %}
+<li>Head straight across (90°). How far downstream does the boat drift?</li>
+<li>Head upstream at a slant. Can you cancel the drift?</li>
+<li>Find the heading that gives the fastest crossing.</li>
+{% endblock %}

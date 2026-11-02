@@ -341,7 +341,7 @@ it reaches the front of the queue.
 | 4 | `functions-graphs/coordinate-plane` | 7 | 1 | ✓ |
 | 5 | `measurement-motion/uniform-acceleration` | 8 | 1 | ✓ |
 | 6 | `functions-graphs/what-is-a-function` | 8 | 1 | ✓ |
-| 7 | `measurement-motion/vectors` | 7 | 1 | |
+| 7 | `measurement-motion/vectors` | 7 | 1 | ✓ |
 | 8 | `functions-graphs/properties-library` | 7 | 1 | ✓ |
 | 9 | `measurement-motion/projectiles` | 9 | 1 | |
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
@@ -668,3 +668,5 @@ it reaches the front of the queue.
 - `numbers-algebra/rational-expressions` (6 tools): `_rational-math.js` (`CANCEL` claims with a legal/illegal flag, `PROBLEMS`/`COMPLEX` with every step in TeX and a pair of functions that agree at test points, `addUnit`, `fillTime`); the two stepper tools reuse `_steps-view.js`. Built without screenshots or tests, by request.
 
 - `measurement-motion/uniform-acceleration` (8 tools): maths is inline per tool. - `lib/quick.js` (new, documented in its header): `G`, `bars`, `vec`, `fitPath` (near equal-scale window for trajectories), `box`. Used by the quick mechanics boxes. Built without screenshots or tests, by request.
+
+- `measurement-motion/vectors` (7 tools): inline maths; the boat tool measures heading from downstream. Built without screenshots or tests.

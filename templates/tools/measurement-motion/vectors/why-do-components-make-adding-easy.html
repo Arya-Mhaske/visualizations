@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split each vector into an x part and a y part. Add the x column and the y column separately.{% endblock %}
+{% block why_text %}Along one axis, vectors add like plain numbers. So R<sub>x</sub> = A<sub>x</sub> + B<sub>x</sub> and R<sub>y</sub> = A<sub>y</sub> + B<sub>y</sub>, and then the length and direction of R follow from Pythagoras and a tangent.{% endblock %}
+{% block try_items %}
+<li>Make A and B point opposite ways. What happens to R<sub>x</sub>?</li>
+<li>Set B at 90° to A. Check R = √(R<sub>x</sub>² + R<sub>y</sub>²).</li>
+<li>Find angles where R<sub>y</sub> is 0.</li>
+{% endblock %}

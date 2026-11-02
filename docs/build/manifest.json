@@ -209,43 +209,43 @@
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/why-is-displacement-path-length": {
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/why-do-components-make-adding-easy": {
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/why-is-the-resultant-formula-the-law-of-cosines": {
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/component-calculator": {
 "archetype": "stepper",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/where-to-hold-the-umbrella": {
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/boat-in-a-current": {
 "archetype": "sim",
 "priority": 10,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/why-can-horizontal-and-vertical-motion-be-treated-separately": {
 "archetype": "sim",
