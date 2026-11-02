@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Launch a projectile from the Earth's surface at different angles and speeds. See which ones get away.{% endblock %}
+{% block why_text %}Escape needs the total energy E = ½mv² − GMm/R to reach zero. The mass cancels, so ½v² = GM/R, giving v = √(2GM/R) ≈ 11.2 km/s. Energy is a scalar, so the direction does not enter: an escaping launch at any angle leaves, but not along the ground.{% endblock %}
+{% block try_items %}
+<li>Launch at 11 km/s at 45°. What happens?</li>
+<li>Launch at 11.3 km/s at three different angles.</li>
+<li>Change the angle at fixed speed. Does the escape condition change?</li>
+{% endblock %}

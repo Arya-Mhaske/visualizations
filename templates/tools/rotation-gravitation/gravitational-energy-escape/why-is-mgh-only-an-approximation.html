@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom in on the curve −GMm/r near the Earth's surface. It starts to look like a straight line with slope mg.{% endblock %}
+{% block why_text %}U(R + h) − U(R) = GMm h/(R(R + h)). For h much smaller than R, this is GMm h/R² = mgh. The exact curve bends, but over a small stretch it is practically straight, and the straight-line slope is mg. Over large heights the curvature matters and mgh is too big.{% endblock %}
+{% block try_items %}
+<li>Zoom out to heights of thousands of kilometres. What happens to the gap?</li>
+<li>Zoom in to 1 km. Can you see the difference?</li>
+<li>At what height is mgh 10% too big?</li>
+{% endblock %}

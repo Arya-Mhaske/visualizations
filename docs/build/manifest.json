@@ -1061,37 +1061,37 @@
 "archetype": "sim",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/why-is-mgh-only-an-approximation": {
 "archetype": "space3d",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/why-doesn-t-escape-speed-depend-on-direction-or-mass": {
 "archetype": "sim",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/why-has-the-moon-no-atmosphere": {
 "archetype": "space3d",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/potential-energy-of-a-group-of-masses": {
 "archetype": "stepper",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/neutral-point-between-two-spheres": {
 "archetype": "space3d",
 "priority": 54,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/why-do-higher-satellites-move-slower": {
 "archetype": "sim",

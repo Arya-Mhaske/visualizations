@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a group of equal masses and add the potential energy of every pair.{% endblock %}
+{% block why_text %}The energy of the group is the sum over all pairs: U = −Σ Gm₁m₂/r. For four masses at the corners of a square of side l there are four sides (distance l) and two diagonals (distance √2 l), so U = −(4 + 1/√2 × 2) Gm²/l = −5.41 Gm²/l. Each pair is counted once.{% endblock %}
+{% block try_items %}
+<li>Add up the pair energies yourself for the square.</li>
+<li>Compare a triangle and a square.</li>
+<li>Double l. What happens to U?</li>
+{% endblock %}
