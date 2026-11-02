@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose a wavelength and a period for a water wave and see how fast the crests move.{% endblock %}
+{% block why_text %}In one period T a crest moves forward one wavelength λ, so the wave speed is v = λ/T. The marker rides on one crest and moves at exactly that speed.{% endblock %}
+{% block try_items %}
+<li>Set λ = 10 m and T = 2.5 s. What is the speed? Press Play to check the crest.</li>
+<li>Double T and keep λ. What happens to the speed?</li>
+<li>Compare with the deep-water speed in the panel. Are real waves free to take any λ and T?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The deep-water speed √(gλ/2π) holds for waves on deep water, where the depth is more than about half a wavelength. It shows that nature links λ and T for such waves.
+</div>
+{% endblock %}

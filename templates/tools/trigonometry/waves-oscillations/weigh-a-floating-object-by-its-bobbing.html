@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A block floating in water bobs up and down. Time one bob and work back to the mass.{% endblock %}
+{% block why_text %}A floating block is pushed back by the water with a force that grows with how far it is pushed down. That gives a sine motion with period T = 2π√(m / ρgA). Turn it round and m = ρgAT² / 4π², so a stopwatch weighs the block.{% endblock %}
+{% block try_items %}
+<li>Raise the mass. Does the period get longer or shorter?</li>
+<li>Raise the area. What happens to the period?</li>
+<li>Double the mass. By what factor does T change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The block is an ideal upright cylinder in still water. Real blocks have waves, drag and other effects.
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The higher a note, the shorter its period. Pick a note and see its wave.{% endblock %}
+{% block why_text %}The period T is the time for one wave, and the frequency f is how many waves fit in a second, so f = 1/T. In y = sin Bt, B = 2πf. A larger B squeezes more waves into the same time, and the note sounds higher.{% endblock %}
+{% block try_items %}
+<li>Choose A3 and then A4. How do the frequency and the period compare?</li>
+<li>Choose A2. How many waves fit in 20 ms?</li>
+<li>Turn the sound on and step through the notes. Does a shorter period sound higher or lower?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Your phone or laptop speaker may not play the lowest notes well. The graph is correct either way.
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A swinging spring slowly loses energy. Multiply a sine by a decaying curve and see what bounds the wave.{% endblock %}
+{% block why_text %}A damped swing is a sine times a decaying curve, y = A e^(−γt) sin ωt. The sine never goes beyond 1 in size, so the whole product can never go beyond the decaying curve. That curve is the envelope, and the wave touches it at its peaks.{% endblock %}
+{% block try_items %}
+<li>Switch damping on and raise γ. What happens to the envelope?</li>
+<li>Keep γ fixed and raise f. Does the envelope change?</li>
+<li>Use the time to halve. What fraction of the height is left after two such times?</li>
+{% endblock %}

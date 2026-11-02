@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Tune two notes that are almost the same and watch the sum swell and fade.{% endblock %}
+{% block why_text %}Two waves of slightly different frequency drift in and out of step. When they line up the sum is loud, and when they are opposite it is silent. The identity sin A + sin B = 2 sin((A+B)/2) cos((A−B)/2) says the same thing: a fast wave inside a slow cos envelope that has a frequency of half the difference.{% endblock %}
+{% block try_items %}
+<li>Set the difference to 4 Hz. How many loud swells are there in one second?</li>
+<li>Set the difference to 0. Why do the swells disappear?</li>
+<li>Turn the sound on and slide the difference from 8 Hz down to 1 Hz. How does the pulsing change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The graph slows the notes down to 24 Hz so your eye can follow them. The swell pattern depends only on the difference, so it is the same as for the real notes of 440 Hz.
+</div>
+{% endblock %}

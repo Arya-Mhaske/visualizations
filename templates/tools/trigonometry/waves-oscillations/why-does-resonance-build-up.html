@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Push a swing at different rhythms. One rhythm makes the swings grow and grow.{% endblock %}
+{% block why_text %}Each push adds to the swing when it arrives in step with the swing already going. When the push rate matches the natural rate, every push helps and the size builds up each time. The graph on top shows the end result: a sharp peak at a ratio of 1, taller when the damping is small.{% endblock %}
+{% block try_items %}
+<li>Set the ratio to 1 and watch the lower graph. How does the swing grow?</li>
+<li>Set the ratio to 0.5. Does the swing grow as much?</li>
+<li>At ratio 1, lower the damping ζ. What happens to the peak?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The model is a damped swing pushed by a steady rhythm. The numbers are in simple units, not any one real object.
+</div>
+{% endblock %}

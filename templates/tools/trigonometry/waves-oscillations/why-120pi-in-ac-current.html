@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}In I = A sin 120πt, what does the 120π tell you? Read the number of cycles off the graph.{% endblock %}
+{% block why_text %}In y = A sin Bt, one cycle takes B·T = 2π, so the cycles per second are B/2π. For B = 120π, that is 60 cycles per second, or 60 Hz. The graph shows exactly 3 cycles in 0.05 s, and 3 × 20 = 60.{% endblock %}
+{% block try_items %}
+<li>Leave k at 120. Count the cycles in the window. How many per second is that?</li>
+<li>Set k to 100. Which supply frequency is that?</li>
+<li>Raise the peak current A. Does the frequency change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Mains in India is 50 Hz, which is I = A sin 100πt. The 120π in the book is for a 60 Hz supply.
+</div>
+{% endblock %}

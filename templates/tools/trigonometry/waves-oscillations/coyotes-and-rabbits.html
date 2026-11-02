@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Rabbits and coyotes rise and fall in cycles. The coyote sine runs a fraction of a cycle behind.{% endblock %}
+{% block why_text %}Many predator and prey numbers follow sine waves. The predators trail the prey: first the rabbits rise, then there is more food, so the coyotes rise a little later. A lag of a quarter cycle is the shift C in y = A sin(B(t − C)).{% endblock %}
+{% block try_items %}
+<li>Set the lag to 0.25 and find the month when rabbits peak. When do the coyotes peak?</li>
+<li>Set the lag to 0. What does the picture say about the two populations?</li>
+<li>Change the cycle length. Does the lag in months change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  These numbers are made up to show the shape. Real populations are not exact sine waves.
+</div>
+{% endblock %}

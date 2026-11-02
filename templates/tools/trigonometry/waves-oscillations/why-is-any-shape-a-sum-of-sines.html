@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add sine waves one at a time to build a square wave, a sawtooth or a triangle wave.{% endblock %}
+{% block why_text %}A sine wave is smooth, but a sum of sines of higher and higher frequency can make a sharp corner. Each new sine corrects the error left by the earlier ones. With enough sines the sum hugs the target. This is Fourier’s idea.{% endblock %}
+{% block try_items %}
+<li>Build the square wave. How many sines make it look square?</li>
+<li>Switch to the triangle. Why does it need fewer sines than the square?</li>
+<li>Look at the corners of the square wave with 30 sines. What do you notice there?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Near the jump of a square wave the sum always overshoots a little. This overshoot does not go away as you add more sines.
+</div>
+{% endblock %}
