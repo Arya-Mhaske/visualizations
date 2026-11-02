@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Throw a ball up and catch it at the same height.{% endblock %}
+{% block why_text %}If a smooth height starts and ends at the same value, it must turn somewhere, and at the turn the velocity is 0. That is Rolle’s theorem.{% endblock %}
+{% block try_items %}
+<li>Press the button. Where is v = 0?</li>
+<li>Catch the ball at a different time. Does v = 0 still have to happen?</li>
+<li>Change the throw speed. Does the top time move?</li>
+{% endblock %}

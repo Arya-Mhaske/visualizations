@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Use two time stamps to prove speeding.{% endblock %}
+{% block why_text %}Average speed is distance over time. The MVT says the speedometer read exactly that at some instant. So if the average beats the limit, the car broke the limit at least once.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This only works for speeds that vary smoothly.</div>{% endblock %}
+{% block try_items %}
+<li>Set the average over the limit. Where is the speed equal to it?</li>
+<li>Set the average just under the limit. Can you prove anything?</li>
+<li>Make the driver steadier. Does the fastest reading drop?</li>
+{% endblock %}
