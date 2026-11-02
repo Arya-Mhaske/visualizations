@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide the nullspace line through one particular solution and see all the others.{% endblock %}
+{% block why_text %}If x_p solves A x = b and n is in the nullspace, then A(x_p + n) = b + 0 = b. So adding any null vector to a particular solution gives another solution. And any two solutions differ by something in the nullspace. So all solutions are x_p plus the nullspace.{% endblock %}
+{% block try_items %}
+<li>Slide s. Does A(x_p + s n) ever change?</li>
+<li>Change the right side b. Does the nullspace line move?</li>
+<li>Make the nullspace line vertical. What does the equation look like?</li>
+{% endblock %}

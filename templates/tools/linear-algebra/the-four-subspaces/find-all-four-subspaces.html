@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Take a 3 × 4 matrix to bases for its four subspaces.{% endblock %}
+{% block why_text %}One reduction to R gives all four. The pivot columns of A are a basis for the column space. The special solutions are a basis for the nullspace. The non-zero rows of R are a basis for the row space. The left nullspace comes from the same steps on Aᵀ. The dimensions r, n − r, r and m − r add up correctly.{% endblock %}
+{% block try_items %}
+<li>Pick the rank 1 matrix. How big is the left nullspace?</li>
+<li>Check that each nullspace vector gives zero when multiplied by A.</li>
+<li>Why must the column space basis come from A itself and not from R?</li>
+{% endblock %}

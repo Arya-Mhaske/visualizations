@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Reduce a matrix to R and count its pivot and free columns: r + (n − r) = n.{% endblock %}
+{% block why_text %}Each pivot column adds a new direction to the column space, and each free column is a mix of the pivot columns before it. So the dimension of the column space is r, the number of pivots. Every free column gives one special solution of Ax = 0, so the nullspace has dimension n − r. Together they use up all n columns.{% endblock %}
+{% block try_items %}
+<li>Pick the rank 1 matrix. How many free columns are there?</li>
+<li>Change the matrix to rank 3. How does the nullspace dimension change?</li>
+<li>Check that r + (n − r) is always the number of columns.</li>
+{% endblock %}

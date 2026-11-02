@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Row space and nullspace sit at right angles in the input space. Column space and left nullspace do the same in the output space.{% endblock %}
+{% block why_text %}Ax = 0 says that every row of A has dot product zero with x. So x is perpendicular to every row, and therefore to the whole row space. In the same way the left nullspace is perpendicular to the column space. The four subspaces come in two perpendicular pairs, one in each space.{% endblock %}
+{% block try_items %}
+<li>Turn x until it is along the nullspace. What is Ax?</li>
+<li>Turn x along the row space. What does A do to its length?</li>
+<li>Change k. Which of the four lines move?</li>
+{% endblock %}

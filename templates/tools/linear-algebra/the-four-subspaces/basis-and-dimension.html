@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose vectors in the plane. Two independent vectors are a basis; one is too few and three are too many.{% endblock %}
+{% block why_text %}A basis is a set of independent vectors that span the space. In a plane every basis has exactly two vectors, however you pick them. One vector spans only a line. Three vectors in a plane are always dependent. That fixed count is the dimension.{% endblock %}
+{% block try_items %}
+<li>Pick two vectors that point the same way. Is it a basis?</li>
+<li>Pick three vectors. Can you find coordinates for b? How many ways?</li>
+<li>Move v2 so b has coordinates (1, 1) in the basis, if you can.</li>
+{% endblock %}

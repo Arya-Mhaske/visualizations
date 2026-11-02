@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add a third column that is a mix of the first two. A whole line of solutions appears.{% endblock %}
+{% block why_text %}With independent columns the only way to get 0 is to use none of them, so there is only one way to reach b. A dependent column is a mix of the others, so it gives a second route to the same point, and then a whole line of routes. Unique solution means no non-zero null vector.{% endblock %}
+{% block try_items %}
+<li>Switch the third column on. How many solutions are there now?</li>
+<li>Change t. Does the path of arrows still end at b?</li>
+<li>Which vector is in the nullspace, and why does adding it change nothing?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Test sets of points. A subspace must keep the sum of any two members and every multiple of a member.{% endblock %}
+{% block why_text %}A subspace is a set that never lets you escape by adding two members or multiplying one by a number. That forces it to contain the zero vector (take the multiple 0). Lines and planes through the origin pass the test. A line that misses the origin, a quadrant or a disc do not.{% endblock %}
+{% block try_items %}
+<li>Pick the line missing 0. Which test does it fail?</li>
+<li>Pick the first quadrant. Which multiplier k takes a member out?</li>
+<li>Pick the two axes. Which sum of two members falls out?</li>
+{% endblock %}
