@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Arrange n different things in a row. Then keep using n! = n × (n − 1)! all the way down to 0.{% endblock %}
+{% block why_text %}The first place can be filled in n ways, the next in n − 1, and so on, so the total is n × (n − 1) × … × 1 = n!. The rule n! = n × (n − 1)! applied to n = 1 gives 1 = 1 × 0!, so 0! must be 1. There is exactly one way to arrange nothing: do nothing.{% endblock %}
+{% block try_items %}
+<li>Raise n by one. By what factor does n! grow?</li>
+<li>Slide n to 1 and then 0.</li>
+<li>Why is the step from 1! to 0! a division by 1?</li>
+{% endblock %}

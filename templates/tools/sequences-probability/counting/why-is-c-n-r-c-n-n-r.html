@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choosing r things to take is the same act as choosing n − r things to leave behind.{% endblock %}
+{% block why_text %}Every way of picking r items to take leaves exactly n − r items behind, and the other way round. The two kinds of choice match one to one, so C(n, r) = C(n, n − r). The numbers on each row of Pascal's triangle read the same from both ends.{% endblock %}
+{% block try_items %}
+<li>Take 2 of 6. How many are left?</li>
+<li>Compare C(6, 2) and C(6, 4).</li>
+<li>Where on the bars is the mirror?</li>
+{% endblock %}

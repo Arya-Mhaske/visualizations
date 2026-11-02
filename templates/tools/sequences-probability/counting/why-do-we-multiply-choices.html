@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose a shirt, then a pair of trousers, then shoes. Every choice for the first item opens a full set of choices for the second.{% endblock %}
+{% block why_text %}If there are m ways to do one thing and n ways to do the next, each of the m ways is followed by all n ways. So there are m × n ways altogether. A tree diagram makes this visible: every branch splits into the same number of new branches.{% endblock %}
+{% block try_items %}
+<li>Add a shirt. By how many does the number of outfits grow?</li>
+<li>Add shoes. What happens to the tree?</li>
+<li>Count the leaves and compare with the product.</li>
+{% endblock %}

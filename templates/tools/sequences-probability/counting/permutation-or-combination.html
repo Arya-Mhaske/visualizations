@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Ask two questions: does the order matter, and can things repeat? The answers pick the counting tool.{% endblock %}
+{% block why_text %}Order matters and no repeats: permutations P(n, r). Order matters with repeats: nʳ. Order does not matter and no repeats: combinations C(n, r). Order does not matter with repeats: C(n + r − 1, r). Decide the two questions first, then the formula.{% endblock %}
+{% block try_items %}
+<li>A PIN code: does order matter? Can digits repeat?</li>
+<li>A committee of 3 from 10: which tool?</li>
+<li>Switch both toggles and see all four answers.</li>
+{% endblock %}

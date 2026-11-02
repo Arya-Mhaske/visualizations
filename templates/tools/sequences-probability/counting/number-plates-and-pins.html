@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Count the PINs or number plates when characters may repeat, and when they may not.{% endblock %}
+{% block why_text %}Each slot is an independent choice, so multiply the number of choices per slot. When repeats are allowed, every slot has all the choices. When they are not, each slot has one fewer than the one before it. That is the whole difference between nʳ and P(n, r).{% endblock %}
+{% block try_items %}
+<li>A 4-digit PIN with repeats, then without. How many fewer?</li>
+<li>Switch to a plate with 2 letters, 2 digits, 2 letters and 4 digits.</li>
+<li>Which slot adds the most to the product?</li>
+{% endblock %}

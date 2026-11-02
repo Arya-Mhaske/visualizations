@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}In MISSISSIPPI, swapping two S's gives the same word. Count the arrangements honestly.{% endblock %}
+{% block why_text %}If all 11 letters were different, there would be 11! orders. But the 4 S's can be swapped among themselves in 4! ways without changing the word, and the same for the 4 I's (4!) and the 2 P's (2!). Each distinct word has been counted 4! × 4! × 2! times, so divide by that.{% endblock %}
+{% block try_items %}
+<li>Choose BANANA. How many repeats does each letter have?</li>
+<li>Compare n! with the distinct count.</li>
+<li>Choose a word with no repeats. What is the answer?</li>
+{% endblock %}

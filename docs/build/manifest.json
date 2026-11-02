@@ -5585,49 +5585,49 @@
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/why-n-and-why-is-0-1": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/why-do-combinations-divide-by-r": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/why-divide-for-repeated-letters": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/why-is-c-n-r-c-n-n-r": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/permutation-or-combination": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/number-of-subsets-2n": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/counting/number-plates-and-pins": {
 "archetype": "discrete",
 "priority": 31,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/when-is-probability-favourable-total": {
 "archetype": "chance",

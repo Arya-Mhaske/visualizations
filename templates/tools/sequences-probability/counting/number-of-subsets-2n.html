@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Each of n light switches can be on or off. Every pattern of switches is a subset.{% endblock %}
+{% block why_text %}Each element is either in the subset or out of it: two choices, independent of the others. With n elements there are 2 × 2 × … × 2 = 2ⁿ subsets, including the empty set (all off) and the whole set (all on).{% endblock %}
+{% block try_items %}
+<li>Add a switch. What happens to the number of subsets?</li>
+<li>Slide through the patterns. Where is the empty set?</li>
+<li>How many subsets of 8 elements?</li>
+{% endblock %}

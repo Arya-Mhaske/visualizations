@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick r letters from n. Each row is one chosen set, and the cells in the row are the orders it can be written in.{% endblock %}
+{% block why_text %}Arrangements (order matters) count each chosen set r! times, once for every order. To count the sets, divide by r!. So C(n, r) = n!/((n − r)! r!). Each row below has r! cells, and the number of rows is C(n, r).{% endblock %}
+{% block try_items %}
+<li>Count the rows for n = 5, r = 2.</li>
+<li>Count the cells in a row.</li>
+<li>Check rows × cells per row = P(n, r).</li>
+{% endblock %}
