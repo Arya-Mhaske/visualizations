@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A 40 g bullet at 90 m/s is stopped in 60 cm of wood. Find the average force.{% endblock %}
+{% block why_text %}Constant deceleration a = v²/(2d) = 90²/(2 × 0.6) = 6750 m/s². Then F = ma = 0.04 × 6750 = 270 N. A thinner block means a bigger force for the same bullet.{% endblock %}
+{% block try_items %}
+<li>Check the 270 N at the defaults.</li>
+<li>Halve the stopping distance. What happens to F?</li>
+<li>Double the speed. By what factor does F grow?</li>
+{% endblock %}

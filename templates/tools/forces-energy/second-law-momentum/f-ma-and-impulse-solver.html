@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Solve F = ma, or find the impulse when a ball changes velocity: a 0.15 kg ball hit straight back at 12 m/s.{% endblock %}
+{% block why_text %}Impulse is the change of momentum: J = m(v₂ − v₁). A ball arriving at 12 m/s and leaving at 12 m/s the other way changes velocity by 24 m/s, so J = 0.15 × 24 = 3.6 N s. Divide by the contact time to get the average force.{% endblock %}
+{% block try_items %}
+<li>Check 3.6 N s at the defaults.</li>
+<li>Make the ball come back slower. What happens to J?</li>
+<li>Shorten the contact time. What happens to the average force?</li>
+{% endblock %}

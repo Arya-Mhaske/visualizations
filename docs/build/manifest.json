@@ -383,49 +383,49 @@
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/why-does-a-cricketer-pull-the-hands-back": {
 "archetype": "chance",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/why-does-the-second-law-act-here-and-now": {
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/why-does-a-force-only-change-the-velocity-along-it": {
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/why-isn-t-ma-another-force": {
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/f-ma-and-impulse-solver": {
 "archetype": "stepper",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/a-bullet-into-a-wooden-block": {
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/second-law-momentum/weighing-scale-in-a-lift": {
 "archetype": "sim",
 "priority": 18,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/why-don-t-action-and-reaction-cancel": {
 "archetype": "sim",
