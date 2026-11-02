@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Count switching functions that differ even after the wires are relabelled.{% endblock %}
+{% block why_text %}Two circuits that differ only by renaming the inputs do the same job. Burnside's average over the wire permutations counts the truly different jobs. Each permutation σ fixes 2^c functions, where c counts its cycles on the 2^n input patterns.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The counts 12, 80 and 3984 for n = 2, 3 and 4 count functions up to relabelling of the inputs only. Flipping inputs or outputs is not allowed here.</div>{% endblock %}
+{% block try_items %}
+<li>Set n = 2. Why are 16 functions only 12 different circuits?</li>
+<li>Set n = 3. How many different circuits are there?</li>
+<li>Which cycle type fixes the most functions apart from the identity?</li>
+{% endblock %}

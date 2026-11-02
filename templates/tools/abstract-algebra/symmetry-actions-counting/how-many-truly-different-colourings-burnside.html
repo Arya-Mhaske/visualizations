@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Colour a square's corners and group the colourings that turn into each other.{% endblock %}
+{% block why_text %}Burnside's counting says: average the number of colourings each symmetry leaves unchanged. The identity fixes every colouring, a quarter-turn fixes only the single-colour ones, and so on. The average equals the number of boxes.{% endblock %}
+{% block try_items %}
+<li>Use 2 colours and turns only. How many boxes are there?</li>
+<li>Add flips. Does the count change?</li>
+<li>Use 3 colours. How many boxes are there for turns only, and for turns and flips?</li>
+<li>Check the table: which symmetry fixes the most colourings?</li>
+{% endblock %}

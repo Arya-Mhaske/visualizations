@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn a lattice about a point and see for which rotations the dots land back on dots.{% endblock %}
+{% block why_text %}A pattern repeats on a lattice, so a rotation symmetry must carry lattice points to lattice points. The trace of the rotation matrix is then a whole number, which forces 2 cos(360°/k) to be an integer. Only k = 1, 2, 3, 4 and 6 do that. Sorting the patterns by their top rotation order gives 4 + 5 + 3 + 3 + 2 = 17 wallpaper groups.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The 17 groups are quoted from the standard classification. The tool shows why the rotation orders are limited, not the proof that exactly 17 groups exist.</div>{% endblock %}
+{% block try_items %}
+<li>Pick the square lattice and k = 4. Does every ring turn green?</li>
+<li>Pick the hexagonal lattice and k = 6. What changes at k = 5?</li>
+<li>Try the oblique lattice with k = 2, then k = 3.</li>
+<li>Slide k from 1 to 12. For which k is 2 cos(360°/k) a whole number?</li>
+{% endblock %}

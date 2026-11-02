@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Do one rotation or reflection, then another, to the letter F and see what the combination is.{% endblock %}
+{% block why_text %}Matrices that keep lengths and angles come in two kinds: rotations with determinant 1 and reflections with determinant −1. Combine any two and the result keeps lengths too, so it is again one of the two kinds. Two reflections make a rotation.{% endblock %}
+{% block try_items %}
+<li>Set g₁ and g₂ both to reflections with different lines. What is g₂g₁?</li>
+<li>Set g₁ a rotation and g₂ a reflection. What is the product?</li>
+<li>Check the determinant multiplication on each example.</li>
+{% endblock %}

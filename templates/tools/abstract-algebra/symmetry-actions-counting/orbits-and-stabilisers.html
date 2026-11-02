@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drag a point and see everywhere the polygon's symmetries can send it.{% endblock %}
+{% block why_text %}A generic point has 2n different images and nothing but the identity fixes it. A point on a mirror line is fixed by that reflection, so it has half as many images. The centre is fixed by all of them. Always |orbit| × |stabiliser| = 2n.{% endblock %}
+{% block try_items %}
+<li>Drag the point to a general place. How big is its orbit?</li>
+<li>Drag it onto a mirror line. What happens to the orbit and the stabiliser?</li>
+<li>Drag it to the centre.</li>
+<li>Change n. Does |orbit| × |stabiliser| stay at 2n?</li>
+{% endblock %}

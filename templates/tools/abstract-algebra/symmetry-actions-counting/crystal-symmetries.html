@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put identical regular polygons round one corner and see which ones fit without gaps.{% endblock %}
+{% block why_text %}A crystal repeats one unit cell, so at any corner the angles of the shapes must add to exactly 360°. Triangles (60°), squares (90°) and hexagons (120°) divide 360° evenly. Pentagons leave a 36° gap, so a crystal cannot have 5-fold symmetry.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> In 1984 Dan Shechtman found materials with 5-fold diffraction patterns. They are quasicrystals: ordered but not repeating, so they are not covered by this argument.</div>{% endblock %}
+{% block try_items %}
+<li>Pick k = 6 and add as many as fit. Do they fit exactly?</li>
+<li>Pick k = 5. How big is the gap?</li>
+<li>Pick k = 8. Can you fill the corner exactly?</li>
+{% endblock %}
