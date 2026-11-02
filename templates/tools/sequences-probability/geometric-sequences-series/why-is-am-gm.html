@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}On a line of length a + b draw a semicircle. The radius is the arithmetic mean. The height of the circle above the point where a meets b is the geometric mean.{% endblock %}
+{% block why_text %}The radius is (a + b)/2, the AM. The chord at right angles to the diameter at the junction has half-length h with h² = a·b (the intersecting-chords, or right-triangle, relation), so h = √(ab), the GM. The height can never exceed the radius, so GM ≤ AM, with equality only when a = b.{% endblock %}
+{% block try_items %}
+<li>Make a = b. What happens to the chord and radius?</li>
+<li>Make a very different from b. Which is bigger?</li>
+<li>Check h² = ab.</li>
+{% endblock %}

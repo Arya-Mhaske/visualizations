@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide the ratio r past 1 and past −1 and watch the partial sums.{% endblock %}
+{% block why_text %}The sum a(1 − rⁿ)/(1 − r) settles only when rⁿ dies away, which needs |r| < 1. If |r| > 1, rⁿ grows without limit and so does the sum. At r = 1 every term is the same, so the sum climbs by a each step. At r = −1 the sums keep flipping between two values.{% endblock %}
+{% block try_items %}
+<li>Set r = 0.5. Where do the sums settle?</li>
+<li>Set r = −1. What do they do?</li>
+<li>Set r = 1.2.</li>
+{% endblock %}

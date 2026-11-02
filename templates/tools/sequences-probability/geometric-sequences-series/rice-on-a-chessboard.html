@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put 1 grain on the first square, 2 on the second, 4 on the third, doubling each time. How much rice on the whole board?{% endblock %}
+{% block why_text %}Square k has 2ᵏ⁻¹ grains, and the total on k squares is 2ᵏ − 1. On all 64 squares this is 2⁶⁴ − 1 ≈ 1.8 × 10¹⁹ grains. At about 25 mg a grain that is hundreds of billions of tonnes: far more than has ever been grown. Doubling beats intuition.{% endblock %}
+{% block try_items %}
+<li>Slide to square 64. What is the total?</li>
+<li>Which square passes a million grains?</li>
+<li>Estimate the mass of rice on the last square.</li>
+{% endblock %}

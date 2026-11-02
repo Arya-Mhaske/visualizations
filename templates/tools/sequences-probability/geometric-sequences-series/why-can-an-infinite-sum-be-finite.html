@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fill a unit square with half of it, then half of what is left, then half again, for ever.{% endblock %}
+{% block why_text %}After n pieces the filled part is 1 − (½)ⁿ. The unfilled part halves each time, so it shrinks towards zero, and the filled part towards the whole square, which has area 1. Infinitely many pieces can still add up to a finite total because the pieces shrink fast enough.{% endblock %}
+{% block try_items %}
+<li>Add more pieces. How much of the square is unfilled?</li>
+<li>Can the unfilled part ever vanish exactly?</li>
+<li>What is the total after 10 pieces?</li>
+{% endblock %}

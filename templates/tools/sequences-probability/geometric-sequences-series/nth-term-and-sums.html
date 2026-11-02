@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the first term, the ratio and the number of terms. Read the nth term, the sum, and (if |r| < 1) the infinite sum.{% endblock %}
+{% block why_text %}aₙ = a rⁿ⁻¹ and Sₙ = a(1 − rⁿ)/(1 − r). If |r| < 1 then rⁿ → 0, and the sum of all the terms is S∞ = a/(1 − r). The graph shows the partial sums climbing towards that limit.{% endblock %}
+{% block try_items %}
+<li>Use a = 1, r = ½, n = 10.</li>
+<li>Make r negative.</li>
+<li>Compare Sₙ with S∞ as n grows.</li>
+{% endblock %}

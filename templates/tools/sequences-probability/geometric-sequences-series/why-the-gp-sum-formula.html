@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply the sum S by r and subtract. Nearly every term cancels.{% endblock %}
+{% block why_text %}S = a + ar + … + arⁿ⁻¹ and rS = ar + ar² + … + arⁿ. Subtracting, everything cancels except a and −arⁿ, so S − rS = a(1 − rⁿ) and S = a(1 − rⁿ)/(1 − r). The shift by one place is what lines the terms up.{% endblock %}
+{% block try_items %}
+<li>Check S(1 − r) = a(1 − rⁿ) in the readout.</li>
+<li>Make r larger than 1. Does the formula still work?</li>
+<li>Set r = 1. Why does the formula fail there?</li>
+{% endblock %}

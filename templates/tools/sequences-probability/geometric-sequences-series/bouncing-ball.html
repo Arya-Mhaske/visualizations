@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A ball dropped from a height rebounds to a fixed fraction of its previous height each time. How far does it travel in total?{% endblock %}
+{% block why_text %}Each bounce up and down covers 2h rⁿ. The total is h + 2hr + 2hr² + … = h + 2hr/(1 − r) = h(1 + r)/(1 − r). The infinite number of bounces covers a finite distance, because the bounces shrink geometrically.{% endblock %}
+{% block try_items %}
+<li>Use h = 10, r = 0.5. What is the total distance?</li>
+<li>Increase r towards 1. What happens to the total?</li>
+<li>How many bounces to get within 1% of the total?</li>
+{% endblock %}

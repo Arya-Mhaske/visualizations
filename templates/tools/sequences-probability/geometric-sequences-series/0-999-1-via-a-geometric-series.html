@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}0.999… is the sum 9/10 + 9/100 + 9/1000 + …, a geometric series with first term 0.9 and ratio 0.1.{% endblock %}
+{% block why_text %}The sum of n terms is 1 − 10⁻ⁿ, so the gap to 1 after n nines is 10⁻ⁿ. The infinite sum a/(1 − r) = 0.9/0.9 = 1. There is no number between 0.999… and 1, so they are the same number, written two ways.{% endblock %}
+{% block try_items %}
+<li>Add digits. How does the gap change?</li>
+<li>Can you name a number between 0.999… and 1?</li>
+<li>Check a/(1 − r) = 1.</li>
+{% endblock %}

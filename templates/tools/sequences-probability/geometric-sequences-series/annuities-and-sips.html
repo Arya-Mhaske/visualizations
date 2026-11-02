@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pay a fixed amount into an account every month. Each deposit then grows for the time remaining, so the deposits form a geometric series.{% endblock %}
+{% block why_text %}With a monthly rate i, the first deposit grows to D(1 + i)ⁿ⁻¹ after n months, the next to D(1 + i)ⁿ⁻², and the last to D. Adding them, a geometric series, gives FV = D[(1 + i)ⁿ − 1]/i. Most of the growth in a long SIP comes from interest on interest, in the later years.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>The return rate is an assumption you set; real returns vary from year to year and are not guaranteed.</p></div>{% endblock %}
+{% block try_items %}
+<li>Compare 10 and 20 years. How much is interest?</li>
+<li>Raise the rate by 2%.</li>
+<li>Double the monthly deposit.</li>
+{% endblock %}

@@ -5470,61 +5470,61 @@
 "archetype": "phasor",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/why-can-an-infinite-sum-be-finite": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/why-does-it-blow-up-when-r-1": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/0-999-1-via-a-geometric-series": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/why-can-t-we-sum-every-infinite-list": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/why-is-am-gm": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/nth-term-and-sums": {
 "archetype": "stepper",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/bouncing-ball": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/rice-on-a-chessboard": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/annuities-and-sips": {
 "archetype": "discrete",
 "priority": 39,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/mathematical-induction/why-does-induction-prove-infinitely-many-cases": {
 "archetype": "discrete",

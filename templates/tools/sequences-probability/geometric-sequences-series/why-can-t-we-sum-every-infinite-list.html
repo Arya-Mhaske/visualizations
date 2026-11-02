@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Some infinite lists add up to a number, and some never settle. Compare three of them.{% endblock %}
+{% block why_text %}To sum an infinite list we ask whether the partial sums approach a fixed number. For 1 + ½ + ¼ + … they do. For 1 − 1 + 1 − 1 + … they flip between 1 and 0 for ever, so there is no sum. The harmonic series 1 + ½ + ⅓ + … grows without limit, though very slowly. Not every infinite list has a sum.{% endblock %}
+{% block try_items %}
+<li>Compare the three partial-sum graphs.</li>
+<li>Why does the alternating list not have a sum?</li>
+<li>How many terms until the harmonic sum passes 3?</li>
+{% endblock %}
