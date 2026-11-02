@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Shuffle a deck perfectly again and again and see when it returns to its starting order.{% endblock %}
+{% block why_text %}A perfect shuffle is a permutation of the card positions. Repeating it follows each card round its cycle, and the deck is back in order exactly when every cycle has gone round once: after the lcm of the cycle lengths.{% endblock %}
+{% block try_items %}
+<li>Keep the 52-card out shuffle. How many shuffles restore the deck?</li>
+<li>Switch to the in shuffle. How does the count change?</li>
+<li>Try a 10-card deck. What is the count for each shuffle?</li>
+<li>Find a deck size where an out shuffle restores it in 3 shuffles.</li>
+{% endblock %}

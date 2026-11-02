@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block lead %}Build an arrangement from swaps and watch the crossings. Does the parity ever disagree?{% endblock %}
+{% block why_text %}Swapping two entries always changes the number of crossings by an odd amount, so the parity flips each time. After s swaps the crossings have the parity of s. The same arrangement cannot be reached by an even and an odd number of swaps, because its crossings fix one parity.{% endblock %}
+{% block try_items %}
+<li>Make three swaps. Is the arrangement even or odd?</li>
+<li>Reach the same arrangement a different way. Does the parity match?</li>
+<li>Press Undo. What happens to the parity?</li>
+<li>Can you reach the identity in an odd number of swaps?</li>
+{% endblock %}

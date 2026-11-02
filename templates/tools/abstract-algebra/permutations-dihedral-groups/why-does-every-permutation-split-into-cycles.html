@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Follow the arrows from each number until they come back to where you began.{% endblock %}
+{% block why_text %}Every number has exactly one arrow leaving it and exactly one arriving. So following the arrows can never get stuck or branch: the path must return to its start, closing into a loop. Every number lies on exactly one loop, so the loops split the permutation.{% endblock %}
+{% block try_items %}
+<li>Press Shuffle a few times. How many cycles do you usually get?</li>
+<li>Use Swap on two numbers in the same cycle. What happens to that cycle?</li>
+<li>Swap two numbers from different cycles. What happens to the cycles?</li>
+<li>Find a permutation with a fixed point.</li>
+{% endblock %}

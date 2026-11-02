@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick two permutations and compose them by following each number through both.{% endblock %}
+{% block why_text %}A cycle lists where each number goes next, so composing means following a number through one permutation and then the other. Following every number and closing the loops gives the cycle form of the product.{% endblock %}
+{% block try_items %}
+<li>Step through σ = (1 2)(3 4) and τ = (1 3 5)(2 4). Which numbers form the cycles of στ?</li>
+<li>Compare στ with τσ. Are they equal?</li>
+<li>Find the inverse of σ. Which direction do the loops run?</li>
+{% endblock %}

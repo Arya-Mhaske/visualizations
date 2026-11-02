@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See every symmetry of a regular polygon: n turns, and n more after a flip.{% endblock %}
+{% block why_text %}A symmetry must keep corners as corners and neighbours as neighbours. Corner 1 can go to any of the n corners, and then its neighbour 2 can go either way round the ring: that is n × 2 = 2n choices, and each one fixes everything else.{% endblock %}
+{% block try_items %}
+<li>Set n = 4. How many pictures are there in all?</li>
+<li>Set n = 5. Turn by 2 steps and flip. Which small picture is highlighted?</li>
+<li>Compare 2n with the number of ways to arrange the labels. Is every arrangement a symmetry?</li>
+{% endblock %}
