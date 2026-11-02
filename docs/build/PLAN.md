@@ -403,7 +403,7 @@ it reaches the front of the queue.
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
 | 67 | `heat-thermodynamics/temperature` | 6 | 1 | ✓ |
 | 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | |
-| 69 | `heat-thermodynamics/thermal-expansion` | 6 | 1 | |
+| 69 | `heat-thermodynamics/thermal-expansion` | 6 | 1 | ✓ |
 | 70 | `numbers-algebra/rational-expressions` | 6 | 1 | |
 | 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | |
 | 72 | `numbers-algebra/linear-equations-formulas` | 7 | 1 | |
@@ -656,3 +656,5 @@ it reaches the front of the queue.
 - `numbers-algebra/number-systems` (11 tools): `_number-systems-math.js` (`divide`/`decimalText` long division with the remainder cycle, `bestP`/`residual` for the square-root-of-2 squares, `leftToRight`/`precedence`, `bounds` for Archimedes, `interval` text). Built without screenshots or tests, by request.
 
 - `heat-thermodynamics/temperature` (6 tools): `_temperature-math.js` (scale conversions, effusivity contact temperature, skin relaxation, seeded gas-pressure points and a least-squares line for absolute zero). Built without screenshots or tests, by request.
+
+- `heat-thermodynamics/thermal-expansion` (6 tools): `_expansion-math.js` (Lennard-Jones well turning points, cube terms, water density table, a layer-by-layer `lake` model, rim and rail formulas). The lake cools only the top layer per step, as a simplified model. Built without screenshots or tests, by request.

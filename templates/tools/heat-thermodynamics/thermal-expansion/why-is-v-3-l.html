@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Grow a cube by a fraction x on every edge and split the extra volume into its pieces.{% endblock %}
+{% block why_text %}The new volume is (1 + x)³ = 1 + 3x + 3x² + x³. For a solid x is tiny (a few thousandths at most), so 3x² and x³ are far smaller than 3x. Keep 3x and the volume expands by 3 times the linear fraction: α<sub>V</sub> = 3α<sub>l</sub>.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>The slider is exaggerated so you can see the pieces. For real solids, x = αΔT is below about 0.005.</p></div>{% endblock %}
+{% block try_items %}
+<li>Make x small. What happens to the share of 3x² and x³?</li>
+<li>At x = 0.001, how much of the extra volume does 3x account for?</li>
+{% endblock %}

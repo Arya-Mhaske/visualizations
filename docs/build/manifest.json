@@ -1445,37 +1445,37 @@
 "archetype": "sim",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/why-is-v-3-l": {
 "archetype": "phasor",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/why-is-water-densest-at-4-c-and-why-do-lakes-freeze-from-the": {
 "archetype": "sim",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/expansion-calculator": {
 "archetype": "space3d",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/the-blacksmith-s-hot-iron-rim": {
 "archetype": "sim",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/railway-gaps-and-bimetallic-strips": {
 "archetype": "sim",
 "priority": 72,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-capacity-calorimetry/why-does-water-heat-so-slowly-and-why-are-there-sea-breezes": {
 "archetype": "sim",
