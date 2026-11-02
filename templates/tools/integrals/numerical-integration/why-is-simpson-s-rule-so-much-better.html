@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Fit parabolas instead of lines.{% endblock %}
+{% block why_text %}A parabola hugs the curve much better than a line. Doubling n cuts the trapezoid error by about 4 and Simpson’s by about 16.{% endblock %}
+{% block try_items %}
+<li>Double n. What is the Simpson error ratio?</li>
+<li>Compare it with the trapezoid ratio.</li>
+<li>Which function is Simpson least good at?</li>
+{% endblock %}

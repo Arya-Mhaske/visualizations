@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}See concave curves above or below the chords and tangents.{% endblock %}
+{% block why_text %}On a curve that bends upward, chords lie above the curve (the trapezoid is too big) and tangents lie below it (the midpoint is too small). The midpoint error is about half the trapezoid error, with the opposite sign.{% endblock %}
+{% block try_items %}
+<li>On eˣ, which rule is too big?</li>
+<li>Switch to sin x. What flips?</li>
+<li>On the cubic, why do the errors partly cancel?</li>
+{% endblock %}

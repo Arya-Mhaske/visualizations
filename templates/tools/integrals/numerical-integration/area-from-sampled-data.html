@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Estimate an area or distance from a table of readings.{% endblock %}
+{% block why_text %}With only readings, you have to join the dots. Trapezoids and Simpson use the shape between readings better than bars do.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The readings are made up from a smooth model so the error can be shown.</div>{% endblock %}
+{% block try_items %}
+<li>Use bars with 20 s gaps. How far off is the distance?</li>
+<li>Switch to trapezoids at 10 s.</li>
+<li>Which rule needs an even number of gaps?</li>
+{% endblock %}
