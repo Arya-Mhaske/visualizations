@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare two Venn diagrams and a truth table to check a law of logic and a law of sets together.{% endblock %}
+{% block why_text %}A point in a Venn region is either in A or not and in B or not, just as a truth-table row is true or false for A and B. The four regions are the four rows. So a law holds for sets exactly when it holds in every row of the truth table: logic and sets are the same algebra.{% endblock %}
+{% block try_items %}
+<li>Pick De Morgan 1. Do the two diagrams match?</li>
+<li>Pick A tempting mistake. Which row breaks it?</li>
+<li>Pick Absorption 1. Why does the left diagram shade only A?</li>
+{% endblock %}

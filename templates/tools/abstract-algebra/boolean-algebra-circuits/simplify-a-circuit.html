@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Apply the laws of Boolean algebra one at a time to remove switches.{% endblock %}
+{% block why_text %}Each law keeps the truth table the same but changes the shape. Using the complement law, the identity law and the distributive law, expressions with 3 or 4 switches collapse to 1 or 2.{% endblock %}
+{% block try_items %}
+<li>Step through AB + AB′. How many switches remain at the end?</li>
+<li>Try A + A′B. Which law makes A′ disappear?</li>
+<li>Check the truth table at every step: does it ever change?</li>
+{% endblock %}

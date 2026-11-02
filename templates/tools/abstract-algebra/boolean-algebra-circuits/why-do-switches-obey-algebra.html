@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Wire two switches in series and in parallel and flip them to see the lamps.{% endblock %}
+{% block why_text %}Treat a closed switch as 1 and an open one as 0. Switches in series pass current only if both are closed, so series behaves like AND, which is multiplication: 1 · 1 = 1, anything else 0. In parallel, current passes if either is closed, which is OR: 1 + 1 = 1 and 0 + 0 = 0.{% endblock %}
+{% block try_items %}
+<li>Close both switches. Which lamps light?</li>
+<li>Close only A. Which lamps light?</li>
+<li>Open both. Which lamps light?</li>
+<li>Compare the readouts with the numbers 0 and 1: where does 1 + 1 = 1 show?</li>
+{% endblock %}

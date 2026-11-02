@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the divisors of n and choose two of them to find their gcd and lcm in the diagram.{% endblock %}
+{% block why_text %}In the divisors of n ordered by 'divides', the gcd is the highest divisor below both and the lcm is the lowest above both. For n = 30 every divisor has a complement n/x and the picture is a cube, the same shape as the subsets of three things: a Boolean algebra.{% endblock %}
+{% block try_items %}
+<li>Set n = 30. Choose x = 2 and y = 3. Where are the meet and the join?</li>
+<li>Set n = 12. Choose x = 2. What happens to the complement?</li>
+<li>Set n = 210. How many divisors are there, and is it Boolean?</li>
+{% endblock %}
