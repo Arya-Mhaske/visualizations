@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Raise the orbit of a satellite. It has further to go round and a weaker pull, and it moves more slowly.{% endblock %}
+{% block why_text %}Gravity supplies the centripetal force: GMm/r² = mv²/r, so v = √(GM/r). A larger r gives a smaller v, and the path is also longer, so the period grows quickly: T ∝ r^(3/2). Going higher means going slower, even though it takes more energy to get there.{% endblock %}
+{% block try_items %}
+<li>Compare a low orbit with the geostationary orbit.</li>
+<li>Find the height where v = 5 km/s.</li>
+<li>What happens to the period as you go higher?</li>
+{% endblock %}

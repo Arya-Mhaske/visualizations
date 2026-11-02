@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}For a circular orbit, plot the kinetic energy, the potential energy and their sum against the radius.{% endblock %}
+{% block why_text %}K = GMm/2r is positive, U = −GMm/r is negative and twice as big in size, so E = K + U = −GMm/2r is negative, and E = −K. A negative total energy means the satellite is bound. Adding energy (raising E towards zero) means a bigger orbit; adding enough makes it escape.{% endblock %}
+{% block try_items %}
+<li>Check that K is always −½U.</li>
+<li>Increase r. What happens to E?</li>
+<li>What is the total energy at infinity?</li>
+{% endblock %}

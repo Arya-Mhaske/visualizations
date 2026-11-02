@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A satellite whose period matches the Earth's turn hangs over one spot. Find the height where T = 24 h.{% endblock %}
+{% block why_text %}Setting T = 24 h in r = (GMT²/4π²)^(1/3) gives r ≈ 42 200 km from the centre, which is about 36 000 km above the surface. It must also orbit over the equator, in the direction of the Earth's spin, to stay over one point.{% endblock %}
+{% block try_items %}
+<li>Check the 36 000 km.</li>
+<li>Choose T = 12 h. How high is the orbit?</li>
+<li>What is the speed at the geostationary height?</li>
+{% endblock %}

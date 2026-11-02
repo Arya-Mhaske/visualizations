@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}For anything orbiting the Earth, T² = k r³ with the same constant k. Use a near-Earth satellite to get k, then find the Moon\'s period.{% endblock %}
+{% block why_text %}Kepler's constant for the Earth is k = 4π²/GM ≈ 9.9 × 10⁻¹⁴ s² m⁻³. With the Moon at r = 3.84 × 10⁸ m, T² = k r³ gives T ≈ 2.4 × 10⁶ s, about 27 days. The same k works for any body orbiting the Earth.{% endblock %}
+{% block try_items %}
+<li>Check about 27.3 days at 384 400 km.</li>
+<li>Halve the distance. How does T change?</li>
+<li>What distance gives a 10-day period?</li>
+{% endblock %}

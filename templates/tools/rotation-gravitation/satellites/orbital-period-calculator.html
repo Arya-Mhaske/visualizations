@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the height of a satellite above the Earth. Find its period.{% endblock %}
+{% block why_text %}T = 2π√(r³/GM), with r measured from the Earth's centre. Just above the surface (r = R) this is about 84 minutes, or 85 with a little height. The period grows as r^(3/2), so the higher the orbit, the longer the period.{% endblock %}
+{% block try_items %}
+<li>Set the height to 0. What is the period?</li>
+<li>Find the height at which T = 2 hours.</li>
+<li>What is T at 36 000 km?</li>
+{% endblock %}

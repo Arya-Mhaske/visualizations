@@ -1097,43 +1097,43 @@
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/why-is-an-orbiting-satellite-s-energy-negative": {
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/why-do-astronauts-float": {
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/why-does-air-drag-speed-a-satellite-up": {
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/orbital-period-calculator": {
 "archetype": "stepper",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/geostationary-orbit": {
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/satellites/the-moon-s-period-from-kepler-s-constant": {
 "archetype": "sim",
 "priority": 56,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/why-is-the-more-elastic-material-the-one-that-stretches-less": {
 "archetype": "sim",
