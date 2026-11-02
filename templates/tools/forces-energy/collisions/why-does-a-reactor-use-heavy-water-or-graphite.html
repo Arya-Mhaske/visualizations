@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A fast neutron must be slowed by bouncing off light nuclei. Compare hydrogen, deuterium and carbon.{% endblock %}
+{% block why_text %}In a head-on elastic hit on a nucleus of mass number A, the neutron loses a fraction 4A/(1 + A)² of its kinetic energy: 100% for hydrogen (A = 1), 8/9 for deuterium (A = 2) and 28% for carbon (A = 12). Light nuclei slow neutrons fastest, so reactors use water, heavy water or graphite.{% endblock %}
+{% block try_items %}
+<li>Check 8/9 for deuterium and 28% for carbon.</li>
+<li>Count how many hits it takes to drop below 1% of the energy.</li>
+<li>Try a heavy nucleus, A = 200.</li>
+{% endblock %}

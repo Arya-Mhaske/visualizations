@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Lift some balls of a Newton's cradle and let them hit. Try letting a different number swing out.{% endblock %}
+{% block why_text %}Two conservation laws must both hold: m·k·v = m·j·w (momentum) and ½m·k·v² = ½m·j·w² (energy). Dividing, w = v and j = k. Only the same number of balls, at the same speed, satisfies both. For two equal masses this is a swap of velocities.{% endblock %}
+{% block try_items %}
+<li>Lift 2 balls. Which outcome satisfies both laws?</li>
+<li>Try 1 ball leaving at double speed. Which law fails?</li>
+<li>Try 2 balls leaving at half speed.</li>
+{% endblock %}

@@ -725,43 +725,43 @@
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-do-equal-masses-swap-velocities-head-on": {
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-does-a-ball-bounce-off-a-truck-while-the-truck-barely-no": {
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-do-equal-mass-glancing-collisions-split-at-90": {
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-isn-t-ke-conserved-during-the-impact-itself": {
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/collision-lab": {
 "archetype": "stepper",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-does-a-reactor-use-heavy-water-or-graphite": {
 "archetype": "sim",
 "priority": 34,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/why-is-the-centre-of-mass-a-mass-weighted-average": {
 "archetype": "sim",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two carts collide. Slide the bounce from elastic (e = 1) to perfectly sticky (e = 0).{% endblock %}
+{% block why_text %}The coefficient of restitution e = (speed of separation)/(speed of approach) says how bouncy the collision is. Momentum is always conserved. For e = 1 the kinetic energy is conserved; for e = 0 the carts move off together and the most possible energy is lost.{% endblock %}
+{% block try_items %}
+<li>Set e = 1 and compare the KE before and after.</li>
+<li>Set e = 0. What do the two velocities become?</li>
+<li>How does the lost energy change with e?</li>
+{% endblock %}
