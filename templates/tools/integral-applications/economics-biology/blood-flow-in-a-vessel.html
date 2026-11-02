@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Integrate Poiseuille’s velocity profile.{% endblock %}
+{% block why_text %}Blood is fastest in the middle and still at the wall. Adding the flow in thin rings gives π ΔP R⁴ / (8ηL), so a small change in radius makes a large change in flow.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The numbers are illustrative, not clinical.</div>{% endblock %}
+{% block try_items %}
+<li>Double R. What happens to the flow?</li>
+<li>Halve ΔP. What happens?</li>
+<li>Why is the flow so sensitive to R?</li>
+{% endblock %}

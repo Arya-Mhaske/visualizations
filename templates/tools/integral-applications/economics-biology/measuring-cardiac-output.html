@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use the dye-dilution integral.{% endblock %}
+{% block why_text %}Inject a known dose of dye. The area under its concentration curve tells how much blood passed. Flow = dose ÷ area.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The curves are made up. A real test uses measured concentrations.</div>{% endblock %}
+{% block try_items %}
+<li>Cut the curve before the bump. What is the flow?</li>
+<li>Include the bump. How wrong does it get?</li>
+<li>Change τ. Does the area change?</li>
+{% endblock %}
