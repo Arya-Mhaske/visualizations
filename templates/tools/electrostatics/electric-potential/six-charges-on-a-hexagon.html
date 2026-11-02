@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the potential and the field at the centre of a hexagon of charges.{% endblock %}
+{% block why_text %}Every corner is the same distance a from the centre, so V = (k/a) × (sum of the charges), a plain sum. The field needs arrows: equal charges on opposite corners cancel it. All six + give E = 0 but V = 6kq/a. Alternating charges give V = 0 and E = 0. Take one charge away from an all-+ hexagon and the remaining five leave E = kq/a², pointing towards the empty corner.{% endblock %}
+{% block try_items %}
+<li>All +: what are V and E at the centre?</li>
+<li>Choose "+++ −−−". Why is V zero but E not?</li>
+<li>Choose "One missing". Which way does E point, and what is its size in terms of kq/a²?</li>
+{% endblock %}

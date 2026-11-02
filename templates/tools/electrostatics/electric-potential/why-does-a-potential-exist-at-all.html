@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Carry a test charge round a loop and add up the work on each side.{% endblock %}
+{% block why_text %}Along the sides that go outwards and inwards the force does work, and the two cancel because the force depends only on r. The sides that are at a steady distance cost nothing. Total work round any loop is zero. So the work from A to B is the same on every path, and we can define a potential. A swirling force fails this test.{% endblock %}
+{% block try_items %}
+<li>Change the loop's size and angle. Is the Coulomb total ever not zero?</li>
+<li>Which sides do the work, and which contribute nothing, for the Coulomb force?</li>
+<li>Switch to the swirling force. What is the total now?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>Units are chosen so that kQq = 1. Each side's work is found by adding up F · dl numerically.</div>{% endblock %}

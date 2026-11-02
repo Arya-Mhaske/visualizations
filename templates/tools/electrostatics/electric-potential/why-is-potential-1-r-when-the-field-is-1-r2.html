@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Potential is the work to bring a unit charge in from infinity: the area under the field curve.{% endblock %}
+{% block why_text %}Work = ∫E dr. The field of a point charge, kQ/x², integrates to kQ/r, so the potential is 1/r even though the field is 1/r². The area out to infinity is finite because 1/x² falls fast. For a line charge the field is 1/x and the area has no limit, so there V cannot be set to zero at infinity.{% endblock %}
+{% block try_items %}
+<li>Choose the point field. Move the start from 10 to 10 000. Does the area change much?</li>
+<li>Halve r. What happens to the area?</li>
+<li>Choose the line field. What happens as the start moves out?</li>
+{% endblock %}

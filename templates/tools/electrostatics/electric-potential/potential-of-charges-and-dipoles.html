@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Potential is a plain number at each point, so potentials from different charges just add.{% endblock %}
+{% block why_text %}Unlike the field, potential has no direction, so there are no arrows to resolve. V = kq₁/r₁ + kq₂/r₂ + …, with signs. For a dipole (+q and −q close together) the two terms nearly cancel far away, which is why a dipole's potential falls faster than 1/r. On the line midway between equal and opposite charges V = 0.{% endblock %}
+{% block try_items %}
+<li>Set the charges to +1 and −1. Put the probe at x = 0. What is V?</li>
+<li>Set both to +1. Where is V smallest between them?</li>
+<li>Move the probe far away for +1 and −1. How small does V get?</li>
+{% endblock %}

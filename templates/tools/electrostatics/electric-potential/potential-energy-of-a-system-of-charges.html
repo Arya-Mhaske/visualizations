@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The energy stored in a group of charges is the sum over every pair.{% endblock %}
+{% block why_text %}Bringing the first charge in costs nothing. The second feels the first. The third feels both. Adding up the work gives U = k Σ qᵢqⱼ/rᵢⱼ over all pairs, each counted once. The order does not matter, because each pair is counted exactly once whichever charge arrives later. U is negative if the charges are bound together.{% endblock %}
+{% block try_items %}
+<li>Make all three charges +2 µC in a triangle. What is U? Is energy needed to assemble them?</li>
+<li>Change the order of arrival. Do the three works change? Does their sum?</li>
+<li>Make one charge negative. Which pair terms turn negative?</li>
+{% endblock %}

@@ -2196,43 +2196,43 @@
 "archetype": "sim",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/why-is-potential-1-r-when-the-field-is-1-r2": {
 "archetype": "sim",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/why-are-equipotentials-perpendicular-to-field-lines": {
 "archetype": "rays",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/why-is-e-dv-dr": {
 "archetype": "sim",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/potential-of-charges-and-dipoles": {
 "archetype": "stepper",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/potential-energy-of-a-system-of-charges": {
 "archetype": "stepper",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/six-charges-on-a-hexagon": {
 "archetype": "sim",
 "priority": 118,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/why-is-e-0-inside-a-conductor": {
 "archetype": "sim",

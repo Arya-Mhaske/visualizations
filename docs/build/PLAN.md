@@ -449,7 +449,7 @@ it reaches the front of the queue.
 | 112 | `systems-matrices/matrices-row-reduction` | 4 | 1 | ✓ |
 | 113 | `electrostatics/flux-gauss-s-law` | 5 | 1 | ✓ |
 | 114 | `systems-matrices/matrix-algebra` | 10 | 1 | ✓ |
-| 115 | `electrostatics/electric-potential` | 7 | 1 | |
+| 115 | `electrostatics/electric-potential` | 7 | 1 | ✓ |
 | 116 | `systems-matrices/determinants-cramer` | 11 | 1 | ✓ |
 | 117 | `electrostatics/conductors-dielectrics` | 6 | 1 | |
 | 118 | `limits-continuity/continuity` | 5 | 1 | |
@@ -638,3 +638,5 @@ it reaches the front of the queue.
 - `electrostatics/_coulomb.js`: SI constants, `forceUcCm` (µC and cm to newtons), `pithAngle` (bisection of kq²/(2L sinθ)² = mg tanθ) and `pithCharge`. Checked in Node: Fe/Fg = 2.27e39 (e–p), 1.23e36 (p–p); the default pith balls hang at 7.6°.
 
 - `flux-gauss-s-law` (5 tools): the closed-surface tool counts signed crossings of 12q rays with a sampled bubble polygon (counter-clockwise, outward normal (ey, -ex)); net = 12q inside and 0 outside whatever the dents. Built without screenshots or runs: look at that tool and at the Gaussian sketches in the symmetry tool.
+
+- `electrostatics/_potential.js`: `coulombField`, `swirlField` (unit swirl round the origin; a 1/r² swirl has no curl, so a loop that misses the origin does no work: use 1/r), `segmentWork` (Simpson), `pairEnergy` (µC, cm to J: 0.9 q1 q2 / r), `hexPoints`. Checked in Node: Coulomb loop work 1e-16, swirl loop work 1.4. `electric-potential` (7 tools) built without screenshots: look at the equipotential tracer and the potential map.
