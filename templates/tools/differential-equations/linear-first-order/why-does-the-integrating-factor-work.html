@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply a linear equation by e^(kx) and watch for the one k that makes the left side a perfect derivative.{% endblock %}
+{% block why_text %}By the product rule, (e^(kx)·y)′ = e^(kx)(y′ + k·y). The equation says y′ + p·y = q. Only when k = p does the bracket match the left side, so only then does the equation read (e^(px)·y)′ = e^(px)·q, which can be integrated at once. That special multiplier is the integrating factor.{% endblock %}
+{% block try_items %}
+<li>Slide k up from 0. When does the shaded gap close to nothing?</li>
+<li>Change p. Where must k be now?</li>
+<li>With k = p, what does the equation say about the solid and dashed curves?</li>
+{% endblock %}

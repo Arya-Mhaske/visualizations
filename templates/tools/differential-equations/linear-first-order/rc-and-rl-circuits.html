@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Close a switch and watch a capacitor charge or a current build up in a coil.{% endblock %}
+{% block why_text %}Both circuits give a first-order linear equation, y′ + y/τ = final/τ. The integrating factor solves it: y = final·(1 − e^(−t/τ)). The change is fastest at the start, when the gap to the final value is biggest, and after one time constant τ the circuit has covered about 63% of the way.{% endblock %}
+{% block try_items %}
+<li>Slide time to 1 τ. What share of the final value is reached?</li>
+<li>Double R in the RC circuit. What happens to τ and to the final value?</li>
+<li>Switch to RL. Which part now plays the role of the capacitor voltage?</li>
+{% endblock %}

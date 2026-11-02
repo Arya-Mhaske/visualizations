@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Find the integrating factor, apply it, and solve, one step at a time.{% endblock %}
+{% block why_text %}Write the equation as y′ + P·y = Q. Multiplying by μ = e^(∫P dx) makes the left side exactly (μy)′, by the product rule. Then you only integrate Q·μ and divide by μ. The starting value fixes the one constant.{% endblock %}
+{% block try_items %}
+<li>Pick y′ + y/x = x. What is the integrating factor?</li>
+<li>Change the starting value. Which part of the answer changes?</li>
+<li>Compare the formula with the numerical check each time.</li>
+{% endblock %}
