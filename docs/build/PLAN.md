@@ -369,7 +369,7 @@ it reaches the front of the queue.
 | 32 | `sequences-probability/sequences` | 3 | 1 | |
 | 33 | `rotation-gravitation/centre-of-mass` | 7 | 1 | ✓ |
 | 34 | `sequences-probability/arithmetic-sequences` | 4 | 1 | |
-| 35 | `rotation-gravitation/rotation-kinematics` | 5 | 1 | |
+| 35 | `rotation-gravitation/rotation-kinematics` | 5 | 1 | ✓ |
 | 36 | `sequences-probability/geometric-sequences-series` | 10 | 1 | |
 | 37 | `rotation-gravitation/torque-equilibrium` | 8 | 1 | |
 | 38 | `functions-graphs/lines-slope` | 10 | 1 | ✓ |
@@ -700,3 +700,5 @@ it reaches the front of the queue.
 - `lib/recipes.js` (new, documented in its header): `plotTool` and `barTool` build a simple plot or bar tool from state, curves and readouts. `forces-energy/_collisions.js`: `coll` (any restitution e), `ke`, `lostFraction` (8/9 for deuterium, 28% for carbon). Built without screenshots or tests, by request.
 
 - `rotation-gravitation/centre-of-mass`: inline maths on `recipes.js`. The hidden-slider pattern is used in the calculator. Built without screenshots or tests, by request.
+
+- `rotation-gravitation/rotation-kinematics`: inline maths. The solver gives 4 pi rad/s2 and 576 revolutions at the defaults. Built without screenshots or tests, by request.

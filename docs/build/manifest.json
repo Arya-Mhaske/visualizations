@@ -809,31 +809,31 @@
 "archetype": "sim",
 "priority": 38,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotation-kinematics/why-do-all-points-share-but-not-v": {
 "archetype": "space3d",
 "priority": 38,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotation-kinematics/why-is-angular-velocity-a-vector-along-the-axis": {
 "archetype": "space3d",
 "priority": 38,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotation-kinematics/why-do-rotation-equations-mirror-the-equations-of-motion": {
 "archetype": "rays",
 "priority": 38,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotation-kinematics/rotational-kinematics-solver": {
 "archetype": "space3d",
 "priority": 38,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/why-is-the-door-handle-far-from-the-hinge": {
 "archetype": "sim",

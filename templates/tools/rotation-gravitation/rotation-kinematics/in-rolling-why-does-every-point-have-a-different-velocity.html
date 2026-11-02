@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A wheel rolls without slipping. Its centre moves at v, but the points on the rim do not.{% endblock %}
+{% block why_text %}Each point has two motions: v forward from the whole wheel moving, and v tangent to the rim from the spin. At the top they add to 2v. At the contact point they cancel, so it is momentarily at rest. In between, the speed is 2v sin(φ/2), where φ is the angle from the contact point.{% endblock %}
+{% block try_items %}
+<li>Put the point at the top. How fast is it?</li>
+<li>Put it at the contact point.</li>
+<li>Find where the speed equals v.</li>
+{% endblock %}

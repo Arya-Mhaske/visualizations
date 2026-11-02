@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A motor speeds up from 1200 to 3120 rpm in 16 s. Find the angular acceleration and the number of turns.{% endblock %}
+{% block why_text %}Convert first: 1200 rpm = 40π rad/s and 3120 rpm = 104π rad/s. Then α = Δω/t = 64π/16 = 4π rad/s² (about 12.6). The angle is the average ω times t: 72π × 16 = 1152π rad = 576 revolutions.{% endblock %}
+{% block try_items %}
+<li>Check α = 4π and 576 revolutions.</li>
+<li>Change the time. How do α and the turns change?</li>
+<li>Why does the shaded area give the angle?</li>
+{% endblock %}
