@@ -503,49 +503,49 @@
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-doesn-t-friction-depend-on-contact-area": {
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-is-friction-what-moves-cars-and-walkers-forward": {
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-does-the-slip-angle-give-s-tan-theta": {
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-is-rolling-friction-so-much-smaller": {
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-are-contact-forces-electrical-at-heart": {
 "archetype": "space3d",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/incline-calculator": {
 "archetype": "stepper",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/a-box-in-an-accelerating-train": {
 "archetype": "sim",
 "priority": 24,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/circular-dynamics/why-isn-t-centripetal-force-a-new-force": {
 "archetype": "sim",

@@ -355,7 +355,7 @@ it reaches the front of the queue.
 | 18 | `trigonometry/tan-cot-sec-csc` | 9 | 1 | ✓ |
 | 19 | `forces-energy/equilibrium-free-body-diagrams` | 5 | 1 | ✓ |
 | 20 | `trigonometry/identities` | 12 | 1 | ✓ |
-| 21 | `forces-energy/friction` | 8 | 1 | |
+| 21 | `forces-energy/friction` | 8 | 1 | ✓ |
 | 22 | `numbers-algebra/complex-numbers` | 8 | 1 | ✓ |
 | 23 | `forces-energy/circular-dynamics` | 7 | 1 | |
 | 24 | `numbers-algebra/quadratic-equations` | 8 | 1 | ✓ |
@@ -682,3 +682,5 @@ it reaches the front of the queue.
 - `forces-energy/third-law-momentum-conservation`: all maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
 
 - `forces-energy/equilibrium-free-body-diagrams`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
+
+- `forces-energy/friction`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.

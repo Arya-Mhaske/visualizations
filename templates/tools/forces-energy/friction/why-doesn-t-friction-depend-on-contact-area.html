@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stand a brick on its large face, then on its small face. The friction force is the same.{% endblock %}
+{% block why_text %}A smaller area means a larger pressure over each patch, but fewer patches. The real contact is made at tiny spots that grow in size with pressure, so the total contact is set by the load, not the apparent area. This is an empirical law that works well for ordinary solids, not a law of nature.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>This is an approximate law for dry solid surfaces. It fails for soft materials such as rubber and for very wide tyres on soft ground.</p></div>{% endblock %}
+{% block try_items %}
+<li>Slide the area. Does the friction change?</li>
+<li>What does change as the area shrinks?</li>
+<li>Change μ. Now what changes?</li>
+{% endblock %}

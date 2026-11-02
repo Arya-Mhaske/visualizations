@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Tilt a plane until the block just slides. The angle tells you μₛ, whatever the mass.{% endblock %}
+{% block why_text %}Down the slope the pull is mg sin θ. The most friction can give is μₛN = μₛmg cos θ. The block slips when mg sin θ = μₛmg cos θ. The mass cancels, leaving μₛ = tan θ.{% endblock %}
+{% block try_items %}
+<li>Change the mass. Does the slip angle change?</li>
+<li>Raise μₛ. What happens to the angle?</li>
+<li>At the slip angle, compare the two forces.</li>
+{% endblock %}

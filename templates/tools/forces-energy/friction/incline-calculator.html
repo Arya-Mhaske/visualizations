@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put a block on a rough slope. Find the normal force, the pull down the slope, the friction and the acceleration.{% endblock %}
+{% block why_text %}Resolve the weight: mg cos θ presses into the slope (so N = mg cos θ) and mg sin θ pulls along it. The block stays if mg sin θ ≤ μₛN. Otherwise it slides with a = g(sin θ − μₖ cos θ).{% endblock %}
+{% block try_items %}
+<li>Raise the angle until it slides.</li>
+<li>Increase μₖ. What happens to a?</li>
+<li>Find the angle where a = 0 for μₖ.</li>
+{% endblock %}

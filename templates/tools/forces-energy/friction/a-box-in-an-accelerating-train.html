@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A box rests on the floor of a train that speeds up. Only friction can accelerate the box.{% endblock %}
+{% block why_text %}Friction is the only horizontal force on the box, so it must supply ma. But friction can be at most μₛmg, so a ≤ μₛg. With μₛ = 0.15, this is about 1.5 m/s². Beyond it the box slips backward relative to the floor.{% endblock %}
+{% block try_items %}
+<li>Raise the train acceleration. When does the box start to slide?</li>
+<li>Check a = μₛg = 1.5 m/s² for μₛ = 0.15.</li>
+<li>Which of the two, mass or μₛ, sets the limit?</li>
+{% endblock %}
