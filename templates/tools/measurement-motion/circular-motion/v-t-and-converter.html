@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Set the angular speed and radius. Read the period, frequency, rpm and speed.{% endblock %}
+{% block why_text %}One turn is 2π radians, so T = 2π/ω, ν = 1/T and v = ωR. A fast ω means a short period; the same ω at a bigger radius means a bigger speed.{% endblock %}
+{% block try_items %}
+<li>Set ω = 2π rad/s. What are T and ν?</li>
+<li>Change R. Which of the four quantities depend on R?</li>
+<li>Convert 300 rpm to rad/s.</li>
+{% endblock %}

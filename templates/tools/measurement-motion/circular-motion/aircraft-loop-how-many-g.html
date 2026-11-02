@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A jet flies a loop of radius 1 km at 900 km/h. How big is the centripetal acceleration compared with g?{% endblock %}
+{% block why_text %}Convert first: 900 km/h = 250 m/s. Then a = v²/R = 250²/1000 = 62.5 m/s², which is about 6.4 g. Tighter loops and higher speeds quickly push the pilot to many g.{% endblock %}
+{% block try_items %}
+<li>Check the 6.4 g at the defaults.</li>
+<li>Halve the radius. What happens to the g-load?</li>
+<li>What speed keeps the load at 3 g?</li>
+{% endblock %}

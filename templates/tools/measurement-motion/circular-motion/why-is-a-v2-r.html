@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The triangle of positions and the triangle of velocities have the same shape. Compare their sides.{% endblock %}
+{% block why_text %}Both triangles are isosceles with the same apex angle Δφ, so they are similar: Δv/v = Δr/R. Divide by Δt, with Δr/Δt = v: a = Δv/Δt = v²/R. The shorter the interval, the closer the average gets.{% endblock %}
+{% block try_items %}
+<li>Shrink the angle to 5°. How does the average acceleration compare with v²/R?</li>
+<li>Double v. What happens to a?</li>
+<li>Double R. What happens to a?</li>
+{% endblock %}

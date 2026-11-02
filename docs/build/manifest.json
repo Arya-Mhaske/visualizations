@@ -305,43 +305,43 @@
 "archetype": "sim",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/why-is-a-v2-r": {
 "archetype": "sim",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/why-is-v-r": {
 "archetype": "sim",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/why-don-t-the-equations-of-motion-work-in-circles": {
 "archetype": "sim",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/v-t-and-converter": {
 "archetype": "table",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/aircraft-loop-how-many-g": {
 "archetype": "sim",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/insect-in-a-groove": {
 "archetype": "space3d",
 "priority": 14,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/inertia-the-first-law/why-did-aristotle-think-motion-needs-a-push": {
 "archetype": "sim",

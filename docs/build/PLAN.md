@@ -345,7 +345,7 @@ it reaches the front of the queue.
 | 8 | `functions-graphs/properties-library` | 7 | 1 | ✓ |
 | 9 | `measurement-motion/projectiles` | 9 | 1 | ✓ |
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
-| 11 | `measurement-motion/circular-motion` | 7 | 1 | |
+| 11 | `measurement-motion/circular-motion` | 7 | 1 | ✓ |
 | 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | ✓ |
 | 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |
 | 14 | `trigonometry/unit-circle` | 12 | 1 | ✓ |
@@ -672,3 +672,5 @@ it reaches the front of the queue.
 - `measurement-motion/vectors` (7 tools): inline maths; the boat tool measures heading from downstream. Built without screenshots or tests.
 
 - `measurement-motion/projectiles` (9 tools): `_proj.js` (`pos`, `vel`, `flightTime`, `range`, `peak`, all with an optional launch height; checked 10 m and 69.3 m for 28 m/s at 30 degrees). Built without screenshots or tests.
+
+- `measurement-motion/circular-motion` (7 tools): inline maths. Built without screenshots or tests.
