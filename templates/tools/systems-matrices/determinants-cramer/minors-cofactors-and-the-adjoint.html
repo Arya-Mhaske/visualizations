@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Build adj A and then A⁻¹ = adj A / |A| for a 3 × 3 matrix.{% endblock %}
+{% block why_text %}The minor of an entry is the determinant left after crossing out its row and column. The cofactor puts a chessboard sign on it. The adjoint is the transpose of the cofactor matrix. Dividing the adjoint by |A| gives the inverse.{% endblock %}
+{% block try_items %}
+<li>Change the entry. Do the sign and minor follow?</li>
+<li>Check the chessboard of signs.</li>
+<li>Check that the inverse times A gives the identity.</li>
+{% endblock %}

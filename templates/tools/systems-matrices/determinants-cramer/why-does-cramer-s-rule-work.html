@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Swap a column for b and compare the areas.{% endblock %}
+{% block why_text %}Since b = x₁ (column 1) + x₂ (column 2), swapping column 1 for b gives the parallelogram on b and column 2. The part of b along column 2 adds no area, so only the x₁ column 1 part counts. The new area is x₁ times the old one, and x₁ is the ratio of the two determinants.{% endblock %}
+{% block try_items %}
+<li>Make b equal to column 1. What is x₁?</li>
+<li>Make b equal to column 2. What is x₁?</li>
+<li>Check that the ratio matches the solved value.</li>
+{% endblock %}

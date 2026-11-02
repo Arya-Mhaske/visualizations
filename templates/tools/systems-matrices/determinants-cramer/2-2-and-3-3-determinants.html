@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Expand a determinant by minors with the signs shown.{% endblock %}
+{% block why_text %}A 2 × 2 determinant is one diagonal product minus the other. A 3 × 3 determinant expands along a row: each entry times the 2 × 2 determinant left when its row and column are crossed out, with signs + − + . A row or column with zeros makes the work shorter.{% endblock %}
+{% block try_items %}
+<li>Pick the 3 × 3 with a zero. Which term disappears?</li>
+<li>Check the sign pattern + − + along the first row.</li>
+<li>Why do the signs alternate?</li>
+{% endblock %}

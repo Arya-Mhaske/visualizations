@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the two columns span a parallelogram whose area is the absolute value of the determinant.{% endblock %}
+{% block why_text %}The columns of the matrix are the sides of the parallelogram. Its area is base times height, and working that out gives ad − bc. If the columns point along one line the parallelogram is flat and its area is 0. The sign tells whether the second column is anticlockwise or clockwise of the first.{% endblock %}
+{% block try_items %}
+<li>Make both columns the same. What is the area?</li>
+<li>Swap the two columns. What happens to the sign?</li>
+<li>Make column 1 = (2, 0) and column 2 = (0, 3). What is the area?</li>
+{% endblock %}

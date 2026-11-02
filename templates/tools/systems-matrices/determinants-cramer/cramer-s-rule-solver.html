@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Solve 2- and 3-variable systems with Cramer's rule.{% endblock %}
+{% block why_text %}To find one unknown, replace its column of the coefficient matrix by the right-hand side and divide the new determinant by the original one. It works only when the original determinant is not zero. It is neat for small systems and slow for large ones.{% endblock %}
+{% block try_items %}
+<li>Which column is replaced to find y?</li>
+<li>Check the solution by multiplying.</li>
+<li>Why is D = 0 a problem?</li>
+{% endblock %}

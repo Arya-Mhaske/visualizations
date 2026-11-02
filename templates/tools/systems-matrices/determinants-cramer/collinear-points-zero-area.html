@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Show three points are collinear when the area determinant is 0.{% endblock %}
+{% block why_text %}Three points form a triangle unless they lie on one line. The area of the triangle is half the determinant with a column of ones. When the points are collinear the triangle is flat, its area is 0, and the determinant is 0. So a zero determinant is a test for collinearity.{% endblock %}
+{% block try_items %}
+<li>Drag C onto the line through A and B. What happens to the determinant?</li>
+<li>Move C a half unit off the line. How big is the area?</li>
+<li>Make all three points the same. What is the determinant?</li>
+{% endblock %}

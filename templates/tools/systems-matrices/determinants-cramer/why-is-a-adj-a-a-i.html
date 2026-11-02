@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Multiply a row by its own cofactors, then by another row's cofactors.{% endblock %}
+{% block why_text %}Row 1 times the cofactors of row 1 is the expansion of the determinant along row 1, so it equals |A|. Row 2 times the cofactors of row 1 is the same expansion but of a matrix whose first row has been replaced by row 2. That matrix has two equal rows, so its determinant is 0. So A (adj A) has |A| on the diagonal and 0 everywhere else.{% endblock %}
+{% block try_items %}
+<li>Read the top-right entry of the product. Why is it 0?</li>
+<li>Pick the matrix with |A| = −3. What is A adj A?</li>
+<li>Use the result to write A⁻¹.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use half the determinant with three dragged vertices.{% endblock %}
+{% block why_text %}The area of the triangle with corners (x₁, y₁), (x₂, y₂), (x₃, y₃) is half the absolute value of the 3 × 3 determinant with rows x, y, 1. The sign of the determinant tells whether the corners go anticlockwise or clockwise. Taking the absolute value gives the area.{% endblock %}
+{% block try_items %}
+<li>Make a right triangle with legs 4 and 3. What is its area?</li>
+<li>Swap two corners by dragging. What happens to the sign?</li>
+<li>Find three corners that give an area of 10.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Decide consistent or inconsistent from |A| and (adj A) B, then solve.{% endblock %}
+{% block why_text %}If |A| is not zero the inverse exists and X = A⁻¹B is the one solution. If |A| = 0, compute (adj A) B. If it is not zero the system is inconsistent. If it is zero, the system may have infinitely many solutions, and a check of the ranks settles it.{% endblock %}
+{% block try_items %}
+<li>Pick the matrix with |A| ≠ 0. What is X?</li>
+<li>Pick |A| = 0 with no solution. What is (adj A) B?</li>
+<li>Pick |A| = 0 with many solutions. Does (adj A) B help alone?</li>
+{% endblock %}

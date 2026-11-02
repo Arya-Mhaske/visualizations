@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Apply two area-scalings one after another: the factors multiply.{% endblock %}
+{% block why_text %}B multiplies every area by |B|. A then multiplies every area by |A|. The two moves together are the matrix AB, which multiplies areas by |AB|. Since the same picture gives both, |AB| = |A||B|.{% endblock %}
+{% block try_items %}
+<li>Choose the reflection. What is the sign of |AB|?</li>
+<li>Make |A| = 0. What is |AB|?</li>
+<li>Check that the product readout matches |AB|.</li>
+{% endblock %}
