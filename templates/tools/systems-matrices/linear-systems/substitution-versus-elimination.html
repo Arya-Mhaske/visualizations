@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Solve one system by substitution and again by elimination.{% endblock %}
+{% block why_text %}Substitution solves one equation for one unknown and puts it into the other. Elimination adds multiples of the equations to cancel an unknown. They are different routes to the same crossing point, and the answer is the same either way. Substitution is quicker when one unknown has coefficient 1. Elimination is steadier when the numbers are awkward.{% endblock %}
+{% block try_items %}
+<li>Press Next step and follow substitution first. Where does a single unknown remain?</li>
+<li>Follow elimination. Which unknown did it cancel?</li>
+<li>Check that both methods give the same point.</li>
+{% endblock %}

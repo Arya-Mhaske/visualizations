@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Move two lines and see them cross once, never, or lie on top of each other.{% endblock %}
+{% block why_text %}Two lines with different slopes must cross, and they cross once. Two lines with the same slope but different intercepts never meet, so there is no solution. Two lines with the same slope and the same intercept are one line, so every point on it is a solution. The algebra says the same: subtracting the equations leaves either a number times x, or 0 = 5, or 0 = 0.{% endblock %}
+{% block try_items %}
+<li>Make the slopes equal and the intercepts different. What does subtracting give?</li>
+<li>Make both lines identical. How many solutions are there?</li>
+<li>Find a pair of lines that cross exactly at (1, 2).</li>
+{% endblock %}

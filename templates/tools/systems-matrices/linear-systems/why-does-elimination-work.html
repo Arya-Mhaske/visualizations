@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add a multiple of one equation to another and see that the new line still passes through the solution.{% endblock %}
+{% block why_text %}The solution point makes both equations true. So it also makes any sum of them true, because true plus true is true. Adding t times line 2 to line 1 gives a new line that still goes through the crossing point. Elimination just chooses t so the new line is horizontal or vertical, which makes one unknown disappear.{% endblock %}
+{% block try_items %}
+<li>Move t. Does the dashed line ever leave the crossing point?</li>
+<li>Set the two directions to be close. How steep must the new line be?</li>
+<li>Find a t that makes the new line horizontal.</li>
+{% endblock %}

@@ -6034,259 +6034,260 @@
 "archetype": "discrete",
 "priority": 186,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/linear-systems/why-does-elimination-work": {
 "archetype": "discrete",
 "priority": 186,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/linear-systems/three-equations-three-planes": {
 "archetype": "space3d",
 "priority": 186,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/linear-systems/substitution-versus-elimination": {
 "archetype": "stepper",
 "priority": 186,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/linear-systems/ticket-and-mixture-problems": {
 "archetype": "discrete",
 "priority": 186,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrices-row-reduction/why-is-a-matrix-just-the-equations": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 115,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrices-row-reduction/why-don-t-row-operations-change-the-answer": {
 "archetype": "discrete",
 "priority": 115,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrices-row-reduction/row-reduction-stepper": {
 "archetype": "stepper",
 "priority": 115,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrices-row-reduction/spot-inconsistent-and-dependent-systems": {
-"archetype": "drill",
+"archetype": "stepper",
 "priority": 115,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/why-row-times-column": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/why-is-ab-not-ba": {
 "archetype": "discrete",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/why-do-some-matrices-have-no-inverse": {
 "archetype": "discrete",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/why-does-ab-prime-b-primea-prime-reverse-the-order": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/why-does-every-square-matrix-split-into-symmetric-skew-symme": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/multiply-matrices-step-by-step": {
 "archetype": "discrete",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/inverse-by-a-i": {
 "archetype": "stepper",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/matrix-types-spotter": {
-"archetype": "discrete",
+"archetype": "drill",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "systems-matrices/matrix-algebra/matrix-secret-codes": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/matrix-algebra/a-shop-s-bill-as-a-matrix-product": {
 "archetype": "discrete",
 "priority": 117,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/why-is-the-determinant-an-area": {
 "archetype": "discrete",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/why-does-det-0-mean-trouble": {
 "archetype": "chance",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/why-does-cramer-s-rule-work": {
 "archetype": "discrete",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/why-is-a-adj-a-a-i": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/why-is-ab-a-b": {
 "archetype": "discrete",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/2-2-and-3-3-determinants": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/cramer-s-rule-solver": {
 "archetype": "stepper",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/minors-cofactors-and-the-adjoint": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/solve-ax-b-by-x-a1b": {
 "archetype": "stepper",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/collinear-points-zero-area": {
 "archetype": "discrete",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/determinants-cramer/triangle-area-from-coordinates": {
 "archetype": "discrete",
 "priority": 119,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/nonlinear-systems/how-many-times-can-two-curves-meet": {
 "archetype": "discrete",
 "priority": 187,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/nonlinear-systems/solve-nonlinear-systems": {
 "archetype": "stepper",
 "priority": 187,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/nonlinear-systems/rectangle-from-its-area-and-perimeter": {
 "archetype": "discrete",
 "priority": 187,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/partial-fractions/why-break-a-fraction-apart": {
 "archetype": "discrete",
 "priority": 188,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/partial-fractions/why-do-repeated-factors-need-extra-terms": {
 "archetype": "phasor",
 "priority": 188,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/partial-fractions/decomposition-stepper": {
 "archetype": "stepper",
 "priority": 188,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/why-does-a-linear-inequality-shade-a-half-plane": {
 "archetype": "discrete",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/why-is-the-best-answer-at-a-corner": {
 "archetype": "discrete",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/why-can-an-unbounded-region-still-have-a-minimum": {
 "archetype": "discrete",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/graph-a-system-of-inequalities": {
 "archetype": "stepper",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/corner-point-method-stepper": {
 "archetype": "stepper",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/factory-production-plan": {
 "archetype": "discrete",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "systems-matrices/inequalities-linear-programming/the-diet-problem": {
 "archetype": "discrete",
 "priority": 169,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/why-calculus/why-do-we-need-limits-to-find-areas": {
 "archetype": "plot",

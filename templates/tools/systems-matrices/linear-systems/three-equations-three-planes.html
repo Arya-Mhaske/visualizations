@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn three planes in space and see them meet in a point, a line, or nowhere.{% endblock %}
+{% block why_text %}Each equation in three unknowns is a plane. Three planes can meet in one point, along a whole line, or have no point in common. They fail to meet when two planes are parallel, or when the three planes form a prism, crossing in pairs but never all together. The ranks of the matrix and of the augmented matrix tell which case it is.{% endblock %}
+{% block try_items %}
+<li>Pick "A line". Push plane 3 along its normal. What happens to the shared line?</li>
+<li>Pick "a prism". Why do the planes meet in pairs but not all three?</li>
+<li>Pick "two parallel". Which two planes never meet?</li>
+{% endblock %}
