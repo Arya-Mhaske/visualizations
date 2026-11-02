@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One known point is enough. Use it to fix k, then use k to predict a new value.{% endblock %}
+{% block why_text %}A variation rule has one unknown, the constant k. One known pair (x₁, y₁) fixes it. After that, every other point on the curve is a prediction. Always find k first, then substitute the new x.{% endblock %}
+{% block try_items %}
+<li>Pick "kx". Double x₂ from x₁. What happens to y₂?</li>
+<li>Pick "k/x". Double x₂ from x₁. What happens to y₂?</li>
+<li>Pick "k/x²". Triple x₂ from x₁. By what factor does y₂ change?</li>
+{% endblock %}

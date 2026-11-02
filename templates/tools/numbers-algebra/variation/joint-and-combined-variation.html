@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Hooke's law, Ohm's law and the gas law are all variation. Pick a law and see which variables help the output and which fight it.{% endblock %}
+{% block why_text %}Joint variation multiplies several direct factors, like V = IR. Combined variation mixes direct and inverse factors, like P = nRT/V. To see what a variable does, double it while the others stay fixed: a direct factor doubles the output and an inverse factor halves it.{% endblock %}
+{% block try_items %}
+<li>Choose Ohm. Double I. Then double R. What happens to V each time?</li>
+<li>Choose Gas. Double the temperature, then double the volume. Which raises P and which lowers it?</li>
+<li>Choose Gas. Double both T and V together. What happens to P?</li>
+{% endblock %}

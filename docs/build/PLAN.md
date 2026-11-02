@@ -408,7 +408,7 @@ it reaches the front of the queue.
 | 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | |
 | 72 | `numbers-algebra/linear-equations-formulas` | 7 | 1 | |
 | 73 | `heat-thermodynamics/change-of-state` | 5 | 1 | |
-| 74 | `numbers-algebra/variation` | 5 | 1 | |
+| 74 | `numbers-algebra/variation` | 5 | 1 | ✓ |
 | 75 | `heat-thermodynamics/heat-transfer` | 7 | 1 | |
 | 76 | `functions-graphs/transformations` | 6 | 1 | ✓ |
 | 77 | `heat-thermodynamics/first-law` | 6 | 1 | |
@@ -616,3 +616,5 @@ it reaches the front of the queue.
   New helpers: `integrals/_ig.js` (`FN` bank with antiderivatives, `rects` draws Riemann rectangles with a sample fraction, `sumOf`, `shadeSigned`, `exact`), `_ftc.js` (`BANK`, `area`), `_subst.js` (four substitution examples with inner and outer functions), `_pf.js` (partial-fraction examples with each piece's antiderivative). `induction-ac-em/_lcr.js` has `w0Of`, `XL`, `XC`, `Z`, `I`, `Q`, `halfPower`. `induction-ac-em/spectrum-explorer-radio-to-gamma.js` reuses `modern-physics/_matter-waves-view.js` `drawRuler` and `_mp.js` `photonEv`.
   Figures worth testing: the right/left sums of x² are (n+1)(2n+1)/(6n²) and (n−1)(2n−1)/(6n²); `powers-of-sin-and-cos` double-factorial rule against Simpson (checked for five pairs); the sideways-slice area 9/2; Gini of L = pᵏ is (k−1)/(k+1); ellipse cap area ab(π/2 − θ − sinθcosθ); half-power width R/L; f₀ = 1/(2π√LC) for the radio (C = 101 pF gives 1000 kHz); P̄ = ½VmIm cos φ; line loss (P/V)²R; displacement current equals the charging current.
   Look hardest at: the `bag` surface in `why-did-maxwell-add-displacement-current`, the two-plot side-by-side layouts at 360 px (`why-do-the-limits-change-with-u`, `why-substitute-for-a-whole-root`), the hidden fields in `flux-change-calculator` (hidden by index), the dominoes-free layout of the rod picture in `why-is-motional-emf-blv`, the oblique 3D wave (`E and B perpendicular`), and the pipe tool's tube scale. Stepper tools were not clicked through: check the TeX in `tabular-method` and `trig-substitution-stepper`.
+
+- Session of 2 Nov 2026 (target list, no screenshots or tests, by request). Workflow: write a whole box as one bundle file with '=== path' separators and split it with a scratchpad script; 'node --check' each JS. `numbers-algebra/variation` (5 tools): the law tool hides sliders by index (field 0 is the law chooser) and stacks one plot per variable with `box`.

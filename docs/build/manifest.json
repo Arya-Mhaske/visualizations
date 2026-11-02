@@ -3747,31 +3747,31 @@
 "archetype": "discrete",
 "priority": 77,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/variation/why-does-inverse-variation-never-touch-the-axes": {
 "archetype": "discrete",
 "priority": 77,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/variation/why-is-light-inverse-square": {
 "archetype": "chance",
 "priority": 77,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/variation/find-k-then-predict": {
 "archetype": "stepper",
 "priority": 77,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/variation/joint-and-combined-variation": {
 "archetype": "discrete",
 "priority": 77,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "functions-graphs/coordinate-plane/why-does-the-distance-formula-come-from-pythagoras": {
 "archetype": "geometry",

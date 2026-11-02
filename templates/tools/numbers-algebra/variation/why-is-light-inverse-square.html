@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Light from a lamp spreads in all directions. Move the wall away and see how many squares the same light has to cover.{% endblock %}
+{% block why_text %}At distance r the light is spread over a sphere of area 4πr². Double r and the area grows by 2² = 4, so each square metre gets a quarter of the light. Intensity = power ÷ area, so I = P/(4πr²) varies inversely as r².{% endblock %}
+{% block try_items %}
+<li>Move the wall from 1 m to 2 m. How many squares does the light cover now?</li>
+<li>Go from 2 m to 4 m. By what factor does the light per square change?</li>
+<li>Double the power at a fixed distance. What happens to I?</li>
+{% endblock %}
