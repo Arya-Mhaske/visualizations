@@ -2,7 +2,7 @@ import { barTool } from '../../lib/recipes.js';
 import { sci } from '../../lib/format.js';
 import { GN } from './_rg.js';
 
-const state = { Ms: 100, M: 1000, d: 10 };
+const state = { M: 1000, d: 10 };
 const F = (s) => (GN * s.M * 1) / (s.d * s.d);
 
 barTool({
@@ -13,7 +13,6 @@ barTool({
   left: 0.4,
   controls: [
     { title: 'A mass inside a shell' },
-    { key: 'Ms', label: 'Shell mass (kg)', min: 10, max: 10000, step: 10 },
     { key: 'M', label: 'Outside body (kg)', min: 100, max: 10000, step: 100 },
     { key: 'd', label: 'Distance to the outside body (m)', min: 3, max: 30, step: 1 },
     { readout: [['Pull on the inner mass', (s) => `${sci(F(s), 2)} N, shell or no shell`]] },

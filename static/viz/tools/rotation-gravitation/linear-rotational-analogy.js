@@ -22,4 +22,5 @@ tool = createTool({
     { key: 'sel', label: 'Pair', min: 0, max: PAIRS.length - 1, step: 1, format: (v) => PAIRS[v][0] },
     { readout: [['Linear', (s) => PAIRS[s.sel][0]], ['Rotational twin', (s) => PAIRS[s.sel][1]]] },
   ],
+  tex: () => `\text{linear}\ \leftrightarrow\ \text{rotational}`,
 });

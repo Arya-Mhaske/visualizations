@@ -31,4 +31,5 @@ tool = createTool({
     { key: 'i', label: 'Step', min: 0, max: EV.length - 1, step: 1, format: (v) => EV[v][0] },
     { readout: [['When', (s) => EV[s.i][0]], ['What', (s) => EV[s.i][1]]] },
   ],
+  tex: () => `T^2\propto R^3`,
 });
