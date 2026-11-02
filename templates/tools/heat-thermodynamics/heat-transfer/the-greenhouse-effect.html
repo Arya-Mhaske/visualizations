@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Sunlight passes through the atmosphere, but the ground's infrared does not pass back out so easily. Raise the layer's absorption and watch the ground warm.{% endblock %}
+{% block why_text %}In balance, as much energy must escape to space as the Sun delivers. A layer that absorbs infrared sends part of it back down, so the ground must radiate more to get the same energy out. More radiation means a higher temperature, because radiated power goes as T⁴. With a = 0 the ground is at −18 °C. With a ≈ 0.78 it is about 15 °C.{% endblock %}
+{% block try_items %}
+<li>Set a = 0. What is the ground temperature?</li>
+<li>Set a = 0.78. How much of the ground's emission comes back down?</li>
+<li>Check that the energy escaping to space always equals S.</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>A one-layer model with an average of 240 W/m² absorbed. The real atmosphere has many layers, clouds and convection.</div>{% endblock %}

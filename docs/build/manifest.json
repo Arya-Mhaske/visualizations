@@ -1541,43 +1541,43 @@
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/why-is-h-kat-l": {
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/why-sea-breeze-by-day-and-land-breeze-by-night": {
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/why-do-dark-things-absorb-and-radiate-best": {
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/why-does-cooling-slow-down-newton-s-law": {
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/conduction-through-layered-walls": {
 "archetype": "stepper",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/the-greenhouse-effect": {
 "archetype": "sim",
 "priority": 78,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/why-are-heat-and-work-both-energy-in-transit": {
 "archetype": "phasor",

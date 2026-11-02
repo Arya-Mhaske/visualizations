@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heat flows down a temperature slope like water down a pipe. Change the lanes, the length and the temperature difference.{% endblock %}
+{% block why_text %}Each lane carries the same flow. Twice the lanes (area A) means twice the flow. Twice the temperature drop means twice the push, so twice the flow. Twice the length spreads the same drop over a longer path, so the slope is halved and so is the flow. Together: H = KAΔT/L, where K says how easily the material carries heat.{% endblock %}
+{% block try_items %}
+<li>Double the number of lanes. What happens to H?</li>
+<li>Double L. What happens to the slope, and to H?</li>
+<li>Switch from copper to glass. What does K do to H?</li>
+{% endblock %}

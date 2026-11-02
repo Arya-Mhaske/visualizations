@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Hot tea cools quickly at first, then more and more slowly. Move the tangent along the curve.{% endblock %}
+{% block why_text %}Newton's law says the cooling rate is proportional to how much hotter the tea is than the room. As the gap shrinks, so does the rate, so the curve flattens. A rate that is proportional to what is left gives an exponential: T = T_s + (T₀ − T_s)e^(−kt). It never quite reaches room temperature.{% endblock %}
+{% block try_items %}
+<li>Slide t. Where is the tangent steepest, and where is it nearly flat?</li>
+<li>Raise k. What happens to the curve and the dashed line?</li>
+<li>Make the room hotter. Does the tea still cool to room temperature?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>Newton's law holds well only for modest temperature gaps. For a very hot object radiation makes it cool faster than this.</div>{% endblock %}

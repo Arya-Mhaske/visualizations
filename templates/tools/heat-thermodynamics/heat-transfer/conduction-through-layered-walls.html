@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Heat must pass through every layer of a wall in turn. Resistances L/K add, like resistors in series.{% endblock %}
+{% block why_text %}The same heat flows through every layer, so the temperature drop across a layer is proportional to its resistance R = L/(KA). Resistances in series add. A thin layer of foam, with a tiny K, can carry most of the total resistance and most of the temperature drop.{% endblock %}
+{% block try_items %}
+<li>Set foam to 0 cm. How much heat leaks through per m²?</li>
+<li>Add 5 cm of foam. How much did the flow fall?</li>
+<li>Double the brick instead. Is that as effective as the foam?</li>
+{% endblock %}

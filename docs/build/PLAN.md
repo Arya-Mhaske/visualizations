@@ -409,7 +409,7 @@ it reaches the front of the queue.
 | 72 | `numbers-algebra/linear-equations-formulas` | 7 | 1 | |
 | 73 | `heat-thermodynamics/change-of-state` | 5 | 1 | |
 | 74 | `numbers-algebra/variation` | 5 | 1 | ✓ |
-| 75 | `heat-thermodynamics/heat-transfer` | 7 | 1 | |
+| 75 | `heat-thermodynamics/heat-transfer` | 7 | 1 | ✓ |
 | 76 | `functions-graphs/transformations` | 6 | 1 | ✓ |
 | 77 | `heat-thermodynamics/first-law` | 6 | 1 | |
 | 78 | `functions-graphs/quadratic-functions` | 8 | 1 | ✓ |
@@ -618,3 +618,5 @@ it reaches the front of the queue.
   Look hardest at: the `bag` surface in `why-did-maxwell-add-displacement-current`, the two-plot side-by-side layouts at 360 px (`why-do-the-limits-change-with-u`, `why-substitute-for-a-whole-root`), the hidden fields in `flux-change-calculator` (hidden by index), the dominoes-free layout of the rod picture in `why-is-motional-emf-blv`, the oblique 3D wave (`E and B perpendicular`), and the pipe tool's tube scale. Stepper tools were not clicked through: check the TeX in `tabular-method` and `trig-substitution-stepper`.
 
 - Session of 2 Nov 2026 (target list, no screenshots or tests, by request). Workflow: write a whole box as one bundle file with '=== path' separators and split it with a scratchpad script; 'node --check' each JS. `numbers-algebra/variation` (5 tools): the law tool hides sliders by index (field 0 is the law chooser) and stacks one plot per variable with `box`.
+
+- `heat-thermodynamics/heat-transfer` (7 tools): all maths is inline per tool. Contact temperature uses effusivity sqrt(K rho c); the greenhouse tool is the one-layer model S = (1 - a/2) sigma Ts^4 (a = 0.78 gives 288 K); the dark-can tool uses `rk4Step` for radiation-only cooling.

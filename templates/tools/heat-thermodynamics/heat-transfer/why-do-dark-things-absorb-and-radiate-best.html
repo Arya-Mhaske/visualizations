@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Two identical cans of water, one black and one silvered. Watch them lose heat in a cool room, then gain it beside a hot wall.{% endblock %}
+{% block why_text %}A surface that absorbs radiation well is also a good emitter, with the same factor e in both directions. The black can cools fastest and also warms fastest. The silvered can does both slowly. That is why a vacuum flask is silvered: it keeps heat in when full of hot tea and keeps heat out when full of a cold drink.{% endblock %}
+{% block try_items %}
+<li>Compare how far each can cools in one hour.</li>
+<li>Switch on the hot wall. Which can warms faster?</li>
+<li>Raise the shiny can's e towards 0.5. What happens to the gap?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Radiation only: the cans are insulated from air and the table. A real can also loses heat by convection.</div>{% endblock %}
