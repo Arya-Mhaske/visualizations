@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Linearise a simple drag model to see how much a slicker suit and a little more speed change the drag.{% endblock %}
+{% block why_text %}Drag depends on speed and on the drag coefficient. The change in drag is approximately the slope in speed times the change in speed, plus the slope in coefficient times its change. The two effects add.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This is a toy model with round numbers for area and coefficient. It shows the method, not the performance of any real suit.</div>{% endblock %}
+{% block try_items %}
+<li>Set the coefficient change to −0.07 and speed change to 0. How much does drag fall?</li>
+<li>Now raise the speed by 0.1 m/s. Does the gain from the suit survive?</li>
+<li>Compare the linear and exact changes for large steps.</li>
+{% endblock %}

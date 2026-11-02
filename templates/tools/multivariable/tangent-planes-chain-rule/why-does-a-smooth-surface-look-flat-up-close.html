@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Zoom in on a point of a curved surface until it matches its tangent plane.{% endblock %}
+{% block why_text %}A smooth surface, magnified enough, is indistinguishable from its tangent plane: the gap between them shrinks faster than the window does. That is why f(x, y) ≈ f(a, b) + f_x(x − a) + f_y(y − b) is a good estimate near (a, b).{% endblock %}
+{% block try_items %}
+<li>Zoom step by step. How does the largest gap change when the window halves?</li>
+<li>Watch Gap ÷ width. Does it settle near a small number?</li>
+<li>Try the saddle. Is it flat up close too?</li>
+{% endblock %}

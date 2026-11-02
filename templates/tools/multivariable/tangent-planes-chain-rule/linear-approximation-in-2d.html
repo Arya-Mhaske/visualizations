@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Use the tangent plane to estimate a value near a point where the function is easy.{% endblock %}
+{% block why_text %}Near (a, b), the surface and its tangent plane almost coincide, so you can read the value off the plane. The estimate adds a tilt in each direction: f_x times the x-step plus f_y times the y-step.{% endblock %}
+{% block try_items %}
+<li>Use √(x² + y²) at (3, 4) with steps 0.02 and −0.03. How close is the estimate?</li>
+<li>Make the steps larger. What happens to the error?</li>
+<li>Change to another function and compare.</li>
+{% endblock %}

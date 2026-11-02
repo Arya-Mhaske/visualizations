@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add slabs to a box to see how three small measuring errors add up in the volume.{% endblock %}
+{% block why_text %}A small error in length adds a thin slab on one face, with volume equal to that face's area times the error. Three errors give three slabs, and the total differential is their sum. The edge and corner pieces are far smaller and are left out.{% endblock %}
+{% block try_items %}
+<li>Use equal errors. Which dimension's error matters most?</li>
+<li>Make an error very small. Does dV match the true change more closely?</li>
+<li>Try making one dimension large and the others small.</li>
+{% endblock %}

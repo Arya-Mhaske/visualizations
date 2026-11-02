@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add up the products of slopes along every route from z to t.{% endblock %}
+{% block why_text %}z changes with t only through x and through y. Each route passes through its own pair of slopes, and a change in t travels down both routes at once. So the total rate is the sum of the two route products.{% endblock %}
+{% block try_items %}
+<li>Check that the tree total matches the direct slope.</li>
+<li>Move t to a place where one route is zero. What is dz/dt?</li>
+<li>Try a different set of functions. Do the routes still add up?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the slope of an implicit curve without solving for y.{% endblock %}
+{% block why_text %}On the curve, F(x, y) stays at 0. By the chain-rule tree, F_x·1 + F_y·dy/dx = 0. Rearranging gives dy/dx = −F_x/F_y. The partial derivatives are computed holding the other variable fixed.{% endblock %}
+{% block try_items %}
+<li>On the circle, move to x = 3. What is the slope, and does it match −x/y?</li>
+<li>Move toward the top of the circle. Why does the slope go to 0?</li>
+<li>Try the cubic. Why does F_y never vanish?</li>
+{% endblock %}
