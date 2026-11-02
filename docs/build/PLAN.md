@@ -347,7 +347,7 @@ it reaches the front of the queue.
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | ✓ |
 | 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | ✓ |
-| 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | |
+| 13 | `forces-energy/inertia-the-first-law` | 6 | 1 | ✓ |
 | 14 | `trigonometry/unit-circle` | 12 | 1 | ✓ |
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | |
 | 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | ✓ |
@@ -674,3 +674,5 @@ it reaches the front of the queue.
 - `measurement-motion/projectiles` (9 tools): `_proj.js` (`pos`, `vel`, `flightTime`, `range`, `peak`, all with an optional launch height; checked 10 m and 69.3 m for 28 m/s at 30 degrees). Built without screenshots or tests.
 
 - `measurement-motion/circular-motion` (7 tools): inline maths. Built without screenshots or tests.
+
+- `forces-energy/inertia-the-first-law`: all maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
