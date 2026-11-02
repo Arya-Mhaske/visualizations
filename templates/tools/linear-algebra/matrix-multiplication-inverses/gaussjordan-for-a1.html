@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Row-reduce [A | I] until the left half is I. The right half is then A⁻¹.{% endblock %}
+{% block why_text %}Each row operation is a multiplication by an elementary matrix, and doing the same operations to A and to I turns A into I and I into E, where E A = I. So E is the inverse. Gauss–Jordan finds all columns of A⁻¹ at once, by solving A x = each column of I.{% endblock %}
+{% block try_items %}
+<li>Press Next step slowly. Which rows change at each step?</li>
+<li>Check the final product A A⁻¹.</li>
+<li>Try the 3 × 3 matrix. How many operations does it need?</li>
+{% endblock %}

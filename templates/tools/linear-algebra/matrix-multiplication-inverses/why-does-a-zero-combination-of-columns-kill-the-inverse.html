@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Make one column a multiple of the other. Some non-zero x is sent to zero, and no inverse can bring it back.{% endblock %}
+{% block why_text %}If a combination of the columns gives zero, then Ax = 0 for some x that is not zero. But A also sends the zero vector to zero. An inverse would have to send 0 back to both x and 0, which is impossible. So a matrix with dependent columns has no inverse.{% endblock %}
+{% block try_items %}
+<li>Press "Make column 2 = 2 × column 1". What happens to the blue curve?</li>
+<li>Press "Point x at the null vector". What is Ax?</li>
+<li>Change one number to make the columns independent again. What changes?</li>
+{% endblock %}

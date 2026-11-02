@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Multiply two matrices four different ways and see every way give the same answer.{% endblock %}
+{% block why_text %}One entry at a time, a row times a column. Whole columns, A times each column of B. Whole rows, each row of A times B. Or a sum of pieces, each a column of A times a row of B. They are the same multiplication seen through different groupings, and each one is useful for a different job.{% endblock %}
+{% block try_items %}
+<li>Check the top-left entry by hand. Does it match Way 1?</li>
+<li>In Way 4, how many pieces are there, and what shape is each?</li>
+<li>Try the 2 × 3 times 3 × 2 pair. What size is the answer?</li>
+{% endblock %}

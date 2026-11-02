@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Do two moves, then undo them. The order you undo them in decides whether you get back.{% endblock %}
+{% block why_text %}You put on socks before shoes, so you take off shoes before socks. In (AB)x the matrix B acts first and A second, so undoing it means A⁻¹ first and B⁻¹ second: (AB)⁻¹ = B⁻¹A⁻¹. Undoing in the wrong order leaves a different shape.{% endblock %}
+{% block try_items %}
+<li>Step through the undo in the right order. Where does the F end up?</li>
+<li>Switch to the wrong order. Does the F come home?</li>
+<li>Set the rotation to 0°. Does the order matter now? Why?</li>
+{% endblock %}
