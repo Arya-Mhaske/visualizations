@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}See the complex versions of symmetric and orthogonal matrices.{% endblock %}
+{% block why_text %}For complex matrices the transpose becomes the conjugate transpose Aᴴ, which also changes i to −i. A Hermitian matrix has A = Aᴴ and real eigenvalues. A unitary matrix has AᴴA = I, orthonormal columns, and eigenvalues of absolute value 1. They are the complex versions of symmetric and orthogonal.{% endblock %}
+{% block try_items %}
+<li>Pick the Hermitian matrix. Are its eigenvalues real?</li>
+<li>Pick the unitary one. What is the size of each eigenvalue?</li>
+<li>Pick the plain complex matrix. Which test does it fail?</li>
+{% endblock %}

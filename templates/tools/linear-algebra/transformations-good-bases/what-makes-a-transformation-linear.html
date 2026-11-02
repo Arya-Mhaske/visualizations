@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Test T(cu + dv) = cT(u) + dT(v) on rotations, shears and translations. Translation fails.{% endblock %}
+{% block why_text %}A linear transformation respects mixing: transforming a mix is the same as mixing the transforms. Rotations, shears and stretches do. A translation moves the origin, so it fails the test; so does squaring one coordinate. Matrices only describe linear maps.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> A translation is not linear but it can be written as a matrix if you add a fourth coordinate: see "Computer graphics with 4 × 4 matrices".</div>{% endblock %}
+{% block try_items %}
+<li>Choose Translate. Which c and d give a gap of zero?</li>
+<li>Choose Rotate. Does the gap ever leave zero?</li>
+<li>Choose Square the x-part. Why does it fail?</li>
+{% endblock %}

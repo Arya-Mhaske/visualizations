@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change to the eigenvector basis and the matrix turns diagonal.{% endblock %}
+{% block why_text %}In the eigenvector basis, each basis vector is only stretched, so each column of the matrix has a single non-zero number: the eigenvalue. The matrix is diagonal, and the same transformation is simple to understand and to repeat. The standard basis hides that simplicity.{% endblock %}
+{% block try_items %}
+<li>Switch between the bases. Which one has a diagonal matrix?</li>
+<li>Pick the non-symmetric matrix. Are the grid lines still perpendicular?</li>
+<li>Set c₂ = 0 in the eigenvector basis. Where does Ax stay?</li>
+{% endblock %}

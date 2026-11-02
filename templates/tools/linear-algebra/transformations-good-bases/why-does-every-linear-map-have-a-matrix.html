@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Say where e₁ and e₂ go. Those two images are the columns of the matrix, and everything else follows.{% endblock %}
+{% block why_text %}Any vector is x₁ e₁ + x₂ e₂. A linear map must send it to x₁ T(e₁) + x₂ T(e₂). So once you know T(e₁) and T(e₂), you know T of everything. Writing them as columns gives the matrix. A linear map is decided by where it sends a basis.{% endblock %}
+{% block try_items %}
+<li>Send e₁ to (1, 0) and e₂ to (0, 1). What does the picture do?</li>
+<li>Send both to the same line. What happens to the grid?</li>
+<li>Check T(x) against x₁ times the first column plus x₂ times the second.</li>
+{% endblock %}

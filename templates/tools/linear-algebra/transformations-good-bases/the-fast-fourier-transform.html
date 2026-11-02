@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Split a transform in halves again and again. The work drops from n² to about n log n.{% endblock %}
+{% block why_text %}The direct transform multiplies by an n × n matrix, so it needs about n² multiplications. Splitting the input into even and odd entries makes two transforms of half the size and about n/2 extra multiplications to combine them. Doing that all the way down gives log₂ n levels, each costing about n/2.{% endblock %}
+{% block try_items %}
+<li>Move k to 10. How big is the speed-up?</li>
+<li>Count the levels in the tree for k = 3.</li>
+<li>Why does each level cost about the same?</li>
+{% endblock %}
