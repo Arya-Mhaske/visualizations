@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick the constant that makes two pieces of a function join with no gap.{% endblock %}
+{% block why_text %}For the pieces to join at x = a, the left limit and the right value must match: a² − 1 = ca + 1. That is one equation with one unknown, so there is exactly one right value of c. Solve it, set c to that, and the gap disappears. Moving the join point changes which c is needed.{% endblock %}
+{% block try_items %}
+<li>Slide c until the gap is zero for a = 2. What is c?</li>
+<li>Change a to 4. What c is needed now?</li>
+<li>Press the button. Does the formula give the same c as your slide?</li>
+{% endblock %}

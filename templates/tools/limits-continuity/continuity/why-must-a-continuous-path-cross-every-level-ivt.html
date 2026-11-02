@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A hiker goes from 1000 m to 3000 m. Must they pass 2000 m?{% endblock %}
+{% block why_text %}A continuous path has no gaps, so it cannot get from below a level to above it without being at that level at some moment. That is the Intermediate Value Theorem. It needs continuity: with a jump, the path can leap over a level without ever standing on it. The same idea says a continuous function that changes sign must have a root.{% endblock %}
+{% block try_items %}
+<li>Ask about 2000 m with the path unbroken. When does the hiker reach it? Could it be more than once?</li>
+<li>Turn on the jump. Find a level the hiker never stands at.</li>
+<li>Which levels are still crossed even with the jump?</li>
+{% endblock %}

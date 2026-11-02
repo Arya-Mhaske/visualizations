@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}At any moment, are there two opposite points on the equator with exactly the same temperature?{% endblock %}
+{% block why_text %}Let D(θ) be the temperature at θ minus the temperature at the opposite point. Swapping the two points reverses the sign: D(180°) = −D(0°). So D is positive at one end and negative at the other. Temperature changes continuously round the circle, so D is continuous, and by the Intermediate Value Theorem D = 0 somewhere.{% endblock %}
+{% block try_items %}
+<li>Slide θ. What are the signs of D at 0° and at 180°?</li>
+<li>Press the button. What do the two temperatures do?</li>
+<li>Switch weather pattern. Does an equal pair always exist?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The temperature curves are made-up smooth functions. Any continuous temperature round a circle works the same way.</div>{% endblock %}

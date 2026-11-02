@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A function is continuous at a point if you can draw through it without lifting the pen. Break it each of the three ways.{% endblock %}
+{% block why_text %}To pass through x = a without a lift you need three things. The function needs a value there, so there is no hole. The limit must exist, so the two sides arrive at the same height. And the limit must equal that value, so the pen lands on the point it was heading for. Fail any one and the pen lifts: f(a) defined, lim f(x) exists, lim f(x) = f(a).{% endblock %}
+{% block try_items %}
+<li>Choose "No value". Which of the three checks fails?</li>
+<li>Choose "Jump". Which check fails, and which pass?</li>
+<li>Choose "Wrong value". Is the limit still there? What fails?</li>
+{% endblock %}

@@ -6421,31 +6421,31 @@
 "archetype": "plot",
 "priority": 121,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/continuity/three-kinds-of-discontinuity": {
 "archetype": "plot",
 "priority": 121,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/continuity/why-must-a-continuous-path-cross-every-level-ivt": {
 "archetype": "plot",
 "priority": 121,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/continuity/make-a-piecewise-function-continuous": {
 "archetype": "stepper",
 "priority": 121,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/continuity/two-opposite-points-on-the-equator-with-equal-temperature": {
 "archetype": "plot",
 "priority": 121,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limits-at-infinity/why-do-dominant-terms-decide-horizontal-asymptotes": {
 "archetype": "phasor",

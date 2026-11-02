@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Not every break is the same. Sort them by what the two sides do.{% endblock %}
+{% block why_text %}A removable break has both limits equal, so one missing point can be filled in. A jump has both limits finite but different, so no single value can join the two sides. An infinite break has no finite limit at all. Only the removable kind can be repaired by redefining the function at one point.{% endblock %}
+{% block try_items %}
+<li>Choose Removable. What value would repair it?</li>
+<li>Choose Jump. Can any value of f(1) fix it? Why not?</li>
+<li>Choose Infinite. What are the two one-sided limits?</li>
+{% endblock %}

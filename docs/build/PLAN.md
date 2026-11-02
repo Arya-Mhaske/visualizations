@@ -452,7 +452,7 @@ it reaches the front of the queue.
 | 115 | `electrostatics/electric-potential` | 7 | 1 | ✓ |
 | 116 | `systems-matrices/determinants-cramer` | 11 | 1 | ✓ |
 | 117 | `electrostatics/conductors-dielectrics` | 6 | 1 | ✓ |
-| 118 | `limits-continuity/continuity` | 5 | 1 | |
+| 118 | `limits-continuity/continuity` | 5 | 1 | ✓ |
 | 119 | `electrostatics/capacitors` | 7 | 1 | ✓ |
 | 120 | `derivatives/chain-rule` | 4 | 1 | ✓ |
 | 121 | `current-magnetism/current-drift` | 6 | 1 | ✓ |
@@ -644,3 +644,5 @@ it reaches the front of the queue.
 - `conductors-dielectrics` (6 tools) is all inline canvas drawing: the shielding and car tools show only whether a field is present (not to scale), and the conductor settling time is stretched (real value ~1e-19 s) and said so. Look at the dipole rows and the car at 360 px.
 
 - `electrostatics/_cap.js`: `cap(A cm², d mm, K)` in farads, `series`, `parallel`, and `equivalent(network)` for nested { t: 's'|'p'|'c' } trees (checked: 100 cm² at 1 mm is 88.5 pF; (2 series 4) beside 3 gives 4.333). The combination solver lays any such tree out recursively on canvas. `camera-flash-and-touchscreens` hides sliders by index (field 0 is the view chooser).
+
+- `limits-continuity/continuity` (5 tools), no shared file. The IVT tool detects a skipped level by a sign change across the jump at t = 5; the piecewise tool needs c = (a² - 2)/a (a button sets it, since a = 3 gives 7/3, off the slider grid); the equator tool stacks two plots and finds the root of D by bisection. Target list of 15 boxes (89 tools) finished in this session, built without screenshots or test runs: look at all of them, run `manage.py test`, and write `tool_tests`.
