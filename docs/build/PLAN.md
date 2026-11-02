@@ -421,7 +421,7 @@ it reaches the front of the queue.
 | 84 | `functions-graphs/modelling-with-data` | 6 | 1 | ✓ |
 | 85 | `heat-thermodynamics/equipartition-specific-heats` | 5 | 1 | ✓ |
 | 86 | `functions-graphs/area-by-stretching` | 5 | 1 | ✓ |
-| 87 | `heat-thermodynamics/mean-free-path` | 4 | 1 | |
+| 87 | `heat-thermodynamics/mean-free-path` | 4 | 1 | ✓ |
 | 88 | `trigonometry/waves-oscillations` | 12 | 1 | ✓ |
 | 89 | `oscillations-waves/periodic-motion` | 4 | 1 | ✓ |
 | 90 | `trigonometry/solving-any-triangle` | 12 | 1 | ✓ |
@@ -630,3 +630,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/_gas.js`: a 3D ideal gas in a box (reduced units, k = 1) with per-molecule masses, a right wall that measures impulse (P over 1 s windows), `setT/setW/setM`, `drawGas`; checked in Node (P = 0.370 against 0.379 from the mean square speed). `_kt.js` has SI vrms/vmean/vp and the Maxwell curve. Gas tools run a `createClock` whose onFrame steps the gas; use it again for `mean-free-path` (needs collisions, which `_gas.js` lacks). The atomic-hypothesis page is a DOM stage with a step slider; the Kanada step is labelled conjecture.
 
 - `heat-thermodynamics/_equipartition.js`: `dof(rot, vib)`, `cvOf/cpOf/gammaOf`, rounded measured Cv values (`GASES`), the exact one-mode Einstein term `einstein(theta, T)` and `METALS` (molar mass, specific heat). The vibration tool's rotation switch-on is an illustrative smooth curve and says so. Equipartition by collisions: random two-slot splits (uniform split of the pair total) over 120 molecules, 2500 per second.
+
+- `heat-thermodynamics/_mfp.js`: 2D hard discs with a tagged disc (`createDisks`, `mfp2d`). The 2D free path is 1/(sqrt2 · 2d · n): checked in Node, the measured path/collisions is within about 15% for N = 30, 60 (2.57 vs 2.36, 1.00 vs 1.18); at N = 120 it falls 25% short because the strip is crowded. The 3D tube tool uses fixed seeded points and takes the first n·V of them.

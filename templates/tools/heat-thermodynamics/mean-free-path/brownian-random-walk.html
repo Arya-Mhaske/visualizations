@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A dust grain in water jitters for ever. Watch 25 of them and see how far the jitter takes them.{% endblock %}
+{% block why_text %}Each kick from a molecule is tiny and random. After n kicks a grain has moved about √n steps from where it began, not n steps. The average squared distance grows in proportion to the time, ⟨r²⟩ = 2σ²n: this is what Einstein predicted in 1905, and Perrin's measurements of it helped settle that atoms are real.{% endblock %}
+{% block try_items %}
+<li>Press Play and watch grain 1. How far from the start is it after 300 kicks?</li>
+<li>Compare ⟨r²⟩ with the straight line. Do they agree?</li>
+<li>Double the kick size. What happens to ⟨r²⟩?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Each kick is a random Gaussian step, with equal chances in x and y. The last 600 kicks are drawn.</div>{% endblock %}

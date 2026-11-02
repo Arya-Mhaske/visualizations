@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}A moving molecule hits every molecule whose centre comes within one diameter of its path. Count them in the tube it sweeps.{% endblock %}
+{% block why_text %}In a distance L the molecule sweeps a tube of volume πd²L. With n molecules per unit volume the tube holds n πd²L of them, so it collides that many times. One collision per path λ gives λ = 1/(nπd²). Doubling the diameter makes the tube four times wider, so λ falls to a quarter. Doubling n halves it.{% endblock %}
+{% block try_items %}
+<li>Double d. What happens to the number of hits and to λ?</li>
+<li>Double n. What happens to them?</li>
+<li>Look at the end view. Which dots are the hits?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>Here the other molecules stand still. When they move too, the relative speed is a factor √2 bigger, so the true mean free path is λ = 1/(√2 n π d²).</div>{% endblock %}

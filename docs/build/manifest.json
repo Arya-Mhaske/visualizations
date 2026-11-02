@@ -1769,25 +1769,25 @@
 "archetype": "sim",
 "priority": 90,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/mean-free-path/why-is-the-mean-free-path-1-nd2": {
 "archetype": "chance",
 "priority": 90,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/mean-free-path/mean-free-path-in-air": {
 "archetype": "chance",
 "priority": 90,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/mean-free-path/brownian-random-walk": {
 "archetype": "chance",
 "priority": 90,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "oscillations-waves/periodic-motion/why-isn-t-every-periodic-motion-shm": {
 "archetype": "sim",

@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}A molecule moves at hundreds of metres a second, yet a smell takes minutes to cross a room. Follow one molecule.{% endblock %}
+{% block why_text %}A molecule goes only a short way, the mean free path, before it hits another and changes direction. Its path is a long zig-zag, so the distance it gets from where it started grows slowly. A smell spreads by this random walk, not by flying straight across the room. More molecules means shorter free paths and slower spreading.{% endblock %}
+{% block try_items %}
+<li>Press Play. Compare the path travelled with the distance from the start.</li>
+<li>Double the number of discs. What happens to the mean free path?</li>
+<li>Watch the dashed line. Does it grow as fast as the path does?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>A flat gas of hard discs, to show the idea. Real molecules move in three dimensions and the formula differs by a factor of π.</div>{% endblock %}

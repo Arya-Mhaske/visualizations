@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}How far does an air molecule go between collisions? Change the pressure and see.{% endblock %}
+{% block why_text %}At one atmosphere and room temperature, with d about 2 Å, the mean free path is about 0.2 µm, over a thousand molecular diameters. Between collisions a molecule goes far on the scale of the molecule but only a tiny way on ours. Since λ ∝ 1/P, in a very good vacuum it grows to metres.{% endblock %}
+{% block try_items %}
+<li>Set log P = 0. What is λ, and how many diameters is that?</li>
+<li>Lower the pressure by a factor 10, then 100. How does λ change?</li>
+<li>Find the pressure where λ is about 1 m. Why does that matter for a vacuum chamber?</li>
+{% endblock %}
