@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pull a box along the floor with a rope at an angle. Only the part of the pull along the motion does work.{% endblock %}
+{% block why_text %}Work is W = F · d = F d cos φ. The part F cos φ along the motion helps; the part F sin φ at right angles to it moves nothing along the floor and does no work. At φ = 90° the work is zero.{% endblock %}
+{% block try_items %}
+<li>Set φ = 0°. What is the work?</li>
+<li>Set φ = 90°.</li>
+<li>At what angle is the work half the maximum?</li>
+{% endblock %}

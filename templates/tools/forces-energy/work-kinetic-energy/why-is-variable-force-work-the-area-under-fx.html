@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Chop the F–x curve into thin rectangles. Each rectangle is the work for one short step, and the total is their sum.{% endblock %}
+{% block why_text %}Over a tiny step Δx the force is almost constant, so the work is F Δx: the area of a thin rectangle. Add the rectangles. As the steps get thinner the sum approaches the exact area under the curve, which is the integral ∫F dx. For a spring F = kx, this area is the triangle ½kx².{% endblock %}
+{% block try_items %}
+<li>Increase the number of slices. How does the sum change?</li>
+<li>Choose the spring. Compare with ½kx².</li>
+<li>Which curve needs the most slices to be accurate?</li>
+{% endblock %}

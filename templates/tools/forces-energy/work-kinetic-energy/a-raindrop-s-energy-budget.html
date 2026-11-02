@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A raindrop of mass 1.00 g falls 1 km and arrives at 50 m/s. Where did the energy go? (Here g = 10 m/s², as in the textbook.){% endblock %}
+{% block why_text %}Gravity does mgh = 0.001 × 10 × 1000 = 10 J. The drop ends with ½mv² = 1.25 J. The work–energy theorem says the air must have done −8.75 J of work on the drop, taking the rest of the energy away as heat.{% endblock %}
+{% block try_items %}
+<li>Check 10 J, 1.25 J and −8.75 J.</li>
+<li>Make the drop faster. What does the air do?</li>
+<li>What is the air's work if v = 0 at the bottom?</li>
+{% endblock %}

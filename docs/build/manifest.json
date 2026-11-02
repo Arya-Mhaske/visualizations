@@ -593,49 +593,49 @@
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/why-does-pushing-a-wall-do-no-work-but-tire-you": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/why-is-the-workenergy-theorem-v2-u2-2as-in-disguise": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/why-is-variable-force-work-the-area-under-fx": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/why-don-t-third-law-pairs-do-equal-and-opposite-work": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/dot-product-work-calculator": {
 "archetype": "stepper",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/a-raindrop-s-energy-budget": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/work-kinetic-energy/a-bullet-through-plywood": {
 "archetype": "sim",
 "priority": 28,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/why-do-only-some-forces-have-a-potential-energy": {
 "archetype": "sim",
