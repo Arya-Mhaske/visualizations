@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a square of side a + b. Its area is not just two small squares.{% endblock %}
+{% block why_text %}A square of side a + b is cut by the lines at a into four pieces: an a × a square, a b × b square, and two rectangles a × b. These two rectangles are the "middle term" everyone forgets. (a + b)² = a² + 2ab + b².{% endblock %}
+{% block try_items %}
+<li>Set a = 3 and b = 2. Count the four pieces.</li>
+<li>Make b very small. Which piece is bigger than b²?</li>
+<li>What is the area of the two rectangles together?</li>
+{% endblock %}

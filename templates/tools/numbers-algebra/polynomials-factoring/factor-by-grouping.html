@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Split a four-term expression into two pairs, take out what each pair shares, and look for a bracket they have in common.{% endblock %}
+{% block why_text %}Grouping works when the two pairs, after taking out their own common factor, leave the same bracket. That common bracket is then a factor of the whole expression, and what remains forms the other factor. Check by expanding or by trying a number.{% endblock %}
+{% block try_items %}
+<li>Step through problem 1.</li>
+<li>Check the product at a number.</li>
+<li>Which problem needs splitting the middle term first?</li>
+{% endblock %}

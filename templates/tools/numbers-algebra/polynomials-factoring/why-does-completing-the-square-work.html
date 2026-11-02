@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Make a square of side x and add two strips of width b/2 along its sides. One corner is missing.{% endblock %}
+{% block why_text %}x² + bx is a square x² plus two strips of area x · b/2. Together they make a bigger square except for a small (b/2)² corner. Add that corner and you have the perfect square (x + b/2)². So x² + bx = (x + b/2)² − (b/2)².{% endblock %}
+{% block try_items %}
+<li>Change b. How big is the missing corner?</li>
+<li>Check (x + b/2)² against x² + bx + (b/2)².</li>
+<li>Make x larger. Does the corner change?</li>
+{% endblock %}

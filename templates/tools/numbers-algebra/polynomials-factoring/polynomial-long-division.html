@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Divide step by step. Each step finds one term of the quotient, multiplies back and subtracts.{% endblock %}
+{% block why_text %}Long division of polynomials is long division of numbers with powers of x as place values. Divide the leading terms, multiply the divisor by the result, subtract, and repeat on what is left. At the end, dividend = quotient × divisor + remainder.{% endblock %}
+{% block try_items %}
+<li>Step through the first problem.</li>
+<li>Check the identity at a value of x.</li>
+<li>Which problem leaves a remainder?</li>
+{% endblock %}

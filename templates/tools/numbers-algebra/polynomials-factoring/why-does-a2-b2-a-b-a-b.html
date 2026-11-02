@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a small square b × b from the corner of a big square a × a. The L-shape that is left can be rearranged into a rectangle.{% endblock %}
+{% block why_text %}Cut the L along the line and slide the pieces: the L becomes a rectangle with sides (a + b) and (a − b). The area is unchanged, so a² − b² = (a + b)(a − b).{% endblock %}
+{% block try_items %}
+<li>Make b close to a. What is the shape of the rectangle?</li>
+<li>Check the two areas are equal.</li>
+<li>Why must a be greater than b?</li>
+{% endblock %}

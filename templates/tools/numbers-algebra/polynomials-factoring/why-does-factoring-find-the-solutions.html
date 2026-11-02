@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A product of two numbers is zero only if one of them is zero. Slide x and watch the two sides of a rectangle.{% endblock %}
+{% block why_text %}The area of a rectangle with sides (x − p) and (x − q) is the product (x − p)(x − q). It can be zero only if a side shrinks to zero, that is, only when x = p or x = q. So solving x² − (p + q)x + pq = 0 reduces to setting each factor to zero.{% endblock %}
+{% block try_items %}
+<li>Slide x to p. What happens to the rectangle?</li>
+<li>Slide to q.</li>
+<li>Is there any other x where the area is zero?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take a cube of side a and remove a cube of side b from its corner. The solid that is left splits into three slabs, each of thickness a − b.{% endblock %}
+{% block why_text %}The three slabs have volumes a²(a − b), ab(a − b) and b²(a − b), so a³ − b³ = (a − b)(a² + ab + b²). For the sum the same pattern holds with a sign change: a³ + b³ = (a + b)(a² − ab + b²), where the middle term is subtracted.{% endblock %}
+{% block try_items %}
+<li>Add the three slab volumes for a = 3, b = 1.</li>
+<li>Switch to the sum and check the numbers.</li>
+<li>Why does a − b appear in every slab?</li>
+{% endblock %}

@@ -3471,55 +3471,55 @@
 "archetype": "space3d",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-does-a2-b2-a-b-a-b": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-do-a3-b3-factor": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-does-factoring-find-the-solutions": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-does-completing-the-square-work": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/why-does-synthetic-division-work": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/algebra-tiles-multiply-and-factor": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/polynomial-long-division": {
 "archetype": "stepper",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/polynomials-factoring/factor-by-grouping": {
 "archetype": "discrete",
 "priority": 71,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/why-can-t-you-cancel-the-x-in-x-2-x": {
 "archetype": "phasor",

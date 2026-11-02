@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Divide a polynomial by (x − r) with synthetic division, and see the same numbers appear in long division.{% endblock %}
+{% block why_text %}In long division each step brings down a coefficient, multiplies the last quotient term by r and adds. The x's and the repeated subtraction carry no new information, so synthetic division keeps only the coefficients: bring down, multiply by r, add. The last number is the remainder, which is the value of the polynomial at r.{% endblock %}
+{% block try_items %}
+<li>Step through the first preset. What is the remainder?</li>
+<li>Check the remainder equals p(r).</li>
+<li>Try the polynomial with a missing term.</li>
+{% endblock %}

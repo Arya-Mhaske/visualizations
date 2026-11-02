@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose the numbers in ax² + bx + c. If the tiles can be laid out as a rectangle, the sides of the rectangle are the factors.{% endblock %}
+{% block why_text %}An x² tile is a square, an x tile is a rectangle, and a unit tile is a small square. If the tiles fit into one rectangle, its width and height are the two factors. When no rectangle is possible, the expression does not factor over the whole numbers.{% endblock %}
+{% block try_items %}
+<li>Try x² + 5x + 6. What are the sides?</li>
+<li>Try x² + 5x + 7. Can it be laid out?</li>
+<li>Try 2x² + 7x + 3.</li>
+{% endblock %}

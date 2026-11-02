@@ -402,7 +402,7 @@ it reaches the front of the queue.
 | 65 | `properties-of-matter/surface-tension` | 8 | 1 | ✓ |
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
 | 67 | `heat-thermodynamics/temperature` | 6 | 1 | ✓ |
-| 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | |
+| 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | ✓ |
 | 69 | `heat-thermodynamics/thermal-expansion` | 6 | 1 | ✓ |
 | 70 | `numbers-algebra/rational-expressions` | 6 | 1 | ✓ |
 | 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | ✓ |
@@ -728,3 +728,5 @@ it reaches the front of the queue.
 - `properties-of-matter/pressure-pascal`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
 
 - `properties-of-matter/flow-bernoulli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `numbers-algebra/_poly.js`: coefficient-list polynomials (`evalP`, `tex`, `synthetic`, `longDivision`, `tileFactors`) and the grouping presets; the stepper-style tools reuse `_steps-view.js`. Built without screenshots or tests, by request.
