@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Plot xᵀAx as a surface: a bowl, a saddle or a trough.{% endblock %}
+{% block why_text %}The number xᵀAx is the energy of x. If it is positive for every x that is not zero, the surface rises on all sides from the origin: a bowl, and the matrix is positive definite. A negative eigenvalue bends the surface down in one direction and gives a saddle. A zero eigenvalue leaves a flat trough.{% endblock %}
+{% block try_items %}
+<li>Choose a = d = 2, b = 0. What is the surface?</li>
+<li>Make b large. When does the bowl turn into a saddle?</li>
+<li>Find a matrix whose surface is a trough.</li>
+{% endblock %}

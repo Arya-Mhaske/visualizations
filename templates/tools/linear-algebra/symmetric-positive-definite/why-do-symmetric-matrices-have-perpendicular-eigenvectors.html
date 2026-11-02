@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stretch the circle with a symmetric matrix. The eigenvectors are the perpendicular axes of the ellipse.{% endblock %}
+{% block why_text %}A symmetric matrix stretches along two perpendicular directions, so the circle becomes an ellipse lined up with those directions. Those directions are the eigenvectors. Break the symmetry a little and the eigenvectors are no longer perpendicular, and no longer line up with the ellipse.{% endblock %}
+{% block try_items %}
+<li>Make the matrix symmetric. What is the angle between the eigenvectors?</li>
+<li>Raise the non-symmetric slider. What happens to the angle?</li>
+<li>Make b = 0. Where do the eigenvector lines go?</li>
+{% endblock %}

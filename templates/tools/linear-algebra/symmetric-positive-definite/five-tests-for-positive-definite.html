@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Run five tests on a symmetric matrix and see them agree.{% endblock %}
+{% block why_text %}Positive definite can be checked five ways: all eigenvalues are positive, all pivots are positive, all upper-left determinants are positive, the energy xᵀAx is positive for every x that is not zero, and A = RᵀR with R having independent columns. They are five views of one fact, so they always give the same answer.{% endblock %}
+{% block try_items %}
+<li>Choose a matrix that passes. Do all five pass?</li>
+<li>Make b bigger until it fails. Which test notices first?</li>
+<li>Does the energy plot go below zero when the matrix fails?</li>
+{% endblock %}
