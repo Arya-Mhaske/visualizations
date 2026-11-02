@@ -1,15 +1,7 @@
 {% with t=item.tile %}
 {% if t.kind == "tool" %}
 <a class="nb-tile{% if not item.is_live %} is-soon{% endif %}" href="{{ item.url }}">
-  <span class="nb-tile__num">{{ item.num|stringformat:"02d" }}</span>
-  <span class="nb-tile__badges">
-    <span class="nb-badge nb-badge--{{ t.tag|lower }}">{{ t.tag }}</span>
-    {% if item.is_live %}<span class="nb-badge nb-badge--live">Live</span>{% else %}<span class="nb-badge nb-badge--soon">Soon</span>{% endif %}
-    {% if t.extension %}<span class="nb-badge nb-badge--ext">Ext</span>{% endif %}
-    {% if item.aids %}<span class="nb-badge">{{ item.aids }}</span>{% endif %}
-  </span>
   <h2 class="nb-tile__title">{{ t.title }}</h2>
-  {% if t.sections %}<span class="nb-tile__meta">§ {{ t.sections }}</span>{% endif %}
 </a>
 {% else %}
 <a class="nb-tile nb-tile--{{ item.accent }}" href="{{ item.url }}">
