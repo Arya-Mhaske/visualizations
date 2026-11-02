@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A metre stick balances at its centre. Add two coins at one mark and it balances at a new point. That point tells you the stick's mass.{% endblock %}
+{% block why_text %}About the new balance point the turning effects match: coins × (distance from the coins) = stick × (distance from the 50 cm mark). So M = m(p − x)/(50 − p) with positions in cm. With 10 g at 12 cm and balance at 45 cm, M = 10 × 33/5 = 66 g.{% endblock %}
+{% block try_items %}
+<li>Check 66 g at the defaults.</li>
+<li>Move the balance point closer to 50 cm. What happens to the stick mass?</li>
+<li>Use heavier coins.</li>
+{% endblock %}

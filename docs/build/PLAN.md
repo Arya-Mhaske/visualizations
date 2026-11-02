@@ -371,7 +371,7 @@ it reaches the front of the queue.
 | 34 | `sequences-probability/arithmetic-sequences` | 4 | 1 | |
 | 35 | `rotation-gravitation/rotation-kinematics` | 5 | 1 | ✓ |
 | 36 | `sequences-probability/geometric-sequences-series` | 10 | 1 | |
-| 37 | `rotation-gravitation/torque-equilibrium` | 8 | 1 | |
+| 37 | `rotation-gravitation/torque-equilibrium` | 8 | 1 | ✓ |
 | 38 | `functions-graphs/lines-slope` | 10 | 1 | ✓ |
 | 39 | `rotation-gravitation/moment-of-inertia` | 5 | 1 | |
 | 40 | `conics-curves/what-are-conics` | 3 | 1 | ✓ |
@@ -702,3 +702,5 @@ it reaches the front of the queue.
 - `rotation-gravitation/centre-of-mass`: inline maths on `recipes.js`. The hidden-slider pattern is used in the calculator. Built without screenshots or tests, by request.
 
 - `rotation-gravitation/rotation-kinematics`: inline maths. The solver gives 4 pi rad/s2 and 576 revolutions at the defaults. Built without screenshots or tests, by request.
+
+- `rotation-gravitation/torque-equilibrium`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.

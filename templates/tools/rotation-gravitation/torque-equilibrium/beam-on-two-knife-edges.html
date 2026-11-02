@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A uniform beam rests on two knife edges, with a load hanging from it. Find the force at each edge.{% endblock %}
+{% block why_text %}Two conditions fix both reactions: the forces add to zero (R₁ + R₂ = total weight) and the torques about any point add to zero. Taking torques about one edge removes that reaction and gives the other directly.{% endblock %}
+{% block try_items %}
+<li>Move the load toward one edge. What happens to that edge's reaction?</li>
+<li>Put the load exactly over an edge.</li>
+<li>Check R₁ + R₂ against the total weight.</li>
+{% endblock %}

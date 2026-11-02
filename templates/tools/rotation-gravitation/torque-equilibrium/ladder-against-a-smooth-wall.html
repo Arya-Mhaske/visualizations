@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A 3 m ladder of mass 20 kg leans on a smooth wall with its foot 1 m from the wall. Find the three forces that hold it.{% endblock %}
+{% block why_text %}The smooth wall pushes at right angles to itself, horizontally. The floor pushes up with N = mg and sideways with friction f. Balancing horizontal forces gives f = F<sub>wall</sub>. Taking torques about the foot gives F<sub>wall</sub> h = mg x/2, so F<sub>wall</sub> = mg x/(2h) ≈ 34.6 N here.{% endblock %}
+{% block try_items %}
+<li>Check 34.6 N at the defaults.</li>
+<li>Move the foot further from the wall. What happens to the friction needed?</li>
+<li>What is the smallest μ that keeps it from slipping?</li>
+{% endblock %}

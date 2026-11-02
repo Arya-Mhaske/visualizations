@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The centre of gravity is where the total weight seems to act. It sits at the centre of mass only when gravity has the same value everywhere on the body.{% endblock %}
+{% block why_text %}The weight of each piece is m g, and the centre of gravity is the weighted average of positions using these weights. If g is the same for every piece, g cancels and the average is the centre of mass. If g falls with height, the lower pieces weigh a little more and the centre of gravity sits a little below the centre of mass.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>For ordinary objects the difference is far smaller than the pictures can show, so the effect here is greatly exaggerated.</p></div>{% endblock %}
+{% block try_items %}
+<li>Set the change of g to 0. Where are the two points?</li>
+<li>Increase it. Which point moves?</li>
+<li>For a mountain-sized body, which would matter more?</li>
+{% endblock %}

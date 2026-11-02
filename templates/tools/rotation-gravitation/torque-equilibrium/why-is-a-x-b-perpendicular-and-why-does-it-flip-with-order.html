@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two vectors a and b span a parallelogram. Their cross product is a third vector at right angles to the plane, and it changes sign if you swap the order.{% endblock %}
+{% block why_text %}The size of a × b is ab sin θ, the area of the parallelogram. Its direction is set by the right-hand rule: curl the fingers from the first vector to the second and the thumb gives the direction. Swap the order and the curl runs the other way, so b × a = −(a × b).{% endblock %}
+{% block try_items %}
+<li>Swap the order. What happens to the sign?</li>
+<li>Make the vectors parallel. What is a × b?</li>
+<li>Make them perpendicular. When is the area biggest?</li>
+{% endblock %}

@@ -839,49 +839,49 @@
 "archetype": "sim",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/why-is-a-x-b-perpendicular-and-why-does-it-flip-with-order": {
 "archetype": "space3d",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/why-does-a-couple-turn-without-moving-anything": {
 "archetype": "sim",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/why-does-a-lever-trade-distance-for-force": {
 "archetype": "space3d",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/why-is-cg-cm-only-in-uniform-gravity": {
 "archetype": "sim",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/beam-on-two-knife-edges": {
 "archetype": "stepper",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/ladder-against-a-smooth-wall": {
 "archetype": "sim",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/torque-equilibrium/metre-stick-and-coins": {
 "archetype": "chance",
 "priority": 40,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/moment-of-inertia/why-does-rotational-ke-need-mr2": {
 "archetype": "sim",
