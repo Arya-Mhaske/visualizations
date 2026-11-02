@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use the exponential density for waiting at a counter.{% endblock %}
+{% block why_text %}The chance of waiting longer than t is e^(−λt). Having already waited changes nothing: the exponential is memoryless.{% endblock %}
+{% block try_items %}
+<li>Raise λ. What happens to the mean wait?</li>
+<li>Change s. Does the conditional chance change?</li>
+<li>What is P(T ≤ 1/λ)?</li>
+{% endblock %}

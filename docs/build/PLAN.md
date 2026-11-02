@@ -520,22 +520,22 @@ it reaches the front of the queue.
 | 183 | `systems-matrices/linear-systems` | 5 | 1 | ✓ |
 | 184 | `systems-matrices/nonlinear-systems` | 3 | 1 | ✓ |
 | 185 | `systems-matrices/partial-fractions` | 3 | 1 | ✓ |
-| 186 | `limits-continuity/the-precise-definition` | 4 | 1 | |
-| 187 | `limits-continuity/limits-at-infinity` | 4 | 1 | |
+| 186 | `limits-continuity/the-precise-definition` | 4 | 1 | ✓ |
+| 187 | `limits-continuity/limits-at-infinity` | 4 | 1 | ✓ |
 | 188 | `derivatives/linear-approximation` | 6 | 1 | ✓ |
 | 189 | `derivatives/parametric-polar-slopes` | 6 | 1 | ✓ |
 | 190 | `derivative-applications/l-hopital-s-rule` | 5 | 1 | ✓ |
 | 191 | `derivative-applications/newton-s-method` | 4 | 1 | ✓ |
-| 192 | `integrals/net-change` | 3 | 1 | |
-| 193 | `integrals/numerical-integration` | 4 | 1 | |
-| 194 | `integrals/improper-integrals` | 4 | 1 | |
-| 195 | `integral-applications/volumes` | 7 | 1 | |
-| 196 | `integral-applications/work` | 3 | 1 | |
-| 197 | `integral-applications/average-value` | 4 | 1 | |
-| 198 | `integral-applications/arc-length-surface-area` | 7 | 1 | |
-| 199 | `integral-applications/physics-engineering` | 5 | 1 | |
-| 200 | `integral-applications/economics-biology` | 3 | 1 | |
-| 201 | `integral-applications/continuous-probability` | 5 | 1 | |
+| 192 | `integrals/net-change` | 3 | 1 | ✓ |
+| 193 | `integrals/numerical-integration` | 4 | 1 | ✓ |
+| 194 | `integrals/improper-integrals` | 4 | 1 | ✓ |
+| 195 | `integral-applications/volumes` | 7 | 1 | ✓ |
+| 196 | `integral-applications/work` | 3 | 1 | ✓ |
+| 197 | `integral-applications/average-value` | 4 | 1 | ✓ |
+| 198 | `integral-applications/arc-length-surface-area` | 7 | 1 | ✓ |
+| 199 | `integral-applications/physics-engineering` | 5 | 1 | ✓ |
+| 200 | `integral-applications/economics-biology` | 3 | 1 | ✓ |
+| 201 | `integral-applications/continuous-probability` | 5 | 1 | ✓ |
 | 202 | `differential-equations/direction-fields-euler` | 4 | 1 | ✓ |
 | 203 | `differential-equations/population-models` | 3 | 1 | ✓ |
 | 204 | `differential-equations/predatorprey` | 3 | 1 | ✓ |
@@ -600,4 +600,9 @@ it reaches the front of the queue.
   Figures worth testing: rainbow minimum D = 138° at i ≈ 59.4° for n = 1.333 (formula and traced ray agree); Fermat's sin θ₁/sin θ₂ = n at the fastest crossing; can best h/r = 2 with no seam cost; fence x = L/4, box x = a/6, Norman window r = P/(4 + π); movie seat x = √(ab); least energy per km at v⁴ = b/a, least power at v⁴ = b/(3a); epidemic peak at C = K/2; cone dh/dt = 4k/(πh²).
   Look hardest at: the ladder and balloon top halves (drawn on raw canvas), the cone drawing, the rainbow ray bundle, the cinema side view at 360 px, and `related-rates-stepper`, whose sliders are rewritten when the problem changes. `rolle-...` needs the button to hit equal heights exactly.
   Also fixed the earlier `test-strategy-picker` page: its empty formula strip is removed and its manifest says `"formula": false`.
+
+- Session of 2 Nov 2026 (`limits-continuity` ×2, `integrals` ×3, `integral-applications` ×7: 53 tools), built without screenshots, tests or `tool_tests`, by request: look at all 53 pictures, run `manage.py test`, and write `tool_tests`. Only `node --check` was run.
+  `integral-applications/_ia.js` serves these boxes: `simpson`, `leftSum`/`rightSum`/`midSum`/`trapSum`/`simpSum`, `phi`/`Phi` (normal pdf and cdf, Phi by Simpson), and re-exports `boxes`, `speck`, `trace`, `num`, `tangent`, `roots`, `FUNS`. `limits-continuity/_eps.js` has `bestDelta` (largest δ for a given ε, scanned outward).
+  Figures worth testing: disc/shell volumes agree for all five `disc-washer-or-shell` problems (32π/5, 8π, 8π/3, π²/2, 2π²); Pappus torus 2π²Rr²; coffee cups πp/(p+2) and 2π/(p+2); cycloid arch length 8a, cardioid 8a; polar cardioid area 3π/2; Gabriel's horn V = π(1 − 1/b); Poiseuille Q = πΔPR⁴/8ηL; consumer surplus; exponential P(T ≤ t); `bestDelta` for 2x + 1 equals ε/2; Simpson error ratio about 16.
+  Look hardest at: `why-do-equal-slices-mean-equal-volumes` (a 2D coin stack), the polar sectors, `rotating-on-a-slant` (exact cross-sections of a tilted rectangle), `why-discs-and-washers` and `why-shells` (raw canvas lower halves), the dam strips, and `normal-curve-heights-and-exam-scores`, whose sliders reset when the dataset changes.
 

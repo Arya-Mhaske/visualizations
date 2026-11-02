@@ -6395,25 +6395,25 @@
 "archetype": "chance",
 "priority": 189,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-precise-definition/why-does-delta-depend-on-epsilon-and-on-steepness": {
 "archetype": "plot",
 "priority": 189,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-precise-definition/limits-at-infinity-the-n-version": {
 "archetype": "plot",
 "priority": 189,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/the-precise-definition/epsilondelta-proof-builder": {
 "archetype": "stepper",
 "priority": 189,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/continuity/why-does-no-lifting-the-pen-need-three-conditions": {
 "archetype": "plot",
@@ -6449,25 +6449,25 @@
 "archetype": "phasor",
 "priority": 190,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limits-at-infinity/why-does-ex-beat-every-power-and-ln-x-lose-to-every-power": {
 "archetype": "plot",
 "priority": 190,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limits-at-infinity/why-is-infinity-infinity-undetermined": {
 "archetype": "phasor",
 "priority": 190,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "limits-continuity/limits-at-infinity/divide-by-the-highest-power": {
 "archetype": "stepper",
 "priority": 190,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/why-is-the-derivative-the-slope-you-see-when-you-zoom-in": {
 "archetype": "plot",
@@ -7083,19 +7083,20 @@
 "archetype": "plot",
 "priority": 195,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/net-change/displacement-versus-distance-travelled": {
 "archetype": "plot",
 "priority": 195,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/net-change/indefinite-integral-table": {
 "archetype": "stepper",
 "priority": 195,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "integrals/substitution/why-is-substitution-the-chain-rule-backwards": {
 "archetype": "plot",
@@ -7215,49 +7216,49 @@
 "archetype": "plot",
 "priority": 196,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/numerical-integration/why-is-simpson-s-rule-so-much-better": {
 "archetype": "plot",
 "priority": 196,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/numerical-integration/compare-the-rules": {
 "archetype": "stepper",
 "priority": 196,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/numerical-integration/area-from-sampled-data": {
 "archetype": "chance",
 "priority": 196,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/improper-integrals/why-does-integral1-x2-converge-but-integral1-x-not": {
 "archetype": "plot",
 "priority": 197,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/improper-integrals/gabriel-s-horn-finite-volume-infinite-surface": {
 "archetype": "space3d",
 "priority": 197,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/improper-integrals/comparison-for-integrals": {
 "archetype": "plot",
 "priority": 197,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/improper-integrals/evaluate-improper-integrals-as-limits": {
 "archetype": "stepper",
 "priority": 197,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/area-between-curves/why-top-minus-bottom-even-below-the-axis": {
 "archetype": "plot",
@@ -7293,205 +7294,205 @@
 "archetype": "chance",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/why-discs-and-washers": {
 "archetype": "plot",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/why-shells": {
 "archetype": "space3d",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/why-is-a-cone-13-of-its-cylinder": {
 "archetype": "space3d",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/why-is-a-sphere-43pir3": {
 "archetype": "space3d",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/disc-washer-or-shell": {
 "archetype": "stepper",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/volumes/rotating-on-a-slant": {
 "archetype": "plot",
 "priority": 198,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/work/why-is-work-an-integral-when-the-force-changes": {
 "archetype": "plot",
 "priority": 199,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/work/pumping-out-a-tank": {
 "archetype": "plot",
 "priority": 199,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/work/lifting-a-chain-or-a-leaking-bucket": {
 "archetype": "plot",
 "priority": 199,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/average-value/why-is-the-average-value-the-integral-width": {
 "archetype": "plot",
 "priority": 200,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/average-value/why-is-the-average-actually-reached": {
 "archetype": "plot",
 "priority": 200,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/average-value/average-temperature-over-a-day": {
 "archetype": "plot",
 "priority": 200,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/average-value/bat-meets-ball-impulse": {
 "archetype": "plot",
 "priority": 200,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/why-is-arc-length-integralroot-1-dy-dx-2-dx": {
 "archetype": "plot",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/why-does-surface-area-use-the-slant-height": {
 "archetype": "space3d",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/why-is-polar-area-12integralr2-dtheta": {
 "archetype": "plot",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/why-is-there-one-ds-for-every-coordinate-system": {
 "archetype": "plot",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/arc-length-of-parametric-and-polar-curves": {
 "archetype": "stepper",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/area-under-a-parametric-curve": {
 "archetype": "stepper",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/arc-length-surface-area/arc-length-contest": {
 "archetype": "plot",
 "priority": 201,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/physics-engineering/why-does-water-push-harder-on-a-dam-s-base": {
 "archetype": "space3d",
 "priority": 202,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/physics-engineering/why-is-the-centre-of-mass-a-weighted-average": {
 "archetype": "plot",
 "priority": 202,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/physics-engineering/pappus-volume-area-x-distance-travelled": {
 "archetype": "space3d",
 "priority": 202,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/physics-engineering/hydrostatic-force-on-a-dam-or-tank-end": {
 "archetype": "plot",
 "priority": 202,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/physics-engineering/complementary-coffee-cups": {
 "archetype": "plot",
 "priority": 202,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/economics-biology/why-is-consumer-surplus-an-area": {
 "archetype": "plot",
 "priority": 203,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/economics-biology/blood-flow-in-a-vessel": {
 "archetype": "plot",
 "priority": 203,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/economics-biology/measuring-cardiac-output": {
 "archetype": "plot",
 "priority": 203,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/continuous-probability/why-does-probability-become-area": {
 "archetype": "chance",
 "priority": 204,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/continuous-probability/why-is-p-x-exactly-5-0": {
 "archetype": "plot",
 "priority": 204,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/continuous-probability/why-is-the-mean-the-balance-point": {
 "archetype": "chance",
 "priority": 204,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/continuous-probability/normal-curve-heights-and-exam-scores": {
 "archetype": "plot",
 "priority": 204,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/continuous-probability/waiting-times": {
 "archetype": "plot",
 "priority": 204,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/what-is-a-differential-equation/why-can-a-rule-about-rates-predict-the-future": {
 "archetype": "plot",
