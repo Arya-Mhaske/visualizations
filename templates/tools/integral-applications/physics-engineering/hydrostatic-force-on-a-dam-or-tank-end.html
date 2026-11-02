@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Compute the force for realistic shapes.{% endblock %}
+{% block why_text %}Force is the integral of pressure times width. It equals ρ g × (centroid depth) × area, but the centre of pressure is lower than the centroid.{% endblock %}
+{% block try_items %}
+<li>Compare the rectangle and the trapezoid.</li>
+<li>Put the circle deeper. What happens to the gap between centroid and centre of pressure?</li>
+<li>Which shape has the lowest centre of pressure?</li>
+{% endblock %}
