@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Send the unit square through B and then A. The areas multiply.{% endblock %}
+{% block why_text %}B scales every area by det B. Then A scales every area again by det A. So the combined move scales areas by det A times det B. And the combined move is the matrix AB, whose area scale factor is det(AB). That is why det(AB) = det A · det B.{% endblock %}
+{% block try_items %}
+<li>Choose the reflection for B. What is the sign of det(AB)?</li>
+<li>Make A flatten the square. What is det(AB)?</li>
+<li>Check that the product of the two determinants matches the last readout.</li>
+{% endblock %}

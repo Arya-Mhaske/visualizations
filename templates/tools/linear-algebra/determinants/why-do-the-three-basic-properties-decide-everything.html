@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Derive ad − bc from only three rules: det I = 1, a row swap flips the sign, and det is linear in each row.{% endblock %}
+{% block why_text %}Linearity lets you split every row into pieces along the axes. Two of the four resulting determinants have repeated directions and are zero. The other two are numbers times the identity or the swapped identity. Adding them gives ad − bc. The three rules are all that is needed.{% endblock %}
+{% block try_items %}
+<li>Press Next step and see which of the four terms vanish.</li>
+<li>Where does the minus sign come from?</li>
+<li>Set b = c = 0. What is the determinant?</li>
+{% endblock %}

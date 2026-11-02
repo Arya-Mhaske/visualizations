@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Solve A x = b with determinants, and write A⁻¹ from cofactors.{% endblock %}
+{% block why_text %}Replace one column of A by b and the determinant changes by exactly the factor x_j, so x_j = det B_j / det A. In the same way the entries of A⁻¹ are cofactors divided by det A. Both formulas are beautiful and slow: they show what the answer looks like, but elimination is faster for large systems.{% endblock %}
+{% block try_items %}
+<li>Which column is replaced to find x₂?</li>
+<li>Check the solution in A x = b.</li>
+<li>What goes wrong if det A is zero?</li>
+{% endblock %}

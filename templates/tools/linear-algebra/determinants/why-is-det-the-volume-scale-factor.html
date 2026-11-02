@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch a unit square become a parallelogram. Its area is the determinant.{% endblock %}
+{% block why_text %}The columns of the matrix are where the sides of the unit square go, and they span a parallelogram. Its area is |ad − bc|, which is the absolute value of the determinant. Every small square of the grid is scaled by the same factor, so every area is. A negative determinant means the picture is flipped, as the F shows.{% endblock %}
+{% block try_items %}
+<li>Make the columns point in the same direction. What is the area?</li>
+<li>Swap the two columns. What happens to the sign and to the F?</li>
+<li>Double every entry. By what factor does the area grow?</li>
+{% endblock %}

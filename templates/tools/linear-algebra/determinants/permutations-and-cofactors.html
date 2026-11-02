@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Expand a 3 × 3 determinant with the big formula, then with cofactors.{% endblock %}
+{% block why_text %}The big formula adds one term for each way to pick one entry from every row and every column: six terms for a 3 × 3 matrix, each with a plus or minus sign according to whether its permutation is even or odd. Grouping the terms by the first row gives the cofactor expansion.{% endblock %}
+{% block try_items %}
+<li>Count the minus signs. Which permutations are odd?</li>
+<li>Pick the matrix with a zero. How many terms vanish?</li>
+<li>Do the big formula and the cofactor expansion agree?</li>
+{% endblock %}
