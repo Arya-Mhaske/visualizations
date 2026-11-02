@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose the form of the root. Press Next step to see which trig substitution fits.{% endblock %}
+{% block why_text %}The three roots match three triangles: a² − x² uses sin, a² + x² uses tan, and x² − a² uses sec. In each case the root becomes a single trig term, and the integral becomes a simple one.{% endblock %}
+{% block try_items %}
+<li>Choose √(a² − x²). What does the root become?</li>
+<li>Choose √(a² + x²). Which function replaces x?</li>
+<li>Check that the numerical area matches the formula in the last step.</li>
+{% endblock %}
+{% block formula %}{% endblock %}

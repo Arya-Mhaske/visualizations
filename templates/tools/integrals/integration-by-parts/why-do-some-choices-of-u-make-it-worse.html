@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Do the same integral with two different choices of u and dv. One gets easier, the other does not.{% endblock %}
+{% block why_text %}Choose u to be the part that gets simpler when you differentiate it, such as x or ln x. Choose dv to be the part you can integrate. The wrong way round hands you a harder integral than you started with.{% endblock %}
+{% block try_items %}
+<li>Compare choices A and B for x eˣ. What happens to the power of x?</li>
+<li>Do x ln x. Why does choice B send you back to the start?</li>
+<li>Try x cos x with choice B. Is it worse?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

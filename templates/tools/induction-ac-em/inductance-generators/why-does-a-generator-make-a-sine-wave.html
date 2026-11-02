@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Turn a coil in a steady field. The flux follows a cosine, and the emf follows its slope.{% endblock %}
+{% block why_text %}Φ = NBA cos ωt, and the emf is its negative rate of change, NBAω sin ωt. The slope of a cosine is a sine, so a steadily turning coil gives a sine wave. The emf is largest when the flux is changing fastest, which is when the coil lies along the field.{% endblock %}
+{% block try_items %}
+<li>Press Play. When is the flux zero? What is the emf then?</li>
+<li>When is the emf zero?</li>
+<li>What is the peak emf for N = 100, B = 0.5 T, A = 0.02 m² and 50 Hz?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  One turn takes 2 seconds here so that you can see it. A real 50 Hz generator turns 100 times faster than we could watch.
+</div>
+{% endblock %}

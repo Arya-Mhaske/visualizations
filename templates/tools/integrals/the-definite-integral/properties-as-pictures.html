@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Three properties of the definite integral, each read from a picture.{% endblock %}
+{% block why_text %}Split: the area up to c plus the area from c is the whole area. Flip: going from b back to a takes the area away, so ∫ᵇₐ = −∫ₐᵇ. Bounds: the area is at least the smallest height × width and at most the tallest height × width.{% endblock %}
+{% block try_items %}
+<li>In Split view, move c. Does the total change?</li>
+<li>In Flip view, what is ∫ from b to a?</li>
+<li>In Bounds view, shrink the interval. Do the bounds tighten?</li>
+{% endblock %}

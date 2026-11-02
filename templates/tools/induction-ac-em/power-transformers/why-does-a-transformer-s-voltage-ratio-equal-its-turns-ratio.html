@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Two coils share one iron core. The same changing flux threads every turn of both.{% endblock %}
+{% block why_text %}Each turn gets the same emf, −dΦ/dt. The primary has N_p turns and the secondary N_s, so V_p = N_p e and V_s = N_s e. Divide: V_s/V_p = N_s/N_p.{% endblock %}
+{% block try_items %}
+<li>Set N_p = 100, N_s = 40. What is the secondary voltage?</li>
+<li>Make N_s bigger than N_p. What kind of transformer is it?</li>
+<li>What is the volts per turn when V_p = 230 and N_p = 100?</li>
+{% endblock %}

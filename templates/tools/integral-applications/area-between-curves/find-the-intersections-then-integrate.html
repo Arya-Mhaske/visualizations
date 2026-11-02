@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Set up in three steps: draw the curves, find where they cross, and integrate the gap between crossings.{% endblock %}
+{% block why_text %}The limits of integration are the crossing points. Between each pair of crossings one curve is on top. If the top changes at a crossing, split the integral there, or integrate the absolute difference.{% endblock %}
+{% block try_items %}
+<li>Choose x³ and x. How many regions are there?</li>
+<li>Choose sin x and cos x. Where do they cross?</li>
+<li>Step 3 for x² and x + 2. Check that the area is 4.5.</li>
+{% endblock %}

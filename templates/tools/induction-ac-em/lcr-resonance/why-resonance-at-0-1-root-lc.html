@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Sweep the frequency. X_L rises and X_C falls, and the current peaks where they meet.{% endblock %}
+{% block why_text %}At low frequency X_C is large and the capacitor blocks the current. At high frequency X_L is large and the coil blocks it. In between they are equal and cancel, so Z = R, its smallest value, and the current is greatest: ω₀ = 1/√(LC).{% endblock %}
+{% block try_items %}
+<li>Slide ω until X_L = X_C. Where is the current peak?</li>
+<li>Increase C. Which way does the peak move?</li>
+<li>At resonance, what is Z compared with R?</li>
+{% endblock %}

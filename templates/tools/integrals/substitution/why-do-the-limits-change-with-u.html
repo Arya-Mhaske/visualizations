@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A definite integral in x becomes an integral in u. Check that the limits turn into g(a) and g(b).{% endblock %}
+{% block why_text %}The substitution u = g(x) takes each x to a u. The integral’s limits are values of x, so they must be changed to the matching values of u. Then the new integral has exactly the same area as the old one.{% endblock %}
+{% block try_items %}
+<li>Compare the two areas. Do they match?</li>
+<li>Move b. How do the u limits move?</li>
+<li>If you forgot to change the limits, what area would you compute?</li>
+{% endblock %}

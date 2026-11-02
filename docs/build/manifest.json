@@ -2575,19 +2575,19 @@
 "archetype": "rays",
 "priority": 140,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/faraday-lenz/why-is-lenz-s-law-energy-conservation": {
 "archetype": "sim",
 "priority": 140,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/faraday-lenz/why-is-motional-emf-blv": {
 "archetype": "sim",
 "priority": 140,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/faraday-lenz/flux-change-calculator": {
 "archetype": "rays",
@@ -2605,19 +2605,19 @@
 "archetype": "sim",
 "priority": 142,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/inductance-generators/why-does-a-coil-store-energy-12li2": {
 "archetype": "sim",
 "priority": 142,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/inductance-generators/mutual-inductance": {
 "archetype": "sim",
 "priority": 142,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/inductance-generators/why-does-a-generator-make-a-sine-wave": {
 "archetype": "sim",
@@ -2629,7 +2629,7 @@
 "archetype": "stepper",
 "priority": 142,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/ac-basics/why-use-rms-values": {
 "archetype": "plot",
@@ -2671,25 +2671,25 @@
 "archetype": "phasor",
 "priority": 146,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/lcr-resonance/why-resonance-at-0-1-root-lc": {
 "archetype": "sim",
 "priority": 146,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/lcr-resonance/why-do-sharp-peaks-need-small-r-q-factor": {
 "archetype": "sim",
 "priority": 146,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/lcr-resonance/resonance-curve-explorer": {
 "archetype": "stepper",
 "priority": 146,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/lcr-resonance/tuning-a-radio": {
 "archetype": "sim",
@@ -2701,13 +2701,13 @@
 "archetype": "sim",
 "priority": 148,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/power-transformers/why-does-a-transformer-s-voltage-ratio-equal-its-turns-ratio": {
 "archetype": "phasor",
 "priority": 148,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/power-transformers/transformer-calculator": {
 "archetype": "phasor",
@@ -2725,19 +2725,19 @@
 "archetype": "sim",
 "priority": 150,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/electromagnetic-waves/why-are-e-and-b-perpendicular-to-each-other-and-to-the-motio": {
 "archetype": "sim",
 "priority": 150,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/electromagnetic-waves/why-does-c-1-root-0epsilon0": {
 "archetype": "space3d",
 "priority": 150,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/electromagnetic-waves/why-does-light-push-radiation-pressure": {
 "archetype": "sim",
@@ -2749,13 +2749,13 @@
 "archetype": "table",
 "priority": 150,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "induction-ac-em/electromagnetic-waves/microwave-ovens-x-rays-and-uv": {
 "archetype": "rays",
 "priority": 150,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "optics/mirrors/why-is-f-r-2-for-a-mirror": {
 "archetype": "rays",
@@ -7001,37 +7001,37 @@
 "archetype": "space3d",
 "priority": 141,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/area-distance/why-do-more-rectangles-give-the-exact-area": {
 "archetype": "plot",
 "priority": 141,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/area-distance/why-is-the-area-under-x2-from-0-to-1-exactly-13": {
 "archetype": "plot",
 "priority": 141,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/area-distance/riemann-sum-explorer": {
 "archetype": "chance",
 "priority": 141,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/the-definite-integral/why-does-area-below-the-axis-count-as-negative": {
 "archetype": "plot",
 "priority": 143,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/the-definite-integral/why-the-long-s": {
 "archetype": "plot",
 "priority": 143,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/the-definite-integral/properties-as-pictures": {
 "archetype": "plot",
@@ -7049,25 +7049,25 @@
 "archetype": "stepper",
 "priority": 143,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/the-definite-integral/the-a-x-trick": {
 "archetype": "stepper",
 "priority": 143,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/fundamental-theorem/why-is-the-derivative-of-the-area-function-the-height": {
 "archetype": "plot",
 "priority": 145,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/fundamental-theorem/why-does-total-change-the-integral-of-the-rate": {
 "archetype": "plot",
 "priority": 145,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/fundamental-theorem/why-do-integrating-and-differentiating-undo-each-other": {
 "archetype": "plot",
@@ -7104,13 +7104,13 @@
 "archetype": "plot",
 "priority": 147,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/substitution/why-do-the-limits-change-with-u": {
 "archetype": "plot",
 "priority": 147,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/substitution/why-do-odd-functions-integrate-to-0-on-a-a": {
 "archetype": "plot",
@@ -7122,19 +7122,21 @@
 "archetype": "stepper",
 "priority": 147,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/integration-by-parts/why-is-integration-by-parts-the-product-rule-backwards": {
 "archetype": "plot",
 "priority": 149,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/integration-by-parts/why-do-some-choices-of-u-make-it-worse": {
 "archetype": "discrete",
 "priority": 149,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/integration-by-parts/why-is-integralex-f-x-f-prime-x-dx-ex-f-x-c": {
 "archetype": "plot",
@@ -7146,67 +7148,71 @@
 "archetype": "stepper",
 "priority": 149,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/trig-integrals-substitution/why-does-sin2-x-average-to-12": {
 "archetype": "plot",
 "priority": 151,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/trig-integrals-substitution/why-does-x-a-sin-theta-remove-root-a2-x2": {
 "archetype": "plot",
 "priority": 151,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/trig-integrals-substitution/why-is-a-circle-s-area-pir2": {
 "archetype": "plot",
 "priority": 151,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/trig-integrals-substitution/powers-of-sin-and-cos": {
 "archetype": "stepper",
 "priority": 151,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/trig-integrals-substitution/trig-substitution-stepper": {
 "archetype": "stepper",
 "priority": 151,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/why-do-partial-fractions-make-rational-functions-integrable": {
 "archetype": "discrete",
 "priority": 153,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/why-do-some-integrals-have-no-formula": {
 "archetype": "plot",
 "priority": 153,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/why-substitute-for-a-whole-root": {
 "archetype": "plot",
 "priority": 153,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/integration-strategy": {
 "archetype": "stepper",
 "priority": 153,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/patterns-in-integrals": {
 "archetype": "stepper",
 "priority": 153,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "integrals/partial-fractions-strategy/complete-the-square-inside-an-integral": {
 "archetype": "stepper",
@@ -7266,19 +7272,19 @@
 "archetype": "plot",
 "priority": 155,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/area-between-curves/why-slice-sideways-sometimes": {
 "archetype": "plot",
 "priority": 155,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/area-between-curves/find-the-intersections-then-integrate": {
 "archetype": "stepper",
 "priority": 155,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integral-applications/area-between-curves/gini-index-of-inequality": {
 "archetype": "plot",

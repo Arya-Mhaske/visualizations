@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A rational function can be split into simple pieces, each of which integrates to a log or an arctangent.{% endblock %}
+{% block why_text %}Once the pieces are separated, each has a known antiderivative: A/(x − r) gives A ln|x − r|, and 1/(x² + k²) gives an arctangent. The sum of the pieces equals the original function everywhere.{% endblock %}
+{% block try_items %}
+<li>Choose the first function. Do the dashed sum and the thick curve coincide?</li>
+<li>Compare the area under the whole with the sum of the pieces’ areas.</li>
+<li>Which example needs an arctangent?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The pieces for the last example were found by solving for A, B and C. See Systems and Matrices → Partial Fractions for how.
+</div>
+{% endblock %}

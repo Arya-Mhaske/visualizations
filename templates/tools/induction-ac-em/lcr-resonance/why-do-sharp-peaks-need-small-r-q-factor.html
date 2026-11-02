@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Lower the resistance and watch the peak get taller and narrower.{% endblock %}
+{% block why_text %}At resonance the current is V/R, so a smaller R gives a taller peak. The width between the half-power points is R/L, so it also gets narrower. The ratio Q = ω₀L/R measures how sharp the peak is.{% endblock %}
+{% block try_items %}
+<li>Set R = 40, then R = 5. What happens to the height and width?</li>
+<li>Check that Q = ω₀/Δω.</li>
+<li>Why does a radio need a high Q?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Switch a coil on and off. The current cannot jump, just like a heavy object cannot change speed at once.{% endblock %}
+{% block why_text %}A changing current changes the coil’s flux, and the coil answers with an emf that opposes the change. So the current rises and falls gradually, over a time L/R. Inductance does for current what mass does for motion.{% endblock %}
+{% block try_items %}
+<li>Increase L. What happens to the time the current takes to rise?</li>
+<li>Increase R. Does the final current or the time constant change, or both?</li>
+<li>Compare with the dashed line for a circuit with no coil.</li>
+{% endblock %}

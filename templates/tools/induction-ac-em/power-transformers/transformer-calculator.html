@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose turns, input voltage and load. The calculator finds both voltages and both currents.{% endblock %}
+{% block why_text %}Voltage goes up by the turns ratio, current goes down by the same ratio. The power is nearly the same on both sides; a real transformer loses a little as heat. A step-up transformer gives less current, which is why power lines use high voltage.{% endblock %}
+{% block try_items %}
+<li>Step 230 V down to 23 V. What are the turns?</li>
+<li>Lower the efficiency to 90%. Which side’s current changes?</li>
+<li>Swap the turns. Does the power change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Efficiency is the ratio of output power to input power. Real power transformers are above 95%.
+</div>
+{% endblock %}

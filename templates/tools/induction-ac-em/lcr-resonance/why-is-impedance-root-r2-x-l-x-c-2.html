@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Put R, L and C in series. Add their voltage phasors tip to tail.{% endblock %}
+{% block why_text %}One current flows through all three. V_R is in step with it, V_L leads by 90° and V_C lags by 90°. V_L and V_C point opposite ways, so they partly cancel. The total is the hypotenuse of a right triangle: V = I√(R² + (X_L − X_C)²).{% endblock %}
+{% block try_items %}
+<li>Set X_L = X_C. What is Z?</li>
+<li>Make X_L bigger than X_C. Does the current lag or lead?</li>
+<li>Check Z for R = 12, X_L − X_C = 12 with Pythagoras.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The diagram takes I = 1 A, so voltages in volts equal resistances in ohms.
+</div>
+{% endblock %}

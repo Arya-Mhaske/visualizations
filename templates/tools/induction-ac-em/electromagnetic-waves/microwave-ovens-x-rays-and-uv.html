@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Pick an application and compare its photon energy with what energy can do.{% endblock %}
+{% block why_text %}What a wave can do depends on the energy of one photon. Microwave photons are too weak to break bonds but make water molecules spin and warm. UV can break bonds. X-rays and gamma rays can ionise atoms.{% endblock %}
+{% block try_items %}
+<li>Choose the microwave oven. Can its photon break a bond?</li>
+<li>Choose germicidal UV. Is its photon above 4 eV?</li>
+<li>Which applications can ionise atoms?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The thresholds are typical values: a few eV for a chemical bond and 13.6 eV for ionising hydrogen.
+</div>
+{% endblock %}

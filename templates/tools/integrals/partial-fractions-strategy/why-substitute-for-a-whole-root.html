@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Set u equal to the whole root. The root disappears and a rational function is left.{% endblock %}
+{% block why_text %}A root sign blocks most methods. Choosing u = the whole root, then solving for x and dx, turns the integral into a rational function of u, which can be integrated by partial fractions or by hand.{% endblock %}
+{% block try_items %}
+<li>Check that the two areas match for the cube-root case.</li>
+<li>Move the upper limit. How do the u limits change?</li>
+<li>For √x, what are x and dx in terms of u?</li>
+{% endblock %}

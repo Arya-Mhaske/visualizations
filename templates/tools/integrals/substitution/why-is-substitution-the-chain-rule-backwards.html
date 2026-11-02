@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}The chain rule says d/dx F(g(x)) = F′(g(x))·g′(x). Run it backwards and a hard-looking integrand shows its antiderivative.{% endblock %}
+{% block why_text %}If an integrand has the shape f(g(x))·g′(x), it is the derivative of F(g(x)). The factor g′(x) is exactly what the chain rule leaves behind. Substitution is spotting that shape.{% endblock %}
+{% block try_items %}
+<li>Choose 2x cos(x²). What are g and f here?</li>
+<li>Move the slider. Does the shaded area always equal F(g(x)) minus its starting value?</li>
+<li>Try the fourth integrand. What is g′?</li>
+{% endblock %}

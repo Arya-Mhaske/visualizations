@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A car drives forward, then reverses. See what the area above and below the axis means.{% endblock %}
+{% block why_text %}Distance covered while going forward adds to your position, and while reversing it subtracts. A rectangle of velocity × time below the axis has negative height, so it has negative area. The integral is the net displacement. The total distance travelled needs the area counted as positive.{% endblock %}
+{% block try_items %}
+<li>Stop at 3.14 s. What is the net displacement?</li>
+<li>Stop at 6.2 s. How far has the car moved in total, and how far from the start is it?</li>
+<li>When is the car at its farthest point from the start?</li>
+{% endblock %}

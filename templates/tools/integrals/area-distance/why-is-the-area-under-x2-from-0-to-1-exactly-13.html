@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}The right-hand sum for x² has an exact formula in n. Watch it settle on one third.{% endblock %}
+{% block why_text %}With n strips of width 1/n, the right-hand sum is (1/n³)(1² + 2² + … + n²) = (n + 1)(2n + 1)/(6n²), using Σk² = n(n + 1)(2n + 1)/6. As n grows this tends to 2/6 = 1/3. The left-hand sum tends to the same limit, and the two always differ by exactly 1/n.{% endblock %}
+{% block try_items %}
+<li>At n = 10, work out (n + 1)(2n + 1)/(6n²) yourself and check the readout.</li>
+<li>What is the difference between the right and left sums at n = 20?</li>
+<li>Why can the exact area not be bigger than 1/3 or smaller than 1/3?</li>
+{% endblock %}

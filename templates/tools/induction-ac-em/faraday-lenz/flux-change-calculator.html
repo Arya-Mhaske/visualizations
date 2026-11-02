@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose what changes: the field, the area or the angle. The calculator finds ΔΦ and the induced emf.{% endblock %}
+{% block why_text %}Φ = BA cos θ. Changing any of B, A or θ changes Φ. The induced emf is −N times the rate of change, ΔΦ/Δt for a steady change. The minus sign is Lenz’s law.{% endblock %}
+{% block try_items %}
+<li>Raise B from 0.2 to 0.8 T in 0.5 s with N = 100. What is the emf?</li>
+<li>Change the angle from 0° to 60°. Which way does the flux change?</li>
+<li>Halve Δt. What happens to the emf?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The fixed values for the quantity not being changed are B = 0.5 T, A = 0.03 m² and θ = 0°.
+</div>
+{% endblock %}

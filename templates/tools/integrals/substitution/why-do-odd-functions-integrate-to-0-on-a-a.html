@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Integrate across zero. The left half is the right half turned upside down.{% endblock %}
+{% block why_text %}For an odd function f(−x) = −f(x). So the part of the curve on the left is the right-hand part rotated by half a turn. The areas are equal but one is above the axis and one below, so they cancel. For an even function they add.{% endblock %}
+{% block try_items %}
+<li>Choose x³. What do the left and right areas add to?</li>
+<li>Choose x². Why is the whole twice the right half?</li>
+<li>Is x e^(−x²) odd or even? Check with the readout.</li>
+{% endblock %}

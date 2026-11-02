@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Take f, integrate it, then differentiate. Or differentiate first, then integrate. See what comes back.{% endblock %}
+{% block why_text %}Integrate then differentiate: the area function’s slope is f, so you get f back exactly. Differentiate then integrate: you get f(x) − f(0), so the starting value is lost. That lost constant is the “+C”.{% endblock %}
+{% block try_items %}
+<li>Choose integrate first. Does the bottom graph match f?</li>
+<li>Choose differentiate first. By how much is the bottom graph below f?</li>
+<li>Which function has f(0) = 0? What happens to the loop then?</li>
+{% endblock %}

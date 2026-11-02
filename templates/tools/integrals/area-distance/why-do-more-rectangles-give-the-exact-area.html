@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Add rectangles and watch three kinds of sum, left, midpoint and right, close in on the same number.{% endblock %}
+{% block why_text %}For a rising curve the left sum is always too small and the right sum too big, and their gap is (b − a)[f(b) − f(a)]/n, which shrinks to zero. The exact area is squeezed between them. The midpoint sum, where errors cancel, is closest.{% endblock %}
+{% block try_items %}
+<li>Set n = 2. How far apart are the left and right sums?</li>
+<li>Double n. By what factor does the gap between them change?</li>
+<li>Which of the three sums is nearest the exact area at n = 10?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Change the current in one coil and measure the emf in the other.{% endblock %}
+{% block why_text %}The flux from coil 1 through coil 2 is M I₁. When I₁ changes, so does that flux, and coil 2 gets an emf −M dI₁/dt. M depends on the coils and how closely they are coupled, up to k√(L₁L₂).{% endblock %}
+{% block try_items %}
+<li>Raise the coupling k. What happens to the emf?</li>
+<li>Double the frequency. What happens to the size of the emf?</li>
+<li>Why is the emf a square wave when the current is triangular?</li>
+{% endblock %}

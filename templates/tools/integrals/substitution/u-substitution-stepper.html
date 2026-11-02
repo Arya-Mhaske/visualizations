@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick an integral. Press Next step to choose u, find du and rewrite.{% endblock %}
+{% block why_text %}The substitution works when the integrand contains an inner function and its derivative. Choose u, replace everything with u and du, integrate, then put x back.{% endblock %}
+{% block try_items %}
+<li>Choose 2x cos(x²). What do you pick for u? What is du?</li>
+<li>Choose (ln x)/x. How does 1/x help?</li>
+<li>Look at the check line. Do the two numbers agree?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Draw a right triangle with hypotenuse a and side x. The other side is the root.{% endblock %}
+{% block why_text %}By Pythagoras the other side is √(a² − x²). With x = a sin θ, that side is a cos θ. The root sign is replaced by a cosine, which is an easy thing to integrate.{% endblock %}
+{% block try_items %}
+<li>Set a = 3 and θ = 30°. What are x and the root?</li>
+<li>Make θ close to 90°. What happens to the root?</li>
+<li>What is dx when x = a sin θ?</li>
+{% endblock %}

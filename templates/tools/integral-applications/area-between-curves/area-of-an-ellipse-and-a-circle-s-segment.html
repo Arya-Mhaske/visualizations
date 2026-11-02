@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Squash a circle of radius a by the factor b/a. Every height shrinks by that factor, so every area does too.{% endblock %}
+{% block why_text %}The upper half of the ellipse is y = (b/a)√(a² − x²), which is b/a times the circle’s height. So the ellipse has b/a times the circle’s area: πa² × b/a = πab. The same factor works on any segment.{% endblock %}
+{% block try_items %}
+<li>Make a = b. What shape is it, and what is its area?</li>
+<li>Set a = 3, b = 2. Check πab.</li>
+<li>Cut at x = a/2. Compare the cap by slices with the formula.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Sweep the area under √(r² − x²) from 0 to x and compare slices with the trig-substitution formula.{% endblock %}
+{% block why_text %}With x = r sin θ the integral becomes ∫r² cos² θ dθ = (r²/2)(θ + sin θ cos θ). At x = r, θ = π/2 and the area is πr²/4. Four such quarters make πr².{% endblock %}
+{% block try_items %}
+<li>Slide the area up to x = r. What is the area?</li>
+<li>Compare the area by slices with the formula at x = r/2.</li>
+<li>Multiply the quarter circle by 4. Do you get πr²?</li>
+{% endblock %}

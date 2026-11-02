@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Put in the two constants of electricity and magnetism and out comes the speed of light.{% endblock %}
+{% block why_text %}Maxwell’s equations give a wave whose speed is 1/√(μ₀ε₀) = 3 × 10⁸ m/s. That equals the measured speed of light, so light is an electromagnetic wave. In a medium the constants change and the wave slows, which is why n = √(μ_r ε_r).{% endblock %}
+{% block try_items %}
+<li>Read the speed at the default settings.</li>
+<li>Double ε₀. By what factor does the speed change?</li>
+<li>Set ε_r = 1.77. What is n?</li>
+{% endblock %}

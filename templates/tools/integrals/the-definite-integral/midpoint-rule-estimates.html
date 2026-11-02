@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Estimate an integral with midpoint rectangles and compare with the exact value.{% endblock %}
+{% block why_text %}Each midpoint rectangle pokes above the curve on one side of its middle and falls short on the other, so the errors largely cancel. That is why the midpoint rule beats the left rule for the same n.{% endblock %}
+{% block try_items %}
+<li>For x² use n = 4. How big is the error? How big is the left-rule error?</li>
+<li>Double n twice. By roughly what factor does the midpoint error fall?</li>
+<li>Try the cubic. Where is the midpoint estimate exactly right?</li>
+{% endblock %}

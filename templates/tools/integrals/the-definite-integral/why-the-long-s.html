@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Thin the slices and watch the sum symbol turn into Leibniz’s integral sign.{% endblock %}
+{% block why_text %}The integral sign is a stretched S, for summa. Σ f(xᵢ)Δx adds up finite pieces. When the slices become infinitely thin, Δx becomes dx and Σ is replaced by ∫. Same sum, but now with no gaps.{% endblock %}
+{% block try_items %}
+<li>Use n = 4 and read the sum. Then n = 150. How close is the sum to the integral?</li>
+<li>What does Δx become when n is very large?</li>
+<li>At which n does the formula strip change symbol?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Leibniz introduced the notation ∫ and dx in the 1680s. The Σ to ∫ change here is a picture of the idea, not a historical record.
+</div>
+{% endblock %}

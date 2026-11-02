@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose the powers of sin and cos. The readout names the strategy and the exact value from 0 to π/2.{% endblock %}
+{% block why_text %}If a power is odd, save one factor for du and turn the rest into the other function. If both are even, use the half-angle identities. The value from 0 to π/2 follows a clean pattern with double factorials.{% endblock %}
+{% block try_items %}
+<li>Take m = 3, n = 2. Which power is odd? What is u?</li>
+<li>Take m = 2, n = 2. What strategy do you need?</li>
+<li>Check the rule against the slices for m = 4, n = 0.</li>
+{% endblock %}

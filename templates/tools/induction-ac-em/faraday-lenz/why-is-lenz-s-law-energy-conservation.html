@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Drop a magnet through a coil. Then flip the induced current’s direction and watch the ledger break.{% endblock %}
+{% block why_text %}The induced current opposes the change. The magnet slows, and the energy it loses becomes heat in the coil, so the books balance. If the current helped instead, the magnet would speed up, the kinetic energy would exceed what gravity supplied, and energy would be made from nothing.{% endblock %}
+{% block try_items %}
+<li>Press Play with Lenz’s law. Does the ledger balance?</li>
+<li>Turn on the flip. What happens to the ledger?</li>
+<li>Raise the coil’s resistance. What happens to the terminal speed?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The model has a force proportional to speed. Real coils behave similarly while the magnet is inside the field region.
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Drop a magnet down a copper pipe and beside it, one in free fall.{% endblock %}
+{% block why_text %}The moving magnet drives eddy currents in the pipe. By Lenz’s law they oppose the motion, and the magnet reaches a slow steady speed. In a plastic pipe there are no currents, so it falls freely. The lost energy ends up as heat in the pipe.{% endblock %}
+{% block try_items %}
+<li>Choose copper and press Play. Which magnet lands first?</li>
+<li>Switch to plastic. What happens?</li>
+<li>Increase the wall thickness. What happens to the terminal speed?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The strength of the braking in the model is illustrative. A real magnet in a real pipe falls at a few centimetres per second.
+</div>
+{% endblock %}

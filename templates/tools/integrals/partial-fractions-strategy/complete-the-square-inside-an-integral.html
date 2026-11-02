@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Turn x² + bx + c into a square plus a constant, and a hard integral becomes an arctangent.{% endblock %}
+{% block why_text %}x² + bx + c = (x + b/2)² + d², where d² = c − b²/4. If d² is positive, ∫dx/(x² + bx + c) = (1/d) arctan((x + b/2)/d). The curve is the bell 1/(u² + d²) shifted to the centre −b/2.{% endblock %}
+{% block try_items %}
+<li>Set b = 4, c = 13. What is d?</li>
+<li>Make c smaller until d² is zero or negative. What happens?</li>
+<li>Compare the area readout with the arctangent expression.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose a function, an interval, the number of slices and where in each slice to read the height.{% endblock %}
+{% block why_text %}Left, right and midpoint rules are three choices of the sample point. All of them tend to the same integral as the slices thin. The sample point only changes how fast.{% endblock %}
+{% block try_items %}
+<li>Set the sample point to the left edge, then the right edge. Which side does the error lie on for sin x on [0, 3]?</li>
+<li>Use the midpoint with n = 4. How does the error compare with the left rule at n = 4?</li>
+<li>Make a curve that goes below the axis. How are those slices counted?</li>
+{% endblock %}

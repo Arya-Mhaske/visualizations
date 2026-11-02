@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Try Faraday’s experiments. Move the magnet, move the coil, hold them still, and switch a nearby circuit.{% endblock %}
+{% block why_text %}The emf is −dΦ/dt: it depends on how fast the flux changes, not on how big it is. A strong magnet that sits still makes no current. Any way of changing the flux, by motion or by changing the current in a nearby circuit, makes one.{% endblock %}
+{% block try_items %}
+<li>Choose hold both still. What does the emf graph show?</li>
+<li>Choose move the magnet and press Play. When is the emf largest?</li>
+<li>Choose the switch. When does the needle move?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Moving the coil instead of the magnet gives the same flux graph, since only the relative motion matters here. The picture shows the magnet moving in both cases.
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}The speedometer tells you the rate. The odometer adds it up. Read the distance either way.{% endblock %}
+{% block why_text %}The odometer’s reading is the running total of speed × time. So the rise in the odometer between two times equals the area under the speedometer graph between them. Total change is the integral of the rate.{% endblock %}
+{% block try_items %}
+<li>Pick two times. Compare the odometer rise with the shaded area.</li>
+<li>Move the start time later without moving the end. Does the odometer’s starting value matter?</li>
+<li>When the speedometer is highest, is the odometer curve steepest?</li>
+{% endblock %}

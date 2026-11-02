@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Compute a family of integrals row by row and spot the rule that links each to the one before.{% endblock %}
+{% block why_text %}Patterns save work. For xⁿeˣ each row is the one before with an extra term. For sinⁿ x each even row is (n − 1)/n times the row two above. These are reduction formulas.{% endblock %}
+{% block try_items %}
+<li>Choose xⁿ eˣ, n = 4. How does the last row relate to the one before?</li>
+<li>Choose sinⁿ x. What is the ratio between rows 4 and 2?</li>
+<li>Why do the odd rows never get a π?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

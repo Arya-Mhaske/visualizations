@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Shift the current’s phase against the voltage and look at the power v × i.{% endblock %}
+{% block why_text %}When v and i are out of step, the power v i is sometimes negative: energy is sent back to the source. At 90° the positive and negative parts cancel exactly. The average power is V_rms I_rms cos φ, so cos φ is the power factor.{% endblock %}
+{% block try_items %}
+<li>Set φ = 0°. How much of the power graph is negative?</li>
+<li>Set φ = 90°. What is the average power?</li>
+<li>At φ = 60°, what fraction of V_rms I_rms is the real power?</li>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Set up the table for a polynomial times eˣ, sin or cos and read off the answer.{% endblock %}
+{% block why_text %}Parts repeated: differentiate the polynomial down to zero and integrate the other factor each time. The diagonal products with alternating signs are exactly what repeated parts gives, without the repeated writing.{% endblock %}
+{% block try_items %}
+<li>Choose x² eˣ. Read the answer from the last step.</li>
+<li>Raise n to 3 with sin x. How many rows are there?</li>
+<li>Why does the left column always reach 0?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

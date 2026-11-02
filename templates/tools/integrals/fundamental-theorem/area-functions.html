@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Explore g(x), the area from a to x, for a curve that goes above and below the axis.{% endblock %}
+{% block why_text %}g rises while f is positive, falls while f is negative, and flattens where f crosses zero. The slope of g is f. The curve g can go below the axis, because areas below count as negative.{% endblock %}
+{% block try_items %}
+<li>Move x along. Where does g stop rising?</li>
+<li>Change the starting point a. What changes, and what stays the same?</li>
+<li>Where is g steepest?</li>
+{% endblock %}

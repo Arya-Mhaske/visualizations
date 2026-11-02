@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Add the integral to its mirror image and a hard integral turns into an easy one.{% endblock %}
+{% block why_text %}I = ∫f(x)dx and I = ∫f(a − x)dx. Add them: 2I = ∫[f(x) + f(a − x)]dx. For these two functions the bracket is exactly 1, so 2I is just a and I = a/2.{% endblock %}
+{% block try_items %}
+<li>In “both stacked” view, what do the two curves add up to?</li>
+<li>Check the two integrals have the same value.</li>
+<li>Read I for the second case. Is it a/2?</li>
+{% endblock %}

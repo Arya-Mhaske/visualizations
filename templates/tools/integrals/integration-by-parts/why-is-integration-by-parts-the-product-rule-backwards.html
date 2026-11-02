@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}On a graph of v against u, the rectangle up to the curve is split into two areas by the curve itself.{% endblock %}
+{% block why_text %}The area under the curve is ∫v du. The area to its left is ∫u dv. Together they fill the rectangle uv. So ∫u dv = uv − ∫v du. It is the product rule d(uv) = u dv + v du, integrated.{% endblock %}
+{% block try_items %}
+<li>Walk along the curve v = u². Check that the two areas add to uv.</li>
+<li>Which area is easier to find for v = √u?</li>
+<li>Why do both areas stay inside the same rectangle?</li>
+{% endblock %}

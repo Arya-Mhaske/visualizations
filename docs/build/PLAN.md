@@ -471,22 +471,22 @@ it reaches the front of the queue.
 | 134 | `derivative-applications/optimisation` | 6 | 1 | ✓ |
 | 135 | `current-magnetism/magnetism-matter` | 6 | 1 | ✓ |
 | 136 | `derivative-applications/antiderivatives` | 4 | 1 | ✓ |
-| 137 | `induction-ac-em/faraday-lenz` | 5 | 1 | |
-| 138 | `integrals/area-distance` | 4 | 1 | |
-| 139 | `induction-ac-em/inductance-generators` | 5 | 1 | |
-| 140 | `integrals/the-definite-integral` | 6 | 1 | |
+| 137 | `induction-ac-em/faraday-lenz` | 5 | 1 | ✓ |
+| 138 | `integrals/area-distance` | 4 | 1 | ✓ |
+| 139 | `induction-ac-em/inductance-generators` | 5 | 1 | ✓ |
+| 140 | `integrals/the-definite-integral` | 6 | 1 | ✓ |
 | 141 | `induction-ac-em/ac-basics` | 6 | 1 | ✓ |
-| 142 | `integrals/fundamental-theorem` | 4 | 1 | |
-| 143 | `induction-ac-em/lcr-resonance` | 5 | 1 | |
-| 144 | `integrals/substitution` | 4 | 1 | |
-| 145 | `induction-ac-em/power-transformers` | 4 | 1 | |
-| 146 | `integrals/integration-by-parts` | 4 | 1 | |
-| 147 | `induction-ac-em/electromagnetic-waves` | 6 | 1 | |
-| 148 | `integrals/trig-integrals-substitution` | 5 | 1 | |
+| 142 | `integrals/fundamental-theorem` | 4 | 1 | ✓ |
+| 143 | `induction-ac-em/lcr-resonance` | 5 | 1 | ✓ |
+| 144 | `integrals/substitution` | 4 | 1 | ✓ |
+| 145 | `induction-ac-em/power-transformers` | 4 | 1 | ✓ |
+| 146 | `integrals/integration-by-parts` | 4 | 1 | ✓ |
+| 147 | `induction-ac-em/electromagnetic-waves` | 6 | 1 | ✓ |
+| 148 | `integrals/trig-integrals-substitution` | 5 | 1 | ✓ |
 | 149 | `optics/mirrors` | 5 | 1 | ✓ |
-| 150 | `integrals/partial-fractions-strategy` | 6 | 1 | |
+| 150 | `integrals/partial-fractions-strategy` | 6 | 1 | ✓ |
 | 151 | `optics/refraction-total-internal-reflection` | 5 | 1 | ✓ |
-| 152 | `integral-applications/area-between-curves` | 5 | 1 | |
+| 152 | `integral-applications/area-between-curves` | 5 | 1 | ✓ |
 | 153 | `optics/lenses` | 5 | 1 | ✓ |
 | 154 | `differential-equations/what-is-a-differential-equation` | 5 | 1 | ✓ |
 | 155 | `optics/prism-dispersion` | 4 | 1 | ✓ |
@@ -611,3 +611,8 @@ it reaches the front of the queue.
   Checks run in Node: He-4 28.3 MeV, Fe-56 8.79 MeV per nucleon, nuclear density 2.29e17 kg/m³, Hα 656.3 nm, sodium threshold 452 nm, 100 V electron 0.1228 nm, silicon nᵢ 1.44e10 cm⁻³, fission of A = 236 about 220 MeV, d+d fusion 23.8 MeV, every induction sum identity to n = 40, n² + n + 41 first fails at n = 40.
   Figures worth testing: the same list, plus the full-wave ripple (200 μF, 500 Ω gives 0.77 V against the 0.93 V estimate), the Sun's 4.2 × 10⁹ kg/s of lost mass, and the Rutherford angle tan(θ/2) = r₀/2b against the traced path.
   Look hardest at: the alpha-scattering paths (Verlet integration, 13 rays), `why-are-bohr-s-orbits-quantised` (the wave seam), the circuit drawing in `rectifier-builder` at 360 px (full-wave wiring), the four stacked plots in the charger, `electron-microscopes` (two window scales), `light-and-heat-sensors` (hides fields by index) and the nuclear-force curve, whose nuclear part is an illustrative Yukawa shape.
+
+- Session of 2 Nov 2026 (13 boxes: `integrals` ×7, `area-between-curves`, and `induction-ac-em` ×5; 63 tools; `ac-basics` was already live), built without screenshots, tests or `tool_tests`, by request: look at all 63 pictures, run `manage.py test`, and write `tool_tests`. Only `node --check` and a few Node checks were run.
+  New helpers: `integrals/_ig.js` (`FN` bank with antiderivatives, `rects` draws Riemann rectangles with a sample fraction, `sumOf`, `shadeSigned`, `exact`), `_ftc.js` (`BANK`, `area`), `_subst.js` (four substitution examples with inner and outer functions), `_pf.js` (partial-fraction examples with each piece's antiderivative). `induction-ac-em/_lcr.js` has `w0Of`, `XL`, `XC`, `Z`, `I`, `Q`, `halfPower`. `induction-ac-em/spectrum-explorer-radio-to-gamma.js` reuses `modern-physics/_matter-waves-view.js` `drawRuler` and `_mp.js` `photonEv`.
+  Figures worth testing: the right/left sums of x² are (n+1)(2n+1)/(6n²) and (n−1)(2n−1)/(6n²); `powers-of-sin-and-cos` double-factorial rule against Simpson (checked for five pairs); the sideways-slice area 9/2; Gini of L = pᵏ is (k−1)/(k+1); ellipse cap area ab(π/2 − θ − sinθcosθ); half-power width R/L; f₀ = 1/(2π√LC) for the radio (C = 101 pF gives 1000 kHz); P̄ = ½VmIm cos φ; line loss (P/V)²R; displacement current equals the charging current.
+  Look hardest at: the `bag` surface in `why-did-maxwell-add-displacement-current`, the two-plot side-by-side layouts at 360 px (`why-do-the-limits-change-with-u`, `why-substitute-for-a-whole-root`), the hidden fields in `flux-change-calculator` (hidden by index), the dominoes-free layout of the rod picture in `why-is-motional-emf-blv`, the oblique 3D wave (`E and B perpendicular`), and the pipe tool's tube scale. Stepper tools were not clicked through: check the TeX in `tabular-method` and `trig-substitution-stepper`.

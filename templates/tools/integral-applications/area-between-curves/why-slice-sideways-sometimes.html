@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Cut the same region into vertical and horizontal strips.{% endblock %}
+{% block why_text %}Vertical strips here change their lower edge at x = 1, so two integrals are needed. Horizontal strips always run from the parabola to the line, so one integral does it all. Pick the direction that keeps the top and bottom (or left and right) the same.{% endblock %}
+{% block try_items %}
+<li>In vertical view, count the integrals.</li>
+<li>In horizontal view, count the integrals.</li>
+<li>Check that both give 9/2.</li>
+{% endblock %}

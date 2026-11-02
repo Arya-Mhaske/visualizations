@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Slice a journey into thin pieces of time. In each piece the speed is nearly steady, so distance is speed × time.{% endblock %}
+{% block why_text %}At constant speed, distance is speed × time: the area of a rectangle on a speed–time graph. A varying speed is nearly constant on a thin slice, so its distance is a thin rectangle. Add the rectangles and you have the area, which is the distance.{% endblock %}
+{% block try_items %}
+<li>Choose steady 8 m/s. How many rectangles does it take to get the exact distance?</li>
+<li>Choose speeding up. Add slices until the sum is within 1 m of the exact distance.</li>
+<li>Which is bigger for a rising speed, the left-edge sum or the exact distance? Why?</li>
+{% endblock %}

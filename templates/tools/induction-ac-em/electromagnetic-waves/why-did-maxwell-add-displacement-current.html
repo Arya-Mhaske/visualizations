@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Charge a capacitor and use Ampère’s law on a loop around the wire. Try two surfaces.{% endblock %}
+{% block why_text %}A flat disc across the loop catches the wire’s current I. A bag that bulges between the plates catches no wire, so Ampère’s law would give zero for the same loop. Maxwell fixed it: a changing electric field counts as a current, ε₀ dΦ_E/dt, and it equals I.{% endblock %}
+{% block try_items %}
+<li>Choose the bag and turn off displacement current. What does Ampère’s law give?</li>
+<li>Turn displacement current on. What is the total now?</li>
+<li>Change the plate area. Does the displacement current change?</li>
+{% endblock %}

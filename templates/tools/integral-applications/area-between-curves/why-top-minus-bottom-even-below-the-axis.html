@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Slide both curves downwards together. The region slides below the axis but its size does not change.{% endblock %}
+{% block why_text %}Shifting both curves down by the same k lowers every top and bottom by k, so every gap, top − bottom, is unchanged. The area between curves depends only on those gaps, so “top minus bottom” works wherever the region lies.{% endblock %}
+{% block try_items %}
+<li>Shift the curves down by 6. Does the area between them change?</li>
+<li>Look at the separate areas to the axis. What do they do?</li>
+<li>Why does ∫top − ∫bottom stay put?</li>
+{% endblock %}

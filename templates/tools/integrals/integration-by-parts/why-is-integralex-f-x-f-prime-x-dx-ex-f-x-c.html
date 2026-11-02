@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Differentiate eˣ f(x) with the product rule and the answer is eˣ(f + f′). So that integrand is already a derivative.{% endblock %}
+{% block why_text %}The product rule gives d/dx[eˣ f] = eˣ f + eˣ f′ = eˣ(f + f′). Reading it backwards, ∫eˣ[f + f′]dx = eˣ f + C. No parts needed once you spot the pattern.{% endblock %}
+{% block try_items %}
+<li>Pick f = x. Does the slope of eˣ x match the integrand at x = 1?</li>
+<li>Move x. Do the slope and the height stay equal?</li>
+<li>Try f = sin x. What is f + f′?</li>
+{% endblock %}

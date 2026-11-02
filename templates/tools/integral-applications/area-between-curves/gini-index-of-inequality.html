@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}On a Lorenz curve, the area between equality and the curve measures how unequal a society is.{% endblock %}
+{% block why_text %}The Lorenz curve shows what share of income the poorest p of people hold. If everyone had the same, it would be the diagonal. The Gini index is twice the area between the diagonal and the curve, from 0 (equal) to 1 (one person has everything).{% endblock %}
+{% block try_items %}
+<li>Set k = 1. What is the Gini index?</li>
+<li>Set k = 3. How much do the richest 20% hold?</li>
+<li>Compare the integral with the formula (k − 1)/(k + 1).</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The curves L = pᵏ are made-up examples. They are not data for any real country.
+</div>
+{% endblock %}

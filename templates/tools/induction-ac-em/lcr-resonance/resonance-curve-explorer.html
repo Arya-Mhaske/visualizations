@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Change L, C and R and see how the resonance curve moves.{% endblock %}
+{% block why_text %}L and C set where the peak is, f₀ = 1/(2π√LC). R sets how high and wide it is. The three can be chosen independently.{% endblock %}
+{% block try_items %}
+<li>Double C. By what factor does f₀ change?</li>
+<li>Find L and C that give f₀ near 1000 Hz.</li>
+<li>Keep f₀ and double R. What changes?</li>
+{% endblock %}

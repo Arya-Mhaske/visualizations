@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Stack sin² x under cos² x. They always add to 1, and cos² is just sin² shifted.{% endblock %}
+{% block why_text %}cos² x is the same wave as sin² x, moved a quarter turn along. They add to 1 at every x, and over a whole number of half-turns they have equal areas. So each has an average of exactly ½.{% endblock %}
+{% block try_items %}
+<li>Set L = 3.14. What is the average of sin²?</li>
+<li>Set L = 1. Is the average ½? Why not?</li>
+<li>Switch the stacking on. Where does cos² sit?</li>
+{% endblock %}

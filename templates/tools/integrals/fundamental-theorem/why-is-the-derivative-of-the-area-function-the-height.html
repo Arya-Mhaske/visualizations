@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Let A(x) be the area up to x. Add a thin strip of width h and see how fast the area grows.{% endblock %}
+{% block why_text %}The strip is almost a rectangle of height f(x) and width h, so ΔA ≈ f(x)h. Divide by h: ΔA/h ≈ f(x). As h shrinks, the approximation becomes exact. So A′(x) = f(x): the rate at which area grows is the height of the curve.{% endblock %}
+{% block try_items %}
+<li>Set h = 1. How far is ΔA/h from f(x)?</li>
+<li>Shrink h to 0.05. What happens to the difference?</li>
+<li>Where f is largest, is A growing fastest?</li>
+{% endblock %}
