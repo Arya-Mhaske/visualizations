@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Integrate a sinusoidal temperature model.{% endblock %}
+{% block why_text %}The average over a full day is the integral divided by 24 hours. For a lopsided day it is not (highest + lowest) ÷ 2.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The temperature model is made up to show the idea.</div>{% endblock %}
+{% block try_items %}
+<li>Set B to 0. Do the two averages match?</li>
+<li>Raise B. Which one changes?</li>
+<li>Pick a daytime window. How does its average differ?</li>
+{% endblock %}

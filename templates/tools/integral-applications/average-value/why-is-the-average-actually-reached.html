@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See the level line must cross a continuous curve.{% endblock %}
+{% block why_text %}A continuous curve cannot be above the average everywhere or below it everywhere, or the area would be wrong. So it crosses the level line somewhere.{% endblock %}
+{% block try_items %}
+<li>Find where the curve equals its average.</li>
+<li>Pick the jump. Does the curve reach its average?</li>
+<li>Why does continuity matter?</li>
+{% endblock %}
