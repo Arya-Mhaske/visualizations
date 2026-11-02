@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Add 1 + 1/1! + 1/2! + … and find e.{% endblock %}
+{% block why_text %}Each term is the last divided by a bigger number, so the terms collapse. The sum reaches e far faster than (1 + 1/n)ⁿ.{% endblock %}
+{% block try_items %}
+<li>How many terms give 6 correct places?</li>
+<li>Compare with (1 + 1/N)ᴺ at the same N.</li>
+<li>Why do the terms shrink so fast?</li>
+{% endblock %}

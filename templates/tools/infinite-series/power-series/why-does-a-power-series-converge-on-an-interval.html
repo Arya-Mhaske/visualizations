@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Slide x and watch convergence stop at the radius.{% endblock %}
+{% block why_text %}The terms behave like (|x|/R)ⁿ. Inside R they sink to 0, outside they blow up. At the ends it depends on the series.{% endblock %}
+{% block try_items %}
+<li>Pick Σ xⁿ/n. Check x = 1 and x = −1.</li>
+<li>Pick Σ xⁿ/n!. Is there a limit to x?</li>
+<li>Pick Σ n! xⁿ. Does any x but 0 work?</li>
+{% endblock %}

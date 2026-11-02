@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add Taylor terms one at a time. Each term matches one more derivative at 0.{% endblock %}
+{% block why_text %}A polynomial that matches f and its first n derivatives at one point hugs f near that point. The more derivatives it matches, the further the fit reaches.{% endblock %}
+{% block try_items %}
+<li>Raise the degree for eˣ. How does the green band grow?</li>
+<li>Do the same for sin x. What pattern do the polynomials follow?</li>
+<li>Try ln(1 + x). Does the band ever pass x = 1?</li>
+{% endblock %}

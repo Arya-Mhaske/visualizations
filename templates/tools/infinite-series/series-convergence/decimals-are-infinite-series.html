@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add the digits of 0.333… one at a time as 3/10 + 3/100 + …{% endblock %}
+{% block why_text %}A decimal is a series. The gap to the true value is always smaller than one step of the last digit, and shrinks below any size. So 0.999… and 1 are the same number.{% endblock %}
+{% block try_items %}
+<li>Add more digits of 0.333…. Where is the true value inside the zoom?</li>
+<li>Try 0.999…. Where does the true value sit?</li>
+<li>Try 0.142857… and find its fraction.</li>
+{% endblock %}

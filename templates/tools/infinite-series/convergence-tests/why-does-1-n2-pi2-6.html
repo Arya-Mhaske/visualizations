@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add 1/n² and watch the total head for 1.6449…{% endblock %}
+{% block why_text %}The sums climb and level off at π²/6. The gap is about 1/n, so n × gap tends to 1. You see the value here; Euler found it, and the proof is not shown.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Euler found π²/6 in 1735. This tool shows the value agreeing with the sums; it does not prove it.</div>{% endblock %}
+{% block try_items %}
+<li>Raise n to 400. How many digits of π²/6 are right?</li>
+<li>Switch to n × gap. What number does it approach?</li>
+<li>Use √(6 Sₙ) as an estimate of π.</li>
+{% endblock %}

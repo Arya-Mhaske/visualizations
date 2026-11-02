@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Group the terms 1/3 + 1/4, then 1/5 to 1/8, and so on. Every group adds up to at least ½.{% endblock %}
+{% block why_text %}Each block of terms is worth at least ½, and there are endless blocks. So the total passes any number, even though the terms shrink to 0.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Oresme gave this argument in the 14th century.</div>{% endblock %}
+{% block try_items %}
+<li>Raise k to 16. How many terms is that, and what is the total?</li>
+<li>Is any block smaller than ½?</li>
+<li>How many blocks would it take to pass 10?</li>
+{% endblock %}

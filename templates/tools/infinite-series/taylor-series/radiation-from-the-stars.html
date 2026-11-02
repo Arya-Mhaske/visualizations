@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}See Planck’s law reduce to the classical law at long wavelengths.{% endblock %}
+{% block why_text %}For small x, eˣ − 1 is about x. So Planck’s law becomes the classical Rayleigh–Jeans law at long wavelengths, but the classical law fails at short ones.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The constants are rounded textbook values.</div>{% endblock %}
+{% block try_items %}
+<li>Set T = 5800 K (a Sun-like star). Where is the peak?</li>
+<li>At which λ do the two curves meet?</li>
+<li>Raise T. Where does the peak go?</li>
+{% endblock %}

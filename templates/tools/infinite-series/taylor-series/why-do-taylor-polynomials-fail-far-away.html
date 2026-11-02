@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Watch ln(1 + x) break past x = 1.{% endblock %}
+{% block why_text %}A Taylor series only converges inside its radius. The radius is the distance to the nearest trouble spot, which may be a complex number.{% endblock %}
+{% block try_items %}
+<li>Pick ln(1 + x) with x = 1.4. Do the polynomials settle?</li>
+<li>Pick 1/(1 + x²) with x = 1.4. Why does it fail when it is smooth?</li>
+<li>Pick eˣ. Does it ever fail?</li>
+{% endblock %}

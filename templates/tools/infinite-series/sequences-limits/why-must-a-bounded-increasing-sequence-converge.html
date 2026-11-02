@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Lower a ceiling over a climbing sequence and see where it first breaks.{% endblock %}
+{% block why_text %}If every term stays under a ceiling and never goes down, the terms pile up below it. The lowest ceiling that still holds is the limit. Any gap you pick under it must be crossed, or that gap would be a lower ceiling.{% endblock %}
+{% block try_items %}
+<li>Set the ceiling to 100%. Drag it just below. Which term breaks it?</li>
+<li>Shrink the gap ε. How many terms does it take to get inside?</li>
+<li>Try the √(2 + aₙ) sequence. What is its ceiling?</li>
+{% endblock %}

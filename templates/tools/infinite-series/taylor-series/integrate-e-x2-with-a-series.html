@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Integrate the series term by term to get a number no formula gives.{% endblock %}
+{% block why_text %}e^(−x²) has no elementary antiderivative, but its series can be integrated one term at a time. A few terms give the area to many places.{% endblock %}
+{% block try_items %}
+<li>Set x = 1. How many terms give 4 correct places?</li>
+<li>Set x = 2.5. Why does it need more?</li>
+<li>What does the area tend to as x grows?</li>
+{% endblock %}

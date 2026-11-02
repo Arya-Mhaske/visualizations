@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}See that C(k, n) never hits 0 for fractional k, so the binomial series goes on forever.{% endblock %}
+{% block why_text %}C(k, n) contains the factor k − n + 1. For whole k that is 0 at n = k + 1, so the row stops. For any other k it never is.{% endblock %}
+{% block try_items %}
+<li>Set k = 3. Where does the row stop?</li>
+<li>Set k = 0.5. Does it ever reach 0?</li>
+<li>Set k = −1. What series is this?</li>
+{% endblock %}

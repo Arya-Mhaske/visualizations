@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}The terms shrink to zero, yet the total may or may not stop growing.{% endblock %}
+{% block why_text %}Terms going to 0 is necessary, not enough. At p = 1 the terms are 1/n and the total never stops; for p above 1 they shrink fast enough to stop.{% endblock %}
+{% block try_items %}
+<li>Set p = 1. Does the sum level off by N = 2000?</li>
+<li>Set p = 1.1. How far is it from its limit at N = 2000?</li>
+<li>Set p = 2. Where does it settle?</li>
+{% endblock %}

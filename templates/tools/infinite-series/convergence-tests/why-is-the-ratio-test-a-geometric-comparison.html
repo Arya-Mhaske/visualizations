@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Watch the ratio of neighbouring terms behave like a geometric series.{% endblock %}
+{% block why_text %}If the ratio stays under ρ below 1, the terms sit under a geometric series with ratio ρ, so the series converges. Above 1, the terms grow.{% endblock %}
+{% block try_items %}
+<li>Pick n / 2ⁿ. Drag ρ just above the limit. From which n does it hold?</li>
+<li>Pick 2ⁿ / n². What is the limit of the ratio?</li>
+<li>Pick 1/n². Why is the test silent?</li>
+{% endblock %}

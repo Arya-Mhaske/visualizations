@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Trap a series under a convergent one, or over a divergent one.{% endblock %}
+{% block why_text %}If a series is smaller than a convergent one, it converges. If it is bigger than a divergent one, it diverges. Scaling by a constant c does not change that.{% endblock %}
+{% block try_items %}
+<li>Pick Σ1/(n²+1). Is it under Σ1/n² for every n?</li>
+<li>Pick the last pair. Which c makes the trap hold?</li>
+<li>Pick Σ1/√n. Why does it diverge?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Extend (1 + x)ⁿ to fractional n.{% endblock %}
+{% block why_text %}Newton kept the pattern of the coefficients and used it for fractional powers. Raising the new series to the right power gives back 1 + x, which is the check.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Newton worked this out around 1665 and described it in his letters of 1676.</div>{% endblock %}
+{% block try_items %}
+<li>Build √(1 + x) and read its coefficients.</li>
+<li>Square the series. Do you get 1 + x?</li>
+<li>Try 3/2. Which power should the check give?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Compare the true and approximate periods as the amplitude grows.{% endblock %}
+{% block why_text %}Replacing sin θ by θ is the first term of its series. It is good at small angles, and the true period grows longer as the swing grows.{% endblock %}
+{% block try_items %}
+<li>At 10°, how big is the error in the period?</li>
+<li>At 60°, is the period longer or shorter than T₀?</li>
+<li>How big can the swing be for a 1% error?</li>
+{% endblock %}

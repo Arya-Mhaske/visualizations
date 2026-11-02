@@ -7909,187 +7909,187 @@
 "archetype": "plot",
 "priority": 213,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/sequences-limits/limit-of-a-sequence": {
 "archetype": "stepper",
 "priority": 213,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/sequences-limits/logistic-sequences-from-order-to-chaos": {
 "archetype": "plot",
 "priority": 213,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/series-convergence/why-does-the-harmonic-series-diverge": {
 "archetype": "discrete",
 "priority": 214,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/series-convergence/why-isn-t-terms-0-enough": {
 "archetype": "phasor",
 "priority": 214,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/series-convergence/why-do-telescoping-series-collapse": {
 "archetype": "phasor",
 "priority": 214,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/series-convergence/decimals-are-infinite-series": {
 "archetype": "discrete",
 "priority": 214,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/integral-test-why-the-staircase-matches-the-curve": {
 "archetype": "plot",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/why-does-1-n2-pi2-6": {
 "archetype": "plot",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/comparison-tests": {
 "archetype": "plot",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/why-do-alternating-series-converge": {
 "archetype": "phasor",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/why-is-the-ratio-test-a-geometric-comparison": {
 "archetype": "plot",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/why-does-rearranging-change-the-sum": {
 "archetype": "plot",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/how-close-is-a-partial-sum-error-bounds": {
 "archetype": "phasor",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/test-strategy-picker": {
 "archetype": "phasor",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/convergence-tests/root-test": {
 "archetype": "phasor",
 "priority": 215,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/power-series/why-does-a-power-series-converge-on-an-interval": {
 "archetype": "plot",
 "priority": 216,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/power-series/why-is-1-1-x-1-x-x2-only-for-x-1": {
 "archetype": "plot",
 "priority": 216,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/power-series/differentiate-and-integrate-term-by-term": {
 "archetype": "stepper",
 "priority": 216,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/power-series/pi-from-madhava-s-series": {
 "archetype": "plot",
 "priority": 216,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/why-does-matching-derivatives-rebuild-a-function": {
 "archetype": "phasor",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/why-e-itheta-cos-theta-i-sin-theta": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/why-do-taylor-polynomials-fail-far-away": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/1-1-1-1-2-e": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/why-does-1-x-k-need-infinitely-many-terms-unless-k-is-whole": {
 "archetype": "discrete",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/taylor-builder-with-error-band": {
 "archetype": "stepper",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/why-the-pendulum-formula-needs-sin-theta-theta": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/e-mc2-plus-kinetic-energy": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/radiation-from-the-stars": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/how-newton-found-the-binomial-series": {
 "archetype": "discrete",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "infinite-series/taylor-series/integrate-e-x2-with-a-series": {
 "archetype": "plot",
 "priority": 217,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "multivariable/functions-of-two-variables/why-is-a-contour-map-a-stack-of-slices": {
 "archetype": "space3d",

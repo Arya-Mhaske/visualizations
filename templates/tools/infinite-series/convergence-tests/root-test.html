@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take the n-th root of each term. It suits terms raised to the n-th power.{% endblock %}
+{% block why_text %}If the n-th root tends to L below 1, the terms are under a geometric series. The root test can work where the ratio test jumps about.{% endblock %}
+{% block try_items %}
+<li>Pick the last series. Do the ratios settle?</li>
+<li>Pick (1 + 1/n)^(n²). Why does it diverge?</li>
+<li>Find a series whose root tends to 0.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick a gap ε, then find the term after which every term stays inside it.{% endblock %}
+{% block why_text %}A limit means: whatever gap ε you pick, the terms are inside it from some N on. A squeeze traps a hard sequence between two easy ones that meet at L.{% endblock %}
+{% block try_items %}
+<li>Halve ε. How does the starting term N change?</li>
+<li>Switch the squeeze on for sin n / n. What are the two bounds?</li>
+<li>Try n^(1/n). Does it ever touch its limit?</li>
+{% endblock %}

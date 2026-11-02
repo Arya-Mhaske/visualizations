@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the partial sums zigzag inward.{% endblock %}
+{% block why_text %}Each swing is smaller than the one before, so every new swing sits inside the last. The sum is trapped, and the error is less than the next term.{% endblock %}
+{% block try_items %}
+<li>Pick 1 − ½ + ⅓ − …. Where does the zigzag end up?</li>
+<li>Pick the last series. Why does it not settle?</li>
+<li>Compare the error with the bound b_{n+1}.</li>
+{% endblock %}

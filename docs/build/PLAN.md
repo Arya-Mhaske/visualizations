@@ -544,11 +544,11 @@ it reaches the front of the queue.
 | 207 | `vectors-3d/quadric-surfaces` | 3 | 1 | ✓ |
 | 208 | `vectors-3d/space-curves-motion` | 6 | 1 | ✓ |
 | 209 | `vectors-3d/cylindrical-spherical-coordinates` | 4 | 1 | ✓ |
-| 210 | `infinite-series/sequences-limits` | 3 | 2 | |
-| 211 | `infinite-series/series-convergence` | 4 | 2 | |
-| 212 | `infinite-series/convergence-tests` | 9 | 2 | |
-| 213 | `infinite-series/power-series` | 4 | 2 | |
-| 214 | `infinite-series/taylor-series` | 11 | 2 | |
+| 210 | `infinite-series/sequences-limits` | 3 | 2 | ✓ |
+| 211 | `infinite-series/series-convergence` | 4 | 2 | ✓ |
+| 212 | `infinite-series/convergence-tests` | 9 | 2 | ✓ |
+| 213 | `infinite-series/power-series` | 4 | 2 | ✓ |
+| 214 | `infinite-series/taylor-series` | 11 | 2 | ✓ |
 | 215 | `multivariable/functions-of-two-variables` | 4 | 2 | ✓ |
 | 216 | `multivariable/partial-derivatives` | 4 | 2 | ✓ |
 | 217 | `multivariable/tangent-planes-chain-rule` | 6 | 2 | ✓ |
@@ -587,3 +587,11 @@ it reaches the front of the queue.
 | 250 | `abstract-algebra/rings-polynomials` | 6 | 2 | ✓ |
 | 251 | `abstract-algebra/boolean-algebra-circuits` | 4 | 2 | ✓ |
 | 252 | `abstract-algebra/fields-galois-theory` | 6 | 2 | ✓ |
+
+- Session of 2 Nov 2026 (all 5 `infinite-series` boxes, 31 tools), built without screenshots, tests or `tool_tests`, by request: look at all 31 pictures, run `manage.py test`, and write `tool_tests`. Only `node --check` was run.
+  `infinite-series/_is.js` serves the subject (`partials`, `zeta` by Euler–Maclaurin tail, `binom` for any real k, `speck`, `trace`, `boxes(n)` stacked plot boxes, `num`, `SEQS`, logistic map and `logisticPeriod`); `_taylor.js` has `FN` (eˣ, sin, cos, ln(1+x), 1/(1+x²)) with coefficients, Lagrange `M`, and `taylor(key, n, a, x)`.
+  `why-the-pendulum-formula-needs-sin-theta-theta` imports `oscillations-waves/_pendulum-math.js`. Where a series spans many decades, plot log₁₀ of the term (ratio, power-series and root tools) so a geometric series is a straight line.
+  Figures worth testing: Oresme S(2^k) >= 1 + k/2; ζ(2) tail; the telescoping closed forms; 0.999… zoom gap t = 1; ratio and root limits of each preset; binom(k, n) is 0 for whole k >= 0 only; Madhava's √12 series error; γ − 1 series coefficients ½, ⅜, 5/16, 35/128; Planck/RJ ratio = x/(eˣ − 1); Simpson area of e^(−x²) at x = 1 is 0.746824.
+  Look hardest at: the telescoping table at 360 px (8 columns), the decimals zoom strip, the power-series number line, `test-strategy-picker` canvas text, and the e^(iθ) chain at large θ.
+  Trap hit: a Python string edit of a TeX-heavy JS file corrupted it again; use Write/Edit only.
+

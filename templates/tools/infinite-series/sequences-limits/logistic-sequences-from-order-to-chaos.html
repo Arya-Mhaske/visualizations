@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Turn up the growth rate r and watch one steady value split into two, four, and then no pattern at all.{% endblock %}
+{% block why_text %}A simple rule can settle, repeat or never repeat, depending only on r. The long-run values split in two, then four, then eight, and fill a band.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Period doubling comes at r ≈ 3, 3.449, 3.544 and piles up near 3.5699. The window at r ≈ 3.83 is a period-3 island inside the chaos.</div>{% endblock %}
+{% block try_items %}
+<li>Start at r = 2.8. What does the sequence settle to?</li>
+<li>Move r to 3.2, then 3.5. How does the period change?</li>
+<li>Try r = 3.83. Is it chaos everywhere after 3.57?</li>
+{% endblock %}

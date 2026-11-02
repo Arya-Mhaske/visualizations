@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Write each term as a difference and watch the middle cancel in pairs.{% endblock %}
+{% block why_text %}In a telescoping series every term cancels part of its neighbour. Only the ends are left, so the partial sum has a simple formula.{% endblock %}
+{% block try_items %}
+<li>Add 4 terms of 1/(n(n+1)). What is left over?</li>
+<li>Check S against 1 − 1/(N+1).</li>
+<li>Try √(n+1) − √n. It collapses, yet does it converge?</li>
+{% endblock %}

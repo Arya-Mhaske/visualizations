@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the partial sums fail outside the interval.{% endblock %}
+{% block why_text %}The partial sum is (1 − xⁿ⁺¹)/(1 − x). The only part that can go wrong is xⁿ⁺¹, and it shrinks only if |x| is under 1.{% endblock %}
+{% block try_items %}
+<li>Set x = 0.5 and raise n. Does the polynomial reach 1/(1 − x)?</li>
+<li>Set x = 1.5. What happens as n grows?</li>
+<li>Set x = −0.95. How many terms does it take?</li>
+{% endblock %}

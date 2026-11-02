@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fit unit rectangles under and over 1/xᵖ.{% endblock %}
+{% block why_text %}The area under the curve sits between two partial sums. If the area is finite, the sums are bounded and the series converges. If it is infinite, the sums run away.{% endblock %}
+{% block try_items %}
+<li>At p = 2, compare the three numbers. Which is largest?</li>
+<li>Set p = 1 and raise N. Does the area stop growing?</li>
+<li>Switch off one set of rectangles. Which is bigger than the curve?</li>
+{% endblock %}
