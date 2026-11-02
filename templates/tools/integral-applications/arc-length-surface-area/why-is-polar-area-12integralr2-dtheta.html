@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fill the curve with thin sectors.{% endblock %}
+{% block why_text %}In polar coordinates the natural slice is a pie wedge. A thin wedge is almost a triangle, with area ½ r² dθ.{% endblock %}
+{% block try_items %}
+<li>Use 6 sectors then 60.</li>
+<li>Pick the rose. Why is the range [0, π]?</li>
+<li>Why is the cardioid’s area not 2π?</li>
+{% endblock %}

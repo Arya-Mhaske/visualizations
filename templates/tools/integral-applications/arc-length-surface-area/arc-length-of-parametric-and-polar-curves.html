@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Use √(x′² + y′²) and √(r² + r′²).{% endblock %}
+{% block why_text %}Square the derivatives, add, take the root. Many curves simplify to a single trig term.{% endblock %}
+{% block try_items %}
+<li>Run the cycloid with a = 1. Is the length 8?</li>
+<li>Run the cardioid. Check it against Simpson.</li>
+<li>Why does the spiral not have a simple answer?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Use ∫y dx = ∫y(t) x′(t) dt and watch the sign flip.{% endblock %}
+{% block why_text %}If the curve runs right to left, dx is negative and the area comes out negative. Reversing the curve flips the sign.{% endblock %}
+{% block try_items %}
+<li>Trace the cycloid forwards. What is the area?</li>
+<li>Run it backwards. What happens?</li>
+<li>Why is the half ellipse negative going forwards?</li>
+{% endblock %}

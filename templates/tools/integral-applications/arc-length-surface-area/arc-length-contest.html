@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Design a curve between two points with the shortest or longest length.{% endblock %}
+{% block why_text %}The shortest path between two points is the straight line. Any wiggle makes it longer, and there is no limit to how much longer.{% endblock %}
+{% block try_items %}
+<li>Set all three to 0. What is the length?</li>
+<li>Try to make a curve of length 10.</li>
+<li>Can any curve be shorter than 4?</li>
+{% endblock %}
