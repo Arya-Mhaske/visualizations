@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Rotate 1/x: it can be filled with paint but not painted.{% endblock %}
+{% block why_text %}The volume integral has 1/x², which converges. The surface integral has about 1/x, which does not. The horn holds a finite amount of paint but cannot be covered by a finite amount.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> A real paint coat has thickness, so it does not paint the inside perfectly. The paradox is about the ideal geometry.</div>{% endblock %}
+{% block try_items %}
+<li>Stretch the horn to 10⁶. What does V reach?</li>
+<li>What does S do?</li>
+<li>Is there really a paradox?</li>
+{% endblock %}

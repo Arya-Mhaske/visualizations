@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Extend the right end and watch one area stall and the other keep growing.{% endblock %}
+{% block why_text %}For 1/x² the extra area shrinks fast enough that the total stalls at 1. For 1/x the extra area per decade stays the same, so the total never stops.{% endblock %}
+{% block try_items %}
+<li>Push b to 10⁶ for p = 2. Where does the area end up?</li>
+<li>Do the same for p = 1.</li>
+<li>How much does 1/x add each time b is multiplied by 10?</li>
+{% endblock %}
