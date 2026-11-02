@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two ways to expand the same gas from the same start: keep its temperature fixed, or let it cool.{% endblock %}
+{% block why_text %}On an isotherm the temperature is held, so only the volume change lowers the pressure: P ∝ 1/V. On an adiabat no heat enters, so the gas that does work cools as it expands, and its pressure falls for a second reason. That is why PV^γ = const falls faster, steeper by the factor γ at the crossing point.{% endblock %}
+{% block try_items %}
+<li>Move V above 10 L. Which pressure is lower, and what is the adiabat's temperature?</li>
+<li>Move V below 10 L (compression). What happens to the adiabat's temperature?</li>
+<li>Change γ. How does the steepness change?</li>
+{% endblock %}

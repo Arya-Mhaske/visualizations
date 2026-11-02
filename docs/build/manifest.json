@@ -1619,31 +1619,31 @@
 "archetype": "sim",
 "priority": 82,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermodynamic-processes/why-is-cp-cv-r": {
 "archetype": "sim",
 "priority": 82,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermodynamic-processes/why-does-quasi-static-matter": {
 "archetype": "sim",
 "priority": 82,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermodynamic-processes/pv-process-builder": {
 "archetype": "stepper",
 "priority": 82,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermodynamic-processes/work-in-each-process": {
 "archetype": "stepper",
 "priority": 82,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/second-law-engines/why-can-t-an-engine-turn-all-its-heat-into-work": {
 "archetype": "sim",

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squeeze a gas in one chamber while a narrow pipe links it to a second. Push slowly, then fast, and watch the two pressures.{% endblock %}
+{% block why_text %}A PV graph has one point per state, and a state needs one pressure for the whole gas. That is true only if the gas has time to even out. Push slowly (quasi-static) and the chambers agree, so the path is a real curve. Push fast and the near chamber is squeezed harder than the far one: no single P exists, the path cannot be drawn, and extra work is wasted as heat.{% endblock %}
+{% block try_items %}
+<li>Set the time to 30 s. Do the three lines stay together?</li>
+<li>Set it to 0.5 s. What is the largest pressure gap?</li>
+<li>Compare the wasted work for slow and fast pushes. Is it ever negative?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Two 10 L chambers of an ideal gas at 300 K, joined by a narrow pipe that evens pressure out at about 0.3 per second. The temperature is held constant so that only the pressure lag shows.</div>{% endblock %}

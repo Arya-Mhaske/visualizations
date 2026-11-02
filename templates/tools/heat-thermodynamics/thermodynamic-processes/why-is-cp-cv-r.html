@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Warm one mole of gas by the same number of degrees in a rigid box and under a free piston.{% endblock %}
+{% block why_text %}In the rigid box all the heat raises the internal energy: Q = ΔU = CᵥΔT. Under a free piston the gas also expands and does work PΔV = RΔT, which needs extra heat. So Cₚ = Cᵥ + R. The difference is the same for monatomic and diatomic gas, because the work depends only on ΔT.{% endblock %}
+{% block try_items %}
+<li>Switch from monatomic to diatomic. Which bar grows, and which part does not change?</li>
+<li>Double ΔT. Do both bars double?</li>
+<li>Which is larger, Cₚ or Cᵥ? Why?</li>
+{% endblock %}

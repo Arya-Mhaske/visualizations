@@ -413,7 +413,7 @@ it reaches the front of the queue.
 | 76 | `functions-graphs/transformations` | 6 | 1 | ✓ |
 | 77 | `heat-thermodynamics/first-law` | 6 | 1 | ✓ |
 | 78 | `functions-graphs/quadratic-functions` | 8 | 1 | ✓ |
-| 79 | `heat-thermodynamics/thermodynamic-processes` | 5 | 1 | |
+| 79 | `heat-thermodynamics/thermodynamic-processes` | 5 | 1 | ✓ |
 | 80 | `functions-graphs/polynomial-functions` | 11 | 1 | ✓ |
 | 81 | `heat-thermodynamics/second-law-engines` | 8 | 1 | |
 | 82 | `functions-graphs/rational-functions` | 7 | 1 | ✓ |
@@ -622,3 +622,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/heat-transfer` (7 tools): all maths is inline per tool. Contact temperature uses effusivity sqrt(K rho c); the greenhouse tool is the one-layer model S = (1 - a/2) sigma Ts^4 (a = 0.78 gives 288 K); the dark-can tool uses `rk4Step` for radiation-only cooling.
 
 - `heat-thermodynamics/_thermo.js` serves the thermodynamics boxes: P in kPa and V in L so P·V is in J; `simpson`, `isoP`/`adiaP`, `workIsobaric/Isothermal/Adiabatic`, `gammaOf(f)`, `dU(f, ...)`. NCERT sign convention: dU = Q - W, W by the gas. `first-law` (6 tools) done; the pump tool slides the exponent from 1 to 1.4 with speed (a labelled model).
+
+- `heat-thermodynamics/_proc.js`: `end`, `work`, `curve` for the four basic processes (f = volume ratio, pressure ratio for isochoric). `why-does-quasi-static-matter` is a two-chamber isothermal gas with a leaky pipe (rate 0.3/s), RK4; checked in Node: extra work 134 J at 0.5 s, 25 J at 30 s, always > 0.
