@@ -383,7 +383,7 @@ it reaches the front of the queue.
 | 46 | `conics-curves/hyperbola` | 6 | 1 | ✓ |
 | 47 | `rotation-gravitation/universal-gravitation` | 6 | 1 | ✓ |
 | 48 | `limits-continuity/why-calculus` | 5 | 1 | ✓ |
-| 49 | `rotation-gravitation/g-above-below-the-surface` | 4 | 1 | |
+| 49 | `rotation-gravitation/g-above-below-the-surface` | 4 | 1 | ✓ |
 | 50 | `limits-continuity/the-limit-idea` | 6 | 1 | ✓ |
 | 51 | `rotation-gravitation/gravitational-energy-escape` | 6 | 1 | |
 | 52 | `limits-continuity/limit-laws` | 6 | 1 | ✓ |
@@ -714,3 +714,5 @@ it reaches the front of the queue.
 - `rotation-gravitation/kepler-s-laws`: constants and orbit helpers in `_rg.js` (period at the surface 84.4 min, escape speeds 11.19 and 2.38 km/s, geostationary height 35 786 km). Built without screenshots or tests, by request.
 
 - `rotation-gravitation/universal-gravitation`: constants and orbit helpers in `_rg.js` (period at the surface 84.4 min, escape speeds 11.19 and 2.38 km/s, geostationary height 35 786 km). Built without screenshots or tests, by request.
+
+- `rotation-gravitation/g-above-below-the-surface`: constants and orbit helpers in `_rg.js` (period at the surface 84.4 min, escape speeds 11.19 and 2.38 km/s, geostationary height 35 786 km). Built without screenshots or tests, by request.

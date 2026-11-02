@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A person weighs 250 N at the Earth's surface. What do they weigh halfway down to the centre?{% endblock %}
+{% block why_text %}Inside a uniform Earth, g ∝ r, so weight ∝ r as well. Halfway down (r = R/2) the weight is half: 125 N. Strictly this treats the Earth as having the same density throughout, which is not quite true, so it is a good estimate rather than an exact value.{% endblock %}
+{% block try_items %}
+<li>Check 125 N at half depth.</li>
+<li>Go three-quarters of the way down.</li>
+<li>What is the weight at the centre?</li>
+{% endblock %}

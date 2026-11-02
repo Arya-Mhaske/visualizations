@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Above the surface g falls as 1/(R + h)². For heights that are small beside R, a simple straight-line formula works.{% endblock %}
+{% block why_text %}g(h) = g/(1 + h/R)². When h/R is small, the binomial approximation (1 + x)⁻² ≈ 1 − 2x gives g(h) ≈ g(1 − 2h/R). The error is of order (h/R)², tiny for a few kilometres, but large for heights comparable with R.{% endblock %}
+{% block try_items %}
+<li>Take h = 10 km. How close are the two?</li>
+<li>Increase h to 3000 km. What does the error do?</li>
+<li>Where do the curves separate?</li>
+{% endblock %}

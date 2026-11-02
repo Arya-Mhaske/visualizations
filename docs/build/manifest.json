@@ -1037,25 +1037,25 @@
 "archetype": "sim",
 "priority": 52,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/g-above-below-the-surface/why-is-g-h-g-1-2h-r-for-small-h": {
 "archetype": "sim",
 "priority": 52,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/g-above-below-the-surface/why-is-g-zero-at-the-centre": {
 "archetype": "sim",
 "priority": 52,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/g-above-below-the-surface/weight-halfway-down": {
 "archetype": "space3d",
 "priority": 52,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/gravitational-energy-escape/why-is-gravitational-pe-negative": {
 "archetype": "sim",
