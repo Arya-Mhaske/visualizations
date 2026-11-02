@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide the profit line across the feasible region and see where it leaves.{% endblock %}
+{% block why_text %}All points on one profit line have the same profit, and bigger profit means the line moves outward. It keeps meeting the region until it reaches the last point. A straight line can only leave a many-cornered shape at a corner, or along a whole edge that joins two corners. So the best answer is always at a corner.{% endblock %}
+{% block try_items %}
+<li>Slide z up. Where does the line last touch the region?</li>
+<li>Change the profits until the line is parallel to an edge. What happens?</li>
+<li>Which corner wins when y earns much more than x?</li>
+{% endblock %}

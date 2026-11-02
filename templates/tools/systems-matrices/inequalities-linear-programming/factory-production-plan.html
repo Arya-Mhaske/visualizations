@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Maximise profit under machine-hour limits.{% endblock %}
+{% block why_text %}Each product uses hours on two machines, so the plans the factory can afford form a region bounded by the two hour limits. The profit line moves outward until it last touches the region at a corner. That corner is the best plan, and usually it uses all the hours of both machines.{% endblock %}
+{% block try_items %}
+<li>Raise the profit of A. Where does the best corner go?</li>
+<li>Give machine 1 more hours. Which machine becomes the limit?</li>
+<li>Find profits that make two corners equally good.</li>
+{% endblock %}

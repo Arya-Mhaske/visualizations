@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Test a point against an inequality and see which side of the line is all true.{% endblock %}
+{% block why_text %}The line ax + by = c cuts the plane in two halves. Move from one half to the other and the value of ax + by changes smoothly, passing through c on the line. So on one side ax + by is always below c and on the other always above. Testing one point, often the origin, tells you which side to shade.{% endblock %}
+{% block try_items %}
+<li>Test the origin. Is it in the shaded half?</li>
+<li>Change ≤ to ≥. What happens to the shading?</li>
+<li>Move the test point across the line. When does it change colour?</li>
+{% endblock %}

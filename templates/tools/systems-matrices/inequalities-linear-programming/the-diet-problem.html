@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Minimise cost while meeting vitamin needs from two foods.{% endblock %}
+{% block why_text %}The vitamin needs give two inequalities of the type "at least", so the region is unbounded and reaches away from the origin. The cost is a line that slides inward from far away. It first touches the region at a corner, and that corner is the cheapest diet.{% endblock %}
+{% block try_items %}
+<li>Make food 2 cheaper. Which way does the best mix change?</li>
+<li>Raise vitamin A needed. Which corner moves?</li>
+<li>Why is there never a most expensive diet?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Overlap the shaded half-planes to find the feasible region.{% endblock %}
+{% block why_text %}Each inequality shades a half-plane. A point satisfies the whole system only if it is in every one of them, so the feasible region is the overlap. Adding an inequality can only shrink the region. The corners of the region come from pairs of boundary lines.{% endblock %}
+{% block try_items %}
+<li>Switch off y ≥ 1. How does the region change?</li>
+<li>Switch off all but one. What is the region?</li>
+<li>Which two lines make the top corner?</li>
+{% endblock %}

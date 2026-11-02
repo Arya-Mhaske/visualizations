@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide the line Z = k outward and see whether the lower half-plane still meets an unbounded region.{% endblock %}
+{% block why_text %}On an unbounded region a maximum may not exist, because Z can keep growing. But a minimum can, when Z grows in every direction the region reaches. To check, take the candidate minimum M and ask whether the half-plane Z < M meets the region. If it does not, M is the minimum. If some direction lets Z keep falling, there is no minimum.{% endblock %}
+{% block try_items %}
+<li>Choose Minimise 3x + 2y. Where does the line stop meeting the region as you slide it down?</li>
+<li>Choose Minimise x − y. Why does it never stop?</li>
+<li>Choose Maximise 3x + 2y. Is there a best corner?</li>
+{% endblock %}

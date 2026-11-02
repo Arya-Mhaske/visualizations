@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Find the corners, evaluate Z at each, and check the unbounded case.{% endblock %}
+{% block why_text %}A linear function on a region takes its best value at a corner, so list the corners, put each into Z and compare. If the region is unbounded, the best corner is only a candidate: you must check that the better half-plane does not meet the region. When Z can improve without limit there is no optimum.{% endblock %}
+{% block try_items %}
+<li>Pick the bounded problem. Which corner gives the maximum?</li>
+<li>Pick the unbounded minimum. Why is a check needed?</li>
+<li>Pick Minimise x − y. What does the stepper say?</li>
+{% endblock %}
