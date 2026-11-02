@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Test whether a polynomial has a linear factor over the rationals, the reals, the complex numbers or a small finite field.{% endblock %}
+{% block why_text %}A polynomial of degree 2 or 3 can only factorise if it has a root, because any factorisation contains a linear factor. Whether a root exists depends on the field: x² + 1 has no real root but has a root mod 2 and over ℂ.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Degree 4 and above can factor without a root (as two quadratics), so this root test applies only to degrees 2 and 3.</div>{% endblock %}
+{% block try_items %}
+<li>Test x² + 1 over ℝ, ℂ and ℤ₂. Is the answer the same?</li>
+<li>Test x² − 2 over ℚ and over ℝ.</li>
+<li>Test x³ + x + 1 over ℤ₂ and over ℤ₃.</li>
+{% endblock %}

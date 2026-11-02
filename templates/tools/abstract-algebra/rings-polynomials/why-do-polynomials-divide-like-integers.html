@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Run polynomial long division and whole-number long division step by step.{% endblock %}
+{% block why_text %}In both cases you keep taking away a multiple of the divisor until what is left is smaller. For integers, smaller means a smaller number. For polynomials it means a smaller degree. The result is the same kind of statement: dividend = divisor × quotient + remainder.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This uses monic divisors so every step stays in whole numbers.</div>{% endblock %}
+{% block try_items %}
+<li>Step through the first polynomial division. How does the degree fall?</li>
+<li>Pick another polynomial pair and compare the remainders.</li>
+<li>Change the whole numbers. What bounds the remainder?</li>
+{% endblock %}

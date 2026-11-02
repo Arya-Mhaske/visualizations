@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Look for an inverse of every number mod n. See which n pass.{% endblock %}
+{% block why_text %}a has an inverse mod n exactly when gcd(a, n) = 1. If n is prime, every number below n qualifies, so the integers mod n form a field. If n is composite, a divisor of n has no inverse, because multiplying by it can never reach 1.{% endblock %}
+{% block try_items %}
+<li>Set n = 7. Does every number have an inverse?</li>
+<li>Set n = 6. Which numbers have no inverse?</li>
+<li>Set n = 12 and then 13. Compare the number of coral cells.</li>
+{% endblock %}

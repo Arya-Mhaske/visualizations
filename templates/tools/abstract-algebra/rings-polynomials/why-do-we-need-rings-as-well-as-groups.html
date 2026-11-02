@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Check the laws of + and × on integers, polynomials and matrices.{% endblock %}
+{% block why_text %}A group has one operation. Integers, polynomials and matrices all have two, linked by a(b + c) = ab + ac. A ring is any set with those two operations and the laws you see ticked here. Notice that matrices fail one law: ab need not equal ba.{% endblock %}
+{% block try_items %}
+<li>Choose the integers and press New a, b, c. Which laws hold?</li>
+<li>Choose polynomials. Is ab = ba always?</li>
+<li>Choose matrices and press New a, b, c a few times. Which law sometimes fails?</li>
+{% endblock %}

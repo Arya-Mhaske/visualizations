@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Build the rational numbers from pairs of integers and check that sums do not depend on the pair you choose.{% endblock %}
+{% block why_text %}A fraction is a pair of integers (a, b) with b ≠ 0, and two pairs are the same when ad = bc. Replacing a pair by an equal one changes neither the sum nor the product, so the classes form a number system in which every non-zero element has an inverse.{% endblock %}
+{% block try_items %}
+<li>Use 1/2 and 2/3. What is the sum in lowest terms?</li>
+<li>Change k. Does the sum change?</li>
+<li>Look at the last step. What is the inverse of (a, b)?</li>
+{% endblock %}

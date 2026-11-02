@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Find two non-zero numbers that multiply to 0 in ℤ₆, then see the same thing happen to matrices.{% endblock %}
+{% block why_text %}In ℤ₆, 2 × 3 = 6, which is 0 once you wrap round at 6. A product can be zero without a zero factor whenever the modulus is composite. In ordinary numbers this never happens, which is why we can cancel. In a ring with zero divisors we cannot.{% endblock %}
+{% block try_items %}
+<li>Set n = 6. Which products give coral cells?</li>
+<li>Set n = 7. Are there any coral cells?</li>
+<li>Set n = 12. How many zero divisors are there?</li>
+{% endblock %}
