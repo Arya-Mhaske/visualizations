@@ -1511,31 +1511,31 @@
 "archetype": "sim",
 "priority": 76,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/change-of-state/why-does-water-boil-cooler-on-mountains": {
 "archetype": "sim",
 "priority": 76,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/change-of-state/phase-diagram-why-does-dry-ice-sublime": {
 "archetype": "sim",
 "priority": 76,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/change-of-state/heating-curve-builder": {
 "archetype": "stepper",
 "priority": 76,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/change-of-state/why-does-a-pressure-cooker-cook-faster": {
 "archetype": "sim",
 "priority": 76,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-transfer/why-does-metal-feel-colder-than-wood-at-the-same-temperature": {
 "archetype": "sim",

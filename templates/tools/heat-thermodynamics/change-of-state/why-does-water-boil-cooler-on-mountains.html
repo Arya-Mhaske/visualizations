@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Water boils when its vapour pressure equals the air pressure. Climb higher and the air pressure falls.{% endblock %}
+{% block why_text %}The curve shows the pressure of water vapour at each temperature. Water boils where that curve meets the air pressure. Higher up the air pressure is lower, so the curve meets it at a lower temperature: water boils cooler, and food cooks slower.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Air pressure uses a simple model p = p₀ e<sup>−h/8.4 km</sup>, and the vapour curve is from the Clausius–Clapeyron relation, so the numbers are close to, not equal to, the measured ones.</p></div>{% endblock %}
+{% block try_items %}
+<li>Slide to the height of Leh (3.5 km). What is the boiling point?</li>
+<li>Slide to the top of Everest (8.85 km). Could you make tea?</li>
+{% endblock %}

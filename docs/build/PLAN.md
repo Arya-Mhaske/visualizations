@@ -407,7 +407,7 @@ it reaches the front of the queue.
 | 70 | `numbers-algebra/rational-expressions` | 6 | 1 | |
 | 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | ✓ |
 | 72 | `numbers-algebra/linear-equations-formulas` | 7 | 1 | |
-| 73 | `heat-thermodynamics/change-of-state` | 5 | 1 | |
+| 73 | `heat-thermodynamics/change-of-state` | 5 | 1 | ✓ |
 | 74 | `numbers-algebra/variation` | 5 | 1 | ✓ |
 | 75 | `heat-thermodynamics/heat-transfer` | 7 | 1 | ✓ |
 | 76 | `functions-graphs/transformations` | 6 | 1 | ✓ |
@@ -660,3 +660,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/thermal-expansion` (6 tools): `_expansion-math.js` (Lennard-Jones well turning points, cube terms, water density table, a layer-by-layer `lake` model, rim and rail formulas). The lake cools only the top layer per step, as a simplified model. Built without screenshots or tests, by request.
 
 - `heat-thermodynamics/heat-capacity-calorimetry` (5 tools): `_heat-capacity-math.js` (`finalTemp` with a leak share, gas Cv/Cp, `specificHeatOfBall` for NCERT Ex 10.3, which gives 911 J/kg·K at 23 C). Sea-breeze sunshine and layer depths are round model numbers and say so. Built without screenshots or tests, by request.
+
+- `heat-thermodynamics/change-of-state` (5 tools): `_phase.js` (`curve`/`at` heating curve with latent plateaus, `boilT(P)` from Clausius-Clapeyron: 81 C at 0.5 atm, 121 C at 2 atm, 72 C on Everest; `SUBS`/`region`/`path` phase diagrams for CO2 and water, schematic, so water at 1 atm boils at 102 C there; `cookerP`), `_phase-view.js` (`heatPlot`, `energyBar`, `molecules`). Built without screenshots or tests, by request.
