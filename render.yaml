@@ -4,7 +4,7 @@ services:
     runtime: python
     plan: free
     buildCommand: ./build.sh
-    startCommand: gunicorn visualisations.wsgi:application
+    startCommand: gunicorn visualisations.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 120
     healthCheckPath: /
     envVars:
       - key: SECRET_KEY
