@@ -565,8 +565,8 @@ it reaches the front of the queue.
 | 243 | `abstract-algebra/what-is-a-group` | 6 | 2 | ✓ |
 | 244 | `abstract-algebra/cyclic-groups` | 4 | 2 | ✓ |
 | 245 | `abstract-algebra/permutations-dihedral-groups` | 5 | 2 | ✓ |
-| 246 | `abstract-algebra/cosets-lagrange` | 5 | 2 | |
-| 247 | `abstract-algebra/codes-cryptography` | 6 | 2 | |
+| 246 | `abstract-algebra/cosets-lagrange` | 5 | 2 | ✓ |
+| 247 | `abstract-algebra/codes-cryptography` | 6 | 2 | ✓ |
 | 248 | `abstract-algebra/isomorphism-homomorphism` | 5 | 2 | |
 | 249 | `abstract-algebra/symmetry-actions-counting` | 7 | 2 | |
 | 250 | `abstract-algebra/rings-polynomials` | 6 | 2 | |

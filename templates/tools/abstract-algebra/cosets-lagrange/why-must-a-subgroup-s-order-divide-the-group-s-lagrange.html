@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a subgroup and count how many equal-size cosets cover the whole group.{% endblock %}
+{% block why_text %}The cosets of H cover the group, never overlap, and each has exactly |H| elements because sliding by g loses nothing. So |G| = (number of cosets) × |H|, which means |H| must divide |G|.{% endblock %}
+{% block try_items %}
+<li>Choose the square group D₄ and make H = {e, r²}. How many cosets?</li>
+<li>Make H bigger. Do the cosets stay the same size?</li>
+<li>Choose ℤ₁₂ and look for H of every possible size.</li>
+{% endblock %}

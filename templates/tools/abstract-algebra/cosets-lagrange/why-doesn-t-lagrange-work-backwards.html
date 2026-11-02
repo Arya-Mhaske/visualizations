@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Try to build a subgroup of order 6 inside A₄, which has 12 elements.{% endblock %}
+{% block why_text %}Lagrange says a subgroup's order divides the group's, but not every divisor is the order of a subgroup. A₄ has subgroups of order 1, 2, 3, 4 and 12, and the table shows none of order 6.{% endblock %}
+{% block try_items %}
+<li>Press two elements of order 3. Which size do they generate?</li>
+<li>Press (1 2)(3 4) and (1 3)(2 4). What do they generate?</li>
+<li>Try to find any pair that generates exactly six elements.</li>
+{% endblock %}

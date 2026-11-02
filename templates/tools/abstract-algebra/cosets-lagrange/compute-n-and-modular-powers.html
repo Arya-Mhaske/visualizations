@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Compute φ(n), shrink a huge exponent with Euler's theorem, and finish with a small power.{% endblock %}
+{% block why_text %}Whenever a and n share no factor, a^φ(n) ≡ 1, so you may replace the exponent e by its remainder on division by φ(n). A 3-digit exponent becomes a small one.{% endblock %}
+{% block try_items %}
+<li>Use 7, 222 and 15. What is φ(15), and what is 222 mod 8?</li>
+<li>Pick a and n with a common factor. What does the tool do?</li>
+<li>Pick n = 13. What is φ(13)?</li>
+{% endblock %}

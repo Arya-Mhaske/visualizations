@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply every unit mod n by a and see that you get the same numbers back, only reshuffled.{% endblock %}
+{% block why_text %}When a has no factor in common with n, multiplying by a just rearranges the units. The product P of all the units is the same before and after, but after it has picked up one factor of a per unit, so a^φ(n) · P ≡ P. P is itself a unit, so it cancels: a^φ(n) ≡ 1.{% endblock %}
+{% block try_items %}
+<li>Set n = 13, a = 5. Do the lines cross each other?</li>
+<li>What is a^12 mod 13 for any a?</li>
+<li>Set n = 12 and a = 4. Why does the picture break?</li>
+{% endblock %}
