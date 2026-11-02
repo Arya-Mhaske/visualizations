@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Each elimination step is a multiplication by an elementary matrix. Multiply them in and watch A become U.{% endblock %}
+{% block why_text %}Subtracting ℓ times row j from row i is the same as multiplying on the left by the identity with −ℓ in position (i, j). Doing the steps in order means multiplying by E₂₁, then E₃₁, then E₃₂, and the product E A is the upper triangular U.{% endblock %}
+{% block try_items %}
+<li>Find the −ℓ in each elementary matrix. Is it the multiplier?</li>
+<li>Why do later matrices go on the left of earlier ones?</li>
+<li>Change the matrix. Do you ever need more than three elementary matrices here?</li>
+{% endblock %}

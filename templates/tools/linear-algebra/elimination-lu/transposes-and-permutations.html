@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Flip a matrix across its diagonal, then reorder its rows with a permutation matrix P.{% endblock %}
+{% block why_text %}The transpose turns rows into columns. A permutation matrix is the identity with its rows shuffled, and multiplying by it on the left shuffles the rows of any matrix in the same way. Undoing a shuffle is shuffling back, so P transpose is its inverse.{% endblock %}
+{% block try_items %}
+<li>Pick a permutation and predict the rows of PA before you look.</li>
+<li>Check that PᵀP is the identity for every choice.</li>
+<li>How many different permutation matrices are there of this size?</li>
+{% endblock %}

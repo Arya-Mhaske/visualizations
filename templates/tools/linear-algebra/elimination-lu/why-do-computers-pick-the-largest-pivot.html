@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Solve a small system with only a few digits of arithmetic and watch rounding error explode when the pivot is tiny.{% endblock %}
+{% block why_text %}A tiny pivot makes the multiplier huge, so subtracting leaves only the huge number and the small numbers vanish in rounding. Swapping rows first to use the largest available pivot keeps every multiplier at most 1 in size, so rounding errors stay small. Computers do this automatically: it is called partial pivoting.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This model rounds to a fixed number of significant figures after every operation. Real computers round in binary to about 16 digits, but the effect is the same.</div>{% endblock %}
+{% block try_items %}
+<li>Make the first pivot ε very small (k = 6). Which method keeps its accuracy?</li>
+<li>Keep more digits. How tiny must ε be before the bad method fails now?</li>
+<li>Why does swapping the rows make the multiplier ε instead of 1/ε?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Do elimination and write each multiplier into L. The multipliers fill L exactly.{% endblock %}
+{% block why_text %}Each step subtracts a multiplier times one row from another. To undo that step you add the same multiple back, so the multipliers, placed where they were used, make up the matrix L that rebuilds A from U. That is A = LU: U is where elimination ends and L records how it got there.{% endblock %}
+{% block try_items %}
+<li>Press Next step and watch L fill up, one multiplier at a time.</li>
+<li>Why are all the entries above the diagonal of L zero?</li>
+<li>Multiply L and U yourself for one entry and check it against A.</li>
+{% endblock %}

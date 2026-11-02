@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Run elimination on three matrices. See when a zero pivot can be rescued by a row swap, and when it cannot.{% endblock %}
+{% block why_text %}Elimination needs a non-zero pivot in each column. A zero pivot is not the end if a row below has a non-zero entry in that column: swap the rows. If every entry at and below the pivot spot is zero, no swap can help, the matrix is singular and elimination stops for good.{% endblock %}
+{% block try_items %}
+<li>Pick the "fixable" matrix and switch off row swaps. Where does it get stuck?</li>
+<li>Switch swaps back on. How many pivots do you get?</li>
+<li>Pick the "no rescue" matrix. Which column has no pivot?</li>
+{% endblock %}
