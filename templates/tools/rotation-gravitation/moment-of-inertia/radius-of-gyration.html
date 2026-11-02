@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Every body has a moment of inertia I. The radius of gyration k is the radius of the single thin ring of the same mass with the same I.{% endblock %}
+{% block why_text %}Define k by I = Mk². Then k = √(I/M) is the distance at which all the mass could be concentrated without changing how hard the body is to spin. For a ring k = R; for a disc k = R/√2; for a solid sphere k = R√(2/5).{% endblock %}
+{% block try_items %}
+<li>Compare k for the ring, disc and sphere.</li>
+<li>Which body has its mass effectively nearest the axis?</li>
+<li>Change the radius. Does k/R change?</li>
+{% endblock %}

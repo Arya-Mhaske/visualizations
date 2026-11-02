@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}An engine delivers its torque in pulses. A heavy flywheel keeps the shaft speed steady between pulses.{% endblock %}
+{% block why_text %}dω/dt = (τ − τ_load)/I. A big I means the same torque excess changes ω only a little. The speed fluctuation falls in proportion to 1/I, so a flywheel with a large moment of inertia smooths the jerky push of the cylinders.{% endblock %}
+{% block try_items %}
+<li>Increase I. What happens to the wobble in ω?</li>
+<li>Remove the flywheel (small I).</li>
+<li>Compare the swings at I = 0.5 and I = 5.</li>
+{% endblock %}

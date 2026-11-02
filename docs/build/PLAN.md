@@ -373,7 +373,7 @@ it reaches the front of the queue.
 | 36 | `sequences-probability/geometric-sequences-series` | 10 | 1 | |
 | 37 | `rotation-gravitation/torque-equilibrium` | 8 | 1 | ✓ |
 | 38 | `functions-graphs/lines-slope` | 10 | 1 | ✓ |
-| 39 | `rotation-gravitation/moment-of-inertia` | 5 | 1 | |
+| 39 | `rotation-gravitation/moment-of-inertia` | 5 | 1 | ✓ |
 | 40 | `conics-curves/what-are-conics` | 3 | 1 | ✓ |
 | 41 | `rotation-gravitation/rotational-dynamics` | 4 | 1 | |
 | 42 | `conics-curves/parabola` | 6 | 1 | ✓ |
@@ -704,3 +704,5 @@ it reaches the front of the queue.
 - `rotation-gravitation/rotation-kinematics`: inline maths. The solver gives 4 pi rad/s2 and 576 revolutions at the defaults. Built without screenshots or tests, by request.
 
 - `rotation-gravitation/torque-equilibrium`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `rotation-gravitation/moment-of-inertia`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.

@@ -887,31 +887,31 @@
 "archetype": "sim",
 "priority": 42,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/moment-of-inertia/why-is-a-ring-harder-to-spin-than-a-disc-of-equal-mass": {
 "archetype": "sim",
 "priority": 42,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/moment-of-inertia/radius-of-gyration": {
 "archetype": "sim",
 "priority": 42,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/moment-of-inertia/moment-of-inertia-table-explorer": {
 "archetype": "stepper",
 "priority": 42,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/moment-of-inertia/why-do-engines-carry-flywheels": {
 "archetype": "sim",
 "priority": 42,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotational-dynamics/why-is-i-newton-s-second-law-for-spinning": {
 "archetype": "sim",

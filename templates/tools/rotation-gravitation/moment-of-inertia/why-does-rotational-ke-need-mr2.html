@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two masses on a spinning rod. Move them outward at the same angular speed and watch the energy.{% endblock %}
+{% block why_text %}A mass at distance r moves at v = ωr, so its kinetic energy is ½m(ωr)² = ½(mr²)ω². The part in brackets, summed over all the masses, is the moment of inertia I = Σmr². So KE = ½Iω², and I grows as the square of the distance.{% endblock %}
+{% block try_items %}
+<li>Double r. What happens to I and to the KE?</li>
+<li>Double ω instead.</li>
+<li>Compare the energy of the same masses near and far from the axis.</li>
+{% endblock %}
