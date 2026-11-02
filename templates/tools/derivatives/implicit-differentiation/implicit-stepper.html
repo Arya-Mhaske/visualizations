@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Differentiate both sides of an equation in x and y, treating y as a function of x.{% endblock %}
+{% block why_text %}Near a point of the curve, y is a function of x, even if you cannot write it down. So every y-term is a function of a function, and the chain rule puts a y′ beside it. Then it is only algebra: collect the y′ terms and solve.{% endblock %}
+{% block try_items %}
+<li>Pick xy = 12. Where does the product rule appear?</li>
+<li>On y² = x³ + 1, try all four points. Which has slope 0?</li>
+<li>Compare the answer with the nudge check each time.</li>
+{% endblock %}

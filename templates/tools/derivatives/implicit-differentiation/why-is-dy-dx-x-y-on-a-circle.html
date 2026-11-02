@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the radius and the tangent at a point on the circle. See how their slopes are linked.{% endblock %}
+{% block why_text %}The tangent to a circle is perpendicular to the radius, and perpendicular slopes multiply to −1. The radius has slope y/x, so the tangent has slope −x/y. The same fact appears as x dx + y dy = 0: a step along the tangent has no component along the radius.{% endblock %}
+{% block try_items %}
+<li>Slide the step along the tangent. Does x·dx + y·dy ever leave 0?</li>
+<li>Change the radius. Does the product of the two slopes change?</li>
+<li>Move to the top of the circle. What is the tangent slope there, and why?</li>
+{% endblock %}

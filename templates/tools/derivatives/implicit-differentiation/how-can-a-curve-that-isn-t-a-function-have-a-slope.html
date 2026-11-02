@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A circle fails the vertical line test, yet it has a tangent at every point. Walk round it and read the slope.{% endblock %}
+{% block why_text %}A slope is about what the curve does near one point, and near almost every point of the circle a small piece of it is the graph of a function. So the slope exists even though no single y = f(x) draws the whole circle. At the far left and right the tangent is vertical, and there the slope really does not exist.{% endblock %}
+{% block try_items %}
+<li>Switch on "Use only y = √(25 − x²)" and move the point to the lower half. What happens?</li>
+<li>Find the two points where the tangent is vertical.</li>
+<li>Find the two points where the slope is 0. What is y there?</li>
+{% endblock %}
