@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a surface with a wall and read the slope of the cut.{% endblock %}
+{% block why_text %}Freeze y and the surface is sliced by a vertical wall. On that wall f is a curve of one variable, so the usual slope of a curve applies. That slope is f_x. Freeze x instead and the slope of the other cut is f_y.{% endblock %}
+{% block try_items %}
+<li>Move the probe along a hill. When is f_x zero?</li>
+<li>Switch which variable is held fixed. Do f_x and f_y at the same point agree?</li>
+<li>On the saddle at the origin, what are f_x and f_y, and is the point a peak?</li>
+{% endblock %}

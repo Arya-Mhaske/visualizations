@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take f_x then see how it changes in y, and compare with f_y then x.{% endblock %}
+{% block why_text %}f_xy measures how the x-slope changes as y moves, and f_yx how the y-slope changes as x moves. Both are the same twist of the surface, seen two ways, so they agree when the surface is smooth enough (Clairaut's theorem).{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The odd function has f_xy(0, 0) = −1 but f_yx(0, 0) = 1. Its mixed partials are not continuous at the origin, so Clairaut's theorem does not apply there.</div>{% endblock %}
+{% block try_items %}
+<li>Use the waves surface. How close do the two estimates get as h shrinks?</li>
+<li>Pick the odd function and set the point to (0, 0). What are the two limits?</li>
+<li>Move away from (0, 0) with the odd function. Do the estimates agree again?</li>
+{% endblock %}
