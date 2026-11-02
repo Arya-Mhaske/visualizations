@@ -431,43 +431,43 @@
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/why-does-a-falling-stone-pull-earth-up-just-as-hard": {
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/why-is-momentum-conserved": {
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/how-does-a-horse-pull-a-cart-at-all": {
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/find-the-actionreaction-pairs": {
 "archetype": "stepper",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/gun-recoil": {
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/third-law-momentum-conservation/ball-off-a-wall-at-an-angle": {
 "archetype": "sim",
 "priority": 20,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/equilibrium-free-body-diagrams/why-do-three-forces-in-equilibrium-close-a-triangle": {
 "archetype": "sim",

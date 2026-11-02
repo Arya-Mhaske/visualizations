@@ -351,7 +351,7 @@ it reaches the front of the queue.
 | 14 | `trigonometry/unit-circle` | 12 | 1 | ✓ |
 | 15 | `forces-energy/second-law-momentum` | 8 | 1 | ✓ |
 | 16 | `trigonometry/sine-cosine-graphs` | 12 | 1 | ✓ |
-| 17 | `forces-energy/third-law-momentum-conservation` | 7 | 1 | |
+| 17 | `forces-energy/third-law-momentum-conservation` | 7 | 1 | ✓ |
 | 18 | `trigonometry/tan-cot-sec-csc` | 9 | 1 | ✓ |
 | 19 | `forces-energy/equilibrium-free-body-diagrams` | 5 | 1 | |
 | 20 | `trigonometry/identities` | 12 | 1 | ✓ |
@@ -678,3 +678,5 @@ it reaches the front of the queue.
 - `forces-energy/inertia-the-first-law`: all maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
 
 - `forces-energy/second-law-momentum`: all maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
+
+- `forces-energy/third-law-momentum-conservation`: all maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.

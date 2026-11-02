@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A gun fires a 20 g shell at 80 m/s. The gun has mass 100 kg and starts at rest.{% endblock %}
+{% block why_text %}The total momentum was zero, so it stays zero: the shell goes forward with mv, and the gun goes back with the same momentum. Its recoil speed is mv/M = 0.02 × 80/100 = 0.016 m/s, 1.6 cm/s. The heavy gun moves slowly.{% endblock %}
+{% block try_items %}
+<li>Check the 1.6 cm/s at the defaults.</li>
+<li>Use a lighter gun. What happens to the recoil?</li>
+<li>Double the shell speed.</li>
+{% endblock %}

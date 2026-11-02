@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A ball hits a smooth wall at an angle and bounces off. Which way does the wall push on the ball?{% endblock %}
+{% block why_text %}A smooth wall can only push at right angles to itself. So the velocity along the wall is unchanged, and only the part perpendicular to the wall reverses (and shrinks if the bounce is not perfect). The impulse, and so the force on the wall, is along the normal.{% endblock %}
+{% block try_items %}
+<li>Hit the wall head-on. What is the impulse?</li>
+<li>Hit it at a steep angle. Does the sideways speed change?</li>
+<li>Make the bounce less perfect.</li>
+{% endblock %}
