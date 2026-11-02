@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put the planets on a graph of log T against log R. They fall on a straight line of slope 3/2.{% endblock %}
+{% block why_text %}For a circular orbit gravity supplies the centripetal force: GMm/R² = mv²/R with v = 2πR/T. Then T² = (4π²/GM) R³. The constant depends only on the Sun, so T²/R³ is the same for every planet, and on a log–log graph the line has slope 3/2.{% endblock %}
+{% block try_items %}
+<li>Read T²/R³ for each planet.</li>
+<li>Choose a planet and check the line passes through it.</li>
+<li>What is the slope of the line?</li>
+{% endblock %}

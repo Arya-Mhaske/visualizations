@@ -971,31 +971,31 @@
 "archetype": "sim",
 "priority": 48,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/kepler-s-laws/why-equal-areas-in-equal-times": {
 "archetype": "sim",
 "priority": 48,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/kepler-s-laws/why-is-t2-r3": {
 "archetype": "sim",
 "priority": 48,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/kepler-s-laws/kepler-s-third-law-calculator": {
 "archetype": "stepper",
 "priority": 48,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/kepler-s-laws/from-ptolemy-to-kepler": {
 "archetype": "sim",
 "priority": 48,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/why-does-the-moon-fall-but-never-land": {
 "archetype": "sim",

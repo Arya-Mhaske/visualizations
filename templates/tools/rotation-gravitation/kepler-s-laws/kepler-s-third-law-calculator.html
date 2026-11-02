@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give a planet's distance from the Sun in astronomical units. The third law gives its year.{% endblock %}
+{% block why_text %}In years and AU, T² = R³ for the Sun, so T = R^(3/2). Mars at 1.52 AU has T = 1.52^1.5 = 1.87 years, about 684 days. The law only needs the distance: heavier planets orbit at the same rate as lighter ones at the same distance.{% endblock %}
+{% block try_items %}
+<li>Check 684 days for 1.52 AU.</li>
+<li>Try 5.2 AU for Jupiter.</li>
+<li>At what distance is the year 2 years?</li>
+{% endblock %}

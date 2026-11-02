@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pin a string at two points and trace a curve with a pencil keeping the string tight. The Sun sits at one of the pins.{% endblock %}
+{% block why_text %}The pencil keeps the sum of its two distances to the pins equal to the string length, 2a. That is the definition of an ellipse, and the pins are its foci. Moving the pins together makes a circle (e = 0); moving them apart makes the ellipse longer and thinner.{% endblock %}
+{% block try_items %}
+<li>Move the pins together. What curve do you get?</li>
+<li>Move them apart. What happens to e?</li>
+<li>Check that the two distances always add to the same number.</li>
+{% endblock %}
