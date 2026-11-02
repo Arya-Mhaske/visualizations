@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide off a car seat, step out, and touch the door. Will it shock you?{% endblock %}
+{% block why_text %}Rubbing against the seat separates charge, and your body holds it. A tiny charge on a tiny capacitance makes a large voltage, V = Q/C. Air breaks down at about 3 kV per millimetre, so a few kV make a visible spark when you near the metal. Humid air lets the charge leak away within seconds, so winter and dry days are worst.{% endblock %}
+{% block try_items %}
+<li>Slide 3 times at 30% humidity and wait 5 s. What is V?</li>
+<li>Raise the humidity to 70%. What happens to V?</li>
+<li>Touch the door at once, with a metal key in your hand. Does the shock change in size or only feel different?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The charge per slide, the body capacitance and the leakage time are rounded, illustrative numbers.</div>{% endblock %}

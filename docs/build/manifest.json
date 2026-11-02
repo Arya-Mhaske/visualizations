@@ -2058,43 +2058,43 @@
 "archetype": "sim",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/why-does-rubbing-move-electrons-not-protons": {
 "archetype": "space3d",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/why-is-charge-quantised-in-steps-of-e": {
 "archetype": "space3d",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/why-is-total-charge-conserved": {
 "archetype": "sim",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/charge-a-sphere-without-touching-it-induction": {
 "archetype": "space3d",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/gold-leaf-electroscope": {
 "archetype": "stepper",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-charge/why-does-a-car-door-sometimes-shock-you": {
 "archetype": "sim",
 "priority": 110,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/coulomb-s-law/why-does-the-electric-force-fall-off-as-1-r2": {
 "archetype": "chance",

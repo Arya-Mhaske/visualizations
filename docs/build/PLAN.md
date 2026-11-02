@@ -441,7 +441,7 @@ it reaches the front of the queue.
 | 104 | `exponentials-logs/exp-log-equations` | 4 | 1 | ✓ |
 | 105 | `oscillations-waves/beats` | 3 | 1 | ✓ |
 | 106 | `exponentials-logs/money-finance` | 7 | 1 | ✓ |
-| 107 | `electrostatics/electric-charge` | 7 | 1 | |
+| 107 | `electrostatics/electric-charge` | 7 | 1 | ✓ |
 | 108 | `functions-graphs/combining-inverting` | 12 | 1 | ✓ |
 | 109 | `electrostatics/coulomb-s-law` | 5 | 1 | |
 | 110 | `trigonometry/inverses-equations` | 12 | 1 | ✓ |
@@ -632,3 +632,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/_equipartition.js`: `dof(rot, vib)`, `cvOf/cpOf/gammaOf`, rounded measured Cv values (`GASES`), the exact one-mode Einstein term `einstein(theta, T)` and `METALS` (molar mass, specific heat). The vibration tool's rotation switch-on is an illustrative smooth curve and says so. Equipartition by collisions: random two-slot splits (uniform split of the pair total) over 120 molecules, 2500 per second.
 
 - `heat-thermodynamics/_mfp.js`: 2D hard discs with a tagged disc (`createDisks`, `mfp2d`). The 2D free path is 1/(sqrt2 · 2d · n): checked in Node, the measured path/collisions is within about 15% for N = 30, 60 (2.57 vs 2.36, 1.00 vs 1.18); at N = 120 it falls 25% short because the strip is crowded. The 3D tube tool uses fixed seeded points and takes the first n·V of them.
+
+- `electrostatics/_charge.js` has `mark` (a + or − chip) and `E`. `electric-charge` (7 tools) is mostly drawn on raw canvas with made-up round numbers where stated (holding strengths, shock model, leaf angle).

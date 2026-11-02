@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Charge a metal sphere using a rod that never touches it.{% endblock %}
+{% block why_text %}A + rod pulls the sphere's free electrons towards it, leaving the far side positive. Earthing lets electrons flow in from the ground to cancel that positive side. Cut the earth wire while the rod is still there, and the sphere keeps those extra electrons. When the rod goes, they spread out evenly. The sphere ends up with charge opposite to the rod.{% endblock %}
+{% block try_items %}
+<li>Go through steps 1 to 4 with a + rod. What is the final charge?</li>
+<li>Repeat with a − rod. What is the final charge?</li>
+<li>What goes wrong if you remove the rod before step 2?</li>
+{% endblock %}
