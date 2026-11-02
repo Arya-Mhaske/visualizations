@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose a basis of two unit vectors. When they are at 90°, coordinates are just dot products.{% endblock %}
+{% block why_text %}If the basis vectors are perpendicular unit vectors, the matrix Q of the basis has Qᵀ Q = I, so Q⁻¹ = Qᵀ. Finding coordinates means multiplying by Qᵀ: each coordinate is one dot product, and nothing needs to be solved. With any other angle the dot products are wrong and you must solve a system.{% endblock %}
+{% block try_items %}
+<li>Set the angle to 90°. Do the dot products match the true coordinates?</li>
+<li>Set it to 60°. Which is wrong?</li>
+<li>Turn the whole pair. Does the 90° answer stay right?</li>
+{% endblock %}

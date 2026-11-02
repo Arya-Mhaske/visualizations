@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Project a vector, then project the result. Nothing moves the second time.{% endblock %}
+{% block why_text %}After one projection the point is already on the line, so projecting again finds it right where it is: P² = P. A rotation does not do this, because a turned vector is turned again. Any matrix with P² = P is a projection.{% endblock %}
+{% block try_items %}
+<li>Switch on the rotation. Does the second step move the vector?</li>
+<li>Move x onto the line. What is Px?</li>
+<li>Change the direction of the line. Is the second step ever non-zero?</li>
+{% endblock %}

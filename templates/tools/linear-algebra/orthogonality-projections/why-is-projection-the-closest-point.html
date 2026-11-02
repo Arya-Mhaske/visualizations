@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drop a perpendicular from b onto a line, then onto a plane. The foot is the closest point.{% endblock %}
+{% block why_text %}Any other point q of the line is the far end of a right triangle whose short sides are the error e and the step from p to q. The hypotenuse b − q is longer than the side e. So the closest point is where the error is perpendicular to the line (or plane). That perpendicularity is the equation that finds p.{% endblock %}
+{% block try_items %}
+<li>Slide q along the line. Where is it closest to b?</li>
+<li>Move b onto the line. What is the error?</li>
+<li>In the plane view, check that the error is perpendicular to both directions of the plane.</li>
+{% endblock %}

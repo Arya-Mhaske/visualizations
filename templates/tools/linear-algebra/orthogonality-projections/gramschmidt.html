@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Straighten two skewed vectors into perpendicular unit vectors, one step at a time.{% endblock %}
+{% block why_text %}Keep the first direction as it is, scaled to length 1. For the second vector, subtract its shadow on the first, which leaves only the part that is perpendicular, then scale to length 1. The new pair spans the same plane as the old one but is perpendicular, which makes it easy to use.{% endblock %}
+{% block try_items %}
+<li>Slide the step control from 0 to 3. What changes at each step?</li>
+<li>Make a and b parallel. What goes wrong?</li>
+<li>Check that q₁ · q₂ is 0 at the end.</li>
+{% endblock %}
