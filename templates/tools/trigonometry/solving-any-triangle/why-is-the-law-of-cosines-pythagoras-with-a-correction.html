@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Open and close the angle C between two fixed sides and watch the third side change.{% endblock %}
+{% block why_text %}At C = 90° the law of cosines is exactly Pythagoras: c² = a² + b². If the angle is smaller, the third side is shorter, so c² loses 2ab cos C. If the angle is larger, cos C is negative, so c² gains. The correction term −2ab cos C measures how far the angle is from a right angle.{% endblock %}
+{% block try_items %}
+<li>Set C = 90°. What does the law become?</li>
+<li>Make C smaller than 90°. Is c² more or less than a² + b²?</li>
+<li>Make C close to 180°. What does c get close to?</li>
+{% endblock %}

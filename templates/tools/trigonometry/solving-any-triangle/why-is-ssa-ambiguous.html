@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fix angle A, side b and side a. Swing side a like a compass and see where it can meet the base.{% endblock %}
+{% block why_text %}Side a is a compass arm fixed at C. It may fall short of the base, touch it, or cross it once or twice. When a is between the height b sin A and b, the arc cuts the base twice, and two different triangles fit the same numbers. That is the ambiguous case.{% endblock %}
+{% block try_items %}
+<li>Keep A = 35° and b = 8. Slide a from 1 up to 12. How many triangles at each stage?</li>
+<li>Find a so that the arc just touches the base. What is a then, compared with b sin A?</li>
+<li>Make A obtuse. Can there still be two triangles?</li>
+{% endblock %}

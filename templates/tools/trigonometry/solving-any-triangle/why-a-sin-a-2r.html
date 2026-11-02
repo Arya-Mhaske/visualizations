@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the circle through all three corners. Every side divided by the sine of its opposite angle gives the same number.{% endblock %}
+{% block why_text %}The angle at the centre standing on side a is twice the angle A at the corner. Cut that central triangle in half and you get a right triangle where a/2 = R sin A. So a / sin A = 2R, the diameter. The same is true for b and c, so all three ratios agree.{% endblock %}
+{% block try_items %}
+<li>Drag the corners. What stays the same in the three ratios?</li>
+<li>Change R. How does the ratio change?</li>
+<li>Turn on the centre. What is the angle at the centre compared with A?</li>
+{% endblock %}

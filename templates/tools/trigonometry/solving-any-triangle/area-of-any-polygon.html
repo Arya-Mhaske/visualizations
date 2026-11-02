@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split a shape into triangles from one corner and add their areas.{% endblock %}
+{% block why_text %}Any polygon can be cut into triangles by lines from one corner. Each triangle’s area is easy to find, and the areas add up to the whole. If the polygon dents inwards, some pieces count as negative and subtract, and the total is still right.{% endblock %}
+{% block try_items %}
+<li>Drag a corner. How many triangles are there for five corners?</li>
+<li>Change to six corners. How many triangles?</li>
+<li>Make the shape dent inwards at a corner. What happens to the sign of a piece?</li>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick what you know about a triangle and see which law to use and why.{% endblock %}
+{% block why_text %}Use the law of sines when you know a side with its opposite angle. Use the law of cosines when you do not, which is the case for SAS and SSS. SSA is the case that can give two triangles. For ASA and AAS, find the third angle first.{% endblock %}
+{% block try_items %}
+<li>Choose ASA and press Next step. Why is the third angle the first move?</li>
+<li>Choose SAS. Why can the law of sines not start?</li>
+<li>Choose SSA with A = 40°, a = 6, b = 8. How many triangles fit?</li>
+<li>Make a smaller until the answer changes.</li>
+{% endblock %}

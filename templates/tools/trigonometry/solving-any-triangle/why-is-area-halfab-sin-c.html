@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The area of a triangle is half its base times its height. Find the height from the two sides and the angle.{% endblock %}
+{% block why_text %}Take a as the base. The other side b leans over at angle C, so the height is b sin C. Then the area is ½ × base × height = ½ × a × b sin C. This works for an obtuse C too, where the height falls outside the base.{% endblock %}
+{% block try_items %}
+<li>Set C = 90°. Why does ½ab sin C become ½ab?</li>
+<li>Make C obtuse. Where does the height go?</li>
+<li>Which angle gives the most area for fixed sides?</li>
+{% endblock %}

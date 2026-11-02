@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Put the law of cosines into the area formula ½ab sin C and watch the algebra collapse into Heron’s formula.{% endblock %}
+{% block why_text %}The law of cosines gives cos C from the sides. Then sin C = √(1 − cos²C), and the square root is a difference of squares that factors into four simple brackets. Those brackets are 2s, 2(s − a), 2(s − b) and 2(s − c), which is Heron’s formula.{% endblock %}
+{% block try_items %}
+<li>Press Next step to the end. Which step is the factoring?</li>
+<li>Try sides 3, 4, 5. What area do you get, and does it match ½ × 3 × 4?</li>
+<li>Make one side too long. What does the tool say?</li>
+{% endblock %}

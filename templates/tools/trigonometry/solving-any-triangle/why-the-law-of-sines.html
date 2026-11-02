@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drop a height from C onto AB. Work out that height from each end and compare.{% endblock %}
+{% block why_text %}The height h of the triangle can be found from either end. From A it is h = b sin A, and from B it is h = a sin B. Both are the same height, so b sin A = a sin B. Divide by sin A sin B and you get a / sin A = b / sin B. The same argument with another height covers the third side.{% endblock %}
+{% block try_items %}
+<li>Drag C up and down. Which of the two ways of finding h changes, and which one stays equal to it?</li>
+<li>Make the angle at C obtuse. Does the law still hold?</li>
+<li>Look at the three ratios. How close do they stay as you drag?</li>
+{% endblock %}
