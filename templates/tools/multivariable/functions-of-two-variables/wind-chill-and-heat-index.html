@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Read the felt temperature from a surface of two variables.{% endblock %}
+{% block why_text %}Both wind chill and heat index are functions of two inputs, so each is a surface. Moving the probe in one input at a time shows how steeply the felt temperature changes with each, which is the idea behind partial derivatives.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Both formulas are published fits to experiments, valid only inside the ranges given. Outside those ranges the numbers mean nothing.</div>{% endblock %}
+{% block try_items %}
+<li>Set T = 0 °F and wind 15 mph. What does it feel like?</li>
+<li>Keep T and raise the wind. Does the felt temperature rise or fall?</li>
+<li>Switch to heat index at 95 °F. What does 40% humidity feel like compared with 90%?</li>
+{% endblock %}

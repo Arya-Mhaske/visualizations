@@ -544,11 +544,11 @@ it reaches the front of the queue.
 | 212 | `infinite-series/convergence-tests` | 9 | 2 | |
 | 213 | `infinite-series/power-series` | 4 | 2 | |
 | 214 | `infinite-series/taylor-series` | 11 | 2 | |
-| 215 | `multivariable/functions-of-two-variables` | 4 | 2 | |
-| 216 | `multivariable/partial-derivatives` | 4 | 2 | |
-| 217 | `multivariable/tangent-planes-chain-rule` | 6 | 2 | |
-| 218 | `multivariable/gradient` | 5 | 2 | |
-| 219 | `multivariable/max-min-lagrange` | 7 | 2 | |
+| 215 | `multivariable/functions-of-two-variables` | 4 | 2 | ✓ |
+| 216 | `multivariable/partial-derivatives` | 4 | 2 | ✓ |
+| 217 | `multivariable/tangent-planes-chain-rule` | 6 | 2 | ✓ |
+| 218 | `multivariable/gradient` | 5 | 2 | ✓ |
+| 219 | `multivariable/max-min-lagrange` | 7 | 2 | ✓ |
 | 220 | `multivariable/double-integrals` | 5 | 2 | |
 | 221 | `multivariable/mass-moments-surface-area` | 4 | 2 | |
 | 222 | `multivariable/triple-integrals-coordinates` | 6 | 2 | |

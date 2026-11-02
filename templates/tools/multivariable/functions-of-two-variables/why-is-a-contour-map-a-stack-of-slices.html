@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Flood a hill to a chosen height and watch the shoreline trace a level curve.{% endblock %}
+{% block why_text %}At each water level the shoreline is the set of points where f(x, y) equals that height. Stack the shorelines for many levels and look from above: that is the contour map. Close lines mean steep ground, wide gaps mean gentle ground.{% endblock %}
+{% block try_items %}
+<li>Raise the water on the two-hills surface. When does the shoreline split in two?</li>
+<li>Switch to From above. Where are the lines closest together?</li>
+<li>Pick the saddle. What shape do the level curves have near the middle?</li>
+{% endblock %}
