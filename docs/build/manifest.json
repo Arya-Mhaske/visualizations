@@ -5446,25 +5446,25 @@
 "archetype": "discrete",
 "priority": 37,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/arithmetic-sequences/why-do-ap-terms-lie-on-a-straight-line": {
 "archetype": "phasor",
 "priority": 37,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/arithmetic-sequences/nth-term-and-sum": {
 "archetype": "stepper",
 "priority": 37,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/arithmetic-sequences/theatre-seats-and-rising-savings": {
 "archetype": "discrete",
 "priority": 37,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/geometric-sequences-series/why-the-gp-sum-formula": {
 "archetype": "phasor",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the first term, the common difference and the number of terms. The bars are the terms and the staircase shows the sum.{% endblock %}
+{% block why_text %}The nth term is aₙ = a + (n − 1)d. Pairing the first and last terms, the second and second last, and so on gives n/2 pairs each adding to a + aₙ, so Sₙ = n(a + aₙ)/2 = n[2a + (n − 1)d]/2.{% endblock %}
+{% block try_items %}
+<li>Check the sum for 3, 5, 7, … with n = 10.</li>
+<li>Make d negative.</li>
+<li>Compare n/2 × (first + last) with the sum of the bars.</li>
+{% endblock %}

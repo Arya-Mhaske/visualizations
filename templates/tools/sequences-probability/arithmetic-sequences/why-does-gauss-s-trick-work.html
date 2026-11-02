@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw 1 + 2 + … + n as a staircase. Copy it, turn it upside down and fit the two together.{% endblock %}
+{% block why_text %}The staircase and its upside-down copy fit into a rectangle n wide and n + 1 tall. The rectangle holds n(n + 1) squares, which is twice the staircase. So 1 + 2 + … + n = n(n + 1)/2. Gauss used the same pairing, first with last, second with second last, to add 1 to 100.{% endblock %}
+{% block try_items %}
+<li>Set n = 10 and count the rectangle.</li>
+<li>Set n = 100. What is the sum?</li>
+<li>Why is the rectangle n by n + 1?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A theatre has rows that each have a fixed number more seats than the one before. A saver puts away a fixed amount more each week.{% endblock %}
+{% block why_text %}Both are arithmetic progressions: the amount in row (or week) n is a + (n − 1)d, and the total is Sₙ = n[2a + (n − 1)d]/2. A theatre with 20 seats in the first row and 2 more in each row has 20 + 22 + 24 + …; savings that grow by ₹50 each week do the same.{% endblock %}
+{% block try_items %}
+<li>Count the seats for 10 rows.</li>
+<li>Switch to savings. How much is saved in 20 weeks?</li>
+<li>What if each week the increase is zero?</li>
+{% endblock %}
