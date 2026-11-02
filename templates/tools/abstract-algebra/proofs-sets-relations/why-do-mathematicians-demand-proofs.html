@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide n upwards and watch a pattern hold for 40 cases in a row, then break.{% endblock %}
+{% block why_text %}The formula n² + n + 41 gives a prime for n = 0 to 39. At n = 40 it gives 1681 = 41 × 41. Forty good cases proved nothing: only a proof covers every n.{% endblock %}
+{% block try_items %}
+<li>Slide n from 0 to 39. How many cells stay green?</li>
+<li>Set n = 40. What are the two factors of the value?</li>
+<li>Set n = 41. Why was this one always going to fail?</li>
+{% endblock %}

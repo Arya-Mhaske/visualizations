@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two integers are related when they leave the same remainder. See where every integer lands.{% endblock %}
+{% block why_text %}Each integer has exactly one remainder, so it sits in exactly one row. The rows never overlap and together they cover everything: that is a partition. Every equivalence relation does the same.{% endblock %}
+{% block try_items %}
+<li>Set m = 3. How many classes are there?</li>
+<li>Move a along the line. Does it ever sit in two rows?</li>
+<li>Change m to 5. Do the classes still cover every integer?</li>
+{% endblock %}

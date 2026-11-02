@@ -545,6 +545,12 @@ a.nb-tile.nb-tile--lavender:hover { background: var(--lavender); }
 .viz-cells[data-cols="6"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .viz-cells[data-cols="7"] { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .viz-cells[data-cols="8"] { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.viz-cells[data-cols="9"] { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+.viz-cells[data-cols="10"] { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.viz-cells[data-cols="11"] { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+.viz-cells[data-cols="12"] { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.viz-cells[data-cols="13"] { grid-template-columns: repeat(13, minmax(0, 1fr)); }
+.viz-cells--tight .viz-cell { min-height: 28px; font-size: 0.65rem; }
 .viz-cell {
   min-height: 40px; padding: 0 2px;
   display: flex; align-items: center; justify-content: center;

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose where each element of A goes and see whether the map is one-to-one, onto, both or neither.{% endblock %}
+{% block why_text %}One-to-one means no two arrows land on the same element. Onto means every element of B is hit. A bijection is both, so A and B pair up exactly.{% endblock %}
+{% block try_items %}
+<li>Set the size of B to 4 and send f(1) to f(4) to a, b, c, d. Which tick-boxes turn green?</li>
+<li>Make two arrows meet. What breaks?</li>
+<li>Make B size 3. Can the map be one-to-one? Can it be onto?</li>
+{% endblock %}

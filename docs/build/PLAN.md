@@ -560,11 +560,11 @@ it reaches the front of the queue.
 | 238 | `linear-algebra/svd-pca` | 4 | 2 | ✓ |
 | 239 | `linear-algebra/transformations-good-bases` | 5 | 2 | ✓ |
 | 240 | `linear-algebra/applications` | 8 | 2 | ✓ |
-| 241 | `abstract-algebra/proofs-sets-relations` | 3 | 2 | |
-| 242 | `abstract-algebra/the-integers` | 5 | 2 | |
-| 243 | `abstract-algebra/what-is-a-group` | 6 | 2 | |
-| 244 | `abstract-algebra/cyclic-groups` | 4 | 2 | |
-| 245 | `abstract-algebra/permutations-dihedral-groups` | 5 | 2 | |
+| 241 | `abstract-algebra/proofs-sets-relations` | 3 | 2 | ✓ |
+| 242 | `abstract-algebra/the-integers` | 5 | 2 | ✓ |
+| 243 | `abstract-algebra/what-is-a-group` | 6 | 2 | ✓ |
+| 244 | `abstract-algebra/cyclic-groups` | 4 | 2 | ✓ |
+| 245 | `abstract-algebra/permutations-dihedral-groups` | 5 | 2 | ✓ |
 | 246 | `abstract-algebra/cosets-lagrange` | 5 | 2 | |
 | 247 | `abstract-algebra/codes-cryptography` | 6 | 2 | |
 | 248 | `abstract-algebra/isomorphism-homomorphism` | 5 | 2 | |
