@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply through by the denominator to clear fractions, then check every answer in the original equation.{% endblock %}
+{% block why_text %}Multiplying both sides by an expression that can be 0 is not a reversible step: at the value that makes it 0, the new equation is true but the original is undefined. Such a value is a fake (extraneous) solution. Always check the answers in the original equation.{% endblock %}
+{% block try_items %}
+<li>Slide the probe to the value that makes the multiplier 0. What do the two sides of the original do?</li>
+<li>Which candidates survive in each equation?</li>
+{% endblock %}

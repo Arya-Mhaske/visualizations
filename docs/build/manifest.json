@@ -3609,43 +3609,43 @@
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/why-can-an-equation-have-no-solution-or-every-solution": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/why-can-clearing-fractions-create-fake-solutions": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/rearrange-any-formula": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/why-does-a-mixture-land-between-its-ingredients": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/uniform-motion-on-a-distancetime-graph": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/linear-equations-formulas/simple-interest-and-job-rate-problems": {
 "archetype": "discrete",
 "priority": 75,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/quadratic-equations/why-the-quadratic-formula": {
 "archetype": "discrete",

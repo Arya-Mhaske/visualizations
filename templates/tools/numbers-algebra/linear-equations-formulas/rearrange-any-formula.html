@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick a formula and the variable to isolate. Step through the working, one line at a time.{% endblock %}
+{% block why_text %}Rearranging uses the same idea as solving: do the same operation to both sides until the variable you want is alone. The check at the end puts numbers into both forms to prove they agree.{% endblock %}
+{% block try_items %}
+<li>Step through "v = u + at, find a". Which operation comes first, and why?</li>
+<li>Try the interest formula for r. How many steps does it need?</li>
+{% endblock %}
