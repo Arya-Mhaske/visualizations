@@ -917,25 +917,25 @@
 "archetype": "sim",
 "priority": 44,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotational-dynamics/why-are-work-dtheta-and-power": {
 "archetype": "sim",
 "priority": 44,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotational-dynamics/linear-rotational-analogy": {
 "archetype": "stepper",
 "priority": 44,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotational-dynamics/flywheel-and-cord": {
 "archetype": "sim",
 "priority": 44,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/angular-momentum/why-does-a-skater-spin-faster-with-arms-pulled-in": {
 "archetype": "phasor",

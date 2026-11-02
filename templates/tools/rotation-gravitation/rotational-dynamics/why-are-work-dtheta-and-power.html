@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Follow one particle on a rotating body. Its tangential force and its speed give the torque, the work and the power.{% endblock %}
+{% block why_text %}A force F along the circle of radius r, moved through arc r dθ, does work F r dθ = τ dθ. Divide by dt: power = F v = F r ω = τω. Linear power Fv has become torque times angular speed.{% endblock %}
+{% block try_items %}
+<li>Double the radius at the same force. What happens to the torque?</li>
+<li>Check P = Fv and P = τω agree.</li>
+<li>Increase ω.</li>
+{% endblock %}

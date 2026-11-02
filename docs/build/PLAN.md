@@ -375,7 +375,7 @@ it reaches the front of the queue.
 | 38 | `functions-graphs/lines-slope` | 10 | 1 | ✓ |
 | 39 | `rotation-gravitation/moment-of-inertia` | 5 | 1 | ✓ |
 | 40 | `conics-curves/what-are-conics` | 3 | 1 | ✓ |
-| 41 | `rotation-gravitation/rotational-dynamics` | 4 | 1 | |
+| 41 | `rotation-gravitation/rotational-dynamics` | 4 | 1 | ✓ |
 | 42 | `conics-curves/parabola` | 6 | 1 | ✓ |
 | 43 | `rotation-gravitation/angular-momentum` | 5 | 1 | |
 | 44 | `conics-curves/ellipse` | 7 | 1 | ✓ |
@@ -706,3 +706,5 @@ it reaches the front of the queue.
 - `rotation-gravitation/torque-equilibrium`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
 
 - `rotation-gravitation/moment-of-inertia`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `rotation-gravitation/rotational-dynamics`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.

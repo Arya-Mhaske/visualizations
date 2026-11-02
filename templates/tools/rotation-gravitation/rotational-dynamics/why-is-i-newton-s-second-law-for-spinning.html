@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Apply a steady torque through an angle. The work it does equals the kinetic energy gained, and that gives τ = Iα.{% endblock %}
+{% block why_text %}Work is τ dθ and the energy gained is d(½Iω²) = Iω dω. Setting them equal, τ dθ = Iω dω; and since dθ = ω dt this becomes τ = I dω/dt = Iα. Newton's second law for spinning follows from the work–energy theorem.{% endblock %}
+{% block try_items %}
+<li>Increase I. How does the energy for the same angle compare?</li>
+<li>Check that work equals ½Iω².</li>
+<li>Double τ and halve the angle.</li>
+{% endblock %}

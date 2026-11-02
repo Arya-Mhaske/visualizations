@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Press a quantity in the left column to see its partner in the rotational column.{% endblock %}
+{% block why_text %}Every linear quantity has a rotational twin: position x ↔ angle θ, velocity v ↔ ω, acceleration a ↔ α, mass m ↔ moment of inertia I, force F ↔ torque τ, momentum p ↔ angular momentum L. Equations keep their form when you swap the pairs.{% endblock %}
+{% block try_items %}
+<li>Press "mass". What is the twin?</li>
+<li>Press "F = ma".</li>
+<li>Match all ten pairs.</li>
+{% endblock %}
