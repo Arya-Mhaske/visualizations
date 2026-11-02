@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}On a flat bend, friction supplies the inward force. Raise the speed until it cannot.{% endblock %}
+{% block why_text %}Friction can be at most μₛmg. The turn needs mv²/R, which grows as the square of the speed. When mv²/R exceeds μₛmg the car slides outward. So v ≤ √(μₛRg), with no mass in the answer.{% endblock %}
+{% block try_items %}
+<li>Raise the speed. Where does the needed force cross the limit?</li>
+<li>Make the road wet (lower μₛ).</li>
+<li>Double the radius. How does v<sub>max</sub> change?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A cyclist takes a 3 m radius turn at 18 km/h on a road with μ = 0.1. Compare what the turn needs with what friction can give.{% endblock %}
+{% block why_text %}18 km/h = 5 m/s, so the turn needs v²/R = 25/3 ≈ 8.3 m/s² per kilogram. Friction can give only μg = 0.98 m/s² per kilogram. The need is far larger, so the cyclist slips.{% endblock %}
+{% block try_items %}
+<li>Check the default: does the cyclist slip?</li>
+<li>Slow down. At what speed does the cyclist hold?</li>
+<li>Widen the turn.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A race track with radius 300 m is banked at 15°. Find the speed at which no friction is needed.{% endblock %}
+{% block why_text %}tan θ = v²/(Rg) gives v = √(Rg tan θ) = √(300 × 9.8 × 0.268) ≈ 28 m/s, about 101 km/h. At that speed the normal force alone supplies the turn, so the tyres need no help from friction.{% endblock %}
+{% block try_items %}
+<li>Check 28.1 m/s at the defaults.</li>
+<li>Steepen the bank. What happens to the optimum speed?</li>
+<li>Widen the radius.</li>
+{% endblock %}
