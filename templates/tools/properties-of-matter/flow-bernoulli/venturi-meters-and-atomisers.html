@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A pipe narrows and a pressure gauge shows a drop at the neck. From the drop, find the flow rate.{% endblock %}
+{% block why_text %}From continuity and Bernoulli, P₁ − P₂ = ½ρ(v₂² − v₁²) with v₁A₁ = v₂A₂. So v₁ = A₂√(2ΔP/ρ(A₁² − A₂²)) and the flow rate is Q = A₁v₁. An atomiser uses the same low pressure at the neck to suck liquid up into the air stream.{% endblock %}
+{% block try_items %}
+<li>Raise the pressure drop. How does Q change?</li>
+<li>Make the neck narrower.</li>
+<li>Check Q against the speeds.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Trace the paths of fluid particles past an obstacle. They bend round it, but never cross.{% endblock %}
+{% block why_text %}A streamline is drawn so that its tangent is the velocity at every point. If two streamlines crossed, the fluid at the crossing point would have two different velocities at the same time, which is impossible. So streamlines never cross, and neighbouring lines squeeze together where the speed is high.{% endblock %}
+{% block try_items %}
+<li>Add more streamlines. Do any cross?</li>
+<li>Where are they closest together?</li>
+<li>Make the obstacle bigger.</li>
+{% endblock %}

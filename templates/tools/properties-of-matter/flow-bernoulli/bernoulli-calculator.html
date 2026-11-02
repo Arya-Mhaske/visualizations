@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the pressure, speed and height at point 1, and the speed and height at point 2. Read the pressure at point 2.{% endblock %}
+{% block why_text %}P₂ = P₁ + ½ρ(v₁² − v₂²) + ρg(h₁ − h₂). Pressure falls when the fluid speeds up or rises. The calculation is just the energy balance per unit volume.{% endblock %}
+{% block try_items %}
+<li>Let the speed double at the same height. By how much does P fall?</li>
+<li>Raise the second point.</li>
+<li>Make the speeds equal. What is P₂?</li>
+{% endblock %}

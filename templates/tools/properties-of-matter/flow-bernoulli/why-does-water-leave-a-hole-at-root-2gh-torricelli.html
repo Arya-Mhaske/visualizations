@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Poke a hole in a tank at depth h. The water leaves with the speed it would have after falling h, v = √(2gh).{% endblock %}
+{% block why_text %}A little parcel of water at the surface falls to the hole level and gains kinetic energy ½mv² = mgh, so v = √(2gh). Bernoulli gives the same. The jet then flies like a projectile, so its range depends on the hole\'s height above the ground as well: it is largest for a hole halfway down.{% endblock %}
+{% block try_items %}
+<li>Move the hole lower. What happens to the speed?</li>
+<li>Find the depth that gives the longest range.</li>
+<li>Compare a hole at depth H/4 and 3H/4.</li>
+{% endblock %}

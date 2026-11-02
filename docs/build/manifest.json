@@ -1277,55 +1277,55 @@
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/why-do-streamlines-never-cross": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/why-is-bernoulli-just-energy-conservation": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/fast-air-means-low-pressure-but-when-is-that-misused": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/bernoulli-calculator": {
 "archetype": "stepper",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/why-does-water-leave-a-hole-at-root-2gh-torricelli": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/venturi-meters-and-atomisers": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/a-narrowed-artery": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/why-does-a-spinning-ball-swing-dynamic-lift": {
 "archetype": "sim",
 "priority": 64,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/viscosity/why-does-honey-flow-slower-than-water": {
 "archetype": "sim",

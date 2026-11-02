@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A fatty deposit narrows an artery. The blood must speed up through the narrowing, and the pressure there drops.{% endblock %}
+{% block why_text %}By continuity v₂ = v₁(A₁/A₂), so a narrowing to half the radius makes the blood four times as fast. By Bernoulli the pressure drops by ½ρ(v₂² − v₁²). The drop falls on the artery wall at the narrowing, which can make it collapse and so restrict flow even more.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>This uses a simple steady-flow model with no viscosity. Real blood flow is more complicated.</p></div>{% endblock %}
+{% block try_items %}
+<li>Narrow the artery to half its radius. How much faster is the blood?</li>
+<li>How large is the pressure drop?</li>
+<li>Narrow it further.</li>
+{% endblock %}

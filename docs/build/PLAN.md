@@ -395,7 +395,7 @@ it reaches the front of the queue.
 | 58 | `derivatives/trig-derivatives` | 4 | 1 | ✓ |
 | 59 | `properties-of-matter/pressure-pascal` | 9 | 1 | ✓ |
 | 60 | `sequences-probability/statistics-measuring-spread` | 9 | 1 | |
-| 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | |
+| 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | ✓ |
 | 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
 | 63 | `properties-of-matter/viscosity` | 5 | 1 | ✓ |
 | 64 | `numbers-algebra/number-systems` | 11 | 1 | ✓ |
@@ -726,3 +726,5 @@ it reaches the front of the queue.
 - `properties-of-matter/elastic-moduli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
 
 - `properties-of-matter/pressure-pascal`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `properties-of-matter/flow-bernoulli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.

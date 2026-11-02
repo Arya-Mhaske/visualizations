@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squeeze the pipe and watch the speed. The amount of water passing each point per second must stay the same.{% endblock %}
+{% block why_text %}Water cannot pile up or vanish, so the volume passing per second, A v, is the same at every cross-section: A₁v₁ = A₂v₂. Where the pipe narrows (smaller A) the water must go faster. For an incompressible fluid this is the continuity equation.{% endblock %}
+{% block try_items %}
+<li>Halve the diameter. By what factor does the speed grow?</li>
+<li>Widen the pipe. What happens?</li>
+<li>Check that Av stays constant.</li>
+{% endblock %}
