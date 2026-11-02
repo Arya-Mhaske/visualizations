@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Write the relation, differentiate in t, then substitute the numbers.{% endblock %}
+{% block why_text %}Put numbers in only after differentiating. Before that the quantities change; after, each rate is a number at one instant.{% endblock %}
+{% block try_items %}
+<li>Run all steps for the ladder. Which step uses the chain rule?</li>
+<li>Change the ripple radius. Does dA/dt change?</li>
+<li>Why does the ladder answer come out negative?</li>
+{% endblock %}

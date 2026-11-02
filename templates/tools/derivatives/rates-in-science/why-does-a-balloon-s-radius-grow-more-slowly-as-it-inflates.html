@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pump air in at a steady rate and watch the radius.{% endblock %}
+{% block why_text %}The same volume of air spreads over a bigger surface, so it adds a thinner shell. The rate of change of the radius is dV/dt divided by 4πr², which falls as r grows.{% endblock %}
+{% block try_items %}
+<li>Double the air rate. What happens to dr/dt at one radius?</li>
+<li>Compare the ring gaps near the centre and near the edge.</li>
+<li>At what time is dr/dt half its value at t = 1?</li>
+{% endblock %}

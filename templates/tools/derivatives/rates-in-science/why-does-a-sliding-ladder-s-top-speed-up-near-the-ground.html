@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pull the foot of a 5 m ladder out at a steady speed and watch the top.{% endblock %}
+{% block why_text %}The top moves at (x/y) times the foot speed. As the top nears the ground, y gets small, so x/y blows up and the top speeds up without limit.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> In a real ladder the top leaves the wall before it reaches the ground, so the speed never actually becomes infinite.</div>{% endblock %}
+{% block try_items %}
+<li>Set the foot at 3 m. How much faster is the top than the foot?</li>
+<li>Move the foot to 4.9 m. What is the top speed now?</li>
+<li>Halve the foot speed. What happens to the top speed?</li>
+{% endblock %}
