@@ -1181,43 +1181,43 @@
 "archetype": "sim",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-do-only-solids-have-young-s-and-shear-moduli": {
 "archetype": "space3d",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-is-air-about-a-million-times-easier-to-squeeze-than-stee": {
 "archetype": "sim",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-does-a-stretched-wire-get-thinner-poisson": {
 "archetype": "sim",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/young-s-modulus-from-a-wire-experiment": {
 "archetype": "stepper",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-are-beams-i-shaped-and-cables-so-thick": {
 "archetype": "sim",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-can-t-mountains-be-much-taller-than-about-10-km": {
 "archetype": "sim",
 "priority": 60,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-does-a-needle-pierce-skin-but-a-spoon-doesn-t": {
 "archetype": "sim",

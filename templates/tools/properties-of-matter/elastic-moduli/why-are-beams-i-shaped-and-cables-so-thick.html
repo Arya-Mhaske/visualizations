@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two designs that respect elasticity: a beam shaped to resist bending with little material, and a cable sized so that the stress stays well below breaking.{% endblock %}
+{% block why_text %}A beam bends least if its material is far from the centre line, where the strains are largest: an I-beam puts the metal in the flanges, giving a large second moment of area for the same weight. A cable must carry the load with a stress below the breaking stress by a safety factor, so A = F × (safety factor)/(breaking stress).{% endblock %}
+{% block try_items %}
+<li>Compare the deflections of the three beams.</li>
+<li>Raise the load on the cable. How thick must it be?</li>
+<li>Raise the safety factor.</li>
+{% endblock %}

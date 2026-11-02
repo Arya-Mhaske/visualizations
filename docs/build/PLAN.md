@@ -391,7 +391,7 @@ it reaches the front of the queue.
 | 54 | `derivatives/what-is-a-derivative` | 7 | 1 | |
 | 55 | `properties-of-matter/stress-strain` | 7 | 1 | ✓ |
 | 56 | `derivatives/differentiation-rules` | 7 | 1 | ✓ |
-| 57 | `properties-of-matter/elastic-moduli` | 7 | 1 | |
+| 57 | `properties-of-matter/elastic-moduli` | 7 | 1 | ✓ |
 | 58 | `derivatives/trig-derivatives` | 4 | 1 | ✓ |
 | 59 | `properties-of-matter/pressure-pascal` | 9 | 1 | |
 | 60 | `sequences-probability/statistics-measuring-spread` | 9 | 1 | |
@@ -722,3 +722,5 @@ it reaches the front of the queue.
 - `rotation-gravitation/satellites`: constants and orbit helpers in `_rg.js` (period at the surface 84.4 min, escape speeds 11.19 and 2.38 km/s, geostationary height 35 786 km). Built without screenshots or tests, by request.
 
 - `properties-of-matter/stress-strain`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `properties-of-matter/elastic-moduli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
