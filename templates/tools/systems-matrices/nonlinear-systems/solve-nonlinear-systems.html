@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Use substitution or elimination on systems where one equation is not a straight line.{% endblock %}
+{% block why_text %}If one equation is linear, solve it for one unknown and substitute: the other equation becomes a single quadratic. If both equations are quadratic, use elimination, or factorise a difference of squares. Each solution is a point where the curves cross, so you can check the count against a graph.{% endblock %}
+{% block try_items %}
+<li>Pick x² + y² = 25 and x − y = 1. How many solutions does the circle give?</li>
+<li>Pick x² − y² = 7, x + y = 7. Which trick makes it linear?</li>
+<li>Check each solution in both original equations.</li>
+{% endblock %}

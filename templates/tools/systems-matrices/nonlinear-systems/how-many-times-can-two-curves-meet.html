@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Move a line across a circle, or two conics over each other, and count the meeting points.{% endblock %}
+{% block why_text %}A line and a circle give a quadratic equation, which has 0, 1 or 2 solutions: the line misses, touches, or cuts the circle. Two conics have degree 2 each, so they can meet in at most 2 × 2 = 4 points. This is a case of a theorem of Bézout. Fewer meetings are possible, and so is the full 4.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The 'at most 4' is Bézout's theorem for two curves of degree 2. It counts points in the complex plane too, so some of them may not be visible on the graph.</div>{% endblock %}
+{% block try_items %}
+<li>Slide the line until it just touches the circle. How many points are there?</li>
+<li>Move the circle until the ellipse and circle meet four times.</li>
+<li>Find a position where the circle and parabola meet three times.</li>
+{% endblock %}

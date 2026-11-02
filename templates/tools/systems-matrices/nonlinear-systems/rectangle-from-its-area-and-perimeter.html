@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the sides of a rectangle from its area and perimeter by crossing a hyperbola with a line.{% endblock %}
+{% block why_text %}The area gives xy = A, a hyperbola. The perimeter gives x + y = P/2, a straight line. The sides are the coordinates of a crossing point. Eliminating y gives t² − (P/2)t + A = 0. It has real roots only if (P/2)² ≥ 4A. A square gives exactly one touching point.{% endblock %}
+{% block try_items %}
+<li>Choose area 16 and perimeter 16. What rectangle is it?</li>
+<li>Make the area larger until the line misses the curve. What does that mean?</li>
+<li>Which area gives a square for perimeter 20?</li>
+{% endblock %}
