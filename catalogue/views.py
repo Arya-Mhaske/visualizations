@@ -10,7 +10,7 @@ from django.views.decorators.gzip import gzip_page
 from .models import Tile
 from .paths import LiveChecker, tool_template_name
 
-ACCENTS = ['yellow', 'coral', 'sky', 'green', 'orange', 'lavender']
+ACCENTS = ['hotpink', 'rosegold', 'teal', 'dust', 'amber', 'crimson']
 TAG_ORDER = {'WHY': 0, 'HOW': 1, 'APP': 2}
 KINDS = [Tile.SUBJECT, Tile.BOX, Tile.TOOL]
 
@@ -52,6 +52,7 @@ def _grid_items(tiles, live):
         item = {'tile': tile, 'num': i + 1, 'url': tile.url}
         if tile.kind == Tile.TOOL:
             item['is_live'] = live(tile)
+            item['accent'] = ACCENTS[i % len(ACCENTS)]
             item['aids'] = _plural(tile.count, 'aid') if tile.count else ''
         else:
             item['accent'] = ACCENTS[i % len(ACCENTS)]

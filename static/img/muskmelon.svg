@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MuskMelon">
   <!-- Original mark: a half muskmelon slice. Colours mirror brutal.css tokens (orange, green, ink, paper);
        an SVG favicon cannot read CSS variables, so this file is the one allowed exception to the no-hex rule. -->
-  <g transform="translate(0 6)">
+  <g transform="translate(0 -7)">
   <path d="M5 26 A27 27 0 0 0 59 26 Z" fill="#88D498" stroke="#000" stroke-width="3" stroke-linejoin="miter"/>
   <path d="M11 26 A21 21 0 0 0 53 26 Z" fill="#FFA552" stroke="#000" stroke-width="3" stroke-linejoin="miter"/>
   <path d="M21 26 A11 11 0 0 0 43 26 Z" fill="#FFFDF5" stroke="#000" stroke-width="3"/>

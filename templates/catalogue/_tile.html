@@ -1,6 +1,7 @@
 {% with t=item.tile %}
 {% if t.kind == "tool" %}
-<a class="nb-tile{% if not item.is_live %} is-soon{% endif %}" href="{{ item.url }}">
+<a class="nb-tile{% if item.is_live %} nb-tile--{{ item.accent }}{% else %} is-soon{% endif %}" href="{{ item.url }}">
+  <span class="nb-tile__num">{{ item.num|stringformat:"02d" }}</span>
   <h2 class="nb-tile__title">{{ t.title }}</h2>
 </a>
 {% else %}

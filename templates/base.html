@@ -18,6 +18,7 @@
   {% block head_extra %}{% endblock %}
 </head>
 <body>
+  {% if not is_landing %}
   <header class="nb-nav">
     <div class="nb-container nb-nav__inner">
       <a class="nb-logo" href="/" aria-label="{{ site_name }} home">{% brand_mark %}<span class="nb-logo__word">{{ site_name }}</span></a>
@@ -43,6 +44,7 @@
       {% endif %}
     </div>
   </header>
+  {% endif %}
 
   {% block main %}
   <main>

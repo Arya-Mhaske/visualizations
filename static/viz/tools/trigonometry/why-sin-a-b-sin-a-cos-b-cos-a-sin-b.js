@@ -28,11 +28,29 @@ createTool({
     line(ctx, ...Qf, ...Q, { color: c.grid, width: 2, dash: [5, 4] });
     dot(ctx, ...P, 7, c.d, c.ink);
     dot(ctx, ...Q, 5, c.fillY, c.ink, 2);
-    label(ctx, '1', (O[0] + P[0]) / 2 - 14, (O[1] + P[1]) / 2 - 8, c, { size: 11, color: c.d, bounds: stage, patch: false });
-    label(ctx, 'cos B', (O[0] + Q[0]) / 2 + 6, (O[1] + Q[1]) / 2 + 14, c, { size: 10, bounds: stage, patch: false });
-    label(ctx, 'sin B', (Q[0] + P[0]) / 2 - 24, (Q[1] + P[1]) / 2 - 4, c, { size: 10, bounds: stage, patch: false });
-    label(ctx, 'cos B sin A', Pf[0] + 8, (Pf[1] + S[1]) / 2, c, { size: 10, align: 'left', color: c.a, bounds: stage, patch: false });
-    label(ctx, 'sin B cos A', Pf[0] + 8, (S[1] + P[1]) / 2, c, { size: 10, align: 'left', color: c.b, bounds: stage, patch: false });
+    // Slanted sides: label sits on the outer side of the side, away from the middle of the figure.
+    const mid = [(O[0] + Q[0] + P[0]) / 3, (O[1] + Q[1] + P[1]) / 3];
+    const outside = (a, b, gap, flip = 1) => {
+      const [mx, my] = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+      const [dx, dy] = [b[1] - a[1], a[0] - b[0]];
+      const n = Math.hypot(dx, dy) || 1;
+      const s = (mx - mid[0]) * dx + (my - mid[1]) * dy >= 0 ? flip : -flip;
+      return [mx + (s * dx * gap) / n, my + (s * dy * gap) / n];
+    };
+    const tag = (text, [x, y], color) => label(ctx, text, x, y, c, { size: 11, color, bounds: stage });
+    tag('1', outside(O, P, 12), c.d);
+    tag('cos B', outside(O, Q, 14, -1), c.ink);
+    tag('sin B', outside(Q, P, 22), c.ink);
+    // Vertical pieces: labels in a clear column to the right of both triangles, kept apart.
+    const colX = Math.max(Pf[0], Qf[0], S[0]) + 12;
+    let yLow = (Pf[1] + S[1]) / 2;
+    let yHigh = (S[1] + P[1]) / 2;
+    if (yLow - yHigh < 16) {
+      const m = (yLow + yHigh) / 2;
+      [yHigh, yLow] = [m - 8, m + 8];
+    }
+    label(ctx, 'cos B sin A', colX, yLow, c, { size: 11, align: 'left', color: c.a, bounds: stage });
+    label(ctx, 'sin B cos A', colX, yHigh, c, { size: 11, align: 'left', color: c.b, bounds: stage });
   },
   controls: [
     { title: 'Stack the triangles' },
