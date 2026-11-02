@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heat capacity per gram looks all over the place. Count atoms instead, and every metal agrees.{% endblock %}
+{% block why_text %}In a solid each atom is a tiny 3D oscillator, held by springs to its neighbours. It has 3 kinetic and 3 potential energy terms. Each holds ½kT, so an atom stores 3kT and a mole stores 3RT. So C ≈ 3R = 24.9 J/mol·K, whatever the metal. Lead only looks cheaper to warm because its atoms are heavy, so a gram contains fewer of them.{% endblock %}
+{% block try_items %}
+<li>View per gram. How big is the spread from highest to lowest?</li>
+<li>Switch to per mole. How big is it now?</li>
+<li>Which metal is furthest from 3R, and by how much?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>This is the Dulong–Petit law. It fails for very cold solids and for light, hard ones like diamond at room temperature. Values are rounded near room temperature.</div>{% endblock %}

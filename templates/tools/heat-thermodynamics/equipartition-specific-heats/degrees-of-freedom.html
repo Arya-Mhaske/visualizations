@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Count the degrees of freedom of a molecule and read off Cᵥ, Cₚ and γ.{% endblock %}
+{% block why_text %}Each degree of freedom adds ½R to Cᵥ, and Cₚ = Cᵥ + R. So γ = 1 + 2/f: 5/3 for a single atom (f = 3), 7/5 for a rigid diatomic molecule (f = 5), and 4/3 for a non-linear polyatomic (f = 6). Air is mostly diatomic, so γ ≈ 1.4.{% endblock %}
+{% block try_items %}
+<li>Choose He, then N₂. How do f and γ change?</li>
+<li>Choose H₂O (rotating about three axes). What is γ?</li>
+<li>Add a vibration to N₂. What does it do to γ? Does air really behave that way at room temperature?</li>
+{% endblock %}

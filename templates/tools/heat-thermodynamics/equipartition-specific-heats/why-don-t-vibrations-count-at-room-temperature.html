@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Warm a gas from very cold to very hot and watch which kinds of motion switch on.{% endblock %}
+{% block why_text %}A vibration can only take energy in lumps of size hf, which is large for a stiff molecular bond. At room temperature collisions have only about kT = 0.026 eV, too little to excite the vibration of H₂ or N₂, so those degrees of freedom stay frozen. Only at high temperature (or for a loose bond, like Cl₂) do they start to count. Classical equipartition cannot explain this: quantum physics does.{% endblock %}
+{% block try_items %}
+<li>Choose N₂. What is Cᵥ/R at 300 K? Is vibration counting?</li>
+<li>Choose Cl₂, a loosely bound molecule. How much does vibration add at 300 K?</li>
+<li>Raise T to 3000 K. Where does Cᵥ/R head for N₂?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The vibration term is the exact Einstein formula for one mode, using θ = 6215 K (H₂), 3374 K (N₂) and 805 K (Cl₂). The rotation switch-on at low T is a smooth illustrative curve.</div>{% endblock %}

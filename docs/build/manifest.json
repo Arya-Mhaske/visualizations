@@ -1739,31 +1739,31 @@
 "archetype": "sim",
 "priority": 88,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/equipartition-specific-heats/why-is-cv-3-2-r-for-helium-but-5-2-r-for-nitrogen": {
 "archetype": "sim",
 "priority": 88,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/equipartition-specific-heats/why-do-solids-have-c-3r": {
 "archetype": "space3d",
 "priority": 88,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/equipartition-specific-heats/why-don-t-vibrations-count-at-room-temperature": {
 "archetype": "sim",
 "priority": 88,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/equipartition-specific-heats/degrees-of-freedom": {
 "archetype": "stepper",
 "priority": 88,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/mean-free-path/why-does-a-smell-take-time-to-cross-a-room": {
 "archetype": "sim",

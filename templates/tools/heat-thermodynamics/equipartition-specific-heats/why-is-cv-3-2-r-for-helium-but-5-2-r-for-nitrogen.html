@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Count the ways each molecule can store energy, and compare with measured heat capacities.{% endblock %}
+{% block why_text %}A single atom (helium) can only move in three directions: f = 3, so Cᵥ = (3/2)R. A diatomic molecule (nitrogen) can also spin about two axes: f = 5, so Cᵥ = (5/2)R. Each degree of freedom holds ½kT per molecule, so ½R per mole. The measured values agree, but only if vibration is left out.{% endblock %}
+{% block try_items %}
+<li>Check helium and argon. Does f = 3 match the measured values?</li>
+<li>Pick nitrogen. Does f = 5 match?</li>
+<li>Switch on vibration for nitrogen. Does the prediction get better or worse?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>Carbon dioxide has a measured Cᵥ above (5/2)R: some of its vibrations do count near room temperature. Values are rounded, near room temperature.</div>{% endblock %}

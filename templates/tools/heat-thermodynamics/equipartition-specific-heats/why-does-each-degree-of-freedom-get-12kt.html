@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Start with all the energy in translation. Let the molecules collide and watch where it goes.{% endblock %}
+{% block why_text %}Collisions shuffle energy between every kind of motion, with no favourite. After enough collisions each quadratic term (each degree of freedom) holds the same average energy, ½kT. So a molecule with f degrees of freedom holds f × ½kT. This is the law of equipartition of energy.{% endblock %}
+{% block try_items %}
+<li>Choose Diatomic. Press Play. How long before the bars level out?</li>
+<li>Choose "Diatomic, vibrating". Is the share per slot smaller or larger?</li>
+<li>Does any kind of motion keep more than its share?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>120 molecules with a random split of energy at each collision. A vibration counts as two slots, because it has a kinetic and a potential term. Units are such that each molecule starts with 3.</div>{% endblock %}
