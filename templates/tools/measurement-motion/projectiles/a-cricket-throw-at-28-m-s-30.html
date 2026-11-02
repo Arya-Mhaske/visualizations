@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A fielder throws at 28 m/s at 30° above the horizontal. Follow the ball.{% endblock %}
+{% block why_text %}The vertical part of the velocity is 28 sin 30° = 14 m/s, giving a highest point of 14²/(2 × 9.8) = 10 m. The ball lands after T = 2 × 14/9.8 ≈ 2.9 s, having moved 28 cos 30° × 2.9 ≈ 69 m sideways.{% endblock %}
+{% block try_items %}
+<li>Slide time to the top of the path. What is the vertical velocity there?</li>
+<li>Check the 10 m and 69 m.</li>
+<li>Change the angle to 45°. Is the range longer?</li>
+{% endblock %}

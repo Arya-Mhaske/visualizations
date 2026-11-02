@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Write x and y in terms of time, then remove the time.{% endblock %}
+{% block why_text %}From x = v cos θ · t, put t = x/(v cos θ) into y = v sin θ · t − ½gt². The result is y = x tan θ − kx², with k = g/(2v² cos² θ): a parabola, since y is a quadratic in x.{% endblock %}
+{% block try_items %}
+<li>Make θ = 0. What does the equation become?</li>
+<li>Increase v. What happens to k and to the curve?</li>
+<li>Read tan θ and k, and check the equation.</li>
+{% endblock %}

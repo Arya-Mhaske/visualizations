@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fix the launch speed and sweep the angle. The range follows a sine curve.{% endblock %}
+{% block why_text %}R = v² sin 2θ / g. The sine is largest when 2θ = 90°, so θ = 45°. Lower angles waste speed going sideways only briefly; higher angles waste it going up.{% endblock %}
+{% block try_items %}
+<li>Slide θ from 5° to 85°. Where is the top of the curve?</li>
+<li>Compare the path at 45° with yours.</li>
+<li>What is the largest range for v = 20 m/s?</li>
+{% endblock %}

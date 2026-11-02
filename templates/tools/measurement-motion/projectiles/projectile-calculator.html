@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give the launch speed, angle and height. Read the time of flight, the highest point and the range.{% endblock %}
+{% block why_text %}T = (v sin θ + √(v² sin² θ + 2gh))/g, H = h + v² sin² θ / 2g and R = v cos θ · T. From the ground (h = 0) these reduce to the familiar 2v sin θ/g, v² sin² θ/2g and v² sin 2θ/g.{% endblock %}
+{% block try_items %}
+<li>Set h = 0 and θ = 30°. Check the three formulas.</li>
+<li>Raise the launch height. Which result changes most?</li>
+<li>Which launch angle gives the longest range from a height?</li>
+{% endblock %}

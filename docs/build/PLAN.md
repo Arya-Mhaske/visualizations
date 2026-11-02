@@ -343,7 +343,7 @@ it reaches the front of the queue.
 | 6 | `functions-graphs/what-is-a-function` | 8 | 1 | ✓ |
 | 7 | `measurement-motion/vectors` | 7 | 1 | ✓ |
 | 8 | `functions-graphs/properties-library` | 7 | 1 | ✓ |
-| 9 | `measurement-motion/projectiles` | 9 | 1 | |
+| 9 | `measurement-motion/projectiles` | 9 | 1 | ✓ |
 | 10 | `trigonometry/similar-triangles` | 7 | 1 | ✓ |
 | 11 | `measurement-motion/circular-motion` | 7 | 1 | |
 | 12 | `trigonometry/right-triangle-ratios` | 12 | 1 | ✓ |
@@ -670,3 +670,5 @@ it reaches the front of the queue.
 - `measurement-motion/uniform-acceleration` (8 tools): maths is inline per tool. - `lib/quick.js` (new, documented in its header): `G`, `bars`, `vec`, `fitPath` (near equal-scale window for trajectories), `box`. Used by the quick mechanics boxes. Built without screenshots or tests, by request.
 
 - `measurement-motion/vectors` (7 tools): inline maths; the boat tool measures heading from downstream. Built without screenshots or tests.
+
+- `measurement-motion/projectiles` (9 tools): `_proj.js` (`pos`, `vel`, `flightTime`, `range`, `peak`, all with an optional launch height; checked 10 m and 69.3 m for 28 m/s at 30 degrees). Built without screenshots or tests.

@@ -251,55 +251,55 @@
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/why-is-a-projectile-s-path-a-parabola": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/why-does-45-give-the-longest-range": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/why-do-45-give-equal-ranges-galileo": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/why-is-velocity-always-tangent-to-the-path": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/same-gravity-straight-line-or-parabola": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/projectile-calculator": {
 "archetype": "stepper",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/a-cricket-throw-at-28-m-s-30": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/projectiles/a-stone-thrown-off-a-490-m-cliff": {
 "archetype": "sim",
 "priority": 12,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/circular-motion/why-is-there-acceleration-at-constant-speed": {
 "archetype": "sim",
