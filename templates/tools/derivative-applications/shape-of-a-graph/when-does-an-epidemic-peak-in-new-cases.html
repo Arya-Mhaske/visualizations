@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Find the inflection point of a logistic curve.{% endblock %}
+{% block why_text %}New cases per day are the slope of the total. They peak where the total is steepest, at its inflection point, where C = K/2 (f″ = 0).{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The numbers are made up to show the shapes.</div>{% endblock %}
+{% block try_items %}
+<li>Raise the spread rate r. How do the peak height and day change?</li>
+<li>Move the midpoint t₀. What moves?</li>
+<li>What is C at the peak?</li>
+{% endblock %}
