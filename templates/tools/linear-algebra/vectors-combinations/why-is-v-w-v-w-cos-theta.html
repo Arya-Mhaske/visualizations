@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn w round v and watch how long the shadow of w on v becomes.{% endblock %}
+{% block why_text %}Drop a perpendicular from the tip of w onto the line of v. The shadow has length |w| cos θ. Multiplying that by |v| gives |v||w| cos θ, and it matches v·w worked out from the coordinates. The dot product is how much of w lies along v, times how long v is.{% endblock %}
+{% block try_items %}
+<li>Set θ = 90°. What is the dot product, and what is the shadow?</li>
+<li>Set θ = 180°. Why is the dot product negative?</li>
+<li>Make w longer. What happens to the shadow and the dot product?</li>
+{% endblock %}

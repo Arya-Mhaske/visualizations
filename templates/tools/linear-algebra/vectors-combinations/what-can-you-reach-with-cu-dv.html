@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Mix two vectors with the sliders c and d and see which points you can reach. Then turn one onto the line of the other.{% endblock %}
+{% block why_text %}Every point c u + d v is a mix of the two vectors. If u and v point in different directions, the mixes fill the whole plane. If v lies along u, every mix lies on one line. The same is true in 3D: a third vector w adds a new direction only if it leaves the plane of u and v. The set of all mixes is the column space of the matrix [u v w].{% endblock %}
+{% block try_items %}
+<li>Slide the direction of v until the dots collapse to a line. What angle is that?</li>
+<li>In 3D, set the height of w to 0. What shape is the cloud now?</li>
+<li>Reach the point (0, 0) with c and d not both zero, if you can. When is that possible?</li>
+{% endblock %}

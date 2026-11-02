@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build Ax by going x₁ times along column 1, then x₂ times along column 2.{% endblock %}
+{% block why_text %}Multiplying A by x can be done row by row, but it can also be done by columns: Ax = x₁ (column 1) + x₂ (column 2). So the outputs Ax are exactly the combinations of the columns of A. This is why the column space is the set of all Ax.{% endblock %}
+{% block try_items %}
+<li>Set x = (1, 0). Which column do you get?</li>
+<li>Make the two columns point the same way. Which outputs can you reach?</li>
+<li>Check that the rows-times-x readout matches the column picture every time.</li>
+{% endblock %}

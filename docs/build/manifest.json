@@ -8503,367 +8503,367 @@
 "archetype": "discrete",
 "priority": 232,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/vectors-combinations/why-is-v-w-v-w-cos-theta": {
 "archetype": "discrete",
 "priority": 232,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/vectors-combinations/why-can-t-v-w-exceed-v-w": {
 "archetype": "discrete",
 "priority": 232,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/vectors-combinations/why-is-ax-a-combination-of-a-s-columns": {
 "archetype": "discrete",
 "priority": 232,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/vectors-combinations/unit-vectors-and-normalising": {
 "archetype": "discrete",
 "priority": 232,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/row-picture-versus-column-picture": {
 "archetype": "discrete",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/why-does-elimination-fail-and-when-does-a-row-swap-rescue-it": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/why-is-elimination-the-same-as-a-lu": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/elimination-matrices": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/transposes-and-permutations": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/elimination-lu/why-do-computers-pick-the-largest-pivot": {
 "archetype": "discrete",
 "priority": 233,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/matrix-multiplication-inverses/four-ways-to-multiply-ab": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 234,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/matrix-multiplication-inverses/why-is-ab-1-b1a1": {
 "archetype": "discrete",
 "priority": 234,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/matrix-multiplication-inverses/why-does-a-zero-combination-of-columns-kill-the-inverse": {
 "archetype": "discrete",
 "priority": 234,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/matrix-multiplication-inverses/gaussjordan-for-a1": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 234,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/what-is-a-subspace": {
 "archetype": "space3d",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/why-is-every-solution-of-ax-b-particular-nullspace": {
 "archetype": "discrete",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/why-do-independent-columns-mean-a-unique-solution": {
 "archetype": "chance",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/why-is-the-dimension-the-number-of-pivots": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/why-is-the-row-space-the-nullspace": {
 "archetype": "discrete",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/find-all-four-subspaces": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/the-four-subspaces/basis-and-dimension": {
 "archetype": "stepper",
 "priority": 235,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/orthogonality-projections/why-is-projection-the-closest-point": {
 "archetype": "discrete",
 "priority": 236,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/orthogonality-projections/why-is-p2-p": {
 "archetype": "discrete",
 "priority": 236,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/orthogonality-projections/why-do-orthonormal-bases-make-everything-easy": {
 "archetype": "discrete",
 "priority": 236,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/orthogonality-projections/gramschmidt": {
 "archetype": "space3d",
 "priority": 236,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/least-squares/why-does-atax-atb-give-the-best-fit": {
 "archetype": "discrete",
 "priority": 237,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/least-squares/why-are-the-errors-the-columns": {
 "archetype": "discrete",
 "priority": 237,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/least-squares/fit-lines-and-parabolas": {
 "archetype": "stepper",
 "priority": 237,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/least-squares/weighted-least-squares": {
 "archetype": "discrete",
 "priority": 237,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/determinants/why-is-det-the-volume-scale-factor": {
 "archetype": "discrete",
 "priority": 238,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/determinants/why-do-the-three-basic-properties-decide-everything": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 238,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/determinants/why-is-det-ab-det-a-det-b": {
 "archetype": "discrete",
 "priority": 238,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/determinants/permutations-and-cofactors": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 238,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/determinants/cramer-s-rule-and-a1-from-cofactors": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 238,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/which-vectors-keep-their-direction": {
 "archetype": "discrete",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/why-is-det-a-i-0-the-eigenvalue-test": {
 "archetype": "discrete",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/why-do-powers-ak-become-easy": {
 "archetype": "discrete",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/why-do-fibonacci-numbers-grow-like-1-618n": {
 "archetype": "discrete",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/find-eigenvalues-and-eigenvectors": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/eigenvalues/systems-of-differential-equations": {
 "archetype": "discrete",
 "priority": 239,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/symmetric-positive-definite/why-do-symmetric-matrices-have-perpendicular-eigenvectors": {
 "archetype": "discrete",
 "priority": 240,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/symmetric-positive-definite/why-is-positive-definite-a-bowl": {
 "archetype": "space3d",
 "priority": 240,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/symmetric-positive-definite/five-tests-for-positive-definite": {
 "archetype": "discrete",
 "priority": 240,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/svd-pca/why-is-every-matrix-rotate-stretch-rotate": {
 "archetype": "discrete",
 "priority": 241,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/svd-pca/why-can-a-few-singular-values-rebuild-an-image": {
 "archetype": "discrete",
 "priority": 241,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/svd-pca/bases-in-the-svd": {
 "archetype": "stepper",
 "priority": 241,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/svd-pca/principal-component-analysis": {
 "archetype": "chance",
 "priority": 241,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/transformations-good-bases/what-makes-a-transformation-linear": {
 "archetype": "discrete",
 "priority": 242,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/transformations-good-bases/why-does-every-linear-map-have-a-matrix": {
 "archetype": "discrete",
 "priority": 242,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/transformations-good-bases/why-does-a-good-basis-make-the-matrix-simple": {
 "archetype": "discrete",
 "priority": 242,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/transformations-good-bases/hermitian-and-unitary-matrices": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 242,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/transformations-good-bases/the-fast-fourier-transform": {
 "archetype": "discrete",
 "priority": 242,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/why-does-a-markov-chain-settle-down": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/why-are-ill-conditioned-systems-dangerous": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/graphs-and-networks": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/springs-and-trusses-k-atca": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/fourier-series-as-linear-algebra": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/computer-graphics-with-4-x-4-matrices": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/matrix-cryptography": {
-"archetype": "discrete",
+"archetype": "stepper",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "linear-algebra/applications/covariance-matrices": {
 "archetype": "discrete",
 "priority": 243,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "abstract-algebra/proofs-sets-relations/why-do-mathematicians-demand-proofs": {
 "archetype": "discrete",

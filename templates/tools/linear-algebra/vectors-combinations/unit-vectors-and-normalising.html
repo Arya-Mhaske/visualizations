@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Divide a vector by its length and see its tip land on the unit circle.{% endblock %}
+{% block why_text %}Dividing v by |v| keeps the direction of v and changes the length to 1. Its tip lands exactly on the unit circle, so it is a unit vector. This is how any direction can be described with a vector of length 1. The zero vector has no direction, so it cannot be normalised.{% endblock %}
+{% block try_items %}
+<li>Make v longer. Does the unit vector change?</li>
+<li>Set v = (3, 4). What is the unit vector?</li>
+<li>Make v the zero vector. What goes wrong?</li>
+{% endblock %}

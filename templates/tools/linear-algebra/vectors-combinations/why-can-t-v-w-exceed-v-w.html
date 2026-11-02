@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn w and watch its shadow on v stay inside the circle of w.{% endblock %}
+{% block why_text %}The shadow of w on the line of v is one side of a right triangle whose longest side is w itself. A shorter side can never be longer than the longest side. So |v·w| = |v| × shadow ≤ |v||w|. The two are equal only when w lies along v, where the shadow is all of w.{% endblock %}
+{% block try_items %}
+<li>Find a direction of w where the shadow is as long as it can be. What is v·w then?</li>
+<li>Turn w a quarter-turn from v. How long is the shadow?</li>
+<li>Does the ratio |v·w| ÷ |v||w| ever go above 1?</li>
+{% endblock %}
