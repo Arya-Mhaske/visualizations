@@ -5681,55 +5681,55 @@
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-use-x-x-in-mean-deviation": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-square-the-deviations-variance": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-does-sd-have-the-data-s-units": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-does-adding-a-constant-leave-the-sd-alone-but-scaling-mu": {
 "archetype": "discrete",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-is-mean-deviation-smallest-about-the-median": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/variance-shortcut-x2-n-x2": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/grouped-data-with-step-deviation": {
 "archetype": "discrete",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/fix-a-wrong-observation": {
 "archetype": "chance",
 "priority": 63,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/conditional-probability-bayes/why-does-given-b-shrink-the-sample-space": {
 "archetype": "discrete",

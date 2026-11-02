@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Measure the mean deviation from a centre point c and slide c along the line. It is smallest at one particular c.{% endblock %}
+{% block why_text %}Moving c to the right by a small step makes the points on the left slightly farther and those on the right slightly closer. The mean deviation falls as long as more points lie to the right than to the left, and rises once the balance tips. So it is smallest where half the data lie on each side: the median. The sum of squares, by contrast, is smallest at the mean.{% endblock %}
+{% block try_items %}
+<li>Slide c to the median. Where is the dip?</li>
+<li>Compare with the mean.</li>
+<li>Where is the squared version smallest?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}For grouped data, take an assumed mean A and class width h and work with u = (x − A)/h. Smaller numbers, same answer.{% endblock %}
+{% block why_text %}Shifting by A and dividing by h changes the mean to A + h·ū and the variance to h² times the variance of u. The result is the same whatever A you choose, but with a good A the numbers u are small whole numbers, so the arithmetic is much easier.{% endblock %}
+{% block try_items %}
+<li>Change the assumed mean. Does the final mean change?</li>
+<li>Compare the sizes of the u values.</li>
+<li>Check the variance both ways.</li>
+{% endblock %}

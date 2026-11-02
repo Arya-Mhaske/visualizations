@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compute the variance the long way and with the shortcut Σx²/n − x̄². They agree.{% endblock %}
+{% block why_text %}Expand Σ(x − x̄)² = Σx² − 2x̄Σx + n x̄² = Σx² − n x̄², since Σx = n x̄. Dividing by n gives σ² = Σx²/n − x̄². The shortcut needs only the sum of the values and the sum of their squares.{% endblock %}
+{% block try_items %}
+<li>Check that the two methods agree.</li>
+<li>Shift all the values by 100. Does either method lose accuracy?</li>
+<li>Try another data set.</li>
+{% endblock %}

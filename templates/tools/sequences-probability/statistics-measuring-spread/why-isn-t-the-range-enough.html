@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Two data sets have the same smallest and largest values but are clearly different. Squeeze the middle of one of them.{% endblock %}
+{% block why_text %}The range uses only the two extreme values and ignores everything in between. Two sets with the same range can have the middle values bunched up or spread out, and the standard deviation, which uses every value, tells them apart.{% endblock %}
+{% block try_items %}
+<li>Make the cluster narrow. Does the range change?</li>
+<li>Does the standard deviation change?</li>
+<li>Which set is more spread out?</li>
+{% endblock %}

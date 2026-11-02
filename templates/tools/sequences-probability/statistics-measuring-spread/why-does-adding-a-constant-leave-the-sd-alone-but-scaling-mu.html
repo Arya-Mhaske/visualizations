@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Shift and stretch a data set. The spread ignores the shift but follows the stretch.{% endblock %}
+{% block why_text %}Adding b to every value moves the mean by b but every deviation x − x̄ is unchanged, so the SD stays put. Multiplying every value by a multiplies every deviation by a, so σ(ax + b) = |a|σ. The minus sign does not matter because the SD uses squares.{% endblock %}
+{% block try_items %}
+<li>Shift by 5. What happens to the mean and the SD?</li>
+<li>Scale by 2.</li>
+<li>Scale by −1. What happens to the SD?</li>
+{% endblock %}

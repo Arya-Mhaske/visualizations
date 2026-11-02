@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heights in centimetres give a variance in square centimetres. Take the square root and the units come back.{% endblock %}
+{% block why_text %}Squaring the deviations also squares the units: cm² for heights in cm. The square root undoes this, so the standard deviation is in the same units as the data and can be compared with the data itself. Measure the same heights in metres and every quantity changes accordingly.{% endblock %}
+{% block try_items %}
+<li>Switch units from cm to m. How do the variance and SD change?</li>
+<li>Is the SD still comparable with the data?</li>
+<li>Mark mean ± SD on the line.</li>
+{% endblock %}

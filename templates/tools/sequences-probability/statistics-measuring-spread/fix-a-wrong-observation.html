@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A value was recorded wrongly in a set of observations. Correct the mean and the standard deviation without starting again.{% endblock %}
+{% block why_text %}The sum is Σx = n x̄, so the corrected sum is n x̄ − wrong + right. For the variance use Σx² = n(σ² + x̄²), then replace wrong² by right². With n = 20, mean 10, SD 2 and 8 corrected to 12, the new mean is 10.2 and the new SD is about 1.99.{% endblock %}
+{% block try_items %}
+<li>Check the 10.2 and 1.99.</li>
+<li>Correct 12 to 8 instead.</li>
+<li>Make the wrong value very far off.</li>
+{% endblock %}

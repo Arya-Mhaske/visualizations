@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare |d| with d². Squaring also removes the sign, and it treats big deviations very differently.{% endblock %}
+{% block why_text %}Squaring makes every deviation positive, like the absolute value, but unlike |d| it is smooth and easy to handle in algebra, and it counts a big deviation much more heavily: a deviation of 4 contributes 16, four times a deviation of 2 that contributes 4. Variance is the mean of these squares.{% endblock %}
+{% block try_items %}
+<li>Move a point far from the mean. Which grows faster,</li>
+<li>d</li>
+<li>or d²?</li>
+<li>Compare mean deviation with variance.</li>
+<li>Why does the variance have odd units?</li>
+{% endblock %}

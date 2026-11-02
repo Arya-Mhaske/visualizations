@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Measure how far each value is from the mean. Added with their signs, the deviations cancel.{% endblock %}
+{% block why_text %}Values below the mean give negative deviations and values above give positive ones. By the definition of the mean they always add to exactly zero, whatever the data. So the plain deviations tell us nothing about the spread. Taking the size |x − x̄| removes the signs and the sum is positive.{% endblock %}
+{% block try_items %}
+<li>Move a point. Does the sum of deviations ever change from zero?</li>
+<li>Compare Σ</li>
+<li>deviation</li>
+<li>.</li>
+<li>Make all the points equal.</li>
+{% endblock %}
