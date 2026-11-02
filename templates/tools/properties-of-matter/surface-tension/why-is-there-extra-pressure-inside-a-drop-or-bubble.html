@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Blow a drop or a soap bubble up by a tiny bit δr. The extra pressure inside does work; the surface gains energy. Try your own pressure and see when they balance.{% endblock %}
+{% block why_text %}A drop in balance must use exactly as much pressure work as it gains in surface energy: ΔP · 4πr² δr = S · 8πr δr. That gives ΔP = 2S/r. A soap bubble has two surfaces (inside and outside), so it gains twice as much surface energy and ΔP = 4S/r.{% endblock %}
+{% block try_items %}
+<li>Slide the trial pressure until the bars match. What value is that?</li>
+<li>Switch to a soap bubble. How does the matching pressure change?</li>
+<li>Halve the radius. What happens to the matching pressure?</li>
+{% endblock %}

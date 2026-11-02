@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a liquid in two and count the bonds you break. Every molecule on the new surface has lost a neighbour.{% endblock %}
+{% block why_text %}Inside a liquid every molecule has a full set of neighbours. At a surface it has one fewer, so it sits at higher energy. More surface means more such molecules, so the extra energy is proportional to the surface area. The surface behaves as if it wants to shrink, like a stretched skin.{% endblock %}
+{% block try_items %}
+<li>Lengthen the cut. How does the number of broken bonds change?</li>
+<li>Compare the energy per unit length for a short cut and a long cut.</li>
+<li>Count the neighbours of a molecule at the top surface and of one deep inside.</li>
+{% endblock %}

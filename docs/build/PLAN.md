@@ -399,7 +399,7 @@ it reaches the front of the queue.
 | 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
 | 63 | `properties-of-matter/viscosity` | 5 | 1 | ✓ |
 | 64 | `numbers-algebra/number-systems` | 11 | 1 | |
-| 65 | `properties-of-matter/surface-tension` | 8 | 1 | |
+| 65 | `properties-of-matter/surface-tension` | 8 | 1 | ✓ |
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
 | 67 | `heat-thermodynamics/temperature` | 6 | 1 | |
 | 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | |
@@ -650,3 +650,5 @@ it reaches the front of the queue.
 - `sequences-probability/probability` (8 tools): shared `_probability-math.js` (loaded die, complement counts, birthday, seeded running shares); the dice-grid tools reuse the Bayes box files. Built without screenshots or tests, by request.
 
 - `properties-of-matter/viscosity` (5 tools): `_viscosity-math.js` (plate speed, Stokes `terminal`/`tau`/`reynolds`, toy liquid and gas viscosity curves). Built without screenshots or tests, by request.
+
+- `properties-of-matter/surface-tension` (8 tools): `_surface-tension-math.js` (`spheroidArea` for fixed-volume shapes, capillary rise, drop/bubble excess, detergent model, insect support). The detergent curves (S 72 to 35 mN/m, theta 110 to 60 degrees) are an illustrative model and say so. Built without screenshots or tests, by request.

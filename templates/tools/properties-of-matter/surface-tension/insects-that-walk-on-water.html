@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A water strider rests on six legs. The surface can pull up with S times the length of its contact line. Is that enough for its weight?{% endblock %}
+{% block why_text %}Each leg dents the surface, and the surface pulls back along the whole edge of the dent, on both sides. The most it can hold is about S × 2 × (leg length) × (number of legs). If the weight is bigger, the insect breaks through, and detergent halves that limit.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>This is a simple upper bound that treats the contact line as pulling straight up. Real striders also use the hairs on their legs, which hold air.</p></div>{% endblock %}
+{% block try_items %}
+<li>Set the mass to 300 mg. Does the insect still float?</li>
+<li>Add detergent at 300 mg. What happens to the limit?</li>
+<li>Find the heaviest insect that 4 mm legs can hold.</li>
+{% endblock %}

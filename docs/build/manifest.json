@@ -1361,49 +1361,49 @@
 "archetype": "space3d",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/why-are-drops-and-bubbles-round": {
 "archetype": "space3d",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/why-does-water-wet-glass-but-mercury-bead-up": {
 "archetype": "sim",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/why-is-there-extra-pressure-inside-a-drop-or-bubble": {
 "archetype": "space3d",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/why-does-water-climb-a-thin-tube": {
 "archetype": "sim",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/capillary-and-excess-pressure-calculator": {
 "archetype": "stepper",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/how-do-detergents-clean": {
 "archetype": "space3d",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/surface-tension/insects-that-walk-on-water": {
 "archetype": "space3d",
 "priority": 68,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/why-is-touch-a-bad-thermometer": {
 "archetype": "sim",
