@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Keep only the biggest singular values of a picture and watch it sharpen.{% endblock %}
+{% block why_text %}The SVD writes a picture as a sum of layers: σ₁u₁v₁ᵀ + σ₂u₂v₂ᵀ + …, biggest first. The first few layers carry the main shapes, and the later ones carry fine detail and noise. So a handful of terms rebuild most of the picture and need far fewer numbers than the whole image.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The picture is made up, not a photograph. Its singular values are computed in your browser when the page loads.</div>{% endblock %}
+{% block try_items %}
+<li>Start at k = 1. What do you see?</li>
+<li>At which k do the disc and the square look right?</li>
+<li>How many numbers are stored at k = 5 compared with the whole picture?</li>
+{% endblock %}

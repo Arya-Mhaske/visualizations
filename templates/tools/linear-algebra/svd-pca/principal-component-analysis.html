@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the direction in which a cloud of data points spreads the most.{% endblock %}
+{% block why_text %}Project every point onto a line through the centre and measure the spread of the feet. The spread is the variance in that direction. It is largest along the long axis of the cloud, which is the eigenvector of the covariance matrix with the biggest eigenvalue. That direction is the first principal component.{% endblock %}
+{% block try_items %}
+<li>Turn the line until the variance is as big as possible. Is it the direction of PC1?</li>
+<li>Make the short spread bigger. What happens to the share of PC1?</li>
+<li>Tilt the cloud. Does PC1 follow it?</li>
+{% endblock %}

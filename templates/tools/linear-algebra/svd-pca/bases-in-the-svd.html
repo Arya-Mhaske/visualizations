@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Find the v's from AᵀA and the u's from A v, then put A = UΣVᵀ together.{% endblock %}
+{% block why_text %}AᵀA is symmetric, so it has perpendicular eigenvectors v with eigenvalues σ². Then A v = σ u gives unit u's, which are the eigenvectors of AAᵀ. So the v's are a good basis for the input, the u's a good basis for the output, and A just maps each v to σ times the matching u.{% endblock %}
+{% block try_items %}
+<li>Check that A v₁ = σ₁ u₁ on the last step.</li>
+<li>Why must u₁ and u₂ be perpendicular?</li>
+<li>Pick a symmetric matrix. How are its singular values related to its eigenvalues?</li>
+{% endblock %}

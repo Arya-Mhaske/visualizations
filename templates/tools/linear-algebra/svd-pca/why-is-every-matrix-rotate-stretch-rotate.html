@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Watch the unit circle become an ellipse in three moves: a rotation, a stretch, and another rotation.{% endblock %}
+{% block why_text %}Every matrix does the same three things to the plane: turn it (Vᵀ), stretch along the coordinate axes (Σ), and turn it again (U). So A = UΣVᵀ. The stretch factors are the singular values, and they are the lengths of the axes of the ellipse.{% endblock %}
+{% block try_items %}
+<li>Slide the progress control slowly. Which step changes the shape?</li>
+<li>Pick a matrix with negative determinant. What is the F doing at the end?</li>
+<li>Check that σ₁σ₂ equals |det A|.</li>
+{% endblock %}
