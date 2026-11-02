@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Encode and decode a message with a matrix mod 26.{% endblock %}
+{% block why_text %}Letters become numbers 0 to 25, taken in pairs, multiplied by a key matrix and reduced mod 26. To decode you need the inverse of the key mod 26. That exists only when the determinant has no common factor with 26. A key without an inverse scrambles the message beyond recovery.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This is a classroom cipher, the Hill cipher. It is easy to break and must never be used to protect anything real.</div>{% endblock %}
+{% block try_items %}
+<li>Choose the default key. Is the scrambled message the same length as the message?</li>
+<li>Find a key with det K mod 26 equal to 0. What does the decoded message show?</li>
+<li>Find a key with det K an even number. Does it work?</li>
+{% endblock %}

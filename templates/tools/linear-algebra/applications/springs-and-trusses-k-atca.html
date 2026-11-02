@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Assemble the stiffness matrix K = AᵀCA for springs in a line.{% endblock %}
+{% block why_text %}A u gives the stretch of each spring. C turns stretches into forces. Aᵀ adds up the forces on each mass. So the whole system is K u = f with K = AᵀCA. K is symmetric and, with a wall at both ends, positive definite. Free the right end and K can lose that, if the whole row of masses can slide.{% endblock %}
+{% block try_items %}
+<li>Stiffen one spring. Which masses move less?</li>
+<li>Free the right end. What happens to the movements?</li>
+<li>Check that K u reproduces the force.</li>
+{% endblock %}

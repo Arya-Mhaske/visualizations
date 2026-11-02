@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Use a fourth coordinate so that moving a shape becomes a matrix multiplication.{% endblock %}
+{% block why_text %}A 3 × 3 matrix always sends the origin to the origin, so it cannot move a shape. Add a fourth coordinate equal to 1 and a 4 × 4 matrix of the form [[R, t], [0, 1]] turns the shape and moves it by t in a single multiplication. Many moves in a row become one product of matrices.{% endblock %}
+{% block try_items %}
+<li>Switch off the 4th coordinate. Which controls stop working?</li>
+<li>Turn the cube by 90° and move it by (2, 0, 0). Where does its centre go?</li>
+<li>Read the top-right column of the matrix. What is it?</li>
+{% endblock %}

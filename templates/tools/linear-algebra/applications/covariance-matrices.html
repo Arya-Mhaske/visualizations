@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See how two measurements vary together, drawn as an ellipse.{% endblock %}
+{% block why_text %}The covariance matrix collects the variance of each measurement on its diagonal and how much they vary together off the diagonal. Its eigenvectors are the axes of the ellipse that outlines the cloud, and the square roots of its eigenvalues are the lengths of those axes.{% endblock %}
+{% block try_items %}
+<li>Set ρ = 0. Does the ellipse line up with the axes?</li>
+<li>Set ρ close to 1. What happens to the short axis?</li>
+<li>Make the spread of x bigger. Which entry of the matrix changes?</li>
+{% endblock %}

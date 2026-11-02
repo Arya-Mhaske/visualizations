@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Treat sine waves as perpendicular vectors for functions.{% endblock %}
+{% block why_text %}For functions on [−π, π] the dot product is an integral. Different sines are perpendicular under it, just like the unit vectors e₁ and e₂, so the coefficient of each sine in a function is found by projecting onto it. Adding more of these projections rebuilds a square wave.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Near the jumps the partial sums overshoot by about 9%, however many terms are used. This is called the Gibbs phenomenon.</div>{% endblock %}
+{% block try_items %}
+<li>Pick n = m. What is the integral?</li>
+<li>Pick n ≠ m. Where do the positive and negative areas cancel?</li>
+<li>Add more terms to the square wave. What happens near the jumps?</li>
+{% endblock %}

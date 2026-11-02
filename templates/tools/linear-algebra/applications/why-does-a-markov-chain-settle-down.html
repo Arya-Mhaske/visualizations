@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Repeat a transition matrix. The steady state is the eigenvector for λ = 1, and the other eigenvalues fade.{% endblock %}
+{% block why_text %}Each column of a Markov matrix adds to 1, so the matrix has an eigenvalue 1, and its eigenvector is the steady state. The other eigenvalues have size less than 1, so their parts shrink every step. After many steps only the steady-state part is left, whatever the start.{% endblock %}
+{% block try_items %}
+<li>Start in a different state. Does the steady state change?</li>
+<li>Choose Sticky. Why does it take so long to settle?</li>
+<li>Check the largest other eigenvalue to the nth power against how far the lines are from the dashed ones.</li>
+{% endblock %}

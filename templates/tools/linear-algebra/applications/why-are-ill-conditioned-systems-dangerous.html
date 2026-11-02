@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Nudge the right side of a nearly singular system and watch the solution jump.{% endblock %}
+{% block why_text %}Two nearly parallel lines cross at a shallow angle, so a tiny shift of one line slides the crossing point a long way. The condition number, the ratio of the largest to the smallest singular value, tells how much a small change in b can be magnified in x.{% endblock %}
+{% block try_items %}
+<li>Make ε smaller. How does the jump grow?</li>
+<li>Make the nudge smaller. Does the jump shrink in the same proportion?</li>
+<li>What does the condition number do as ε gets smaller?</li>
+{% endblock %}

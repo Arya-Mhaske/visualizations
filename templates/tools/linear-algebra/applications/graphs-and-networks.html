@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a small circuit and solve for the voltages and currents.{% endblock %}
+{% block why_text %}The incidence matrix A has one row for each edge, with −1 at its start node and +1 at its end node, so A u gives the voltage drop along each edge. Ohm's law turns drops into currents, and adding the currents at each node must give zero. Together that is AᵀCAu = f.{% endblock %}
+{% block try_items %}
+<li>Make the middle resistor very large. How much current does it carry?</li>
+<li>Check that the currents into and out of node 1 balance.</li>
+<li>Which edge carries the most current, and why?</li>
+{% endblock %}
