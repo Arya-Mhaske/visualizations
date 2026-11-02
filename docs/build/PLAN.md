@@ -401,7 +401,7 @@ it reaches the front of the queue.
 | 64 | `numbers-algebra/number-systems` | 11 | 1 | ✓ |
 | 65 | `properties-of-matter/surface-tension` | 8 | 1 | ✓ |
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
-| 67 | `heat-thermodynamics/temperature` | 6 | 1 | |
+| 67 | `heat-thermodynamics/temperature` | 6 | 1 | ✓ |
 | 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | |
 | 69 | `heat-thermodynamics/thermal-expansion` | 6 | 1 | |
 | 70 | `numbers-algebra/rational-expressions` | 6 | 1 | |
@@ -654,3 +654,5 @@ it reaches the front of the queue.
 - `properties-of-matter/surface-tension` (8 tools): `_surface-tension-math.js` (`spheroidArea` for fixed-volume shapes, capillary rise, drop/bubble excess, detergent model, insect support). The detergent curves (S 72 to 35 mN/m, theta 110 to 60 degrees) are an illustrative model and say so. Built without screenshots or tests, by request.
 
 - `numbers-algebra/number-systems` (11 tools): `_number-systems-math.js` (`divide`/`decimalText` long division with the remainder cycle, `bestP`/`residual` for the square-root-of-2 squares, `leftToRight`/`precedence`, `bounds` for Archimedes, `interval` text). Built without screenshots or tests, by request.
+
+- `heat-thermodynamics/temperature` (6 tools): `_temperature-math.js` (scale conversions, effusivity contact temperature, skin relaxation, seeded gas-pressure points and a least-squares line for absolute zero). Built without screenshots or tests, by request.

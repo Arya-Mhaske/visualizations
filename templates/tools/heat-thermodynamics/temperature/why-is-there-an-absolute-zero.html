@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Measure the pressure of a fixed-volume gas at several temperatures and extend each line backwards to zero pressure.{% endblock %}
+{% block why_text %}Whatever the gas and however much of it, the straight lines meet the temperature axis at the same place, −273.15 °C. A gas cannot have less than zero pressure, so that is the lowest temperature: absolute zero.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Real gases turn liquid before they reach this point, so the lines are extrapolated, not measured all the way. The scatter in the points is made up by a seeded random generator.</p></div>{% endblock %}
+{% block try_items %}
+<li>Measure only down to 0 °C. How well does the extrapolation pin down the intercept?</li>
+<li>Extend the range downward. Does the estimate improve?</li>
+<li>Do the three gases agree?</li>
+{% endblock %}

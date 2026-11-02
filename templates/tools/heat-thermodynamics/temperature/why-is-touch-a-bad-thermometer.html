@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One hand has been in hot water, the other in cold. Both go into the same bowl. Your skin only tells you whether heat flows in or out.{% endblock %}
+{% block why_text %}Touch senses how fast heat flows into or out of your skin, not the temperature itself. It depends on what your skin was doing before, and on how well the object conducts heat. So the same bowl feels cold to one hand and warm to the other, and metal at 20 °C feels colder than wood at 20 °C.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Skin temperature is modelled as relaxing to the water temperature in about 20 s, which is a simplification.</p></div>{% endblock %}
+{% block try_items %}
+<li>Slide time to 0 s. Which hand says "cold" and which says "warm" about the same bowl?</li>
+<li>Slide time on. When do the two hands agree?</li>
+<li>Read the contact temperature of metal and wood at the same bath temperature.</li>
+{% endblock %}

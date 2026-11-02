@@ -1409,37 +1409,37 @@
 "archetype": "sim",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/why-do-thermometers-work-at-all-zeroth-law": {
 "archetype": "sim",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/why-do-c-and-f-agree-at-40": {
 "archetype": "sim",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/why-is-there-an-absolute-zero": {
 "archetype": "sim",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/temperature-scale-converter": {
 "archetype": "table",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/temperature/ideal-gas-explorer-pv-rt": {
 "archetype": "sim",
 "priority": 70,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermal-expansion/why-do-things-expand-when-heated": {
 "archetype": "sim",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Enter a temperature in °C, °F or K and read the other two. The three thermometers stand side by side.{% endblock %}
+{% block why_text %}The scales differ only by a shift and a stretch. K = °C + 273.15 shifts the zero. °F = 1.8 °C + 32 also stretches the size of a degree. The kelvin and the Celsius degree are the same size.{% endblock %}
+{% block try_items %}
+<li>Enter 0 °C and 100 °C. What are the Fahrenheit and kelvin values?</li>
+<li>Enter 0 K. What are the other two?</li>
+<li>Enter 100 °F. What is it in °C?</li>
+{% endblock %}

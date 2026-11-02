@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Plot °F against °C. A straight line meets the line "°F = °C" at one place.{% endblock %}
+{% block why_text %}F = 1.8 C + 32 is a straight line with slope 1.8, so it crosses the line F = C where C = 1.8 C + 32. That gives C = −40. The two scales agree there and nowhere else.{% endblock %}
+{% block try_items %}
+<li>Slide C to −40. What do you read for F?</li>
+<li>Slide C to 100. How far apart are the two scales now?</li>
+{% endblock %}
