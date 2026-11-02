@@ -43,3 +43,9 @@ Log anything a tool can't follow from the catalogue: tool path, the problem, a p
 
 ## optics/optical-instruments/why-are-big-telescopes-reflectors
 The summary says "heavy glass". A single thin lens is usually lighter than a mirror blank of the same diameter, so a mass comparison would mislead. Built with the true reasons: colour (shown by computing the foci) and support (a lens can only be held by its rim and sags; a mirror is held from behind). Proposed summary: "Avoids chromatic aberration and the problem of supporting a huge lens."
+
+## forces-energy/equilibrium-free-body-diagrams/block-pulley-and-trolley
+The summary says a = 0.96 m/s² and T = 27.1 N, but the textbook masses were not available. The tool is a general trolley-and-block solver (defaults 20 kg, 3 kg, μ = 0.04 give a = 0.94, T = 27.0). Proposed fix: give the book's masses and friction in the spec, then set them as defaults.
+
+## forces-energy/potential-energy-conservation/crash-test-spring
+The summary says 2.00 m without friction and 1.35 m with friction. The tool reproduces 2.00 m (1000 kg, 25 m/s, k = 156 250 N/m), but the friction value that gives 1.35 m is not stated. Proposed fix: add the book's friction force to the spec.
