@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A 60 N load hangs from a rope that is pulled sideways with 50 N. Resolve along two axes to find the angle and the tension.{% endblock %}
+{% block why_text %}Along the vertical, T cos θ balances the load: T cos θ = 60. Along the horizontal, T sin θ balances the sideways pull: T sin θ = 50. Dividing gives tan θ = 50/60, θ ≈ 40°, and squaring and adding gives T = √(60² + 50²) ≈ 78 N.{% endblock %}
+{% block try_items %}
+<li>Check θ = 40° and T = 78 N.</li>
+<li>Pull harder sideways. What happens to the angle?</li>
+<li>Can the rope ever be horizontal?</li>
+{% endblock %}

@@ -473,31 +473,31 @@
 "archetype": "sim",
 "priority": 22,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/equilibrium-free-body-diagrams/why-does-a-free-body-diagram-show-only-forces-on-the-body": {
 "archetype": "sim",
 "priority": 22,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/equilibrium-free-body-diagrams/free-body-diagram-builder": {
 "archetype": "stepper",
 "priority": 22,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/equilibrium-free-body-diagrams/resolve-and-solve": {
 "archetype": "stepper",
 "priority": 22,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/equilibrium-free-body-diagrams/block-pulley-and-trolley": {
 "archetype": "sim",
 "priority": 22,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/friction/why-is-static-friction-self-adjusting": {
 "archetype": "sim",

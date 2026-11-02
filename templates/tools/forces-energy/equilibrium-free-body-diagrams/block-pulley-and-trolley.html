@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A trolley on a table is joined by a string over a pulley to a hanging block. Write one equation for each body.{% endblock %}
+{% block why_text %}For the hanging block mg − T = ma. For the trolley T − f = Ma. Adding them, mg − f = (M + m)a, so a = (mg − f)/(M + m), and T = Ma + f. The same string tension appears in both equations.{% endblock %}
+{% block try_items %}
+<li>Switch friction off. What are a and T?</li>
+<li>Make the hanging block heavier. What happens to T?</li>
+<li>Is T ever equal to mg?</li>
+{% endblock %}
