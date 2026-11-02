@@ -1481,31 +1481,31 @@
 "archetype": "sim",
 "priority": 74,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-capacity-calorimetry/why-is-heat-lost-equal-to-heat-gained": {
 "archetype": "sim",
 "priority": 74,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-capacity-calorimetry/why-do-gases-have-two-specific-heats": {
 "archetype": "space3d",
 "priority": 74,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-capacity-calorimetry/mixing-calculator": {
 "archetype": "stepper",
 "priority": 74,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/heat-capacity-calorimetry/find-aluminium-s-specific-heat": {
 "archetype": "space3d",
 "priority": 74,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/change-of-state/why-does-the-temperature-stay-flat-while-ice-melts": {
 "archetype": "sim",

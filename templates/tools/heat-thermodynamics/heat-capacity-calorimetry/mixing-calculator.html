@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose two substances, their masses and their temperatures. Read the final temperature.{% endblock %}
+{% block why_text %}Setting heat lost equal to heat gained gives T<sub>f</sub> = (m₁c₁T₁ + m₂c₂T₂)/(m₁c₁ + m₂c₂). It is a weighted average of the two temperatures, weighted by mc. A substance with a large mc pulls the result closer to its own temperature.{% endblock %}
+{% block try_items %}
+<li>Mix hot iron with cold water. Is the final temperature close to the water's?</li>
+<li>Make the masses equal for water and lead. Which one decides the result?</li>
+{% endblock %}

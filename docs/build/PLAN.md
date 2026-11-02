@@ -405,7 +405,7 @@ it reaches the front of the queue.
 | 68 | `numbers-algebra/polynomials-factoring` | 9 | 1 | |
 | 69 | `heat-thermodynamics/thermal-expansion` | 6 | 1 | ✓ |
 | 70 | `numbers-algebra/rational-expressions` | 6 | 1 | |
-| 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | |
+| 71 | `heat-thermodynamics/heat-capacity-calorimetry` | 5 | 1 | ✓ |
 | 72 | `numbers-algebra/linear-equations-formulas` | 7 | 1 | |
 | 73 | `heat-thermodynamics/change-of-state` | 5 | 1 | |
 | 74 | `numbers-algebra/variation` | 5 | 1 | ✓ |
@@ -658,3 +658,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/temperature` (6 tools): `_temperature-math.js` (scale conversions, effusivity contact temperature, skin relaxation, seeded gas-pressure points and a least-squares line for absolute zero). Built without screenshots or tests, by request.
 
 - `heat-thermodynamics/thermal-expansion` (6 tools): `_expansion-math.js` (Lennard-Jones well turning points, cube terms, water density table, a layer-by-layer `lake` model, rim and rail formulas). The lake cools only the top layer per step, as a simplified model. Built without screenshots or tests, by request.
+
+- `heat-thermodynamics/heat-capacity-calorimetry` (5 tools): `_heat-capacity-math.js` (`finalTemp` with a leak share, gas Cv/Cp, `specificHeatOfBall` for NCERT Ex 10.3, which gives 911 J/kg·K at 23 C). Sea-breeze sunshine and layer depths are round model numbers and say so. Built without screenshots or tests, by request.

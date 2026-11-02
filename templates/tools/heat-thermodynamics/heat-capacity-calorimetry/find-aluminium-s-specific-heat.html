@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A 0.047 kg aluminium ball at 100 °C goes into a copper calorimeter (0.14 kg) holding 0.25 kg of water at 20 °C. Read the final temperature and work out the specific heat.{% endblock %}
+{% block why_text %}The ball gives up exactly the heat that the water and the calorimeter gain: m c (100 − T<sub>f</sub>) = (m<sub>w</sub>c<sub>w</sub> + m<sub>cu</sub>c<sub>cu</sub>)(T<sub>f</sub> − 20). Solving for c gives about 0.91 kJ/kg·K when T<sub>f</sub> = 23 °C.{% endblock %}
+{% block try_items %}
+<li>Set the final temperature to 23 °C. What c do you get?</li>
+<li>Try 22 °C and 24 °C. How sensitive is c to a 1 °C error in the reading?</li>
+{% endblock %}

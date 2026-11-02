@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heat a gas by the same ΔT in a locked cylinder and in one with a free piston. Compare the heat needed.{% endblock %}
+{% block why_text %}At constant volume all the heat goes into internal energy. At constant pressure the gas also expands and does work nRΔT on the piston, so it needs more heat for the same rise. That is why C<sub>p</sub> = C<sub>v</sub> + R.{% endblock %}
+{% block try_items %}
+<li>Heat monatomic gas by 50 K at constant volume, then at constant pressure. How much extra heat?</li>
+<li>Check that the extra equals nRΔT.</li>
+{% endblock %}
