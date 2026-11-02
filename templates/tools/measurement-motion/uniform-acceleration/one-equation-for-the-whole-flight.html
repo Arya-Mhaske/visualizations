@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Throw a ball up from a roof. One quadratic describes the rise, the turn and the fall to the ground.{% endblock %}
+{% block why_text %}With up as positive, y = h + v₀t − ½gt² holds for the whole flight. The ball lands when y = 0, which is a quadratic in t; the positive root is the landing time. No need to split the flight into up and down.{% endblock %}
+{% block try_items %}
+<li>Use h = 25 m and v₀ = 20 m/s. When does it land?</li>
+<li>Set v₀ = 0. What is the fall time from 25 m?</li>
+<li>Move the time slider and watch y become 0.</li>
+{% endblock %}

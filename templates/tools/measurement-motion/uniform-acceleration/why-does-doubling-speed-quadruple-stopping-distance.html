@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Brake at a steady rate from different speeds and compare how far the car travels before it stops.{% endblock %}
+{% block why_text %}Stopping means v² = v₀² − 2ax with v = 0, so x = v₀²/2a. The distance goes as the square of the speed: twice the speed, four times the distance.{% endblock %}
+{% block try_items %}
+<li>Compare 11 and 25 m/s. By what factor does the distance grow?</li>
+<li>Double the braking rate. What happens to the distance?</li>
+<li>Find the speed that stops in 20 m.</li>
+{% endblock %}

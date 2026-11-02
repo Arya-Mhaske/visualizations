@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Drop a ball and look at how far it falls in each equal tick of time.{% endblock %}
+{% block why_text %}The total fall is ½gt², which grows as 1, 4, 9, 16. The distance in each new tick is the difference of neighbouring squares: 1, 3, 5, 7. So the odd numbers are just differences of squares.{% endblock %}
+{% block try_items %}
+<li>Set 4 ticks. What are the four distances in the ratio?</li>
+<li>Change the tick length. Do the ratios change?</li>
+<li>Add the first four distances. What do you get?</li>
+{% endblock %}

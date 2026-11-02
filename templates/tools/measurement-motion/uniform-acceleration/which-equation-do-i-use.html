@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Say which quantity you want and which one is neither given nor wanted. The right equation is the one that leaves that quantity out.{% endblock %}
+{% block why_text %}Each of the five equations leaves out exactly one of v₀, v, a, x, t. Pick the equation that contains what you know and what you want, and omits what you do not have.{% endblock %}
+{% block try_items %}
+<li>Find x with v₀, a and t known. Which equation?</li>
+<li>Find t when v₀, v and a are known.</li>
+<li>Why can you not pick the same quantity twice?</li>
+{% endblock %}

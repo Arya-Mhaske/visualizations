@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}On a straight v–t line, the area under the line is the distance travelled. Split it into a rectangle and a triangle.{% endblock %}
+{% block why_text %}The rectangle is v₀t and the triangle is ½at², so x = v₀t + ½at². Replace t by (v − v₀)/a in that area and you get v² = v₀² + 2ax. All three equations are the same picture read three ways.{% endblock %}
+{% block try_items %}
+<li>Set a = 0. What shape is the area?</li>
+<li>Double t. What happens to the triangle compared with the rectangle?</li>
+<li>Check that v² − v₀² equals 2ax in the readout.</li>
+{% endblock %}

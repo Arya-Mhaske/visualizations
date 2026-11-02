@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Let the acceleration change with time (a jerk j). The constant-acceleration formula drifts away from the true motion.{% endblock %}
+{% block why_text %}The equations x = v₀t + ½at² assume a never changes. If a changes, the area under the v–t curve is no longer a triangle plus a rectangle. The calculus version, integrating a(t) twice, still gives the right answer.{% endblock %}
+{% block try_items %}
+<li>Set the jerk to 0. Do the curves agree?</li>
+<li>Make the jerk positive. Which curve is higher?</li>
+<li>How far off is the formula after 6 s?</li>
+{% endblock %}

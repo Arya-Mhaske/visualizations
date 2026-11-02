@@ -339,7 +339,7 @@ it reaches the front of the queue.
 | 2 | `numbers-algebra/sets` | 11 | 1 | ✓ |
 | 3 | `measurement-motion/dimensions` | 7 | 1 | ✓ |
 | 4 | `functions-graphs/coordinate-plane` | 7 | 1 | ✓ |
-| 5 | `measurement-motion/uniform-acceleration` | 8 | 1 | |
+| 5 | `measurement-motion/uniform-acceleration` | 8 | 1 | ✓ |
 | 6 | `functions-graphs/what-is-a-function` | 8 | 1 | ✓ |
 | 7 | `measurement-motion/vectors` | 7 | 1 | |
 | 8 | `functions-graphs/properties-library` | 7 | 1 | ✓ |
@@ -666,3 +666,5 @@ it reaches the front of the queue.
 - `numbers-algebra/linear-equations-formulas` (7 tools): `_linear-equations-math.js` (balance presets, line classification, `FRACS` with fake roots, `REARR` formula steps each checked by `solve(base)`, trains `meet`, `splitAt`, `together`) and `_steps-view.js` (`stepsView`: a revealed list of KaTeX lines for HTML stages; reuse it in `rational-expressions`). The balance and the interest tool hide sliders by index. Built without screenshots or tests, by request.
 
 - `numbers-algebra/rational-expressions` (6 tools): `_rational-math.js` (`CANCEL` claims with a legal/illegal flag, `PROBLEMS`/`COMPLEX` with every step in TeX and a pair of functions that agree at test points, `addUnit`, `fillTime`); the two stepper tools reuse `_steps-view.js`. Built without screenshots or tests, by request.
+
+- `measurement-motion/uniform-acceleration` (8 tools): maths is inline per tool. - `lib/quick.js` (new, documented in its header): `G`, `bars`, `vec`, `fitPath` (near equal-scale window for trajectories), `box`. Used by the quick mechanics boxes. Built without screenshots or tests, by request.

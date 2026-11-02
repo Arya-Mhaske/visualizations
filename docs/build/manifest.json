@@ -161,49 +161,49 @@
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/why-do-the-equations-fail-when-a-changes": {
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/galileo-s-odd-numbers-why-falls-go-1-3-5-7": {
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/why-does-doubling-speed-quadruple-stopping-distance": {
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/which-equation-do-i-use": {
 "archetype": "stepper",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/relative-velocity-on-a-line": {
 "archetype": "stepper",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/measure-your-reaction-time-with-a-ruler": {
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/uniform-acceleration/one-equation-for-the-whole-flight": {
 "archetype": "sim",
 "priority": 8,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "measurement-motion/vectors/why-do-vectors-need-the-triangle-law": {
 "archetype": "sim",
