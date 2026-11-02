@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Shape a die by giving each face a weight. Favourable ÷ total says "one in six" whatever you do; the axioms say what really adds up.{% endblock %}
+{% block why_text %}Favourable ÷ total fails the moment the faces are unequal. The axioms only ask three things: every probability is at least 0, they add up to 1 over the whole sample space, and exclusive events add. Any die you build here obeys all three, so they cover every case.{% endblock %}
+{% block try_items %}
+<li>Make every weight equal. Do the two answers agree?</li>
+<li>Make face 6 much heavier. Which answer for "5 or 6" is right?</li>
+<li>Check: does the sum of the six probabilities ever stop being 1?</li>
+{% endblock %}

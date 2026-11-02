@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Roll n dice. Each dot is one possible result. Find "at least one six" by counting the dots with no six.{% endblock %}
+{% block why_text %}"At least one six" could be exactly one, exactly two, up to n sixes: many cases to count. "No six" is one case, 5ⁿ of 6ⁿ. So P(at least one) = 1 − P(none).{% endblock %}
+{% block try_items %}
+<li>Roll 3 dice. How many different "exactly k sixes" cases make up "at least one"?</li>
+<li>Roll 4 dice. Is it easier to count the green dots or the coral ones?</li>
+<li>How many dice before "at least one six" is more likely than not?</li>
+{% endblock %}

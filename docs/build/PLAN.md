@@ -396,7 +396,7 @@ it reaches the front of the queue.
 | 59 | `properties-of-matter/pressure-pascal` | 9 | 1 | |
 | 60 | `sequences-probability/statistics-measuring-spread` | 9 | 1 | |
 | 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | |
-| 62 | `sequences-probability/probability` | 8 | 1 | |
+| 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
 | 63 | `properties-of-matter/viscosity` | 5 | 1 | |
 | 64 | `numbers-algebra/number-systems` | 11 | 1 | |
 | 65 | `properties-of-matter/surface-tension` | 8 | 1 | |
@@ -646,3 +646,5 @@ it reaches the front of the queue.
 - `electrostatics/_cap.js`: `cap(A cm², d mm, K)` in farads, `series`, `parallel`, and `equivalent(network)` for nested { t: 's'|'p'|'c' } trees (checked: 100 cm² at 1 mm is 88.5 pF; (2 series 4) beside 3 gives 4.333). The combination solver lays any such tree out recursively on canvas. `camera-flash-and-touchscreens` hides sliders by index (field 0 is the view chooser).
 
 - `limits-continuity/continuity` (5 tools), no shared file. The IVT tool detects a skipped level by a sign change across the jump at t = 5; the piecewise tool needs c = (a² - 2)/a (a button sets it, since a = 3 gives 7/3, off the slider grid); the equator tool stacks two plots and finds the root of D by bisection. Target list of 15 boxes (89 tools) finished in this session, built without screenshots or test runs: look at all of them, run `manage.py test`, and write `tool_tests`.
+
+- `sequences-probability/probability` (8 tools): shared `_probability-math.js` (loaded die, complement counts, birthday, seeded running shares); the dice-grid tools reuse the Bayes box files. Built without screenshots or tests, by request.

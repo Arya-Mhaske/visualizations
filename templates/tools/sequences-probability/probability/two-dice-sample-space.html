@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}All 36 outcomes of two dice, row = first die, column = second. Pick two events and see them coloured on the grid.{% endblock %}
+{% block why_text %}Count cells instead of arguing. P(A) is the cells of A over 36. Cells in both events are the overlap, so P(A or B) = P(A) + P(B) − P(A and B) still holds.{% endblock %}
+{% block try_items %}
+<li>Choose "Sum is 7" and "Doubles". Is there any overlap?</li>
+<li>Choose "Sum is 8 or more" and "First die is 6". Count the overlap.</li>
+<li>Which event has the most cells?</li>
+{% endblock %}

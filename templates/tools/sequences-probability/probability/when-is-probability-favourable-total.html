@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Favourable ÷ total only works when every outcome is equally likely. Load the die, roll it, and watch the formula break.{% endblock %}
+{% block why_text %}Counting "1 face out of 6" treats every face as equally likely. A loaded die breaks that: the share of sixes in the rolls follows the weight, not 1/6. The formula is a special case, not the definition.{% endblock %}
+{% block try_items %}
+<li>Leave the die fair. Do the rolls follow 1/6?</li>
+<li>Make face 6 four times as heavy. Which number does the share of sixes follow now?</li>
+<li>Roll more. Does the favourable ÷ total value ever catch up?</li>
+{% endblock %}

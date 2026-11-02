@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Flip a coin again and again. Each coloured line is a separate run of flips; watch where the share of heads goes.{% endblock %}
+{% block why_text %}Early on the share swings wildly, since one flip moves it a lot. Each extra flip moves it less, and the runs squeeze together towards the same number. That settling is the law of large numbers: the share gets close to p, though it never promises to hit it exactly.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>The width of the swing shrinks like 1/√n. The runs here are made by a seeded random generator, so they repeat exactly.</p></div>{% endblock %}
+{% block try_items %}
+<li>Slide to 10 flips, then 5000. How does the spread of the lines change?</li>
+<li>Set the coin to p = 0.7. Where do the lines settle?</li>
+<li>Does any run hit p exactly and stay? Look closely.</li>
+{% endblock %}

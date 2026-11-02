@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick three events on the two-dice grid. A good partition covers every cell once: no overlap, no gap.{% endblock %}
+{% block why_text %}Mutually exclusive means no cell is in two events. Exhaustive means no cell is in none. A partition is both, so its probabilities add to exactly 1.{% endblock %}
+{% block try_items %}
+<li>Choose "First die is even", "First die is 1" and "First die is 6". Is it a partition?</li>
+<li>Find three events that overlap.</li>
+<li>Find three events that leave a gap.</li>
+{% endblock %}

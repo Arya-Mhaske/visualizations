@@ -5633,49 +5633,49 @@
 "archetype": "chance",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/why-subtract-the-overlap-in-p-a-or-b": {
 "archetype": "discrete",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/why-is-the-complement-often-easier": {
 "archetype": "discrete",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/why-do-frequencies-settle-down": {
 "archetype": "chance",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/why-define-probability-by-axioms": {
 "archetype": "chance",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/two-dice-sample-space": {
 "archetype": "discrete",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/mutually-exclusive-and-exhaustive-events": {
 "archetype": "discrete",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/probability/birthday-paradox": {
 "archetype": "chance",
 "priority": 65,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/statistics-measuring-spread/why-isn-t-the-range-enough": {
 "archetype": "chance",

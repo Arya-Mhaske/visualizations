@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}40 students; some play cricket (A), some play chess (B), some play both. Add the two counts and see who gets counted twice.{% endblock %}
+{% block why_text %}Students in both circles sit inside A and inside B, so adding the circles counts them twice. Taking away the overlap once leaves everyone counted exactly once: P(A or B) = P(A) + P(B) − P(A and B).{% endblock %}
+{% block try_items %}
+<li>Make the overlap 0. Is any subtraction needed?</li>
+<li>Make A and B both 20 and the overlap 10. Which is bigger, the sum or the union?</li>
+<li>Grow the overlap. What happens to the number counted twice?</li>
+{% endblock %}
