@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Read the slope of arctan off a right triangle with tan θ = x.{% endblock %}
+{% block why_text %}Raising x by dx moves the top corner straight up. Only the part of that step across the hypotenuse turns the angle: dx cos θ = r dθ. Since cos θ = 1/r, we get dθ/dx = 1/r² = 1/(1 + x²).{% endblock %}
+{% block try_items %}
+<li>Make dx small. Does dθ ÷ dx get closer to 1/(1 + x²)?</li>
+<li>Make x large. Why does the same step turn the angle so little?</li>
+<li>At x = 1, what is θ in degrees and what is the slope of arctan?</li>
+{% endblock %}

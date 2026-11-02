@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}xˣ has x in both the base and the exponent, so neither the power rule nor the exponential rule fits. Take ln first.{% endblock %}
+{% block why_text %}Taking ln brings the exponent down: ln y = x ln x. Now the product rule applies. The slope of the lower graph is ln x + 1, and it equals y′/y, the slope of the top graph measured against its own height. So y′ = y · (ln x + 1).{% endblock %}
+{% block try_items %}
+<li>Move x until the lower slope is 0. Where is the top graph flat?</li>
+<li>Check that top slope = height × lower slope at x = 2.</li>
+<li>Why is the top graph still positive when ln x is negative?</li>
+{% endblock %}

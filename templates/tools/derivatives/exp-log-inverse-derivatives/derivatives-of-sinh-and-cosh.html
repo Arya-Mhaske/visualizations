@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}sinh and cosh behave like sin and cos, with one sign flipped.{% endblock %}
+{% block why_text %}Since sinh x = (eˣ − e⁻ˣ)/2, the derivative of e⁻ˣ is −e⁻ˣ, and the two minus signs cancel: (sinh x)′ = (eˣ + e⁻ˣ)/2 = cosh x. For cosh x the sign stays minus, so (cosh x)′ = sinh x. In trigonometry (cos x)′ = −sin x; here there is no minus.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> sinh and cosh are defined from eˣ, not from a circle. They sit on a hyperbola, which is where their names come from.</div>{% endblock %}
+{% block try_items %}
+<li>Choose sinh. Where is its slope smallest, and what is it there?</li>
+<li>Choose cosh. At which x is the slope zero?</li>
+<li>Check that cosh² − sinh² stays at 1 as you move x.</li>
+{% endblock %}

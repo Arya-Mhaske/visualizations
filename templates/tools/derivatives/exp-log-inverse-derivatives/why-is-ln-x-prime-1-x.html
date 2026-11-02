@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}ln x is eˣ seen in a mirror. Use the slope of eˣ at the mirror point to find the slope of ln x.{% endblock %}
+{% block why_text %}The slope of eˣ at any point equals its height. The mirror point of (x, ln x) on the ln curve is (ln x, x) on the eˣ curve, where the height is x. So eˣ has slope x there, and after swapping rise and run, ln x has slope 1/x.{% endblock %}
+{% block try_items %}
+<li>Slide x to 0.5. Which is bigger, the slope of ln x or the slope of eˣ at the mirror point?</li>
+<li>Slide x to 3. How flat is ln x there, and why does it keep rising anyway?</li>
+<li>Find the point where ln x and eˣ have the same slope. What is x?</li>
+{% endblock %}

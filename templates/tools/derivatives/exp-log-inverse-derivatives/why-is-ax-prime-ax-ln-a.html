@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change the base a and compare the slope of aˣ with its own height.{% endblock %}
+{% block why_text %}Write aˣ as e^(x ln a). That is the graph of eˣ stretched sideways by ln a, so every slope is the height of the curve times ln a. For a = e the factor ln e is 1, which is why eˣ is its own derivative.{% endblock %}
+{% block try_items %}
+<li>Press "Set a = e". What is the slope divided by the height?</li>
+<li>Choose a below 1.5. Is ln a small or large, and is the curve steep or gentle?</li>
+<li>Find a where the slope at x = 0 equals 1. What is a?</li>
+{% endblock %}

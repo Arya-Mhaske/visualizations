@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fold the graph of a function along y = x and see what happens to the rise and the run of its tangent.{% endblock %}
+{% block why_text %}Reflecting in y = x swaps every x and y, so it swaps the rise and the run of the tangent. A slope of rise ÷ run becomes run ÷ rise, which is the reciprocal. So the inverse function has slope 1 ÷ f′ at the mirror point.{% endblock %}
+{% block try_items %}
+<li>Choose x² (x ≥ 0) and a = 1. Check that the slope of the inverse is 1/2 there.</li>
+<li>Choose eˣ. Which slope does the inverse have where eˣ has slope 5?</li>
+<li>Find a point where the slope of f is below 1. Is the inverse's slope above or below 1?</li>
+{% endblock %}
