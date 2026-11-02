@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Rotate a region; every slice is a circle or a ring.{% endblock %}
+{% block why_text %}A thin slice at right angles to the axis spins into a disc (or a ring if the region has a hole). Its area is π(R² − r²), and the volume is the sum of those.{% endblock %}
+{% block try_items %}
+<li>Slide the slice. How does its area change?</li>
+<li>Switch to washers. What does the ring look like?</li>
+<li>Compare the two total volumes.</li>
+{% endblock %}

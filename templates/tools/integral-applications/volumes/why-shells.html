@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Unroll a thin cylinder into a flat slab: 2πrh·dr.{% endblock %}
+{% block why_text %}A thin strip spun about the axis makes a tube. Cut it and flatten it: a slab 2πx long, h tall, dx thick. Its volume is 2πx·h·dx.{% endblock %}
+{% block try_items %}
+<li>Slide the strip. How does the slab change?</li>
+<li>Which strip has the biggest slab on the hump?</li>
+<li>Compare the total with another method.</li>
+{% endblock %}

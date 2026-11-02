@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick the method that avoids splitting the region.{% endblock %}
+{% block why_text %}Both methods give the same volume. Choose the one whose slices run the way the region is described, so you need only one simple integral.{% endblock %}
+{% block try_items %}
+<li>Compare the two volumes in each problem.</li>
+<li>Which problem needs both branches of a curve for the other method?</li>
+<li>Pick a wrong method. Is the volume still right?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Rotate about a tilted line.{% endblock %}
+{% block why_text %}Slice at right angles to the tilted axis, or use Pappus: area times the distance the centroid travels. Both work if the axis does not cut the region.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The rectangle is fixed. The line is the only thing that moves.</div>{% endblock %}
+{% block try_items %}
+<li>Tilt the axis. Do the two volumes stay equal?</li>
+<li>Move the axis until it cuts the rectangle. What happens?</li>
+<li>Why does only the centroid distance matter?</li>
+{% endblock %}
