@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Tilt a small patch of surface against the base square under it.{% endblock %}
+{% block why_text %}A patch of surface tilted by slopes f_x and f_y is bigger than the base square under it by the factor √(1 + f_x² + f_y²). The factor is 1 on flat ground and grows with steepness. Adding the patches gives the surface area.{% endblock %}
+{% block try_items %}
+<li>Pick the ramp. Is the tilt factor the same everywhere?</li>
+<li>Pick the bowl and move the patch outwards. What happens to the factor?</li>
+<li>Increase n. Does the sum settle?</li>
+{% endblock %}

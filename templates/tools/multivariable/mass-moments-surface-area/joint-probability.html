@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Treat the probability of an event as the volume over a region under a density surface.{% endblock %}
+{% block why_text %}For two independent waiting times, the joint density is the product of the two. The chance that the pair falls in a region D is the volume above D under the density, which is the double integral of f over D.{% endblock %}
+{% block try_items %}
+<li>Set a = b = 2 with means 2 and 3. How large is the probability?</li>
+<li>Switch to X > Y. Which waiting time is likely to be longer?</li>
+<li>Make both means equal. What is P(X > Y)?</li>
+{% endblock %}

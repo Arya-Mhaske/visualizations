@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Move a skater's arms in and out and watch the moment of inertia and spin rate change.{% endblock %}
+{% block why_text %}The moment of inertia I = ∫r² dm counts each bit of mass by the square of its distance from the axis. Pulling the arms in cuts that distance a lot, so I drops a lot. With no outside torque, L = Iω stays fixed, so ω must rise.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The skater is modelled as a uniform disk with two point masses on the arms. The numbers are round values, not measurements.</div>{% endblock %}
+{% block try_items %}
+<li>Move the arms from 0.8 m to 0.1 m. By what factor does the spin rate change?</li>
+<li>Which part of I changes: the body or the arms?</li>
+<li>Why does the distance matter more than the mass of the arms?</li>
+{% endblock %}
