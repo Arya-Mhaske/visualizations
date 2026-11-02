@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A ball sits on an energy landscape. The force on it points downhill, and is larger where the slope is steeper.{% endblock %}
+{% block why_text %}V(x) is the energy stored at x. If the ball moves a little, the energy changes by dV, and the work done by the force is F dx = −dV. So F = −dV/dx: the force is minus the slope of the landscape. A flat bottom (slope 0) means no force: an equilibrium.{% endblock %}
+{% block try_items %}
+<li>Put the ball on a steep part. Which way is the force?</li>
+<li>Find the points where the force is zero.</li>
+<li>Compare the steepest slope with the force there.</li>
+{% endblock %}

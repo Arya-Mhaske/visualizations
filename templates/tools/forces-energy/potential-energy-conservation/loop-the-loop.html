@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A ball on a string of length L is swung in a vertical circle. At the top, the string must still pull, not go slack.{% endblock %}
+{% block why_text %}Energy conservation gives v² at the top: v² = v₀² − 4gL. At the top the string pulls down if mv²/L > mg, meaning v² > gL. Putting these together, the string stays taut only if v₀² ≥ 5gL, so v₀ = √(5gL) is the least speed at the bottom.{% endblock %}
+{% block try_items %}
+<li>Check v₀ = √(5gL) at the crossing point.</li>
+<li>Go slightly below it. What happens to the tension at the top?</li>
+<li>Make L longer. How does the minimum speed change?</li>
+{% endblock %}

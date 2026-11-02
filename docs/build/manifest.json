@@ -641,55 +641,55 @@
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/why-is-f-dv-dx": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/why-is-the-zero-of-potential-energy-arbitrary": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/why-is-a-spring-s-pe-12kx2": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/why-is-the-speed-at-the-bottom-of-any-smooth-slope-root-2gh": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/read-an-energy-diagram": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/energy-bar-chart": {
 "archetype": "stepper",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/loop-the-loop": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/potential-energy-conservation/crash-test-spring": {
 "archetype": "sim",
 "priority": 30,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/power/why-is-p-f-v": {
 "archetype": "sim",

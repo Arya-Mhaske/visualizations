@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the total energy E as a horizontal line across the potential-energy curve. The ball can only be where V ≤ E.{% endblock %}
+{% block why_text %}Kinetic energy is E − V and cannot be negative, so the ball can go only where V(x) ≤ E. The points where V = E are the turning points where the ball stops and turns back. Regions where V > E are forbidden.{% endblock %}
+{% block try_items %}
+<li>Lower E until it is just above a well bottom. What region is left?</li>
+<li>Raise E above the barrier. What happens to the forbidden zone?</li>
+<li>Find the turning points.</li>
+{% endblock %}

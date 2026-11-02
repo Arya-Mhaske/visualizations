@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A car hits a spring buffer and is stopped. The kinetic energy goes into the spring, and into friction if there is any.{% endblock %}
+{% block why_text %}Without friction, ½mv² = ½kx². With friction, part of the energy is lost on the way: ½mv² = ½kx² + fx. So the spring compresses less when there is friction. Solve the quadratic for x.{% endblock %}
+{% block try_items %}
+<li>Set friction to 0. How far does it compress?</li>
+<li>Add friction. How much less?</li>
+<li>Make the spring stiffer.</li>
+{% endblock %}
