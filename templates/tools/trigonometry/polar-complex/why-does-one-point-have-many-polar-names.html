@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add whole turns or use a negative r and land on the same point.{% endblock %}
+{% block why_text %}Turning an extra full turn, 360°, brings you back to the same direction, so (r, θ) and (r, θ + 360°k) are the same point. A negative r means walk backwards, so (r, θ) is also (−r, θ + 180°). A point has endlessly many polar names, unlike its single (x, y).{% endblock %}
+{% block try_items %}
+<li>Set k = 1. What is the new name, and where does it land?</li>
+<li>Turn on the negative r. How does the angle change?</li>
+<li>Find three different names for the point (3, 40°).</li>
+{% endblock %}

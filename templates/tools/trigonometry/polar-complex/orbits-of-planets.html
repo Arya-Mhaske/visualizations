@@ -1,0 +1,14 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change the eccentricity of an orbit and see it go from a circle to a long ellipse.{% endblock %}
+{% block why_text %}In r = a(1 − e²) / (1 + e cos θ) the number e sets the shape. At e = 0 the orbit is a circle. As e grows it stretches, with the Sun at one focus. The closest distance is a(1 − e) and the farthest is a(1 + e).{% endblock %}
+{% block try_items %}
+<li>Press Earth. Is the orbit nearly a circle?</li>
+<li>Press Halley. How do closest and farthest compare?</li>
+<li>Move the planet’s angle. Where is the orbit closest to the Sun?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The slider moves the planet by its angle, not by time. A real planet moves faster when it is close to the Sun.
+</div>
+{% endblock %}

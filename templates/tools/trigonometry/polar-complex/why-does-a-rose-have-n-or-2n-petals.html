@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Trace r = 4 cos nθ with a pen and watch what a negative r does.{% endblock %}
+{% block why_text %}When r goes negative the pen walks backwards, so it draws on the opposite side. For odd n, the backward half retraces the petals already drawn, so there are n petals. For even n, the backward half falls on new places, so there are 2n petals.{% endblock %}
+{% block try_items %}
+<li>Set n = 3 and press Play. When does the pen start to retrace?</li>
+<li>Set n = 2. Where does the blue part land?</li>
+<li>Set n = 4 and count the petals.</li>
+{% endblock %}

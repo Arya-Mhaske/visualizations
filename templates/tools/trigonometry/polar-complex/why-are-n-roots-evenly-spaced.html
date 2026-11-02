@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find all the n-th roots of a number and see where they sit.{% endblock %}
+{% block why_text %}Each n-th root has the same length, the n-th root of the number’s length. Their angles are the number’s angle divided by n, plus 360°k/n. Adding 360° to the number’s angle spreads the roots by the same gap each time, so they form a regular n-gon.{% endblock %}
+{% block try_items %}
+<li>Set n = 3. What is the gap between roots?</li>
+<li>Raise n. What happens to the polygon?</li>
+<li>Check the last readout: does the first root to the power n give back w?</li>
+{% endblock %}

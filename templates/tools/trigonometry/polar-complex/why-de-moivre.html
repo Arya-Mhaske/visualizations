@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Raise a complex number to a power and watch the spiral.{% endblock %}
+{% block why_text %}Each multiplication by z turns the arrow by θ and stretches it by r, so n multiplications turn it n times θ and stretch it by r to the power n. That is De Moivre’s theorem: (r ∠ θ)ⁿ = rⁿ ∠ nθ.{% endblock %}
+{% block try_items %}
+<li>Set r = 1.2, θ = 30° and n = 3. Where is z³?</li>
+<li>Set r = 1. What shape do the powers make?</li>
+<li>Set θ = 60° and r = 1. What is z⁶?</li>
+{% endblock %}

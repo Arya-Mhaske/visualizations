@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Convert points and equations between polar and rectangular form, on a grid showing both.{% endblock %}
+{% block why_text %}The two descriptions are linked by x = r cos θ, y = r sin θ and r² = x² + y². An equation in r and θ becomes one in x and y, and the curve is the same either way. The check reading shows the rectangular equation holding at the moving marker.{% endblock %}
+{% block try_items %}
+<li>In point mode, drag the point to (−3, 3). What are r and θ?</li>
+<li>Switch to Equation. Move the marker along r = 4 cos θ. What shape is it?</li>
+<li>Choose r cos θ = 2. What is the rectangular equation?</li>
+{% endblock %}

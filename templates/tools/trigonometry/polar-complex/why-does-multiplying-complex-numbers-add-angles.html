@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply two complex numbers and compare the lengths and angles.{% endblock %}
+{% block why_text %}When you multiply, lengths multiply and angles add. Multiplying out gives r₁r₂(cos θ₁ cos θ₂ − sin θ₁ sin θ₂) for the real part, and the cosine addition formula turns that into r₁r₂ cos(θ₁ + θ₂). The sine addition formula does the same for the imaginary part.{% endblock %}
+{% block try_items %}
+<li>Set w = 1 ∠ 0°. What does multiplying by w do to z?</li>
+<li>Set w = 1 ∠ 90°. Which arrow is zw?</li>
+<li>Check that the two readouts for zw agree.</li>
+{% endblock %}

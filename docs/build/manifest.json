@@ -4683,73 +4683,73 @@
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-do-waves-add-point-by-point": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-do-beats-happen": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-does-damping-make-an-envelope": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-does-resonance-build-up": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-is-any-shape-a-sum-of-sines": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/pitch-1-period": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/weigh-a-floating-object-by-its-bobbing": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/why-120pi-in-ac-current": {
 "archetype": "phasor",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/light-and-em-waves-c-f": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/water-waves": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/waves-oscillations/coyotes-and-rabbits": {
 "archetype": "geometry",
 "priority": 91,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/identities/why-three-pythagorean-identities": {
 "archetype": "geometry",
@@ -4827,283 +4827,283 @@
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-those-exact-ranges-for-arcsin-and-arccos": {
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-is-an-inverse-graph-a-mirror-image": {
 "archetype": "rays",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-does-sin-x-0-5-have-infinitely-many-solutions": {
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-sin-sin1-x-x-but-sin1-sin-x-x": {
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-do-books-disagree-on-arcsec-s-range": {
 "archetype": "discrete",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/what-happens-to-sin-1-x-near-0": {
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/why-is-sin-cos1-x-root-1-x2": {
 "archetype": "geometry",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/solve-a-trig-equation": {
 "archetype": "stepper",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/solve-graphically-including-inequalities": {
 "archetype": "stepper",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/inverse-and-composition-drill": {
 "archetype": "drill",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/inverses-equations/solve-a-sin-x-b-cos-x-c": {
 "archetype": "stepper",
 "priority": 113,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-the-law-of-sines": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-a-sin-a-2r": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-is-ssa-ambiguous": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-is-the-law-of-cosines-pythagoras-with-a-correction": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-does-sss-fix-a-triangle-but-aaa-doesn-t": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-is-area-halfab-sin-c": {
 "archetype": "space3d",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-does-heron-s-formula-follow-from-the-law-of-cosines": {
-"archetype": "geometry",
+"archetype": "stepper",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/why-can-two-different-triangles-have-the-same-area": {
 "archetype": "geometry",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/heron-s-formula-check": {
 "archetype": "space3d",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/triangle-solver-which-law-and-why": {
 "archetype": "stepper",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/area-of-any-polygon": {
 "archetype": "stepper",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/solving-any-triangle/distance-across-a-river": {
 "archetype": "discrete",
 "priority": 93,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-does-a-vector-need-two-numbers": {
 "archetype": "discrete",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-tip-to-tail": {
 "archetype": "geometry",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-does-a-scalar-stretch-but-not-turn-a-vector": {
 "archetype": "discrete",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-is-u-v-u-v-cos-theta": {
 "archetype": "phasor",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-does-perpendicular-mean-dot-0": {
 "archetype": "chance",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-does-the-dot-product-come-from-complex-numbers": {
 "archetype": "phasor",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/unit-vectors-and-direction": {
 "archetype": "stepper",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/split-a-vector-into-parallel-and-perpendicular-parts": {
 "archetype": "stepper",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/plane-in-a-crosswind": {
 "archetype": "geometry",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/why-do-cable-tensions-explode-as-they-flatten": {
 "archetype": "geometry",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/work-when-pulling-at-an-angle": {
 "archetype": "geometry",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/vectors/block-on-an-incline": {
 "archetype": "geometry",
 "priority": 95,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-polar-coordinates": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-does-one-point-have-many-polar-names": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-does-a-rose-have-n-or-2n-petals": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/polar-curve-gallery": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-does-i-live-on-a-perpendicular-axis": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-does-multiplying-complex-numbers-add-angles": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-de-moivre": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/why-are-n-roots-evenly-spaced": {
 "archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/polar-rectangular-converter": {
-"archetype": "stepper",
+"archetype": "geometry",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/complex-arithmetic-rectangular-vs-polar": {
 "archetype": "stepper",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "trigonometry/polar-complex/orbits-of-planets": {
-"archetype": "geometry",
+"archetype": "plot",
 "priority": 97,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "exponentials-logs/exponential-growth/why-does-doubling-beat-any-power": {
 "archetype": "plot",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find a point as a radar does: turn through an angle, then walk out.{% endblock %}
+{% block why_text %}A point can be named by a turn and a distance (r, θ), or by across and up (x, y). Both name the same spot. The right triangle joins them: x = r cos θ and y = r sin θ.{% endblock %}
+{% block try_items %}
+<li>Set θ = 90° and r = 4. What are x and y?</li>
+<li>Drag the point to the left of the origin. What is θ now?</li>
+<li>Set r = 0. What does θ do?</li>
+{% endblock %}
