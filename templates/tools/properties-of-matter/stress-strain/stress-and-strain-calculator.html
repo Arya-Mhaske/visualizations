@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give a force and a size to get tensile stress and strain, shear stress and strain, or the squeeze on a volume.{% endblock %}
+{% block why_text %}Tensile stress is F/A along the length, with strain ΔL/L, and Y = stress/strain. Shear stress is the tangential force per area, with strain Δx/h, and G = stress/strain. Volume strain is ΔV/V under pressure p, and B = −p/(ΔV/V). Each modulus is a stress divided by a strain.{% endblock %}
+{% block try_items %}
+<li>Check the tensile stress and Y at the defaults.</li>
+<li>Change the force. Does Y change?</li>
+<li>Compare tensile and shear moduli for the same numbers.</li>
+{% endblock %}

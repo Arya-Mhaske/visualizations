@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Load a wire and watch stress against strain. Follow the curve from Hooke's law region to fracture, and see what happens on release.{% endblock %}
+{% block why_text %}In the proportional region stress ∝ strain (Hooke's law) and the wire returns completely. Past the elastic limit it comes back with a permanent set; at the yield point it stretches a lot for little extra stress; at fracture it breaks. Engineers keep loads in the linear region, well below the yield point.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>The curves are idealised sketches. The strain axis for steel and copper is not to scale, because the straight Hooke region is really only a fraction of a per cent wide. Real curves depend on the sample and its treatment.</p></div>{% endblock %}
+{% block try_items %}
+<li>Slide the strain through each region. What happens on release in each?</li>
+<li>Compare steel and copper.</li>
+<li>Why is rubber not a straight line?</li>
+{% endblock %}

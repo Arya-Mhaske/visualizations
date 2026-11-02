@@ -1139,43 +1139,43 @@
 "archetype": "sim",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/why-is-stress-force-per-area": {
 "archetype": "sim",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/why-is-a-hanging-wire-s-tension-f-not-2f": {
 "archetype": "sim",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/read-the-stressstrain-curve": {
 "archetype": "sim",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/why-do-rubber-and-the-aorta-return-without-obeying-hooke-s-l": {
 "archetype": "sim",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/why-do-solids-obey-hooke-s-law-at-small-strains": {
 "archetype": "space3d",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/stress-strain/stress-and-strain-calculator": {
 "archetype": "space3d",
 "priority": 58,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/elastic-moduli/why-three-moduli-stretch-shear-squeeze": {
 "archetype": "sim",

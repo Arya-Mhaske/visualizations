@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Picture atoms as balls joined by springs. Stretch the bond a little and the pull back is proportional to the stretch.{% endblock %}
+{% block why_text %}The force between neighbouring atoms depends on their separation, and has a curved graph. Near the equilibrium separation any smooth curve looks like a straight line, so the restoring force is proportional to the stretch: F = −kx. Hooke's law is the straight-line piece of a curve, good for small strains only.{% endblock %}
+{% block try_items %}
+<li>Keep the strain below 5%. How close is the line?</li>
+<li>Increase the strain. When do they separate?</li>
+<li>Compress the bond. Is it symmetric?</li>
+{% endblock %}

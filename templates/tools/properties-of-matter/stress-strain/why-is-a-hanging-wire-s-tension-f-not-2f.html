@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A mass hangs from a wire. Cut the wire anywhere and draw the forces on the piece below the cut.{% endblock %}
+{% block why_text %}The lower piece is in equilibrium, so the cut must be pulled up with a force equal to everything hanging below it. With a light wire that is just F, the weight of the mass. Both ends of the wire pull with F, but they are the two ends of one pull, so the tension at any point is F, not 2F. A heavy wire has more tension at the top.{% endblock %}
+{% block try_items %}
+<li>Cut at different heights. What is the tension?</li>
+<li>Give the wire mass. Where is the tension largest?</li>
+<li>Where does a heavy wire break first?</li>
+{% endblock %}
