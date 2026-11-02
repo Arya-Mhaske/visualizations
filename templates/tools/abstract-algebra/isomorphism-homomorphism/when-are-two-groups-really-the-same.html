@@ -1,0 +1,11 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Relabel the elements of ℤ₄ as the four rotations of a square and check whether every sum is kept.{% endblock %}
+{% block why_text %}Two groups are the same when you can rename the elements one-for-one so that the multiplication tables match. The check is φ(a + b) = φ(a) ∘ φ(b) in every cell. A relabelling that fails a single cell, or gives two elements one name, is not an isomorphism.{% endblock %}
+{% block try_items %}
+<li>Press k → R(90k). Is every cell green?</li>
+<li>Press k → R(270k). Is it also an isomorphism?</li>
+<li>Press k → R(180k). Which condition fails?</li>
+<li>Press k → R(90(k + 1)). Which cells fail?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Group a group's elements by where a homomorphism sends them and look at the kernel.{% endblock %}
+{% block why_text %}Elements that go to the same place differ by something in the kernel, so each column is one coset of the kernel and all columns are the same size. Sorting G by image therefore gives |G| = |kernel| × |image|: the first isomorphism theorem in numbers.{% endblock %}
+{% block try_items %}
+<li>Try ℤ₁₂ → ℤ₄. What is the kernel?</li>
+<li>Try the isomorphism ℤ₁₂ → ℤ₁₂. What is the kernel?</li>
+<li>Try the square map to ℤ₂. How big is the kernel?</li>
+<li>Does any column ever have a different size?</li>
+{% endblock %}

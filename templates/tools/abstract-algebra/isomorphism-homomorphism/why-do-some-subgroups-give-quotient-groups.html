@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Group the square's eight symmetries into left cosets and right cosets and see when they match.{% endblock %}
+{% block why_text %}To collapse each coset to a single point we need to multiply cosets. That only works when gH = Hg for every g, so that left and right cosets are the same sets. Such a subgroup is called normal. Otherwise the product depends on the representatives you pick.{% endblock %}
+{% block try_items %}
+<li>Pick ⟨r²⟩. Are the left and right boxes the same?</li>
+<li>Pick ⟨f⟩. Which elements land in different boxes?</li>
+<li>With ⟨f⟩, change a and b. Does the product always land in one coset?</li>
+<li>Compare ⟨r⟩ and ⟨r², f⟩. Both have index 2: are they normal?</li>
+{% endblock %}

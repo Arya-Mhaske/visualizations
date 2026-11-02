@@ -567,8 +567,8 @@ it reaches the front of the queue.
 | 245 | `abstract-algebra/permutations-dihedral-groups` | 5 | 2 | ✓ |
 | 246 | `abstract-algebra/cosets-lagrange` | 5 | 2 | ✓ |
 | 247 | `abstract-algebra/codes-cryptography` | 6 | 2 | ✓ |
-| 248 | `abstract-algebra/isomorphism-homomorphism` | 5 | 2 | |
-| 249 | `abstract-algebra/symmetry-actions-counting` | 7 | 2 | |
+| 248 | `abstract-algebra/isomorphism-homomorphism` | 5 | 2 | ✓ |
+| 249 | `abstract-algebra/symmetry-actions-counting` | 7 | 2 | ✓ |
 | 250 | `abstract-algebra/rings-polynomials` | 6 | 2 | |
 | 251 | `abstract-algebra/boolean-algebra-circuits` | 4 | 2 | |
 | 252 | `abstract-algebra/fields-galois-theory` | 6 | 2 | |

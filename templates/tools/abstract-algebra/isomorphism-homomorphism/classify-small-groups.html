@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Sort every group up to order 8 by its invariants.{% endblock %}
+{% block why_text %}Isomorphic groups have the same number of elements of each order and are both abelian or both not. Comparing these tells groups apart. Order 8 has five groups, and the table separates all of them.{% endblock %}
+{% block try_items %}
+<li>Set the order to 4. What distinguishes ℤ₄ from ℤ₂ × ℤ₂?</li>
+<li>Set the order to 6. Which group is not abelian?</li>
+<li>Set the order to 8. Which two groups are non-abelian, and how do they differ?</li>
+<li>Set a prime order. How many groups are there?</li>
+{% endblock %}

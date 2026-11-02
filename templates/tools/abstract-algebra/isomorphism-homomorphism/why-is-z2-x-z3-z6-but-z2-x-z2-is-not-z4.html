@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Look for an element of full order in ℤₘ × ℤₙ.{% endblock %}
+{% block why_text %}ℤ₆ has an element of order 6, so a group that matches it must too. In ℤ₂ × ℤ₃ the element (1, 1) has order lcm(2, 3) = 6. In ℤ₂ × ℤ₂ every element has order 1 or 2, so none reaches 4. The product is cyclic exactly when gcd(m, n) = 1.{% endblock %}
+{% block try_items %}
+<li>Set m = 2, n = 3. Which cell has order 6?</li>
+<li>Set m = 2, n = 2. What is the biggest order?</li>
+<li>Set m = 4, n = 6. Does the product have an element of order 24?</li>
+<li>Find three more pairs (m, n) that give a cyclic product.</li>
+{% endblock %}
