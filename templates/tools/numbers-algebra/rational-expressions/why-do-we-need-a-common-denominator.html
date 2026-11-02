@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Add two fraction bars cut into different numbers of pieces. They only combine once both are cut into equal pieces.{% endblock %}
+{% block why_text %}You can only add things you can count in the same unit. Pieces of different sizes are not the same unit, so cut both bars into the same size (the LCM), then count. The same holds for algebra: 1/x + 1/(x + 1) needs the common denominator x(x + 1) before the tops can be added.{% endblock %}
+{% block try_items %}
+<li>Turn "equal pieces" off. Can you read the total?</li>
+<li>Try 1/4 + 1/6. How many equal pieces are needed?</li>
+<li>Try 1/2 + 1/3. Compare (a + b)/(ab) with the result.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Factor the denominators, build the LCM, rewrite each fraction over it, then add. Step through, and check with a number.{% endblock %}
+{% block why_text %}Once every fraction has the same denominator you can add the numerators. The LCM is the smallest such denominator: every factor appears the greatest number of times it appears in any one denominator.{% endblock %}
+{% block try_items %}
+<li>Step through problem 2. Which factor is missing from each fraction?</li>
+<li>Probe x = 2.5 and compare the original with the result.</li>
+{% endblock %}

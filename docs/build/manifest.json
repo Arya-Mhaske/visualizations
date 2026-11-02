@@ -3525,37 +3525,37 @@
 "archetype": "phasor",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/why-do-we-need-a-common-denominator": {
 "archetype": "discrete",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/why-does-a-simplified-expression-hide-a-hole": {
 "archetype": "discrete",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/lcm-method-for-rational-expressions": {
 "archetype": "stepper",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/simplify-complex-fractions": {
 "archetype": "discrete",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/rational-expressions/two-pipes-fill-a-tank": {
 "archetype": "discrete",
 "priority": 73,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/complex-numbers/why-invent-i-at-all": {
 "archetype": "discrete",

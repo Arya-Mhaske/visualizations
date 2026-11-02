@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Multiply the top and bottom of a complex fraction by the LCM of the small denominators. The layers collapse.{% endblock %}
+{% block why_text %}Multiplying top and bottom by the same non-zero thing leaves the fraction unchanged. Choosing the LCM of all the small denominators clears every little fraction at once.{% endblock %}
+{% block try_items %}
+<li>Step through problem 2. Which factor cancels at the end?</li>
+<li>Probe at a value, and compare the original with the answer.</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Someone "simplifies" a fraction. Plot the original and the claim, and test them at a number.{% endblock %}
+{% block why_text %}A factor multiplies the whole top and the whole bottom, so it can be cancelled. A term is added, so it cannot. If the two curves lie on top of each other the cancel was legal; if they split apart it was not.{% endblock %}
+{% block try_items %}
+<li>Try (x + 2) ÷ x → 2. Move the probe and compare the values.</li>
+<li>Try (x² + 2x) ÷ x → x + 2. Why do the curves match?</li>
+<li>Which examples cancel a factor, and which a term?</li>
+{% endblock %}

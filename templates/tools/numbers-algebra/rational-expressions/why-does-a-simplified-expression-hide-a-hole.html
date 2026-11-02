@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}(x² − a²) ÷ (x − a) simplifies to x + a. The two graphs are the same line, except at one point.{% endblock %}
+{% block why_text %}Cancelling (x − a) removes the factor that makes the bottom 0. But the original is still undefined at x = a, so its graph has a hole there, while x + a does not. They match everywhere except x = a.{% endblock %}
+{% block try_items %}
+<li>Move the probe to x = a. What does the original give?</li>
+<li>Change a. Where does the hole move?</li>
+{% endblock %}

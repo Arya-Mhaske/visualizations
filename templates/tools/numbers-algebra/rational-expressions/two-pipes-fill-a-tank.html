@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pipe A fills a tank in a hours and pipe B in b hours. Open both and find the time to fill it.{% endblock %}
+{% block why_text %}In one hour A fills 1/a of the tank and B fills 1/b. Together they fill 1/a + 1/b of it, so the time is the reciprocal: t = ab/(a + b), always shorter than either alone. A drain simply subtracts its rate.{% endblock %}
+{% block try_items %}
+<li>Try a = 6 and b = 3. Is the time shorter than both?</li>
+<li>Turn on a drain. What happens to the time?</li>
+<li>Make the drain too strong. What happens?</li>
+{% endblock %}
