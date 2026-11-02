@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Read a 0 = 1 row or a free variable.{% endblock %}
+{% block why_text %}After reduction, a row that says 0 = 1 is false, so the system has no solution. A row of zeros means one equation added nothing, and the unknown with no pivot is free: you may choose it, and the others follow. A pivot in every column with no false row gives exactly one solution.{% endblock %}
+{% block try_items %}
+<li>Pick the inconsistent system. Which row is false?</li>
+<li>Pick the dependent system. Which variable is free?</li>
+<li>Find the solution for t = 0 and t = 1.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Reach echelon form one operation at a time.{% endblock %}
+{% block why_text %}Row reduction makes zeros below each pivot, working left to right, swapping rows if a pivot is 0. The result has a staircase of pivots. Then the bottom equation has one unknown, and each equation above it can be solved by back-substitution.{% endblock %}
+{% block try_items %}
+<li>Press Next step. Which entry becomes 0 each time?</li>
+<li>Pick the matrix that needs a swap. When does the swap happen?</li>
+<li>Check the solution in the original rows.</li>
+{% endblock %}

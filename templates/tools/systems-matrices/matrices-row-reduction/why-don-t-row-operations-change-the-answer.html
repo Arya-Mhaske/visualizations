@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}See each operation as a legal move on the equations, with the solution point fixed.{% endblock %}
+{% block why_text %}Swapping equations or multiplying one by a non-zero number gives the same line. Adding a multiple of one equation to another gives a new line, but it still passes through the common solution. So the solution is untouched. Multiplying by zero loses the equation, which is why it is not allowed.{% endblock %}
+{% block try_items %}
+<li>Choose "Add k × row 1 to row 2". Does the solution move?</li>
+<li>Choose "Multiply row 1 by k" and set k = 0. What breaks?</li>
+<li>Swap the rows. What changes in the picture?</li>
+{% endblock %}

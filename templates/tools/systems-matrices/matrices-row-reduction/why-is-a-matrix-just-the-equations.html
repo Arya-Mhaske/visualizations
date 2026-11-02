@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Strip out the letters and keep the numbers in place.{% endblock %}
+{% block why_text %}In a system, x, y, z and the plus signs only tell you which number belongs to which unknown. If every number is kept in its own column, the letters are not needed. The result is the augmented matrix. Rows are equations and columns are unknowns, so a row operation is exactly an operation on the equations.{% endblock %}
+{% block try_items %}
+<li>Pick the dependent system. Which row is a mix of the others?</li>
+<li>Write the matrix of x + 2y = 5, 3x − y = 1 yourself.</li>
+<li>What does the bar in the matrix stand for?</li>
+{% endblock %}
