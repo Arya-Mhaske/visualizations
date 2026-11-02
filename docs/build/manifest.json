@@ -5428,19 +5428,19 @@
 "archetype": "discrete",
 "priority": 35,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/sequences/why-do-fibonacci-ratios-approach-1-618": {
 "archetype": "discrete",
 "priority": 35,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/sequences/notation-expander": {
 "archetype": "stepper",
 "priority": 35,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/arithmetic-sequences/why-does-gauss-s-trick-work": {
 "archetype": "discrete",

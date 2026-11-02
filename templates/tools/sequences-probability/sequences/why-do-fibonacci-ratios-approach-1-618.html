@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Divide each Fibonacci number by the one before it. The ratios swing above and below a fixed number.{% endblock %}
+{% block why_text %}If the ratio settles to a number φ, then since F₍ₙ₊₁₎ = F₍ₙ₎ + F₍ₙ₋₁₎, dividing by F₍ₙ₎ gives φ = 1 + 1/φ, so φ² = φ + 1, and φ = (1 + √5)/2 ≈ 1.618. The same number appears whatever the two starting values.{% endblock %}
+{% block try_items %}
+<li>Slide the number of terms. How close is the ratio?</li>
+<li>Change the starting values. Does the limit change?</li>
+<li>Check φ² = φ + 1.</li>
+{% endblock %}

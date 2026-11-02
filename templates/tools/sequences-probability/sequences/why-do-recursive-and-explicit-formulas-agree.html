@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Build a sequence term by term from the rule "next = previous + d" (or × r), and also jump straight to any term with a formula.{% endblock %}
+{% block why_text %}The recursive rule builds each term from the one before: a₍ₙ₎ = a₍ₙ₋₁₎ + d. Doing that n − 1 times adds d exactly n − 1 times to a₁, so aₙ = a₁ + (n − 1)d. For a geometric sequence the multiplications give aₙ = a₁ rⁿ⁻¹. The explicit formula is the recursive rule with the repeated steps added up.{% endblock %}
+{% block try_items %}
+<li>Compare the dots and the curve.</li>
+<li>Switch to geometric.</li>
+<li>Check a term far along.</li>
+{% endblock %}

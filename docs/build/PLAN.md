@@ -366,7 +366,7 @@ it reaches the front of the queue.
 | 29 | `forces-energy/power` | 5 | 1 | ✓ |
 | 30 | `sequences-probability/binomial-theorem` | 6 | 1 | ✓ |
 | 31 | `forces-energy/collisions` | 7 | 1 | ✓ |
-| 32 | `sequences-probability/sequences` | 3 | 1 | |
+| 32 | `sequences-probability/sequences` | 3 | 1 | ✓ |
 | 33 | `rotation-gravitation/centre-of-mass` | 7 | 1 | ✓ |
 | 34 | `sequences-probability/arithmetic-sequences` | 4 | 1 | |
 | 35 | `rotation-gravitation/rotation-kinematics` | 5 | 1 | ✓ |
@@ -730,3 +730,5 @@ it reaches the front of the queue.
 - `properties-of-matter/flow-bernoulli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
 
 - `numbers-algebra/_poly.js`: coefficient-list polynomials (`evalP`, `tex`, `synthetic`, `longDivision`, `tileFactors`) and the grouping presets; the stepper-style tools reuse `_steps-view.js`. Built without screenshots or tests, by request.
+
+- `sequences-probability/_seq.js`: AP and GP terms and sums, Fibonacci, and the mean, variance, SD and mean-deviation helpers used by statistics. Built without screenshots or tests, by request.
