@@ -1001,37 +1001,37 @@
 "archetype": "sim",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/why-does-a-shell-pull-as-if-all-its-mass-were-at-the-centre": {
 "archetype": "sim",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/why-can-t-gravity-be-shielded": {
 "archetype": "sim",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/superposition-of-gravitational-forces": {
 "archetype": "sim",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/cavendish-s-torsion-balance": {
 "archetype": "stepper",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/universal-gravitation/weighing-the-earth": {
 "archetype": "space3d",
 "priority": 50,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/g-above-below-the-surface/why-does-g-fall-linearly-inside-the-earth-but-as-1-r2-outsid": {
 "archetype": "sim",

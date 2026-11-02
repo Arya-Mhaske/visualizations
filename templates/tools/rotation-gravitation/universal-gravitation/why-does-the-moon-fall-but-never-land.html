@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}An apple falls 4.9 m in 1 s. The Moon also falls towards the Earth every second, but only about 1.4 mm.{% endblock %}
+{% block why_text %}Gravity weakens as 1/r². The Moon is about 60 Earth radii from the centre, so its acceleration is 9.8/60² ≈ 0.0027 m/s², and in 1 s it falls ½ × 0.0027 ≈ 1.4 mm. Yet it keeps moving sideways fast enough that the Earth's surface curves away beneath it by the same amount: it falls round the Earth and never lands.{% endblock %}
+{% block try_items %}
+<li>Set the distance to 1 Earth radius. How far does it fall in 1 s?</li>
+<li>Set 60. What is the fall?</li>
+<li>Find the ratio of the two falls and compare with 60².</li>
+{% endblock %}
