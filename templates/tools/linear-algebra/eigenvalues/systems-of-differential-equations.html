@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Solve du/dt = Au by following the path of the solution through the plane.{% endblock %}
+{% block why_text %}An eigenvector x with eigenvalue λ gives a solution e^(λt) x that stays on its line and grows or shrinks. A general solution is a mix of these. Negative eigenvalues decay, positive ones grow, one of each makes a saddle, and a pair of complex eigenvalues makes a spiral or a circle.{% endblock %}
+{% block try_items %}
+<li>Choose Saddle. Along which line does the solution shrink?</li>
+<li>Choose Spiral in. Does the path ever reach a straight line?</li>
+<li>Start on an eigenvector line. Does the solution leave it?</li>
+{% endblock %}

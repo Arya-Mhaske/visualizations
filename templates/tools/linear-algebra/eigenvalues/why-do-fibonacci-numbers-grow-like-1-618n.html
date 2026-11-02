@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Write the Fibonacci recurrence as a matrix. Its larger eigenvalue is the golden ratio.{% endblock %}
+{% block why_text %}One step of the recurrence is multiplying (F(n+1), F(n)) by the matrix [[1, 1], [1, 0]]. Its eigenvalues are 1.618 and −0.618. After many steps the part with 1.618 dominates and the part with −0.618 fades. So the ratio of neighbours tends to 1.618 and F(n) grows like 1.618ⁿ.{% endblock %}
+{% block try_items %}
+<li>Move n from 1 to 25. What do the ratios do?</li>
+<li>Watch the last readout. Does the second eigenvalue to the nth power fade?</li>
+<li>Does Binet's formula give the exact Fibonacci number every time?</li>
+{% endblock %}

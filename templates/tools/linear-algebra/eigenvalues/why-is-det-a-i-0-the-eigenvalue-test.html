@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}An eigenvector is sent to zero by A − λI. That squashes the circle flat and makes the determinant zero.{% endblock %}
+{% block why_text %}A x = λ x means (A − λI) x = 0 with x not zero. So A − λI sends a non-zero vector to zero and has no inverse, which means its determinant is zero. The graph of det(A − λI) crosses zero exactly at the eigenvalues, and there the image of the circle collapses to a line.{% endblock %}
+{% block try_items %}
+<li>Press "Jump to an eigenvalue". What happens to the blue curve?</li>
+<li>Where does the lower graph cross zero?</li>
+<li>Make a matrix with no real eigenvalue. Does the graph cross zero?</li>
+{% endblock %}

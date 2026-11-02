@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split a vector into eigenvector parts. After k steps each part is just multiplied by λᵏ.{% endblock %}
+{% block why_text %}If A = XΛX⁻¹ then A² = XΛ²X⁻¹, and in general Aᵏ = XΛᵏX⁻¹. Each eigenvector part of x₀ is only scaled by its eigenvalue at every step, so after k steps by λᵏ. The bigger eigenvalue wins, which is why the path turns towards the dominant eigenvector.{% endblock %}
+{% block try_items %}
+<li>Choose eigenvalues 1 and 0.2. What happens to the second part as k grows?</li>
+<li>Compare the two top-left entries. Do they agree?</li>
+<li>Choose the non-symmetric matrix. Are the two parts still perpendicular?</li>
+{% endblock %}

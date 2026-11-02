@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Spin a vector round the circle while A acts. Only eigenvectors stay on their own line.{% endblock %}
+{% block why_text %}For most directions, A x points somewhere new. For a few special directions, A x lies along x itself, so A only stretches or shrinks it. Those are the eigenvectors, and the stretch factor is the eigenvalue. A rotation has none (real ones), a shear has just one, and a projection has λ = 0 and 1.{% endblock %}
+{% block try_items %}
+<li>Choose Symmetric and turn x to 45°. What do you see?</li>
+<li>Choose Rotation. Is there any direction where Ax stays on x's line?</li>
+<li>Choose Shear and look at the eigenvector line. How many are there?</li>
+{% endblock %}

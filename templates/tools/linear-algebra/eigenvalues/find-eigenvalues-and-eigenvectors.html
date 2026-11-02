@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Use the trace and the determinant to find the eigenvalues of a 2 × 2 matrix.{% endblock %}
+{% block why_text %}The eigenvalues add up to the trace and multiply to the determinant. So they are the roots of λ² − (trace) λ + (det) = 0. For each root, solve (A − λI) x = 0 to get the eigenvector. If the roots are not real the matrix turns every vector, as a rotation does.{% endblock %}
+{% block try_items %}
+<li>Pick a matrix with a zero in a corner. Where are its eigenvalues?</li>
+<li>Make the discriminant negative. What happens to the eigenvalues?</li>
+<li>Check that the eigenvalues add to the trace.</li>
+{% endblock %}
