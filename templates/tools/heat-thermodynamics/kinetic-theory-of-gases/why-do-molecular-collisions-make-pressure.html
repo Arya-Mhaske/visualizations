@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Molecules bounce off the right wall. Each hit pushes a little, and a million hits a second feel like a steady pressure.{% endblock %}
+{% block why_text %}One molecule hitting a wall at speed vₓ gives it a push 2mvₓ, and it comes back every 2L/vₓ seconds. Add up N molecules and use ⟨vₓ²⟩ = ⟨v²⟩/3, because no direction is special. The result is P = ⅓ n m ⟨v²⟩. Heat the gas and ⟨v²⟩ grows, so P grows: that is PV = NkT.{% endblock %}
+{% block try_items %}
+<li>Set N = 1. Watch one molecule. How often does it hit the right wall?</li>
+<li>Go back to N = 40. Does the measured pressure settle near ⅓ n m ⟨v²⟩?</li>
+<li>Double T. What happens to P?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Point molecules in a 3D box (the picture shows two of the three directions). Pressure is read from the right wall over one-second windows, so a few seconds are needed to settle. Units are reduced (k = 1).</div>{% endblock %}

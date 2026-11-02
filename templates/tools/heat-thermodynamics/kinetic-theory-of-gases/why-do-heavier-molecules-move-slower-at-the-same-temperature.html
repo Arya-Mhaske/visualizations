@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Hydrogen and oxygen in one box, at one temperature. Which moves faster?{% endblock %}
+{% block why_text %}At one temperature every molecule has the same average kinetic energy, ½m⟨v²⟩ = (3/2)kT. If m is bigger, v² must be smaller. Oxygen is about 16 times heavier than hydrogen, so its rms speed is about √16 = 4 times smaller. That is also why hydrogen escapes from planets more easily than oxygen.{% endblock %}
+{% block try_items %}
+<li>Compare the dots. Which ones cross the box faster?</li>
+<li>Raise T. What happens to both speeds, and to the ratio?</li>
+<li>Check the ratio in the readout against √(m_O₂/m_H₂).</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Molecules are shown at a slowed pace and as point masses in the ratio 1 : 15.87. The speeds in m/s come from the formula.</div>{% endblock %}

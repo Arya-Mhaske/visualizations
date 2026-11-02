@@ -417,7 +417,7 @@ it reaches the front of the queue.
 | 80 | `functions-graphs/polynomial-functions` | 11 | 1 | ✓ |
 | 81 | `heat-thermodynamics/second-law-engines` | 8 | 1 | ✓ |
 | 82 | `functions-graphs/rational-functions` | 7 | 1 | ✓ |
-| 83 | `heat-thermodynamics/kinetic-theory-of-gases` | 7 | 1 | |
+| 83 | `heat-thermodynamics/kinetic-theory-of-gases` | 7 | 1 | ✓ |
 | 84 | `functions-graphs/modelling-with-data` | 6 | 1 | ✓ |
 | 85 | `heat-thermodynamics/equipartition-specific-heats` | 5 | 1 | |
 | 86 | `functions-graphs/area-by-stretching` | 5 | 1 | ✓ |
@@ -626,3 +626,5 @@ it reaches the front of the queue.
 - `heat-thermodynamics/_proc.js`: `end`, `work`, `curve` for the four basic processes (f = volume ratio, pressure ratio for isochoric). `why-does-quasi-static-matter` is a two-chamber isothermal gas with a leaky pipe (rate 0.3/s), RK4; checked in Node: extra work 134 J at 0.5 s, 25 J at 30 s, always > 0.
 
 - `heat-thermodynamics/_engines.js`: `carnot(T1, T2, gamma, r)` (points A–D, four curve functions, Q1, Q2, W, loop area, eta; checked in Node: area = W and eta = 1 - T2/T1 for both gases), `drawCycle`, `copFridge`, `carnotEta`. The Clausius tool uses a Q/T ledger (entropy named only in a note).
+
+- `heat-thermodynamics/_gas.js`: a 3D ideal gas in a box (reduced units, k = 1) with per-molecule masses, a right wall that measures impulse (P over 1 s windows), `setT/setW/setM`, `drawGas`; checked in Node (P = 0.370 against 0.379 from the mean square speed). `_kt.js` has SI vrms/vmean/vp and the Maxwell curve. Gas tools run a `createClock` whose onFrame steps the gas; use it again for `mean-free-path` (needs collisions, which `_gas.js` lacks). The atomic-hypothesis page is a DOM stage with a step slider; the Kanada step is labelled conjecture.

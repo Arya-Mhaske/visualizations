@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squeeze carbon dioxide until the molecules get in each other's way, then cool it until they start to cling.{% endblock %}
+{% block why_text %}The ideal gas law treats molecules as points that never attract. Squeezed hard, molecules have size: they cannot be packed into zero volume, so the pressure is higher (V − b). Cold and close, they attract each other: they hit the wall less hard, so the pressure is lower (a/V²). The ideal law is good only when the gas is thin and hot.{% endblock %}
+{% block try_items %}
+<li>Switch off both toggles. Does the real curve match the ideal one?</li>
+<li>Turn on only the size toggle at small V. Is the real P above or below ideal?</li>
+<li>Turn on only attraction at 220 K. What happens to the curve at medium V?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The van der Waals equation with a = 3.64 L²·atm/mol² and b = 0.0427 L/mol for CO₂. Below about 304 K its curve has a loop that real gas does not follow: it condenses to liquid instead.</div>{% endblock %}

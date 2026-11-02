@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Air molecules move at about the speed of a rifle bullet. Pick a gas and a temperature.{% endblock %}
+{% block why_text %}From ½m⟨v²⟩ = (3/2)kT we get v_rms = √(3RT/M). For nitrogen at 300 K this is about 517 m/s, faster than sound (about 345 m/s), which is not a coincidence: sound is carried by molecules. The molecules in a gas have many different speeds, and the curve shows how many have each.{% endblock %}
+{% block try_items %}
+<li>Choose N₂ at 300 K. What is v_rms?</li>
+<li>Switch to H₂. How much faster is it?</li>
+<li>Double T. By what factor does the speed change?</li>
+{% endblock %}

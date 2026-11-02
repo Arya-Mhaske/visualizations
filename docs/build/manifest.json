@@ -1697,43 +1697,43 @@
 "archetype": "sim",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/why-do-molecular-collisions-make-pressure": {
 "archetype": "sim",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/why-is-temperature-average-kinetic-energy": {
 "archetype": "sim",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/why-do-heavier-molecules-move-slower-at-the-same-temperature": {
 "archetype": "sim",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/why-do-real-gases-deviate-at-high-pressure-and-low-temperatu": {
 "archetype": "sim",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/gas-in-a-box-simulator": {
 "archetype": "chance",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/kinetic-theory-of-gases/how-fast-do-air-molecules-move": {
 "archetype": "phasor",
 "priority": 86,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/equipartition-specific-heats/why-does-each-degree-of-freedom-get-12kt": {
 "archetype": "sim",

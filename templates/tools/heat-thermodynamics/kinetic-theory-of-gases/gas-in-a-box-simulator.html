@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Change N, T and V and check Boyle's and Charles's laws on the measured pressure.{% endblock %}
+{% block why_text %}Pressure comes from hits on the wall. Halve the volume and the molecules hit twice as often: Boyle's law, P ∝ 1/V. Heat the gas and the molecules are faster and hit harder and more often: P ∝ T. More molecules, more hits: P ∝ N. All three are PV = NkT.{% endblock %}
+{% block try_items %}
+<li>Halve the box length. What happens to P? What stays constant?</li>
+<li>Double T at fixed volume. What happens to P?</li>
+<li>Double N at fixed T and V. What happens to P?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The measured pressure uses one-second windows and the box is a 3D box with reduced units (k = 1). Wait a few seconds after each change.</div>{% endblock %}

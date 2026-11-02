@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Heat the gas and make the molecules heavier or lighter. Compare the average kinetic energy with (3/2)kT.{% endblock %}
+{% block why_text %}From the pressure of the molecules, P = ⅓ n m ⟨v²⟩, and from the gas law, PV = NkT, we get ½m⟨v²⟩ = (3/2)kT. Temperature is a measure of the average kinetic energy per molecule. Change the mass and the speeds change, but the average energy stays put, because it depends only on T.{% endblock %}
+{% block try_items %}
+<li>Double T. What happens to the mean energy?</li>
+<li>Make the molecules four times heavier at the same T. Does the mean energy change? Do the speeds?</li>
+<li>Are all the bars the same height? What does the line show?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Units are reduced (k = 1). With 40 molecules the mean wobbles a little around (3/2)kT.</div>{% endblock %}
