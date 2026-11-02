@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Read the limits for dy dx and for dx dy off the sketch of a region.{% endblock %}
+{% block why_text %}The inner limits describe a line through the region: where it enters and where it leaves. They may depend on the outer variable. The outer limits are plain numbers that cover the whole region. Both orders cover the same region, so they give the same answer.{% endblock %}
+{% block try_items %}
+<li>Step through the triangle. How do the limits change when the order swaps?</li>
+<li>Try the region between the curves. Which order has the simpler limits?</li>
+<li>Change the integrand. Does the agreement hold?</li>
+{% endblock %}

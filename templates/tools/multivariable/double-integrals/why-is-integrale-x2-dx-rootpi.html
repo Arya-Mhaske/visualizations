@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Square the integral, turn it into a double integral over the plane, and use polar coordinates.{% endblock %}
+{% block why_text %}(∫e^(−x²)dx)² = ∬e^(−(x²+y²))dA. In polar coordinates the disk integral is π(1 − e^(−R²)), which tends to π, and the extra factor r in dA is what makes the integral doable. So the square of the integral is π and the integral is √π.{% endblock %}
+{% block try_items %}
+<li>Raise R. At what R do the two curves nearly meet π?</li>
+<li>Compare the square root of the square with √π.</li>
+<li>Why is the disk volume easy while the square volume is not?</li>
+{% endblock %}

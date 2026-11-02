@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slice the same solid in two directions and compare the totals.{% endblock %}
+{% block why_text %}Slicing by planes x = constant gives areas A(x), and adding them gives the volume. Slicing by y = constant gives B(y), and adding them gives the same solid's volume. On a non-rectangular region the bounds change when you swap the order, but the volume cannot.{% endblock %}
+{% block try_items %}
+<li>On the square, compare the two totals.</li>
+<li>Switch to the triangle. Which slice area is bigger near 2?</li>
+<li>Change f. Do the totals still match?</li>
+{% endblock %}

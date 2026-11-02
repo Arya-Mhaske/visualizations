@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a disk into polar rectangles and compare the sizes of the cells.{% endblock %}
+{% block why_text %}Every cell has the same Δr and the same Δθ, but a cell at radius r has an arc of length r Δθ. So its area is about r Δr Δθ, and the factor r says that the cells grow with the radius.{% endblock %}
+{% block try_items %}
+<li>Compare the blue cell with a cell in the last ring. How many times bigger?</li>
+<li>Check that r Δr Δθ at the middle matches the exact area.</li>
+<li>Add up all the cells. What does the total approach?</li>
+{% endblock %}
