@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Do the same two moves in both orders on the same triangle and compare the results.{% endblock %}
+{% block why_text %}A turn moves the corners round in a ring. A flip swaps two of them. Flipping then turning sends each corner somewhere different from turning then flipping, so the order changes the answer. Two turns always commute, because a turn followed by a turn is just a bigger turn.{% endblock %}
+{% block try_items %}
+<li>Try r and f1. Do the final triangles match?</li>
+<li>Try r and r². Do the final triangles match?</li>
+<li>Find two flips that do not commute.</li>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Press a cell: the triangle does the row move then the column move, and the table records the result.{% endblock %}
+{% block why_text %}Every combination of two symmetries is again one of the six, so the table never leaves its own list (closure). One move does nothing (identity), every move can be undone (inverses), and moves chain the same however you bracket them. Flips and turns do not commute, so this group is not abelian.{% endblock %}
+{% block try_items %}
+<li>Press r then f1, and then f1 then r. Do the triangles match?</li>
+<li>Choose Identity. Which row and column copy the headings?</li>
+<li>Choose Inverses. How many times does e appear in each row?</li>
+<li>Choose Order matters. How many cells are marked?</li>
+{% endblock %}

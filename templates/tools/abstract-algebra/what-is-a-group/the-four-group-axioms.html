@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick a set and an operation. The tool checks closure, associativity, identity and inverses.{% endblock %}
+{% block why_text %}A group needs all four rules. A set can pass three and fail one, such as the whole numbers under addition without negatives, which have no inverses. Each failing set breaks exactly the rule the witness line names.{% endblock %}
+{% block try_items %}
+<li>Pick ℤ with +. Which rules pass?</li>
+<li>Pick ℤ with −. Which rule fails? Read the numbers.</li>
+<li>Pick ℤ₆ with × mod 6, then ℤ₇ without 0. Why does one pass and the other fail?</li>
+<li>Pick the odd integers. Which rule fails first?</li>
+{% endblock %}

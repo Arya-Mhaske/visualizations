@@ -1,0 +1,11 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose a group and fill its multiplication table. Each element must appear once in every row and column.{% endblock %}
+{% block why_text %}In a group, ax = b always has exactly one solution x, so no element repeats along a row or column. A table with that property is a Latin square. Try to repeat an element and the count of repeats shows the mistake.{% endblock %}
+{% block try_items %}
+<li>Fill the ℤ₄ table. Which entries are forced?</li>
+<li>Put one element twice in a row. What does the repeat counter say?</li>
+<li>Compare ℤ₄ and ℤ₂ × ℤ₂. Which has a symmetric table?</li>
+<li>Fill the triangle group. Is its table symmetric across the diagonal?</li>
+{% endblock %}

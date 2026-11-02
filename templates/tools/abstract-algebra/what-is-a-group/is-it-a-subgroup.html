@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block formula %}{% endblock %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Press elements to build a subset H and test it with the subgroup criterion.{% endblock %}
+{% block why_text %}A subset is a subgroup when combining a with the inverse of b never leaves it. One check covers closure, identity and inverses together. A failing pair is a witness you can see.{% endblock %}
+{% block try_items %}
+<li>Press the multiples-of-3 preset. Is it a subgroup?</li>
+<li>Try {0, 1, 2, 3}. Which pair fails?</li>
+<li>Find all subsets of the triangle group that pass and have two elements.</li>
+{% endblock %}
