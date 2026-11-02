@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A tyre gauge shows the pressure above the atmosphere. The true pressure inside is the gauge reading plus atmospheric pressure.{% endblock %}
+{% block why_text %}P<sub>abs</sub> = P<sub>gauge</sub> + P<sub>atm</sub>. A tyre at 200 kPa gauge has about 301 kPa absolute. Different units describe the same pressure: 1 atm = 101 325 Pa = 1.013 bar = 760 torr = 760 mm Hg.{% endblock %}
+{% block try_items %}
+<li>Set a gauge reading of 200 kPa. What is the absolute pressure?</li>
+<li>Read it in atm.</li>
+<li>A gauge reads 0. What is the absolute pressure?</li>
+{% endblock %}

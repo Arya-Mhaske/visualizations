@@ -393,7 +393,7 @@ it reaches the front of the queue.
 | 56 | `derivatives/differentiation-rules` | 7 | 1 | ✓ |
 | 57 | `properties-of-matter/elastic-moduli` | 7 | 1 | ✓ |
 | 58 | `derivatives/trig-derivatives` | 4 | 1 | ✓ |
-| 59 | `properties-of-matter/pressure-pascal` | 9 | 1 | |
+| 59 | `properties-of-matter/pressure-pascal` | 9 | 1 | ✓ |
 | 60 | `sequences-probability/statistics-measuring-spread` | 9 | 1 | |
 | 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | |
 | 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
@@ -724,3 +724,5 @@ it reaches the front of the queue.
 - `properties-of-matter/stress-strain`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
 
 - `properties-of-matter/elastic-moduli`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.
+
+- `properties-of-matter/pressure-pascal`: inline maths on `lib/recipes.js`. Built without screenshots or tests, by request.

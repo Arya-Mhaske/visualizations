@@ -1223,55 +1223,55 @@
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-is-pressure-a-scalar-when-force-is-a-vector": {
 "archetype": "space3d",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-doesn-t-the-vessel-s-shape-matter-hydrostatic-paradox": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-is-blood-pressure-higher-at-the-feet": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-does-air-pressure-halve-by-about-6-km": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-can-a-small-push-lift-a-car-pascal": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/gauge-versus-absolute-pressure": {
 "archetype": "table",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/why-is-a-mercury-barometer-76-cm-tall": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/pressure-pascal/hydraulic-lifts-and-brakes": {
 "archetype": "sim",
 "priority": 62,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "properties-of-matter/flow-bernoulli/why-does-water-speed-up-where-a-pipe-narrows": {
 "archetype": "sim",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Air is squeezed by the weight of the air above. The higher you go, the less air there is above, and the pressure falls off by the same factor for every extra height.{% endblock %}
+{% block why_text %}In an isothermal atmosphere, dP/dh = −ρg with ρ proportional to P. That gives P = P₀e^(−h/H) with scale height H = RT/Mg ≈ 8.4 km. The pressure halves every H ln 2 ≈ 5.8 km, or about 6 km: a repeated halving, not a straight-line fall.{% endblock %}
+{% block try_items %}
+<li>Slide to 6 km. What is the pressure?</li>
+<li>Slide to 12 km.</li>
+<li>Make the air colder. What happens to the scale height?</li>
+{% endblock %}

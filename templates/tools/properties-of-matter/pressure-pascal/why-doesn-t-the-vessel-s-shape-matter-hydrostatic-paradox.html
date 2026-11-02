@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fill three vessels of different shapes to the same depth. The pressure on the base is the same, though they hold different amounts of water.{% endblock %}
+{% block why_text %}The pressure at depth h is P = P<sub>a</sub> + ρgh. It depends on depth, not on the amount of water or the shape: sideways forces from sloping walls take up the difference in weight. So the force on the base is the same, and the wide vessel does not push down harder than the narrow one.{% endblock %}
+{% block try_items %}
+<li>Change the depth. What happens to all three pressures?</li>
+<li>Compare the weight of water in the three vessels.</li>
+<li>Compare the force on the base.</li>
+{% endblock %}
