@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Step along a contour, then across it, and see how f changes.{% endblock %}
+{% block why_text %}Along a contour f does not change, so the gradient has no component in that direction. All of its pull is across the contour, which means it is perpendicular. The change in f is about |∇f| s sin α for a step of size s at angle α to the contour.{% endblock %}
+{% block try_items %}
+<li>Set α = 0. What is the change in f?</li>
+<li>Set α = 90. Compare the change with |∇f| times s.</li>
+<li>Use the saddle and move to a flat region. What happens to the gradient arrow?</li>
+{% endblock %}

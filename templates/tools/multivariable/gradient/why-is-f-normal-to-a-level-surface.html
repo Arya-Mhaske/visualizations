@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw a path on a level surface and check that the gradient is at a right angle to its tangent.{% endblock %}
+{% block why_text %}On a level surface F is constant, so along any path in it d/dt F(r(t)) = 0. The chain rule says this equals ∇F · r′(t). So ∇F is perpendicular to every tangent direction of the surface, which is exactly what it means to be a normal.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The dot product is not exactly 0 in the readout because the tangent is found numerically.</div>{% endblock %}
+{% block try_items %}
+<li>Change the direction of the path. Does the angle stay at 90°?</li>
+<li>Move the point round the surface. Does the gradient always point outwards?</li>
+<li>Compare the ball with the egg. When does the gradient not point to the centre?</li>
+{% endblock %}

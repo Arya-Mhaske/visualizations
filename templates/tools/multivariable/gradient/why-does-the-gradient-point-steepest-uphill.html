@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn a direction dial and watch the slope peak when you face along the gradient.{% endblock %}
+{% block why_text %}The slope in direction u is the dot product of the gradient with u, which is |∇f| cos θ, where θ is the angle between them. A cosine is largest at 0, so the slope is greatest when you face along ∇f, and its value there is |∇f|.{% endblock %}
+{% block try_items %}
+<li>Turn θ slowly. At what angle is the slope largest?</li>
+<li>At that angle, compare the slope with |∇f|.</li>
+<li>Find the direction where the slope is zero. How does it relate to the gradient?</li>
+<li>Switch to the contour map. How does the gradient meet the contour line?</li>
+{% endblock %}

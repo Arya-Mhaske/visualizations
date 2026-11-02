@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Compute the slope in any direction by taking the dot product of the gradient with a unit vector.{% endblock %}
+{% block why_text %}The gradient packs both partial derivatives into one vector. The slope in direction u is the dot product ∇f · u. The vector u must have length 1, otherwise the answer is scaled by the length of the vector you gave.{% endblock %}
+{% block try_items %}
+<li>Use x² y at (2, 1) and the direction (3, 4). What is D_u f?</li>
+<li>Double the direction vector. Does the answer change?</li>
+<li>Choose the direction of the gradient. How does D_u f compare with |∇f|?</li>
+{% endblock %}
