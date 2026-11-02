@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut a small curved box in cylindrical or spherical coordinates and measure it.{% endblock %}
+{% block why_text %}In cylindrical coordinates a box has edges Δr, an arc of length r Δθ, and Δz. In spherical coordinates the edges are Δρ, an arc ρ Δφ and an arc ρ sin φ Δθ. The arcs lengthen with distance, so the volume carries the factors r or ρ² sin φ.{% endblock %}
+{% block try_items %}
+<li>In cylindrical mode, move r outwards. How does the exact volume change when the Δ's stay the same?</li>
+<li>Compare the product of Δ's with the volume that has the factor. Which is closer to the exact value?</li>
+<li>In spherical mode, move φ towards 90°. How does the volume change?</li>
+{% endblock %}

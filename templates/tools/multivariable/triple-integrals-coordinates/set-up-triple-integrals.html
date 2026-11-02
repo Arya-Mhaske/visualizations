@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Project a solid onto the plane, then stack vertical lines over its shadow.{% endblock %}
+{% block why_text %}Above each point of the shadow, a vertical line enters the solid at the bottom surface and leaves at the top. Those two surfaces give the z limits. The shadow's own boundary gives the other two pairs of limits, as in a double integral.{% endblock %}
+{% block try_items %}
+<li>Step through the corner of the box. What is the shadow?</li>
+<li>For the ball, why are the z limits ± a square root?</li>
+<li>Compare the stacked volume with the formula.</li>
+{% endblock %}

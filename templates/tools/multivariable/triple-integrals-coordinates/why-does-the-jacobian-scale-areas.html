@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Stretch a small square with a change of variables and compare areas.{% endblock %}
+{% block why_text %}Near a point a smooth change of variables acts like a linear map, which turns a tiny square into a parallelogram. The area of that parallelogram is the absolute value of the determinant of the partial derivatives, the Jacobian, times the original area.{% endblock %}
+{% block try_items %}
+<li>Set the linear map to a = 2, b = 0, c = 0, d = 3. What is the Jacobian?</li>
+<li>Switch to polar. How does the Jacobian change with u?</li>
+<li>Compare the area of the image cell with |J| du dv for a small square.</li>
+{% endblock %}

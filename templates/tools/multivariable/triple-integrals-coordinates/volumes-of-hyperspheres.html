@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Follow the volume of a unit ball as the dimension grows.{% endblock %}
+{% block why_text %}The unit ball in 5 dimensions has the largest volume, and after that it shrinks towards zero. Meanwhile the share of the ball within a thin outer shell, 1 − (1 − ε)^n, goes to 1. In high dimensions the ball is almost all skin.{% endblock %}
+{% block try_items %}
+<li>Move n from 1 to 5. What happens to the volume?</li>
+<li>Keep going to 30. What happens now?</li>
+<li>With a 10% skin, in what dimension is more than 90% of the ball in the skin?</li>
+{% endblock %}
