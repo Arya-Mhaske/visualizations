@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Cut the biggest squares you can from a rectangle, then from the leftover. The last square is the gcd.{% endblock %}
+{% block why_text %}Any square that tiles the whole rectangle also tiles the leftover strip, because the strip is the rectangle minus whole squares. So the common size never changes until the last cut, and the last square is the biggest one that fits.{% endblock %}
+{% block try_items %}
+<li>Set 48 by 18. What is the side of the last square?</li>
+<li>Pick two numbers with no common factor, such as 35 and 12. What is the last square?</li>
+<li>Pick a and b equal. How many cuts are there?</li>
+{% endblock %}

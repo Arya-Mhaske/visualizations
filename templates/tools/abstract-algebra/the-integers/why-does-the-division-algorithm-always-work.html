@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Hop down from a in steps of b and stop when you land in the green zone.{% endblock %}
+{% block why_text %}Hopping down by b, you must eventually land in the zone 0 to b − 1: it is exactly b numbers wide, so you cannot jump over it. You land in one spot only, so q and r are unique.{% endblock %}
+{% block try_items %}
+<li>Press Find the remainder. How many hops did it take?</li>
+<li>Make a negative. Which way do the hops go now?</li>
+<li>Take one hop too many. What happens to the remainder?</li>
+{% endblock %}

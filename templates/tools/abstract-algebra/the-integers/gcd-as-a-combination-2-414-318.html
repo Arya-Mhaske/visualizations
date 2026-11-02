@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Run Euclid's divisions, then work backwards to write the gcd as x·a + y·b.{% endblock %}
+{% block why_text %}Each remainder is made from the two before it, so every remainder, including the gcd, is a whole-number combination of a and b. Substituting back one line at a time collects it into x·a + y·b.{% endblock %}
+{% block try_items %}
+<li>Step through 14 and 18. Do you get 4·14 − 3·18 = 2?</li>
+<li>Choose two numbers with gcd 1. What does the combination equal?</li>
+<li>Try a = 6 and b = 4. Which remainder is the gcd, and what are x and y?</li>
+{% endblock %}

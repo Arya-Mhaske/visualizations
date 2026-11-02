@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Suppose the claim fails somewhere. Press cells to place a counterexample and see what goes wrong.{% endblock %}
+{% block why_text %}If the claim failed at some n, there would be a smallest n where it failed. The number just before it would hold, and the step rule would then force the claim at n too. So no counterexample can be smallest, and therefore none exists. This is well-ordering: any non-empty set of whole numbers has a smallest member.{% endblock %}
+{% block try_items %}
+<li>Press cell 7. Read the smallest failure and why it breaks the rules.</li>
+<li>Switch the step rule off. Is a counterexample possible now?</li>
+<li>Press cell 1. Why is that a different kind of failure?</li>
+{% endblock %}

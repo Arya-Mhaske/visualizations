@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split a number into two factors again and again. Change the first split and see what stays the same.{% endblock %}
+{% block why_text %}A composite number always splits, so the splitting only stops at primes. Different first splits give different trees but the same leaves: that sameness is unique factorisation.{% endblock %}
+{% block try_items %}
+<li>Set n = 360 and try the three first splits. Do the trees match? Do the leaves?</li>
+<li>Try a prime such as 97. What does its tree look like?</li>
+<li>Try 512. How tall is the tree?</li>
+{% endblock %}
