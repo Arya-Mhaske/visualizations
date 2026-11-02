@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw the triangle that cos⁻¹ x describes and read the sine off it.{% endblock %}
+{% block why_text %}cos⁻¹ x is an angle whose cosine is x. In a triangle with hypotenuse 1 and base x, Pythagoras makes the height √(1 − x²). So sin(cos⁻¹ x) = √(1 − x²). The root is positive because cos⁻¹ x is between 0 and π, where sine is never negative.{% endblock %}
+{% block try_items %}
+<li>Set x = 0.6. What is the height of the triangle?</li>
+<li>Set x = −0.6. What changes in the picture, and what stays the same?</li>
+<li>Set x = 1. What does the triangle look like?</li>
+{% endblock %}

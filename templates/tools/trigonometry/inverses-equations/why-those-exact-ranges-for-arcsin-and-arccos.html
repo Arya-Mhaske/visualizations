@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide a window along the graph. Only some windows can be used to define an inverse.{% endblock %}
+{% block why_text %}A window works for an inverse if it passes every test: one-to-one, covers every output, and unbroken. Several windows pass for sine. Mathematicians pick −π/2 to π/2 because it is the one nearest 0 that includes the first-quadrant angles 0 to π/2, which are the angles in right triangles. For cosine the window 0 to π does the same job.{% endblock %}
+{% block try_items %}
+<li>For sin, set the start to −90° and the width to 180°. Which tests pass?</li>
+<li>Move the start to 0° with the same width. What fails?</li>
+<li>Switch to cos. Find the window that passes and also holds the green part.</li>
+<li>Switch to tan. What stops a window from going further?</li>
+{% endblock %}

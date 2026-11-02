@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Two common choices for the range of sec⁻¹ give different answers for negative inputs.{% endblock %}
+{% block why_text %}Secant has a gap, so we need to choose which pieces to keep. Book A keeps 0 to π (except π/2), so sec⁻¹ x = cos⁻¹(1/x). Book B keeps 0 to π/2 and π to 3π/2, which makes the derivative formula simpler. The two choices agree for x ≥ 1 and differ for x ≤ −1.{% endblock %}
+{% block try_items %}
+<li>Set x = 2. Do the books agree?</li>
+<li>Set x = −2. What does each book answer?</li>
+<li>Check that sec of each answer gives −2 again.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Neither choice is wrong. It is a convention, so always check which one your textbook or calculator uses.
+</div>
+{% endblock %}

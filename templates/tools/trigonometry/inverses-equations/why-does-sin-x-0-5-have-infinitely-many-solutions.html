@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The unit circle gives two angles for each height, and every extra turn gives them again.{% endblock %}
+{% block why_text %}A horizontal line at height 0.5 meets the circle at two points, at 30° and 150°. A full turn brings you back to the same points, so every turn adds the same two solutions: x = 30° + 360°k and x = 150° + 360°k. On the graph, the line keeps meeting the wave again and again.{% endblock %}
+{% block try_items %}
+<li>Set sin x = 0.5. What are the two solutions in the first turn?</li>
+<li>Set sin x = 1. Why is there only one solution per turn?</li>
+<li>Set sin x = −0.5. Which quadrants have the solutions?</li>
+{% endblock %}

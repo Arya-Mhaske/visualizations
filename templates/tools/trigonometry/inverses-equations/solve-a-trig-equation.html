@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Choose an equation of the form p f(x) + q = r and step through the solution.{% endblock %}
+{% block why_text %}Isolate the trig function first. Then ignore the sign and find the reference angle. The sign of the value tells you which quadrants to use. Add whole turns (or half turns for tan) to get every solution.{% endblock %}
+{% block try_items %}
+<li>Keep the default and press Next step until the end. What are the two solutions?</li>
+<li>Make r smaller so that sin x is negative. Which quadrants do the solutions move to?</li>
+<li>Switch to tan. How is the general solution different?</li>
+{% endblock %}

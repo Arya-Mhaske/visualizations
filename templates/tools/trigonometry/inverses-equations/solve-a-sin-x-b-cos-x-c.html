@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Rewrite a sin x + b cos x as one sine, then solve.{% endblock %}
+{% block why_text %}The two terms a sin x and b cos x together make a single sine of height R = √(a² + b²), shifted by α. Once it is one sine, the equation R sin(x + α) = c is solved like any sin equation. No solution exists when c is bigger than R.{% endblock %}
+{% block try_items %}
+<li>Press Next step to the end for a = 3, b = 4, c = 2.5.</li>
+<li>Set c = 5. How many solutions are there, and why?</li>
+<li>Set c = 6. What does the graph show?</li>
+{% endblock %}

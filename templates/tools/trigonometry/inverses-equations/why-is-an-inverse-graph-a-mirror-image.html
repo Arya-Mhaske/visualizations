@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Fold the graph of a function over the line y = x.{% endblock %}
+{% block why_text %}An inverse swaps inputs and outputs, so every point (a, b) of f becomes (b, a). That swap is exactly a reflection in the line y = x. After the fold, the coral curve is the graph of the inverse.{% endblock %}
+{% block try_items %}
+<li>Slide the fold from 0° to 180°. Where does the coral curve end up?</li>
+<li>Move the point on the curve. How do its x and y change after the fold?</li>
+<li>Switch to tan. What are the new horizontal limits of the inverse?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Chain a function and its inverse in the two possible orders.{% endblock %}
+{% block why_text %}sin(sin⁻¹ x) = x works for every x from −1 to 1, because sin⁻¹ x names an angle whose sine is x. In the other order, sin⁻¹(sin x) can only return an angle between −π/2 and π/2, so for other angles it gives a different angle with the same sine. The graph folds back as a zigzag.{% endblock %}
+{% block try_items %}
+<li>Choose sin⁻¹(sin x) and set x = 1. What is the output?</li>
+<li>Set x = 2.4. Why is the output not 2.4?</li>
+<li>Choose sin(sin⁻¹ x) and set x = 2. What happens?</li>
+{% endblock %}

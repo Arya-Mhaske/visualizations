@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Sweep a horizontal line across the sine wave. An inverse needs one answer for each height.{% endblock %}
+{% block why_text %}A function can only be undone if each output came from one input. A horizontal line cuts the sine wave in many places, so the height does not tell you which x it came from. If you keep only the blue piece from −π/2 to π/2, every height meets the wave once, and the inverse works.{% endblock %}
+{% block try_items %}
+<li>Set h = 0.5 with the toggle off. How many hits are on the whole wave?</li>
+<li>Turn the toggle on. How many hits now?</li>
+<li>Set h = 1.1. What happens, and why?</li>
+{% endblock %}
