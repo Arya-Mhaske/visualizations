@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Salt water flows in and the well-mixed tank flows out at the same rate. Track the salt.{% endblock %}
+{% block why_text %}The salt changes at the rate it comes in minus the rate it leaves. Coming in is fixed, but leaving is proportional to how salty the tank is. So the salt moves towards the level where the two balance, quickly at first, then slowly. The time constant V/r says how long this takes.{% endblock %}
+{% block try_items %}
+<li>Start with no salt. Where does the amount settle?</li>
+<li>Start above the settling value. Does the salt fall or rise?</li>
+<li>Double the flow rate. What happens to the time constant?</li>
+{% endblock %}

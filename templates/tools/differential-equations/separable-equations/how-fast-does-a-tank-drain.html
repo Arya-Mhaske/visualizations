@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Water leaves a hole at the bottom of a tank. Watch the level fall fast, then slowly.{% endblock %}
+{% block why_text %}Torricelli's law says water leaves at speed √(2gh), so the level falls at a rate proportional to √h. Separating gives dh/√h = −c dt, so √h falls in a straight line. The level itself falls quickly when the tank is deep and slowly when it is shallow.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This model treats the hole as ideal and the tank as a straight cylinder. Real holes lose some flow to friction and a narrowing jet, so real tanks take a little longer to empty.</div>{% endblock %}
+{% block try_items %}
+<li>Compare "Full to half" with "Half to empty". Which is longer, and why?</li>
+<li>Double the starting depth. By what factor does the emptying time change?</li>
+<li>Make the hole twice as wide in area. What happens to the time?</li>
+{% endblock %}

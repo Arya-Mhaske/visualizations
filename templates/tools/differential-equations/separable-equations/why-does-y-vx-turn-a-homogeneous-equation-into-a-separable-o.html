@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}In a homogeneous equation the slope marks are the same all along any ray from the origin.{% endblock %}
+{% block why_text %}A homogeneous equation has dy/dx = F(y/x). So every point on the ray y = vx has the same slope, F(v). Zooming in or out does not change the picture at all. Because the slope depends on one number v, write y = vx: then v alone decides the slope, and x and v can be separated.{% endblock %}
+{% block try_items %}
+<li>Move v. Do the three slopes at the points on the ray stay equal to each other?</li>
+<li>Change the window half-width. Does the pattern of marks change?</li>
+<li>Pick y′ = (x + y)/x. What is the slope along the ray v = 1?</li>
+{% endblock %}

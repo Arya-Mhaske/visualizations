@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Test whether an equation is homogeneous, then put y = vx and separate.{% endblock %}
+{% block why_text %}If f(λx, λy) = f(x, y) for every λ, the slope depends only on v = y/x. With y = vx we get y′ = v + x v′, and the equation becomes v + x v′ = F(v), which separates into dv/(F(v) − v) = dx/x. If the test fails, the method does not apply.{% endblock %}
+{% block try_items %}
+<li>Pick y′ = x + y. Which step stops the method?</li>
+<li>Pick y′ = (x² + y²)/(xy). Change λ. Does the test ever fail?</li>
+<li>Follow y′ = (x² + 3y²)/(2xy) to the end. What is the final relation between x and y?</li>
+{% endblock %}

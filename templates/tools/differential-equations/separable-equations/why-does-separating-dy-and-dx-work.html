@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Writing dy and dx on opposite sides looks like cheating. See why the area under the left side equals the change in G(y).{% endblock %}
+{% block why_text %}If G′(y) y′ is the derivative of G(y(x)) by the chain rule, then integrating it over x from a to b must give G(y(b)) − G(y(a)). So "multiply by dx and integrate both sides" is the chain rule run backwards, and dy/dx never has to be a true fraction.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> In the first equation y is positive, so ln and y²/2 are safe. For y′/y = 1 the solution y = C e^x stays positive for C > 0.</div>{% endblock %}
+{% block try_items %}
+<li>Move a and b apart. Does the area under the lower graph always match G(y(b)) − G(y(a))?</li>
+<li>Change C. Does the lower graph change? Does the area change?</li>
+<li>Swap a and b. What happens to the sign of the area?</li>
+{% endblock %}

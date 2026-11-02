@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Separate, integrate, then use the initial value, one step at a time.{% endblock %}
+{% block why_text %}Put every y with dy and every x with dx, integrate both sides, then solve for y. The one constant that appears is fixed by the initial value. Always check the answer: here it is compared with a numerical solution of the original equation.{% endblock %}
+{% block try_items %}
+<li>Pick y′ = x/y. Change y₀ and see the constant change.</li>
+<li>Press Next step slowly. Which step brings in the constant?</li>
+<li>Compare the closed form with the numerical value at the end.</li>
+{% endblock %}

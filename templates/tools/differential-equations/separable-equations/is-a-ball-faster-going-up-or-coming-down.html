@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Throw a ball straight up with air resistance. Compare the time up and the time down.{% endblock %}
+{% block why_text %}Without air the climb and the fall take equal times. Drag always opposes the motion. Going up it adds to gravity, so the ball stops sooner. Coming down it works against gravity, so the ball lands slower than it was thrown. The fall takes longer than the climb, and the average speed going up is higher than coming down.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This uses drag proportional to speed. Real ball drag grows faster, closer to the square of the speed. The time up has a closed form; the time down is found by solving for when the height returns to zero.</div>{% endblock %}
+{% block try_items %}
+<li>Set k = 0. Are the times up and down equal?</li>
+<li>Raise k. Which time grows, and which shrinks?</li>
+<li>Compare the landing speed with the launch speed. What happened to the energy?</li>
+{% endblock %}
