@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Build GF(4), GF(8), GF(9) and GF(5) from polynomials and read their tables.{% endblock %}
+{% block why_text %}Each element is a polynomial of degree below n with coefficients mod p. Each of the n coefficients has p choices, so there are p^n elements. Multiplying mod an irreducible polynomial gives every non-zero element an inverse, so it is a field. Every non-zero row of the multiplication table contains a 1.{% endblock %}
+{% block try_items %}
+<li>Choose GF(4) and look at the multiplication table. Where does the 1 appear in each row?</li>
+<li>Pick the element with code 2. What is its inverse?</li>
+<li>Choose GF(5). Is this the ordinary arithmetic mod 5?</li>
+<li>Choose GF(9). How many elements are there, and why?</li>
+{% endblock %}

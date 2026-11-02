@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Divide a message by a generator polynomial over ℤ₂ and see how the remainder catches a flipped bit.{% endblock %}
+{% block why_text %}A message is a polynomial with bits as coefficients. Dividing by the generator leaves a remainder that is appended to the message. The sent word is then a multiple of the generator, so any single flipped bit leaves a non-zero remainder at the receiver and is caught.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Real CRCs use longer generators and are tuned for the kinds of burst errors that occur in practice.</div>{% endblock %}
+{% block try_items %}
+<li>Use the first message and x³ + x + 1. Is the remainder 100?</li>
+<li>Flip bit 3. What does the receiver's remainder show?</li>
+<li>Flip different bits. Is any single flip missed?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Adjoin the roots of a polynomial one at a time and watch the field grow.{% endblock %}
+{% block why_text %}A field is a splitting field once the polynomial factors into linear factors in it. For x³ − 2 you first adjoin ∛2, giving degree 3, but the other two roots are complex. Adjoining ω as well gives degree 6. The size of the final field is bigger than the polynomial's degree.{% endblock %}
+{% block try_items %}
+<li>Pick x³ − 2 and step through it. What is the degree after each step?</li>
+<li>Pick x³ − 1. Why is only one step needed?</li>
+<li>Pick x⁴ + 1. How many roots does one adjoining give?</li>
+{% endblock %}

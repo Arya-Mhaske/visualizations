@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Test the same vectors for dependence over the reals, ℤ₂ and ℤ₃.{% endblock %}
+{% block why_text %}Linear independence depends on which numbers you may multiply by. Over ℤ₂ the vectors (1, 0), (0, 1), (1, 1) add up to zero, while over ℝ the same three do not. Over a finite field the span is a finite set, and its size is p to the power of its dimension.{% endblock %}
+{% block try_items %}
+<li>With the starting vectors, how many points does the span have over ℤ₂?</li>
+<li>Switch the field to ℤ₃. Is the relation different?</li>
+<li>Make v₂ twice v₁. What is the dimension of the span over each field?</li>
+{% endblock %}

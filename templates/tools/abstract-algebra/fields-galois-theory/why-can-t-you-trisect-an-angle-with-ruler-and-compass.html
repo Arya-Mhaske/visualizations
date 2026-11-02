@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Check whether the cubic that cos(θ/3) must satisfy has a rational root, and what that means for ruler and compass.{% endblock %}
+{% block why_text %}Each ruler-and-compass step solves at most a quadratic, so constructible lengths have degree 1, 2, 4, 8 … over the rationals. To trisect 60° we need cos 20°, a root of 8y³ − 6y − 1 = 0. That cubic has no rational root, so it is irreducible of degree 3, and 3 is not a power of 2. The angle cannot be trisected by this means.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This tool shows the argument for angles whose cosine is rational. It does not prove that no ruler-and-compass trisection exists for every angle; it shows why 60° is the standard impossible case.</div>{% endblock %}
+{% block try_items %}
+<li>Pick 60°. How many rational roots were found?</li>
+<li>Pick 90°. Which box in the tower lights up now?</li>
+<li>Pick 120°, then 180°. Which of them can be trisected?</li>
+{% endblock %}
