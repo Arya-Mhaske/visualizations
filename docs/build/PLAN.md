@@ -388,7 +388,7 @@ it reaches the front of the queue.
 | 51 | `rotation-gravitation/gravitational-energy-escape` | 6 | 1 | ✓ |
 | 52 | `limits-continuity/limit-laws` | 6 | 1 | ✓ |
 | 53 | `rotation-gravitation/satellites` | 7 | 1 | ✓ |
-| 54 | `derivatives/what-is-a-derivative` | 7 | 1 | |
+| 54 | `derivatives/what-is-a-derivative` | 7 | 1 | ✓ |
 | 55 | `properties-of-matter/stress-strain` | 7 | 1 | ✓ |
 | 56 | `derivatives/differentiation-rules` | 7 | 1 | ✓ |
 | 57 | `properties-of-matter/elastic-moduli` | 7 | 1 | ✓ |
@@ -738,3 +738,5 @@ it reaches the front of the queue.
 - `sequences-probability/geometric-sequences-series`: inline maths on `lib/recipes.js` and `_seq.js`. Built without screenshots or tests, by request.
 
 - `sequences-probability/statistics-measuring-spread`: inline maths on `lib/recipes.js` and `_seq.js`. Built without screenshots or tests, by request.
+
+- `derivatives/what-is-a-derivative`: inline maths on `lib/recipes.js` and `_seq.js`. Built without screenshots or tests, by request.

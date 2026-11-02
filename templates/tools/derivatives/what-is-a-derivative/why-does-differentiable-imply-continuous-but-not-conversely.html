@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Compare a smooth curve, a corner and a jump at x = 0. Check continuity and differentiability.{% endblock %}
+{% block why_text %}If f has a slope at a point, the curve cannot break there: f(a + h) − f(a) = h × (difference quotient) → 0 × f′(a) = 0. So differentiable implies continuous. But a corner is continuous and has no slope, so continuous does not imply differentiable. A jump is neither.{% endblock %}
+{% block try_items %}
+<li>Choose the corner. Is it continuous? Is it differentiable?</li>
+<li>Choose the jump.</li>
+<li>Which cases are differentiable?</li>
+{% endblock %}

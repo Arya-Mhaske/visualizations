@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw chords from the corner of |x| to a point on each side. As the point approaches 0, the two slopes do not come together.{% endblock %}
+{% block why_text %}The difference quotient (|h| − 0)/h equals +1 for h > 0 and −1 for h < 0. The right-hand limit is +1 and the left-hand limit is −1. A derivative needs the quotient to approach one number from both sides, so |x| has no derivative at 0, however far you zoom in.{% endblock %}
+{% block try_items %}
+<li>Shrink h. Does the right slope change?</li>
+<li>And the left slope?</li>
+<li>Why does zooming not help here?</li>
+{% endblock %}

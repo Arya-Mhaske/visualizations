@@ -6475,43 +6475,43 @@
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/why-is-a-derivative-a-rate-of-change": {
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/why-has-x-no-derivative-at-0": {
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/why-does-differentiable-imply-continuous-but-not-conversely": {
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/draw-f-prime-from-f": {
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/derivative-from-the-definition": {
 "archetype": "stepper",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/what-is-a-derivative/how-tangents-were-found-before-calculus": {
 "archetype": "plot",
 "priority": 57,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/differentiation-rules/why-is-d-dx-xn-nxn1": {
 "archetype": "plot",

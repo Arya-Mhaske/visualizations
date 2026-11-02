@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A car's odometer reads the distance travelled. Its speedometer reads how fast the odometer is changing.{% endblock %}
+{% block why_text %}The speed at a moment is the slope of the distance–time graph at that moment: ds/dt. That is the derivative. Where the distance curve is steep the speed is large, where it is flat the car is nearly still. The lower graph is built from the slopes of the upper one.{% endblock %}
+{% block try_items %}
+<li>Slide time to where the distance curve is steepest. What is the speed?</li>
+<li>Where is the speed smallest?</li>
+<li>What does a negative slope mean?</li>
+{% endblock %}

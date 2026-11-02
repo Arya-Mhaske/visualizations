@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put a microscope on a smooth curve. The closer you look, the straighter it gets, and the slope of that straight piece is the derivative.{% endblock %}
+{% block why_text %}A smooth curve is almost a straight line near any point: it differs from its tangent by an amount that shrinks faster than the zoom. So at high zoom the curve looks like its tangent, and its slope there is f′(a). A corner such as |x| at 0 stays a corner at every zoom, so no slope exists.{% endblock %}
+{% block try_items %}
+<li>Zoom in on x² at a = 1. What does the measured slope approach?</li>
+<li>Switch to</li>
+<li>x</li>
+<li>at 0. Does it straighten?</li>
+<li>Try sin x.</li>
+{% endblock %}

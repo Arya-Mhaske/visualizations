@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Write the difference quotient, simplify it, and only then let h shrink to zero.{% endblock %}
+{% block why_text %}f′(x) = lim (f(x + h) − f(x))/h as h → 0. At h = 0 the quotient is 0/0, so you must simplify first, cancelling the h that is zero from top and bottom, and only then put h = 0. The numbers show the quotient creeping towards f′(x) as h gets smaller.{% endblock %}
+{% block try_items %}
+<li>Step through x².</li>
+<li>Reduce h and compare the quotient with f′(x).</li>
+<li>Try 1/x and √x.</li>
+{% endblock %}
