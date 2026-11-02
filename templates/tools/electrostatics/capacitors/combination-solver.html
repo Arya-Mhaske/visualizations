@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Reduce a network of capacitors one group at a time.{% endblock %}
+{% block why_text %}Find a pair that is clearly in series (the same charge) or in parallel (the same voltage), replace it by one equivalent capacitor, and repeat. Series: 1/C = Σ1/Cᵢ. Parallel: C = ΣCᵢ. Check the result: series is always smaller than the smallest, and parallel is always larger than the largest.{% endblock %}
+{% block try_items %}
+<li>Choose network A. Reduce the series pair first. Check the step 1 readout.</li>
+<li>Choose D and make the three values equal. What is C?</li>
+<li>Choose C. Make C₃ tiny. What does the whole network look like?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Keep the charge fixed, then widen the plates and narrow the gap.{% endblock %}
+{% block why_text %}Charge Q spread over area A gives σ = Q/A and a field E = σ/ε₀ between the plates. The voltage is that field times the gap, V = Ed. So C = Q/V = ε₀A/d. More area thins the charge and weakens E. A smaller gap shortens the distance the field acts over. Either way less voltage holds the same charge.{% endblock %}
+{% block try_items %}
+<li>Double A. What happens to E, V and C?</li>
+<li>Halve d. Which of E and V changes?</li>
+<li>Check that C = ε₀A/d matches Q/V.</li>
+{% endblock %}

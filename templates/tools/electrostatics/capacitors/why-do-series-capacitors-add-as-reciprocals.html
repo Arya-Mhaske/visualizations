@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Join two capacitors one after the other, then side by side. See what stays the same.{% endblock %}
+{% block why_text %}In series, charge has nowhere to go but through both, so each holds the same Q. The voltages add: V = Q/C₁ + Q/C₂, so 1/C = 1/C₁ + 1/C₂. In parallel, the battery puts the same V across each, so each stores Q = CV and the charges add: C = C₁ + C₂. Series makes the total smaller than either one. Parallel makes it bigger.{% endblock %}
+{% block try_items %}
+<li>In series, make C₁ = C₂. What is the equivalent?</li>
+<li>In series, make C₁ very small. What does the equivalent C look like?</li>
+<li>In parallel, check that the two charges add up to the total.</li>
+{% endblock %}

@@ -2274,43 +2274,43 @@
 "archetype": "sim",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/why-is-c-epsilon0a-d-for-parallel-plates": {
 "archetype": "sim",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/why-does-a-dielectric-multiply-c-by-k": {
 "archetype": "sim",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/why-do-series-capacitors-add-as-reciprocals": {
 "archetype": "sim",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/where-is-a-capacitor-s-energy-stored": {
 "archetype": "space3d",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/combination-solver": {
 "archetype": "stepper",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/camera-flash-and-touchscreens": {
 "archetype": "sim",
 "priority": 122,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "current-magnetism/current-drift/why-do-bulbs-light-instantly-when-electrons-drift-at-mm-s": {
 "archetype": "sim",

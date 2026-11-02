@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide a dielectric slab between charged plates and watch the voltage and the capacitance.{% endblock %}
+{% block why_text %}The slab weakens the field to E₀/K, so the voltage across the gap, V = Ed, falls by K when it fills the gap. The same charge now sits at lower voltage, and C = Q/V is K times larger. Half in, half out is two capacitors side by side, one with C₀ and one with KC₀.{% endblock %}
+{% block try_items %}
+<li>Slide the slab in fully with K = 4. What happens to V and C?</li>
+<li>Try K = 10. Is the change bigger?</li>
+<li>Stop half way. Check C = C₀(0.5 + 0.5K).</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>The capacitor is isolated, so its charge stays fixed while the slab moves. Edge effects are ignored.</div>{% endblock %}

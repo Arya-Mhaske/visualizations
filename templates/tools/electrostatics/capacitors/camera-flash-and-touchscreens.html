@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A flash stores energy slowly and spends it in a burst. A touchscreen senses a finger by the capacitance it adds.{% endblock %}
+{% block why_text %}A capacitor stores ½CV² and can give it all back very fast, because its discharge time RC is tiny: about a millisecond for a flash. The same energy delivered over a millisecond is thousands of watts. A touchscreen grid of tiny capacitors changes slightly where a conducting fingertip nears them, and the controller finds the biggest change.{% endblock %}
+{% block try_items %}
+<li>In the flash view, double C. What happens to the energy and to τ?</li>
+<li>Raise the charging voltage. How does the energy change?</li>
+<li>In the touchscreen view, move the finger. Does the strongest signal follow it?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The lamp is treated as a steady resistor, and the finger's extra capacitance as a smooth bump. Real flash lamps and screens are more complicated.</div>{% endblock %}

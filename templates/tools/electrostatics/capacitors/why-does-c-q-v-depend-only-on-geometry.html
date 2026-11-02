@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put more charge on a capacitor and see what its voltage does.{% endblock %}
+{% block why_text %}Doubling Q doubles the field between the plates (E = σ/ε₀ and σ = Q/A), and doubling E doubles V = Ed. So Q/V never changes as Q changes: it is fixed by the plate area and the gap. We call it the capacitance, C = Q/V, in farads. A bigger area or a smaller gap gives a larger C: a flatter line, which means more charge for each volt.{% endblock %}
+{% block try_items %}
+<li>Double Q. What happens to V and to Q/V?</li>
+<li>Double the plate area. What happens to C?</li>
+<li>Halve the gap. What happens to C?</li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Charging a capacitor takes work. Where does the energy go?{% endblock %}
+{% block why_text %}Writing ½CV² with C = ε₀A/d and V = Ed gives ½ε₀E² × Ad. The first factor is energy per unit volume in the electric field, and Ad is the volume between the plates. So the energy is stored in the field itself, wherever the field exists. This is true for any field, not just a capacitor's.{% endblock %}
+{% block try_items %}
+<li>Double V. What happens to the energy?</li>
+<li>Double the gap at fixed V. What happens to E, to the volume and to U?</li>
+<li>Check that the two energy lines always agree.</li>
+{% endblock %}
