@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Heat a liquid and a gas. Both curves are scaled to 1 at 293 K (20 °C).{% endblock %}
+{% block why_text %}In a liquid, layers drag because molecules stick to each other; heat shakes them free, so η falls. In a gas, molecules are far apart and layers drag only when fast molecules swap layers; heat makes them faster, so more momentum is carried across and η rises.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Both curves are simple models (an e<sup>E/kT</sup> escape rule for the liquid, √T for the gas), scaled to 1 at 293 K. They show the trends, not exact data.</p></div>{% endblock %}
+{% block try_items %}
+<li>Heat from 270 K to 400 K. Which curve goes down, and which goes up?</li>
+<li>Read the share of molecules free of their neighbours. How does it change with T?</li>
+{% endblock %}

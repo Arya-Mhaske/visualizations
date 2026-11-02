@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose a drop and a fluid, and read off v<sub>T</sub> = 2a²(ρ − σ)g / 9η. The graph shows the speed for every size, and where the formula stops being valid.{% endblock %}
+{% block why_text %}v<sub>T</sub> grows as a²: double the radius and the speed is four times bigger. The formula holds for slow, smooth flow only (Reynolds number below about 1), which is why it works for mist and oil drops but fails for big raindrops.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>The Stokes formula is for small spheres in smooth flow. Where the Reynolds number passes 1, the real speed is lower than the formula says.</p></div>{% endblock %}
+{% block try_items %}
+<li>Pick "Oil drop in air" at 1 μm. How fast does it fall?</li>
+<li>Pick "Raindrop" at 1 mm. Is the formula still valid?</li>
+<li>Double the radius. By what factor does v<sub>T</sub> change?</li>
+{% endblock %}

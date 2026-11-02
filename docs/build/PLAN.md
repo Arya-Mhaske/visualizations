@@ -397,7 +397,7 @@ it reaches the front of the queue.
 | 60 | `sequences-probability/statistics-measuring-spread` | 9 | 1 | |
 | 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | |
 | 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
-| 63 | `properties-of-matter/viscosity` | 5 | 1 | |
+| 63 | `properties-of-matter/viscosity` | 5 | 1 | ✓ |
 | 64 | `numbers-algebra/number-systems` | 11 | 1 | |
 | 65 | `properties-of-matter/surface-tension` | 8 | 1 | |
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
@@ -648,3 +648,5 @@ it reaches the front of the queue.
 - `limits-continuity/continuity` (5 tools), no shared file. The IVT tool detects a skipped level by a sign change across the jump at t = 5; the piecewise tool needs c = (a² - 2)/a (a button sets it, since a = 3 gives 7/3, off the slider grid); the equator tool stacks two plots and finds the root of D by bisection. Target list of 15 boxes (89 tools) finished in this session, built without screenshots or test runs: look at all of them, run `manage.py test`, and write `tool_tests`.
 
 - `sequences-probability/probability` (8 tools): shared `_probability-math.js` (loaded die, complement counts, birthday, seeded running shares); the dice-grid tools reuse the Bayes box files. Built without screenshots or tests, by request.
+
+- `properties-of-matter/viscosity` (5 tools): `_viscosity-math.js` (plate speed, Stokes `terminal`/`tau`/`reynolds`, toy liquid and gas viscosity curves). Built without screenshots or tests, by request.
