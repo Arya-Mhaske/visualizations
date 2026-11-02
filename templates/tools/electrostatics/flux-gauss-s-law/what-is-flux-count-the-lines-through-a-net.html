@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Hold a net in a flowing field and count how many lines go through it.{% endblock %}
+{% block why_text %}Only the part of the field that crosses the surface counts. Tilt the net by θ and its shadow across the lines shrinks by cos θ, so Φ = EA cos θ. That is the dot product E·A, with the area written as a vector along its normal. Flux is largest face-on, zero edge-on, and negative when the lines go through from the other side.{% endblock %}
+{% block try_items %}
+<li>Set θ = 0. Count the coloured lines.</li>
+<li>Set θ = 60°. How many lines now? What is cos 60°?</li>
+<li>Set θ = 120°. What colour are the lines, and what sign is the flux?</li>
+{% endblock %}

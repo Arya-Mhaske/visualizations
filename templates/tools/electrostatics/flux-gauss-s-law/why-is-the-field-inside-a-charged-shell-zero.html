@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Draw a Gaussian sphere inside and outside a charged shell and see what Gauss's law says.{% endblock %}
+{% block why_text %}By symmetry the field is the same size everywhere on a sphere around the centre and points straight out. So Gauss's law gives E · 4πr² = q_enc/ε₀. A sphere inside the shell contains no charge, so E = 0 there. Outside, q_enc = Q, so E = kQ/r², as if all the charge sat at the centre.{% endblock %}
+{% block try_items %}
+<li>Set r below 1.5 m. What is the enclosed charge, and what is E?</li>
+<li>Set r just above 1.5 m. What does E jump to?</li>
+<li>Double Q. What happens to the field outside?</li>
+{% endblock %}

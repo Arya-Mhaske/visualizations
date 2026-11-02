@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Three charge shapes, three Gaussian surfaces, three different fall-offs.{% endblock %}
+{% block why_text %}The Gaussian surface must have the same symmetry as the charge, so E is constant over it. The area then decides the fall-off. A sphere has area 4πr², so E ∝ 1/r². A cylinder has side area 2πrL, so E ∝ 1/r. A pillbox through a sheet has the same flat end area at any distance, so E does not change.{% endblock %}
+{% block try_items %}
+<li>For each shape, double r. By what factor does E change?</li>
+<li>Why does the sheet's field not depend on the distance?</li>
+<li>Double the charge amount. What happens to E in each case?</li>
+{% endblock %}

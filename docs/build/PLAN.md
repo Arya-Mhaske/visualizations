@@ -447,7 +447,7 @@ it reaches the front of the queue.
 | 110 | `trigonometry/inverses-equations` | 12 | 1 | ✓ |
 | 111 | `electrostatics/electric-field-field-lines` | 6 | 1 | ✓ |
 | 112 | `systems-matrices/matrices-row-reduction` | 4 | 1 | ✓ |
-| 113 | `electrostatics/flux-gauss-s-law` | 5 | 1 | |
+| 113 | `electrostatics/flux-gauss-s-law` | 5 | 1 | ✓ |
 | 114 | `systems-matrices/matrix-algebra` | 10 | 1 | ✓ |
 | 115 | `electrostatics/electric-potential` | 7 | 1 | |
 | 116 | `systems-matrices/determinants-cramer` | 11 | 1 | ✓ |
@@ -636,3 +636,5 @@ it reaches the front of the queue.
 - `electrostatics/_charge.js` has `mark` (a + or − chip) and `E`. `electric-charge` (7 tools) is mostly drawn on raw canvas with made-up round numbers where stated (holding strengths, shock model, leaf angle).
 
 - `electrostatics/_coulomb.js`: SI constants, `forceUcCm` (µC and cm to newtons), `pithAngle` (bisection of kq²/(2L sinθ)² = mg tanθ) and `pithCharge`. Checked in Node: Fe/Fg = 2.27e39 (e–p), 1.23e36 (p–p); the default pith balls hang at 7.6°.
+
+- `flux-gauss-s-law` (5 tools): the closed-surface tool counts signed crossings of 12q rays with a sampled bubble polygon (counter-clockwise, outward normal (ey, -ex)); net = 12q inside and 0 outside whatever the dents. Built without screenshots or runs: look at that tool and at the Gaussian sketches in the symmetry tool.

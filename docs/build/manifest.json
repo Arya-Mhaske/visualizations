@@ -2166,31 +2166,31 @@
 "archetype": "rays",
 "priority": 116,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/flux-gauss-s-law/why-does-gauss-s-law-work-for-any-closed-surface": {
 "archetype": "space3d",
 "priority": 116,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/flux-gauss-s-law/why-is-the-field-inside-a-charged-shell-zero": {
 "archetype": "space3d",
 "priority": 116,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/flux-gauss-s-law/why-do-a-wire-a-sheet-and-a-sphere-give-1-r-constant-and-1-r": {
 "archetype": "space3d",
 "priority": 116,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/flux-gauss-s-law/choose-the-gaussian-surface": {
 "archetype": "space3d",
 "priority": 116,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/electric-potential/why-does-a-potential-exist-at-all": {
 "archetype": "sim",

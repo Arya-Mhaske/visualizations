@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squash and dent a bubble around a charge and count the lines that leave it.{% endblock %}
+{% block why_text %}Each narrow cone of lines from the charge is cut by the surface. The area it meets grows as r², but the field falls as 1/r², so the flux through the piece is the same wherever the surface is. A dented surface only changes where each cone is cut, not how much flux it carries. A charge outside sends in as many lines as it takes out, so the net is zero.{% endblock %}
+{% block try_items %}
+<li>Deepen the dent and add lobes. Does the net number of lines change?</li>
+<li>Double q. What happens to the count?</li>
+<li>Move the charge outside the bubble. What is the net?</li>
+{% endblock %}
