@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}One rule for the slope, many curves that obey it. A starting value picks one.{% endblock %}
+{% block why_text %}The rule only says how steep the curve is at each point. It does not say where the curve starts. Every curve that follows the slope marks is a solution, and moving one up or sideways gives another. The constant C records the starting height, and an initial condition fixes it.{% endblock %}
+{% block try_items %}
+<li>Change y(0). Does the rule's slope at a given point stay the same across curves?</li>
+<li>For y′ = 2x, move the highlighted curve up and down. What do the solutions have in common?</li>
+<li>Switch off the slope marks. Can you still tell which curves are solutions?</li>
+{% endblock %}

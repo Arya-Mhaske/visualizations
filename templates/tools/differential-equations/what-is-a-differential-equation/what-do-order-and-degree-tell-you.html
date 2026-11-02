@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Read the order and the degree of an equation straight off the derivatives it contains.{% endblock %}
+{% block why_text %}The order is the highest derivative: it says how many constants the general solution needs. The degree is the power of that highest derivative, but only when the equation is a polynomial in its derivatives. Put the derivative inside sin or e and no power can be read off, so the degree is not defined.{% endblock %}
+{% block try_items %}
+<li>Pick (y′)³ + y = x. Which number is the order, and which is the degree?</li>
+<li>Pick y″ = √(1 + (y′)²). Why must you square first?</li>
+<li>Pick y‴ + sin(y′) = 0. Why is the degree not defined?</li>
+{% endblock %}

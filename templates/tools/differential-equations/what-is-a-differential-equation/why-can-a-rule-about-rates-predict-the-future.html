@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Give a rule for the rate of change and a present value. Step forward in time and watch the future appear.{% endblock %}
+{% block why_text %}The rule tells you the slope at the present value. A short step along that slope reaches a new value, and the rule gives the slope there too. Repeat, and the whole future unrolls from one number and one rule. That is why a differential equation can predict.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> Each step here is a straight piece of length 0.5, so the path bends away from the true curve. Shorter steps would follow it more closely.</div>{% endblock %}
+{% block try_items %}
+<li>Take 0 steps, then 5, then 10. How does the rate change as the value changes?</li>
+<li>Show the true curve. Which rule makes the stepped path fall furthest from it?</li>
+<li>Change the present value but keep the rule. Does the future change?</li>
+{% endblock %}

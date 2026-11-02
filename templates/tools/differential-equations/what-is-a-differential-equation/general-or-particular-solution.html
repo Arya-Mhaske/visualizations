@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The general solution has arbitrary constants. Initial conditions fix them and pick one curve.{% endblock %}
+{% block why_text %}A first-order equation gives a family with one constant, so one condition picks one curve. A second-order equation gives a family with two constants, so it needs two conditions: a starting value and a starting slope. The number of constants equals the order.{% endblock %}
+{% block try_items %}
+<li>Choose the first-order equation. Change y(0). How many curves match?</li>
+<li>Choose the second-order equation. Keep y(0) and change y′(0). What changes in the curve?</li>
+<li>Can one starting value alone fix a second-order solution?</li>
+{% endblock %}
