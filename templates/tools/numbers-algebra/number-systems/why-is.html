@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply by a number a that counts down through zero, and watch what the pattern forces. Multiplying by −1 is a half-turn.{% endblock %}
+{% block why_text %}Multiplying by −1 swings a number to the other side of zero: a half-turn. Two half-turns bring you back where you started, so (−1)(−1) = +1. The pattern agrees: each step down in a changes the product by the same amount, so it passes through 0 and carries on to positive values.{% endblock %}
+{% block try_items %}
+<li>Set b = −2 and slide a from 3 down to −3. What does the product do every step?</li>
+<li>Set a = −2 and b = −3. How many hops, and where is the half-turn?</li>
+{% endblock %}

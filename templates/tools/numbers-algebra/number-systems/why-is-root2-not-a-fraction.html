@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}For each q, take the whole number p nearest to q√2. The square on p should equal two squares on q, but it never does.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p><strong>The proof.</strong> Suppose p/q = √2 in lowest terms, so p² = 2q². Then p² is even, so p is even: p = 2k. Then 4k² = 2q², so q² = 2k² and q is even too. Both even contradicts "lowest terms". So no fraction squares to 2.</p></div>{% endblock %}
+{% block why_text %}A fraction p/q would need p² = 2q² exactly. Try any q: the squares on p and the two squares on q always differ by at least 1, since p² and 2q² are whole numbers that are not equal. The fractions get very close, but they never land on √2.{% endblock %}
+{% block try_items %}
+<li>Slide q to 12. How close is 17² to 2 × 12²?</li>
+<li>Find another q where the difference is only 1 (try 29 or 70).</li>
+<li>Can you find a q where the difference is 0?</li>
+{% endblock %}

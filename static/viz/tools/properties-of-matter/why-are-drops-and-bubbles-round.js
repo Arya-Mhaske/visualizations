@@ -11,7 +11,7 @@ const ratio = (k) => spheroidArea(k) / sphereArea();
 createTool({
   state,
   label: 'Above, the silhouette of a spheroid with the same volume as the sphere. Below, a graph of surface area against stretch, with a minimum at the sphere.',
-  setup: (stage, c) => createPlot(stage, { x: [-1.25, 1.25], y: [0.98, 1.3], c, box: (st) => ({ x: 0, y: st.h * 0.4, w: st.w, h: st.h * 0.6 }) }),
+  setup: (stage, c) => createPlot(stage, { x: [-1.25, 1.25], y: [0.98, 1.4], c, box: (st) => ({ x: 0, y: st.h * 0.4, w: st.w, h: st.h * 0.6 }) }),
   draw(ctx, stage, c, plot) {
     const k = kOf(state);
     const R = Math.min(stage.w / 2 - 20, stage.h * 0.2) / 1.6;

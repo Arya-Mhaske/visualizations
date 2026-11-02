@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Press a number to move it between A, B, both and neither. Then pick an operation and see which numbers it keeps.{% endblock %}
+{% block why_text %}Union keeps what is in A or B. Intersection keeps what is in both. The complement keeps what is left outside. Each is just a rule for which numbers to keep.{% endblock %}
+{% block try_items %}
+<li>Press the numbers until A and B overlap, then choose A ∩ B.</li>
+<li>Choose the complement. What happens to the numbers in A?</li>
+<li>Check n(A ∪ B) = n(A) + n(B) − n(A ∩ B).</li>
+{% endblock %}

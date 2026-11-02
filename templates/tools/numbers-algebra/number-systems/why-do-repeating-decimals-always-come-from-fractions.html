@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Long-divide p by q and follow the remainders. There are only q possible remainders, so one must come back.{% endblock %}
+{% block why_text %}When a remainder repeats, every digit after it repeats too, because the next step depends only on the remainder. With q possible remainders (and 0 ends the division), the pattern must start repeating within q steps. That is why every fraction is a terminating or repeating decimal.{% endblock %}
+{% block try_items %}
+<li>Try 1/7. How many remainders appear before one repeats?</li>
+<li>Try 1/8. Why does the division end?</li>
+<li>Switch to 0.999… and add nines. What happens to the gap from 1?</li>
+{% endblock %}

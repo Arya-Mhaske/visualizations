@@ -398,7 +398,7 @@ it reaches the front of the queue.
 | 61 | `properties-of-matter/flow-bernoulli` | 9 | 1 | |
 | 62 | `sequences-probability/probability` | 8 | 1 | ✓ |
 | 63 | `properties-of-matter/viscosity` | 5 | 1 | ✓ |
-| 64 | `numbers-algebra/number-systems` | 11 | 1 | |
+| 64 | `numbers-algebra/number-systems` | 11 | 1 | ✓ |
 | 65 | `properties-of-matter/surface-tension` | 8 | 1 | ✓ |
 | 66 | `numbers-algebra/exponents-roots` | 9 | 1 | ✓ |
 | 67 | `heat-thermodynamics/temperature` | 6 | 1 | |
@@ -652,3 +652,5 @@ it reaches the front of the queue.
 - `properties-of-matter/viscosity` (5 tools): `_viscosity-math.js` (plate speed, Stokes `terminal`/`tau`/`reynolds`, toy liquid and gas viscosity curves). Built without screenshots or tests, by request.
 
 - `properties-of-matter/surface-tension` (8 tools): `_surface-tension-math.js` (`spheroidArea` for fixed-volume shapes, capillary rise, drop/bubble excess, detergent model, insect support). The detergent curves (S 72 to 35 mN/m, theta 110 to 60 degrees) are an illustrative model and say so. Built without screenshots or tests, by request.
+
+- `numbers-algebra/number-systems` (11 tools): `_number-systems-math.js` (`divide`/`decimalText` long division with the remainder cycle, `bestP`/`residual` for the square-root-of-2 squares, `leftToRight`/`precedence`, `bounds` for Archimedes, `interval` text). Built without screenshots or tests, by request.

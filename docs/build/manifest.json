@@ -3284,67 +3284,67 @@
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-is-root2-not-a-fraction": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-do-repeating-decimals-always-come-from-fractions": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-is": {
 "archetype": "space3d",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-can-t-we-divide-by-zero": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-is-the-order-of-operations-what-it-is": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/why-does-1-1-1-follow-from-the-distributive-law": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/absolute-value-is-distance": {
 "archetype": "stepper",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/sets-and-venn-diagrams": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/interval-notation-builder": {
 "archetype": "stepper",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/number-systems/how-archimedes-trapped-pi": {
 "archetype": "discrete",
 "priority": 67,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "numbers-algebra/sets/why-is-the-empty-set-a-subset-of-every-set": {
 "archetype": "discrete",

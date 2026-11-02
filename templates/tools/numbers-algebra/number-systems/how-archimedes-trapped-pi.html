@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Draw a polygon inside a circle and another outside it. Double the sides and watch the two perimeters close in on π.{% endblock %}
+{% block why_text %}The circle is longer than any polygon inside it and shorter than any polygon around it. Doubling the sides squeezes the two bounds together, and π is caught between them. This is exactly what Archimedes did with 96 sides.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><p>Archimedes used 96 sides and proved 3<sup>10</sup>⁄<sub>71</sub> &lt; π &lt; 3<sup>1</sup>⁄<sub>7</sub>. Here the bounds use the sine and tangent directly, so they are a little tighter than his hand-worked fractions.</p></div>{% endblock %}
+{% block try_items %}
+<li>Go from 6 to 12 sides. How much closer are the bounds?</li>
+<li>At 96 sides, how many decimals of π are fixed?</li>
+{% endblock %}

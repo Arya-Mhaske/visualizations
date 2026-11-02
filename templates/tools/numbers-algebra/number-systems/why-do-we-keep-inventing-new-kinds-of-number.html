@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Pick an equation and a number set. If the set has no answer, climb to the next one.{% endblock %}
+{% block why_text %}Each new kind of number exists because an equation had no answer in the one below: x + 5 = 2 needs ℤ, 2x = 3 needs ℚ, x² = 2 needs ℝ, and x² = −1 needs ℂ.{% endblock %}
+{% block try_items %}
+<li>Start with ℕ and x + 5 = 2. Which set is the first to solve it?</li>
+<li>Do the same for 2x = 3, x² = 2 and x² = −1.</li>
+<li>Does ℂ solve every equation here?</li>
+{% endblock %}

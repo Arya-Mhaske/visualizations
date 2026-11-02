@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Expand (−a)(b + (−b)) two ways. One way gives 0. The other has an unknown term. Guess it and test.{% endblock %}
+{% block why_text %}Since b + (−b) = 0, the left side is (−a) × 0 = 0. The distributive law splits it into (−a)(b) + (−a)(−b) = −ab + g. For both to be equal, g must be +ab. With a = b = 1 this gives (−1)(−1) = 1. The rule is forced by the laws, not chosen.{% endblock %}
+{% block try_items %}
+<li>With a = 1, b = 1, try g = −1, 0 and 1. Which balances?</li>
+<li>Change a and b. Where does g have to land each time?</li>
+{% endblock %}

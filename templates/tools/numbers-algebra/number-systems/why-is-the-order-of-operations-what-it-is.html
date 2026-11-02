@@ -1,0 +1,7 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}The same expression, worked in two orders, gives two answers. Everyone must pick the same one.{% endblock %}
+{% block why_text %}Left to right and multiplication-first can disagree, so the order is a convention agreed so that everyone gets the same answer. The convention (× and ÷ before + and −) matches the stories we usually mean: packets of coins are counted before they are added to the pile.{% endblock %}
+{% block try_items %}
+<li>Step through each expression. Do the two orders ever give the same answer?</li>
+<li>Read the story. Which order matches it?</li>
+{% endblock %}
