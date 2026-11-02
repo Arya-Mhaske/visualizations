@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the centre of mass of three particles, an L-shaped plate, and a triangle.{% endblock %}
+{% block why_text %}For particles, x_c = Σmx/Σm and y_c = Σmy/Σm. A uniform plate is cut into simple pieces, each with its centre of mass at its middle, and the pieces are treated like particles weighted by area. For a triangle the medians meet at the centroid, one third of the way up each median.{% endblock %}
+{% block try_items %}
+<li>Make one particle heavy. Where does the centre of mass go?</li>
+<li>Make the L arm thicker. Where does the centre of mass move?</li>
+<li>Move the triangle's apex. Where is the centroid?</li>
+{% endblock %}

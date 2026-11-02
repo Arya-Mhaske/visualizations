@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Put two masses on a seesaw. The pivot that balances them is the centre of mass.{% endblock %}
+{% block why_text %}The seesaw balances when the turning effects match: m₁(x_c − x₁) = m₂(x₂ − x_c). Solving gives x_c = (m₁x₁ + m₂x₂)/(m₁ + m₂), the average of the positions weighted by mass. It sits closer to the heavier mass.{% endblock %}
+{% block try_items %}
+<li>Make the masses equal. Where is the balance point?</li>
+<li>Make one mass heavier. Which way does the point move?</li>
+<li>Move one mass further out.</li>
+{% endblock %}

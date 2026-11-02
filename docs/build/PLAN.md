@@ -367,7 +367,7 @@ it reaches the front of the queue.
 | 30 | `sequences-probability/binomial-theorem` | 6 | 1 | ✓ |
 | 31 | `forces-energy/collisions` | 7 | 1 | ✓ |
 | 32 | `sequences-probability/sequences` | 3 | 1 | |
-| 33 | `rotation-gravitation/centre-of-mass` | 7 | 1 | |
+| 33 | `rotation-gravitation/centre-of-mass` | 7 | 1 | ✓ |
 | 34 | `sequences-probability/arithmetic-sequences` | 4 | 1 | |
 | 35 | `rotation-gravitation/rotation-kinematics` | 5 | 1 | |
 | 36 | `sequences-probability/geometric-sequences-series` | 10 | 1 | |
@@ -698,3 +698,5 @@ it reaches the front of the queue.
 - `sequences-probability/binomial-theorem`: Meru Prastara tool labels the Halayudha and Pingala attribution as disputed. Built without screenshots or tests, by request.
 
 - `lib/recipes.js` (new, documented in its header): `plotTool` and `barTool` build a simple plot or bar tool from state, curves and readouts. `forces-energy/_collisions.js`: `coll` (any restitution e), `ke`, `lostFraction` (8/9 for deuterium, 28% for carbon). Built without screenshots or tests, by request.
+
+- `rotation-gravitation/centre-of-mass`: inline maths on `recipes.js`. The hidden-slider pattern is used in the calculator. Built without screenshots or tests, by request.

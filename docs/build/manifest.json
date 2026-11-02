@@ -767,43 +767,43 @@
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/why-does-an-exploding-shell-s-centre-of-mass-keep-its-parabo": {
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/why-can-t-internal-forces-move-the-centre-of-mass": {
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/why-can-a-ring-s-centre-of-mass-be-in-empty-space": {
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/centre-of-mass-calculator": {
 "archetype": "chance",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/binary-stars": {
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/centre-of-mass/radioactive-decay-back-to-back": {
 "archetype": "sim",
 "priority": 36,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "rotation-gravitation/rotation-kinematics/in-rolling-why-does-every-point-have-a-different-velocity": {
 "archetype": "sim",
