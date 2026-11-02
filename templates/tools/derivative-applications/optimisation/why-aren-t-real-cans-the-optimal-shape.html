@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Find h = 2r for least metal, then add the cost of seams.{% endblock %}
+{% block why_text %}For least metal the can is as tall as it is wide (h = 2r). Seams cost more for wide cans, so a cheaper can is taller than that.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The prices here are made up to show the effect.</div>{% endblock %}
+{% block try_items %}
+<li>Set the seam cost to 0. What is h/r at the best point?</li>
+<li>Raise the seam cost. Does the best can get taller or wider?</li>
+<li>Compare the two minima in the graph.</li>
+{% endblock %}

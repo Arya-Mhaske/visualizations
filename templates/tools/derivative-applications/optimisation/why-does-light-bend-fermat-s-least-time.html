@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Move the crossing point and minimise the travel time.{% endblock %}
+{% block why_text %}Light takes the quickest path. Setting dT/dx = 0 gives sin θ₁ = n sin θ₂, which is Snell’s law.{% endblock %}
+{% block try_items %}
+<li>Slide to the fastest point. What is the ratio of sines?</li>
+<li>Raise n. Which way does the fastest crossing move?</li>
+<li>Set n = 1. What is the path?</li>
+{% endblock %}
