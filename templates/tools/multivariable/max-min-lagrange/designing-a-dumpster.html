@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Choose a length and width to minimise cost for a fixed volume.{% endblock %}
+{% block why_text %}Making the base bigger lowers the height and the cost of the sides, but raises the cost of the bottom. The cheapest design balances the two, where both partial derivatives of cost are zero.{% endblock %}
+{% block try_items %}
+<li>Move to the green dot. What is the height?</li>
+<li>Make the sides cheaper. Where does the best design move?</li>
+<li>Change the volume. How does the best shape change?</li>
+{% endblock %}

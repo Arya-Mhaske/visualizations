@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slide along a constraint curve and watch the gradients line up at the best point.{% endblock %}
+{% block why_text %}If the contour of f crossed the constraint curve, moving along the curve would raise or lower f. At the best point the contour just touches the curve, so the two have the same tangent and the gradients are parallel: ∇f = λ∇g.{% endblock %}
+{% block try_items %}
+<li>Slide to the point where the gradients line up. What is f there?</li>
+<li>Switch to problem b. Where are the two best points?</li>
+<li>In problem c, is the point a minimum or a maximum of f?</li>
+{% endblock %}

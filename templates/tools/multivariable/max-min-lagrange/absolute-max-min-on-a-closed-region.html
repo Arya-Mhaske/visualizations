@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Check the interior critical points, then the four edges, and compare all candidates.{% endblock %}
+{% block why_text %}On a closed, bounded region f must reach a largest and a smallest value. Each is either at a critical point inside or on the boundary. Checking the interior and then each edge as a one-variable problem covers every possibility.{% endblock %}
+{% block try_items %}
+<li>Use the first problem. Where is the maximum?</li>
+<li>Which candidates tie for the minimum?</li>
+<li>Try the third problem. Is the largest value inside or on an edge?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Find the critical points and classify each with D = f_xx f_yy − f_xy².{% endblock %}
+{% block why_text %}D combines the curvatures in all directions. When D is positive both principal curvatures agree in sign, giving a peak or a pit; the sign of f_xx tells which. When D is negative they disagree, giving a saddle.{% endblock %}
+{% block try_items %}
+<li>Step through x³ + y³ − 3xy. Which point is the saddle?</li>
+<li>Try x⁴ + y⁴. Why does the test give no verdict?</li>
+<li>Compare the first and third functions. What does the sign change do?</li>
+{% endblock %}

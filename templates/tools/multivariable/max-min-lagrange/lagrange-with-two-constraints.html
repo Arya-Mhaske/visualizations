@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Find the best point on a curve cut out by two surfaces.{% endblock %}
+{% block why_text %}On the curve, f can only change along the curve, which is perpendicular to both ∇g and ∇h. At a best point ∇f has no component along the curve either, so it lies in the plane spanned by ∇g and ∇h: ∇f = λ∇g + μ∇h.{% endblock %}
+{% block try_items %}
+<li>Slide until the triple product is 0. How many such points are there?</li>
+<li>What is f at each of them?</li>
+<li>Compare with 3 ± √29.</li>
+{% endblock %}

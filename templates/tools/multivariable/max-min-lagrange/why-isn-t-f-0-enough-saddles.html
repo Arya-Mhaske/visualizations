@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Slice a surface through a flat point in different directions.{% endblock %}
+{% block why_text %}∇f = 0 only says the surface is flat there. Curvature decides the rest. If every slice curves up it is a minimum, if every slice curves down a maximum, and if some curve up and some down it is a saddle.{% endblock %}
+{% block try_items %}
+<li>On the saddle, turn the slice from 0° to 90°. What changes?</li>
+<li>On the bowl, is any slice curving down?</li>
+<li>On the flat top, what does the test say?</li>
+{% endblock %}

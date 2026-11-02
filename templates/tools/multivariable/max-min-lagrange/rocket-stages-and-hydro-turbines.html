@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Split a fixed total between parts to get the best result.{% endblock %}
+{% block why_text %}At the best split the marginal gain from each part is the same. If it were not, moving a little from the part with the lower gain to the one with the higher gain would improve the total. That common value is the Lagrange multiplier λ.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The turbine power curves and rocket numbers are illustrative, not data for a real plant or rocket.</div>{% endblock %}
+{% block try_items %}
+<li>In rocket mode, find the best split. Are the marginal gains equal there?</li>
+<li>Make the second stage's exhaust faster. Which way does the best split move?</li>
+<li>In turbine mode, set the flows to the best values.</li>
+{% endblock %}
