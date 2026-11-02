@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A smooth glide path must be flat at both ends. Find how far out the descent has to start so the plane never drops too fast.{% endblock %}
+{% block why_text %}The path gives height y as a function of distance x, and the plane covers distance at its ground speed. So the rate of fall is the slope of the path times the speed: dy/dt = dy/dx · dx/dt. The slope is largest in the middle, 1.5 h/D, so starting further out (a larger D) lowers it.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> The glide path is a model, and 600 m/min is a round comfort figure, not a rule from any airline. Real approaches follow a fixed glide slope of about 3°.</div>{% endblock %}
+{% block try_items %}
+<li>Slide the plane along the path. Where is it falling fastest?</li>
+<li>Halve the speed. What happens to the steepest rate?</li>
+<li>Raise the cruise height to 4 km. How much further out must the descent start?</li>
+{% endblock %}

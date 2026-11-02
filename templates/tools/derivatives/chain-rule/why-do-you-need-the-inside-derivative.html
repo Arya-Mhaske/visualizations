@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Squeeze the sine wave sideways and compare the true slope with the slope you would guess from cos alone.{% endblock %}
+{% block why_text %}Squeezing the graph by k makes every slope k times steeper, because the curve covers the same rise in a run that is k times shorter. So the slope of sin(kx) is the old slope, cos(kx), times k. The k is the derivative of the inside, kx. Leave it out and the slope is wrong by exactly that factor.{% endblock %}
+{% block try_items %}
+<li>Set k = 3 and x = 0. How many times steeper is the squeezed curve than plain sin x there?</li>
+<li>Move x until the blue dashed guess and the black true tangent are far apart. When do they agree?</li>
+<li>Set k = 1. Why do the guess and the true slope agree now?</li>
+{% endblock %}

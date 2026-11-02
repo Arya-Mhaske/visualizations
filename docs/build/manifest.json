@@ -6577,94 +6577,95 @@
 "reviewed": true
 },
 "derivatives/chain-rule/why-do-rates-multiply": {
-"archetype": "plot",
+"archetype": "geometry",
 "priority": 123,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/chain-rule/why-do-you-need-the-inside-derivative": {
 "archetype": "plot",
 "priority": 123,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/chain-rule/peel-the-onion": {
 "archetype": "stepper",
 "priority": 123,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/chain-rule/where-should-a-pilot-start-descent": {
 "archetype": "plot",
 "priority": 123,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/implicit-differentiation/how-can-a-curve-that-isn-t-a-function-have-a-slope": {
 "archetype": "plot",
 "priority": 125,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/implicit-differentiation/why-is-dy-dx-x-y-on-a-circle": {
 "archetype": "plot",
 "priority": 125,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/implicit-differentiation/implicit-stepper": {
 "archetype": "stepper",
 "priority": 125,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/implicit-differentiation/families-of-implicit-curves": {
 "archetype": "plot",
 "priority": 125,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/why-is-an-inverse-function-s-slope-the-reciprocal": {
 "archetype": "plot",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/why-is-ln-x-prime-1-x": {
 "archetype": "rays",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/why-is-ax-prime-ax-ln-a": {
 "archetype": "plot",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/why-does-logarithmic-differentiation-tame-xx": {
 "archetype": "plot",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/why-is-arctan-x-prime-1-1-x2": {
 "archetype": "plot",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/derivatives-of-sinh-and-cosh": {
 "archetype": "stepper",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/exp-log-inverse-derivatives/derivative-table-quiz": {
 "archetype": "drill",
 "priority": 127,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "derivatives/rates-in-science/why-is-velocity-the-derivative-of-position-and-acceleration": {
 "archetype": "plot",
@@ -7493,31 +7494,31 @@
 "archetype": "plot",
 "priority": 157,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/what-is-a-differential-equation/why-does-a-de-have-a-family-of-solutions": {
 "archetype": "plot",
 "priority": 157,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/what-is-a-differential-equation/what-do-order-and-degree-tell-you": {
-"archetype": "plot",
+"archetype": "stepper",
 "priority": 157,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/what-is-a-differential-equation/general-or-particular-solution": {
 "archetype": "stepper",
 "priority": 157,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/what-is-a-differential-equation/three-models-from-one-idea": {
 "archetype": "plot",
 "priority": 157,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/direction-fields-euler/why-does-a-slope-field-show-every-solution-at-once": {
 "archetype": "plot",
@@ -7547,49 +7548,49 @@
 "archetype": "plot",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/why-does-y-vx-turn-a-homogeneous-equation-into-a-separable-o": {
 "archetype": "plot",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/separable-stepper": {
 "archetype": "stepper",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/homogeneous-equation-stepper": {
 "archetype": "stepper",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/how-fast-does-a-tank-drain": {
 "archetype": "plot",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/salt-in-a-mixing-tank": {
 "archetype": "plot",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/is-a-ball-faster-going-up-or-coming-down": {
 "archetype": "plot",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/separable-equations/orthogonal-trajectories": {
 "archetype": "rays",
 "priority": 159,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/population-models/why-does-logistic-growth-slow-down": {
 "archetype": "plot",
@@ -7613,19 +7614,19 @@
 "archetype": "plot",
 "priority": 161,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/linear-first-order/integrating-factor-stepper": {
 "archetype": "stepper",
 "priority": 161,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/linear-first-order/rc-and-rl-circuits": {
 "archetype": "plot",
 "priority": 161,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "differential-equations/predatorprey/why-do-the-populations-cycle": {
 "archetype": "plot",

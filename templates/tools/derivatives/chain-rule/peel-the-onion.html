@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Differentiate a function made of layers by peeling it from the outside, one layer at a time.{% endblock %}
+{% block why_text %}Each layer changes its input at its own rate. Peel the outer layer first and leave its inside untouched, then peel the next layer. The rate of the whole function is the product of the rates of the layers.{% endblock %}
+{% block try_items %}
+<li>Pick sin(x²). Which layer comes off first?</li>
+<li>Press Next step until the product appears. Does it match the nudge check?</li>
+<li>Pick ln(cos x²). How many slopes are multiplied now?</li>
+{% endblock %}

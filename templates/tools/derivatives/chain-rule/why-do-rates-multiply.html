@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Turn wheel C and watch B and A follow. Change how fast each one turns, and see what the speeds do together.{% endblock %}
+{% block why_text %}If B turns 2 times for each turn of C, and A turns 3 times for each turn of B, then one turn of C makes B turn 2 times, and each of those makes A turn 3 times. That is 3 × 2 = 6. A rate of a rate is the product of the two rates. This is the chain rule: dA/dC = dA/dB · dB/dC.{% endblock %}
+{% block try_items %}
+<li>Set B per C to 2 and A per B to 3. How many turns does A make when C turns once?</li>
+<li>Make A per B equal to 1. Does A now just copy B?</li>
+<li>Turn C by 2 turns. Check that A has turned the product of the two rates times 2.</li>
+{% endblock %}
