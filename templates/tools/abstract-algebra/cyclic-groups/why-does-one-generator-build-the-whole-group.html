@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Keep adding the same number on a clock and watch which marks you visit before you return to 0.{% endblock %}
+{% block why_text %}Adding k over and over visits the multiples of k. If k and n share no factor, the hops cannot fall into a short loop, so they must visit every mark before getting back to 0. One element builds the whole group.{% endblock %}
+{% block try_items %}
+<li>Set n = 12 and k = 1. How many hops until you are back at 0?</li>
+<li>Set k = 5. Does it still reach every mark?</li>
+<li>Set k = 4. Which marks are never reached?</li>
+<li>Find another generator for n = 12.</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Multiply two roots of unity and see where the product lands on the unit circle.{% endblock %}
+{% block why_text %}Multiplying complex numbers on the unit circle adds their angles. The nth roots are the points at multiples of 360°/n, so multiplying ω^a by ω^b gives ω^(a+b), with exponents counted mod n. That is exactly addition on a clock with n hours.{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span> This tool uses the complex numbers from Trigonometry → Polar & Complex.</div>{% endblock %}
+{% block try_items %}
+<li>Set n = 6, a = 2, b = 3. Where is the product?</li>
+<li>Make a + b bigger than n. What happens to the exponent?</li>
+<li>Set n = 4. What are the four roots?</li>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Compute a huge power mod m by squaring again and again instead of multiplying a thousand times.{% endblock %}
+{% block why_text %}Writing the exponent in binary lets you build a^e from the squares a, a², a⁴, a⁸ and so on. Each square is one multiplication, and the number of squares is only the number of binary digits of e. Reducing mod m each time keeps every number small.{% endblock %}
+{% block try_items %}
+<li>Use 7, 1000 and 13. How many squarings does it need?</li>
+<li>Double the exponent. How many extra rows appear?</li>
+<li>Pick e = 1024. How many products are used?</li>
+{% endblock %}

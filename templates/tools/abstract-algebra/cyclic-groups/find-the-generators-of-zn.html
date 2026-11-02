@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick n and see which k generate the integers mod n. Press a number to see what it builds.{% endblock %}
+{% block why_text %}Multiples of k reach every residue exactly when gcd(k, n) = 1. If the gcd is d > 1, every multiple of k is a multiple of d, so the hops stay on a smaller loop.{% endblock %}
+{% block try_items %}
+<li>Set n = 12 and read off the green cells. Do they all have gcd 1 with 12?</li>
+<li>Set n = 13. How many generators are there?</li>
+<li>Try n = 16. Which k generate?</li>
+{% endblock %}
