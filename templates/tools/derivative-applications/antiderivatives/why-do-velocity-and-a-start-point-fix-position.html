@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Pick one curve from the family with the starting position.{% endblock %}
+{% block why_text %}Velocity gives the shape of the position curve. A starting position fixes its height. Together they give exactly one path.{% endblock %}
+{% block try_items %}
+<li>Change s(0). Do the shapes change?</li>
+<li>Shade the area under v. What does it equal?</li>
+<li>Pick two starts and compare the positions at t = 2.</li>
+{% endblock %}

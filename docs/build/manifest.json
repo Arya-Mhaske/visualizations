@@ -6672,37 +6672,37 @@
 "archetype": "plot",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/rates-in-science/why-does-a-sliding-ladder-s-top-speed-up-near-the-ground": {
 "archetype": "plot",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/rates-in-science/why-does-a-balloon-s-radius-grow-more-slowly-as-it-inflates": {
 "archetype": "discrete",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/rates-in-science/related-rates-stepper": {
 "archetype": "discrete",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/rates-in-science/rates-across-the-sciences": {
 "archetype": "plot",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/rates-in-science/filling-a-cone-with-water": {
 "archetype": "space3d",
 "priority": 129,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivatives/linear-approximation/why-is-the-tangent-the-best-straight-line-guess": {
 "archetype": "plot",
@@ -6780,139 +6780,140 @@
 "archetype": "plot",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/why-doesn-t-f-prime-0-guarantee-a-peak": {
 "archetype": "plot",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/why-does-a-closed-interval-guarantee-a-max-and-min": {
 "archetype": "plot",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/closed-interval-method": {
 "archetype": "stepper",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/first-derivative-test-watch-f-prime-change-sign": {
 "archetype": "stepper",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/maxima-minima/why-is-a-rainbow-at-42": {
 "archetype": "rays",
 "priority": 131,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/mean-value-theorem/rolle-why-a-thrown-ball-stops-at-the-top": {
 "archetype": "plot",
 "priority": 133,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/mean-value-theorem/why-must-you-hit-your-average-speed-at-some-instant": {
 "archetype": "plot",
 "priority": 133,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/mean-value-theorem/why-does-f-prime-0-everywhere-mean-f-is-constant": {
 "archetype": "chance",
 "priority": 133,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/mean-value-theorem/section-speed-cameras": {
 "archetype": "plot",
 "priority": 133,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/why-does-f-prime-0-mean-rising": {
 "archetype": "chance",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/why-is-f-the-bend": {
 "archetype": "plot",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/why-does-the-second-derivative-test-work": {
 "archetype": "plot",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/curve-sketching-checklist": {
 "archetype": "stepper",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/families-of-graphs": {
 "archetype": "stepper",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/find-where-f-is-increasing-or-decreasing": {
 "archetype": "stepper",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/shape-of-a-graph/when-does-an-epidemic-peak-in-new-cases": {
 "archetype": "plot",
 "priority": 135,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/optimisation/why-does-optimisation-mean-solving-f-prime-0": {
 "archetype": "chance",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/optimisation/why-does-light-bend-fermat-s-least-time": {
 "archetype": "rays",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/optimisation/why-aren-t-real-cans-the-optimal-shape": {
 "archetype": "plot",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/optimisation/planes-and-birds-least-energy": {
 "archetype": "plot",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/optimisation/fence-box-and-window-problems": {
 "archetype": "plot",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "derivative-applications/optimisation/where-to-sit-at-the-movies": {
 "archetype": "plot",
 "priority": 137,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/l-hopital-s-rule/why-does-l-hopital-work": {
 "archetype": "plot",
@@ -6973,25 +6974,26 @@
 "archetype": "plot",
 "priority": 139,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/antiderivatives/why-do-velocity-and-a-start-point-fix-position": {
 "archetype": "plot",
 "priority": 139,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "derivative-applications/antiderivatives/antiderivative-drill": {
 "archetype": "drill",
 "priority": 139,
 "notes": "",
-"reviewed": false
+"reviewed": true,
+"formula": false
 },
 "derivative-applications/antiderivatives/from-a-g-to-the-height-formula": {
 "archetype": "plot",
 "priority": 139,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "integrals/area-distance/why-is-distance-the-area-under-a-velocity-graph": {
 "archetype": "space3d",
@@ -7993,7 +7995,8 @@
 "archetype": "phasor",
 "priority": 215,
 "notes": "",
-"reviewed": true
+"reviewed": true,
+"formula": false
 },
 "infinite-series/convergence-tests/root-test": {
 "archetype": "phasor",

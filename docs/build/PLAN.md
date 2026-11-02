@@ -460,17 +460,17 @@ it reaches the front of the queue.
 | 123 | `current-magnetism/resistance-temperature` | 5 | 1 | ✓ |
 | 124 | `derivatives/exp-log-inverse-derivatives` | 7 | 1 | ✓ |
 | 125 | `current-magnetism/cells-emf-power` | 5 | 1 | ✓ |
-| 126 | `derivatives/rates-in-science` | 6 | 1 | |
+| 126 | `derivatives/rates-in-science` | 6 | 1 | ✓ |
 | 127 | `current-magnetism/kirchhoff-wheatstone` | 4 | 1 | ✓ |
-| 128 | `derivative-applications/maxima-minima` | 6 | 1 | |
+| 128 | `derivative-applications/maxima-minima` | 6 | 1 | ✓ |
 | 129 | `current-magnetism/magnetic-force-on-charges` | 5 | 1 | ✓ |
-| 130 | `derivative-applications/mean-value-theorem` | 4 | 1 | |
+| 130 | `derivative-applications/mean-value-theorem` | 4 | 1 | ✓ |
 | 131 | `current-magnetism/sources-of-magnetic-field` | 7 | 1 | ✓ |
-| 132 | `derivative-applications/shape-of-a-graph` | 7 | 1 | |
+| 132 | `derivative-applications/shape-of-a-graph` | 7 | 1 | ✓ |
 | 133 | `current-magnetism/loops-meters` | 5 | 1 | ✓ |
-| 134 | `derivative-applications/optimisation` | 6 | 1 | |
+| 134 | `derivative-applications/optimisation` | 6 | 1 | ✓ |
 | 135 | `current-magnetism/magnetism-matter` | 6 | 1 | ✓ |
-| 136 | `derivative-applications/antiderivatives` | 4 | 1 | |
+| 136 | `derivative-applications/antiderivatives` | 4 | 1 | ✓ |
 | 137 | `induction-ac-em/faraday-lenz` | 5 | 1 | |
 | 138 | `integrals/area-distance` | 4 | 1 | |
 | 139 | `induction-ac-em/inductance-generators` | 5 | 1 | |
@@ -594,4 +594,10 @@ it reaches the front of the queue.
   Figures worth testing: Oresme S(2^k) >= 1 + k/2; ζ(2) tail; the telescoping closed forms; 0.999… zoom gap t = 1; ratio and root limits of each preset; binom(k, n) is 0 for whole k >= 0 only; Madhava's √12 series error; γ − 1 series coefficients ½, ⅜, 5/16, 35/128; Planck/RJ ratio = x/(eˣ − 1); Simpson area of e^(−x²) at x = 1 is 0.746824.
   Look hardest at: the telescoping table at 360 px (8 columns), the decimals zoom strip, the power-series number line, `test-strategy-picker` canvas text, and the e^(iθ) chain at large θ.
   Trap hit: a Python string edit of a TeX-heavy JS file corrupted it again; use Write/Edit only.
+
+- Session of 2 Nov 2026 (`derivatives/rates-in-science` and five `derivative-applications` boxes, 33 tools), built without screenshots, tests or `tool_tests`, by request: look at all 33 pictures, run `manage.py test`, and write `tool_tests`. Only `node --check` was run.
+  `derivative-applications/_da.js` serves both subjects: `FUNS` (cubic, quartic, wave, hill, bump with exact f, f′, f″), `roots` (sign-change bisection), `curveBySign` (green rising, coral falling), `tangent`, `xAt` (0–100 slider onto a function's own window), and re-exports `boxes`, `speck`, `trace`, `num` from `infinite-series/_is.js`. `lib/graph.js` and `lib/numline.js` named in the Library list do not exist on this branch, so none of these tools use them.
+  Figures worth testing: rainbow minimum D = 138° at i ≈ 59.4° for n = 1.333 (formula and traced ray agree); Fermat's sin θ₁/sin θ₂ = n at the fastest crossing; can best h/r = 2 with no seam cost; fence x = L/4, box x = a/6, Norman window r = P/(4 + π); movie seat x = √(ab); least energy per km at v⁴ = b/a, least power at v⁴ = b/(3a); epidemic peak at C = K/2; cone dh/dt = 4k/(πh²).
+  Look hardest at: the ladder and balloon top halves (drawn on raw canvas), the cone drawing, the rainbow ray bundle, the cinema side view at 360 px, and `related-rates-stepper`, whose sliders are rewritten when the problem changes. `rolle-...` needs the button to hit equal heights exactly.
+  Also fixed the earlier `test-strategy-picker` page: its empty formula strip is removed and its manifest says `"formula": false`.
 
