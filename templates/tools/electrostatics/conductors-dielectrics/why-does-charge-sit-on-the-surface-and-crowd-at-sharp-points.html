@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Join a big and a small conducting sphere with a wire. Where does the charge go?{% endblock %}
+{% block why_text %}Joined by a wire, the two spheres are one conductor at one potential: kq₁/R₁ = kq₂/R₂, so the bigger sphere holds more charge. But charge per area, σ = q/4πR², is larger on the small sphere, by R₁/R₂. The field at a surface is σ/ε₀, so it is strongest at sharp points. That is why lightning rods are pointed and why sharp points leak charge into the air.{% endblock %}
+{% block try_items %}
+<li>Make the small sphere smaller. What happens to its σ?</li>
+<li>Make both spheres equal. How is the charge shared?</li>
+<li>A sharp tip is like a very small sphere. What does that say about the field there?</li>
+{% endblock %}

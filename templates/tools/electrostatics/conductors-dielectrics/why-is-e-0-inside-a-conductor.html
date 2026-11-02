@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--wide{% endblock %}
+{% block lead %}Put a metal slab in a field and watch its free electrons respond.{% endblock %}
+{% block why_text %}A conductor has electrons free to move. Any field inside would push them, so they move, and keep moving, until their pile-up on the surface makes a field of its own that exactly cancels the applied one. The motion stops only when the net field inside is zero. That takes a tiny fraction of a second.{% endblock %}
+{% block try_items %}
+<li>Press Play. What happens to the field inside the slab?</li>
+<li>Raise E₀. Does the slab still end with zero field inside?</li>
+<li>What would happen to the electrons if some field remained?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>The real settling takes about 10⁻¹⁹ s, far too fast to see. Time is stretched here so that it can be watched, and the field is shown in made-up units.</div>{% endblock %}

@@ -451,7 +451,7 @@ it reaches the front of the queue.
 | 114 | `systems-matrices/matrix-algebra` | 10 | 1 | ✓ |
 | 115 | `electrostatics/electric-potential` | 7 | 1 | ✓ |
 | 116 | `systems-matrices/determinants-cramer` | 11 | 1 | ✓ |
-| 117 | `electrostatics/conductors-dielectrics` | 6 | 1 | |
+| 117 | `electrostatics/conductors-dielectrics` | 6 | 1 | ✓ |
 | 118 | `limits-continuity/continuity` | 5 | 1 | |
 | 119 | `electrostatics/capacitors` | 7 | 1 | |
 | 120 | `derivatives/chain-rule` | 4 | 1 | ✓ |
@@ -640,3 +640,5 @@ it reaches the front of the queue.
 - `flux-gauss-s-law` (5 tools): the closed-surface tool counts signed crossings of 12q rays with a sampled bubble polygon (counter-clockwise, outward normal (ey, -ex)); net = 12q inside and 0 outside whatever the dents. Built without screenshots or runs: look at that tool and at the Gaussian sketches in the symmetry tool.
 
 - `electrostatics/_potential.js`: `coulombField`, `swirlField` (unit swirl round the origin; a 1/r² swirl has no curl, so a loop that misses the origin does no work: use 1/r), `segmentWork` (Simpson), `pairEnergy` (µC, cm to J: 0.9 q1 q2 / r), `hexPoints`. Checked in Node: Coulomb loop work 1e-16, swirl loop work 1.4. `electric-potential` (7 tools) built without screenshots: look at the equipotential tracer and the potential map.
+
+- `conductors-dielectrics` (6 tools) is all inline canvas drawing: the shielding and car tools show only whether a field is present (not to scale), and the conductor settling time is stretched (real value ~1e-19 s) and said so. Look at the dipole rows and the car at 360 px.

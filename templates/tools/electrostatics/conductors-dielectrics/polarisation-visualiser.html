@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Change the dielectric constant and see how much of the applied field the material cancels.{% endblock %}
+{% block why_text %}The dielectric makes its own field, opposite to E₀, with strength E₀(1 − 1/K). The net field is what is left, E₀/K. Water (K ≈ 80) cancels nearly all of it. A conductor would be the limit K → ∞, where the field inside is zero. K is 1 for vacuum, and is the factor by which the field and the voltage drop for fixed charge.{% endblock %}
+{% block try_items %}
+<li>Set K = 1. How large is the opposing bar?</li>
+<li>Set K to the value for paper (3.5). What fraction of E₀ is cancelled?</li>
+<li>Set K = 80. How close is the net field to zero?</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Note</span>Typical values of K for paper, mica, glass and water are rounded. The value for water holds for slowly varying fields.</div>{% endblock %}

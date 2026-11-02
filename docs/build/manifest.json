@@ -2238,37 +2238,37 @@
 "archetype": "sim",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/why-does-charge-sit-on-the-surface-and-crowd-at-sharp-points": {
 "archetype": "space3d",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/why-does-a-hollow-conductor-shield-its-inside-but-not-its-ou": {
 "archetype": "sim",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/why-does-a-dielectric-weaken-the-field": {
 "archetype": "sim",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/polarisation-visualiser": {
 "archetype": "rays",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/conductors-dielectrics/why-are-you-safe-in-a-car-in-a-thunderstorm": {
 "archetype": "sim",
 "priority": 120,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "electrostatics/capacitors/why-does-c-q-v-depend-only-on-geometry": {
 "archetype": "sim",
