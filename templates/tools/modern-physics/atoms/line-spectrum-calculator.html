@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose the level the electron lands on and the level it starts from. The tool gives the wavelength of the light.{% endblock %}
+{% block why_text %}Every jump gives a photon with the energy difference, so a series of sharp lines. Jumps ending on n = 2 are the Balmer lines, mostly visible. The lines crowd towards a series limit, as the levels do.{% endblock %}
+{% block try_items %}
+<li>Pick Balmer and k = 1. Is the line at 656 nm? That is Hα.</li>
+<li>Which series lies wholly in the ultraviolet? Which in the infrared?</li>
+<li>Increase k step by step. How do the lines crowd?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The Rydberg constant 1.097 × 10⁷ m⁻¹ is used. The series are named after Lyman, Balmer, Paschen, Brackett and Pfund.
+</div>
+{% endblock %}

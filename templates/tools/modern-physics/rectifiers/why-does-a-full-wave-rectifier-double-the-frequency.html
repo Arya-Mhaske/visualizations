@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Compare one diode with a centre-tap transformer and two diodes. Count the humps.{% endblock %}
+{% block why_text %}With two diodes, one conducts on the positive half-cycle and the other on the negative half-cycle. Both give a positive output, so there is a hump every half cycle. 50 Hz in gives 100 Hz out, and the mean doubles to 2V_m/π.{% endblock %}
+{% block try_items %}
+<li>Choose half-wave and count the humps in 40 ms. Then choose full-wave.</li>
+<li>Press Play in full-wave mode. Which diode conducts when the source is negative?</li>
+<li>What is the output frequency if the mains were 60 Hz?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  In the centre-tap circuit each half of the secondary supplies the same peak voltage. The time axis is slowed 100 times.
+</div>
+{% endblock %}

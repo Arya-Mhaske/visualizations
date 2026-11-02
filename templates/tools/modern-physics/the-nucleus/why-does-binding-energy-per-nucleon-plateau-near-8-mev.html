@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Start with only the volume term, a flat 15.75 MeV per nucleon, then switch on the effects that reduce it.{% endblock %}
+{% block why_text %}The nuclear force is short-range, so a nucleon feels only its nearest neighbours and B grows in proportion to A. Nucleons at the surface have fewer neighbours, which lowers small nuclei. In large nuclei the protons’ repulsion grows. The result is a plateau near 8 MeV with a peak at iron.{% endblock %}
+{% block try_items %}
+<li>With all switches off, how does the model compare with the measured dots?</li>
+<li>Switch on the surface term only. Which end of the curve bends down?</li>
+<li>Now add the Coulomb term. What happens to the heavy nuclei?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The model is the liquid-drop (semi-empirical) formula, with standard constants. The dots are measured values. The curve is not in the textbook, which only shows the measured graph.
+</div>
+{% endblock %}

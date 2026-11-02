@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A photocell turns photons into current. Pick a cathode and a colour, then vary the brightness.{% endblock %}
+{% block why_text %}Each photon above threshold frees at most one electron, so the current grows in a straight line with brightness. Below threshold, no brightness helps. Light sensors, automatic street lights and the sound track of old films all use this.{% endblock %}
+{% block try_items %}
+<li>Choose potassium and 450 nm. Increase the brightness until the street lamp switches off.</li>
+<li>Lengthen the wavelength to 600 nm. What happens to the current, and why?</li>
+<li>Switch to zinc. At which wavelengths does the cell work now?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Solar cells use a related effect inside a semiconductor, where the photon lifts an electron across the band gap instead of out of the metal. The graph here is for a vacuum photocell.
+</div>
+{% endblock %}

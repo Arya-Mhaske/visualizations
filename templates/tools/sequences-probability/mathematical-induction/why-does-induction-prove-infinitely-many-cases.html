@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Two things are needed to topple an endless row of dominoes. Check both.{% endblock %}
+{% block why_text %}Step 1: the first domino falls (the base case). Step 2: each domino is close enough to knock down the next (if P(n) is true, so is P(n + 1)). Together they reach every domino, however far, without checking them one by one.{% endblock %}
+{% block try_items %}
+<li>Slide Time from 0 to 12. Which domino falls last?</li>
+<li>Make the gap bigger than 1. How far does the chain get?</li>
+<li>Switch off step 1. Do any dominoes fall?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

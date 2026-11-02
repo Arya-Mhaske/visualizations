@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}One photon of energy hν is split into two parts: the cost φ₀ of escaping, and what is left as kinetic energy.{% endblock %}
+{% block why_text %}Energy is conserved. The photon gives hν, leaving the metal costs at least φ₀, and the remainder is kinetic energy. The surface electrons pay the least, so they leave fastest: K_max = hν − φ₀. Deeper electrons lose more on the way and come out slower.{% endblock %}
+{% block try_items %}
+<li>Set φ₀ to 2.3 eV and the wavelength to 300 nm. How much of the photon goes into K_max?</li>
+<li>Raise φ₀ until K_max reaches zero. What does that say about the photon energy?</li>
+<li>Look at the four electrons on the right. Why does only the surface one reach K_max?</li>
+{% endblock %}

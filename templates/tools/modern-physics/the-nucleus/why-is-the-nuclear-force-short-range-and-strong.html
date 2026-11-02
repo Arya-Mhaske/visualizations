@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Bring two nucleons together and compare the nuclear attraction with the electric repulsion between protons.{% endblock %}
+{% block why_text %}At 1 fm the nuclear attraction is about thirty times the Coulomb repulsion, so it holds the nucleus together. But it dies away within a few fm, while the Coulomb repulsion only falls as 1/r. It is the same for n–n, n–p and p–p pairs.{% endblock %}
+{% block try_items %}
+<li>At r = 1 fm, which is bigger for a proton pair? By what factor?</li>
+<li>Move to 6 fm. Which one wins now?</li>
+<li>Switch the pair to neutron–proton. What changes, and what stays?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The nuclear curve is an illustrative shape (strong, then gone beyond a few fm), not a precise potential. The Coulomb curve 1.44/r MeV is exact for two protons.
+</div>
+{% endblock %}

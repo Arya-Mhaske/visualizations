@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}A negative voltage on the collector pushes electrons back. Raise the brightness and watch where the current reaches zero.{% endblock %}
+{% block why_text %}More light means more photons, so a larger saturation current. But every photon still has the same energy hν, so every electron has the same K_max, and it takes the same stopping voltage V₀ to turn the fastest back.{% endblock %}
+{% block try_items %}
+<li>Set the brightness to 4. Does the current curve move up, sideways, or both?</li>
+<li>Shorten the wavelength from 400 nm to 260 nm. What happens to V₀?</li>
+<li>Read V₀ at 300 nm and check it against K_max = hν − φ₀ for sodium.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The shape of the rising part of the curve is simplified here: electrons are assumed to leave with energies spread evenly from 0 to K_max. The value of V₀ itself, K_max/e, is exact.
+</div>
+{% endblock %}

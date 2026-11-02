@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}These are lab readings of stopping potential for lamps of different frequency. Set the line through the dots, then read h from its slope.{% endblock %}
+{% block why_text %}K_max = hν − φ₀ is a straight line in ν. Its slope is h (in eV per Hz) and its intercept on the K axis is −φ₀. Millikan used this to measure h: the number comes out the same for every metal.{% endblock %}
+{% block try_items %}
+<li>Press Best fit. What value of h do you get? Compare it with 6.63 × 10⁻³⁴ J s.</li>
+<li>Change the metal. Which of slope and intercept changed, and which stayed the same?</li>
+<li>Set the slope by hand to 4.14, the true value, and slide the intercept until the line runs through the dots.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The readings carry a small made-up scatter of about 0.03 V so that a real fit is needed. The underlying values use h = 6.63 × 10⁻³⁴ J s.
+</div>
+{% endblock %}

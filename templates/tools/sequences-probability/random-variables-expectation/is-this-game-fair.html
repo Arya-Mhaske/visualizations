@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}You pay a fee, then win a prize if the event happens. Check the expected gain and then play many times.{% endblock %}
+{% block why_text %}The expected gain is E = p × prize − fee. A game is fair when E = 0. Play a few times and luck rules. Play a thousand times and the average settles close to E.{% endblock %}
+{% block try_items %}
+<li>With the default settings, is the game fair? Play it 300 times.</li>
+<li>Raise the fee to 5. Who does the game favour now?</li>
+<li>Find the fair fee for the “11 or 12” game with a prize of ₹36.</li>
+{% endblock %}

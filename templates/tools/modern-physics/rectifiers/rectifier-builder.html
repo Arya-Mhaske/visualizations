@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Switch between half-wave and full-wave, add the filter, and change C and R_L. The circuit and graph follow.{% endblock %}
+{% block why_text %}Full-wave gives twice the pulses of half-wave, so the capacitor has less time to run down, and the ripple is half as big. A bigger C or a larger R_L (a lighter load) cuts the ripple further.{% endblock %}
+{% block try_items %}
+<li>Build a half-wave rectifier with no filter, then add the filter.</li>
+<li>Make the full-wave circuit with C = 1000 μF and R_L = 500 Ω. What is the ripple?</li>
+<li>Which change reduces the ripple more: doubling C or switching to full-wave?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The circuit drawing shows the centre-tap version of full-wave. A bridge of four diodes gives the same output with a plain transformer.
+</div>
+{% endblock %}

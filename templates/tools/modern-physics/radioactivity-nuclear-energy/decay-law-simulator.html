@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Choose an isotope. The tool shows its decay constant, half-life and mean life, and how much is left.{% endblock %}
+{% block why_text %}The three numbers say the same thing. λ = 0.693/T½ and the mean life is τ = 1/λ = 1.44 T½. After one half-life, half is left; after one mean life, 1/e or 37%.{% endblock %}
+{% block try_items %}
+<li>Pick carbon-14. How much is left after 2 half-lives?</li>
+<li>Which isotope has the largest λ? Which has the smallest?</li>
+<li>At t = τ, what fraction is left? Is it more or less than one half?</li>
+{% endblock %}

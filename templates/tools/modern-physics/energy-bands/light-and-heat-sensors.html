@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Use a semiconductor as a sensor on a 5 V supply. Heat or light lifts electrons across the gap, so the current rises.{% endblock %}
+{% block why_text %}Heat gives electrons the energy to cross the gap, so the current climbs fast with temperature (a thermistor). A photon with hν at least Eg does the same job, so the current follows brightness (a light-dependent resistor), but only for short enough wavelengths.{% endblock %}
+{% block try_items %}
+<li>In heat mode, warm the sensor from 250 K to 400 K. By how many powers of ten does the current change?</li>
+<li>In light mode with Eg = 2.4 eV, find the longest wavelength that works.</li>
+<li>Lower Eg to 1.1 eV. Which wavelengths work now?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The currents come from a simple model with round numbers, so they show the trend rather than any real device.
+</div>
+{% endblock %}

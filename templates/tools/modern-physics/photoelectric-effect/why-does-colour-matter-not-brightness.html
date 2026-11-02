@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Shine light on a sodium plate. First turn the brightness all the way up with red light. Then switch to a weak ultraviolet beam.{% endblock %}
+{% block why_text %}Each photon hands all of its energy hν to one electron, or none. Red photons each carry too little energy to pay the escape cost φ₀, so a million of them free nobody. Brighter light only means more photons, so more electrons once the colour is right, never faster ones.{% endblock %}
+{% block try_items %}
+<li>Set the colour to 680 nm and the brightness to 12. Do any electrons leave? What is the total light energy compared with φ₀?</li>
+<li>Move the colour down until electrons first appear. Which wavelength is that, and how does it compare with the threshold colour?</li>
+<li>At 300 nm, raise the brightness from 1 to 12. What changes: the number of electrons, or the length of each arrow?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Classical wave theory said enough bright light should eventually free electrons. Experiments show it never does below the threshold colour. Einstein explained this in 1905 with light quanta.
+</div>
+{% endblock %}

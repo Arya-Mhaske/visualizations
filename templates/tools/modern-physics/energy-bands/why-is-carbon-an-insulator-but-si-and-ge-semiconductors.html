@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Compare the three group-14 elements. The bonding electrons sit in orbit 2, 3 or 4, and the gap shrinks.{% endblock %}
+{% block why_text %}The bonding electrons of carbon are in the second orbit, held tightly, so Eg = 5.4 eV. In silicon (third orbit) it is 1.1 eV and in germanium (fourth) 0.7 eV. The further out the electron, the more loosely it is held and the smaller the gap.{% endblock %}
+{% block try_items %}
+<li>At 300 K, how many carriers per cm³ in each element?</li>
+<li>Raise the temperature to 1500 K. Does carbon start to conduct?</li>
+<li>By what factor is germanium richer in carriers than silicon at 300 K?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The gaps 5.4, 1.1 and 0.7 eV are the textbook values. The carrier numbers use the same simple model for all three.
+</div>
+{% endblock %}

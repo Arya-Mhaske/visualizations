@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Connect an AC source through a diode to a load. Watch which half of each cycle gets through.{% endblock %}
+{% block why_text %}A diode conducts one way. When the source is positive it passes current, and when it is negative it blocks. So only the positive humps reach the load: current flows one way, but in pulses. That is half-wave rectification.{% endblock %}
+{% block try_items %}
+<li>Press Play. When does the lower graph stay at zero?</li>
+<li>Choose the silicon diode. Is the output peak the same as the source peak?</li>
+<li>What is the mean of the output compared with the source peak?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The time axis is slowed down 100 times so you can see it. The mean value of the half-wave output is V_m/π for an ideal diode.
+</div>
+{% endblock %}

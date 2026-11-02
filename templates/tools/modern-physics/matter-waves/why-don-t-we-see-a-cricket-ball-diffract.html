@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Send a particle through a gap and look at the spread. Diffraction needs the gap to be about as wide as the wavelength.{% endblock %}
+{% block why_text %}The first dark angle satisfies sin θ = λ/a. When λ ≪ a the spread is far too small to see. A cricket ball has λ near 10⁻³⁴ m, so no gap you could build is narrow enough. An electron through a gap the size of an atom spreads out widely.{% endblock %}
+{% block try_items %}
+<li>Choose the electron and set the gap near 10⁻⁹ m. What does the pattern look like?</li>
+<li>Widen the gap to 1 mm. What happens to the pattern?</li>
+<li>Choose the cricket ball. What gap would you need to see any spread, and does such a gap exist?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The pattern is the single-slit one, sin²(x)/x² with x = πa sin θ/λ. For the cricket ball the true spread is thinner than a pen line, so the picture is drawn wider than the truth.
+</div>
+{% endblock %}

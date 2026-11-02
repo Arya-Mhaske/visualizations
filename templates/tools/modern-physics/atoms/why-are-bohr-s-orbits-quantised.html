@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Wrap a de Broglie wave around an orbit. It only makes sense if the wave meets itself smoothly.{% endblock %}
+{% block why_text %}Only an exact whole number of wavelengths fits round the circle, 2πr = nλ. With λ = h/mv this says mvr = nh/2π. That is Bohr’s quantisation rule, and it comes straight from the wave nature of the electron.{% endblock %}
+{% block try_items %}
+<li>Set the circumference to 2.6 wavelengths. Where is the clash?</li>
+<li>Press Nearest whole number. What is mvr now, in units of h/2π?</li>
+<li>Look at n = 1, 2, 3. How does the allowed radius grow?</li>
+{% endblock %}

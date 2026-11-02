@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Fire a row of alpha particles at a gold nucleus from different heights. The closer one passes, the more it bends.{% endblock %}
+{% block why_text %}The nucleus repels alphas with a force ∝ 1/r², which is strong only very close in. The nucleus is about 10⁴ times smaller than the atom, so almost every alpha passes far away and goes nearly straight. Only a head-on one bounces back. An atom is mostly empty space.{% endblock %}
+{% block try_items %}
+<li>Set the spread to 8 r₀. How many alphas are bent noticeably?</li>
+<li>Narrow the spread to 0.5 r₀. How does the bending change?</li>
+<li>The alpha in the middle is aimed straight at the nucleus. Where does it go?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The paths are computed by following the real inverse-square force. The head-on distance r₀ of about 41 fm is for a 5.5 MeV alpha on gold. Rutherford’s 1911 analysis led to the nuclear atom.
+</div>
+{% endblock %}

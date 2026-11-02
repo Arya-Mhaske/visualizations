@@ -499,23 +499,23 @@ it reaches the front of the queue.
 | 162 | `vectors-3d/cross-product` | 5 | 1 | ✓ |
 | 163 | `optics/diffraction-polarisation` | 6 | 1 | ✓ |
 | 164 | `vectors-3d/lines-planes` | 7 | 1 | ✓ |
-| 165 | `modern-physics/photoelectric-effect` | 6 | 1 | |
+| 165 | `modern-physics/photoelectric-effect` | 6 | 1 | ✓ |
 | 166 | `systems-matrices/inequalities-linear-programming` | 7 | 1 | ✓ |
-| 167 | `modern-physics/matter-waves` | 4 | 1 | |
-| 168 | `sequences-probability/random-variables-expectation` | 5 | 1 | |
-| 169 | `modern-physics/atoms` | 6 | 1 | |
+| 167 | `modern-physics/matter-waves` | 4 | 1 | ✓ |
+| 168 | `sequences-probability/random-variables-expectation` | 5 | 1 | ✓ |
+| 169 | `modern-physics/atoms` | 6 | 1 | ✓ |
 | 170 | `exponentials-logs/growth-decay-cooling` | 6 | 1 | ✓ |
-| 171 | `modern-physics/the-nucleus` | 5 | 1 | |
+| 171 | `modern-physics/the-nucleus` | 5 | 1 | ✓ |
 | 172 | `exponentials-logs/e-ln-as-areas` | 7 | 1 | ✓ |
-| 173 | `modern-physics/radioactivity-nuclear-energy` | 5 | 1 | |
+| 173 | `modern-physics/radioactivity-nuclear-energy` | 5 | 1 | ✓ |
 | 174 | `exponentials-logs/hyperbolic-functions` | 4 | 1 | ✓ |
-| 175 | `modern-physics/energy-bands` | 5 | 1 | |
-| 176 | `sequences-probability/mathematical-induction` | 3 | 1 | |
+| 175 | `modern-physics/energy-bands` | 5 | 1 | ✓ |
+| 176 | `sequences-probability/mathematical-induction` | 3 | 1 | ✓ |
 | 177 | `modern-physics/intrinsic-extrinsic-semiconductors` | 6 | 1 | ✓ |
 | 178 | `conics-curves/rotation-of-axes` | 4 | 1 | ✓ |
 | 179 | `modern-physics/p-n-junction-diode` | 6 | 1 | ✓ |
 | 180 | `conics-curves/polar-conics` | 3 | 1 | ✓ |
-| 181 | `modern-physics/rectifiers` | 5 | 1 | |
+| 181 | `modern-physics/rectifiers` | 5 | 1 | ✓ |
 | 182 | `conics-curves/parametric-curves` | 8 | 1 | ✓ |
 | 183 | `systems-matrices/linear-systems` | 5 | 1 | ✓ |
 | 184 | `systems-matrices/nonlinear-systems` | 3 | 1 | ✓ |
@@ -606,3 +606,8 @@ it reaches the front of the queue.
   Figures worth testing: disc/shell volumes agree for all five `disc-washer-or-shell` problems (32π/5, 8π, 8π/3, π²/2, 2π²); Pappus torus 2π²Rr²; coffee cups πp/(p+2) and 2π/(p+2); cycloid arch length 8a, cardioid 8a; polar cardioid area 3π/2; Gabriel's horn V = π(1 − 1/b); Poiseuille Q = πΔPR⁴/8ηL; consumer surplus; exponential P(T ≤ t); `bestDelta` for 2x + 1 equals ε/2; Simpson error ratio about 16.
   Look hardest at: `why-do-equal-slices-mean-equal-volumes` (a 2D coin stack), the polar sectors, `rotating-on-a-slant` (exact cross-sections of a tilted rectangle), `why-discs-and-washers` and `why-shells` (raw canvas lower halves), the dam strips, and `normal-curve-heights-and-exam-scores`, whose sliders reset when the dataset changes.
 
+- Session of 2 Nov 2026 (`modern-physics` ×7 boxes, `random-variables-expectation`, `mathematical-induction`: 44 tools), built without screenshots, tests or `tool_tests`, by request: look at all 44 pictures, run `manage.py test`, and write `tool_tests`. Only `node --check` and a few Node checks of the maths were run.
+  `modern-physics/_mp.js` (constants, `photonEv`, `lightColor`, `lineNm`, `niOf` intrinsic carriers, `deBroglie`/`electronNm`), `_mp-view.js` (`bar`, `energyScale`), `_matter-waves-view.js` (`drawRuler`: a powers-of-ten ruler with marks, reused for time on the Sun tool), `_nucleus.js` (`NUCLIDES` with atomic masses, `bindingMeV`, measured `BA` curve with `baAt`, liquid-drop `drop`, `densityKg`), `_bands-view.js` (`drawBands`), `_rect.js` (`run` simulates a rectifier and filter capacitor, `ripple`), `_rect-view.js` (`drawCircuit`: half-wave and centre-tap full-wave symbols). `sequences-probability/_rv.js` has the four distributions, `spreadAbout`, `torque`, and counting `EXPERIMENTS`.
+  Checks run in Node: He-4 28.3 MeV, Fe-56 8.79 MeV per nucleon, nuclear density 2.29e17 kg/m³, Hα 656.3 nm, sodium threshold 452 nm, 100 V electron 0.1228 nm, silicon nᵢ 1.44e10 cm⁻³, fission of A = 236 about 220 MeV, d+d fusion 23.8 MeV, every induction sum identity to n = 40, n² + n + 41 first fails at n = 40.
+  Figures worth testing: the same list, plus the full-wave ripple (200 μF, 500 Ω gives 0.77 V against the 0.93 V estimate), the Sun's 4.2 × 10⁹ kg/s of lost mass, and the Rutherford angle tan(θ/2) = r₀/2b against the traced path.
+  Look hardest at: the alpha-scattering paths (Verlet integration, 13 rays), `why-are-bohr-s-orbits-quantised` (the wave seam), the circuit drawing in `rectifier-builder` at 360 px (full-wave wiring), the four stacked plots in the charger, `electron-microscopes` (two window scales), `light-and-heat-sensors` (hides fields by index) and the nuclear-force curve, whose nuclear part is an illustrative Yukawa shape.

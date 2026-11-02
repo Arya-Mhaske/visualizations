@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Electrons sit at the bottom of an energy well of depth φ₀. A photon lifts one electron by hν. Lower the frequency and watch the lift fall short.{% endblock %}
+{% block why_text %}An electron can take energy from only one photon at a time, so it must get at least φ₀ in one go. Below ν₀ = φ₀/h no single photon is big enough, however many arrive. That is why a threshold frequency exists.{% endblock %}
+{% block try_items %}
+<li>Choose sodium and lower ν until the electrons stop escaping. What is ν₀?</li>
+<li>Switch the metal to caesium. Is its threshold higher or lower? Why does that make caesium good for light sensors?</li>
+<li>Raise the brightness to 6 at a frequency below threshold. Does the extra crowd help any electron?</li>
+{% endblock %}

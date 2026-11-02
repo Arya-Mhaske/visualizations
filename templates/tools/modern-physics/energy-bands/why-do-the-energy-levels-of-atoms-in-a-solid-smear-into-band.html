@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Bring N atoms closer. Each sharp level splits into N levels, which fill out a band.{% endblock %}
+{% block why_text %}Atoms close together share their electrons, and the Pauli principle forbids two electrons with the same state. So each level splits into N slightly different ones. With about 10²³ atoms the levels are so close that they form a continuous band.{% endblock %}
+{% block try_items %}
+<li>Set N to 2 and bring the atoms together. How many lines are there?</li>
+<li>Raise N to 14. How does the spacing between lines change?</li>
+<li>Bring the spacing right down. Do the 3s and 3p bands overlap?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The picture uses a simple chain model. Real silicon bands come from sp³ bonds and the numbers here are only schematic.
+</div>
+{% endblock %}

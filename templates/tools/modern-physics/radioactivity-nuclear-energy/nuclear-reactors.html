@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}In a reactor each fission frees neutrons that cause more fissions. Slide the control rods to keep the multiplication factor at 1.{% endblock %}
+{% block why_text %}If more than one neutron per fission causes another fission, the power runs away. If fewer, it dies out. A moderator slows neutrons so they split U-235, and control rods absorb them. Keeping k at exactly 1 gives steady power.{% endblock %}
+{% block try_items %}
+<li>With graphite as moderator, push the rods in until the reactor is critical.</li>
+<li>Remove the moderator. Can any rod setting save the chain reaction?</li>
+<li>Compare heavy water with graphite. Which needs the rods pushed further in for k = 1?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The values of k are illustrative round numbers, not measured ones. Real reactors rely on delayed neutrons to make the control slow enough to manage.
+</div>
+{% endblock %}

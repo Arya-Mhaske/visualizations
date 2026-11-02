@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Accelerate an electron through a voltage V and read its de Broglie wavelength.{% endblock %}
+{% block why_text %}The electron gains eV of kinetic energy, so p = √(2meV) and λ = h/p = 1.227/√V nm. At 100 V, λ is about 0.12 nm, close to the spacing of atoms in a crystal. That is why crystals can diffract electron beams.{% endblock %}
+{% block try_items %}
+<li>Set V = 54 V. This is the Davisson–Germer value. How does λ compare with the nickel spacing?</li>
+<li>Raise V by a factor of 100. By what factor does λ change?</li>
+<li>Find the voltage at which λ equals 0.215 nm.</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The formula uses ordinary mechanics. Above about 50 kV the electron moves at a large fraction of the speed of light and relativity changes the answer slightly.
+</div>
+{% endblock %}

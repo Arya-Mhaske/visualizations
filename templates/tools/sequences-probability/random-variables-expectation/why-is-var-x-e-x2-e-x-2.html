@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Measure the spread E[(X − m)²] about a trial centre m. Then find the centre that makes it smallest.{% endblock %}
+{% block why_text %}Expanding gives E(X²) − 2mE(X) + m². At m = μ this is E(X²) − μ². For any other centre it is larger by exactly (m − μ)². So μ is the best centre, and the smallest spread is Var(X) = E(X²) − [E(X)]².{% endblock %}
+{% block try_items %}
+<li>For two dice, set m = 0, then m = 7. What is E[(X − m)²] each time?</li>
+<li>Press Centre at the mean. Check that the value is 35/6.</li>
+<li>Switch to the loaded die. Where does the parabola’s lowest point move?</li>
+{% endblock %}

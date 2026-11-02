@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Place a nucleus on the binding-energy curve and send it towards iron: by splitting if it is heavy, by joining if it is light.{% endblock %}
+{% block why_text %}Higher B/A means more tightly bound, and tighter binding means lower energy. Moving to a higher point on the curve releases the difference. Heavy nuclei gain by splitting, light ones by fusing. Iron is the end of the road.{% endblock %}
+{% block try_items %}
+<li>Choose fission with A = 236. How much energy does one nucleus release?</li>
+<li>Choose fusion with A = 2. What energy per fusion? How does it compare with coal per kg?</li>
+<li>Try fission with A = 30. Does it release energy? Why not?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The curve is drawn through measured values and joined in straight lines, so the answers are good to about 10%. A real fission of uranium-235 gives about 200 MeV.
+</div>
+{% endblock %}

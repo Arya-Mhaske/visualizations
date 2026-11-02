@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--flow{% endblock %}
+{% block lead %}Pick a sum formula. Press Next step to see the base case, the assumption and the inductive step worked with numbers.{% endblock %}
+{% block why_text %}Induction has three moves. Check n = 1. Assume the formula for k. Add the next term and show the result is the formula for k + 1. If both hold, the formula is true for every n.{% endblock %}
+{% block try_items %}
+<li>Choose 1 + 2 + … + n and press Next step. What do the two sides equal at n = 1?</li>
+<li>Change k to 9. Do the numbers in the check still match?</li>
+<li>Try the cube formula. Which step is the longest to simplify?</li>
+{% endblock %}
+{% block formula %}{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Grow a nucleus nucleon by nucleon and watch its size, and its density, as A rises.{% endblock %}
+{% block why_text %}The nuclear radius is R = R₀A^⅓, so the volume is proportional to A. Each nucleon takes up the same room, so the density is the same for every nucleus: about 2.3 × 10¹⁷ kg/m³. A teaspoon of that would weigh a billion tonnes.{% endblock %}
+{% block try_items %}
+<li>Slide A from 4 to 238. By what factor does R grow? By what factor does the volume grow?</li>
+<li>Look at the density curve. Is it flat?</li>
+<li>The dashed curve shows what would happen if R grew in proportion to A. What would density do then?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The dots are a flat picture of a 3D ball, laid out so that every nucleon has equal room. Nucleons are not really little hard balls.
+</div>
+{% endblock %}

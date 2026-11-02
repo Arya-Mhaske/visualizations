@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Every nucleus gets its own random time to decay. Nobody can say which goes next. Yet the count follows a smooth law.{% endblock %}
+{% block why_text %}Each nucleus has the same chance per second of decaying, whatever its age. That gives N = N₀e^(−λt), and half are gone after T½ = 0.693/λ. With 25 nuclei the line is ragged; with 1600 it follows the curve closely. The law is about crowds, not individuals.{% endblock %}
+{% block try_items %}
+<li>With 25 nuclei, how close is the time to lose half to one half-life? Press Run it again a few times.</li>
+<li>Repeat with 1600 nuclei. What changes?</li>
+<li>Pick one hollow dot. Could you have predicted when it would decay?</li>
+{% endblock %}

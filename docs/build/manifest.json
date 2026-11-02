@@ -2995,19 +2995,19 @@
 "archetype": "sim",
 "priority": 168,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/photoelectric-effect/why-is-there-a-threshold-frequency": {
 "archetype": "sim",
 "priority": 168,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/photoelectric-effect/why-is-k-max-h-0": {
 "archetype": "sim",
 "priority": 168,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/photoelectric-effect/why-doesn-t-the-stopping-potential-depend-on-intensity": {
 "archetype": "sim",
@@ -3019,55 +3019,56 @@
 "archetype": "stepper",
 "priority": 168,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/photoelectric-effect/solar-cells-and-light-sensors": {
 "archetype": "table",
 "priority": 168,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/matter-waves/why-does-matter-have-a-wavelength-h-p": {
 "archetype": "sim",
 "priority": 170,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/matter-waves/why-don-t-we-see-a-cricket-ball-diffract": {
 "archetype": "sim",
 "priority": 170,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/matter-waves/electron-wavelength-calculator": {
 "archetype": "stepper",
 "priority": 170,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/matter-waves/electron-microscopes": {
 "archetype": "rays",
 "priority": 170,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/atoms/why-do-most-alpha-particles-pass-straight-through-gold": {
 "archetype": "sim",
 "priority": 172,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "modern-physics/atoms/why-should-a-classical-atom-collapse": {
 "archetype": "sim",
 "priority": 172,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/atoms/why-are-bohr-s-orbits-quantised": {
 "archetype": "sim",
 "priority": 172,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/atoms/why-are-hydrogen-s-levels-13-6-n2-ev": {
 "archetype": "sim",
@@ -3079,7 +3080,7 @@
 "archetype": "table",
 "priority": 172,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/atoms/neon-signs-and-spectroscopy": {
 "archetype": "sim",
@@ -3091,19 +3092,19 @@
 "archetype": "space3d",
 "priority": 174,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/the-nucleus/why-is-a-nucleus-lighter-than-its-parts": {
 "archetype": "sim",
 "priority": 174,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/the-nucleus/why-does-binding-energy-per-nucleon-plateau-near-8-mev": {
 "archetype": "sim",
 "priority": 174,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/the-nucleus/why-is-the-nuclear-force-short-range-and-strong": {
 "archetype": "sim",
@@ -3115,25 +3116,25 @@
 "archetype": "stepper",
 "priority": 174,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/radioactivity-nuclear-energy/why-is-decay-random-but-the-half-life-exact": {
 "archetype": "chance",
 "priority": 176,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/radioactivity-nuclear-energy/why-do-fission-and-fusion-both-release-energy": {
 "archetype": "sim",
 "priority": 176,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/radioactivity-nuclear-energy/why-does-fusion-power-the-sun": {
 "archetype": "sim",
 "priority": 176,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/radioactivity-nuclear-energy/decay-law-simulator": {
 "archetype": "chance",
@@ -3151,25 +3152,25 @@
 "archetype": "space3d",
 "priority": 178,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/energy-bands/why-does-the-band-gap-decide-metal-semiconductor-or-insulato": {
 "archetype": "sim",
 "priority": 178,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/energy-bands/why-is-carbon-an-insulator-but-si-and-ge-semiconductors": {
 "archetype": "sim",
 "priority": 178,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/energy-bands/band-diagram-explorer": {
 "archetype": "stepper",
 "priority": 178,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/energy-bands/light-and-heat-sensors": {
 "archetype": "sim",
@@ -3253,25 +3254,25 @@
 "archetype": "phasor",
 "priority": 184,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/rectifiers/why-does-a-full-wave-rectifier-double-the-frequency": {
 "archetype": "phasor",
 "priority": 184,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/rectifiers/why-does-a-capacitor-smooth-the-output": {
 "archetype": "sim",
 "priority": 184,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/rectifiers/rectifier-builder": {
 "archetype": "stepper",
 "priority": 184,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "modern-physics/rectifiers/from-the-230-v-socket-to-a-5-v-charger": {
 "archetype": "phasor",
@@ -5529,7 +5530,7 @@
 "archetype": "discrete",
 "priority": 179,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/mathematical-induction/why-are-both-steps-needed": {
 "archetype": "discrete",
@@ -5541,7 +5542,8 @@
 "archetype": "stepper",
 "priority": 179,
 "notes": "",
-"reviewed": false
+"formula": false,
+"reviewed": true
 },
 "sequences-probability/binomial-theorem/why-does-pascal-s-triangle-give-the-coefficients": {
 "archetype": "discrete",
@@ -5782,31 +5784,31 @@
 "archetype": "discrete",
 "priority": 171,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/random-variables-expectation/why-is-the-mean-xi-pi-a-balance-point": {
 "archetype": "discrete",
 "priority": 171,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/random-variables-expectation/why-is-var-x-e-x2-e-x-2": {
 "archetype": "discrete",
 "priority": 171,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/random-variables-expectation/build-a-probability-distribution": {
 "archetype": "chance",
 "priority": 171,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "sequences-probability/random-variables-expectation/is-this-game-fair": {
 "archetype": "chance",
 "priority": 171,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "conics-curves/what-are-conics/why-are-they-called-conic-sections": {
 "archetype": "space3d",

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Add a filter capacitor across the load. It charges at each hump and discharges slowly through R_L.{% endblock %}
+{% block why_text %}While the source is above the capacitor’s voltage, the capacitor charges to the peak. Between humps it supplies the load and leaks down by a small amount. The larger RC is compared with the gap between humps, the smaller the ripple.{% endblock %}
+{% block try_items %}
+<li>Set C = 0. Then add 200 μF. What happens to the ripple?</li>
+<li>Keep C = 200 μF and halve R_L. Does the ripple rise or fall?</li>
+<li>Switch from half-wave to full-wave. Why does the ripple fall?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The ripple is measured on the simulated graph and compared with the textbook estimate ΔV ≈ V_peak/(f R C). A silicon diode drops 0.7 V.
+</div>
+{% endblock %}

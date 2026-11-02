@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Set the gap and the temperature. The graph shows how the number of conduction electrons grows with heat.{% endblock %}
+{% block why_text %}The number of conduction electrons goes as e^(−Eg/2kT). A small rise in temperature or a small fall in the gap makes it climb steeply. That is why semiconductors conduct better when hot, unlike metals.{% endblock %}
+{% block try_items %}
+<li>Set Eg = 1.1 eV and T = 300 K. What is nᵢ? Raise T to 400 K.</li>
+<li>Lower the gap to 0.5 eV. How much does nᵢ change at 300 K?</li>
+<li>What gap would give the same nᵢ at 300 K as silicon has at 600 K?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The formula is nᵢ = N(T/300)^1.5 e^(−Eg/2kT) with N = 2.5 × 10¹⁹ cm⁻³, a round number used for both bands.
+</div>
+{% endblock %}

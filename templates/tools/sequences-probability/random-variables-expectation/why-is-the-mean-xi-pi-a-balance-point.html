@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Hang each probability as a weight on a beam. Find where a pivot balances the beam.{% endblock %}
+{% block why_text %}The beam balances when the pulls on both sides are equal: Σ p(x − pivot) = 0. Solving gives pivot = Σ x p, which is E(X). The mean is the centre of mass of the probability.{% endblock %}
+{% block try_items %}
+<li>Choose the sum of two dice. Where does the beam balance?</li>
+<li>Choose the loaded die. Does the balance point move towards 6?</li>
+<li>Press the button. What is the pull then?</li>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Follow the voltage through a phone charger: transformer, rectifier, then filter. Choose the secondary voltage, the capacitor and the load.{% endblock %}
+{% block why_text %}The transformer takes 230 V down to a few volts. The rectifier makes it one-way, then the capacitor smooths it. A final regulator needs about 7 V in to deliver a steady 5 V, so the bottom of the ripple must stay above that.{% endblock %}
+{% block try_items %}
+<li>Set the secondary to 9 V rms and the load to 0.4 A. What are the peak and the lowest voltage after the filter?</li>
+<li>Reduce the capacitor until the lowest voltage drops below 7 V.</li>
+<li>Raise the load to 1 A. How must the capacitor change?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The regulator stage is beyond the textbook and is not drawn. The bridge rectifier loses two diode drops, 1.4 V. The load is taken as a steady current.
+</div>
+{% endblock %}

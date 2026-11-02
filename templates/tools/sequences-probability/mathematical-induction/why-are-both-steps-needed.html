@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Test three claims. One is true. One has a false base case. One has a base case that works but a link that breaks.{% endblock %}
+{% block why_text %}A proof needs the base case and the step. The sum with “+5” passes the step but starts false, so it is false for every n. The claim that n² + n + 41 is prime holds from n = 1 to 39, but fails at n = 40, so checking a few cases is not a proof.{% endblock %}
+{% block try_items %}
+<li>Choose the +5 claim. Is the base case true? Does the step hold?</li>
+<li>Choose the prime claim. Drag n up to 39, then to 40.</li>
+<li>Why does checking 39 cases not prove the claim?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  For n = 40, n² + n + 41 = 41², which is not prime. The pattern n² + n + 41 is due to Euler.
+</div>
+{% endblock %}

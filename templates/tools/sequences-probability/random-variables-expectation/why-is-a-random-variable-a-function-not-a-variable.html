@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}The outcome of two dice is a pair (a, b). A random variable X is a rule that gives each outcome one number.{% endblock %}
+{% block why_text %}X is a function from the sample space to the real numbers. Each outcome has exactly one value, but many outcomes can share a value. The “variable” part is only that the outcome is random.{% endblock %}
+{% block try_items %}
+<li>Choose X = sum and the outcome (3, 4). Which other outcomes have the same value?</li>
+<li>Change the rule to X = larger. Does the outcome (3, 4) get a different value?</li>
+<li>Which value of X has the most outcomes under each rule?</li>
+{% endblock %}

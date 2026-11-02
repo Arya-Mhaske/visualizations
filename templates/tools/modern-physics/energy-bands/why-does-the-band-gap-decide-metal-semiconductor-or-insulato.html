@@ -1,0 +1,15 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Slide the gap between the valence and conduction bands and see how many electrons cross at room temperature.{% endblock %}
+{% block why_text %}Current needs electrons that can move, and they move only if there are empty states near them. A metal has none to cross (the bands touch). A semiconductor has a small gap, so a few cross by heat. An insulator’s gap is so wide that none cross.{% endblock %}
+{% block try_items %}
+<li>Set Eg = 0. How many electrons are in the upper band? What type is this?</li>
+<li>Set Eg = 1.1 eV (silicon). How many cross per cm³?</li>
+<li>Raise Eg to 6 eV. Does anything cross?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  The dots are rounded from the exact numbers at 300 K, 24 electrons at a time, so they only show the idea. The numbers in the readout are the real values of the model.
+</div>
+{% endblock %}

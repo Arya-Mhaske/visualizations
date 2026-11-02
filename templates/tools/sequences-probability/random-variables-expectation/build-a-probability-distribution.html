@@ -1,0 +1,9 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall viz-stage--scroll{% endblock %}
+{% block lead %}Count the outcomes of an experiment one by one. The bars show P(X = x) as the count grows.{% endblock %}
+{% block why_text %}P(X = x) is the number of outcomes with that value divided by the total number. Every outcome has exactly one value, so the probabilities must add up to 1.{% endblock %}
+{% block try_items %}
+<li>Count the whole experiment for two dice (sum). What is Σp?</li>
+<li>Stop at 50%. Why is Σp not 1?</li>
+<li>Switch to three tosses and read off P(X = 2).</li>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--square viz-stage--scroll{% endblock %}
+{% block lead %}Four mystery lamps each glow with the light of one gas. Match their lines against the element spectra to name them.{% endblock %}
+{% block why_text %}Every element has its own set of energy levels, so its own pattern of lines, like a fingerprint. In absorption the same lines show up dark against a continuous band. Astronomers name the gases in stars this way.{% endblock %}
+{% block try_items %}
+<li>Look at lamp 1. Try each element in turn. Which one matches all its lines?</li>
+<li>Do the same for lamps 2, 3 and 4. Then press Reveal to check.</li>
+<li>Switch to absorption. Do the dark lines sit at the same wavelengths as the bright ones?</li>
+{% endblock %}
+{% block notes %}
+<div class="nb-callout nb-callout--note">
+  <span class="nb-callout__label">Note</span>
+  Line wavelengths are the strongest visible lines taken from standard tables. Sodium’s famous yellow doublet is at 589.0 and 589.6 nm.
+</div>
+{% endblock %}
+{% block formula %}{% endblock %}
