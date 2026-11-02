@@ -1,0 +1,10 @@
+{% extends "tools/base_tool.html" %}
+{% block stage_class %}viz-stage--tall{% endblock %}
+{% block lead %}Push the pump slowly, then fast. Compare how hot the air gets.{% endblock %}
+{% block why_text %}Pushing the piston in does work on the air. If you push fast, no heat can escape, so Q = 0 and ΔU = −W: all the work becomes internal energy and the air heats up. If you push slowly, the heat leaks out through the barrel and the temperature stays near 300 K. Fast pushing follows the steeper adiabatic curve.{% endblock %}
+{% block try_items %}
+<li>Set speed to 0. What is the final temperature?</li>
+<li>Set speed to 1 at compression ratio 5. How hot does the air get?</li>
+<li>Compare the final pressure for fast and slow pushing.</li>
+{% endblock %}
+{% block notes %}<div class="nb-callout nb-callout--note"><span class="nb-callout__label">Model</span>Speed slides the exponent between 1 (isothermal) and 1.4 (adiabatic, air). A real pump is partly in between, and its wall also warms by friction.</div>{% endblock %}

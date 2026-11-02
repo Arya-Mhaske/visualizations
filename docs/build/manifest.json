@@ -1583,37 +1583,37 @@
 "archetype": "phasor",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/why-is-u-q-w-just-energy-conservation": {
 "archetype": "space3d",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/why-is-u-a-state-variable-but-q-and-w-aren-t": {
 "archetype": "sim",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/why-is-work-the-area-under-a-pv-curve": {
 "archetype": "sim",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/sign-convention-trainer": {
 "archetype": "stepper",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/first-law/why-does-a-bicycle-pump-get-hot": {
 "archetype": "sim",
 "priority": 80,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "heat-thermodynamics/thermodynamic-processes/why-is-an-adiabatic-curve-steeper-than-an-isotherm": {
 "archetype": "sim",

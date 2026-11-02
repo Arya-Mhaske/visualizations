@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A gas pushes a piston out. Cut the expansion into thin slices and add up each push.{% endblock %}
+{% block why_text %}The gas pushes with force F = PA over a small distance dx. The work is F dx = P(A dx) = P dV. Over a small slice P hardly changes, so the work is a thin strip of height P and width dV. Adding all the strips gives the area under the PV curve. Thinner strips fit the curve better.{% endblock %}
+{% block try_items %}
+<li>Use 1 strip. Is the sum above or below the true area?</li>
+<li>Increase the strips. How close can you get?</li>
+<li>Extend the end volume. Does the area keep growing, even as P falls?</li>
+{% endblock %}

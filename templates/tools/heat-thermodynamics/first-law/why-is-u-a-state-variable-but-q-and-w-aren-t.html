@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Take several paths between the same two states on a PV graph.{% endblock %}
+{% block why_text %}The internal energy of an ideal gas depends only on its temperature, which P and V fix. So ΔU is the same on every path from A to B: U is a state variable. The work is the area under the path, and it differs from path to path. Since Q = ΔU + W, the heat differs too. Q and W belong to the path, not to the state.{% endblock %}
+{% block try_items %}
+<li>Switch between Top, Bottom and Line. What stays the same, and what changes?</li>
+<li>Choose Wiggle and change its size. Does ΔU move?</li>
+<li>Which path gives the most heat for the same ΔU?</li>
+{% endblock %}
