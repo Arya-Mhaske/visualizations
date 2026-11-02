@@ -363,7 +363,7 @@ it reaches the front of the queue.
 | 26 | `numbers-algebra/inequalities-absolute-value` | 8 | 1 | ✓ |
 | 27 | `forces-energy/potential-energy-conservation` | 9 | 1 | ✓ |
 | 28 | `sequences-probability/counting` | 8 | 1 | |
-| 29 | `forces-energy/power` | 5 | 1 | |
+| 29 | `forces-energy/power` | 5 | 1 | ✓ |
 | 30 | `sequences-probability/binomial-theorem` | 6 | 1 | |
 | 31 | `forces-energy/collisions` | 7 | 1 | |
 | 32 | `sequences-probability/sequences` | 3 | 1 | |
@@ -690,3 +690,5 @@ it reaches the front of the queue.
 - `forces-energy/work-kinetic-energy`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
 
 - `forces-energy/potential-energy-conservation`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.
+
+- `forces-energy/power`: maths inline per tool, on `lib/quick.js`. Built without screenshots or tests, by request.

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}A home needs 8 kW. Sunlight gives 200 W on each square metre, and panels are 20% efficient. How big must the roof be?{% endblock %}
+{% block why_text %}Each square metre gives 200 W × 0.20 = 40 W of electricity. To get 8000 W you need 8000/40 = 200 m². Dividing the demand by the power per square metre gives the area. Lower efficiency or weaker sunshine needs a bigger roof.{% endblock %}
+{% block try_items %}
+<li>Check the 200 m².</li>
+<li>Raise the efficiency to 25%. How does the area change?</li>
+<li>Reduce the demand to 3 kW.</li>
+{% endblock %}

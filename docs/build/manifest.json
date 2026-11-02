@@ -695,31 +695,31 @@
 "archetype": "sim",
 "priority": 32,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/power/why-is-a-kwh-energy-not-power": {
 "archetype": "sim",
 "priority": 32,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/power/lift-motor-power": {
 "archetype": "sim",
 "priority": 32,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/power/wind-power-grows-as-v3": {
 "archetype": "space3d",
 "priority": 32,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/power/rooftop-solar-for-a-home": {
 "archetype": "sim",
 "priority": 32,
 "notes": "",
-"reviewed": false
+"reviewed": true
 },
 "forces-energy/collisions/why-is-momentum-always-conserved-but-ke-only-sometimes": {
 "archetype": "sim",

@@ -1,0 +1,8 @@
+{% extends "tools/base_tool.html" %}
+{% block lead %}Run a 100 W bulb for 10 hours. How much energy is that, in joules and in kilowatt-hours?{% endblock %}
+{% block why_text %}Power times time is energy: 100 W × 10 h = 1000 Wh = 1 kWh. Since 1 W = 1 J/s and 1 h = 3600 s, one kWh is 1000 × 3600 = 3.6 × 10⁶ J = 3.6 MJ. The kWh is a unit of energy; the electricity bill charges for energy.{% endblock %}
+{% block try_items %}
+<li>Check the 1 kWh and 3.6 MJ.</li>
+<li>Double the power. What happens to the energy?</li>
+<li>How many hours can a 1000 W heater run on 1 kWh?</li>
+{% endblock %}
